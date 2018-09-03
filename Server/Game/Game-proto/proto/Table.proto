@@ -1,0 +1,126 @@
+syntax = "proto2";
+
+option optimize_for = SPEED;
+option java_package = "com.su.msg";
+option java_outer_classname = "TableMsg";
+
+message _Card {
+	 optional int32 value = 1;	// 牌面
+	 optional int32 suit = 2;	// 花色（1：方块，2：梅花，3：红桃，4：黑桃）
+}
+
+message _GamePlayer {
+	optional int64 id = 1[default = -1];				// 玩家id
+	repeated _Card handCard = 2;						// 玩家手牌
+	optional int32 cardNum = 3[default = -1];			// 手牌数量
+	optional int32 team = 4[default = -1];				// 玩家队伍（1：红方，2：蓝方）
+	optional int32 multiple = 5[default = -1];			// 玩家加倍
+	optional int32 score = 6[default = -1];				// 得分
+	optional int32 isAuto = 7[default = -1];			// 是否托管
+	optional int32 state = 8[default = -1];				// 玩家状态（1：准备，2：等待，3：操作中，4：出完牌 ）
+	optional int64 opTime = 9[default = -1];			// 操作时间（毫秒）
+	optional int32 contestScore = 10[default = -1];		// 比赛积分
+	optional int32 isQuit = 11[default = -1];			// 是否退出 1：退出
+}
+
+
+message _Table {
+	repeated _GamePlayer player = 1;				// 玩家
+	repeated int32 multiple = 2;					// 公共倍数
+	optional int32 state = 3[default = -1];			// 牌桌状态（1：加倍，2：叫牌，3：出牌，4：结算）
+	repeated _Card lastCard = 4;					// 最后出牌
+	optional int32 lastCardType = 5[default = -1];	// 最后牌型
+	optional int32 lastOp = 6[default = -1];		// 最后出牌玩家
+	optional int32 roundScore = 7[default = -1];	// 轮分
+	optional _Card callCard = 8;					// 被叫的牌
+	optional int32 callType = 9[default = -1];		// 叫牌状态
+	optional int32 callOp = 10[default = -1];		// 叫牌玩家
+	optional int32 dealer = 11[default = -1];		// 庄家
+	optional int64 waitTime = 12[default = -1];		// 等待时间（毫秒）
+	optional int32 type = 13[default = -1];			// 牌桌类型	1：经典、2：排位、3：比赛
+}
+
+// 叫牌
+message Call {
+	optional int32 callType = 1;	// 叫牌状态（1：叫牌，2：暗叫，3：明叫）
+	optional int32 cardIndex = 2;	// 出牌索引
+}
+message Call_ {
+	
+}
+
+// 出牌
+message Draw {
+	optional int32 cardType = 1;	// 牌型
+	repeated int32 cardIndexs = 2;	// 出牌索引
+}
+message Draw_{
+	
+}
+// 过牌
+message Check {
+
+}
+message Check_ {
+	
+}
+// 准备
+message Ready {
+
+}
+message Ready_ {
+
+}
+// 退出
+message Quit {
+
+}
+message Quit_ {
+
+}
+// 加倍
+message Double{
+
+}
+message Double_{
+}
+
+// 托管
+message Auto{
+	optional int32 isAuto = 1;		// 是否托管 1：托管、2：取消托管
+}
+message Auto_{
+}
+
+// 重连
+message Reconn {
+
+}
+message Reconn_{
+
+}
+
+// 玩家数据更新通知
+message UpdateGamePlayer_{
+	repeated _GamePlayer gamePlayer = 1;	
+}
+
+// 牌桌数据更新通知
+message UpdateTable_{
+	optional _Table table = 1;
+}
+
+message _GamePlayerResult {
+	optional int32 multiple = 1;						// 倍数
+	optional int32 peanut = 2[default = -1];			// 花生
+	optional int32 rankingScore = 3[default = -1];		// 竞技分
+	optional int32 contestScore = 4[default = -1];		// 比赛积分
+	optional int64 playerId = 5[default = -1];			// 玩家id
+}
+
+// 牌局结果
+message TableResult_ {
+	optional int32 baseScore = 1;	// 底分
+	optional int32 winTeam = 2;		// 赢方
+	repeated _GamePlayerResult playerResult = 3;
+}

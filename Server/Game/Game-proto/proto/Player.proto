@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+option optimize_for = SPEED;
+option java_package = "com.su.msg";
+option java_outer_classname = "PlayerMsg";
+
+// 玩家数据
+message _Player {
+	optional int64 id = 1;								// id
+	optional string name = 2;							// 名称
+	optional int32 peanut = 3[default = -1];			// 花生
+	optional int32 rankingScore = 4[default = -1];		// 段位分
+	optional int32 rankingStep = 5[default = -1];		// 段位
+}
+
+// 玩家数据更新通知
+message UpdatePlayer_ {
+	optional _Player player = 1;
+}
+

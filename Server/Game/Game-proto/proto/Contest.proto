@@ -1,0 +1,52 @@
+syntax = "proto2";
+
+option optimize_for = SPEED;
+option java_package = "com.su.msg";
+option java_outer_classname = "ContestMsg";
+
+message _ContestRank {
+	optional int32 playerId = 1;		// 玩家id
+	optional string playerName = 2;		// 玩家姓名
+	optional int32 contestScore = 3;	// 排名分数
+	optional int32 state = 4;			// 状态 1：淘汰，2：退出
+}
+
+// 进入比赛场
+message EnterContestSite {
+	optional int32 siteId = 1;
+}
+message EnterContestSite_ {
+	optional int32 siteId = 1;
+}
+// 退出比赛场
+message ExitContestSite {
+}
+message ExitContestSite_ {
+}
+
+// 报名
+message Apply {
+	optional int32 siteId = 1;
+}
+message Apply_ {
+	optional int32 siteId = 1;
+}
+
+// 取消报名
+message CancelApply {
+}
+message CancelApply_ {
+}
+
+// 通知比赛场更新
+message NoticeContestSite_ {
+	optional int32 siteId = 1;		
+	optional int32 playerNum = 2;				// 玩家数量
+}
+
+// 通知比赛更新
+message NoticeContest_ {
+	optional int32 contestId = 1;				// 比赛id
+	optional int32 baseScore = 2;				// 底分
+	repeated _ContestRank contestRank = 3;		// 排名
+}

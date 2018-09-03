@@ -1,0 +1,7 @@
+{"effTyep":0,"effValue":0,"effectNum":0,"id":2001,"limit":99,"quality":0,"type":2,"useNum":0,"useType":0}
+{"effTyep":0,"effValue":0,"effectNum":4,"id":4001,"limit":99,"quality":0,"type":4,"useNum":4,"useType":1}
+{"effTyep":1,"effValue":1,"effectNum":0,"id":4002,"limit":1,"quality":0,"type":4,"useNum":0,"useType":0}
+{"effTyep":2,"effValue":15,"effectNum":0,"id":4003,"limit":1,"quality":0,"type":4,"useNum":0,"useType":0}
+{"effTyep":0,"effValue":0,"effectNum":5,"id":4004,"limit":99,"quality":0,"type":4,"useNum":5,"useType":1}
+{"effTyep":0,"effValue":0,"effectNum":0,"id":5001,"limit":99,"quality":0,"type":5,"useNum":0,"useType":0}
+{"effTyep":0,"effValue":0,"effectItem":{"count":300,"sysId":0,"type":1},"effectNum":0,"id":6001,"limit":99,"quality":0,"type":6,"useItem":{"$ref":"$.effectItem"},"useNum":0,"useType":2}

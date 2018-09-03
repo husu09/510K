@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.su</groupId>
+  <artifactId>game-all</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>game-client</module>
+  	<module>game-common</module>
+  	<module>game-proto</module>
+  	<module>game-core</module>
+  	<module>game-data</module>
+  	<module>game-server</module>
+  	<module>game-excel</module>
+  	<module>game-play</module>
+  	<module>game-console</module>
+  	<module>game-example</module>
+  </modules>
+</project>

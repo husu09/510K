@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+option optimize_for = SPEED;
+option java_package = "com.su.msg";
+option java_outer_classname = "BagMsg";
+
+// 物品格子
+message _Grid {
+	optional int32 index = 1;		// 索引
+	optional int32 type = 2;		// 类型
+	optional int32 sysId = 3;		// 系统id
+	optional int32 count = 4;		// 数量
+	optional int64 effType = 5;		// 有效类型
+	optional int64 effValue = 6;	// 有效值
+}
+// 使用道具
+message UseItem {
+	optional int32 index = 1;		// 索引
+	optional int32 useCount = 2;	// 使用数量
+}
+message UseItem_ {
+
+}
+// 删除通知（前端需要同步更改后续索引）
+message DeleteItem_ {
+	repeated int32 index = 1;		// 索引
+}
+// 更新通知
+message UpdateItem_ {
+	repeated _Grid grid = 1;
+}

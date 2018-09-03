@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+option optimize_for = SPEED;
+option java_package = "com.su.msg";
+option java_outer_classname = "LoginMsg";
+
+import "Player.proto";
+import "Bag.proto";
+
+// 登录
+message Login{
+	optional string account = 1;	// 账号
+	optional string name = 2;		// 名称
+}
+message Login_{
+	optional _Player player = 1;	// 玩家数据
+	repeated _Grid grid = 2;		// 背包数据
+}
+

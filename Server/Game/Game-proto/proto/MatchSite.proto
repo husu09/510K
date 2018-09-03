@@ -1,0 +1,33 @@
+syntax = "proto2";
+
+option optimize_for = SPEED;
+option java_package = "com.su.msg";
+option java_outer_classname = "MatchSiteMsg";
+
+message _MatchSite {
+	optional int32 siteId = 1;			
+	optional int32 playerNum = 2;	// 人数
+}
+
+// 匹配
+message Match {
+	optional int32 siteId = 1;	
+}
+message Match_ {
+	optional int32 siteId = 1;
+}
+
+// 取消匹配
+message CancelMatch {
+}
+message CancelMatch_ {
+}
+
+// 获取匹配场信息
+message GetMatchSite {
+	optional int32 siteType = 1;		// 类型 1：经典、2：排位
+}
+message GetMatchSite_ {
+	repeated _MatchSite matchSite = 1;
+}
+

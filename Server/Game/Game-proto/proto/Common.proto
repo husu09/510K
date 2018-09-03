@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+option optimize_for = SPEED;
+option java_package = "com.su.msg";
+option java_outer_classname = "CommonMsg";
+
+// 错误提示
+message Error_{
+ 	optional int32 errorCode = 1;
+ 	repeated string parameters  = 2;
+}
+// 测试命令
+message CMD {
+	optional int32 cmd = 1;
+	optional int32 type = 2;
+	optional int32 sysId = 3;
+	optional int32 count = 4;
+}
+
+
