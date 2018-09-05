@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+option java_package = "com.su.msg";
+
+// 错误提示
+message ErrorMsg {
+ 	optional int32 errorCode = 1;
+ 	repeated string parameters  = 2;
+}
+// 测试命令
+message CMD {
+	optional int32 cmd = 1;
+	optional int32 type = 2;
+	optional int32 sysId = 3;
+	optional int32 count = 4;
+}
+
+

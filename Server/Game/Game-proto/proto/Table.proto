@@ -1,15 +1,13 @@
 syntax = "proto2";
 
-option optimize_for = SPEED;
 option java_package = "com.su.msg";
-option java_outer_classname = "TableMsg";
 
-message _Card {
+message CardMsg {
 	 optional int32 value = 1;	// 牌面
 	 optional int32 suit = 2;	// 花色（1：方块，2：梅花，3：红桃，4：黑桃）
 }
 
-message _GamePlayer {
+message GamePlayerMsg {
 	optional int64 id = 1[default = -1];				// 玩家id
 	repeated _Card handCard = 2;						// 玩家手牌
 	optional int32 cardNum = 3[default = -1];			// 手牌数量
@@ -24,7 +22,7 @@ message _GamePlayer {
 }
 
 
-message _Table {
+message MTable {
 	repeated _GamePlayer player = 1;				// 玩家
 	repeated int32 multiple = 2;					// 公共倍数
 	optional int32 state = 3[default = -1];			// 牌桌状态（1：加倍，2：叫牌，3：出牌，4：结算）
@@ -45,7 +43,7 @@ message Call {
 	optional int32 callType = 1;	// 叫牌状态（1：叫牌，2：暗叫，3：明叫）
 	optional int32 cardIndex = 2;	// 出牌索引
 }
-message Call_ {
+message ToCall {
 	
 }
 
@@ -54,14 +52,14 @@ message Draw {
 	optional int32 cardType = 1;	// 牌型
 	repeated int32 cardIndexs = 2;	// 出牌索引
 }
-message Draw_{
+message ToDraw{
 	
 }
 // 过牌
 message Check {
 
 }
-message Check_ {
+message ToCheck {
 	
 }
 // 准备

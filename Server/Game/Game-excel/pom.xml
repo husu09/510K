@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.su</groupId>
-		<artifactId>game-all</artifactId>
+		<artifactId>game</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>game-excel</artifactId>

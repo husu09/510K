@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+option java_package = "com.su.msg";
+
+import "PlayerMsg.proto";
+import "BagMsg.proto";
+
+// 登录
+message Login{
+	optional string account = 1;	// 账号
+	optional string name = 2;		// 名称
+}
+message _Login{
+	optional _Player player = 1;	// 玩家数据
+	repeated _Grid grid = 2;		// 背包数据
+}
+
