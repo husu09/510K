@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 
 import com.su.core.context.PlayerContext;
-import com.su.msg.LoginMsg.Login_;
+import com.su.msg.LoginMsg.TLogin;
 
 @Component
 public class GameEventDispatcher implements GameEvent {
@@ -39,7 +39,7 @@ public class GameEventDispatcher implements GameEvent {
 	}
 
 	@Override
-	public void login(PlayerContext playerContext, Login_.Builder builder) {
+	public void login(PlayerContext playerContext, TLogin.Builder builder) {
 		for (GameEvent gameEvent : gameEventHandlers)
 			gameEvent.login(playerContext, builder);
 	}

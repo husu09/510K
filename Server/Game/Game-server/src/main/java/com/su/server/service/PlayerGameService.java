@@ -12,7 +12,7 @@ import com.su.config.RankingCo;
 import com.su.core.game.TableResult;
 import com.su.core.game.enums.SiteType;
 import com.su.excel.mapper.RankingConf;
-import com.su.msg.TableMsg._GamePlayerResult;
+import com.su.msg.TableMsg.MGamePlayerResult;
 
 @Service
 public class PlayerGameService {
@@ -29,7 +29,7 @@ public class PlayerGameService {
 	/**
 	 * 牌局结束处理
 	 */
-	public _GamePlayerResult doTableResult(TableResult tableResult) {
+	public MGamePlayerResult doTableResult(TableResult tableResult) {
 		// 比赛模式不处理
 		if (tableResult.getSiteCo().getSiteType() != SiteType.CLASSIC.getValue()
 				&& tableResult.getSiteCo().getSiteType() == SiteType.RANKING.getValue())
@@ -37,7 +37,7 @@ public class PlayerGameService {
 
 		Player player = playerService.getPlayerById(tableResult.getPlayerContext().getPlayerId());
 		PlayerDetail playerDetail = playerService.getPlayerDetail(player.getId());
-		_GamePlayerResult.Builder builder = _GamePlayerResult.newBuilder();
+		MGamePlayerResult.Builder builder = MGamePlayerResult.newBuilder();
 
 		if (tableResult.isWin()) {
 			// 胜利

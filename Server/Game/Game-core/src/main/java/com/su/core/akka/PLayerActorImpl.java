@@ -13,9 +13,9 @@ import com.su.core.event.GameEventDispatcher;
 import com.su.core.game.TableResult;
 import com.su.core.game.service.BridgeService;
 import com.su.core.netty.NettyServerHandler;
-import com.su.msg.LoginMsg.Login_;
-import com.su.msg.PlayerMsg.UpdatePlayer_;
-import com.su.msg.TableMsg._GamePlayerResult;
+import com.su.msg.LoginMsg.TLogin;
+import com.su.msg.PlayerMsg.NUpdatePlayer;
+import com.su.msg.TableMsg.MGamePlayerResult;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.util.Attribute;
@@ -59,7 +59,7 @@ public class PLayerActorImpl implements PlayerActor {
 			}
 			// 玩家数据更新通知
 			if (playerContext.isNotice())
-				playerContext.write(UpdatePlayer_.newBuilder().setPlayer(playerContext.getBuilder()));
+				playerContext.write(NUpdatePlayer.newBuilder().setPlayer(playerContext.getBuilder()));
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -81,12 +81,12 @@ public class PLayerActorImpl implements PlayerActor {
 	}
 
 	@Override
-	public void login(PlayerContext playerContext, Login_.Builder builder) {
+	public void login(PlayerContext playerContext, TLogin.Builder builder) {
 		gameEventDispatcher.login(playerContext, builder);
 	}
 
 	@Override
-	public _GamePlayerResult doTableResult(TableResult tableResult) {
+	public MGamePlayerResult doTableResult(TableResult tableResult) {
 		return bridgeService.doTableResult(tableResult);
 	}
 

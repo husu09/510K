@@ -4,8 +4,8 @@ import com.google.protobuf.MessageLite;
 import com.su.common.po.Player;
 import com.su.core.context.PlayerContext;
 import com.su.core.game.TableResult;
-import com.su.msg.LoginMsg.Login_;
-import com.su.msg.TableMsg._GamePlayerResult;
+import com.su.msg.LoginMsg.TLogin;
+import com.su.msg.TableMsg.MGamePlayerResult;
 
 import io.netty.channel.ChannelHandlerContext;
 
@@ -24,7 +24,7 @@ public interface PlayerActor {
 	/**
 	 * 登陆
 	 * */
-	public void login(PlayerContext playerContext, Login_.Builder builder);
+	public void login(PlayerContext playerContext, TLogin.Builder builder);
 	
 	/**
 	 * 检测刷新
@@ -34,7 +34,7 @@ public interface PlayerActor {
 	/**
 	 * 处理牌局结果
 	 * */
-	public _GamePlayerResult doTableResult(TableResult tableResult);
+	public MGamePlayerResult doTableResult(TableResult tableResult);
 	
 	/**
 	 * 处理比赛结束

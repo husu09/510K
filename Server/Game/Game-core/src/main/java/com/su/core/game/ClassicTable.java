@@ -1,7 +1,7 @@
 package com.su.core.game;
 
 import com.su.core.game.enums.Team;
-import com.su.msg.TableMsg.TableResult_;
+import com.su.msg.TableMsg.NTableResult;
 
 /**
  * 经典牌桌
@@ -13,7 +13,7 @@ public class ClassicTable extends MatchTable {
 	}
 	
 	@Override
-	public void doSettlement(TableResult_.Builder builder, Team winTeam, int redMultiple, int blueMultiple) {
+	public void doSettlement(NTableResult.Builder builder, Team winTeam, int redMultiple, int blueMultiple) {
 		builder.setBaseScore(this.matchSite.getSiteCo().getBaseScore());
 		for (GamePlayer otherPlayer : this.players) {
 			TableResult tableResult = new TableResult();
@@ -31,4 +31,5 @@ public class ClassicTable extends MatchTable {
 			builder.addPlayerResult(otherPlayer.getPlayerContext().getActor().doTableResult(tableResult));
 		}
 	}
+
 }

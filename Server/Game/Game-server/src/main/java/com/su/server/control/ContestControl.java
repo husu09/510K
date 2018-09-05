@@ -9,12 +9,11 @@ import com.su.core.action.Action;
 import com.su.core.context.PlayerContext;
 import com.su.core.game.ContestSite;
 import com.su.msg.ContestMsg.Apply;
-import com.su.msg.ContestMsg.Apply_;
 import com.su.msg.ContestMsg.CancelApply;
 import com.su.msg.ContestMsg.EnterContestSite;
-import com.su.msg.ContestMsg.EnterContestSite_;
 import com.su.msg.ContestMsg.ExitContestSite;
-import com.su.msg.ContestMsg.ExitContestSite_;
+import com.su.msg.ContestMsg.TApply;
+import com.su.msg.ContestMsg.TEnterContestSite;
 import com.su.server.service.ContestSiteService;
 
 @Controller
@@ -34,7 +33,7 @@ public class ContestControl {
 			return;
 		}
 		contestService.addToNoticeMap(contestSite.getContestCo().getId(), playerContext);
-		playerContext.write(EnterContestSite_.getDefaultInstance());
+		playerContext.write(TEnterContestSite.getDefaultInstance());
 	}
 
 	/**
@@ -66,7 +65,7 @@ public class ContestControl {
 			contestService.noticePlayerBySite(contestSite.getContestCo().getId(),
 					contestService.serialize(contestSite));
 		}
-		playerContext.write(Apply_.getDefaultInstance());
+		playerContext.write(TApply.getDefaultInstance());
 	}
 	
 	/**

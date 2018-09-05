@@ -1,8 +1,8 @@
 package com.su.core.game;
 
 import com.su.core.game.enums.PlayerState;
-import com.su.msg.MatchSiteMsg.Match_;
-import com.su.msg.TableMsg.Quit_;
+import com.su.msg.MatchSiteMsg.TMatch;
+import com.su.msg.TableMsg.TQuit;
 
 /**
  * 可匹配的牌桌
@@ -22,9 +22,9 @@ public abstract class MatchTable extends Table {
 		for (GamePlayer otherPlayer : this.players) {
 			if (otherPlayer.getState() == PlayerState.READY) {
 				matchSite.addPlayerToMatch(otherPlayer.getPlayerContext(), true);
-				otherPlayer.getPlayerContext().write(Match_.newBuilder());
+				otherPlayer.getPlayerContext().write(TMatch.newBuilder());
 			} else {
-				otherPlayer.getPlayerContext().write(Quit_.newBuilder());
+				otherPlayer.getPlayerContext().write(TQuit.newBuilder());
 			}
 			otherPlayer.clean();
 		}

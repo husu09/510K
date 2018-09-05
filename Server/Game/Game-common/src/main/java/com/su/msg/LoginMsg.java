@@ -827,8 +827,8 @@ public final class LoginMsg {
 
   }
 
-  public interface Login_OrBuilder extends
-      // @@protoc_insertion_point(interface_extends:Login_)
+  public interface TLoginOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:TLogin)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -836,7 +836,7 @@ public final class LoginMsg {
      * 玩家数据
      * </pre>
      *
-     * <code>optional ._Player player = 1;</code>
+     * <code>optional .MPlayer player = 1;</code>
      */
     boolean hasPlayer();
     /**
@@ -844,41 +844,41 @@ public final class LoginMsg {
      * 玩家数据
      * </pre>
      *
-     * <code>optional ._Player player = 1;</code>
+     * <code>optional .MPlayer player = 1;</code>
      */
-    com.su.msg.PlayerMsg._Player getPlayer();
+    com.su.msg.PlayerMsg.MPlayer getPlayer();
     /**
      * <pre>
      * 玩家数据
      * </pre>
      *
-     * <code>optional ._Player player = 1;</code>
+     * <code>optional .MPlayer player = 1;</code>
      */
-    com.su.msg.PlayerMsg._PlayerOrBuilder getPlayerOrBuilder();
+    com.su.msg.PlayerMsg.MPlayerOrBuilder getPlayerOrBuilder();
 
     /**
      * <pre>
      * 背包数据
      * </pre>
      *
-     * <code>repeated ._Grid grid = 2;</code>
+     * <code>repeated .MGrid grid = 2;</code>
      */
-    java.util.List<com.su.msg.BagMsg._Grid> 
+    java.util.List<com.su.msg.BagMsg.MGrid> 
         getGridList();
     /**
      * <pre>
      * 背包数据
      * </pre>
      *
-     * <code>repeated ._Grid grid = 2;</code>
+     * <code>repeated .MGrid grid = 2;</code>
      */
-    com.su.msg.BagMsg._Grid getGrid(int index);
+    com.su.msg.BagMsg.MGrid getGrid(int index);
     /**
      * <pre>
      * 背包数据
      * </pre>
      *
-     * <code>repeated ._Grid grid = 2;</code>
+     * <code>repeated .MGrid grid = 2;</code>
      */
     int getGridCount();
     /**
@@ -886,32 +886,32 @@ public final class LoginMsg {
      * 背包数据
      * </pre>
      *
-     * <code>repeated ._Grid grid = 2;</code>
+     * <code>repeated .MGrid grid = 2;</code>
      */
-    java.util.List<? extends com.su.msg.BagMsg._GridOrBuilder> 
+    java.util.List<? extends com.su.msg.BagMsg.MGridOrBuilder> 
         getGridOrBuilderList();
     /**
      * <pre>
      * 背包数据
      * </pre>
      *
-     * <code>repeated ._Grid grid = 2;</code>
+     * <code>repeated .MGrid grid = 2;</code>
      */
-    com.su.msg.BagMsg._GridOrBuilder getGridOrBuilder(
+    com.su.msg.BagMsg.MGridOrBuilder getGridOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code Login_}
+   * Protobuf type {@code TLogin}
    */
-  public  static final class Login_ extends
+  public  static final class TLogin extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:Login_)
-      Login_OrBuilder {
-    // Use Login_.newBuilder() to construct.
-    private Login_(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:TLogin)
+      TLoginOrBuilder {
+    // Use TLogin.newBuilder() to construct.
+    private TLogin(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Login_() {
+    private TLogin() {
       grid_ = java.util.Collections.emptyList();
     }
 
@@ -920,7 +920,7 @@ public final class LoginMsg {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private Login_(
+    private TLogin(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -944,11 +944,11 @@ public final class LoginMsg {
               break;
             }
             case 10: {
-              com.su.msg.PlayerMsg._Player.Builder subBuilder = null;
+              com.su.msg.PlayerMsg.MPlayer.Builder subBuilder = null;
               if (((bitField0_ & 0x00000001) == 0x00000001)) {
                 subBuilder = player_.toBuilder();
               }
-              player_ = input.readMessage(com.su.msg.PlayerMsg._Player.PARSER, extensionRegistry);
+              player_ = input.readMessage(com.su.msg.PlayerMsg.MPlayer.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(player_);
                 player_ = subBuilder.buildPartial();
@@ -958,11 +958,11 @@ public final class LoginMsg {
             }
             case 18: {
               if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-                grid_ = new java.util.ArrayList<com.su.msg.BagMsg._Grid>();
+                grid_ = new java.util.ArrayList<com.su.msg.BagMsg.MGrid>();
                 mutable_bitField0_ |= 0x00000002;
               }
               grid_.add(
-                  input.readMessage(com.su.msg.BagMsg._Grid.PARSER, extensionRegistry));
+                  input.readMessage(com.su.msg.BagMsg.MGrid.PARSER, extensionRegistry));
               break;
             }
           }
@@ -982,25 +982,25 @@ public final class LoginMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.LoginMsg.internal_static_Login__descriptor;
+      return com.su.msg.LoginMsg.internal_static_TLogin_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.LoginMsg.internal_static_Login__fieldAccessorTable
+      return com.su.msg.LoginMsg.internal_static_TLogin_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.su.msg.LoginMsg.Login_.class, com.su.msg.LoginMsg.Login_.Builder.class);
+              com.su.msg.LoginMsg.TLogin.class, com.su.msg.LoginMsg.TLogin.Builder.class);
     }
 
     private int bitField0_;
     public static final int PLAYER_FIELD_NUMBER = 1;
-    private com.su.msg.PlayerMsg._Player player_;
+    private com.su.msg.PlayerMsg.MPlayer player_;
     /**
      * <pre>
      * 玩家数据
      * </pre>
      *
-     * <code>optional ._Player player = 1;</code>
+     * <code>optional .MPlayer player = 1;</code>
      */
     public boolean hasPlayer() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -1010,32 +1010,32 @@ public final class LoginMsg {
      * 玩家数据
      * </pre>
      *
-     * <code>optional ._Player player = 1;</code>
+     * <code>optional .MPlayer player = 1;</code>
      */
-    public com.su.msg.PlayerMsg._Player getPlayer() {
-      return player_ == null ? com.su.msg.PlayerMsg._Player.getDefaultInstance() : player_;
+    public com.su.msg.PlayerMsg.MPlayer getPlayer() {
+      return player_ == null ? com.su.msg.PlayerMsg.MPlayer.getDefaultInstance() : player_;
     }
     /**
      * <pre>
      * 玩家数据
      * </pre>
      *
-     * <code>optional ._Player player = 1;</code>
+     * <code>optional .MPlayer player = 1;</code>
      */
-    public com.su.msg.PlayerMsg._PlayerOrBuilder getPlayerOrBuilder() {
-      return player_ == null ? com.su.msg.PlayerMsg._Player.getDefaultInstance() : player_;
+    public com.su.msg.PlayerMsg.MPlayerOrBuilder getPlayerOrBuilder() {
+      return player_ == null ? com.su.msg.PlayerMsg.MPlayer.getDefaultInstance() : player_;
     }
 
     public static final int GRID_FIELD_NUMBER = 2;
-    private java.util.List<com.su.msg.BagMsg._Grid> grid_;
+    private java.util.List<com.su.msg.BagMsg.MGrid> grid_;
     /**
      * <pre>
      * 背包数据
      * </pre>
      *
-     * <code>repeated ._Grid grid = 2;</code>
+     * <code>repeated .MGrid grid = 2;</code>
      */
-    public java.util.List<com.su.msg.BagMsg._Grid> getGridList() {
+    public java.util.List<com.su.msg.BagMsg.MGrid> getGridList() {
       return grid_;
     }
     /**
@@ -1043,9 +1043,9 @@ public final class LoginMsg {
      * 背包数据
      * </pre>
      *
-     * <code>repeated ._Grid grid = 2;</code>
+     * <code>repeated .MGrid grid = 2;</code>
      */
-    public java.util.List<? extends com.su.msg.BagMsg._GridOrBuilder> 
+    public java.util.List<? extends com.su.msg.BagMsg.MGridOrBuilder> 
         getGridOrBuilderList() {
       return grid_;
     }
@@ -1054,7 +1054,7 @@ public final class LoginMsg {
      * 背包数据
      * </pre>
      *
-     * <code>repeated ._Grid grid = 2;</code>
+     * <code>repeated .MGrid grid = 2;</code>
      */
     public int getGridCount() {
       return grid_.size();
@@ -1064,9 +1064,9 @@ public final class LoginMsg {
      * 背包数据
      * </pre>
      *
-     * <code>repeated ._Grid grid = 2;</code>
+     * <code>repeated .MGrid grid = 2;</code>
      */
-    public com.su.msg.BagMsg._Grid getGrid(int index) {
+    public com.su.msg.BagMsg.MGrid getGrid(int index) {
       return grid_.get(index);
     }
     /**
@@ -1074,9 +1074,9 @@ public final class LoginMsg {
      * 背包数据
      * </pre>
      *
-     * <code>repeated ._Grid grid = 2;</code>
+     * <code>repeated .MGrid grid = 2;</code>
      */
-    public com.su.msg.BagMsg._GridOrBuilder getGridOrBuilder(
+    public com.su.msg.BagMsg.MGridOrBuilder getGridOrBuilder(
         int index) {
       return grid_.get(index);
     }
@@ -1126,10 +1126,10 @@ public final class LoginMsg {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.su.msg.LoginMsg.Login_)) {
+      if (!(obj instanceof com.su.msg.LoginMsg.TLogin)) {
         return super.equals(obj);
       }
-      com.su.msg.LoginMsg.Login_ other = (com.su.msg.LoginMsg.Login_) obj;
+      com.su.msg.LoginMsg.TLogin other = (com.su.msg.LoginMsg.TLogin) obj;
 
       boolean result = true;
       result = result && (hasPlayer() == other.hasPlayer());
@@ -1163,58 +1163,58 @@ public final class LoginMsg {
       return hash;
     }
 
-    public static com.su.msg.LoginMsg.Login_ parseFrom(
+    public static com.su.msg.LoginMsg.TLogin parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.LoginMsg.Login_ parseFrom(
+    public static com.su.msg.LoginMsg.TLogin parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.LoginMsg.Login_ parseFrom(byte[] data)
+    public static com.su.msg.LoginMsg.TLogin parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.LoginMsg.Login_ parseFrom(
+    public static com.su.msg.LoginMsg.TLogin parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.LoginMsg.Login_ parseFrom(java.io.InputStream input)
+    public static com.su.msg.LoginMsg.TLogin parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.LoginMsg.Login_ parseFrom(
+    public static com.su.msg.LoginMsg.TLogin parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.LoginMsg.Login_ parseDelimitedFrom(java.io.InputStream input)
+    public static com.su.msg.LoginMsg.TLogin parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.su.msg.LoginMsg.Login_ parseDelimitedFrom(
+    public static com.su.msg.LoginMsg.TLogin parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.LoginMsg.Login_ parseFrom(
+    public static com.su.msg.LoginMsg.TLogin parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.LoginMsg.Login_ parseFrom(
+    public static com.su.msg.LoginMsg.TLogin parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1226,7 +1226,7 @@ public final class LoginMsg {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.su.msg.LoginMsg.Login_ prototype) {
+    public static Builder newBuilder(com.su.msg.LoginMsg.TLogin prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -1241,25 +1241,25 @@ public final class LoginMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code Login_}
+     * Protobuf type {@code TLogin}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:Login_)
-        com.su.msg.LoginMsg.Login_OrBuilder {
+        // @@protoc_insertion_point(builder_implements:TLogin)
+        com.su.msg.LoginMsg.TLoginOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.LoginMsg.internal_static_Login__descriptor;
+        return com.su.msg.LoginMsg.internal_static_TLogin_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.LoginMsg.internal_static_Login__fieldAccessorTable
+        return com.su.msg.LoginMsg.internal_static_TLogin_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.su.msg.LoginMsg.Login_.class, com.su.msg.LoginMsg.Login_.Builder.class);
+                com.su.msg.LoginMsg.TLogin.class, com.su.msg.LoginMsg.TLogin.Builder.class);
       }
 
-      // Construct using com.su.msg.LoginMsg.Login_.newBuilder()
+      // Construct using com.su.msg.LoginMsg.TLogin.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1295,23 +1295,23 @@ public final class LoginMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.LoginMsg.internal_static_Login__descriptor;
+        return com.su.msg.LoginMsg.internal_static_TLogin_descriptor;
       }
 
-      public com.su.msg.LoginMsg.Login_ getDefaultInstanceForType() {
-        return com.su.msg.LoginMsg.Login_.getDefaultInstance();
+      public com.su.msg.LoginMsg.TLogin getDefaultInstanceForType() {
+        return com.su.msg.LoginMsg.TLogin.getDefaultInstance();
       }
 
-      public com.su.msg.LoginMsg.Login_ build() {
-        com.su.msg.LoginMsg.Login_ result = buildPartial();
+      public com.su.msg.LoginMsg.TLogin build() {
+        com.su.msg.LoginMsg.TLogin result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.su.msg.LoginMsg.Login_ buildPartial() {
-        com.su.msg.LoginMsg.Login_ result = new com.su.msg.LoginMsg.Login_(this);
+      public com.su.msg.LoginMsg.TLogin buildPartial() {
+        com.su.msg.LoginMsg.TLogin result = new com.su.msg.LoginMsg.TLogin(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1363,16 +1363,16 @@ public final class LoginMsg {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.su.msg.LoginMsg.Login_) {
-          return mergeFrom((com.su.msg.LoginMsg.Login_)other);
+        if (other instanceof com.su.msg.LoginMsg.TLogin) {
+          return mergeFrom((com.su.msg.LoginMsg.TLogin)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.su.msg.LoginMsg.Login_ other) {
-        if (other == com.su.msg.LoginMsg.Login_.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.su.msg.LoginMsg.TLogin other) {
+        if (other == com.su.msg.LoginMsg.TLogin.getDefaultInstance()) return this;
         if (other.hasPlayer()) {
           mergePlayer(other.getPlayer());
         }
@@ -1415,11 +1415,11 @@ public final class LoginMsg {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.su.msg.LoginMsg.Login_ parsedMessage = null;
+        com.su.msg.LoginMsg.TLogin parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.su.msg.LoginMsg.Login_) e.getUnfinishedMessage();
+          parsedMessage = (com.su.msg.LoginMsg.TLogin) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1430,15 +1430,15 @@ public final class LoginMsg {
       }
       private int bitField0_;
 
-      private com.su.msg.PlayerMsg._Player player_ = null;
+      private com.su.msg.PlayerMsg.MPlayer player_ = null;
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.su.msg.PlayerMsg._Player, com.su.msg.PlayerMsg._Player.Builder, com.su.msg.PlayerMsg._PlayerOrBuilder> playerBuilder_;
+          com.su.msg.PlayerMsg.MPlayer, com.su.msg.PlayerMsg.MPlayer.Builder, com.su.msg.PlayerMsg.MPlayerOrBuilder> playerBuilder_;
       /**
        * <pre>
        * 玩家数据
        * </pre>
        *
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
       public boolean hasPlayer() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -1448,11 +1448,11 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
-      public com.su.msg.PlayerMsg._Player getPlayer() {
+      public com.su.msg.PlayerMsg.MPlayer getPlayer() {
         if (playerBuilder_ == null) {
-          return player_ == null ? com.su.msg.PlayerMsg._Player.getDefaultInstance() : player_;
+          return player_ == null ? com.su.msg.PlayerMsg.MPlayer.getDefaultInstance() : player_;
         } else {
           return playerBuilder_.getMessage();
         }
@@ -1462,9 +1462,9 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
-      public Builder setPlayer(com.su.msg.PlayerMsg._Player value) {
+      public Builder setPlayer(com.su.msg.PlayerMsg.MPlayer value) {
         if (playerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1482,10 +1482,10 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
       public Builder setPlayer(
-          com.su.msg.PlayerMsg._Player.Builder builderForValue) {
+          com.su.msg.PlayerMsg.MPlayer.Builder builderForValue) {
         if (playerBuilder_ == null) {
           player_ = builderForValue.build();
           onChanged();
@@ -1500,15 +1500,15 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
-      public Builder mergePlayer(com.su.msg.PlayerMsg._Player value) {
+      public Builder mergePlayer(com.su.msg.PlayerMsg.MPlayer value) {
         if (playerBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
               player_ != null &&
-              player_ != com.su.msg.PlayerMsg._Player.getDefaultInstance()) {
+              player_ != com.su.msg.PlayerMsg.MPlayer.getDefaultInstance()) {
             player_ =
-              com.su.msg.PlayerMsg._Player.newBuilder(player_).mergeFrom(value).buildPartial();
+              com.su.msg.PlayerMsg.MPlayer.newBuilder(player_).mergeFrom(value).buildPartial();
           } else {
             player_ = value;
           }
@@ -1524,7 +1524,7 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
       public Builder clearPlayer() {
         if (playerBuilder_ == null) {
@@ -1541,9 +1541,9 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
-      public com.su.msg.PlayerMsg._Player.Builder getPlayerBuilder() {
+      public com.su.msg.PlayerMsg.MPlayer.Builder getPlayerBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getPlayerFieldBuilder().getBuilder();
@@ -1553,14 +1553,14 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
-      public com.su.msg.PlayerMsg._PlayerOrBuilder getPlayerOrBuilder() {
+      public com.su.msg.PlayerMsg.MPlayerOrBuilder getPlayerOrBuilder() {
         if (playerBuilder_ != null) {
           return playerBuilder_.getMessageOrBuilder();
         } else {
           return player_ == null ?
-              com.su.msg.PlayerMsg._Player.getDefaultInstance() : player_;
+              com.su.msg.PlayerMsg.MPlayer.getDefaultInstance() : player_;
         }
       }
       /**
@@ -1568,14 +1568,14 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.su.msg.PlayerMsg._Player, com.su.msg.PlayerMsg._Player.Builder, com.su.msg.PlayerMsg._PlayerOrBuilder> 
+          com.su.msg.PlayerMsg.MPlayer, com.su.msg.PlayerMsg.MPlayer.Builder, com.su.msg.PlayerMsg.MPlayerOrBuilder> 
           getPlayerFieldBuilder() {
         if (playerBuilder_ == null) {
           playerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.su.msg.PlayerMsg._Player, com.su.msg.PlayerMsg._Player.Builder, com.su.msg.PlayerMsg._PlayerOrBuilder>(
+              com.su.msg.PlayerMsg.MPlayer, com.su.msg.PlayerMsg.MPlayer.Builder, com.su.msg.PlayerMsg.MPlayerOrBuilder>(
                   getPlayer(),
                   getParentForChildren(),
                   isClean());
@@ -1584,26 +1584,26 @@ public final class LoginMsg {
         return playerBuilder_;
       }
 
-      private java.util.List<com.su.msg.BagMsg._Grid> grid_ =
+      private java.util.List<com.su.msg.BagMsg.MGrid> grid_ =
         java.util.Collections.emptyList();
       private void ensureGridIsMutable() {
         if (!((bitField0_ & 0x00000002) == 0x00000002)) {
-          grid_ = new java.util.ArrayList<com.su.msg.BagMsg._Grid>(grid_);
+          grid_ = new java.util.ArrayList<com.su.msg.BagMsg.MGrid>(grid_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.su.msg.BagMsg._Grid, com.su.msg.BagMsg._Grid.Builder, com.su.msg.BagMsg._GridOrBuilder> gridBuilder_;
+          com.su.msg.BagMsg.MGrid, com.su.msg.BagMsg.MGrid.Builder, com.su.msg.BagMsg.MGridOrBuilder> gridBuilder_;
 
       /**
        * <pre>
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
-      public java.util.List<com.su.msg.BagMsg._Grid> getGridList() {
+      public java.util.List<com.su.msg.BagMsg.MGrid> getGridList() {
         if (gridBuilder_ == null) {
           return java.util.Collections.unmodifiableList(grid_);
         } else {
@@ -1615,7 +1615,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
       public int getGridCount() {
         if (gridBuilder_ == null) {
@@ -1629,9 +1629,9 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
-      public com.su.msg.BagMsg._Grid getGrid(int index) {
+      public com.su.msg.BagMsg.MGrid getGrid(int index) {
         if (gridBuilder_ == null) {
           return grid_.get(index);
         } else {
@@ -1643,10 +1643,10 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
       public Builder setGrid(
-          int index, com.su.msg.BagMsg._Grid value) {
+          int index, com.su.msg.BagMsg.MGrid value) {
         if (gridBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1664,10 +1664,10 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
       public Builder setGrid(
-          int index, com.su.msg.BagMsg._Grid.Builder builderForValue) {
+          int index, com.su.msg.BagMsg.MGrid.Builder builderForValue) {
         if (gridBuilder_ == null) {
           ensureGridIsMutable();
           grid_.set(index, builderForValue.build());
@@ -1682,9 +1682,9 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
-      public Builder addGrid(com.su.msg.BagMsg._Grid value) {
+      public Builder addGrid(com.su.msg.BagMsg.MGrid value) {
         if (gridBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1702,10 +1702,10 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
       public Builder addGrid(
-          int index, com.su.msg.BagMsg._Grid value) {
+          int index, com.su.msg.BagMsg.MGrid value) {
         if (gridBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1723,10 +1723,10 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
       public Builder addGrid(
-          com.su.msg.BagMsg._Grid.Builder builderForValue) {
+          com.su.msg.BagMsg.MGrid.Builder builderForValue) {
         if (gridBuilder_ == null) {
           ensureGridIsMutable();
           grid_.add(builderForValue.build());
@@ -1741,10 +1741,10 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
       public Builder addGrid(
-          int index, com.su.msg.BagMsg._Grid.Builder builderForValue) {
+          int index, com.su.msg.BagMsg.MGrid.Builder builderForValue) {
         if (gridBuilder_ == null) {
           ensureGridIsMutable();
           grid_.add(index, builderForValue.build());
@@ -1759,10 +1759,10 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
       public Builder addAllGrid(
-          java.lang.Iterable<? extends com.su.msg.BagMsg._Grid> values) {
+          java.lang.Iterable<? extends com.su.msg.BagMsg.MGrid> values) {
         if (gridBuilder_ == null) {
           ensureGridIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1778,7 +1778,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
       public Builder clearGrid() {
         if (gridBuilder_ == null) {
@@ -1795,7 +1795,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
       public Builder removeGrid(int index) {
         if (gridBuilder_ == null) {
@@ -1812,9 +1812,9 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
-      public com.su.msg.BagMsg._Grid.Builder getGridBuilder(
+      public com.su.msg.BagMsg.MGrid.Builder getGridBuilder(
           int index) {
         return getGridFieldBuilder().getBuilder(index);
       }
@@ -1823,9 +1823,9 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
-      public com.su.msg.BagMsg._GridOrBuilder getGridOrBuilder(
+      public com.su.msg.BagMsg.MGridOrBuilder getGridOrBuilder(
           int index) {
         if (gridBuilder_ == null) {
           return grid_.get(index);  } else {
@@ -1837,9 +1837,9 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
-      public java.util.List<? extends com.su.msg.BagMsg._GridOrBuilder> 
+      public java.util.List<? extends com.su.msg.BagMsg.MGridOrBuilder> 
            getGridOrBuilderList() {
         if (gridBuilder_ != null) {
           return gridBuilder_.getMessageOrBuilderList();
@@ -1852,41 +1852,41 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
-      public com.su.msg.BagMsg._Grid.Builder addGridBuilder() {
+      public com.su.msg.BagMsg.MGrid.Builder addGridBuilder() {
         return getGridFieldBuilder().addBuilder(
-            com.su.msg.BagMsg._Grid.getDefaultInstance());
+            com.su.msg.BagMsg.MGrid.getDefaultInstance());
       }
       /**
        * <pre>
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
-      public com.su.msg.BagMsg._Grid.Builder addGridBuilder(
+      public com.su.msg.BagMsg.MGrid.Builder addGridBuilder(
           int index) {
         return getGridFieldBuilder().addBuilder(
-            index, com.su.msg.BagMsg._Grid.getDefaultInstance());
+            index, com.su.msg.BagMsg.MGrid.getDefaultInstance());
       }
       /**
        * <pre>
        * 背包数据
        * </pre>
        *
-       * <code>repeated ._Grid grid = 2;</code>
+       * <code>repeated .MGrid grid = 2;</code>
        */
-      public java.util.List<com.su.msg.BagMsg._Grid.Builder> 
+      public java.util.List<com.su.msg.BagMsg.MGrid.Builder> 
            getGridBuilderList() {
         return getGridFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.su.msg.BagMsg._Grid, com.su.msg.BagMsg._Grid.Builder, com.su.msg.BagMsg._GridOrBuilder> 
+          com.su.msg.BagMsg.MGrid, com.su.msg.BagMsg.MGrid.Builder, com.su.msg.BagMsg.MGridOrBuilder> 
           getGridFieldBuilder() {
         if (gridBuilder_ == null) {
           gridBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.su.msg.BagMsg._Grid, com.su.msg.BagMsg._Grid.Builder, com.su.msg.BagMsg._GridOrBuilder>(
+              com.su.msg.BagMsg.MGrid, com.su.msg.BagMsg.MGrid.Builder, com.su.msg.BagMsg.MGridOrBuilder>(
                   grid_,
                   ((bitField0_ & 0x00000002) == 0x00000002),
                   getParentForChildren(),
@@ -1906,39 +1906,39 @@ public final class LoginMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:Login_)
+      // @@protoc_insertion_point(builder_scope:TLogin)
     }
 
-    // @@protoc_insertion_point(class_scope:Login_)
-    private static final com.su.msg.LoginMsg.Login_ DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:TLogin)
+    private static final com.su.msg.LoginMsg.TLogin DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.su.msg.LoginMsg.Login_();
+      DEFAULT_INSTANCE = new com.su.msg.LoginMsg.TLogin();
     }
 
-    public static com.su.msg.LoginMsg.Login_ getDefaultInstance() {
+    public static com.su.msg.LoginMsg.TLogin getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<Login_>
-        PARSER = new com.google.protobuf.AbstractParser<Login_>() {
-      public Login_ parsePartialFrom(
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<TLogin>
+        PARSER = new com.google.protobuf.AbstractParser<TLogin>() {
+      public TLogin parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Login_(input, extensionRegistry);
+          return new TLogin(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<Login_> parser() {
+    public static com.google.protobuf.Parser<TLogin> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Login_> getParserForType() {
+    public com.google.protobuf.Parser<TLogin> getParserForType() {
       return PARSER;
     }
 
-    public com.su.msg.LoginMsg.Login_ getDefaultInstanceForType() {
+    public com.su.msg.LoginMsg.TLogin getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1950,10 +1950,10 @@ public final class LoginMsg {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Login_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Login__descriptor;
+    internal_static_TLogin_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_Login__fieldAccessorTable;
+      internal_static_TLogin_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1965,8 +1965,8 @@ public final class LoginMsg {
     java.lang.String[] descriptorData = {
       "\n\016LoginMsg.proto\032\017PlayerMsg.proto\032\014BagMs" +
       "g.proto\"&\n\005Login\022\017\n\007account\030\001 \001(\t\022\014\n\004nam" +
-      "e\030\002 \001(\t\"8\n\006Login_\022\030\n\006player\030\001 \001(\0132\010._Pla" +
-      "yer\022\024\n\004grid\030\002 \003(\0132\006._GridB\014\n\ncom.su.msg"
+      "e\030\002 \001(\t\"8\n\006TLogin\022\030\n\006player\030\001 \001(\0132\010.MPla" +
+      "yer\022\024\n\004grid\030\002 \003(\0132\006.MGridB\014\n\ncom.su.msg"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1988,11 +1988,11 @@ public final class LoginMsg {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Login_descriptor,
         new java.lang.String[] { "Account", "Name", });
-    internal_static_Login__descriptor =
+    internal_static_TLogin_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_Login__fieldAccessorTable = new
+    internal_static_TLogin_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_Login__descriptor,
+        internal_static_TLogin_descriptor,
         new java.lang.String[] { "Player", "Grid", });
     com.su.msg.PlayerMsg.getDescriptor();
     com.su.msg.BagMsg.getDescriptor();

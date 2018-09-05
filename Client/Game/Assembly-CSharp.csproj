@@ -61,7 +61,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Core\Client.cs" />
+    <Compile Include="Assets\Scripts\Core\IClientHandler.cs" />
+    <Compile Include="Assets\Scripts\Core\Msg.cs" />
+    <Compile Include="Assets\Scripts\Core\MsgDispatch.cs" />
+    <Compile Include="Assets\Scripts\Core\NetPacket.cs" />
+    <Compile Include="Assets\Scripts\Handler\LoginHandler.cs" />
     <Compile Include="Assets\Scripts\Proto\BagMsg.cs" />
+    <Compile Include="Assets\Scripts\Proto\CommonMsg.cs" />
+    <Compile Include="Assets\Scripts\Proto\ContestMsg.cs" />
+    <Compile Include="Assets\Scripts\Proto\LoginMsg.cs" />
+    <Compile Include="Assets\Scripts\Proto\MatchSiteMsg.cs" />
+    <Compile Include="Assets\Scripts\Proto\PlayerMsg.cs" />
+    <Compile Include="Assets\Scripts\Proto\TableMsg.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/510K/Client/Game/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

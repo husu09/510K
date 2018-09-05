@@ -5,7 +5,7 @@ import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.su.core.context.PlayerContext;
-import com.su.msg.LoginMsg.Login_;
+import com.su.msg.LoginMsg.TLogin;
 
 public class GameEventAdapter implements GameEvent {
 
@@ -33,7 +33,7 @@ public class GameEventAdapter implements GameEvent {
 	}
 
 	@Override
-	public void login(PlayerContext playerContext, Login_.Builder builder) {
+	public void login(PlayerContext playerContext, TLogin.Builder builder) {
 
 	}
 

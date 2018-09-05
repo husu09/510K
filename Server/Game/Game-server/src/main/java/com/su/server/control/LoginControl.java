@@ -12,7 +12,7 @@ import com.su.core.context.GameContext;
 import com.su.core.context.PlayerContext;
 import com.su.core.event.GameEventDispatcher;
 import com.su.msg.LoginMsg.Login;
-import com.su.msg.LoginMsg.Login_;
+import com.su.msg.LoginMsg.TLogin;
 import com.su.server.service.LoginService;
 import com.su.server.service.PlayerService;
 
@@ -66,7 +66,7 @@ public class LoginControl {
 		playerContext.handleLogin(player.getId());
 		gameContext.getPlayerContextMap().put(player.getId(), playerContext);
 		
-		Login_.Builder resp = Login_.newBuilder();
+		TLogin.Builder resp = TLogin.newBuilder();
 		resp.setPlayer(playerService.serializePlayer(player));
 		// 登录事件
 		gameEventDispatcher.login(playerContext, resp);

@@ -2,7 +2,7 @@ syntax = "proto2";
 
 option java_package = "com.su.msg";
 
-message ContestRankMsg {
+message MContestRank {
 	optional int32 playerId = 1;		// 玩家id
 	optional string playerName = 2;		// 玩家姓名
 	optional int32 contestScore = 3;	// 排名分数
@@ -13,38 +13,38 @@ message ContestRankMsg {
 message EnterContestSite {
 	optional int32 siteId = 1;
 }
-message _EnterContestSite {
+message TEnterContestSite {
 	optional int32 siteId = 1;
 }
 // 退出比赛场
 message ExitContestSite {
 }
-message _ExitContestSite {
+message TExitContestSite {
 }
 
 // 报名
 message Apply {
 	optional int32 siteId = 1;
 }
-message _Apply {
+message TApply {
 	optional int32 siteId = 1;
 }
 
 // 取消报名
 message CancelApply {
 }
-message _CancelApply {
+message TCancelApply {
 }
 
 // 通知比赛场更新
-message _ContestSite {
+message NContestSite {
 	optional int32 siteId = 1;		
 	optional int32 playerNum = 2;				// 玩家数量
 }
 
 // 通知比赛更新
-message _Contest {
+message NContest {
 	optional int32 contestId = 1;				// 比赛id
 	optional int32 baseScore = 2;				// 底分
-	repeated _ContestRank contestRank = 3;		// 排名
+	repeated MContestRank contestRank = 3;		// 排名
 }

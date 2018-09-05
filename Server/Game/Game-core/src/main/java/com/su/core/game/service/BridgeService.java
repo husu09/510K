@@ -1,12 +1,11 @@
 package com.su.core.game.service;
 
 import java.util.Collection;
-import java.util.Map;
 
 import com.su.common.po.Player;
 import com.su.core.game.Site;
 import com.su.core.game.TableResult;
-import com.su.msg.TableMsg._GamePlayerResult;
+import com.su.msg.TableMsg.MGamePlayerResult;
 
 /**
  * GameServer向外提供服务的接口
@@ -19,7 +18,7 @@ public interface BridgeService {
 	/**
 	 * 处理牌局结束
 	 * */
-	public _GamePlayerResult doTableResult(TableResult tableResult);
+	public MGamePlayerResult doTableResult(TableResult tableResult);
 	/**
 	 * 处理比赛结束
 	 * */

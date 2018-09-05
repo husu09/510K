@@ -6,14 +6,10 @@ import com.su.core.akka.PlayerActor;
 import com.su.core.game.GamePlayer;
 import com.su.core.game.Site;
 import com.su.core.netty.NettyServerHandler;
-import com.su.msg.CommonMsg.Error_;
-import com.su.msg.PlayerMsg._Player;
+import com.su.msg.CommonMsg.NError;
+import com.su.msg.PlayerMsg.MPlayer;
 
 import io.netty.channel.ChannelHandlerContext;
-
-/**
- * 玩家上下文
- */
 public class PlayerContext {
 
 	private ChannelHandlerContext ctx;
@@ -35,7 +31,7 @@ public class PlayerContext {
 	/**
 	 * 玩家更新数据
 	 * */
-	private _Player.Builder builder = _Player.newBuilder();
+	private MPlayer.Builder builder = MPlayer.newBuilder();
 	
 
 	public void handleLogin(long playerId) {
@@ -60,7 +56,7 @@ public class PlayerContext {
 	 */
 	public void sendError(int errCode, Object... parameters) {
 
-		Error_.Builder builder = Error_.newBuilder().setErrorCode(errCode);
+		NError.Builder builder = NError.newBuilder().setErrorCode(errCode);
 		for (Object o : parameters) {
 			builder.addParameters(o.toString());
 		}
@@ -69,14 +65,14 @@ public class PlayerContext {
 
 	public static void sendError(ChannelHandlerContext ctx, int errCode, Object... parameters) {
 
-		Error_.Builder builder = Error_.newBuilder().setErrorCode(errCode);
+		NError.Builder builder = NError.newBuilder().setErrorCode(errCode);
 		for (Object o : parameters) {
 			builder.addParameters(o.toString());
 		}
 		ctx.writeAndFlush(builder.build());
 	}
 	
-	public _Player.Builder getBuilder() {
+	public MPlayer.Builder getBuilder() {
 		return builder;
 	}
 

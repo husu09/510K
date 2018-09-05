@@ -2,14 +2,14 @@ syntax = "proto2";
 
 option java_package = "com.su.msg";
 
-message CardMsg {
+message MCard {
 	 optional int32 value = 1;	// 牌面
 	 optional int32 suit = 2;	// 花色（1：方块，2：梅花，3：红桃，4：黑桃）
 }
 
-message GamePlayerMsg {
+message MGamePlayer {
 	optional int64 id = 1[default = -1];				// 玩家id
-	repeated _Card handCard = 2;						// 玩家手牌
+	repeated MCard handCard = 2;						// 玩家手牌
 	optional int32 cardNum = 3[default = -1];			// 手牌数量
 	optional int32 team = 4[default = -1];				// 玩家队伍（1：红方，2：蓝方）
 	optional int32 multiple = 5[default = -1];			// 玩家加倍
@@ -23,14 +23,14 @@ message GamePlayerMsg {
 
 
 message MTable {
-	repeated _GamePlayer player = 1;				// 玩家
+	repeated MGamePlayer player = 1;				// 玩家
 	repeated int32 multiple = 2;					// 公共倍数
 	optional int32 state = 3[default = -1];			// 牌桌状态（1：加倍，2：叫牌，3：出牌，4：结算）
-	repeated _Card lastCard = 4;					// 最后出牌
+	repeated MCard lastCard = 4;					// 最后出牌
 	optional int32 lastCardType = 5[default = -1];	// 最后牌型
 	optional int32 lastOp = 6[default = -1];		// 最后出牌玩家
 	optional int32 roundScore = 7[default = -1];	// 轮分
-	optional _Card callCard = 8;					// 被叫的牌
+	optional MCard callCard = 8;					// 被叫的牌
 	optional int32 callType = 9[default = -1];		// 叫牌状态
 	optional int32 callOp = 10[default = -1];		// 叫牌玩家
 	optional int32 dealer = 11[default = -1];		// 庄家
@@ -43,7 +43,7 @@ message Call {
 	optional int32 callType = 1;	// 叫牌状态（1：叫牌，2：暗叫，3：明叫）
 	optional int32 cardIndex = 2;	// 出牌索引
 }
-message ToCall {
+message TCall {
 	
 }
 
@@ -52,63 +52,63 @@ message Draw {
 	optional int32 cardType = 1;	// 牌型
 	repeated int32 cardIndexs = 2;	// 出牌索引
 }
-message ToDraw{
+message TDraw{
 	
 }
 // 过牌
 message Check {
 
 }
-message ToCheck {
+message TCheck {
 	
 }
 // 准备
 message Ready {
 
 }
-message Ready_ {
+message TReady {
 
 }
 // 退出
 message Quit {
 
 }
-message Quit_ {
+message TQuit {
 
 }
 // 加倍
 message Double{
 
 }
-message Double_{
+message TDouble{
 }
 
 // 托管
 message Auto{
 	optional int32 isAuto = 1;		// 是否托管 1：托管、2：取消托管
 }
-message Auto_{
+message TAuto{
 }
 
 // 重连
 message Reconn {
 
 }
-message Reconn_{
+message TReconn{
 
 }
 
 // 玩家数据更新通知
-message UpdateGamePlayer_{
-	repeated _GamePlayer gamePlayer = 1;	
+message NUpdateGamePlayer{
+	repeated MGamePlayer gamePlayer = 1;	
 }
 
 // 牌桌数据更新通知
-message UpdateTable_{
-	optional _Table table = 1;
+message NUpdateTable{
+	optional MTable table = 1;
 }
 
-message _GamePlayerResult {
+message MGamePlayerResult {
 	optional int32 multiple = 1;						// 倍数
 	optional int32 peanut = 2[default = -1];			// 花生
 	optional int32 rankingScore = 3[default = -1];		// 竞技分
@@ -117,8 +117,8 @@ message _GamePlayerResult {
 }
 
 // 牌局结果
-message TableResult_ {
+message NTableResult {
 	optional int32 baseScore = 1;	// 底分
 	optional int32 winTeam = 2;		// 赢方
-	repeated _GamePlayerResult playerResult = 3;
+	repeated MGamePlayerResult playerResult = 3;
 }

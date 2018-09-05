@@ -2,7 +2,7 @@ syntax = "proto2";
 
 option java_package = "com.su.msg";
 
-message MatchSiteMsg {
+message MMatchSite {
 	optional int32 siteId = 1;			
 	optional int32 playerNum = 2;	// 人数
 }
@@ -11,21 +11,21 @@ message MatchSiteMsg {
 message Match {
 	optional int32 siteId = 1;	
 }
-message _Match {
+message TMatch {
 	optional int32 siteId = 1;
 }
 
 // 取消匹配
 message CancelMatch {
 }
-message _CancelMatch {
+message TCancelMatch {
 }
 
 // 获取匹配场信息
 message GetMatchSite {
 	optional int32 siteType = 1;		// 类型 1：经典、2：排位
 }
-message _GetMatchSite {
-	repeated _MatchSite matchSite = 1;
+message TGetMatchSite {
+	repeated MMatchSite matchSite = 1;
 }
 

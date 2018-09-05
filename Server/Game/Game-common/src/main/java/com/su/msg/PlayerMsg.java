@@ -14,8 +14,8 @@ public final class PlayerMsg {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface _PlayerOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:_Player)
+  public interface MPlayerOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MPlayer)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -117,17 +117,17 @@ public final class PlayerMsg {
    * 玩家数据
    * </pre>
    *
-   * Protobuf type {@code _Player}
+   * Protobuf type {@code MPlayer}
    */
-  public  static final class _Player extends
+  public  static final class MPlayer extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:_Player)
-      _PlayerOrBuilder {
-    // Use _Player.newBuilder() to construct.
-    private _Player(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:MPlayer)
+      MPlayerOrBuilder {
+    // Use MPlayer.newBuilder() to construct.
+    private MPlayer(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private _Player() {
+    private MPlayer() {
       id_ = 0L;
       name_ = "";
       peanut_ = -1;
@@ -140,7 +140,7 @@ public final class PlayerMsg {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private _Player(
+    private MPlayer(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -203,14 +203,14 @@ public final class PlayerMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.PlayerMsg.internal_static__Player_descriptor;
+      return com.su.msg.PlayerMsg.internal_static_MPlayer_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.PlayerMsg.internal_static__Player_fieldAccessorTable
+      return com.su.msg.PlayerMsg.internal_static_MPlayer_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.su.msg.PlayerMsg._Player.class, com.su.msg.PlayerMsg._Player.Builder.class);
+              com.su.msg.PlayerMsg.MPlayer.class, com.su.msg.PlayerMsg.MPlayer.Builder.class);
     }
 
     private int bitField0_;
@@ -425,10 +425,10 @@ public final class PlayerMsg {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.su.msg.PlayerMsg._Player)) {
+      if (!(obj instanceof com.su.msg.PlayerMsg.MPlayer)) {
         return super.equals(obj);
       }
-      com.su.msg.PlayerMsg._Player other = (com.su.msg.PlayerMsg._Player) obj;
+      com.su.msg.PlayerMsg.MPlayer other = (com.su.msg.PlayerMsg.MPlayer) obj;
 
       boolean result = true;
       result = result && (hasId() == other.hasId());
@@ -493,58 +493,58 @@ public final class PlayerMsg {
       return hash;
     }
 
-    public static com.su.msg.PlayerMsg._Player parseFrom(
+    public static com.su.msg.PlayerMsg.MPlayer parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.PlayerMsg._Player parseFrom(
+    public static com.su.msg.PlayerMsg.MPlayer parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.PlayerMsg._Player parseFrom(byte[] data)
+    public static com.su.msg.PlayerMsg.MPlayer parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.PlayerMsg._Player parseFrom(
+    public static com.su.msg.PlayerMsg.MPlayer parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.PlayerMsg._Player parseFrom(java.io.InputStream input)
+    public static com.su.msg.PlayerMsg.MPlayer parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.PlayerMsg._Player parseFrom(
+    public static com.su.msg.PlayerMsg.MPlayer parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.PlayerMsg._Player parseDelimitedFrom(java.io.InputStream input)
+    public static com.su.msg.PlayerMsg.MPlayer parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.su.msg.PlayerMsg._Player parseDelimitedFrom(
+    public static com.su.msg.PlayerMsg.MPlayer parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.PlayerMsg._Player parseFrom(
+    public static com.su.msg.PlayerMsg.MPlayer parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.PlayerMsg._Player parseFrom(
+    public static com.su.msg.PlayerMsg.MPlayer parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -556,7 +556,7 @@ public final class PlayerMsg {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.su.msg.PlayerMsg._Player prototype) {
+    public static Builder newBuilder(com.su.msg.PlayerMsg.MPlayer prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -575,25 +575,25 @@ public final class PlayerMsg {
      * 玩家数据
      * </pre>
      *
-     * Protobuf type {@code _Player}
+     * Protobuf type {@code MPlayer}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:_Player)
-        com.su.msg.PlayerMsg._PlayerOrBuilder {
+        // @@protoc_insertion_point(builder_implements:MPlayer)
+        com.su.msg.PlayerMsg.MPlayerOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.PlayerMsg.internal_static__Player_descriptor;
+        return com.su.msg.PlayerMsg.internal_static_MPlayer_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.PlayerMsg.internal_static__Player_fieldAccessorTable
+        return com.su.msg.PlayerMsg.internal_static_MPlayer_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.su.msg.PlayerMsg._Player.class, com.su.msg.PlayerMsg._Player.Builder.class);
+                com.su.msg.PlayerMsg.MPlayer.class, com.su.msg.PlayerMsg.MPlayer.Builder.class);
       }
 
-      // Construct using com.su.msg.PlayerMsg._Player.newBuilder()
+      // Construct using com.su.msg.PlayerMsg.MPlayer.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -625,23 +625,23 @@ public final class PlayerMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.PlayerMsg.internal_static__Player_descriptor;
+        return com.su.msg.PlayerMsg.internal_static_MPlayer_descriptor;
       }
 
-      public com.su.msg.PlayerMsg._Player getDefaultInstanceForType() {
-        return com.su.msg.PlayerMsg._Player.getDefaultInstance();
+      public com.su.msg.PlayerMsg.MPlayer getDefaultInstanceForType() {
+        return com.su.msg.PlayerMsg.MPlayer.getDefaultInstance();
       }
 
-      public com.su.msg.PlayerMsg._Player build() {
-        com.su.msg.PlayerMsg._Player result = buildPartial();
+      public com.su.msg.PlayerMsg.MPlayer build() {
+        com.su.msg.PlayerMsg.MPlayer result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.su.msg.PlayerMsg._Player buildPartial() {
-        com.su.msg.PlayerMsg._Player result = new com.su.msg.PlayerMsg._Player(this);
+      public com.su.msg.PlayerMsg.MPlayer buildPartial() {
+        com.su.msg.PlayerMsg.MPlayer result = new com.su.msg.PlayerMsg.MPlayer(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -696,16 +696,16 @@ public final class PlayerMsg {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.su.msg.PlayerMsg._Player) {
-          return mergeFrom((com.su.msg.PlayerMsg._Player)other);
+        if (other instanceof com.su.msg.PlayerMsg.MPlayer) {
+          return mergeFrom((com.su.msg.PlayerMsg.MPlayer)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.su.msg.PlayerMsg._Player other) {
-        if (other == com.su.msg.PlayerMsg._Player.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.su.msg.PlayerMsg.MPlayer other) {
+        if (other == com.su.msg.PlayerMsg.MPlayer.getDefaultInstance()) return this;
         if (other.hasId()) {
           setId(other.getId());
         }
@@ -736,11 +736,11 @@ public final class PlayerMsg {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.su.msg.PlayerMsg._Player parsedMessage = null;
+        com.su.msg.PlayerMsg.MPlayer parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.su.msg.PlayerMsg._Player) e.getUnfinishedMessage();
+          parsedMessage = (com.su.msg.PlayerMsg.MPlayer) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1053,77 +1053,77 @@ public final class PlayerMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:_Player)
+      // @@protoc_insertion_point(builder_scope:MPlayer)
     }
 
-    // @@protoc_insertion_point(class_scope:_Player)
-    private static final com.su.msg.PlayerMsg._Player DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:MPlayer)
+    private static final com.su.msg.PlayerMsg.MPlayer DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.su.msg.PlayerMsg._Player();
+      DEFAULT_INSTANCE = new com.su.msg.PlayerMsg.MPlayer();
     }
 
-    public static com.su.msg.PlayerMsg._Player getDefaultInstance() {
+    public static com.su.msg.PlayerMsg.MPlayer getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<_Player>
-        PARSER = new com.google.protobuf.AbstractParser<_Player>() {
-      public _Player parsePartialFrom(
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<MPlayer>
+        PARSER = new com.google.protobuf.AbstractParser<MPlayer>() {
+      public MPlayer parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new _Player(input, extensionRegistry);
+          return new MPlayer(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<_Player> parser() {
+    public static com.google.protobuf.Parser<MPlayer> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<_Player> getParserForType() {
+    public com.google.protobuf.Parser<MPlayer> getParserForType() {
       return PARSER;
     }
 
-    public com.su.msg.PlayerMsg._Player getDefaultInstanceForType() {
+    public com.su.msg.PlayerMsg.MPlayer getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface UpdatePlayer_OrBuilder extends
-      // @@protoc_insertion_point(interface_extends:UpdatePlayer_)
+  public interface NUpdatePlayerOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:NUpdatePlayer)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional ._Player player = 1;</code>
+     * <code>optional .MPlayer player = 1;</code>
      */
     boolean hasPlayer();
     /**
-     * <code>optional ._Player player = 1;</code>
+     * <code>optional .MPlayer player = 1;</code>
      */
-    com.su.msg.PlayerMsg._Player getPlayer();
+    com.su.msg.PlayerMsg.MPlayer getPlayer();
     /**
-     * <code>optional ._Player player = 1;</code>
+     * <code>optional .MPlayer player = 1;</code>
      */
-    com.su.msg.PlayerMsg._PlayerOrBuilder getPlayerOrBuilder();
+    com.su.msg.PlayerMsg.MPlayerOrBuilder getPlayerOrBuilder();
   }
   /**
    * <pre>
    * 玩家数据更新通知
    * </pre>
    *
-   * Protobuf type {@code UpdatePlayer_}
+   * Protobuf type {@code NUpdatePlayer}
    */
-  public  static final class UpdatePlayer_ extends
+  public  static final class NUpdatePlayer extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:UpdatePlayer_)
-      UpdatePlayer_OrBuilder {
-    // Use UpdatePlayer_.newBuilder() to construct.
-    private UpdatePlayer_(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:NUpdatePlayer)
+      NUpdatePlayerOrBuilder {
+    // Use NUpdatePlayer.newBuilder() to construct.
+    private NUpdatePlayer(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private UpdatePlayer_() {
+    private NUpdatePlayer() {
     }
 
     @java.lang.Override
@@ -1131,7 +1131,7 @@ public final class PlayerMsg {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private UpdatePlayer_(
+    private NUpdatePlayer(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1155,11 +1155,11 @@ public final class PlayerMsg {
               break;
             }
             case 10: {
-              com.su.msg.PlayerMsg._Player.Builder subBuilder = null;
+              com.su.msg.PlayerMsg.MPlayer.Builder subBuilder = null;
               if (((bitField0_ & 0x00000001) == 0x00000001)) {
                 subBuilder = player_.toBuilder();
               }
-              player_ = input.readMessage(com.su.msg.PlayerMsg._Player.PARSER, extensionRegistry);
+              player_ = input.readMessage(com.su.msg.PlayerMsg.MPlayer.PARSER, extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(player_);
                 player_ = subBuilder.buildPartial();
@@ -1181,36 +1181,36 @@ public final class PlayerMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.PlayerMsg.internal_static_UpdatePlayer__descriptor;
+      return com.su.msg.PlayerMsg.internal_static_NUpdatePlayer_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.PlayerMsg.internal_static_UpdatePlayer__fieldAccessorTable
+      return com.su.msg.PlayerMsg.internal_static_NUpdatePlayer_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.su.msg.PlayerMsg.UpdatePlayer_.class, com.su.msg.PlayerMsg.UpdatePlayer_.Builder.class);
+              com.su.msg.PlayerMsg.NUpdatePlayer.class, com.su.msg.PlayerMsg.NUpdatePlayer.Builder.class);
     }
 
     private int bitField0_;
     public static final int PLAYER_FIELD_NUMBER = 1;
-    private com.su.msg.PlayerMsg._Player player_;
+    private com.su.msg.PlayerMsg.MPlayer player_;
     /**
-     * <code>optional ._Player player = 1;</code>
+     * <code>optional .MPlayer player = 1;</code>
      */
     public boolean hasPlayer() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional ._Player player = 1;</code>
+     * <code>optional .MPlayer player = 1;</code>
      */
-    public com.su.msg.PlayerMsg._Player getPlayer() {
-      return player_ == null ? com.su.msg.PlayerMsg._Player.getDefaultInstance() : player_;
+    public com.su.msg.PlayerMsg.MPlayer getPlayer() {
+      return player_ == null ? com.su.msg.PlayerMsg.MPlayer.getDefaultInstance() : player_;
     }
     /**
-     * <code>optional ._Player player = 1;</code>
+     * <code>optional .MPlayer player = 1;</code>
      */
-    public com.su.msg.PlayerMsg._PlayerOrBuilder getPlayerOrBuilder() {
-      return player_ == null ? com.su.msg.PlayerMsg._Player.getDefaultInstance() : player_;
+    public com.su.msg.PlayerMsg.MPlayerOrBuilder getPlayerOrBuilder() {
+      return player_ == null ? com.su.msg.PlayerMsg.MPlayer.getDefaultInstance() : player_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1251,10 +1251,10 @@ public final class PlayerMsg {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.su.msg.PlayerMsg.UpdatePlayer_)) {
+      if (!(obj instanceof com.su.msg.PlayerMsg.NUpdatePlayer)) {
         return super.equals(obj);
       }
-      com.su.msg.PlayerMsg.UpdatePlayer_ other = (com.su.msg.PlayerMsg.UpdatePlayer_) obj;
+      com.su.msg.PlayerMsg.NUpdatePlayer other = (com.su.msg.PlayerMsg.NUpdatePlayer) obj;
 
       boolean result = true;
       result = result && (hasPlayer() == other.hasPlayer());
@@ -1282,58 +1282,58 @@ public final class PlayerMsg {
       return hash;
     }
 
-    public static com.su.msg.PlayerMsg.UpdatePlayer_ parseFrom(
+    public static com.su.msg.PlayerMsg.NUpdatePlayer parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.PlayerMsg.UpdatePlayer_ parseFrom(
+    public static com.su.msg.PlayerMsg.NUpdatePlayer parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.PlayerMsg.UpdatePlayer_ parseFrom(byte[] data)
+    public static com.su.msg.PlayerMsg.NUpdatePlayer parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.PlayerMsg.UpdatePlayer_ parseFrom(
+    public static com.su.msg.PlayerMsg.NUpdatePlayer parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.PlayerMsg.UpdatePlayer_ parseFrom(java.io.InputStream input)
+    public static com.su.msg.PlayerMsg.NUpdatePlayer parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.PlayerMsg.UpdatePlayer_ parseFrom(
+    public static com.su.msg.PlayerMsg.NUpdatePlayer parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.PlayerMsg.UpdatePlayer_ parseDelimitedFrom(java.io.InputStream input)
+    public static com.su.msg.PlayerMsg.NUpdatePlayer parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.su.msg.PlayerMsg.UpdatePlayer_ parseDelimitedFrom(
+    public static com.su.msg.PlayerMsg.NUpdatePlayer parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.PlayerMsg.UpdatePlayer_ parseFrom(
+    public static com.su.msg.PlayerMsg.NUpdatePlayer parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.PlayerMsg.UpdatePlayer_ parseFrom(
+    public static com.su.msg.PlayerMsg.NUpdatePlayer parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1345,7 +1345,7 @@ public final class PlayerMsg {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.su.msg.PlayerMsg.UpdatePlayer_ prototype) {
+    public static Builder newBuilder(com.su.msg.PlayerMsg.NUpdatePlayer prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -1364,25 +1364,25 @@ public final class PlayerMsg {
      * 玩家数据更新通知
      * </pre>
      *
-     * Protobuf type {@code UpdatePlayer_}
+     * Protobuf type {@code NUpdatePlayer}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:UpdatePlayer_)
-        com.su.msg.PlayerMsg.UpdatePlayer_OrBuilder {
+        // @@protoc_insertion_point(builder_implements:NUpdatePlayer)
+        com.su.msg.PlayerMsg.NUpdatePlayerOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.PlayerMsg.internal_static_UpdatePlayer__descriptor;
+        return com.su.msg.PlayerMsg.internal_static_NUpdatePlayer_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.PlayerMsg.internal_static_UpdatePlayer__fieldAccessorTable
+        return com.su.msg.PlayerMsg.internal_static_NUpdatePlayer_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.su.msg.PlayerMsg.UpdatePlayer_.class, com.su.msg.PlayerMsg.UpdatePlayer_.Builder.class);
+                com.su.msg.PlayerMsg.NUpdatePlayer.class, com.su.msg.PlayerMsg.NUpdatePlayer.Builder.class);
       }
 
-      // Construct using com.su.msg.PlayerMsg.UpdatePlayer_.newBuilder()
+      // Construct using com.su.msg.PlayerMsg.NUpdatePlayer.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1411,23 +1411,23 @@ public final class PlayerMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.PlayerMsg.internal_static_UpdatePlayer__descriptor;
+        return com.su.msg.PlayerMsg.internal_static_NUpdatePlayer_descriptor;
       }
 
-      public com.su.msg.PlayerMsg.UpdatePlayer_ getDefaultInstanceForType() {
-        return com.su.msg.PlayerMsg.UpdatePlayer_.getDefaultInstance();
+      public com.su.msg.PlayerMsg.NUpdatePlayer getDefaultInstanceForType() {
+        return com.su.msg.PlayerMsg.NUpdatePlayer.getDefaultInstance();
       }
 
-      public com.su.msg.PlayerMsg.UpdatePlayer_ build() {
-        com.su.msg.PlayerMsg.UpdatePlayer_ result = buildPartial();
+      public com.su.msg.PlayerMsg.NUpdatePlayer build() {
+        com.su.msg.PlayerMsg.NUpdatePlayer result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.su.msg.PlayerMsg.UpdatePlayer_ buildPartial() {
-        com.su.msg.PlayerMsg.UpdatePlayer_ result = new com.su.msg.PlayerMsg.UpdatePlayer_(this);
+      public com.su.msg.PlayerMsg.NUpdatePlayer buildPartial() {
+        com.su.msg.PlayerMsg.NUpdatePlayer result = new com.su.msg.PlayerMsg.NUpdatePlayer(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1470,16 +1470,16 @@ public final class PlayerMsg {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.su.msg.PlayerMsg.UpdatePlayer_) {
-          return mergeFrom((com.su.msg.PlayerMsg.UpdatePlayer_)other);
+        if (other instanceof com.su.msg.PlayerMsg.NUpdatePlayer) {
+          return mergeFrom((com.su.msg.PlayerMsg.NUpdatePlayer)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.su.msg.PlayerMsg.UpdatePlayer_ other) {
-        if (other == com.su.msg.PlayerMsg.UpdatePlayer_.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.su.msg.PlayerMsg.NUpdatePlayer other) {
+        if (other == com.su.msg.PlayerMsg.NUpdatePlayer.getDefaultInstance()) return this;
         if (other.hasPlayer()) {
           mergePlayer(other.getPlayer());
         }
@@ -1496,11 +1496,11 @@ public final class PlayerMsg {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.su.msg.PlayerMsg.UpdatePlayer_ parsedMessage = null;
+        com.su.msg.PlayerMsg.NUpdatePlayer parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.su.msg.PlayerMsg.UpdatePlayer_) e.getUnfinishedMessage();
+          parsedMessage = (com.su.msg.PlayerMsg.NUpdatePlayer) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1511,29 +1511,29 @@ public final class PlayerMsg {
       }
       private int bitField0_;
 
-      private com.su.msg.PlayerMsg._Player player_ = null;
+      private com.su.msg.PlayerMsg.MPlayer player_ = null;
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.su.msg.PlayerMsg._Player, com.su.msg.PlayerMsg._Player.Builder, com.su.msg.PlayerMsg._PlayerOrBuilder> playerBuilder_;
+          com.su.msg.PlayerMsg.MPlayer, com.su.msg.PlayerMsg.MPlayer.Builder, com.su.msg.PlayerMsg.MPlayerOrBuilder> playerBuilder_;
       /**
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
       public boolean hasPlayer() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
-      public com.su.msg.PlayerMsg._Player getPlayer() {
+      public com.su.msg.PlayerMsg.MPlayer getPlayer() {
         if (playerBuilder_ == null) {
-          return player_ == null ? com.su.msg.PlayerMsg._Player.getDefaultInstance() : player_;
+          return player_ == null ? com.su.msg.PlayerMsg.MPlayer.getDefaultInstance() : player_;
         } else {
           return playerBuilder_.getMessage();
         }
       }
       /**
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
-      public Builder setPlayer(com.su.msg.PlayerMsg._Player value) {
+      public Builder setPlayer(com.su.msg.PlayerMsg.MPlayer value) {
         if (playerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1547,10 +1547,10 @@ public final class PlayerMsg {
         return this;
       }
       /**
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
       public Builder setPlayer(
-          com.su.msg.PlayerMsg._Player.Builder builderForValue) {
+          com.su.msg.PlayerMsg.MPlayer.Builder builderForValue) {
         if (playerBuilder_ == null) {
           player_ = builderForValue.build();
           onChanged();
@@ -1561,15 +1561,15 @@ public final class PlayerMsg {
         return this;
       }
       /**
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
-      public Builder mergePlayer(com.su.msg.PlayerMsg._Player value) {
+      public Builder mergePlayer(com.su.msg.PlayerMsg.MPlayer value) {
         if (playerBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
               player_ != null &&
-              player_ != com.su.msg.PlayerMsg._Player.getDefaultInstance()) {
+              player_ != com.su.msg.PlayerMsg.MPlayer.getDefaultInstance()) {
             player_ =
-              com.su.msg.PlayerMsg._Player.newBuilder(player_).mergeFrom(value).buildPartial();
+              com.su.msg.PlayerMsg.MPlayer.newBuilder(player_).mergeFrom(value).buildPartial();
           } else {
             player_ = value;
           }
@@ -1581,7 +1581,7 @@ public final class PlayerMsg {
         return this;
       }
       /**
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
       public Builder clearPlayer() {
         if (playerBuilder_ == null) {
@@ -1594,33 +1594,33 @@ public final class PlayerMsg {
         return this;
       }
       /**
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
-      public com.su.msg.PlayerMsg._Player.Builder getPlayerBuilder() {
+      public com.su.msg.PlayerMsg.MPlayer.Builder getPlayerBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getPlayerFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
-      public com.su.msg.PlayerMsg._PlayerOrBuilder getPlayerOrBuilder() {
+      public com.su.msg.PlayerMsg.MPlayerOrBuilder getPlayerOrBuilder() {
         if (playerBuilder_ != null) {
           return playerBuilder_.getMessageOrBuilder();
         } else {
           return player_ == null ?
-              com.su.msg.PlayerMsg._Player.getDefaultInstance() : player_;
+              com.su.msg.PlayerMsg.MPlayer.getDefaultInstance() : player_;
         }
       }
       /**
-       * <code>optional ._Player player = 1;</code>
+       * <code>optional .MPlayer player = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.su.msg.PlayerMsg._Player, com.su.msg.PlayerMsg._Player.Builder, com.su.msg.PlayerMsg._PlayerOrBuilder> 
+          com.su.msg.PlayerMsg.MPlayer, com.su.msg.PlayerMsg.MPlayer.Builder, com.su.msg.PlayerMsg.MPlayerOrBuilder> 
           getPlayerFieldBuilder() {
         if (playerBuilder_ == null) {
           playerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.su.msg.PlayerMsg._Player, com.su.msg.PlayerMsg._Player.Builder, com.su.msg.PlayerMsg._PlayerOrBuilder>(
+              com.su.msg.PlayerMsg.MPlayer, com.su.msg.PlayerMsg.MPlayer.Builder, com.su.msg.PlayerMsg.MPlayerOrBuilder>(
                   getPlayer(),
                   getParentForChildren(),
                   isClean());
@@ -1639,54 +1639,54 @@ public final class PlayerMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:UpdatePlayer_)
+      // @@protoc_insertion_point(builder_scope:NUpdatePlayer)
     }
 
-    // @@protoc_insertion_point(class_scope:UpdatePlayer_)
-    private static final com.su.msg.PlayerMsg.UpdatePlayer_ DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:NUpdatePlayer)
+    private static final com.su.msg.PlayerMsg.NUpdatePlayer DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.su.msg.PlayerMsg.UpdatePlayer_();
+      DEFAULT_INSTANCE = new com.su.msg.PlayerMsg.NUpdatePlayer();
     }
 
-    public static com.su.msg.PlayerMsg.UpdatePlayer_ getDefaultInstance() {
+    public static com.su.msg.PlayerMsg.NUpdatePlayer getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<UpdatePlayer_>
-        PARSER = new com.google.protobuf.AbstractParser<UpdatePlayer_>() {
-      public UpdatePlayer_ parsePartialFrom(
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<NUpdatePlayer>
+        PARSER = new com.google.protobuf.AbstractParser<NUpdatePlayer>() {
+      public NUpdatePlayer parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new UpdatePlayer_(input, extensionRegistry);
+          return new NUpdatePlayer(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<UpdatePlayer_> parser() {
+    public static com.google.protobuf.Parser<NUpdatePlayer> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<UpdatePlayer_> getParserForType() {
+    public com.google.protobuf.Parser<NUpdatePlayer> getParserForType() {
       return PARSER;
     }
 
-    public com.su.msg.PlayerMsg.UpdatePlayer_ getDefaultInstanceForType() {
+    public com.su.msg.PlayerMsg.NUpdatePlayer getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static__Player_descriptor;
+    internal_static_MPlayer_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static__Player_fieldAccessorTable;
+      internal_static_MPlayer_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_UpdatePlayer__descriptor;
+    internal_static_NUpdatePlayer_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_UpdatePlayer__fieldAccessorTable;
+      internal_static_NUpdatePlayer_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1696,11 +1696,11 @@ public final class PlayerMsg {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017PlayerMsg.proto\"j\n\007_Player\022\n\n\002id\030\001 \001(\003" +
+      "\n\017PlayerMsg.proto\"j\n\007MPlayer\022\n\n\002id\030\001 \001(\003" +
       "\022\014\n\004name\030\002 \001(\t\022\022\n\006peanut\030\003 \001(\005:\002-1\022\030\n\014ra" +
       "nkingScore\030\004 \001(\005:\002-1\022\027\n\013rankingStep\030\005 \001(" +
-      "\005:\002-1\")\n\rUpdatePlayer_\022\030\n\006player\030\001 \001(\0132\010" +
-      "._PlayerB\014\n\ncom.su.msg"
+      "\005:\002-1\")\n\rNUpdatePlayer\022\030\n\006player\030\001 \001(\0132\010" +
+      ".MPlayerB\014\n\ncom.su.msg"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1714,17 +1714,17 @@ public final class PlayerMsg {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static__Player_descriptor =
+    internal_static_MPlayer_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static__Player_fieldAccessorTable = new
+    internal_static_MPlayer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static__Player_descriptor,
+        internal_static_MPlayer_descriptor,
         new java.lang.String[] { "Id", "Name", "Peanut", "RankingScore", "RankingStep", });
-    internal_static_UpdatePlayer__descriptor =
+    internal_static_NUpdatePlayer_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_UpdatePlayer__fieldAccessorTable = new
+    internal_static_NUpdatePlayer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_UpdatePlayer__descriptor,
+        internal_static_NUpdatePlayer_descriptor,
         new java.lang.String[] { "Player", });
   }
 

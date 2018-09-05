@@ -3,7 +3,7 @@ syntax = "proto2";
 option java_package = "com.su.msg";
 
 // 错误提示
-message ErrorMsg {
+message NError {
  	optional int32 errorCode = 1;
  	repeated string parameters  = 2;
 }

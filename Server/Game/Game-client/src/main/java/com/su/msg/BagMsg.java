@@ -14,8 +14,8 @@ public final class BagMsg {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface _GridOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:_Grid)
+  public interface MGridOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MGrid)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -125,17 +125,17 @@ public final class BagMsg {
    * 物品格子
    * </pre>
    *
-   * Protobuf type {@code _Grid}
+   * Protobuf type {@code MGrid}
    */
-  public  static final class _Grid extends
+  public  static final class MGrid extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:_Grid)
-      _GridOrBuilder {
-    // Use _Grid.newBuilder() to construct.
-    private _Grid(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:MGrid)
+      MGridOrBuilder {
+    // Use MGrid.newBuilder() to construct.
+    private MGrid(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private _Grid() {
+    private MGrid() {
       index_ = 0;
       type_ = 0;
       sysId_ = 0;
@@ -149,7 +149,7 @@ public final class BagMsg {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private _Grid(
+    private MGrid(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -216,14 +216,14 @@ public final class BagMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.BagMsg.internal_static__Grid_descriptor;
+      return com.su.msg.BagMsg.internal_static_MGrid_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.BagMsg.internal_static__Grid_fieldAccessorTable
+      return com.su.msg.BagMsg.internal_static_MGrid_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.su.msg.BagMsg._Grid.class, com.su.msg.BagMsg._Grid.Builder.class);
+              com.su.msg.BagMsg.MGrid.class, com.su.msg.BagMsg.MGrid.Builder.class);
     }
 
     private int bitField0_;
@@ -438,10 +438,10 @@ public final class BagMsg {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.su.msg.BagMsg._Grid)) {
+      if (!(obj instanceof com.su.msg.BagMsg.MGrid)) {
         return super.equals(obj);
       }
-      com.su.msg.BagMsg._Grid other = (com.su.msg.BagMsg._Grid) obj;
+      com.su.msg.BagMsg.MGrid other = (com.su.msg.BagMsg.MGrid) obj;
 
       boolean result = true;
       result = result && (hasIndex() == other.hasIndex());
@@ -516,58 +516,58 @@ public final class BagMsg {
       return hash;
     }
 
-    public static com.su.msg.BagMsg._Grid parseFrom(
+    public static com.su.msg.BagMsg.MGrid parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.BagMsg._Grid parseFrom(
+    public static com.su.msg.BagMsg.MGrid parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.BagMsg._Grid parseFrom(byte[] data)
+    public static com.su.msg.BagMsg.MGrid parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.BagMsg._Grid parseFrom(
+    public static com.su.msg.BagMsg.MGrid parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.BagMsg._Grid parseFrom(java.io.InputStream input)
+    public static com.su.msg.BagMsg.MGrid parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.BagMsg._Grid parseFrom(
+    public static com.su.msg.BagMsg.MGrid parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.BagMsg._Grid parseDelimitedFrom(java.io.InputStream input)
+    public static com.su.msg.BagMsg.MGrid parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.su.msg.BagMsg._Grid parseDelimitedFrom(
+    public static com.su.msg.BagMsg.MGrid parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.BagMsg._Grid parseFrom(
+    public static com.su.msg.BagMsg.MGrid parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.BagMsg._Grid parseFrom(
+    public static com.su.msg.BagMsg.MGrid parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -579,7 +579,7 @@ public final class BagMsg {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.su.msg.BagMsg._Grid prototype) {
+    public static Builder newBuilder(com.su.msg.BagMsg.MGrid prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -598,25 +598,25 @@ public final class BagMsg {
      * 物品格子
      * </pre>
      *
-     * Protobuf type {@code _Grid}
+     * Protobuf type {@code MGrid}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:_Grid)
-        com.su.msg.BagMsg._GridOrBuilder {
+        // @@protoc_insertion_point(builder_implements:MGrid)
+        com.su.msg.BagMsg.MGridOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.BagMsg.internal_static__Grid_descriptor;
+        return com.su.msg.BagMsg.internal_static_MGrid_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.BagMsg.internal_static__Grid_fieldAccessorTable
+        return com.su.msg.BagMsg.internal_static_MGrid_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.su.msg.BagMsg._Grid.class, com.su.msg.BagMsg._Grid.Builder.class);
+                com.su.msg.BagMsg.MGrid.class, com.su.msg.BagMsg.MGrid.Builder.class);
       }
 
-      // Construct using com.su.msg.BagMsg._Grid.newBuilder()
+      // Construct using com.su.msg.BagMsg.MGrid.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -650,23 +650,23 @@ public final class BagMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.BagMsg.internal_static__Grid_descriptor;
+        return com.su.msg.BagMsg.internal_static_MGrid_descriptor;
       }
 
-      public com.su.msg.BagMsg._Grid getDefaultInstanceForType() {
-        return com.su.msg.BagMsg._Grid.getDefaultInstance();
+      public com.su.msg.BagMsg.MGrid getDefaultInstanceForType() {
+        return com.su.msg.BagMsg.MGrid.getDefaultInstance();
       }
 
-      public com.su.msg.BagMsg._Grid build() {
-        com.su.msg.BagMsg._Grid result = buildPartial();
+      public com.su.msg.BagMsg.MGrid build() {
+        com.su.msg.BagMsg.MGrid result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.su.msg.BagMsg._Grid buildPartial() {
-        com.su.msg.BagMsg._Grid result = new com.su.msg.BagMsg._Grid(this);
+      public com.su.msg.BagMsg.MGrid buildPartial() {
+        com.su.msg.BagMsg.MGrid result = new com.su.msg.BagMsg.MGrid(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -725,16 +725,16 @@ public final class BagMsg {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.su.msg.BagMsg._Grid) {
-          return mergeFrom((com.su.msg.BagMsg._Grid)other);
+        if (other instanceof com.su.msg.BagMsg.MGrid) {
+          return mergeFrom((com.su.msg.BagMsg.MGrid)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.su.msg.BagMsg._Grid other) {
-        if (other == com.su.msg.BagMsg._Grid.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.su.msg.BagMsg.MGrid other) {
+        if (other == com.su.msg.BagMsg.MGrid.getDefaultInstance()) return this;
         if (other.hasIndex()) {
           setIndex(other.getIndex());
         }
@@ -766,11 +766,11 @@ public final class BagMsg {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.su.msg.BagMsg._Grid parsedMessage = null;
+        com.su.msg.BagMsg.MGrid parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.su.msg.BagMsg._Grid) e.getUnfinishedMessage();
+          parsedMessage = (com.su.msg.BagMsg.MGrid) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1079,39 +1079,39 @@ public final class BagMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:_Grid)
+      // @@protoc_insertion_point(builder_scope:MGrid)
     }
 
-    // @@protoc_insertion_point(class_scope:_Grid)
-    private static final com.su.msg.BagMsg._Grid DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:MGrid)
+    private static final com.su.msg.BagMsg.MGrid DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.su.msg.BagMsg._Grid();
+      DEFAULT_INSTANCE = new com.su.msg.BagMsg.MGrid();
     }
 
-    public static com.su.msg.BagMsg._Grid getDefaultInstance() {
+    public static com.su.msg.BagMsg.MGrid getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<_Grid>
-        PARSER = new com.google.protobuf.AbstractParser<_Grid>() {
-      public _Grid parsePartialFrom(
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<MGrid>
+        PARSER = new com.google.protobuf.AbstractParser<MGrid>() {
+      public MGrid parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new _Grid(input, extensionRegistry);
+          return new MGrid(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<_Grid> parser() {
+    public static com.google.protobuf.Parser<MGrid> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<_Grid> getParserForType() {
+    public com.google.protobuf.Parser<MGrid> getParserForType() {
       return PARSER;
     }
 
-    public com.su.msg.BagMsg._Grid getDefaultInstanceForType() {
+    public com.su.msg.BagMsg.MGrid getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1742,22 +1742,22 @@ public final class BagMsg {
 
   }
 
-  public interface UseItem_OrBuilder extends
-      // @@protoc_insertion_point(interface_extends:UseItem_)
+  public interface TUseItemOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:TUseItem)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * Protobuf type {@code UseItem_}
+   * Protobuf type {@code TUseItem}
    */
-  public  static final class UseItem_ extends
+  public  static final class TUseItem extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:UseItem_)
-      UseItem_OrBuilder {
-    // Use UseItem_.newBuilder() to construct.
-    private UseItem_(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:TUseItem)
+      TUseItemOrBuilder {
+    // Use TUseItem.newBuilder() to construct.
+    private TUseItem(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private UseItem_() {
+    private TUseItem() {
     }
 
     @java.lang.Override
@@ -1765,7 +1765,7 @@ public final class BagMsg {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private UseItem_(
+    private TUseItem(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1801,14 +1801,14 @@ public final class BagMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.BagMsg.internal_static_UseItem__descriptor;
+      return com.su.msg.BagMsg.internal_static_TUseItem_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.BagMsg.internal_static_UseItem__fieldAccessorTable
+      return com.su.msg.BagMsg.internal_static_TUseItem_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.su.msg.BagMsg.UseItem_.class, com.su.msg.BagMsg.UseItem_.Builder.class);
+              com.su.msg.BagMsg.TUseItem.class, com.su.msg.BagMsg.TUseItem.Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1842,10 +1842,10 @@ public final class BagMsg {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.su.msg.BagMsg.UseItem_)) {
+      if (!(obj instanceof com.su.msg.BagMsg.TUseItem)) {
         return super.equals(obj);
       }
-      com.su.msg.BagMsg.UseItem_ other = (com.su.msg.BagMsg.UseItem_) obj;
+      com.su.msg.BagMsg.TUseItem other = (com.su.msg.BagMsg.TUseItem) obj;
 
       boolean result = true;
       result = result && unknownFields.equals(other.unknownFields);
@@ -1864,58 +1864,58 @@ public final class BagMsg {
       return hash;
     }
 
-    public static com.su.msg.BagMsg.UseItem_ parseFrom(
+    public static com.su.msg.BagMsg.TUseItem parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.BagMsg.UseItem_ parseFrom(
+    public static com.su.msg.BagMsg.TUseItem parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.BagMsg.UseItem_ parseFrom(byte[] data)
+    public static com.su.msg.BagMsg.TUseItem parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.BagMsg.UseItem_ parseFrom(
+    public static com.su.msg.BagMsg.TUseItem parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.BagMsg.UseItem_ parseFrom(java.io.InputStream input)
+    public static com.su.msg.BagMsg.TUseItem parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.BagMsg.UseItem_ parseFrom(
+    public static com.su.msg.BagMsg.TUseItem parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.BagMsg.UseItem_ parseDelimitedFrom(java.io.InputStream input)
+    public static com.su.msg.BagMsg.TUseItem parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.su.msg.BagMsg.UseItem_ parseDelimitedFrom(
+    public static com.su.msg.BagMsg.TUseItem parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.BagMsg.UseItem_ parseFrom(
+    public static com.su.msg.BagMsg.TUseItem parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.BagMsg.UseItem_ parseFrom(
+    public static com.su.msg.BagMsg.TUseItem parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1927,7 +1927,7 @@ public final class BagMsg {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.su.msg.BagMsg.UseItem_ prototype) {
+    public static Builder newBuilder(com.su.msg.BagMsg.TUseItem prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -1942,25 +1942,25 @@ public final class BagMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code UseItem_}
+     * Protobuf type {@code TUseItem}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:UseItem_)
-        com.su.msg.BagMsg.UseItem_OrBuilder {
+        // @@protoc_insertion_point(builder_implements:TUseItem)
+        com.su.msg.BagMsg.TUseItemOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.BagMsg.internal_static_UseItem__descriptor;
+        return com.su.msg.BagMsg.internal_static_TUseItem_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.BagMsg.internal_static_UseItem__fieldAccessorTable
+        return com.su.msg.BagMsg.internal_static_TUseItem_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.su.msg.BagMsg.UseItem_.class, com.su.msg.BagMsg.UseItem_.Builder.class);
+                com.su.msg.BagMsg.TUseItem.class, com.su.msg.BagMsg.TUseItem.Builder.class);
       }
 
-      // Construct using com.su.msg.BagMsg.UseItem_.newBuilder()
+      // Construct using com.su.msg.BagMsg.TUseItem.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1982,23 +1982,23 @@ public final class BagMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.BagMsg.internal_static_UseItem__descriptor;
+        return com.su.msg.BagMsg.internal_static_TUseItem_descriptor;
       }
 
-      public com.su.msg.BagMsg.UseItem_ getDefaultInstanceForType() {
-        return com.su.msg.BagMsg.UseItem_.getDefaultInstance();
+      public com.su.msg.BagMsg.TUseItem getDefaultInstanceForType() {
+        return com.su.msg.BagMsg.TUseItem.getDefaultInstance();
       }
 
-      public com.su.msg.BagMsg.UseItem_ build() {
-        com.su.msg.BagMsg.UseItem_ result = buildPartial();
+      public com.su.msg.BagMsg.TUseItem build() {
+        com.su.msg.BagMsg.TUseItem result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.su.msg.BagMsg.UseItem_ buildPartial() {
-        com.su.msg.BagMsg.UseItem_ result = new com.su.msg.BagMsg.UseItem_(this);
+      public com.su.msg.BagMsg.TUseItem buildPartial() {
+        com.su.msg.BagMsg.TUseItem result = new com.su.msg.BagMsg.TUseItem(this);
         onBuilt();
         return result;
       }
@@ -2030,16 +2030,16 @@ public final class BagMsg {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.su.msg.BagMsg.UseItem_) {
-          return mergeFrom((com.su.msg.BagMsg.UseItem_)other);
+        if (other instanceof com.su.msg.BagMsg.TUseItem) {
+          return mergeFrom((com.su.msg.BagMsg.TUseItem)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.su.msg.BagMsg.UseItem_ other) {
-        if (other == com.su.msg.BagMsg.UseItem_.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.su.msg.BagMsg.TUseItem other) {
+        if (other == com.su.msg.BagMsg.TUseItem.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -2053,11 +2053,11 @@ public final class BagMsg {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.su.msg.BagMsg.UseItem_ parsedMessage = null;
+        com.su.msg.BagMsg.TUseItem parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.su.msg.BagMsg.UseItem_) e.getUnfinishedMessage();
+          parsedMessage = (com.su.msg.BagMsg.TUseItem) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2077,46 +2077,46 @@ public final class BagMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:UseItem_)
+      // @@protoc_insertion_point(builder_scope:TUseItem)
     }
 
-    // @@protoc_insertion_point(class_scope:UseItem_)
-    private static final com.su.msg.BagMsg.UseItem_ DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:TUseItem)
+    private static final com.su.msg.BagMsg.TUseItem DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.su.msg.BagMsg.UseItem_();
+      DEFAULT_INSTANCE = new com.su.msg.BagMsg.TUseItem();
     }
 
-    public static com.su.msg.BagMsg.UseItem_ getDefaultInstance() {
+    public static com.su.msg.BagMsg.TUseItem getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<UseItem_>
-        PARSER = new com.google.protobuf.AbstractParser<UseItem_>() {
-      public UseItem_ parsePartialFrom(
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<TUseItem>
+        PARSER = new com.google.protobuf.AbstractParser<TUseItem>() {
+      public TUseItem parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new UseItem_(input, extensionRegistry);
+          return new TUseItem(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<UseItem_> parser() {
+    public static com.google.protobuf.Parser<TUseItem> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<UseItem_> getParserForType() {
+    public com.google.protobuf.Parser<TUseItem> getParserForType() {
       return PARSER;
     }
 
-    public com.su.msg.BagMsg.UseItem_ getDefaultInstanceForType() {
+    public com.su.msg.BagMsg.TUseItem getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface DeleteItemNoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:DeleteItemNo)
+  public interface NDeleteItemOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:NDeleteItem)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2149,17 +2149,17 @@ public final class BagMsg {
    * 删除通知（前端需要同步更改后续索引）
    * </pre>
    *
-   * Protobuf type {@code DeleteItemNo}
+   * Protobuf type {@code NDeleteItem}
    */
-  public  static final class DeleteItemNo extends
+  public  static final class NDeleteItem extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:DeleteItemNo)
-      DeleteItemNoOrBuilder {
-    // Use DeleteItemNo.newBuilder() to construct.
-    private DeleteItemNo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:NDeleteItem)
+      NDeleteItemOrBuilder {
+    // Use NDeleteItem.newBuilder() to construct.
+    private NDeleteItem(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private DeleteItemNo() {
+    private NDeleteItem() {
       index_ = java.util.Collections.emptyList();
     }
 
@@ -2168,7 +2168,7 @@ public final class BagMsg {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private DeleteItemNo(
+    private NDeleteItem(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2229,14 +2229,14 @@ public final class BagMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.BagMsg.internal_static_DeleteItemNo_descriptor;
+      return com.su.msg.BagMsg.internal_static_NDeleteItem_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.BagMsg.internal_static_DeleteItemNo_fieldAccessorTable
+      return com.su.msg.BagMsg.internal_static_NDeleteItem_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.su.msg.BagMsg.DeleteItemNo.class, com.su.msg.BagMsg.DeleteItemNo.Builder.class);
+              com.su.msg.BagMsg.NDeleteItem.class, com.su.msg.BagMsg.NDeleteItem.Builder.class);
     }
 
     public static final int INDEX_FIELD_NUMBER = 1;
@@ -2316,10 +2316,10 @@ public final class BagMsg {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.su.msg.BagMsg.DeleteItemNo)) {
+      if (!(obj instanceof com.su.msg.BagMsg.NDeleteItem)) {
         return super.equals(obj);
       }
-      com.su.msg.BagMsg.DeleteItemNo other = (com.su.msg.BagMsg.DeleteItemNo) obj;
+      com.su.msg.BagMsg.NDeleteItem other = (com.su.msg.BagMsg.NDeleteItem) obj;
 
       boolean result = true;
       result = result && getIndexList()
@@ -2344,58 +2344,58 @@ public final class BagMsg {
       return hash;
     }
 
-    public static com.su.msg.BagMsg.DeleteItemNo parseFrom(
+    public static com.su.msg.BagMsg.NDeleteItem parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.BagMsg.DeleteItemNo parseFrom(
+    public static com.su.msg.BagMsg.NDeleteItem parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.BagMsg.DeleteItemNo parseFrom(byte[] data)
+    public static com.su.msg.BagMsg.NDeleteItem parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.BagMsg.DeleteItemNo parseFrom(
+    public static com.su.msg.BagMsg.NDeleteItem parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.BagMsg.DeleteItemNo parseFrom(java.io.InputStream input)
+    public static com.su.msg.BagMsg.NDeleteItem parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.BagMsg.DeleteItemNo parseFrom(
+    public static com.su.msg.BagMsg.NDeleteItem parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.BagMsg.DeleteItemNo parseDelimitedFrom(java.io.InputStream input)
+    public static com.su.msg.BagMsg.NDeleteItem parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.su.msg.BagMsg.DeleteItemNo parseDelimitedFrom(
+    public static com.su.msg.BagMsg.NDeleteItem parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.BagMsg.DeleteItemNo parseFrom(
+    public static com.su.msg.BagMsg.NDeleteItem parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.BagMsg.DeleteItemNo parseFrom(
+    public static com.su.msg.BagMsg.NDeleteItem parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2407,7 +2407,7 @@ public final class BagMsg {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.su.msg.BagMsg.DeleteItemNo prototype) {
+    public static Builder newBuilder(com.su.msg.BagMsg.NDeleteItem prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -2426,25 +2426,25 @@ public final class BagMsg {
      * 删除通知（前端需要同步更改后续索引）
      * </pre>
      *
-     * Protobuf type {@code DeleteItemNo}
+     * Protobuf type {@code NDeleteItem}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:DeleteItemNo)
-        com.su.msg.BagMsg.DeleteItemNoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:NDeleteItem)
+        com.su.msg.BagMsg.NDeleteItemOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.BagMsg.internal_static_DeleteItemNo_descriptor;
+        return com.su.msg.BagMsg.internal_static_NDeleteItem_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.BagMsg.internal_static_DeleteItemNo_fieldAccessorTable
+        return com.su.msg.BagMsg.internal_static_NDeleteItem_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.su.msg.BagMsg.DeleteItemNo.class, com.su.msg.BagMsg.DeleteItemNo.Builder.class);
+                com.su.msg.BagMsg.NDeleteItem.class, com.su.msg.BagMsg.NDeleteItem.Builder.class);
       }
 
-      // Construct using com.su.msg.BagMsg.DeleteItemNo.newBuilder()
+      // Construct using com.su.msg.BagMsg.NDeleteItem.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2468,23 +2468,23 @@ public final class BagMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.BagMsg.internal_static_DeleteItemNo_descriptor;
+        return com.su.msg.BagMsg.internal_static_NDeleteItem_descriptor;
       }
 
-      public com.su.msg.BagMsg.DeleteItemNo getDefaultInstanceForType() {
-        return com.su.msg.BagMsg.DeleteItemNo.getDefaultInstance();
+      public com.su.msg.BagMsg.NDeleteItem getDefaultInstanceForType() {
+        return com.su.msg.BagMsg.NDeleteItem.getDefaultInstance();
       }
 
-      public com.su.msg.BagMsg.DeleteItemNo build() {
-        com.su.msg.BagMsg.DeleteItemNo result = buildPartial();
+      public com.su.msg.BagMsg.NDeleteItem build() {
+        com.su.msg.BagMsg.NDeleteItem result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.su.msg.BagMsg.DeleteItemNo buildPartial() {
-        com.su.msg.BagMsg.DeleteItemNo result = new com.su.msg.BagMsg.DeleteItemNo(this);
+      public com.su.msg.BagMsg.NDeleteItem buildPartial() {
+        com.su.msg.BagMsg.NDeleteItem result = new com.su.msg.BagMsg.NDeleteItem(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) == 0x00000001)) {
           index_ = java.util.Collections.unmodifiableList(index_);
@@ -2522,16 +2522,16 @@ public final class BagMsg {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.su.msg.BagMsg.DeleteItemNo) {
-          return mergeFrom((com.su.msg.BagMsg.DeleteItemNo)other);
+        if (other instanceof com.su.msg.BagMsg.NDeleteItem) {
+          return mergeFrom((com.su.msg.BagMsg.NDeleteItem)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.su.msg.BagMsg.DeleteItemNo other) {
-        if (other == com.su.msg.BagMsg.DeleteItemNo.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.su.msg.BagMsg.NDeleteItem other) {
+        if (other == com.su.msg.BagMsg.NDeleteItem.getDefaultInstance()) return this;
         if (!other.index_.isEmpty()) {
           if (index_.isEmpty()) {
             index_ = other.index_;
@@ -2555,11 +2555,11 @@ public final class BagMsg {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.su.msg.BagMsg.DeleteItemNo parsedMessage = null;
+        com.su.msg.BagMsg.NDeleteItem parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.su.msg.BagMsg.DeleteItemNo) e.getUnfinishedMessage();
+          parsedMessage = (com.su.msg.BagMsg.NDeleteItem) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2674,70 +2674,70 @@ public final class BagMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:DeleteItemNo)
+      // @@protoc_insertion_point(builder_scope:NDeleteItem)
     }
 
-    // @@protoc_insertion_point(class_scope:DeleteItemNo)
-    private static final com.su.msg.BagMsg.DeleteItemNo DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:NDeleteItem)
+    private static final com.su.msg.BagMsg.NDeleteItem DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.su.msg.BagMsg.DeleteItemNo();
+      DEFAULT_INSTANCE = new com.su.msg.BagMsg.NDeleteItem();
     }
 
-    public static com.su.msg.BagMsg.DeleteItemNo getDefaultInstance() {
+    public static com.su.msg.BagMsg.NDeleteItem getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<DeleteItemNo>
-        PARSER = new com.google.protobuf.AbstractParser<DeleteItemNo>() {
-      public DeleteItemNo parsePartialFrom(
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<NDeleteItem>
+        PARSER = new com.google.protobuf.AbstractParser<NDeleteItem>() {
+      public NDeleteItem parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new DeleteItemNo(input, extensionRegistry);
+          return new NDeleteItem(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<DeleteItemNo> parser() {
+    public static com.google.protobuf.Parser<NDeleteItem> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<DeleteItemNo> getParserForType() {
+    public com.google.protobuf.Parser<NDeleteItem> getParserForType() {
       return PARSER;
     }
 
-    public com.su.msg.BagMsg.DeleteItemNo getDefaultInstanceForType() {
+    public com.su.msg.BagMsg.NDeleteItem getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface UpdateItemNoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:UpdateItemNo)
+  public interface NUpdateItemOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:NUpdateItem)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated ._Grid grid = 1;</code>
+     * <code>repeated .MGrid grid = 1;</code>
      */
-    java.util.List<com.su.msg.BagMsg._Grid> 
+    java.util.List<com.su.msg.BagMsg.MGrid> 
         getGridList();
     /**
-     * <code>repeated ._Grid grid = 1;</code>
+     * <code>repeated .MGrid grid = 1;</code>
      */
-    com.su.msg.BagMsg._Grid getGrid(int index);
+    com.su.msg.BagMsg.MGrid getGrid(int index);
     /**
-     * <code>repeated ._Grid grid = 1;</code>
+     * <code>repeated .MGrid grid = 1;</code>
      */
     int getGridCount();
     /**
-     * <code>repeated ._Grid grid = 1;</code>
+     * <code>repeated .MGrid grid = 1;</code>
      */
-    java.util.List<? extends com.su.msg.BagMsg._GridOrBuilder> 
+    java.util.List<? extends com.su.msg.BagMsg.MGridOrBuilder> 
         getGridOrBuilderList();
     /**
-     * <code>repeated ._Grid grid = 1;</code>
+     * <code>repeated .MGrid grid = 1;</code>
      */
-    com.su.msg.BagMsg._GridOrBuilder getGridOrBuilder(
+    com.su.msg.BagMsg.MGridOrBuilder getGridOrBuilder(
         int index);
   }
   /**
@@ -2745,17 +2745,17 @@ public final class BagMsg {
    * 更新通知
    * </pre>
    *
-   * Protobuf type {@code UpdateItemNo}
+   * Protobuf type {@code NUpdateItem}
    */
-  public  static final class UpdateItemNo extends
+  public  static final class NUpdateItem extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:UpdateItemNo)
-      UpdateItemNoOrBuilder {
-    // Use UpdateItemNo.newBuilder() to construct.
-    private UpdateItemNo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:NUpdateItem)
+      NUpdateItemOrBuilder {
+    // Use NUpdateItem.newBuilder() to construct.
+    private NUpdateItem(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private UpdateItemNo() {
+    private NUpdateItem() {
       grid_ = java.util.Collections.emptyList();
     }
 
@@ -2764,7 +2764,7 @@ public final class BagMsg {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private UpdateItemNo(
+    private NUpdateItem(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2789,11 +2789,11 @@ public final class BagMsg {
             }
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                grid_ = new java.util.ArrayList<com.su.msg.BagMsg._Grid>();
+                grid_ = new java.util.ArrayList<com.su.msg.BagMsg.MGrid>();
                 mutable_bitField0_ |= 0x00000001;
               }
               grid_.add(
-                  input.readMessage(com.su.msg.BagMsg._Grid.PARSER, extensionRegistry));
+                  input.readMessage(com.su.msg.BagMsg.MGrid.PARSER, extensionRegistry));
               break;
             }
           }
@@ -2813,47 +2813,47 @@ public final class BagMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.BagMsg.internal_static_UpdateItemNo_descriptor;
+      return com.su.msg.BagMsg.internal_static_NUpdateItem_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.BagMsg.internal_static_UpdateItemNo_fieldAccessorTable
+      return com.su.msg.BagMsg.internal_static_NUpdateItem_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.su.msg.BagMsg.UpdateItemNo.class, com.su.msg.BagMsg.UpdateItemNo.Builder.class);
+              com.su.msg.BagMsg.NUpdateItem.class, com.su.msg.BagMsg.NUpdateItem.Builder.class);
     }
 
     public static final int GRID_FIELD_NUMBER = 1;
-    private java.util.List<com.su.msg.BagMsg._Grid> grid_;
+    private java.util.List<com.su.msg.BagMsg.MGrid> grid_;
     /**
-     * <code>repeated ._Grid grid = 1;</code>
+     * <code>repeated .MGrid grid = 1;</code>
      */
-    public java.util.List<com.su.msg.BagMsg._Grid> getGridList() {
+    public java.util.List<com.su.msg.BagMsg.MGrid> getGridList() {
       return grid_;
     }
     /**
-     * <code>repeated ._Grid grid = 1;</code>
+     * <code>repeated .MGrid grid = 1;</code>
      */
-    public java.util.List<? extends com.su.msg.BagMsg._GridOrBuilder> 
+    public java.util.List<? extends com.su.msg.BagMsg.MGridOrBuilder> 
         getGridOrBuilderList() {
       return grid_;
     }
     /**
-     * <code>repeated ._Grid grid = 1;</code>
+     * <code>repeated .MGrid grid = 1;</code>
      */
     public int getGridCount() {
       return grid_.size();
     }
     /**
-     * <code>repeated ._Grid grid = 1;</code>
+     * <code>repeated .MGrid grid = 1;</code>
      */
-    public com.su.msg.BagMsg._Grid getGrid(int index) {
+    public com.su.msg.BagMsg.MGrid getGrid(int index) {
       return grid_.get(index);
     }
     /**
-     * <code>repeated ._Grid grid = 1;</code>
+     * <code>repeated .MGrid grid = 1;</code>
      */
-    public com.su.msg.BagMsg._GridOrBuilder getGridOrBuilder(
+    public com.su.msg.BagMsg.MGridOrBuilder getGridOrBuilder(
         int index) {
       return grid_.get(index);
     }
@@ -2896,10 +2896,10 @@ public final class BagMsg {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.su.msg.BagMsg.UpdateItemNo)) {
+      if (!(obj instanceof com.su.msg.BagMsg.NUpdateItem)) {
         return super.equals(obj);
       }
-      com.su.msg.BagMsg.UpdateItemNo other = (com.su.msg.BagMsg.UpdateItemNo) obj;
+      com.su.msg.BagMsg.NUpdateItem other = (com.su.msg.BagMsg.NUpdateItem) obj;
 
       boolean result = true;
       result = result && getGridList()
@@ -2924,58 +2924,58 @@ public final class BagMsg {
       return hash;
     }
 
-    public static com.su.msg.BagMsg.UpdateItemNo parseFrom(
+    public static com.su.msg.BagMsg.NUpdateItem parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.BagMsg.UpdateItemNo parseFrom(
+    public static com.su.msg.BagMsg.NUpdateItem parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.BagMsg.UpdateItemNo parseFrom(byte[] data)
+    public static com.su.msg.BagMsg.NUpdateItem parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.BagMsg.UpdateItemNo parseFrom(
+    public static com.su.msg.BagMsg.NUpdateItem parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.BagMsg.UpdateItemNo parseFrom(java.io.InputStream input)
+    public static com.su.msg.BagMsg.NUpdateItem parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.BagMsg.UpdateItemNo parseFrom(
+    public static com.su.msg.BagMsg.NUpdateItem parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.BagMsg.UpdateItemNo parseDelimitedFrom(java.io.InputStream input)
+    public static com.su.msg.BagMsg.NUpdateItem parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.su.msg.BagMsg.UpdateItemNo parseDelimitedFrom(
+    public static com.su.msg.BagMsg.NUpdateItem parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.BagMsg.UpdateItemNo parseFrom(
+    public static com.su.msg.BagMsg.NUpdateItem parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.BagMsg.UpdateItemNo parseFrom(
+    public static com.su.msg.BagMsg.NUpdateItem parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2987,7 +2987,7 @@ public final class BagMsg {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.su.msg.BagMsg.UpdateItemNo prototype) {
+    public static Builder newBuilder(com.su.msg.BagMsg.NUpdateItem prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -3006,25 +3006,25 @@ public final class BagMsg {
      * 更新通知
      * </pre>
      *
-     * Protobuf type {@code UpdateItemNo}
+     * Protobuf type {@code NUpdateItem}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:UpdateItemNo)
-        com.su.msg.BagMsg.UpdateItemNoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:NUpdateItem)
+        com.su.msg.BagMsg.NUpdateItemOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.BagMsg.internal_static_UpdateItemNo_descriptor;
+        return com.su.msg.BagMsg.internal_static_NUpdateItem_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.BagMsg.internal_static_UpdateItemNo_fieldAccessorTable
+        return com.su.msg.BagMsg.internal_static_NUpdateItem_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.su.msg.BagMsg.UpdateItemNo.class, com.su.msg.BagMsg.UpdateItemNo.Builder.class);
+                com.su.msg.BagMsg.NUpdateItem.class, com.su.msg.BagMsg.NUpdateItem.Builder.class);
       }
 
-      // Construct using com.su.msg.BagMsg.UpdateItemNo.newBuilder()
+      // Construct using com.su.msg.BagMsg.NUpdateItem.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3053,23 +3053,23 @@ public final class BagMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.BagMsg.internal_static_UpdateItemNo_descriptor;
+        return com.su.msg.BagMsg.internal_static_NUpdateItem_descriptor;
       }
 
-      public com.su.msg.BagMsg.UpdateItemNo getDefaultInstanceForType() {
-        return com.su.msg.BagMsg.UpdateItemNo.getDefaultInstance();
+      public com.su.msg.BagMsg.NUpdateItem getDefaultInstanceForType() {
+        return com.su.msg.BagMsg.NUpdateItem.getDefaultInstance();
       }
 
-      public com.su.msg.BagMsg.UpdateItemNo build() {
-        com.su.msg.BagMsg.UpdateItemNo result = buildPartial();
+      public com.su.msg.BagMsg.NUpdateItem build() {
+        com.su.msg.BagMsg.NUpdateItem result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.su.msg.BagMsg.UpdateItemNo buildPartial() {
-        com.su.msg.BagMsg.UpdateItemNo result = new com.su.msg.BagMsg.UpdateItemNo(this);
+      public com.su.msg.BagMsg.NUpdateItem buildPartial() {
+        com.su.msg.BagMsg.NUpdateItem result = new com.su.msg.BagMsg.NUpdateItem(this);
         int from_bitField0_ = bitField0_;
         if (gridBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -3111,16 +3111,16 @@ public final class BagMsg {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.su.msg.BagMsg.UpdateItemNo) {
-          return mergeFrom((com.su.msg.BagMsg.UpdateItemNo)other);
+        if (other instanceof com.su.msg.BagMsg.NUpdateItem) {
+          return mergeFrom((com.su.msg.BagMsg.NUpdateItem)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.su.msg.BagMsg.UpdateItemNo other) {
-        if (other == com.su.msg.BagMsg.UpdateItemNo.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.su.msg.BagMsg.NUpdateItem other) {
+        if (other == com.su.msg.BagMsg.NUpdateItem.getDefaultInstance()) return this;
         if (gridBuilder_ == null) {
           if (!other.grid_.isEmpty()) {
             if (grid_.isEmpty()) {
@@ -3160,11 +3160,11 @@ public final class BagMsg {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.su.msg.BagMsg.UpdateItemNo parsedMessage = null;
+        com.su.msg.BagMsg.NUpdateItem parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.su.msg.BagMsg.UpdateItemNo) e.getUnfinishedMessage();
+          parsedMessage = (com.su.msg.BagMsg.NUpdateItem) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3175,22 +3175,22 @@ public final class BagMsg {
       }
       private int bitField0_;
 
-      private java.util.List<com.su.msg.BagMsg._Grid> grid_ =
+      private java.util.List<com.su.msg.BagMsg.MGrid> grid_ =
         java.util.Collections.emptyList();
       private void ensureGridIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          grid_ = new java.util.ArrayList<com.su.msg.BagMsg._Grid>(grid_);
+          grid_ = new java.util.ArrayList<com.su.msg.BagMsg.MGrid>(grid_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.su.msg.BagMsg._Grid, com.su.msg.BagMsg._Grid.Builder, com.su.msg.BagMsg._GridOrBuilder> gridBuilder_;
+          com.su.msg.BagMsg.MGrid, com.su.msg.BagMsg.MGrid.Builder, com.su.msg.BagMsg.MGridOrBuilder> gridBuilder_;
 
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
-      public java.util.List<com.su.msg.BagMsg._Grid> getGridList() {
+      public java.util.List<com.su.msg.BagMsg.MGrid> getGridList() {
         if (gridBuilder_ == null) {
           return java.util.Collections.unmodifiableList(grid_);
         } else {
@@ -3198,7 +3198,7 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
       public int getGridCount() {
         if (gridBuilder_ == null) {
@@ -3208,9 +3208,9 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
-      public com.su.msg.BagMsg._Grid getGrid(int index) {
+      public com.su.msg.BagMsg.MGrid getGrid(int index) {
         if (gridBuilder_ == null) {
           return grid_.get(index);
         } else {
@@ -3218,10 +3218,10 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
       public Builder setGrid(
-          int index, com.su.msg.BagMsg._Grid value) {
+          int index, com.su.msg.BagMsg.MGrid value) {
         if (gridBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3235,10 +3235,10 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
       public Builder setGrid(
-          int index, com.su.msg.BagMsg._Grid.Builder builderForValue) {
+          int index, com.su.msg.BagMsg.MGrid.Builder builderForValue) {
         if (gridBuilder_ == null) {
           ensureGridIsMutable();
           grid_.set(index, builderForValue.build());
@@ -3249,9 +3249,9 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
-      public Builder addGrid(com.su.msg.BagMsg._Grid value) {
+      public Builder addGrid(com.su.msg.BagMsg.MGrid value) {
         if (gridBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3265,10 +3265,10 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
       public Builder addGrid(
-          int index, com.su.msg.BagMsg._Grid value) {
+          int index, com.su.msg.BagMsg.MGrid value) {
         if (gridBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3282,10 +3282,10 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
       public Builder addGrid(
-          com.su.msg.BagMsg._Grid.Builder builderForValue) {
+          com.su.msg.BagMsg.MGrid.Builder builderForValue) {
         if (gridBuilder_ == null) {
           ensureGridIsMutable();
           grid_.add(builderForValue.build());
@@ -3296,10 +3296,10 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
       public Builder addGrid(
-          int index, com.su.msg.BagMsg._Grid.Builder builderForValue) {
+          int index, com.su.msg.BagMsg.MGrid.Builder builderForValue) {
         if (gridBuilder_ == null) {
           ensureGridIsMutable();
           grid_.add(index, builderForValue.build());
@@ -3310,10 +3310,10 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
       public Builder addAllGrid(
-          java.lang.Iterable<? extends com.su.msg.BagMsg._Grid> values) {
+          java.lang.Iterable<? extends com.su.msg.BagMsg.MGrid> values) {
         if (gridBuilder_ == null) {
           ensureGridIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -3325,7 +3325,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
       public Builder clearGrid() {
         if (gridBuilder_ == null) {
@@ -3338,7 +3338,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
       public Builder removeGrid(int index) {
         if (gridBuilder_ == null) {
@@ -3351,16 +3351,16 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
-      public com.su.msg.BagMsg._Grid.Builder getGridBuilder(
+      public com.su.msg.BagMsg.MGrid.Builder getGridBuilder(
           int index) {
         return getGridFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
-      public com.su.msg.BagMsg._GridOrBuilder getGridOrBuilder(
+      public com.su.msg.BagMsg.MGridOrBuilder getGridOrBuilder(
           int index) {
         if (gridBuilder_ == null) {
           return grid_.get(index);  } else {
@@ -3368,9 +3368,9 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
-      public java.util.List<? extends com.su.msg.BagMsg._GridOrBuilder> 
+      public java.util.List<? extends com.su.msg.BagMsg.MGridOrBuilder> 
            getGridOrBuilderList() {
         if (gridBuilder_ != null) {
           return gridBuilder_.getMessageOrBuilderList();
@@ -3379,33 +3379,33 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
-      public com.su.msg.BagMsg._Grid.Builder addGridBuilder() {
+      public com.su.msg.BagMsg.MGrid.Builder addGridBuilder() {
         return getGridFieldBuilder().addBuilder(
-            com.su.msg.BagMsg._Grid.getDefaultInstance());
+            com.su.msg.BagMsg.MGrid.getDefaultInstance());
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
-      public com.su.msg.BagMsg._Grid.Builder addGridBuilder(
+      public com.su.msg.BagMsg.MGrid.Builder addGridBuilder(
           int index) {
         return getGridFieldBuilder().addBuilder(
-            index, com.su.msg.BagMsg._Grid.getDefaultInstance());
+            index, com.su.msg.BagMsg.MGrid.getDefaultInstance());
       }
       /**
-       * <code>repeated ._Grid grid = 1;</code>
+       * <code>repeated .MGrid grid = 1;</code>
        */
-      public java.util.List<com.su.msg.BagMsg._Grid.Builder> 
+      public java.util.List<com.su.msg.BagMsg.MGrid.Builder> 
            getGridBuilderList() {
         return getGridFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.su.msg.BagMsg._Grid, com.su.msg.BagMsg._Grid.Builder, com.su.msg.BagMsg._GridOrBuilder> 
+          com.su.msg.BagMsg.MGrid, com.su.msg.BagMsg.MGrid.Builder, com.su.msg.BagMsg.MGridOrBuilder> 
           getGridFieldBuilder() {
         if (gridBuilder_ == null) {
           gridBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.su.msg.BagMsg._Grid, com.su.msg.BagMsg._Grid.Builder, com.su.msg.BagMsg._GridOrBuilder>(
+              com.su.msg.BagMsg.MGrid, com.su.msg.BagMsg.MGrid.Builder, com.su.msg.BagMsg.MGridOrBuilder>(
                   grid_,
                   ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
@@ -3425,69 +3425,69 @@ public final class BagMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:UpdateItemNo)
+      // @@protoc_insertion_point(builder_scope:NUpdateItem)
     }
 
-    // @@protoc_insertion_point(class_scope:UpdateItemNo)
-    private static final com.su.msg.BagMsg.UpdateItemNo DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:NUpdateItem)
+    private static final com.su.msg.BagMsg.NUpdateItem DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.su.msg.BagMsg.UpdateItemNo();
+      DEFAULT_INSTANCE = new com.su.msg.BagMsg.NUpdateItem();
     }
 
-    public static com.su.msg.BagMsg.UpdateItemNo getDefaultInstance() {
+    public static com.su.msg.BagMsg.NUpdateItem getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<UpdateItemNo>
-        PARSER = new com.google.protobuf.AbstractParser<UpdateItemNo>() {
-      public UpdateItemNo parsePartialFrom(
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<NUpdateItem>
+        PARSER = new com.google.protobuf.AbstractParser<NUpdateItem>() {
+      public NUpdateItem parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new UpdateItemNo(input, extensionRegistry);
+          return new NUpdateItem(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<UpdateItemNo> parser() {
+    public static com.google.protobuf.Parser<NUpdateItem> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<UpdateItemNo> getParserForType() {
+    public com.google.protobuf.Parser<NUpdateItem> getParserForType() {
       return PARSER;
     }
 
-    public com.su.msg.BagMsg.UpdateItemNo getDefaultInstanceForType() {
+    public com.su.msg.BagMsg.NUpdateItem getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static__Grid_descriptor;
+    internal_static_MGrid_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static__Grid_fieldAccessorTable;
+      internal_static_MGrid_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_UseItem_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_UseItem_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_UseItem__descriptor;
+    internal_static_TUseItem_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_UseItem__fieldAccessorTable;
+      internal_static_TUseItem_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_DeleteItemNo_descriptor;
+    internal_static_NDeleteItem_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_DeleteItemNo_fieldAccessorTable;
+      internal_static_NDeleteItem_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_UpdateItemNo_descriptor;
+    internal_static_NUpdateItem_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_UpdateItemNo_fieldAccessorTable;
+      internal_static_NUpdateItem_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -3497,13 +3497,13 @@ public final class BagMsg {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014BagMsg.proto\"e\n\005_Grid\022\r\n\005index\030\001 \001(\005\022\014" +
+      "\n\014BagMsg.proto\"e\n\005MGrid\022\r\n\005index\030\001 \001(\005\022\014" +
       "\n\004type\030\002 \001(\005\022\r\n\005sysId\030\003 \001(\005\022\r\n\005count\030\004 \001" +
       "(\005\022\017\n\007effType\030\005 \001(\003\022\020\n\010effValue\030\006 \001(\003\"*\n" +
       "\007UseItem\022\r\n\005index\030\001 \001(\005\022\020\n\010useCount\030\002 \001(" +
-      "\005\"\n\n\010UseItem_\"\035\n\014DeleteItemNo\022\r\n\005index\030\001" +
-      " \003(\005\"$\n\014UpdateItemNo\022\024\n\004grid\030\001 \003(\0132\006._Gr" +
-      "idB\014\n\ncom.su.msg"
+      "\005\"\n\n\010TUseItem\"\034\n\013NDeleteItem\022\r\n\005index\030\001 " +
+      "\003(\005\"#\n\013NUpdateItem\022\024\n\004grid\030\001 \003(\0132\006.MGrid" +
+      "B\014\n\ncom.su.msg"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -3517,11 +3517,11 @@ public final class BagMsg {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static__Grid_descriptor =
+    internal_static_MGrid_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static__Grid_fieldAccessorTable = new
+    internal_static_MGrid_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static__Grid_descriptor,
+        internal_static_MGrid_descriptor,
         new java.lang.String[] { "Index", "Type", "SysId", "Count", "EffType", "EffValue", });
     internal_static_UseItem_descriptor =
       getDescriptor().getMessageTypes().get(1);
@@ -3529,23 +3529,23 @@ public final class BagMsg {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UseItem_descriptor,
         new java.lang.String[] { "Index", "UseCount", });
-    internal_static_UseItem__descriptor =
+    internal_static_TUseItem_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_UseItem__fieldAccessorTable = new
+    internal_static_TUseItem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_UseItem__descriptor,
+        internal_static_TUseItem_descriptor,
         new java.lang.String[] { });
-    internal_static_DeleteItemNo_descriptor =
+    internal_static_NDeleteItem_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_DeleteItemNo_fieldAccessorTable = new
+    internal_static_NDeleteItem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_DeleteItemNo_descriptor,
+        internal_static_NDeleteItem_descriptor,
         new java.lang.String[] { "Index", });
-    internal_static_UpdateItemNo_descriptor =
+    internal_static_NUpdateItem_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_UpdateItemNo_fieldAccessorTable = new
+    internal_static_NUpdateItem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_UpdateItemNo_descriptor,
+        internal_static_NUpdateItem_descriptor,
         new java.lang.String[] { "Grid", });
   }
 

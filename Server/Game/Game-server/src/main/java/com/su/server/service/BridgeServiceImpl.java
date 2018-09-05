@@ -11,7 +11,7 @@ import com.su.common.po.Player;
 import com.su.core.game.Site;
 import com.su.core.game.TableResult;
 import com.su.core.game.service.BridgeService;
-import com.su.msg.TableMsg._GamePlayerResult;
+import com.su.msg.TableMsg.MGamePlayerResult;
 
 @Service
 public class BridgeServiceImpl implements BridgeService {
@@ -42,7 +42,7 @@ public class BridgeServiceImpl implements BridgeService {
 
 
 	@Override
-	public _GamePlayerResult doTableResult(TableResult tableResult) {
+	public MGamePlayerResult doTableResult(TableResult tableResult) {
 		return playerGameService.doTableResult(tableResult);
 	}
 

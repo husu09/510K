@@ -9,12 +9,12 @@ import com.su.core.game.MatchSite;
 import com.su.core.game.Site;
 import com.su.core.game.enums.SiteType;
 import com.su.msg.MatchSiteMsg.CancelMatch;
-import com.su.msg.MatchSiteMsg.CancelMatch_;
 import com.su.msg.MatchSiteMsg.GetMatchSite;
-import com.su.msg.MatchSiteMsg.GetMatchSite_;
+import com.su.msg.MatchSiteMsg.MMatchSite;
 import com.su.msg.MatchSiteMsg.Match;
-import com.su.msg.MatchSiteMsg.Match_;
-import com.su.msg.MatchSiteMsg._MatchSite;
+import com.su.msg.MatchSiteMsg.TCancelMatch;
+import com.su.msg.MatchSiteMsg.TGetMatchSite;
+import com.su.msg.MatchSiteMsg.TMatch;
 import com.su.server.service.MatchSiteService;
 
 @Controller
@@ -35,7 +35,7 @@ public class MatchSiteControl {
 		}
 		// 加入到匹配队列
 		if (matchSite.addPlayerToMatch(playerContext, false)) {
-			playerContext.write(Match_.newBuilder().setSiteId(matchSite.getSiteCo().getId()));
+			playerContext.write(TMatch.newBuilder().setSiteId(matchSite.getSiteCo().getId()));
 		}
 	}
 
@@ -48,7 +48,7 @@ public class MatchSiteControl {
 		if (site != null && site instanceof MatchSite) {
 			// 移除成功通知
 			if (((MatchSite) site).removePlayerFromMatch(playerContext)) {
-				playerContext.write(CancelMatch_.getDefaultInstance());
+				playerContext.write(TCancelMatch.getDefaultInstance());
 			}
 		}
 
@@ -63,8 +63,8 @@ public class MatchSiteControl {
 			playerContext.sendError(1002);
 			return;
 		}
-		GetMatchSite_.Builder resp = GetMatchSite_.newBuilder();
-		_MatchSite.Builder _matchSite = _MatchSite.newBuilder();
+		TGetMatchSite.Builder resp = TGetMatchSite.newBuilder();
+		MMatchSite.Builder _matchSite = MMatchSite.newBuilder();
 		// 获取指定类型的游戏场
 		for (MatchSite matchSite : matchSiteService.getMatchSiteMap().values()) {
 			if (matchSite.getSiteType().getValue() == req.getSiteType()) {
