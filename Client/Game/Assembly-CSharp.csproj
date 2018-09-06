@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Core\MsgDispatch.cs" />
     <Compile Include="Assets\Scripts\Core\NetPacket.cs" />
     <Compile Include="Assets\Scripts\Handler\LoginHandler.cs" />
+    <Compile Include="Assets\Scripts\Main.cs" />
     <Compile Include="Assets\Scripts\Proto\BagMsg.cs" />
     <Compile Include="Assets\Scripts\Proto\CommonMsg.cs" />
     <Compile Include="Assets\Scripts\Proto\ContestMsg.cs" />
