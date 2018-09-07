@@ -200,6 +200,6 @@ public class Client  {
         NetPacket p = new NetPacket();
         p.socket = sk;
         p.BeginWrite(msg);
-        networkMgr.AddPacket(p);
+        //networkMgr.AddPacket(p);
     }
 }
