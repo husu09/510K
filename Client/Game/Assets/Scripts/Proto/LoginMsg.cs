@@ -3,78 +3,83 @@
 // Input: LoginMsg.proto
 
 #pragma warning disable 1591, 0612, 3021
-[global::ProtoBuf.ProtoContract()]
-public partial class Login : global::ProtoBuf.IExtensible
+namespace Assets.Scripts.Proto
 {
-    private global::ProtoBuf.IExtension __pbn__extensionData;
-    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class Login : global::ProtoBuf.IExtensible
     {
-        return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
-    }
-    public Login()
-    {
-        OnConstructor();
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public Login()
+        {
+            OnConstructor();
+        }
+
+        partial void OnConstructor();
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"account")]
+        [global::System.ComponentModel.DefaultValue("")]
+        public string Account
+        {
+            get { return __pbn__Account ?? ""; }
+            set { __pbn__Account = value; }
+        }
+        public bool ShouldSerializeAccount()
+        {
+            return __pbn__Account != null;
+        }
+        public void ResetAccount()
+        {
+            __pbn__Account = null;
+        }
+        private string __pbn__Account;
+
+        [global::ProtoBuf.ProtoMember(2, Name = @"name")]
+        [global::System.ComponentModel.DefaultValue("")]
+        public string Name
+        {
+            get { return __pbn__Name ?? ""; }
+            set { __pbn__Name = value; }
+        }
+        public bool ShouldSerializeName()
+        {
+            return __pbn__Name != null;
+        }
+        public void ResetName()
+        {
+            __pbn__Name = null;
+        }
+        private string __pbn__Name;
+
     }
 
-    partial void OnConstructor();
+    [global::ProtoBuf.ProtoContract()]
+    public partial class LoginTo : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public LoginTo()
+        {
+            Grids = new global::System.Collections.Generic.List<GridMo>();
+            OnConstructor();
+        }
 
-    [global::ProtoBuf.ProtoMember(1, Name = @"account")]
-    [global::System.ComponentModel.DefaultValue("")]
-    public string Account
-    {
-        get { return __pbn__Account ?? ""; }
-        set { __pbn__Account = value; }
-    }
-    public bool ShouldSerializeAccount()
-    {
-        return __pbn__Account != null;
-    }
-    public void ResetAccount()
-    {
-        __pbn__Account = null;
-    }
-    private string __pbn__Account;
+        partial void OnConstructor();
 
-    [global::ProtoBuf.ProtoMember(2, Name = @"name")]
-    [global::System.ComponentModel.DefaultValue("")]
-    public string Name
-    {
-        get { return __pbn__Name ?? ""; }
-        set { __pbn__Name = value; }
-    }
-    public bool ShouldSerializeName()
-    {
-        return __pbn__Name != null;
-    }
-    public void ResetName()
-    {
-        __pbn__Name = null;
-    }
-    private string __pbn__Name;
+        [global::ProtoBuf.ProtoMember(1, Name = @"player")]
+        public PlayerMo Player { get; set; }
 
-}
+        [global::ProtoBuf.ProtoMember(2, Name = @"grid")]
+        public global::System.Collections.Generic.List<GridMo> Grids { get; private set; }
 
-[global::ProtoBuf.ProtoContract()]
-public partial class TLogin : global::ProtoBuf.IExtensible
-{
-    private global::ProtoBuf.IExtension __pbn__extensionData;
-    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-    {
-        return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
     }
-    public TLogin()
-    {
-        Grids = new global::System.Collections.Generic.List<MGrid>();
-        OnConstructor();
-    }
-
-    partial void OnConstructor();
-
-    [global::ProtoBuf.ProtoMember(1, Name = @"player")]
-    public MPlayer Player { get; set; }
-
-    [global::ProtoBuf.ProtoMember(2, Name = @"grid")]
-    public global::System.Collections.Generic.List<MGrid> Grids { get; private set; }
 
 }
 

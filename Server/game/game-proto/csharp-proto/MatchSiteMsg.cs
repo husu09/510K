@@ -3,206 +3,211 @@
 // Input: MatchSiteMsg.proto
 
 #pragma warning disable 1591, 0612, 3021
-[global::ProtoBuf.ProtoContract()]
-public partial class MMatchSite : global::ProtoBuf.IExtensible
+namespace Assets.Scripts.Proto
 {
-    private global::ProtoBuf.IExtension __pbn__extensionData;
-    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class MMatchSite : global::ProtoBuf.IExtensible
     {
-        return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
-    }
-    public MMatchSite()
-    {
-        OnConstructor();
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public MMatchSite()
+        {
+            OnConstructor();
+        }
+
+        partial void OnConstructor();
+
+        [global::ProtoBuf.ProtoMember(1)]
+        public int siteId
+        {
+            get { return __pbn__siteId.GetValueOrDefault(); }
+            set { __pbn__siteId = value; }
+        }
+        public bool ShouldSerializesiteId()
+        {
+            return __pbn__siteId != null;
+        }
+        public void ResetsiteId()
+        {
+            __pbn__siteId = null;
+        }
+        private int? __pbn__siteId;
+
+        [global::ProtoBuf.ProtoMember(2)]
+        public int playerNum
+        {
+            get { return __pbn__playerNum.GetValueOrDefault(); }
+            set { __pbn__playerNum = value; }
+        }
+        public bool ShouldSerializeplayerNum()
+        {
+            return __pbn__playerNum != null;
+        }
+        public void ResetplayerNum()
+        {
+            __pbn__playerNum = null;
+        }
+        private int? __pbn__playerNum;
+
     }
 
-    partial void OnConstructor();
+    [global::ProtoBuf.ProtoContract()]
+    public partial class Match : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public Match()
+        {
+            OnConstructor();
+        }
 
-    [global::ProtoBuf.ProtoMember(1)]
-    public int siteId
-    {
-        get { return __pbn__siteId.GetValueOrDefault(); }
-        set { __pbn__siteId = value; }
-    }
-    public bool ShouldSerializesiteId()
-    {
-        return __pbn__siteId != null;
-    }
-    public void ResetsiteId()
-    {
-        __pbn__siteId = null;
-    }
-    private int? __pbn__siteId;
+        partial void OnConstructor();
 
-    [global::ProtoBuf.ProtoMember(2)]
-    public int playerNum
-    {
-        get { return __pbn__playerNum.GetValueOrDefault(); }
-        set { __pbn__playerNum = value; }
-    }
-    public bool ShouldSerializeplayerNum()
-    {
-        return __pbn__playerNum != null;
-    }
-    public void ResetplayerNum()
-    {
-        __pbn__playerNum = null;
-    }
-    private int? __pbn__playerNum;
+        [global::ProtoBuf.ProtoMember(1)]
+        public int siteId
+        {
+            get { return __pbn__siteId.GetValueOrDefault(); }
+            set { __pbn__siteId = value; }
+        }
+        public bool ShouldSerializesiteId()
+        {
+            return __pbn__siteId != null;
+        }
+        public void ResetsiteId()
+        {
+            __pbn__siteId = null;
+        }
+        private int? __pbn__siteId;
 
-}
-
-[global::ProtoBuf.ProtoContract()]
-public partial class Match : global::ProtoBuf.IExtensible
-{
-    private global::ProtoBuf.IExtension __pbn__extensionData;
-    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-    {
-        return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
-    }
-    public Match()
-    {
-        OnConstructor();
     }
 
-    partial void OnConstructor();
+    [global::ProtoBuf.ProtoContract()]
+    public partial class TMatch : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public TMatch()
+        {
+            OnConstructor();
+        }
 
-    [global::ProtoBuf.ProtoMember(1)]
-    public int siteId
-    {
-        get { return __pbn__siteId.GetValueOrDefault(); }
-        set { __pbn__siteId = value; }
-    }
-    public bool ShouldSerializesiteId()
-    {
-        return __pbn__siteId != null;
-    }
-    public void ResetsiteId()
-    {
-        __pbn__siteId = null;
-    }
-    private int? __pbn__siteId;
+        partial void OnConstructor();
 
-}
+        [global::ProtoBuf.ProtoMember(1)]
+        public int siteId
+        {
+            get { return __pbn__siteId.GetValueOrDefault(); }
+            set { __pbn__siteId = value; }
+        }
+        public bool ShouldSerializesiteId()
+        {
+            return __pbn__siteId != null;
+        }
+        public void ResetsiteId()
+        {
+            __pbn__siteId = null;
+        }
+        private int? __pbn__siteId;
 
-[global::ProtoBuf.ProtoContract()]
-public partial class TMatch : global::ProtoBuf.IExtensible
-{
-    private global::ProtoBuf.IExtension __pbn__extensionData;
-    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-    {
-        return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
-    }
-    public TMatch()
-    {
-        OnConstructor();
-    }
-
-    partial void OnConstructor();
-
-    [global::ProtoBuf.ProtoMember(1)]
-    public int siteId
-    {
-        get { return __pbn__siteId.GetValueOrDefault(); }
-        set { __pbn__siteId = value; }
-    }
-    public bool ShouldSerializesiteId()
-    {
-        return __pbn__siteId != null;
-    }
-    public void ResetsiteId()
-    {
-        __pbn__siteId = null;
-    }
-    private int? __pbn__siteId;
-
-}
-
-[global::ProtoBuf.ProtoContract()]
-public partial class CancelMatch : global::ProtoBuf.IExtensible
-{
-    private global::ProtoBuf.IExtension __pbn__extensionData;
-    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-    {
-        return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
-    }
-    public CancelMatch()
-    {
-        OnConstructor();
     }
 
-    partial void OnConstructor();
-
-}
-
-[global::ProtoBuf.ProtoContract()]
-public partial class TCancelMatch : global::ProtoBuf.IExtensible
-{
-    private global::ProtoBuf.IExtension __pbn__extensionData;
-    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+    [global::ProtoBuf.ProtoContract()]
+    public partial class CancelMatch : global::ProtoBuf.IExtensible
     {
-        return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
-    }
-    public TCancelMatch()
-    {
-        OnConstructor();
-    }
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public CancelMatch()
+        {
+            OnConstructor();
+        }
 
-    partial void OnConstructor();
+        partial void OnConstructor();
 
-}
-
-[global::ProtoBuf.ProtoContract()]
-public partial class GetMatchSite : global::ProtoBuf.IExtensible
-{
-    private global::ProtoBuf.IExtension __pbn__extensionData;
-    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-    {
-        return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
-    }
-    public GetMatchSite()
-    {
-        OnConstructor();
     }
 
-    partial void OnConstructor();
+    [global::ProtoBuf.ProtoContract()]
+    public partial class TCancelMatch : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public TCancelMatch()
+        {
+            OnConstructor();
+        }
 
-    [global::ProtoBuf.ProtoMember(1)]
-    public int siteType
-    {
-        get { return __pbn__siteType.GetValueOrDefault(); }
-        set { __pbn__siteType = value; }
-    }
-    public bool ShouldSerializesiteType()
-    {
-        return __pbn__siteType != null;
-    }
-    public void ResetsiteType()
-    {
-        __pbn__siteType = null;
-    }
-    private int? __pbn__siteType;
+        partial void OnConstructor();
 
-}
-
-[global::ProtoBuf.ProtoContract()]
-public partial class TGetMatchSite : global::ProtoBuf.IExtensible
-{
-    private global::ProtoBuf.IExtension __pbn__extensionData;
-    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-    {
-        return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
-    }
-    public TGetMatchSite()
-    {
-        matchSites = new global::System.Collections.Generic.List<MMatchSite>();
-        OnConstructor();
     }
 
-    partial void OnConstructor();
+    [global::ProtoBuf.ProtoContract()]
+    public partial class GetMatchSite : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public GetMatchSite()
+        {
+            OnConstructor();
+        }
 
-    [global::ProtoBuf.ProtoMember(1, Name = @"matchSite")]
-    public global::System.Collections.Generic.List<MMatchSite> matchSites { get; private set; }
+        partial void OnConstructor();
+
+        [global::ProtoBuf.ProtoMember(1)]
+        public int siteType
+        {
+            get { return __pbn__siteType.GetValueOrDefault(); }
+            set { __pbn__siteType = value; }
+        }
+        public bool ShouldSerializesiteType()
+        {
+            return __pbn__siteType != null;
+        }
+        public void ResetsiteType()
+        {
+            __pbn__siteType = null;
+        }
+        private int? __pbn__siteType;
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class TGetMatchSite : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public TGetMatchSite()
+        {
+            matchSites = new global::System.Collections.Generic.List<MMatchSite>();
+            OnConstructor();
+        }
+
+        partial void OnConstructor();
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"matchSite")]
+        public global::System.Collections.Generic.List<MMatchSite> matchSites { get; private set; }
+
+    }
 
 }
 

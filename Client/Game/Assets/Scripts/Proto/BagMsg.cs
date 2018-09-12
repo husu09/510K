@@ -3,223 +3,228 @@
 // Input: BagMsg.proto
 
 #pragma warning disable 1591, 0612, 3021
-[global::ProtoBuf.ProtoContract()]
-public partial class MGrid : global::ProtoBuf.IExtensible
+namespace Assets.Scripts.Proto
 {
-    private global::ProtoBuf.IExtension __pbn__extensionData;
-    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class GridMo : global::ProtoBuf.IExtensible
     {
-        return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
-    }
-    public MGrid()
-    {
-        OnConstructor();
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public GridMo()
+        {
+            OnConstructor();
+        }
+
+        partial void OnConstructor();
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"index")]
+        public int Index
+        {
+            get { return __pbn__Index.GetValueOrDefault(); }
+            set { __pbn__Index = value; }
+        }
+        public bool ShouldSerializeIndex()
+        {
+            return __pbn__Index != null;
+        }
+        public void ResetIndex()
+        {
+            __pbn__Index = null;
+        }
+        private int? __pbn__Index;
+
+        [global::ProtoBuf.ProtoMember(2, Name = @"type")]
+        public int Type
+        {
+            get { return __pbn__Type.GetValueOrDefault(); }
+            set { __pbn__Type = value; }
+        }
+        public bool ShouldSerializeType()
+        {
+            return __pbn__Type != null;
+        }
+        public void ResetType()
+        {
+            __pbn__Type = null;
+        }
+        private int? __pbn__Type;
+
+        [global::ProtoBuf.ProtoMember(3)]
+        public int sysId
+        {
+            get { return __pbn__sysId.GetValueOrDefault(); }
+            set { __pbn__sysId = value; }
+        }
+        public bool ShouldSerializesysId()
+        {
+            return __pbn__sysId != null;
+        }
+        public void ResetsysId()
+        {
+            __pbn__sysId = null;
+        }
+        private int? __pbn__sysId;
+
+        [global::ProtoBuf.ProtoMember(4, Name = @"count")]
+        public int Count
+        {
+            get { return __pbn__Count.GetValueOrDefault(); }
+            set { __pbn__Count = value; }
+        }
+        public bool ShouldSerializeCount()
+        {
+            return __pbn__Count != null;
+        }
+        public void ResetCount()
+        {
+            __pbn__Count = null;
+        }
+        private int? __pbn__Count;
+
+        [global::ProtoBuf.ProtoMember(5)]
+        public long effType
+        {
+            get { return __pbn__effType.GetValueOrDefault(); }
+            set { __pbn__effType = value; }
+        }
+        public bool ShouldSerializeeffType()
+        {
+            return __pbn__effType != null;
+        }
+        public void ReseteffType()
+        {
+            __pbn__effType = null;
+        }
+        private long? __pbn__effType;
+
+        [global::ProtoBuf.ProtoMember(6)]
+        public long effValue
+        {
+            get { return __pbn__effValue.GetValueOrDefault(); }
+            set { __pbn__effValue = value; }
+        }
+        public bool ShouldSerializeeffValue()
+        {
+            return __pbn__effValue != null;
+        }
+        public void ReseteffValue()
+        {
+            __pbn__effValue = null;
+        }
+        private long? __pbn__effValue;
+
     }
 
-    partial void OnConstructor();
+    [global::ProtoBuf.ProtoContract()]
+    public partial class UseItem : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public UseItem()
+        {
+            OnConstructor();
+        }
 
-    [global::ProtoBuf.ProtoMember(1, Name = @"index")]
-    public int Index
-    {
-        get { return __pbn__Index.GetValueOrDefault(); }
-        set { __pbn__Index = value; }
-    }
-    public bool ShouldSerializeIndex()
-    {
-        return __pbn__Index != null;
-    }
-    public void ResetIndex()
-    {
-        __pbn__Index = null;
-    }
-    private int? __pbn__Index;
+        partial void OnConstructor();
 
-    [global::ProtoBuf.ProtoMember(2, Name = @"type")]
-    public int Type
-    {
-        get { return __pbn__Type.GetValueOrDefault(); }
-        set { __pbn__Type = value; }
-    }
-    public bool ShouldSerializeType()
-    {
-        return __pbn__Type != null;
-    }
-    public void ResetType()
-    {
-        __pbn__Type = null;
-    }
-    private int? __pbn__Type;
+        [global::ProtoBuf.ProtoMember(1, Name = @"index")]
+        public int Index
+        {
+            get { return __pbn__Index.GetValueOrDefault(); }
+            set { __pbn__Index = value; }
+        }
+        public bool ShouldSerializeIndex()
+        {
+            return __pbn__Index != null;
+        }
+        public void ResetIndex()
+        {
+            __pbn__Index = null;
+        }
+        private int? __pbn__Index;
 
-    [global::ProtoBuf.ProtoMember(3)]
-    public int sysId
-    {
-        get { return __pbn__sysId.GetValueOrDefault(); }
-        set { __pbn__sysId = value; }
-    }
-    public bool ShouldSerializesysId()
-    {
-        return __pbn__sysId != null;
-    }
-    public void ResetsysId()
-    {
-        __pbn__sysId = null;
-    }
-    private int? __pbn__sysId;
+        [global::ProtoBuf.ProtoMember(2)]
+        public int useCount
+        {
+            get { return __pbn__useCount.GetValueOrDefault(); }
+            set { __pbn__useCount = value; }
+        }
+        public bool ShouldSerializeuseCount()
+        {
+            return __pbn__useCount != null;
+        }
+        public void ResetuseCount()
+        {
+            __pbn__useCount = null;
+        }
+        private int? __pbn__useCount;
 
-    [global::ProtoBuf.ProtoMember(4, Name = @"count")]
-    public int Count
-    {
-        get { return __pbn__Count.GetValueOrDefault(); }
-        set { __pbn__Count = value; }
-    }
-    public bool ShouldSerializeCount()
-    {
-        return __pbn__Count != null;
-    }
-    public void ResetCount()
-    {
-        __pbn__Count = null;
-    }
-    private int? __pbn__Count;
-
-    [global::ProtoBuf.ProtoMember(5)]
-    public long effType
-    {
-        get { return __pbn__effType.GetValueOrDefault(); }
-        set { __pbn__effType = value; }
-    }
-    public bool ShouldSerializeeffType()
-    {
-        return __pbn__effType != null;
-    }
-    public void ReseteffType()
-    {
-        __pbn__effType = null;
-    }
-    private long? __pbn__effType;
-
-    [global::ProtoBuf.ProtoMember(6)]
-    public long effValue
-    {
-        get { return __pbn__effValue.GetValueOrDefault(); }
-        set { __pbn__effValue = value; }
-    }
-    public bool ShouldSerializeeffValue()
-    {
-        return __pbn__effValue != null;
-    }
-    public void ReseteffValue()
-    {
-        __pbn__effValue = null;
-    }
-    private long? __pbn__effValue;
-
-}
-
-[global::ProtoBuf.ProtoContract()]
-public partial class UseItem : global::ProtoBuf.IExtensible
-{
-    private global::ProtoBuf.IExtension __pbn__extensionData;
-    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-    {
-        return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
-    }
-    public UseItem()
-    {
-        OnConstructor();
     }
 
-    partial void OnConstructor();
+    [global::ProtoBuf.ProtoContract()]
+    public partial class TUseItem : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public TUseItem()
+        {
+            OnConstructor();
+        }
 
-    [global::ProtoBuf.ProtoMember(1, Name = @"index")]
-    public int Index
-    {
-        get { return __pbn__Index.GetValueOrDefault(); }
-        set { __pbn__Index = value; }
-    }
-    public bool ShouldSerializeIndex()
-    {
-        return __pbn__Index != null;
-    }
-    public void ResetIndex()
-    {
-        __pbn__Index = null;
-    }
-    private int? __pbn__Index;
+        partial void OnConstructor();
 
-    [global::ProtoBuf.ProtoMember(2)]
-    public int useCount
-    {
-        get { return __pbn__useCount.GetValueOrDefault(); }
-        set { __pbn__useCount = value; }
-    }
-    public bool ShouldSerializeuseCount()
-    {
-        return __pbn__useCount != null;
-    }
-    public void ResetuseCount()
-    {
-        __pbn__useCount = null;
-    }
-    private int? __pbn__useCount;
-
-}
-
-[global::ProtoBuf.ProtoContract()]
-public partial class TUseItem : global::ProtoBuf.IExtensible
-{
-    private global::ProtoBuf.IExtension __pbn__extensionData;
-    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-    {
-        return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
-    }
-    public TUseItem()
-    {
-        OnConstructor();
     }
 
-    partial void OnConstructor();
-
-}
-
-[global::ProtoBuf.ProtoContract()]
-public partial class NDeleteItem : global::ProtoBuf.IExtensible
-{
-    private global::ProtoBuf.IExtension __pbn__extensionData;
-    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+    [global::ProtoBuf.ProtoContract()]
+    public partial class NDeleteItem : global::ProtoBuf.IExtensible
     {
-        return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
-    }
-    public NDeleteItem()
-    {
-        OnConstructor();
-    }
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public NDeleteItem()
+        {
+            OnConstructor();
+        }
 
-    partial void OnConstructor();
+        partial void OnConstructor();
 
-    [global::ProtoBuf.ProtoMember(1, Name = @"index")]
-    public int[] Indexs { get; set; }
+        [global::ProtoBuf.ProtoMember(1, Name = @"index")]
+        public int[] Indexs { get; set; }
 
-}
-
-[global::ProtoBuf.ProtoContract()]
-public partial class NUpdateItem : global::ProtoBuf.IExtensible
-{
-    private global::ProtoBuf.IExtension __pbn__extensionData;
-    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-    {
-        return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
-    }
-    public NUpdateItem()
-    {
-        Grids = new global::System.Collections.Generic.List<MGrid>();
-        OnConstructor();
     }
 
-    partial void OnConstructor();
+    [global::ProtoBuf.ProtoContract()]
+    public partial class NUpdateItem : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public NUpdateItem()
+        {
+            Grids = new global::System.Collections.Generic.List<GridMo>();
+            OnConstructor();
+        }
 
-    [global::ProtoBuf.ProtoMember(1, Name = @"grid")]
-    public global::System.Collections.Generic.List<MGrid> Grids { get; private set; }
+        partial void OnConstructor();
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"grid")]
+        public global::System.Collections.Generic.List<GridMo> Grids { get; private set; }
+
+    }
 
 }
 

@@ -1,9 +1,11 @@
 syntax = "proto2";
-
 option java_package = "com.su.msg";
+option csharp_namespace = "Assets.Scripts.Proto";
+option optimize_for = SPEED;
+
 
 // 物品格子
-message MGrid {
+message GridMo {
 	optional int32 index = 1;		// 索引
 	optional int32 type = 2;		// 类型
 	optional int32 sysId = 3;		// 系统id
@@ -25,5 +27,5 @@ message NDeleteItem {
 }
 // 更新通知
 message NUpdateItem {
-	repeated MGrid grid = 1;
+	repeated GridMo grid = 1;
 }

@@ -13,7 +13,7 @@ import com.su.core.event.GameEventDispatcher;
 import com.su.core.game.TableResult;
 import com.su.core.game.service.BridgeService;
 import com.su.core.netty.NettyServerHandler;
-import com.su.msg.LoginMsg.TLogin;
+import com.su.msg.LoginMsg.LoginTo;
 import com.su.msg.PlayerMsg.NUpdatePlayer;
 import com.su.msg.TableMsg.MGamePlayerResult;
 
@@ -81,7 +81,7 @@ public class PLayerActorImpl implements PlayerActor {
 	}
 
 	@Override
-	public void login(PlayerContext playerContext, TLogin.Builder builder) {
+	public void login(PlayerContext playerContext, LoginTo.Builder builder) {
 		gameEventDispatcher.login(playerContext, builder);
 	}
 

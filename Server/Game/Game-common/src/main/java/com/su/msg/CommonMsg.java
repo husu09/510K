@@ -1433,7 +1433,8 @@ public final class CommonMsg {
       "\n\017CommonMsg.proto\"/\n\006NError\022\021\n\terrorCode" +
       "\030\001 \001(\005\022\022\n\nparameters\030\002 \003(\t\">\n\003CMD\022\013\n\003cmd" +
       "\030\001 \001(\005\022\014\n\004type\030\002 \001(\005\022\r\n\005sysId\030\003 \001(\005\022\r\n\005c" +
-      "ount\030\004 \001(\005B\014\n\ncom.su.msg"
+      "ount\030\004 \001(\005B%\n\ncom.su.msgH\001\252\002\024Assets.Scri" +
+      "pts.Proto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

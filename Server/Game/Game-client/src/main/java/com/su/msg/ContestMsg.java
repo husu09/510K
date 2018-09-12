@@ -6123,7 +6123,7 @@ public final class ContestMsg {
       "\016\n\006siteId\030\001 \001(\005\022\021\n\tplayerNum\030\002 \001(\005\"T\n\010NC" +
       "ontest\022\021\n\tcontestId\030\001 \001(\005\022\021\n\tbaseScore\030\002",
       " \001(\005\022\"\n\013contestRank\030\003 \003(\0132\r.MContestRank" +
-      "B\014\n\ncom.su.msg"
+      "B%\n\ncom.su.msgH\001\252\002\024Assets.Scripts.Proto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

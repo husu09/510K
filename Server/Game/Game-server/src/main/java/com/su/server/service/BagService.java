@@ -16,10 +16,10 @@ import com.su.core.context.PlayerContext;
 import com.su.core.data.DataService;
 import com.su.core.event.GameEventAdapter;
 import com.su.excel.mapper.BagConf;
-import com.su.msg.BagMsg.MGrid;
+import com.su.msg.BagMsg.GridMo;
 import com.su.msg.BagMsg.NDeleteItem;
 import com.su.msg.BagMsg.NUpdateItem;
-import com.su.msg.LoginMsg.TLogin;
+import com.su.msg.LoginMsg.LoginTo;
 
 @Service
 public class BagService extends GameEventAdapter {
@@ -183,8 +183,8 @@ public class BagService extends GameEventAdapter {
 		createGrid(playerContext, bagGrid, index + 1, type, sysId, count, bagCo, builder);
 	}
 
-	public MGrid serializeGrid(int index, Grid grid) {
-		MGrid.Builder builder = MGrid.newBuilder();
+	public GridMo serializeGrid(int index, Grid grid) {
+		GridMo.Builder builder = GridMo.newBuilder();
 		builder.setIndex(index);
 		builder.setType(grid.getType());
 		builder.setSysId(grid.getSysId());
@@ -195,7 +195,7 @@ public class BagService extends GameEventAdapter {
 	}
 
 	@Override
-	public void login(PlayerContext playerContext, TLogin.Builder builder) {
+	public void login(PlayerContext playerContext, LoginTo.Builder builder) {
 		PlayerDetail playerDetail = playerService.getPlayerDetail(playerContext.getPlayerId());
 		List<Grid> gridList = playerDetail.getGridList();
 		for (int i = 0; i < gridList.size(); i++) {

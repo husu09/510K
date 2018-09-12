@@ -3591,8 +3591,8 @@ public final class MatchSiteMsg {
       "\n\006siteId\030\001 \001(\005\"\030\n\006TMatch\022\016\n\006siteId\030\001 \001(\005" +
       "\"\r\n\013CancelMatch\"\016\n\014TCancelMatch\" \n\014GetMa" +
       "tchSite\022\020\n\010siteType\030\001 \001(\005\"/\n\rTGetMatchSi" +
-      "te\022\036\n\tmatchSite\030\001 \003(\0132\013.MMatchSiteB\014\n\nco" +
-      "m.su.msg"
+      "te\022\036\n\tmatchSite\030\001 \003(\0132\013.MMatchSiteB%\n\nco" +
+      "m.su.msgH\001\252\002\024Assets.Scripts.Proto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

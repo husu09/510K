@@ -7,7 +7,7 @@ import com.su.core.game.GamePlayer;
 import com.su.core.game.Site;
 import com.su.core.netty.NettyServerHandler;
 import com.su.msg.CommonMsg.NError;
-import com.su.msg.PlayerMsg.MPlayer;
+import com.su.msg.PlayerMsg.PlayerMo;
 
 import io.netty.channel.ChannelHandlerContext;
 public class PlayerContext {
@@ -31,7 +31,7 @@ public class PlayerContext {
 	/**
 	 * 玩家更新数据
 	 * */
-	private MPlayer.Builder builder = MPlayer.newBuilder();
+	private PlayerMo.Builder builder = PlayerMo.newBuilder();
 	
 
 	public void handleLogin(long playerId) {
@@ -72,7 +72,7 @@ public class PlayerContext {
 		ctx.writeAndFlush(builder.build());
 	}
 	
-	public MPlayer.Builder getBuilder() {
+	public PlayerMo.Builder getBuilder() {
 		return builder;
 	}
 

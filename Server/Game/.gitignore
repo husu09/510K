@@ -1,8 +1,0 @@
-#根目录
-.project
-.settings
-#子目录
-*/.classpath
-*/.project
-*/.settings
-*/target

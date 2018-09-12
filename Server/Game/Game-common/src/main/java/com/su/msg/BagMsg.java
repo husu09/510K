@@ -14,8 +14,8 @@ public final class BagMsg {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface MGridOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:MGrid)
+  public interface GridMoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:GridMo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -125,17 +125,17 @@ public final class BagMsg {
    * 物品格子
    * </pre>
    *
-   * Protobuf type {@code MGrid}
+   * Protobuf type {@code GridMo}
    */
-  public  static final class MGrid extends
+  public  static final class GridMo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:MGrid)
-      MGridOrBuilder {
-    // Use MGrid.newBuilder() to construct.
-    private MGrid(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:GridMo)
+      GridMoOrBuilder {
+    // Use GridMo.newBuilder() to construct.
+    private GridMo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private MGrid() {
+    private GridMo() {
       index_ = 0;
       type_ = 0;
       sysId_ = 0;
@@ -149,7 +149,7 @@ public final class BagMsg {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private MGrid(
+    private GridMo(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -216,14 +216,14 @@ public final class BagMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.BagMsg.internal_static_MGrid_descriptor;
+      return com.su.msg.BagMsg.internal_static_GridMo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.BagMsg.internal_static_MGrid_fieldAccessorTable
+      return com.su.msg.BagMsg.internal_static_GridMo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.su.msg.BagMsg.MGrid.class, com.su.msg.BagMsg.MGrid.Builder.class);
+              com.su.msg.BagMsg.GridMo.class, com.su.msg.BagMsg.GridMo.Builder.class);
     }
 
     private int bitField0_;
@@ -438,10 +438,10 @@ public final class BagMsg {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.su.msg.BagMsg.MGrid)) {
+      if (!(obj instanceof com.su.msg.BagMsg.GridMo)) {
         return super.equals(obj);
       }
-      com.su.msg.BagMsg.MGrid other = (com.su.msg.BagMsg.MGrid) obj;
+      com.su.msg.BagMsg.GridMo other = (com.su.msg.BagMsg.GridMo) obj;
 
       boolean result = true;
       result = result && (hasIndex() == other.hasIndex());
@@ -516,58 +516,58 @@ public final class BagMsg {
       return hash;
     }
 
-    public static com.su.msg.BagMsg.MGrid parseFrom(
+    public static com.su.msg.BagMsg.GridMo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.BagMsg.MGrid parseFrom(
+    public static com.su.msg.BagMsg.GridMo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.BagMsg.MGrid parseFrom(byte[] data)
+    public static com.su.msg.BagMsg.GridMo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.BagMsg.MGrid parseFrom(
+    public static com.su.msg.BagMsg.GridMo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.BagMsg.MGrid parseFrom(java.io.InputStream input)
+    public static com.su.msg.BagMsg.GridMo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.BagMsg.MGrid parseFrom(
+    public static com.su.msg.BagMsg.GridMo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.BagMsg.MGrid parseDelimitedFrom(java.io.InputStream input)
+    public static com.su.msg.BagMsg.GridMo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.su.msg.BagMsg.MGrid parseDelimitedFrom(
+    public static com.su.msg.BagMsg.GridMo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.BagMsg.MGrid parseFrom(
+    public static com.su.msg.BagMsg.GridMo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.BagMsg.MGrid parseFrom(
+    public static com.su.msg.BagMsg.GridMo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -579,7 +579,7 @@ public final class BagMsg {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.su.msg.BagMsg.MGrid prototype) {
+    public static Builder newBuilder(com.su.msg.BagMsg.GridMo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -598,25 +598,25 @@ public final class BagMsg {
      * 物品格子
      * </pre>
      *
-     * Protobuf type {@code MGrid}
+     * Protobuf type {@code GridMo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:MGrid)
-        com.su.msg.BagMsg.MGridOrBuilder {
+        // @@protoc_insertion_point(builder_implements:GridMo)
+        com.su.msg.BagMsg.GridMoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.BagMsg.internal_static_MGrid_descriptor;
+        return com.su.msg.BagMsg.internal_static_GridMo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.BagMsg.internal_static_MGrid_fieldAccessorTable
+        return com.su.msg.BagMsg.internal_static_GridMo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.su.msg.BagMsg.MGrid.class, com.su.msg.BagMsg.MGrid.Builder.class);
+                com.su.msg.BagMsg.GridMo.class, com.su.msg.BagMsg.GridMo.Builder.class);
       }
 
-      // Construct using com.su.msg.BagMsg.MGrid.newBuilder()
+      // Construct using com.su.msg.BagMsg.GridMo.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -650,23 +650,23 @@ public final class BagMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.BagMsg.internal_static_MGrid_descriptor;
+        return com.su.msg.BagMsg.internal_static_GridMo_descriptor;
       }
 
-      public com.su.msg.BagMsg.MGrid getDefaultInstanceForType() {
-        return com.su.msg.BagMsg.MGrid.getDefaultInstance();
+      public com.su.msg.BagMsg.GridMo getDefaultInstanceForType() {
+        return com.su.msg.BagMsg.GridMo.getDefaultInstance();
       }
 
-      public com.su.msg.BagMsg.MGrid build() {
-        com.su.msg.BagMsg.MGrid result = buildPartial();
+      public com.su.msg.BagMsg.GridMo build() {
+        com.su.msg.BagMsg.GridMo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.su.msg.BagMsg.MGrid buildPartial() {
-        com.su.msg.BagMsg.MGrid result = new com.su.msg.BagMsg.MGrid(this);
+      public com.su.msg.BagMsg.GridMo buildPartial() {
+        com.su.msg.BagMsg.GridMo result = new com.su.msg.BagMsg.GridMo(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -725,16 +725,16 @@ public final class BagMsg {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.su.msg.BagMsg.MGrid) {
-          return mergeFrom((com.su.msg.BagMsg.MGrid)other);
+        if (other instanceof com.su.msg.BagMsg.GridMo) {
+          return mergeFrom((com.su.msg.BagMsg.GridMo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.su.msg.BagMsg.MGrid other) {
-        if (other == com.su.msg.BagMsg.MGrid.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.su.msg.BagMsg.GridMo other) {
+        if (other == com.su.msg.BagMsg.GridMo.getDefaultInstance()) return this;
         if (other.hasIndex()) {
           setIndex(other.getIndex());
         }
@@ -766,11 +766,11 @@ public final class BagMsg {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.su.msg.BagMsg.MGrid parsedMessage = null;
+        com.su.msg.BagMsg.GridMo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.su.msg.BagMsg.MGrid) e.getUnfinishedMessage();
+          parsedMessage = (com.su.msg.BagMsg.GridMo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1079,39 +1079,39 @@ public final class BagMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:MGrid)
+      // @@protoc_insertion_point(builder_scope:GridMo)
     }
 
-    // @@protoc_insertion_point(class_scope:MGrid)
-    private static final com.su.msg.BagMsg.MGrid DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:GridMo)
+    private static final com.su.msg.BagMsg.GridMo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.su.msg.BagMsg.MGrid();
+      DEFAULT_INSTANCE = new com.su.msg.BagMsg.GridMo();
     }
 
-    public static com.su.msg.BagMsg.MGrid getDefaultInstance() {
+    public static com.su.msg.BagMsg.GridMo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<MGrid>
-        PARSER = new com.google.protobuf.AbstractParser<MGrid>() {
-      public MGrid parsePartialFrom(
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<GridMo>
+        PARSER = new com.google.protobuf.AbstractParser<GridMo>() {
+      public GridMo parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MGrid(input, extensionRegistry);
+          return new GridMo(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<MGrid> parser() {
+    public static com.google.protobuf.Parser<GridMo> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<MGrid> getParserForType() {
+    public com.google.protobuf.Parser<GridMo> getParserForType() {
       return PARSER;
     }
 
-    public com.su.msg.BagMsg.MGrid getDefaultInstanceForType() {
+    public com.su.msg.BagMsg.GridMo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2717,27 +2717,27 @@ public final class BagMsg {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .MGrid grid = 1;</code>
+     * <code>repeated .GridMo grid = 1;</code>
      */
-    java.util.List<com.su.msg.BagMsg.MGrid> 
+    java.util.List<com.su.msg.BagMsg.GridMo> 
         getGridList();
     /**
-     * <code>repeated .MGrid grid = 1;</code>
+     * <code>repeated .GridMo grid = 1;</code>
      */
-    com.su.msg.BagMsg.MGrid getGrid(int index);
+    com.su.msg.BagMsg.GridMo getGrid(int index);
     /**
-     * <code>repeated .MGrid grid = 1;</code>
+     * <code>repeated .GridMo grid = 1;</code>
      */
     int getGridCount();
     /**
-     * <code>repeated .MGrid grid = 1;</code>
+     * <code>repeated .GridMo grid = 1;</code>
      */
-    java.util.List<? extends com.su.msg.BagMsg.MGridOrBuilder> 
+    java.util.List<? extends com.su.msg.BagMsg.GridMoOrBuilder> 
         getGridOrBuilderList();
     /**
-     * <code>repeated .MGrid grid = 1;</code>
+     * <code>repeated .GridMo grid = 1;</code>
      */
-    com.su.msg.BagMsg.MGridOrBuilder getGridOrBuilder(
+    com.su.msg.BagMsg.GridMoOrBuilder getGridOrBuilder(
         int index);
   }
   /**
@@ -2789,11 +2789,11 @@ public final class BagMsg {
             }
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                grid_ = new java.util.ArrayList<com.su.msg.BagMsg.MGrid>();
+                grid_ = new java.util.ArrayList<com.su.msg.BagMsg.GridMo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               grid_.add(
-                  input.readMessage(com.su.msg.BagMsg.MGrid.PARSER, extensionRegistry));
+                  input.readMessage(com.su.msg.BagMsg.GridMo.PARSER, extensionRegistry));
               break;
             }
           }
@@ -2824,36 +2824,36 @@ public final class BagMsg {
     }
 
     public static final int GRID_FIELD_NUMBER = 1;
-    private java.util.List<com.su.msg.BagMsg.MGrid> grid_;
+    private java.util.List<com.su.msg.BagMsg.GridMo> grid_;
     /**
-     * <code>repeated .MGrid grid = 1;</code>
+     * <code>repeated .GridMo grid = 1;</code>
      */
-    public java.util.List<com.su.msg.BagMsg.MGrid> getGridList() {
+    public java.util.List<com.su.msg.BagMsg.GridMo> getGridList() {
       return grid_;
     }
     /**
-     * <code>repeated .MGrid grid = 1;</code>
+     * <code>repeated .GridMo grid = 1;</code>
      */
-    public java.util.List<? extends com.su.msg.BagMsg.MGridOrBuilder> 
+    public java.util.List<? extends com.su.msg.BagMsg.GridMoOrBuilder> 
         getGridOrBuilderList() {
       return grid_;
     }
     /**
-     * <code>repeated .MGrid grid = 1;</code>
+     * <code>repeated .GridMo grid = 1;</code>
      */
     public int getGridCount() {
       return grid_.size();
     }
     /**
-     * <code>repeated .MGrid grid = 1;</code>
+     * <code>repeated .GridMo grid = 1;</code>
      */
-    public com.su.msg.BagMsg.MGrid getGrid(int index) {
+    public com.su.msg.BagMsg.GridMo getGrid(int index) {
       return grid_.get(index);
     }
     /**
-     * <code>repeated .MGrid grid = 1;</code>
+     * <code>repeated .GridMo grid = 1;</code>
      */
-    public com.su.msg.BagMsg.MGridOrBuilder getGridOrBuilder(
+    public com.su.msg.BagMsg.GridMoOrBuilder getGridOrBuilder(
         int index) {
       return grid_.get(index);
     }
@@ -3175,22 +3175,22 @@ public final class BagMsg {
       }
       private int bitField0_;
 
-      private java.util.List<com.su.msg.BagMsg.MGrid> grid_ =
+      private java.util.List<com.su.msg.BagMsg.GridMo> grid_ =
         java.util.Collections.emptyList();
       private void ensureGridIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          grid_ = new java.util.ArrayList<com.su.msg.BagMsg.MGrid>(grid_);
+          grid_ = new java.util.ArrayList<com.su.msg.BagMsg.GridMo>(grid_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.su.msg.BagMsg.MGrid, com.su.msg.BagMsg.MGrid.Builder, com.su.msg.BagMsg.MGridOrBuilder> gridBuilder_;
+          com.su.msg.BagMsg.GridMo, com.su.msg.BagMsg.GridMo.Builder, com.su.msg.BagMsg.GridMoOrBuilder> gridBuilder_;
 
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
-      public java.util.List<com.su.msg.BagMsg.MGrid> getGridList() {
+      public java.util.List<com.su.msg.BagMsg.GridMo> getGridList() {
         if (gridBuilder_ == null) {
           return java.util.Collections.unmodifiableList(grid_);
         } else {
@@ -3198,7 +3198,7 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
       public int getGridCount() {
         if (gridBuilder_ == null) {
@@ -3208,9 +3208,9 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
-      public com.su.msg.BagMsg.MGrid getGrid(int index) {
+      public com.su.msg.BagMsg.GridMo getGrid(int index) {
         if (gridBuilder_ == null) {
           return grid_.get(index);
         } else {
@@ -3218,10 +3218,10 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
       public Builder setGrid(
-          int index, com.su.msg.BagMsg.MGrid value) {
+          int index, com.su.msg.BagMsg.GridMo value) {
         if (gridBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3235,10 +3235,10 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
       public Builder setGrid(
-          int index, com.su.msg.BagMsg.MGrid.Builder builderForValue) {
+          int index, com.su.msg.BagMsg.GridMo.Builder builderForValue) {
         if (gridBuilder_ == null) {
           ensureGridIsMutable();
           grid_.set(index, builderForValue.build());
@@ -3249,9 +3249,9 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
-      public Builder addGrid(com.su.msg.BagMsg.MGrid value) {
+      public Builder addGrid(com.su.msg.BagMsg.GridMo value) {
         if (gridBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3265,10 +3265,10 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
       public Builder addGrid(
-          int index, com.su.msg.BagMsg.MGrid value) {
+          int index, com.su.msg.BagMsg.GridMo value) {
         if (gridBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3282,10 +3282,10 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
       public Builder addGrid(
-          com.su.msg.BagMsg.MGrid.Builder builderForValue) {
+          com.su.msg.BagMsg.GridMo.Builder builderForValue) {
         if (gridBuilder_ == null) {
           ensureGridIsMutable();
           grid_.add(builderForValue.build());
@@ -3296,10 +3296,10 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
       public Builder addGrid(
-          int index, com.su.msg.BagMsg.MGrid.Builder builderForValue) {
+          int index, com.su.msg.BagMsg.GridMo.Builder builderForValue) {
         if (gridBuilder_ == null) {
           ensureGridIsMutable();
           grid_.add(index, builderForValue.build());
@@ -3310,10 +3310,10 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
       public Builder addAllGrid(
-          java.lang.Iterable<? extends com.su.msg.BagMsg.MGrid> values) {
+          java.lang.Iterable<? extends com.su.msg.BagMsg.GridMo> values) {
         if (gridBuilder_ == null) {
           ensureGridIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -3325,7 +3325,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
       public Builder clearGrid() {
         if (gridBuilder_ == null) {
@@ -3338,7 +3338,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
       public Builder removeGrid(int index) {
         if (gridBuilder_ == null) {
@@ -3351,16 +3351,16 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
-      public com.su.msg.BagMsg.MGrid.Builder getGridBuilder(
+      public com.su.msg.BagMsg.GridMo.Builder getGridBuilder(
           int index) {
         return getGridFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
-      public com.su.msg.BagMsg.MGridOrBuilder getGridOrBuilder(
+      public com.su.msg.BagMsg.GridMoOrBuilder getGridOrBuilder(
           int index) {
         if (gridBuilder_ == null) {
           return grid_.get(index);  } else {
@@ -3368,9 +3368,9 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
-      public java.util.List<? extends com.su.msg.BagMsg.MGridOrBuilder> 
+      public java.util.List<? extends com.su.msg.BagMsg.GridMoOrBuilder> 
            getGridOrBuilderList() {
         if (gridBuilder_ != null) {
           return gridBuilder_.getMessageOrBuilderList();
@@ -3379,33 +3379,33 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
-      public com.su.msg.BagMsg.MGrid.Builder addGridBuilder() {
+      public com.su.msg.BagMsg.GridMo.Builder addGridBuilder() {
         return getGridFieldBuilder().addBuilder(
-            com.su.msg.BagMsg.MGrid.getDefaultInstance());
+            com.su.msg.BagMsg.GridMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
-      public com.su.msg.BagMsg.MGrid.Builder addGridBuilder(
+      public com.su.msg.BagMsg.GridMo.Builder addGridBuilder(
           int index) {
         return getGridFieldBuilder().addBuilder(
-            index, com.su.msg.BagMsg.MGrid.getDefaultInstance());
+            index, com.su.msg.BagMsg.GridMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .MGrid grid = 1;</code>
+       * <code>repeated .GridMo grid = 1;</code>
        */
-      public java.util.List<com.su.msg.BagMsg.MGrid.Builder> 
+      public java.util.List<com.su.msg.BagMsg.GridMo.Builder> 
            getGridBuilderList() {
         return getGridFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.su.msg.BagMsg.MGrid, com.su.msg.BagMsg.MGrid.Builder, com.su.msg.BagMsg.MGridOrBuilder> 
+          com.su.msg.BagMsg.GridMo, com.su.msg.BagMsg.GridMo.Builder, com.su.msg.BagMsg.GridMoOrBuilder> 
           getGridFieldBuilder() {
         if (gridBuilder_ == null) {
           gridBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.su.msg.BagMsg.MGrid, com.su.msg.BagMsg.MGrid.Builder, com.su.msg.BagMsg.MGridOrBuilder>(
+              com.su.msg.BagMsg.GridMo, com.su.msg.BagMsg.GridMo.Builder, com.su.msg.BagMsg.GridMoOrBuilder>(
                   grid_,
                   ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
@@ -3464,10 +3464,10 @@ public final class BagMsg {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MGrid_descriptor;
+    internal_static_GridMo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_MGrid_fieldAccessorTable;
+      internal_static_GridMo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_UseItem_descriptor;
   private static final 
@@ -3497,13 +3497,14 @@ public final class BagMsg {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014BagMsg.proto\"e\n\005MGrid\022\r\n\005index\030\001 \001(\005\022\014" +
-      "\n\004type\030\002 \001(\005\022\r\n\005sysId\030\003 \001(\005\022\r\n\005count\030\004 \001" +
-      "(\005\022\017\n\007effType\030\005 \001(\003\022\020\n\010effValue\030\006 \001(\003\"*\n" +
-      "\007UseItem\022\r\n\005index\030\001 \001(\005\022\020\n\010useCount\030\002 \001(" +
-      "\005\"\n\n\010TUseItem\"\034\n\013NDeleteItem\022\r\n\005index\030\001 " +
-      "\003(\005\"#\n\013NUpdateItem\022\024\n\004grid\030\001 \003(\0132\006.MGrid" +
-      "B\014\n\ncom.su.msg"
+      "\n\014BagMsg.proto\"f\n\006GridMo\022\r\n\005index\030\001 \001(\005\022" +
+      "\014\n\004type\030\002 \001(\005\022\r\n\005sysId\030\003 \001(\005\022\r\n\005count\030\004 " +
+      "\001(\005\022\017\n\007effType\030\005 \001(\003\022\020\n\010effValue\030\006 \001(\003\"*" +
+      "\n\007UseItem\022\r\n\005index\030\001 \001(\005\022\020\n\010useCount\030\002 \001" +
+      "(\005\"\n\n\010TUseItem\"\034\n\013NDeleteItem\022\r\n\005index\030\001" +
+      " \003(\005\"$\n\013NUpdateItem\022\025\n\004grid\030\001 \003(\0132\007.Grid" +
+      "MoB%\n\ncom.su.msgH\001\252\002\024Assets.Scripts.Prot" +
+      "o"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -3517,11 +3518,11 @@ public final class BagMsg {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_MGrid_descriptor =
+    internal_static_GridMo_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_MGrid_fieldAccessorTable = new
+    internal_static_GridMo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_MGrid_descriptor,
+        internal_static_GridMo_descriptor,
         new java.lang.String[] { "Index", "Type", "SysId", "Count", "EffType", "EffValue", });
     internal_static_UseItem_descriptor =
       getDescriptor().getMessageTypes().get(1);

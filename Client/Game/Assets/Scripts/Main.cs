@@ -1,58 +1,44 @@
-﻿using ProtoBuf;
+﻿using Assets.Scripts.Core;
+using Assets.Scripts.Handler;
+using Assets.Scripts.Proto;
+using Assets.Scripts.UI;
+using ProtoBuf;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-public class Main : MonoBehaviour {
+namespace Assets.Scripts
+{
+    public class Main : MyBehaviour
+    {
 
-    delegate void OnRecive(IExtensible msg);
+        private Client client = null;
+        private bool isSend = false;
 
 
-	// Use this for initialization
-	void Start () {
-        Login login = new Login();
-        login.Name = "胡苏";
-        login.Account = "husu";
-        byte[] bytes = null;
-        using (MemoryStream ms = new MemoryStream())
+        // Use this for initialization
+        void Start()
         {
-            Serializer.Serialize<Login>(ms, login);
-            bytes = new byte[ms.Length];
-            ms.Position = 0;
-            ms.Read(bytes, 0, bytes.Length);
+            HandlerScan.Scan();
+            UIScan.Scan();
+            client = new Client();
+            client.Connect("127.0.0.1", 8080);
         }
 
-        Debug.Log(bytes);
 
-        using (MemoryStream ms = new MemoryStream())
+        // Update is called once per frame
+        void Update()
         {
-            //将消息写入流中  
-            ms.Write(bytes, 0, bytes.Length);
-            //将流的位置归0  
-            ms.Position = 0;
-            //使用工具反序列化对象  
-
-            login = (Login)Serializer.Deserialize(login.GetType(), ms);
-            Debug.Log(login.GetType().Name);
-            //login = Serializer.Deserialize<Login>(ms);
-            Debug.Log(login.Account);
-            Debug.Log(login.Name);
-
-            OnRecive recive = new OnRecive(Recive);
-
-            recive(login);
+            if (client.GetStatus() == ClientStatus.CONNECTED && isSend == false) {
+                Login login = new Login();
+                login.Account = "husu";
+                login.Name = "husu";
+                client.Send(login);
+                isSend = true;
+            }
+            MsgDispatch.Dispatch.Update();
         }
-
-        
     }
-
-    void Recive(IExtensible msg) {
-        Debug.Log(msg.ToString());
-    }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

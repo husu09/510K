@@ -1,17 +1,17 @@
 syntax = "proto2";
-
-option java_package = "com.su.msg";
-
 import "PlayerMsg.proto";
 import "BagMsg.proto";
+option java_package = "com.su.msg";
+option csharp_namespace = "Assets.Scripts.Proto";
+option optimize_for = SPEED;
 
 // 登录
 message Login{
 	optional string account = 1;	// 账号
 	optional string name = 2;		// 名称
 }
-message TLogin{
-	optional MPlayer player = 1;	// 玩家数据
-	repeated MGrid grid = 2;		// 背包数据
+message LoginTo{
+	optional PlayerMo player = 1;	// 玩家数据
+	repeated GridMo grid = 2;		// 背包数据
 }
 

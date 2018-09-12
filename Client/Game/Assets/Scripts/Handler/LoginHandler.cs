@@ -1,11 +1,18 @@
-﻿using System.Collections;
+﻿using Assets.Scripts.Proto;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LoginHandler {
+namespace Assets.Scripts.Handler
+{
+    public class LoginHandler
+    {
 
-
-    public void LoginResp(TLogin resp) {
-     
+        [HandlerAtt]
+        public void LoginTo(LoginTo resp)
+        {
+            Debug.Log(resp.Player.Id);
+            Debug.Log(resp.Player.Name);
+        }
     }
 }

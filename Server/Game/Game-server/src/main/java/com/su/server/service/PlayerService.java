@@ -14,7 +14,7 @@ import com.su.core.game.GamePlayer;
 import com.su.core.game.MatchSite;
 import com.su.core.game.Site;
 import com.su.core.game.Table;
-import com.su.msg.PlayerMsg.MPlayer;
+import com.su.msg.PlayerMsg.PlayerMo;
 
 @Service
 public class PlayerService extends GameEventAdapter {
@@ -52,8 +52,8 @@ public class PlayerService extends GameEventAdapter {
 		return playerDetail;
 	}
 
-	public MPlayer serializePlayer(Player player) {
-		MPlayer.Builder builder = MPlayer.newBuilder();
+	public PlayerMo serializePlayer(Player player) {
+		PlayerMo.Builder builder = PlayerMo.newBuilder();
 		builder.setId(player.getId());
 		builder.setName(player.getName());
 		builder.setPeanut(player.getPeanut());

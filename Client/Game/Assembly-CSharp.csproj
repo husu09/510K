@@ -62,12 +62,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Core\Client.cs" />
+    <Compile Include="Assets\Scripts\Core\ClientHandler.cs" />
+    <Compile Include="Assets\Scripts\Core\ClientStatus.cs" />
     <Compile Include="Assets\Scripts\Core\IClientHandler.cs" />
-    <Compile Include="Assets\Scripts\Core\Msg.cs" />
     <Compile Include="Assets\Scripts\Core\MsgDispatch.cs" />
     <Compile Include="Assets\Scripts\Core\NetPacket.cs" />
+    <Compile Include="Assets\Scripts\Data\DataAtt.cs" />
+    <Compile Include="Assets\Scripts\Data\DataSup.cs" />
+    <Compile Include="Assets\Scripts\Data\DataType.cs" />
+    <Compile Include="Assets\Scripts\Data\Player.cs" />
+    <Compile Include="Assets\Scripts\Handler\HandlerAtt.cs" />
+    <Compile Include="Assets\Scripts\Handler\HandlerDispatch.cs" />
+    <Compile Include="Assets\Scripts\Handler\HandlerMeta.cs" />
+    <Compile Include="Assets\Scripts\Handler\HandlerScan.cs" />
     <Compile Include="Assets\Scripts\Handler\LoginHandler.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
+    <Compile Include="Assets\Scripts\MyBehaviour.cs" />
     <Compile Include="Assets\Scripts\Proto\BagMsg.cs" />
     <Compile Include="Assets\Scripts\Proto\CommonMsg.cs" />
     <Compile Include="Assets\Scripts\Proto\ContestMsg.cs" />
@@ -75,6 +85,10 @@
     <Compile Include="Assets\Scripts\Proto\MatchSiteMsg.cs" />
     <Compile Include="Assets\Scripts\Proto\PlayerMsg.cs" />
     <Compile Include="Assets\Scripts\Proto\TableMsg.cs" />
+    <Compile Include="Assets\Scripts\UI\MainUI.cs" />
+    <Compile Include="Assets\Scripts\UI\UIDispatch.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMeta.cs" />
+    <Compile Include="Assets\Scripts\UI\UIScan.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/510K/Client/Game/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

@@ -3,121 +3,126 @@
 // Input: CommonMsg.proto
 
 #pragma warning disable 1591, 0612, 3021
-[global::ProtoBuf.ProtoContract()]
-public partial class NError : global::ProtoBuf.IExtensible
+namespace Assets.Scripts.Proto
 {
-    private global::ProtoBuf.IExtension __pbn__extensionData;
-    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class NError : global::ProtoBuf.IExtensible
     {
-        return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
-    }
-    public NError()
-    {
-        Parameters = new global::System.Collections.Generic.List<string>();
-        OnConstructor();
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public NError()
+        {
+            Parameters = new global::System.Collections.Generic.List<string>();
+            OnConstructor();
+        }
+
+        partial void OnConstructor();
+
+        [global::ProtoBuf.ProtoMember(1)]
+        public int errorCode
+        {
+            get { return __pbn__errorCode.GetValueOrDefault(); }
+            set { __pbn__errorCode = value; }
+        }
+        public bool ShouldSerializeerrorCode()
+        {
+            return __pbn__errorCode != null;
+        }
+        public void ReseterrorCode()
+        {
+            __pbn__errorCode = null;
+        }
+        private int? __pbn__errorCode;
+
+        [global::ProtoBuf.ProtoMember(2, Name = @"parameters")]
+        public global::System.Collections.Generic.List<string> Parameters { get; private set; }
+
     }
 
-    partial void OnConstructor();
+    [global::ProtoBuf.ProtoContract(Name = @"CMD")]
+    public partial class Cmd : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public Cmd()
+        {
+            OnConstructor();
+        }
 
-    [global::ProtoBuf.ProtoMember(1)]
-    public int errorCode
-    {
-        get { return __pbn__errorCode.GetValueOrDefault(); }
-        set { __pbn__errorCode = value; }
-    }
-    public bool ShouldSerializeerrorCode()
-    {
-        return __pbn__errorCode != null;
-    }
-    public void ReseterrorCode()
-    {
-        __pbn__errorCode = null;
-    }
-    private int? __pbn__errorCode;
+        partial void OnConstructor();
 
-    [global::ProtoBuf.ProtoMember(2, Name = @"parameters")]
-    public global::System.Collections.Generic.List<string> Parameters { get; private set; }
+        [global::ProtoBuf.ProtoMember(1)]
+        public int cmd
+        {
+            get { return __pbn__cmd.GetValueOrDefault(); }
+            set { __pbn__cmd = value; }
+        }
+        public bool ShouldSerializecmd()
+        {
+            return __pbn__cmd != null;
+        }
+        public void Resetcmd()
+        {
+            __pbn__cmd = null;
+        }
+        private int? __pbn__cmd;
 
-}
+        [global::ProtoBuf.ProtoMember(2, Name = @"type")]
+        public int Type
+        {
+            get { return __pbn__Type.GetValueOrDefault(); }
+            set { __pbn__Type = value; }
+        }
+        public bool ShouldSerializeType()
+        {
+            return __pbn__Type != null;
+        }
+        public void ResetType()
+        {
+            __pbn__Type = null;
+        }
+        private int? __pbn__Type;
 
-[global::ProtoBuf.ProtoContract(Name = @"CMD")]
-public partial class Cmd : global::ProtoBuf.IExtensible
-{
-    private global::ProtoBuf.IExtension __pbn__extensionData;
-    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-    {
-        return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
-    }
-    public Cmd()
-    {
-        OnConstructor();
-    }
+        [global::ProtoBuf.ProtoMember(3)]
+        public int sysId
+        {
+            get { return __pbn__sysId.GetValueOrDefault(); }
+            set { __pbn__sysId = value; }
+        }
+        public bool ShouldSerializesysId()
+        {
+            return __pbn__sysId != null;
+        }
+        public void ResetsysId()
+        {
+            __pbn__sysId = null;
+        }
+        private int? __pbn__sysId;
 
-    partial void OnConstructor();
+        [global::ProtoBuf.ProtoMember(4, Name = @"count")]
+        public int Count
+        {
+            get { return __pbn__Count.GetValueOrDefault(); }
+            set { __pbn__Count = value; }
+        }
+        public bool ShouldSerializeCount()
+        {
+            return __pbn__Count != null;
+        }
+        public void ResetCount()
+        {
+            __pbn__Count = null;
+        }
+        private int? __pbn__Count;
 
-    [global::ProtoBuf.ProtoMember(1)]
-    public int cmd
-    {
-        get { return __pbn__cmd.GetValueOrDefault(); }
-        set { __pbn__cmd = value; }
     }
-    public bool ShouldSerializecmd()
-    {
-        return __pbn__cmd != null;
-    }
-    public void Resetcmd()
-    {
-        __pbn__cmd = null;
-    }
-    private int? __pbn__cmd;
-
-    [global::ProtoBuf.ProtoMember(2, Name = @"type")]
-    public int Type
-    {
-        get { return __pbn__Type.GetValueOrDefault(); }
-        set { __pbn__Type = value; }
-    }
-    public bool ShouldSerializeType()
-    {
-        return __pbn__Type != null;
-    }
-    public void ResetType()
-    {
-        __pbn__Type = null;
-    }
-    private int? __pbn__Type;
-
-    [global::ProtoBuf.ProtoMember(3)]
-    public int sysId
-    {
-        get { return __pbn__sysId.GetValueOrDefault(); }
-        set { __pbn__sysId = value; }
-    }
-    public bool ShouldSerializesysId()
-    {
-        return __pbn__sysId != null;
-    }
-    public void ResetsysId()
-    {
-        __pbn__sysId = null;
-    }
-    private int? __pbn__sysId;
-
-    [global::ProtoBuf.ProtoMember(4, Name = @"count")]
-    public int Count
-    {
-        get { return __pbn__Count.GetValueOrDefault(); }
-        set { __pbn__Count = value; }
-    }
-    public bool ShouldSerializeCount()
-    {
-        return __pbn__Count != null;
-    }
-    public void ResetCount()
-    {
-        __pbn__Count = null;
-    }
-    private int? __pbn__Count;
 
 }
 

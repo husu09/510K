@@ -4,7 +4,7 @@ import com.google.protobuf.MessageLite;
 import com.su.common.po.Player;
 import com.su.core.context.PlayerContext;
 import com.su.core.game.TableResult;
-import com.su.msg.LoginMsg.TLogin;
+import com.su.msg.LoginMsg.LoginTo;
 import com.su.msg.TableMsg.MGamePlayerResult;
 
 import io.netty.channel.ChannelHandlerContext;
@@ -24,7 +24,7 @@ public interface PlayerActor {
 	/**
 	 * 登陆
 	 * */
-	public void login(PlayerContext playerContext, TLogin.Builder builder);
+	public void login(PlayerContext playerContext, LoginTo.Builder builder);
 	
 	/**
 	 * 检测刷新

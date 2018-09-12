@@ -15758,7 +15758,7 @@ public final class TableMsg {
       "\005:\002-1\022\024\n\010playerId\030\005 \001(\003:\002-1\"\\\n\014NTableRes" +
       "ult\022\021\n\tbaseScore\030\001 \001(\005\022\017\n\007winTeam\030\002 \001(\005\022" +
       "(\n\014playerResult\030\003 \003(\0132\022.MGamePlayerResul" +
-      "tB\014\n\ncom.su.msg"
+      "tB%\n\ncom.su.msgH\001\252\002\024Assets.Scripts.Proto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

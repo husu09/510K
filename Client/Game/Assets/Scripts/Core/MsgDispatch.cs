@@ -1,67 +1,63 @@
-﻿using System;
+﻿using Assets.Scripts.Handler;
+using ProtoBuf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 
-public class MsgDispatch
+namespace Assets.Scripts.Core
 {
-    // 存储网络数据的队列
-    private Queue<NetPacket> packets = new Queue<NetPacket>();
-
-    /// <summary>
-    /// 代理回调函数
-    /// </summary>
-    public delegate void OnReceive(NetPacket packet);
-
-    // 每个消息对应一个OnReceive函数
-    public Dictionary<string, OnReceive> handlers;
-
-    // 注册网络消息
-    // 将字符串形式的消息标识符和回调函数以键值对应的方式存入到一个Dictionary中
-    public void AddHandler(string msgid, OnReceive handler)
+    public class MsgDispatch
     {
-        handlers.Add(msgid, handler);
-    }
+        public static MsgDispatch Dispatch = new MsgDispatch();
 
-    // 将数据包入队，然后在Update函数中使用GetPacket获得数据包。
-    // 因为网络和逻辑处理有可能是在不同的线程中，所以在入队出队的时候使用了lock防止多线程带来的问题。
-    public void AddPacket(NetPacket packet)
-    {
-        lock (packets)
+        private MsgDispatch() { }
+
+        // 存储网络数据的队列
+        private Queue<object> msgs = new Queue<object>();
+
+
+        // 将数据包入队，然后在Update函数中使用GetPacket获得数据包。
+        // 因为网络和逻辑处理有可能是在不同的线程中，所以在入队出队的时候使用了lock防止多线程带来的问题。
+        public void AddMsg(object msg)
         {
-            packets.Enqueue(packet);
-        }
-    }
-
-    // 数据包出队
-    public NetPacket GetPacket()
-    {
-        lock (packets)
-        {
-            if (packets.Count == 0)
-                return null;
-            return packets.Dequeue();
-        }
-    }
-
-    public void Update()
-    {
-        NetPacket packet = null;
-        for (packet = GetPacket(); packet != null;)
-        {
-            string msg = "";
-            // 获得消息标识符
-            packet.BeginRead(out msg);
-
-            OnReceive handler = null;
-            if (handlers.TryGetValue(msg, out handler))
+            lock (msgs)
             {
-                // 根据消息标识符找到相应的OnReceive代理函数
-                if (handler != null)
-                    handler(packet);
+                msgs.Enqueue(msg);
             }
-            // 继续获得其它的包
-            packet = GetPacket();
+        }
+
+        // 数据包出队
+        public object GetMsg()
+        {
+            lock (msgs)
+            {
+                if (msgs.Count == 0)
+                    return null;
+                return msgs.Dequeue();
+            }
+        }
+
+        public void Update()
+        {
+            object msg = null;
+            for (msg = GetMsg(); msg != null;)
+            {
+
+                HandlerMeta meta = HandlerDispatch.Dispatch.getMeta(msg.GetType().Name);
+                try
+                {
+                    meta.method.Invoke(meta.instance, new object[] { msg });
+                }
+                catch (Exception ex)
+                {
+                    Debug.LogError("执行 handler 出错 " + ex.Message);
+                }
+
+
+                msg = GetMsg();
+            }
         }
     }
 }
