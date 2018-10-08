@@ -37,7 +37,41 @@ namespace Assets.Scripts.Proto
         }
         private long? __pbn__Id;
 
-        [global::ProtoBuf.ProtoMember(2, Name = @"name")]
+        [global::ProtoBuf.ProtoMember(2, Name = @"account")]
+        [global::System.ComponentModel.DefaultValue("")]
+        public string Account
+        {
+            get { return __pbn__Account ?? ""; }
+            set { __pbn__Account = value; }
+        }
+        public bool ShouldSerializeAccount()
+        {
+            return __pbn__Account != null;
+        }
+        public void ResetAccount()
+        {
+            __pbn__Account = null;
+        }
+        private string __pbn__Account;
+
+        [global::ProtoBuf.ProtoMember(3, Name = @"picture")]
+        [global::System.ComponentModel.DefaultValue("")]
+        public string Picture
+        {
+            get { return __pbn__Picture ?? ""; }
+            set { __pbn__Picture = value; }
+        }
+        public bool ShouldSerializePicture()
+        {
+            return __pbn__Picture != null;
+        }
+        public void ResetPicture()
+        {
+            __pbn__Picture = null;
+        }
+        private string __pbn__Picture;
+
+        [global::ProtoBuf.ProtoMember(4, Name = @"name")]
         [global::System.ComponentModel.DefaultValue("")]
         public string Name
         {
@@ -54,11 +88,42 @@ namespace Assets.Scripts.Proto
         }
         private string __pbn__Name;
 
-        [global::ProtoBuf.ProtoMember(3, Name = @"peanut")]
-        [global::System.ComponentModel.DefaultValue(-1)]
+        [global::ProtoBuf.ProtoMember(5, Name = @"sex")]
+        public int Sex
+        {
+            get { return __pbn__Sex.GetValueOrDefault(); }
+            set { __pbn__Sex = value; }
+        }
+        public bool ShouldSerializeSex()
+        {
+            return __pbn__Sex != null;
+        }
+        public void ResetSex()
+        {
+            __pbn__Sex = null;
+        }
+        private int? __pbn__Sex;
+
+        [global::ProtoBuf.ProtoMember(6, Name = @"title")]
+        public int Title
+        {
+            get { return __pbn__Title.GetValueOrDefault(); }
+            set { __pbn__Title = value; }
+        }
+        public bool ShouldSerializeTitle()
+        {
+            return __pbn__Title != null;
+        }
+        public void ResetTitle()
+        {
+            __pbn__Title = null;
+        }
+        private int? __pbn__Title;
+
+        [global::ProtoBuf.ProtoMember(7, Name = @"peanut")]
         public int Peanut
         {
-            get { return __pbn__Peanut ?? -1; }
+            get { return __pbn__Peanut.GetValueOrDefault(); }
             set { __pbn__Peanut = value; }
         }
         public bool ShouldSerializePeanut()
@@ -71,51 +136,198 @@ namespace Assets.Scripts.Proto
         }
         private int? __pbn__Peanut;
 
-        [global::ProtoBuf.ProtoMember(4)]
-        [global::System.ComponentModel.DefaultValue(-1)]
-        public int rankingScore
+        [global::ProtoBuf.ProtoMember(8, Name = @"diamond")]
+        public int Diamond
         {
-            get { return __pbn__rankingScore ?? -1; }
-            set { __pbn__rankingScore = value; }
+            get { return __pbn__Diamond.GetValueOrDefault(); }
+            set { __pbn__Diamond = value; }
         }
-        public bool ShouldSerializerankingScore()
+        public bool ShouldSerializeDiamond()
         {
-            return __pbn__rankingScore != null;
+            return __pbn__Diamond != null;
         }
-        public void ResetrankingScore()
+        public void ResetDiamond()
         {
-            __pbn__rankingScore = null;
+            __pbn__Diamond = null;
         }
-        private int? __pbn__rankingScore;
+        private int? __pbn__Diamond;
 
-        [global::ProtoBuf.ProtoMember(5)]
-        [global::System.ComponentModel.DefaultValue(-1)]
-        public int rankingStep
+        [global::ProtoBuf.ProtoMember(9)]
+        public int winRate
         {
-            get { return __pbn__rankingStep ?? -1; }
-            set { __pbn__rankingStep = value; }
+            get { return __pbn__winRate.GetValueOrDefault(); }
+            set { __pbn__winRate = value; }
         }
-        public bool ShouldSerializerankingStep()
+        public bool ShouldSerializewinRate()
         {
-            return __pbn__rankingStep != null;
+            return __pbn__winRate != null;
         }
-        public void ResetrankingStep()
+        public void ResetwinRate()
         {
-            __pbn__rankingStep = null;
+            __pbn__winRate = null;
         }
-        private int? __pbn__rankingStep;
+        private int? __pbn__winRate;
+
+        [global::ProtoBuf.ProtoMember(10)]
+        public int winStreak
+        {
+            get { return __pbn__winStreak.GetValueOrDefault(); }
+            set { __pbn__winStreak = value; }
+        }
+        public bool ShouldSerializewinStreak()
+        {
+            return __pbn__winStreak != null;
+        }
+        public void ResetwinStreak()
+        {
+            __pbn__winStreak = null;
+        }
+        private int? __pbn__winStreak;
+
+        [global::ProtoBuf.ProtoMember(11)]
+        public int totalGames
+        {
+            get { return __pbn__totalGames.GetValueOrDefault(); }
+            set { __pbn__totalGames = value; }
+        }
+        public bool ShouldSerializetotalGames()
+        {
+            return __pbn__totalGames != null;
+        }
+        public void ResettotalGames()
+        {
+            __pbn__totalGames = null;
+        }
+        private int? __pbn__totalGames;
+
+        [global::ProtoBuf.ProtoMember(12)]
+        public int highMultiple
+        {
+            get { return __pbn__highMultiple.GetValueOrDefault(); }
+            set { __pbn__highMultiple = value; }
+        }
+        public bool ShouldSerializehighMultiple()
+        {
+            return __pbn__highMultiple != null;
+        }
+        public void ResethighMultiple()
+        {
+            __pbn__highMultiple = null;
+        }
+        private int? __pbn__highMultiple;
+
+        [global::ProtoBuf.ProtoMember(13)]
+        public int totalPeanut
+        {
+            get { return __pbn__totalPeanut.GetValueOrDefault(); }
+            set { __pbn__totalPeanut = value; }
+        }
+        public bool ShouldSerializetotalPeanut()
+        {
+            return __pbn__totalPeanut != null;
+        }
+        public void ResettotalPeanut()
+        {
+            __pbn__totalPeanut = null;
+        }
+        private int? __pbn__totalPeanut;
+
+        [global::ProtoBuf.ProtoMember(14)]
+        public int doubleCount
+        {
+            get { return __pbn__doubleCount.GetValueOrDefault(); }
+            set { __pbn__doubleCount = value; }
+        }
+        public bool ShouldSerializedoubleCount()
+        {
+            return __pbn__doubleCount != null;
+        }
+        public void ResetdoubleCount()
+        {
+            __pbn__doubleCount = null;
+        }
+        private int? __pbn__doubleCount;
+
+        [global::ProtoBuf.ProtoMember(15)]
+        public int playCount
+        {
+            get { return __pbn__playCount.GetValueOrDefault(); }
+            set { __pbn__playCount = value; }
+        }
+        public bool ShouldSerializeplayCount()
+        {
+            return __pbn__playCount != null;
+        }
+        public void ResetplayCount()
+        {
+            __pbn__playCount = null;
+        }
+        private int? __pbn__playCount;
+
+        [global::ProtoBuf.ProtoMember(16)]
+        public int suppressCount
+        {
+            get { return __pbn__suppressCount.GetValueOrDefault(); }
+            set { __pbn__suppressCount = value; }
+        }
+        public bool ShouldSerializesuppressCount()
+        {
+            return __pbn__suppressCount != null;
+        }
+        public void ResetsuppressCount()
+        {
+            __pbn__suppressCount = null;
+        }
+        private int? __pbn__suppressCount;
 
     }
 
     [global::ProtoBuf.ProtoContract()]
-    public partial class NUpdatePlayer : global::ProtoBuf.IExtensible
+    public partial class GetPlayer : global::ProtoBuf.IExtensible
     {
         private global::ProtoBuf.IExtension __pbn__extensionData;
         global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
         {
             return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
         }
-        public NUpdatePlayer()
+        public GetPlayer()
+        {
+            OnConstructor();
+        }
+
+        partial void OnConstructor();
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class GetPlayerTo : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public GetPlayerTo()
+        {
+            OnConstructor();
+        }
+
+        partial void OnConstructor();
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"player")]
+        public PlayerMo Player { get; set; }
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class UpdatePlayerNo : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public UpdatePlayerNo()
         {
             OnConstructor();
         }

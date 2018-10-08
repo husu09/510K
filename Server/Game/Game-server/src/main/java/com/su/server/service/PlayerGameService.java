@@ -69,10 +69,10 @@ public class PlayerGameService {
 			// 处理竞技分
 			if (tableResult.getSiteCo().getSiteType() == SiteType.RANKING.getValue()) {
 				RankingCo rankingCo = null;
-				if (player.getRankingStep() == 0)
+				/*if (player.getRankingStep() == 0)
 					rankingCo = rankingConf.all().get(0);
 				else
-					rankingCo = rankingConf.get(player.getRankingStep());
+					rankingCo = rankingConf.get(player.getRankingStep());*/
 				if (rankingCo == null) {
 					logger.error("rankingCo is null");
 					return null;

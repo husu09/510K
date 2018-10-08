@@ -57,8 +57,6 @@ public class PlayerService extends GameEventAdapter {
 		builder.setId(player.getId());
 		builder.setName(player.getName());
 		builder.setPeanut(player.getPeanut());
-		builder.setRankingStep(player.getRankingStep());
-		builder.setRankingScore(player.getRankingScore());
 		return builder.build();
 	}
 

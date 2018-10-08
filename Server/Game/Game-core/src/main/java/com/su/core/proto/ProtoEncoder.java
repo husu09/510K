@@ -15,7 +15,7 @@ import io.netty.util.CharsetUtil;
 @Component
 public class ProtoEncoder extends MessageToByteEncoder<MessageLiteOrBuilder> {
 	
-	
+	private static final int INT_LENGTH = 4;
 	
 	@Override
 	protected void encode(ChannelHandlerContext ctx, MessageLiteOrBuilder msg, ByteBuf out) throws Exception {
@@ -29,21 +29,14 @@ public class ProtoEncoder extends MessageToByteEncoder<MessageLiteOrBuilder> {
 			data = ((MessageLite.Builder) msg).build().toByteArray();
 		}
 		byte[] nameData = messageName.getBytes(CharsetUtil.UTF_8);
-		int totalLen = computeRawVarint32Size(nameData.length) + nameData.length + computeRawVarint32Size(data.length)
+		int totalLen = INT_LENGTH + nameData.length + INT_LENGTH
 				+ data.length;
 		out.ensureWritable(totalLen);
-		writeRawVarint32(out, totalLen);
-		writeRawVarint32(out, nameData.length);
+		out.writeInt(totalLen);
+		out.writeInt(nameData.length);
 		out.writeBytes(nameData);
-		writeRawVarint32(out, data.length);
+		out.writeInt(data.length);
 		out.writeBytes(data);
 	}
 	
-	static void writeRawVarint32(ByteBuf out, int value) {
-		out.writeBytes(BitConverter.intToByteArray(value));
-	}
-	
-	static int computeRawVarint32Size(final int value) {
-		return 4;
-	}
 }

@@ -74,7 +74,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
 			if (playerContext.getPlayerId() != 0) {
 				// 退出事件
 				playerContext.getActor().logout(playerContext);
-				// 从所有玩家上下文移除
+				// 从在线玩家中移除
 				gameContext.getPlayerContextMap().remove(playerContext.getPlayerId());
 			}
 		}

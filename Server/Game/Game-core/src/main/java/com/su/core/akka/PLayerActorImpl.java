@@ -14,7 +14,7 @@ import com.su.core.game.TableResult;
 import com.su.core.game.service.BridgeService;
 import com.su.core.netty.NettyServerHandler;
 import com.su.msg.LoginMsg.LoginTo;
-import com.su.msg.PlayerMsg.NUpdatePlayer;
+import com.su.msg.PlayerMsg.UpdatePlayerNo;
 import com.su.msg.TableMsg.MGamePlayerResult;
 
 import io.netty.channel.ChannelHandlerContext;
@@ -59,7 +59,7 @@ public class PLayerActorImpl implements PlayerActor {
 			}
 			// 玩家数据更新通知
 			if (playerContext.isNotice())
-				playerContext.write(NUpdatePlayer.newBuilder().setPlayer(playerContext.getBuilder()));
+				playerContext.write(UpdatePlayerNo.newBuilder().setPlayer(playerContext.getBuilder()));
 
 		} catch (Exception e) {
 			e.printStackTrace();

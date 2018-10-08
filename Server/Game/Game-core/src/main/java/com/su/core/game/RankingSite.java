@@ -20,9 +20,10 @@ public class RankingSite extends MatchSite {
 
 		@Override
 		public int compare(GamePlayer playerOne, GamePlayer playerTwo) {
-			Player one = getPlayerByGamePlayer(playerOne);
+			/*Player one = getPlayerByGamePlayer(playerOne);
 			Player two = getPlayerByGamePlayer(playerTwo);
-			return one.getRankingStep() - two.getRankingStep();
+			return one.getRankingStep() - two.getRankingStep();*/
+			return 0;
 		}
 
 	});
@@ -62,9 +63,9 @@ public class RankingSite extends MatchSite {
 			GamePlayer player = it.next();
 			// 获取最后一名玩家
 			GamePlayer last = ArrayUtil.getLast(players);
-			if (last != null && getPlayerByGamePlayer(last).getRankingStep()
+			/*if (last != null && getPlayerByGamePlayer(last).getRankingStep()
 					/ 10 != getPlayerByGamePlayer(player).getRankingStep() / 10)
-				break;
+				break;*/
 			// 人数已满退出
 			if (!ArrayUtil.add(players, player))
 				break;

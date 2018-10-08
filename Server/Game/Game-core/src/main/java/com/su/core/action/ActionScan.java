@@ -23,6 +23,7 @@ public class ActionScan {
 
 	@Autowired
 	private ActionContext actionContext;
+	
 	@Autowired
 	private ProtoContext protoContext;
 

@@ -38,11 +38,12 @@ public class LoginControl {
 	 */
 	@Action(mustLogin = false)
 	public void login(PlayerContext playerContext, Login req) {
-		if (StringUtil.isNone(req.getAccount()) || StringUtil.isNone(req.getName())) {
-			logger.error("参数错误{},{}", req.getAccount(), req.getName());
+		if (StringUtil.isNone(req.getAccount())) {
 			return;
 		}
-
+		if (StringUtil.isNone(req.getName())) {
+			return;
+		}
 		long playerId = loginService.getIdCacheByAccount(req.getAccount());
 		Player player = null;
 		if (playerId == 0) {

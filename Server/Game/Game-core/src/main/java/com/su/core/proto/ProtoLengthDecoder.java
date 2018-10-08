@@ -37,7 +37,7 @@ public class ProtoLengthDecoder extends ByteToMessageDecoder {
 	protected void decode(ChannelHandlerContext ctx, ByteBuf in, List<Object> out) throws Exception {
 		in.markReaderIndex();
 		int preIndex = in.readerIndex();
-		int length = readRawVarint32(in);
+		int length = in.readInt();
 		if (preIndex == in.readerIndex()) {
 			return;
 		}
@@ -52,12 +52,4 @@ public class ProtoLengthDecoder extends ByteToMessageDecoder {
 		}
 	}
 	
-	private static int readRawVarint32(ByteBuf buffer) {
-		if (buffer.readableBytes() < 4) {
-			return 0;
-		}
-		byte[] bs = new byte[4];
-		buffer.readBytes(bs);
-		return BitConverter.byteArrayToInt(bs);
-	}
 }

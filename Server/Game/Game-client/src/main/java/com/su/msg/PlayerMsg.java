@@ -37,10 +37,62 @@ public final class PlayerMsg {
 
     /**
      * <pre>
+     * 账号
+     * </pre>
+     *
+     * <code>optional string account = 2;</code>
+     */
+    boolean hasAccount();
+    /**
+     * <pre>
+     * 账号
+     * </pre>
+     *
+     * <code>optional string account = 2;</code>
+     */
+    java.lang.String getAccount();
+    /**
+     * <pre>
+     * 账号
+     * </pre>
+     *
+     * <code>optional string account = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getAccountBytes();
+
+    /**
+     * <pre>
+     * 头像
+     * </pre>
+     *
+     * <code>optional string picture = 3;</code>
+     */
+    boolean hasPicture();
+    /**
+     * <pre>
+     * 头像
+     * </pre>
+     *
+     * <code>optional string picture = 3;</code>
+     */
+    java.lang.String getPicture();
+    /**
+     * <pre>
+     * 头像
+     * </pre>
+     *
+     * <code>optional string picture = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getPictureBytes();
+
+    /**
+     * <pre>
      * 名称
      * </pre>
      *
-     * <code>optional string name = 2;</code>
+     * <code>optional string name = 4;</code>
      */
     boolean hasName();
     /**
@@ -48,7 +100,7 @@ public final class PlayerMsg {
      * 名称
      * </pre>
      *
-     * <code>optional string name = 2;</code>
+     * <code>optional string name = 4;</code>
      */
     java.lang.String getName();
     /**
@@ -56,17 +108,51 @@ public final class PlayerMsg {
      * 名称
      * </pre>
      *
-     * <code>optional string name = 2;</code>
+     * <code>optional string name = 4;</code>
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
      * <pre>
+     * 性别
+     * </pre>
+     *
+     * <code>optional int32 sex = 5;</code>
+     */
+    boolean hasSex();
+    /**
+     * <pre>
+     * 性别
+     * </pre>
+     *
+     * <code>optional int32 sex = 5;</code>
+     */
+    int getSex();
+
+    /**
+     * <pre>
+     * 头衔
+     * </pre>
+     *
+     * <code>optional int32 title = 6;</code>
+     */
+    boolean hasTitle();
+    /**
+     * <pre>
+     * 头衔
+     * </pre>
+     *
+     * <code>optional int32 title = 6;</code>
+     */
+    int getTitle();
+
+    /**
+     * <pre>
      * 花生
      * </pre>
      *
-     * <code>optional int32 peanut = 3 [default = -1];</code>
+     * <code>optional int32 peanut = 7;</code>
      */
     boolean hasPeanut();
     /**
@@ -74,43 +160,162 @@ public final class PlayerMsg {
      * 花生
      * </pre>
      *
-     * <code>optional int32 peanut = 3 [default = -1];</code>
+     * <code>optional int32 peanut = 7;</code>
      */
     int getPeanut();
 
     /**
      * <pre>
-     * 段位分
+     * 钻石
      * </pre>
      *
-     * <code>optional int32 rankingScore = 4 [default = -1];</code>
+     * <code>optional int32 diamond = 8;</code>
      */
-    boolean hasRankingScore();
+    boolean hasDiamond();
     /**
      * <pre>
-     * 段位分
+     * 钻石
      * </pre>
      *
-     * <code>optional int32 rankingScore = 4 [default = -1];</code>
+     * <code>optional int32 diamond = 8;</code>
      */
-    int getRankingScore();
+    int getDiamond();
 
     /**
      * <pre>
-     * 段位
+     * 胜率
      * </pre>
      *
-     * <code>optional int32 rankingStep = 5 [default = -1];</code>
+     * <code>optional int32 winRate = 9;</code>
      */
-    boolean hasRankingStep();
+    boolean hasWinRate();
     /**
      * <pre>
-     * 段位
+     * 胜率
      * </pre>
      *
-     * <code>optional int32 rankingStep = 5 [default = -1];</code>
+     * <code>optional int32 winRate = 9;</code>
      */
-    int getRankingStep();
+    int getWinRate();
+
+    /**
+     * <pre>
+     * 最高连胜
+     * </pre>
+     *
+     * <code>optional int32 winStreak = 10;</code>
+     */
+    boolean hasWinStreak();
+    /**
+     * <pre>
+     * 最高连胜
+     * </pre>
+     *
+     * <code>optional int32 winStreak = 10;</code>
+     */
+    int getWinStreak();
+
+    /**
+     * <pre>
+     * 总对局
+     * </pre>
+     *
+     * <code>optional int32 totalGames = 11;</code>
+     */
+    boolean hasTotalGames();
+    /**
+     * <pre>
+     * 总对局
+     * </pre>
+     *
+     * <code>optional int32 totalGames = 11;</code>
+     */
+    int getTotalGames();
+
+    /**
+     * <pre>
+     * 最高倍数
+     * </pre>
+     *
+     * <code>optional int32 highMultiple = 12;</code>
+     */
+    boolean hasHighMultiple();
+    /**
+     * <pre>
+     * 最高倍数
+     * </pre>
+     *
+     * <code>optional int32 highMultiple = 12;</code>
+     */
+    int getHighMultiple();
+
+    /**
+     * <pre>
+     * 累计赢花生
+     * </pre>
+     *
+     * <code>optional int32 totalPeanut = 13;</code>
+     */
+    boolean hasTotalPeanut();
+    /**
+     * <pre>
+     * 累计赢花生
+     * </pre>
+     *
+     * <code>optional int32 totalPeanut = 13;</code>
+     */
+    int getTotalPeanut();
+
+    /**
+     * <pre>
+     * 加倍次数
+     * </pre>
+     *
+     * <code>optional int32 doubleCount = 14;</code>
+     */
+    boolean hasDoubleCount();
+    /**
+     * <pre>
+     * 加倍次数
+     * </pre>
+     *
+     * <code>optional int32 doubleCount = 14;</code>
+     */
+    int getDoubleCount();
+
+    /**
+     * <pre>
+     * 出牌次数
+     * </pre>
+     *
+     * <code>optional int32 playCount = 15;</code>
+     */
+    boolean hasPlayCount();
+    /**
+     * <pre>
+     * 出牌次数
+     * </pre>
+     *
+     * <code>optional int32 playCount = 15;</code>
+     */
+    int getPlayCount();
+
+    /**
+     * <pre>
+     * 压制次数
+     * </pre>
+     *
+     * <code>optional int32 suppressCount = 16;</code>
+     */
+    boolean hasSuppressCount();
+    /**
+     * <pre>
+     * 压制次数
+     * </pre>
+     *
+     * <code>optional int32 suppressCount = 16;</code>
+     */
+    int getSuppressCount();
   }
   /**
    * <pre>
@@ -129,10 +334,21 @@ public final class PlayerMsg {
     }
     private PlayerMo() {
       id_ = 0L;
+      account_ = "";
+      picture_ = "";
       name_ = "";
-      peanut_ = -1;
-      rankingScore_ = -1;
-      rankingStep_ = -1;
+      sex_ = 0;
+      title_ = 0;
+      peanut_ = 0;
+      diamond_ = 0;
+      winRate_ = 0;
+      winStreak_ = 0;
+      totalGames_ = 0;
+      highMultiple_ = 0;
+      totalPeanut_ = 0;
+      doubleCount_ = 0;
+      playCount_ = 0;
+      suppressCount_ = 0;
     }
 
     @java.lang.Override
@@ -171,22 +387,79 @@ public final class PlayerMsg {
             case 18: {
               com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              name_ = bs;
+              account_ = bs;
               break;
             }
-            case 24: {
+            case 26: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000004;
-              peanut_ = input.readInt32();
+              picture_ = bs;
               break;
             }
-            case 32: {
+            case 34: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000008;
-              rankingScore_ = input.readInt32();
+              name_ = bs;
               break;
             }
             case 40: {
               bitField0_ |= 0x00000010;
-              rankingStep_ = input.readInt32();
+              sex_ = input.readInt32();
+              break;
+            }
+            case 48: {
+              bitField0_ |= 0x00000020;
+              title_ = input.readInt32();
+              break;
+            }
+            case 56: {
+              bitField0_ |= 0x00000040;
+              peanut_ = input.readInt32();
+              break;
+            }
+            case 64: {
+              bitField0_ |= 0x00000080;
+              diamond_ = input.readInt32();
+              break;
+            }
+            case 72: {
+              bitField0_ |= 0x00000100;
+              winRate_ = input.readInt32();
+              break;
+            }
+            case 80: {
+              bitField0_ |= 0x00000200;
+              winStreak_ = input.readInt32();
+              break;
+            }
+            case 88: {
+              bitField0_ |= 0x00000400;
+              totalGames_ = input.readInt32();
+              break;
+            }
+            case 96: {
+              bitField0_ |= 0x00000800;
+              highMultiple_ = input.readInt32();
+              break;
+            }
+            case 104: {
+              bitField0_ |= 0x00001000;
+              totalPeanut_ = input.readInt32();
+              break;
+            }
+            case 112: {
+              bitField0_ |= 0x00002000;
+              doubleCount_ = input.readInt32();
+              break;
+            }
+            case 120: {
+              bitField0_ |= 0x00004000;
+              playCount_ = input.readInt32();
+              break;
+            }
+            case 128: {
+              bitField0_ |= 0x00008000;
+              suppressCount_ = input.readInt32();
               break;
             }
           }
@@ -237,24 +510,132 @@ public final class PlayerMsg {
       return id_;
     }
 
-    public static final int NAME_FIELD_NUMBER = 2;
+    public static final int ACCOUNT_FIELD_NUMBER = 2;
+    private volatile java.lang.Object account_;
+    /**
+     * <pre>
+     * 账号
+     * </pre>
+     *
+     * <code>optional string account = 2;</code>
+     */
+    public boolean hasAccount() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <pre>
+     * 账号
+     * </pre>
+     *
+     * <code>optional string account = 2;</code>
+     */
+    public java.lang.String getAccount() {
+      java.lang.Object ref = account_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          account_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * 账号
+     * </pre>
+     *
+     * <code>optional string account = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getAccountBytes() {
+      java.lang.Object ref = account_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        account_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int PICTURE_FIELD_NUMBER = 3;
+    private volatile java.lang.Object picture_;
+    /**
+     * <pre>
+     * 头像
+     * </pre>
+     *
+     * <code>optional string picture = 3;</code>
+     */
+    public boolean hasPicture() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <pre>
+     * 头像
+     * </pre>
+     *
+     * <code>optional string picture = 3;</code>
+     */
+    public java.lang.String getPicture() {
+      java.lang.Object ref = picture_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          picture_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * 头像
+     * </pre>
+     *
+     * <code>optional string picture = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPictureBytes() {
+      java.lang.Object ref = picture_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        picture_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int NAME_FIELD_NUMBER = 4;
     private volatile java.lang.Object name_;
     /**
      * <pre>
      * 名称
      * </pre>
      *
-     * <code>optional string name = 2;</code>
+     * <code>optional string name = 4;</code>
      */
     public boolean hasName() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
+      return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
      * <pre>
      * 名称
      * </pre>
      *
-     * <code>optional string name = 2;</code>
+     * <code>optional string name = 4;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -275,7 +656,7 @@ public final class PlayerMsg {
      * 名称
      * </pre>
      *
-     * <code>optional string name = 2;</code>
+     * <code>optional string name = 4;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -291,73 +672,280 @@ public final class PlayerMsg {
       }
     }
 
-    public static final int PEANUT_FIELD_NUMBER = 3;
+    public static final int SEX_FIELD_NUMBER = 5;
+    private int sex_;
+    /**
+     * <pre>
+     * 性别
+     * </pre>
+     *
+     * <code>optional int32 sex = 5;</code>
+     */
+    public boolean hasSex() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <pre>
+     * 性别
+     * </pre>
+     *
+     * <code>optional int32 sex = 5;</code>
+     */
+    public int getSex() {
+      return sex_;
+    }
+
+    public static final int TITLE_FIELD_NUMBER = 6;
+    private int title_;
+    /**
+     * <pre>
+     * 头衔
+     * </pre>
+     *
+     * <code>optional int32 title = 6;</code>
+     */
+    public boolean hasTitle() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    /**
+     * <pre>
+     * 头衔
+     * </pre>
+     *
+     * <code>optional int32 title = 6;</code>
+     */
+    public int getTitle() {
+      return title_;
+    }
+
+    public static final int PEANUT_FIELD_NUMBER = 7;
     private int peanut_;
     /**
      * <pre>
      * 花生
      * </pre>
      *
-     * <code>optional int32 peanut = 3 [default = -1];</code>
+     * <code>optional int32 peanut = 7;</code>
      */
     public boolean hasPeanut() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
+      return ((bitField0_ & 0x00000040) == 0x00000040);
     }
     /**
      * <pre>
      * 花生
      * </pre>
      *
-     * <code>optional int32 peanut = 3 [default = -1];</code>
+     * <code>optional int32 peanut = 7;</code>
      */
     public int getPeanut() {
       return peanut_;
     }
 
-    public static final int RANKINGSCORE_FIELD_NUMBER = 4;
-    private int rankingScore_;
+    public static final int DIAMOND_FIELD_NUMBER = 8;
+    private int diamond_;
     /**
      * <pre>
-     * 段位分
+     * 钻石
      * </pre>
      *
-     * <code>optional int32 rankingScore = 4 [default = -1];</code>
+     * <code>optional int32 diamond = 8;</code>
      */
-    public boolean hasRankingScore() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
+    public boolean hasDiamond() {
+      return ((bitField0_ & 0x00000080) == 0x00000080);
     }
     /**
      * <pre>
-     * 段位分
+     * 钻石
      * </pre>
      *
-     * <code>optional int32 rankingScore = 4 [default = -1];</code>
+     * <code>optional int32 diamond = 8;</code>
      */
-    public int getRankingScore() {
-      return rankingScore_;
+    public int getDiamond() {
+      return diamond_;
     }
 
-    public static final int RANKINGSTEP_FIELD_NUMBER = 5;
-    private int rankingStep_;
+    public static final int WINRATE_FIELD_NUMBER = 9;
+    private int winRate_;
     /**
      * <pre>
-     * 段位
+     * 胜率
      * </pre>
      *
-     * <code>optional int32 rankingStep = 5 [default = -1];</code>
+     * <code>optional int32 winRate = 9;</code>
      */
-    public boolean hasRankingStep() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
+    public boolean hasWinRate() {
+      return ((bitField0_ & 0x00000100) == 0x00000100);
     }
     /**
      * <pre>
-     * 段位
+     * 胜率
      * </pre>
      *
-     * <code>optional int32 rankingStep = 5 [default = -1];</code>
+     * <code>optional int32 winRate = 9;</code>
      */
-    public int getRankingStep() {
-      return rankingStep_;
+    public int getWinRate() {
+      return winRate_;
+    }
+
+    public static final int WINSTREAK_FIELD_NUMBER = 10;
+    private int winStreak_;
+    /**
+     * <pre>
+     * 最高连胜
+     * </pre>
+     *
+     * <code>optional int32 winStreak = 10;</code>
+     */
+    public boolean hasWinStreak() {
+      return ((bitField0_ & 0x00000200) == 0x00000200);
+    }
+    /**
+     * <pre>
+     * 最高连胜
+     * </pre>
+     *
+     * <code>optional int32 winStreak = 10;</code>
+     */
+    public int getWinStreak() {
+      return winStreak_;
+    }
+
+    public static final int TOTALGAMES_FIELD_NUMBER = 11;
+    private int totalGames_;
+    /**
+     * <pre>
+     * 总对局
+     * </pre>
+     *
+     * <code>optional int32 totalGames = 11;</code>
+     */
+    public boolean hasTotalGames() {
+      return ((bitField0_ & 0x00000400) == 0x00000400);
+    }
+    /**
+     * <pre>
+     * 总对局
+     * </pre>
+     *
+     * <code>optional int32 totalGames = 11;</code>
+     */
+    public int getTotalGames() {
+      return totalGames_;
+    }
+
+    public static final int HIGHMULTIPLE_FIELD_NUMBER = 12;
+    private int highMultiple_;
+    /**
+     * <pre>
+     * 最高倍数
+     * </pre>
+     *
+     * <code>optional int32 highMultiple = 12;</code>
+     */
+    public boolean hasHighMultiple() {
+      return ((bitField0_ & 0x00000800) == 0x00000800);
+    }
+    /**
+     * <pre>
+     * 最高倍数
+     * </pre>
+     *
+     * <code>optional int32 highMultiple = 12;</code>
+     */
+    public int getHighMultiple() {
+      return highMultiple_;
+    }
+
+    public static final int TOTALPEANUT_FIELD_NUMBER = 13;
+    private int totalPeanut_;
+    /**
+     * <pre>
+     * 累计赢花生
+     * </pre>
+     *
+     * <code>optional int32 totalPeanut = 13;</code>
+     */
+    public boolean hasTotalPeanut() {
+      return ((bitField0_ & 0x00001000) == 0x00001000);
+    }
+    /**
+     * <pre>
+     * 累计赢花生
+     * </pre>
+     *
+     * <code>optional int32 totalPeanut = 13;</code>
+     */
+    public int getTotalPeanut() {
+      return totalPeanut_;
+    }
+
+    public static final int DOUBLECOUNT_FIELD_NUMBER = 14;
+    private int doubleCount_;
+    /**
+     * <pre>
+     * 加倍次数
+     * </pre>
+     *
+     * <code>optional int32 doubleCount = 14;</code>
+     */
+    public boolean hasDoubleCount() {
+      return ((bitField0_ & 0x00002000) == 0x00002000);
+    }
+    /**
+     * <pre>
+     * 加倍次数
+     * </pre>
+     *
+     * <code>optional int32 doubleCount = 14;</code>
+     */
+    public int getDoubleCount() {
+      return doubleCount_;
+    }
+
+    public static final int PLAYCOUNT_FIELD_NUMBER = 15;
+    private int playCount_;
+    /**
+     * <pre>
+     * 出牌次数
+     * </pre>
+     *
+     * <code>optional int32 playCount = 15;</code>
+     */
+    public boolean hasPlayCount() {
+      return ((bitField0_ & 0x00004000) == 0x00004000);
+    }
+    /**
+     * <pre>
+     * 出牌次数
+     * </pre>
+     *
+     * <code>optional int32 playCount = 15;</code>
+     */
+    public int getPlayCount() {
+      return playCount_;
+    }
+
+    public static final int SUPPRESSCOUNT_FIELD_NUMBER = 16;
+    private int suppressCount_;
+    /**
+     * <pre>
+     * 压制次数
+     * </pre>
+     *
+     * <code>optional int32 suppressCount = 16;</code>
+     */
+    public boolean hasSuppressCount() {
+      return ((bitField0_ & 0x00008000) == 0x00008000);
+    }
+    /**
+     * <pre>
+     * 压制次数
+     * </pre>
+     *
+     * <code>optional int32 suppressCount = 16;</code>
+     */
+    public int getSuppressCount() {
+      return suppressCount_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -376,16 +964,49 @@ public final class PlayerMsg {
         output.writeInt64(1, id_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, account_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, peanut_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, picture_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt32(4, rankingScore_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, name_);
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeInt32(5, rankingStep_);
+        output.writeInt32(5, sex_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeInt32(6, title_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeInt32(7, peanut_);
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        output.writeInt32(8, diamond_);
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        output.writeInt32(9, winRate_);
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        output.writeInt32(10, winStreak_);
+      }
+      if (((bitField0_ & 0x00000400) == 0x00000400)) {
+        output.writeInt32(11, totalGames_);
+      }
+      if (((bitField0_ & 0x00000800) == 0x00000800)) {
+        output.writeInt32(12, highMultiple_);
+      }
+      if (((bitField0_ & 0x00001000) == 0x00001000)) {
+        output.writeInt32(13, totalPeanut_);
+      }
+      if (((bitField0_ & 0x00002000) == 0x00002000)) {
+        output.writeInt32(14, doubleCount_);
+      }
+      if (((bitField0_ & 0x00004000) == 0x00004000)) {
+        output.writeInt32(15, playCount_);
+      }
+      if (((bitField0_ & 0x00008000) == 0x00008000)) {
+        output.writeInt32(16, suppressCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -400,19 +1021,61 @@ public final class PlayerMsg {
           .computeInt64Size(1, id_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, account_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, peanut_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, picture_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, rankingScore_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, name_);
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, rankingStep_);
+          .computeInt32Size(5, sex_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, title_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, peanut_);
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(8, diamond_);
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(9, winRate_);
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(10, winStreak_);
+      }
+      if (((bitField0_ & 0x00000400) == 0x00000400)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, totalGames_);
+      }
+      if (((bitField0_ & 0x00000800) == 0x00000800)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(12, highMultiple_);
+      }
+      if (((bitField0_ & 0x00001000) == 0x00001000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(13, totalPeanut_);
+      }
+      if (((bitField0_ & 0x00002000) == 0x00002000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(14, doubleCount_);
+      }
+      if (((bitField0_ & 0x00004000) == 0x00004000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(15, playCount_);
+      }
+      if (((bitField0_ & 0x00008000) == 0x00008000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(16, suppressCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -436,25 +1099,80 @@ public final class PlayerMsg {
         result = result && (getId()
             == other.getId());
       }
+      result = result && (hasAccount() == other.hasAccount());
+      if (hasAccount()) {
+        result = result && getAccount()
+            .equals(other.getAccount());
+      }
+      result = result && (hasPicture() == other.hasPicture());
+      if (hasPicture()) {
+        result = result && getPicture()
+            .equals(other.getPicture());
+      }
       result = result && (hasName() == other.hasName());
       if (hasName()) {
         result = result && getName()
             .equals(other.getName());
+      }
+      result = result && (hasSex() == other.hasSex());
+      if (hasSex()) {
+        result = result && (getSex()
+            == other.getSex());
+      }
+      result = result && (hasTitle() == other.hasTitle());
+      if (hasTitle()) {
+        result = result && (getTitle()
+            == other.getTitle());
       }
       result = result && (hasPeanut() == other.hasPeanut());
       if (hasPeanut()) {
         result = result && (getPeanut()
             == other.getPeanut());
       }
-      result = result && (hasRankingScore() == other.hasRankingScore());
-      if (hasRankingScore()) {
-        result = result && (getRankingScore()
-            == other.getRankingScore());
+      result = result && (hasDiamond() == other.hasDiamond());
+      if (hasDiamond()) {
+        result = result && (getDiamond()
+            == other.getDiamond());
       }
-      result = result && (hasRankingStep() == other.hasRankingStep());
-      if (hasRankingStep()) {
-        result = result && (getRankingStep()
-            == other.getRankingStep());
+      result = result && (hasWinRate() == other.hasWinRate());
+      if (hasWinRate()) {
+        result = result && (getWinRate()
+            == other.getWinRate());
+      }
+      result = result && (hasWinStreak() == other.hasWinStreak());
+      if (hasWinStreak()) {
+        result = result && (getWinStreak()
+            == other.getWinStreak());
+      }
+      result = result && (hasTotalGames() == other.hasTotalGames());
+      if (hasTotalGames()) {
+        result = result && (getTotalGames()
+            == other.getTotalGames());
+      }
+      result = result && (hasHighMultiple() == other.hasHighMultiple());
+      if (hasHighMultiple()) {
+        result = result && (getHighMultiple()
+            == other.getHighMultiple());
+      }
+      result = result && (hasTotalPeanut() == other.hasTotalPeanut());
+      if (hasTotalPeanut()) {
+        result = result && (getTotalPeanut()
+            == other.getTotalPeanut());
+      }
+      result = result && (hasDoubleCount() == other.hasDoubleCount());
+      if (hasDoubleCount()) {
+        result = result && (getDoubleCount()
+            == other.getDoubleCount());
+      }
+      result = result && (hasPlayCount() == other.hasPlayCount());
+      if (hasPlayCount()) {
+        result = result && (getPlayCount()
+            == other.getPlayCount());
+      }
+      result = result && (hasSuppressCount() == other.hasSuppressCount());
+      if (hasSuppressCount()) {
+        result = result && (getSuppressCount()
+            == other.getSuppressCount());
       }
       result = result && unknownFields.equals(other.unknownFields);
       return result;
@@ -472,21 +1190,65 @@ public final class PlayerMsg {
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
             getId());
       }
+      if (hasAccount()) {
+        hash = (37 * hash) + ACCOUNT_FIELD_NUMBER;
+        hash = (53 * hash) + getAccount().hashCode();
+      }
+      if (hasPicture()) {
+        hash = (37 * hash) + PICTURE_FIELD_NUMBER;
+        hash = (53 * hash) + getPicture().hashCode();
+      }
       if (hasName()) {
         hash = (37 * hash) + NAME_FIELD_NUMBER;
         hash = (53 * hash) + getName().hashCode();
+      }
+      if (hasSex()) {
+        hash = (37 * hash) + SEX_FIELD_NUMBER;
+        hash = (53 * hash) + getSex();
+      }
+      if (hasTitle()) {
+        hash = (37 * hash) + TITLE_FIELD_NUMBER;
+        hash = (53 * hash) + getTitle();
       }
       if (hasPeanut()) {
         hash = (37 * hash) + PEANUT_FIELD_NUMBER;
         hash = (53 * hash) + getPeanut();
       }
-      if (hasRankingScore()) {
-        hash = (37 * hash) + RANKINGSCORE_FIELD_NUMBER;
-        hash = (53 * hash) + getRankingScore();
+      if (hasDiamond()) {
+        hash = (37 * hash) + DIAMOND_FIELD_NUMBER;
+        hash = (53 * hash) + getDiamond();
       }
-      if (hasRankingStep()) {
-        hash = (37 * hash) + RANKINGSTEP_FIELD_NUMBER;
-        hash = (53 * hash) + getRankingStep();
+      if (hasWinRate()) {
+        hash = (37 * hash) + WINRATE_FIELD_NUMBER;
+        hash = (53 * hash) + getWinRate();
+      }
+      if (hasWinStreak()) {
+        hash = (37 * hash) + WINSTREAK_FIELD_NUMBER;
+        hash = (53 * hash) + getWinStreak();
+      }
+      if (hasTotalGames()) {
+        hash = (37 * hash) + TOTALGAMES_FIELD_NUMBER;
+        hash = (53 * hash) + getTotalGames();
+      }
+      if (hasHighMultiple()) {
+        hash = (37 * hash) + HIGHMULTIPLE_FIELD_NUMBER;
+        hash = (53 * hash) + getHighMultiple();
+      }
+      if (hasTotalPeanut()) {
+        hash = (37 * hash) + TOTALPEANUT_FIELD_NUMBER;
+        hash = (53 * hash) + getTotalPeanut();
+      }
+      if (hasDoubleCount()) {
+        hash = (37 * hash) + DOUBLECOUNT_FIELD_NUMBER;
+        hash = (53 * hash) + getDoubleCount();
+      }
+      if (hasPlayCount()) {
+        hash = (37 * hash) + PLAYCOUNT_FIELD_NUMBER;
+        hash = (53 * hash) + getPlayCount();
+      }
+      if (hasSuppressCount()) {
+        hash = (37 * hash) + SUPPRESSCOUNT_FIELD_NUMBER;
+        hash = (53 * hash) + getSuppressCount();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -612,14 +1374,36 @@ public final class PlayerMsg {
         super.clear();
         id_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
-        name_ = "";
+        account_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
-        peanut_ = -1;
+        picture_ = "";
         bitField0_ = (bitField0_ & ~0x00000004);
-        rankingScore_ = -1;
+        name_ = "";
         bitField0_ = (bitField0_ & ~0x00000008);
-        rankingStep_ = -1;
+        sex_ = 0;
         bitField0_ = (bitField0_ & ~0x00000010);
+        title_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000020);
+        peanut_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000040);
+        diamond_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000080);
+        winRate_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000100);
+        winStreak_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000200);
+        totalGames_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000400);
+        highMultiple_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000800);
+        totalPeanut_ = 0;
+        bitField0_ = (bitField0_ & ~0x00001000);
+        doubleCount_ = 0;
+        bitField0_ = (bitField0_ & ~0x00002000);
+        playCount_ = 0;
+        bitField0_ = (bitField0_ & ~0x00004000);
+        suppressCount_ = 0;
+        bitField0_ = (bitField0_ & ~0x00008000);
         return this;
       }
 
@@ -651,19 +1435,63 @@ public final class PlayerMsg {
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.name_ = name_;
+        result.account_ = account_;
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.peanut_ = peanut_;
+        result.picture_ = picture_;
         if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
           to_bitField0_ |= 0x00000008;
         }
-        result.rankingScore_ = rankingScore_;
+        result.name_ = name_;
         if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
           to_bitField0_ |= 0x00000010;
         }
-        result.rankingStep_ = rankingStep_;
+        result.sex_ = sex_;
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.title_ = title_;
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        result.peanut_ = peanut_;
+        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
+          to_bitField0_ |= 0x00000080;
+        }
+        result.diamond_ = diamond_;
+        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
+          to_bitField0_ |= 0x00000100;
+        }
+        result.winRate_ = winRate_;
+        if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
+          to_bitField0_ |= 0x00000200;
+        }
+        result.winStreak_ = winStreak_;
+        if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
+          to_bitField0_ |= 0x00000400;
+        }
+        result.totalGames_ = totalGames_;
+        if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
+          to_bitField0_ |= 0x00000800;
+        }
+        result.highMultiple_ = highMultiple_;
+        if (((from_bitField0_ & 0x00001000) == 0x00001000)) {
+          to_bitField0_ |= 0x00001000;
+        }
+        result.totalPeanut_ = totalPeanut_;
+        if (((from_bitField0_ & 0x00002000) == 0x00002000)) {
+          to_bitField0_ |= 0x00002000;
+        }
+        result.doubleCount_ = doubleCount_;
+        if (((from_bitField0_ & 0x00004000) == 0x00004000)) {
+          to_bitField0_ |= 0x00004000;
+        }
+        result.playCount_ = playCount_;
+        if (((from_bitField0_ & 0x00008000) == 0x00008000)) {
+          to_bitField0_ |= 0x00008000;
+        }
+        result.suppressCount_ = suppressCount_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -709,19 +1537,56 @@ public final class PlayerMsg {
         if (other.hasId()) {
           setId(other.getId());
         }
-        if (other.hasName()) {
+        if (other.hasAccount()) {
           bitField0_ |= 0x00000002;
+          account_ = other.account_;
+          onChanged();
+        }
+        if (other.hasPicture()) {
+          bitField0_ |= 0x00000004;
+          picture_ = other.picture_;
+          onChanged();
+        }
+        if (other.hasName()) {
+          bitField0_ |= 0x00000008;
           name_ = other.name_;
           onChanged();
+        }
+        if (other.hasSex()) {
+          setSex(other.getSex());
+        }
+        if (other.hasTitle()) {
+          setTitle(other.getTitle());
         }
         if (other.hasPeanut()) {
           setPeanut(other.getPeanut());
         }
-        if (other.hasRankingScore()) {
-          setRankingScore(other.getRankingScore());
+        if (other.hasDiamond()) {
+          setDiamond(other.getDiamond());
         }
-        if (other.hasRankingStep()) {
-          setRankingStep(other.getRankingStep());
+        if (other.hasWinRate()) {
+          setWinRate(other.getWinRate());
+        }
+        if (other.hasWinStreak()) {
+          setWinStreak(other.getWinStreak());
+        }
+        if (other.hasTotalGames()) {
+          setTotalGames(other.getTotalGames());
+        }
+        if (other.hasHighMultiple()) {
+          setHighMultiple(other.getHighMultiple());
+        }
+        if (other.hasTotalPeanut()) {
+          setTotalPeanut(other.getTotalPeanut());
+        }
+        if (other.hasDoubleCount()) {
+          setDoubleCount(other.getDoubleCount());
+        }
+        if (other.hasPlayCount()) {
+          setPlayCount(other.getPlayCount());
+        }
+        if (other.hasSuppressCount()) {
+          setSuppressCount(other.getSuppressCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -799,23 +1664,223 @@ public final class PlayerMsg {
         return this;
       }
 
+      private java.lang.Object account_ = "";
+      /**
+       * <pre>
+       * 账号
+       * </pre>
+       *
+       * <code>optional string account = 2;</code>
+       */
+      public boolean hasAccount() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <pre>
+       * 账号
+       * </pre>
+       *
+       * <code>optional string account = 2;</code>
+       */
+      public java.lang.String getAccount() {
+        java.lang.Object ref = account_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            account_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * 账号
+       * </pre>
+       *
+       * <code>optional string account = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getAccountBytes() {
+        java.lang.Object ref = account_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          account_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * 账号
+       * </pre>
+       *
+       * <code>optional string account = 2;</code>
+       */
+      public Builder setAccount(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        account_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 账号
+       * </pre>
+       *
+       * <code>optional string account = 2;</code>
+       */
+      public Builder clearAccount() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        account_ = getDefaultInstance().getAccount();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 账号
+       * </pre>
+       *
+       * <code>optional string account = 2;</code>
+       */
+      public Builder setAccountBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        account_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object picture_ = "";
+      /**
+       * <pre>
+       * 头像
+       * </pre>
+       *
+       * <code>optional string picture = 3;</code>
+       */
+      public boolean hasPicture() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <pre>
+       * 头像
+       * </pre>
+       *
+       * <code>optional string picture = 3;</code>
+       */
+      public java.lang.String getPicture() {
+        java.lang.Object ref = picture_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            picture_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * 头像
+       * </pre>
+       *
+       * <code>optional string picture = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPictureBytes() {
+        java.lang.Object ref = picture_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          picture_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * 头像
+       * </pre>
+       *
+       * <code>optional string picture = 3;</code>
+       */
+      public Builder setPicture(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        picture_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 头像
+       * </pre>
+       *
+       * <code>optional string picture = 3;</code>
+       */
+      public Builder clearPicture() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        picture_ = getDefaultInstance().getPicture();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 头像
+       * </pre>
+       *
+       * <code>optional string picture = 3;</code>
+       */
+      public Builder setPictureBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        picture_ = value;
+        onChanged();
+        return this;
+      }
+
       private java.lang.Object name_ = "";
       /**
        * <pre>
        * 名称
        * </pre>
        *
-       * <code>optional string name = 2;</code>
+       * <code>optional string name = 4;</code>
        */
       public boolean hasName() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
+        return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
        * <pre>
        * 名称
        * </pre>
        *
-       * <code>optional string name = 2;</code>
+       * <code>optional string name = 4;</code>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -836,7 +1901,7 @@ public final class PlayerMsg {
        * 名称
        * </pre>
        *
-       * <code>optional string name = 2;</code>
+       * <code>optional string name = 4;</code>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -856,14 +1921,14 @@ public final class PlayerMsg {
        * 名称
        * </pre>
        *
-       * <code>optional string name = 2;</code>
+       * <code>optional string name = 4;</code>
        */
       public Builder setName(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000002;
+  bitField0_ |= 0x00000008;
         name_ = value;
         onChanged();
         return this;
@@ -873,10 +1938,10 @@ public final class PlayerMsg {
        * 名称
        * </pre>
        *
-       * <code>optional string name = 2;</code>
+       * <code>optional string name = 4;</code>
        */
       public Builder clearName() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000008);
         name_ = getDefaultInstance().getName();
         onChanged();
         return this;
@@ -886,36 +1951,132 @@ public final class PlayerMsg {
        * 名称
        * </pre>
        *
-       * <code>optional string name = 2;</code>
+       * <code>optional string name = 4;</code>
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000002;
+  bitField0_ |= 0x00000008;
         name_ = value;
         onChanged();
         return this;
       }
 
-      private int peanut_ = -1;
+      private int sex_ ;
+      /**
+       * <pre>
+       * 性别
+       * </pre>
+       *
+       * <code>optional int32 sex = 5;</code>
+       */
+      public boolean hasSex() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <pre>
+       * 性别
+       * </pre>
+       *
+       * <code>optional int32 sex = 5;</code>
+       */
+      public int getSex() {
+        return sex_;
+      }
+      /**
+       * <pre>
+       * 性别
+       * </pre>
+       *
+       * <code>optional int32 sex = 5;</code>
+       */
+      public Builder setSex(int value) {
+        bitField0_ |= 0x00000010;
+        sex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 性别
+       * </pre>
+       *
+       * <code>optional int32 sex = 5;</code>
+       */
+      public Builder clearSex() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        sex_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int title_ ;
+      /**
+       * <pre>
+       * 头衔
+       * </pre>
+       *
+       * <code>optional int32 title = 6;</code>
+       */
+      public boolean hasTitle() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      /**
+       * <pre>
+       * 头衔
+       * </pre>
+       *
+       * <code>optional int32 title = 6;</code>
+       */
+      public int getTitle() {
+        return title_;
+      }
+      /**
+       * <pre>
+       * 头衔
+       * </pre>
+       *
+       * <code>optional int32 title = 6;</code>
+       */
+      public Builder setTitle(int value) {
+        bitField0_ |= 0x00000020;
+        title_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 头衔
+       * </pre>
+       *
+       * <code>optional int32 title = 6;</code>
+       */
+      public Builder clearTitle() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        title_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int peanut_ ;
       /**
        * <pre>
        * 花生
        * </pre>
        *
-       * <code>optional int32 peanut = 3 [default = -1];</code>
+       * <code>optional int32 peanut = 7;</code>
        */
       public boolean hasPeanut() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
+        return ((bitField0_ & 0x00000040) == 0x00000040);
       }
       /**
        * <pre>
        * 花生
        * </pre>
        *
-       * <code>optional int32 peanut = 3 [default = -1];</code>
+       * <code>optional int32 peanut = 7;</code>
        */
       public int getPeanut() {
         return peanut_;
@@ -925,10 +2086,10 @@ public final class PlayerMsg {
        * 花生
        * </pre>
        *
-       * <code>optional int32 peanut = 3 [default = -1];</code>
+       * <code>optional int32 peanut = 7;</code>
        */
       public Builder setPeanut(int value) {
-        bitField0_ |= 0x00000004;
+        bitField0_ |= 0x00000040;
         peanut_ = value;
         onChanged();
         return this;
@@ -938,107 +2099,443 @@ public final class PlayerMsg {
        * 花生
        * </pre>
        *
-       * <code>optional int32 peanut = 3 [default = -1];</code>
+       * <code>optional int32 peanut = 7;</code>
        */
       public Builder clearPeanut() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        peanut_ = -1;
+        bitField0_ = (bitField0_ & ~0x00000040);
+        peanut_ = 0;
         onChanged();
         return this;
       }
 
-      private int rankingScore_ = -1;
+      private int diamond_ ;
       /**
        * <pre>
-       * 段位分
+       * 钻石
        * </pre>
        *
-       * <code>optional int32 rankingScore = 4 [default = -1];</code>
+       * <code>optional int32 diamond = 8;</code>
        */
-      public boolean hasRankingScore() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
+      public boolean hasDiamond() {
+        return ((bitField0_ & 0x00000080) == 0x00000080);
       }
       /**
        * <pre>
-       * 段位分
+       * 钻石
        * </pre>
        *
-       * <code>optional int32 rankingScore = 4 [default = -1];</code>
+       * <code>optional int32 diamond = 8;</code>
        */
-      public int getRankingScore() {
-        return rankingScore_;
+      public int getDiamond() {
+        return diamond_;
       }
       /**
        * <pre>
-       * 段位分
+       * 钻石
        * </pre>
        *
-       * <code>optional int32 rankingScore = 4 [default = -1];</code>
+       * <code>optional int32 diamond = 8;</code>
        */
-      public Builder setRankingScore(int value) {
-        bitField0_ |= 0x00000008;
-        rankingScore_ = value;
+      public Builder setDiamond(int value) {
+        bitField0_ |= 0x00000080;
+        diamond_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * 段位分
+       * 钻石
        * </pre>
        *
-       * <code>optional int32 rankingScore = 4 [default = -1];</code>
+       * <code>optional int32 diamond = 8;</code>
        */
-      public Builder clearRankingScore() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        rankingScore_ = -1;
+      public Builder clearDiamond() {
+        bitField0_ = (bitField0_ & ~0x00000080);
+        diamond_ = 0;
         onChanged();
         return this;
       }
 
-      private int rankingStep_ = -1;
+      private int winRate_ ;
       /**
        * <pre>
-       * 段位
+       * 胜率
        * </pre>
        *
-       * <code>optional int32 rankingStep = 5 [default = -1];</code>
+       * <code>optional int32 winRate = 9;</code>
        */
-      public boolean hasRankingStep() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
+      public boolean hasWinRate() {
+        return ((bitField0_ & 0x00000100) == 0x00000100);
       }
       /**
        * <pre>
-       * 段位
+       * 胜率
        * </pre>
        *
-       * <code>optional int32 rankingStep = 5 [default = -1];</code>
+       * <code>optional int32 winRate = 9;</code>
        */
-      public int getRankingStep() {
-        return rankingStep_;
+      public int getWinRate() {
+        return winRate_;
       }
       /**
        * <pre>
-       * 段位
+       * 胜率
        * </pre>
        *
-       * <code>optional int32 rankingStep = 5 [default = -1];</code>
+       * <code>optional int32 winRate = 9;</code>
        */
-      public Builder setRankingStep(int value) {
-        bitField0_ |= 0x00000010;
-        rankingStep_ = value;
+      public Builder setWinRate(int value) {
+        bitField0_ |= 0x00000100;
+        winRate_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * 段位
+       * 胜率
        * </pre>
        *
-       * <code>optional int32 rankingStep = 5 [default = -1];</code>
+       * <code>optional int32 winRate = 9;</code>
        */
-      public Builder clearRankingStep() {
-        bitField0_ = (bitField0_ & ~0x00000010);
-        rankingStep_ = -1;
+      public Builder clearWinRate() {
+        bitField0_ = (bitField0_ & ~0x00000100);
+        winRate_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int winStreak_ ;
+      /**
+       * <pre>
+       * 最高连胜
+       * </pre>
+       *
+       * <code>optional int32 winStreak = 10;</code>
+       */
+      public boolean hasWinStreak() {
+        return ((bitField0_ & 0x00000200) == 0x00000200);
+      }
+      /**
+       * <pre>
+       * 最高连胜
+       * </pre>
+       *
+       * <code>optional int32 winStreak = 10;</code>
+       */
+      public int getWinStreak() {
+        return winStreak_;
+      }
+      /**
+       * <pre>
+       * 最高连胜
+       * </pre>
+       *
+       * <code>optional int32 winStreak = 10;</code>
+       */
+      public Builder setWinStreak(int value) {
+        bitField0_ |= 0x00000200;
+        winStreak_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 最高连胜
+       * </pre>
+       *
+       * <code>optional int32 winStreak = 10;</code>
+       */
+      public Builder clearWinStreak() {
+        bitField0_ = (bitField0_ & ~0x00000200);
+        winStreak_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int totalGames_ ;
+      /**
+       * <pre>
+       * 总对局
+       * </pre>
+       *
+       * <code>optional int32 totalGames = 11;</code>
+       */
+      public boolean hasTotalGames() {
+        return ((bitField0_ & 0x00000400) == 0x00000400);
+      }
+      /**
+       * <pre>
+       * 总对局
+       * </pre>
+       *
+       * <code>optional int32 totalGames = 11;</code>
+       */
+      public int getTotalGames() {
+        return totalGames_;
+      }
+      /**
+       * <pre>
+       * 总对局
+       * </pre>
+       *
+       * <code>optional int32 totalGames = 11;</code>
+       */
+      public Builder setTotalGames(int value) {
+        bitField0_ |= 0x00000400;
+        totalGames_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 总对局
+       * </pre>
+       *
+       * <code>optional int32 totalGames = 11;</code>
+       */
+      public Builder clearTotalGames() {
+        bitField0_ = (bitField0_ & ~0x00000400);
+        totalGames_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int highMultiple_ ;
+      /**
+       * <pre>
+       * 最高倍数
+       * </pre>
+       *
+       * <code>optional int32 highMultiple = 12;</code>
+       */
+      public boolean hasHighMultiple() {
+        return ((bitField0_ & 0x00000800) == 0x00000800);
+      }
+      /**
+       * <pre>
+       * 最高倍数
+       * </pre>
+       *
+       * <code>optional int32 highMultiple = 12;</code>
+       */
+      public int getHighMultiple() {
+        return highMultiple_;
+      }
+      /**
+       * <pre>
+       * 最高倍数
+       * </pre>
+       *
+       * <code>optional int32 highMultiple = 12;</code>
+       */
+      public Builder setHighMultiple(int value) {
+        bitField0_ |= 0x00000800;
+        highMultiple_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 最高倍数
+       * </pre>
+       *
+       * <code>optional int32 highMultiple = 12;</code>
+       */
+      public Builder clearHighMultiple() {
+        bitField0_ = (bitField0_ & ~0x00000800);
+        highMultiple_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int totalPeanut_ ;
+      /**
+       * <pre>
+       * 累计赢花生
+       * </pre>
+       *
+       * <code>optional int32 totalPeanut = 13;</code>
+       */
+      public boolean hasTotalPeanut() {
+        return ((bitField0_ & 0x00001000) == 0x00001000);
+      }
+      /**
+       * <pre>
+       * 累计赢花生
+       * </pre>
+       *
+       * <code>optional int32 totalPeanut = 13;</code>
+       */
+      public int getTotalPeanut() {
+        return totalPeanut_;
+      }
+      /**
+       * <pre>
+       * 累计赢花生
+       * </pre>
+       *
+       * <code>optional int32 totalPeanut = 13;</code>
+       */
+      public Builder setTotalPeanut(int value) {
+        bitField0_ |= 0x00001000;
+        totalPeanut_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 累计赢花生
+       * </pre>
+       *
+       * <code>optional int32 totalPeanut = 13;</code>
+       */
+      public Builder clearTotalPeanut() {
+        bitField0_ = (bitField0_ & ~0x00001000);
+        totalPeanut_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int doubleCount_ ;
+      /**
+       * <pre>
+       * 加倍次数
+       * </pre>
+       *
+       * <code>optional int32 doubleCount = 14;</code>
+       */
+      public boolean hasDoubleCount() {
+        return ((bitField0_ & 0x00002000) == 0x00002000);
+      }
+      /**
+       * <pre>
+       * 加倍次数
+       * </pre>
+       *
+       * <code>optional int32 doubleCount = 14;</code>
+       */
+      public int getDoubleCount() {
+        return doubleCount_;
+      }
+      /**
+       * <pre>
+       * 加倍次数
+       * </pre>
+       *
+       * <code>optional int32 doubleCount = 14;</code>
+       */
+      public Builder setDoubleCount(int value) {
+        bitField0_ |= 0x00002000;
+        doubleCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 加倍次数
+       * </pre>
+       *
+       * <code>optional int32 doubleCount = 14;</code>
+       */
+      public Builder clearDoubleCount() {
+        bitField0_ = (bitField0_ & ~0x00002000);
+        doubleCount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int playCount_ ;
+      /**
+       * <pre>
+       * 出牌次数
+       * </pre>
+       *
+       * <code>optional int32 playCount = 15;</code>
+       */
+      public boolean hasPlayCount() {
+        return ((bitField0_ & 0x00004000) == 0x00004000);
+      }
+      /**
+       * <pre>
+       * 出牌次数
+       * </pre>
+       *
+       * <code>optional int32 playCount = 15;</code>
+       */
+      public int getPlayCount() {
+        return playCount_;
+      }
+      /**
+       * <pre>
+       * 出牌次数
+       * </pre>
+       *
+       * <code>optional int32 playCount = 15;</code>
+       */
+      public Builder setPlayCount(int value) {
+        bitField0_ |= 0x00004000;
+        playCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 出牌次数
+       * </pre>
+       *
+       * <code>optional int32 playCount = 15;</code>
+       */
+      public Builder clearPlayCount() {
+        bitField0_ = (bitField0_ & ~0x00004000);
+        playCount_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int suppressCount_ ;
+      /**
+       * <pre>
+       * 压制次数
+       * </pre>
+       *
+       * <code>optional int32 suppressCount = 16;</code>
+       */
+      public boolean hasSuppressCount() {
+        return ((bitField0_ & 0x00008000) == 0x00008000);
+      }
+      /**
+       * <pre>
+       * 压制次数
+       * </pre>
+       *
+       * <code>optional int32 suppressCount = 16;</code>
+       */
+      public int getSuppressCount() {
+        return suppressCount_;
+      }
+      /**
+       * <pre>
+       * 压制次数
+       * </pre>
+       *
+       * <code>optional int32 suppressCount = 16;</code>
+       */
+      public Builder setSuppressCount(int value) {
+        bitField0_ |= 0x00008000;
+        suppressCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 压制次数
+       * </pre>
+       *
+       * <code>optional int32 suppressCount = 16;</code>
+       */
+      public Builder clearSuppressCount() {
+        bitField0_ = (bitField0_ & ~0x00008000);
+        suppressCount_ = 0;
         onChanged();
         return this;
       }
@@ -1091,8 +2588,389 @@ public final class PlayerMsg {
 
   }
 
-  public interface NUpdatePlayerOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:NUpdatePlayer)
+  public interface GetPlayerOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:GetPlayer)
+      com.google.protobuf.MessageOrBuilder {
+  }
+  /**
+   * <pre>
+   * 获取玩家数据
+   * </pre>
+   *
+   * Protobuf type {@code GetPlayer}
+   */
+  public  static final class GetPlayer extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:GetPlayer)
+      GetPlayerOrBuilder {
+    // Use GetPlayer.newBuilder() to construct.
+    private GetPlayer(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GetPlayer() {
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GetPlayer(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.su.msg.PlayerMsg.internal_static_GetPlayer_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.su.msg.PlayerMsg.internal_static_GetPlayer_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.su.msg.PlayerMsg.GetPlayer.class, com.su.msg.PlayerMsg.GetPlayer.Builder.class);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.su.msg.PlayerMsg.GetPlayer)) {
+        return super.equals(obj);
+      }
+      com.su.msg.PlayerMsg.GetPlayer other = (com.su.msg.PlayerMsg.GetPlayer) obj;
+
+      boolean result = true;
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.su.msg.PlayerMsg.GetPlayer parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.su.msg.PlayerMsg.GetPlayer parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.su.msg.PlayerMsg.GetPlayer parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.su.msg.PlayerMsg.GetPlayer parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.su.msg.PlayerMsg.GetPlayer parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.su.msg.PlayerMsg.GetPlayer parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.su.msg.PlayerMsg.GetPlayer parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.su.msg.PlayerMsg.GetPlayer parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.su.msg.PlayerMsg.GetPlayer parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.su.msg.PlayerMsg.GetPlayer parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.su.msg.PlayerMsg.GetPlayer prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     * 获取玩家数据
+     * </pre>
+     *
+     * Protobuf type {@code GetPlayer}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:GetPlayer)
+        com.su.msg.PlayerMsg.GetPlayerOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.su.msg.PlayerMsg.internal_static_GetPlayer_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.su.msg.PlayerMsg.internal_static_GetPlayer_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.su.msg.PlayerMsg.GetPlayer.class, com.su.msg.PlayerMsg.GetPlayer.Builder.class);
+      }
+
+      // Construct using com.su.msg.PlayerMsg.GetPlayer.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.su.msg.PlayerMsg.internal_static_GetPlayer_descriptor;
+      }
+
+      public com.su.msg.PlayerMsg.GetPlayer getDefaultInstanceForType() {
+        return com.su.msg.PlayerMsg.GetPlayer.getDefaultInstance();
+      }
+
+      public com.su.msg.PlayerMsg.GetPlayer build() {
+        com.su.msg.PlayerMsg.GetPlayer result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.su.msg.PlayerMsg.GetPlayer buildPartial() {
+        com.su.msg.PlayerMsg.GetPlayer result = new com.su.msg.PlayerMsg.GetPlayer(this);
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.su.msg.PlayerMsg.GetPlayer) {
+          return mergeFrom((com.su.msg.PlayerMsg.GetPlayer)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.su.msg.PlayerMsg.GetPlayer other) {
+        if (other == com.su.msg.PlayerMsg.GetPlayer.getDefaultInstance()) return this;
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.su.msg.PlayerMsg.GetPlayer parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.su.msg.PlayerMsg.GetPlayer) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:GetPlayer)
+    }
+
+    // @@protoc_insertion_point(class_scope:GetPlayer)
+    private static final com.su.msg.PlayerMsg.GetPlayer DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.su.msg.PlayerMsg.GetPlayer();
+    }
+
+    public static com.su.msg.PlayerMsg.GetPlayer getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<GetPlayer>
+        PARSER = new com.google.protobuf.AbstractParser<GetPlayer>() {
+      public GetPlayer parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new GetPlayer(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<GetPlayer> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetPlayer> getParserForType() {
+      return PARSER;
+    }
+
+    public com.su.msg.PlayerMsg.GetPlayer getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface GetPlayerToOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:GetPlayerTo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -1109,21 +2987,17 @@ public final class PlayerMsg {
     com.su.msg.PlayerMsg.PlayerMoOrBuilder getPlayerOrBuilder();
   }
   /**
-   * <pre>
-   * 玩家数据更新通知
-   * </pre>
-   *
-   * Protobuf type {@code NUpdatePlayer}
+   * Protobuf type {@code GetPlayerTo}
    */
-  public  static final class NUpdatePlayer extends
+  public  static final class GetPlayerTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:NUpdatePlayer)
-      NUpdatePlayerOrBuilder {
-    // Use NUpdatePlayer.newBuilder() to construct.
-    private NUpdatePlayer(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:GetPlayerTo)
+      GetPlayerToOrBuilder {
+    // Use GetPlayerTo.newBuilder() to construct.
+    private GetPlayerTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private NUpdatePlayer() {
+    private GetPlayerTo() {
     }
 
     @java.lang.Override
@@ -1131,7 +3005,7 @@ public final class PlayerMsg {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private NUpdatePlayer(
+    private GetPlayerTo(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1181,14 +3055,14 @@ public final class PlayerMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.PlayerMsg.internal_static_NUpdatePlayer_descriptor;
+      return com.su.msg.PlayerMsg.internal_static_GetPlayerTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.PlayerMsg.internal_static_NUpdatePlayer_fieldAccessorTable
+      return com.su.msg.PlayerMsg.internal_static_GetPlayerTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.su.msg.PlayerMsg.NUpdatePlayer.class, com.su.msg.PlayerMsg.NUpdatePlayer.Builder.class);
+              com.su.msg.PlayerMsg.GetPlayerTo.class, com.su.msg.PlayerMsg.GetPlayerTo.Builder.class);
     }
 
     private int bitField0_;
@@ -1251,10 +3125,10 @@ public final class PlayerMsg {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.su.msg.PlayerMsg.NUpdatePlayer)) {
+      if (!(obj instanceof com.su.msg.PlayerMsg.GetPlayerTo)) {
         return super.equals(obj);
       }
-      com.su.msg.PlayerMsg.NUpdatePlayer other = (com.su.msg.PlayerMsg.NUpdatePlayer) obj;
+      com.su.msg.PlayerMsg.GetPlayerTo other = (com.su.msg.PlayerMsg.GetPlayerTo) obj;
 
       boolean result = true;
       result = result && (hasPlayer() == other.hasPlayer());
@@ -1282,58 +3156,58 @@ public final class PlayerMsg {
       return hash;
     }
 
-    public static com.su.msg.PlayerMsg.NUpdatePlayer parseFrom(
+    public static com.su.msg.PlayerMsg.GetPlayerTo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.PlayerMsg.NUpdatePlayer parseFrom(
+    public static com.su.msg.PlayerMsg.GetPlayerTo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.PlayerMsg.NUpdatePlayer parseFrom(byte[] data)
+    public static com.su.msg.PlayerMsg.GetPlayerTo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.PlayerMsg.NUpdatePlayer parseFrom(
+    public static com.su.msg.PlayerMsg.GetPlayerTo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.PlayerMsg.NUpdatePlayer parseFrom(java.io.InputStream input)
+    public static com.su.msg.PlayerMsg.GetPlayerTo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.PlayerMsg.NUpdatePlayer parseFrom(
+    public static com.su.msg.PlayerMsg.GetPlayerTo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.PlayerMsg.NUpdatePlayer parseDelimitedFrom(java.io.InputStream input)
+    public static com.su.msg.PlayerMsg.GetPlayerTo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.su.msg.PlayerMsg.NUpdatePlayer parseDelimitedFrom(
+    public static com.su.msg.PlayerMsg.GetPlayerTo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.PlayerMsg.NUpdatePlayer parseFrom(
+    public static com.su.msg.PlayerMsg.GetPlayerTo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.PlayerMsg.NUpdatePlayer parseFrom(
+    public static com.su.msg.PlayerMsg.GetPlayerTo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1345,7 +3219,7 @@ public final class PlayerMsg {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.su.msg.PlayerMsg.NUpdatePlayer prototype) {
+    public static Builder newBuilder(com.su.msg.PlayerMsg.GetPlayerTo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -1360,29 +3234,25 @@ public final class PlayerMsg {
       return builder;
     }
     /**
-     * <pre>
-     * 玩家数据更新通知
-     * </pre>
-     *
-     * Protobuf type {@code NUpdatePlayer}
+     * Protobuf type {@code GetPlayerTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:NUpdatePlayer)
-        com.su.msg.PlayerMsg.NUpdatePlayerOrBuilder {
+        // @@protoc_insertion_point(builder_implements:GetPlayerTo)
+        com.su.msg.PlayerMsg.GetPlayerToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.PlayerMsg.internal_static_NUpdatePlayer_descriptor;
+        return com.su.msg.PlayerMsg.internal_static_GetPlayerTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.PlayerMsg.internal_static_NUpdatePlayer_fieldAccessorTable
+        return com.su.msg.PlayerMsg.internal_static_GetPlayerTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.su.msg.PlayerMsg.NUpdatePlayer.class, com.su.msg.PlayerMsg.NUpdatePlayer.Builder.class);
+                com.su.msg.PlayerMsg.GetPlayerTo.class, com.su.msg.PlayerMsg.GetPlayerTo.Builder.class);
       }
 
-      // Construct using com.su.msg.PlayerMsg.NUpdatePlayer.newBuilder()
+      // Construct using com.su.msg.PlayerMsg.GetPlayerTo.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1411,23 +3281,23 @@ public final class PlayerMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.PlayerMsg.internal_static_NUpdatePlayer_descriptor;
+        return com.su.msg.PlayerMsg.internal_static_GetPlayerTo_descriptor;
       }
 
-      public com.su.msg.PlayerMsg.NUpdatePlayer getDefaultInstanceForType() {
-        return com.su.msg.PlayerMsg.NUpdatePlayer.getDefaultInstance();
+      public com.su.msg.PlayerMsg.GetPlayerTo getDefaultInstanceForType() {
+        return com.su.msg.PlayerMsg.GetPlayerTo.getDefaultInstance();
       }
 
-      public com.su.msg.PlayerMsg.NUpdatePlayer build() {
-        com.su.msg.PlayerMsg.NUpdatePlayer result = buildPartial();
+      public com.su.msg.PlayerMsg.GetPlayerTo build() {
+        com.su.msg.PlayerMsg.GetPlayerTo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.su.msg.PlayerMsg.NUpdatePlayer buildPartial() {
-        com.su.msg.PlayerMsg.NUpdatePlayer result = new com.su.msg.PlayerMsg.NUpdatePlayer(this);
+      public com.su.msg.PlayerMsg.GetPlayerTo buildPartial() {
+        com.su.msg.PlayerMsg.GetPlayerTo result = new com.su.msg.PlayerMsg.GetPlayerTo(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1470,16 +3340,16 @@ public final class PlayerMsg {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.su.msg.PlayerMsg.NUpdatePlayer) {
-          return mergeFrom((com.su.msg.PlayerMsg.NUpdatePlayer)other);
+        if (other instanceof com.su.msg.PlayerMsg.GetPlayerTo) {
+          return mergeFrom((com.su.msg.PlayerMsg.GetPlayerTo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.su.msg.PlayerMsg.NUpdatePlayer other) {
-        if (other == com.su.msg.PlayerMsg.NUpdatePlayer.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.su.msg.PlayerMsg.GetPlayerTo other) {
+        if (other == com.su.msg.PlayerMsg.GetPlayerTo.getDefaultInstance()) return this;
         if (other.hasPlayer()) {
           mergePlayer(other.getPlayer());
         }
@@ -1496,11 +3366,11 @@ public final class PlayerMsg {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.su.msg.PlayerMsg.NUpdatePlayer parsedMessage = null;
+        com.su.msg.PlayerMsg.GetPlayerTo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.su.msg.PlayerMsg.NUpdatePlayer) e.getUnfinishedMessage();
+          parsedMessage = (com.su.msg.PlayerMsg.GetPlayerTo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1639,39 +3509,625 @@ public final class PlayerMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:NUpdatePlayer)
+      // @@protoc_insertion_point(builder_scope:GetPlayerTo)
     }
 
-    // @@protoc_insertion_point(class_scope:NUpdatePlayer)
-    private static final com.su.msg.PlayerMsg.NUpdatePlayer DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:GetPlayerTo)
+    private static final com.su.msg.PlayerMsg.GetPlayerTo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.su.msg.PlayerMsg.NUpdatePlayer();
+      DEFAULT_INSTANCE = new com.su.msg.PlayerMsg.GetPlayerTo();
     }
 
-    public static com.su.msg.PlayerMsg.NUpdatePlayer getDefaultInstance() {
+    public static com.su.msg.PlayerMsg.GetPlayerTo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<NUpdatePlayer>
-        PARSER = new com.google.protobuf.AbstractParser<NUpdatePlayer>() {
-      public NUpdatePlayer parsePartialFrom(
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<GetPlayerTo>
+        PARSER = new com.google.protobuf.AbstractParser<GetPlayerTo>() {
+      public GetPlayerTo parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new NUpdatePlayer(input, extensionRegistry);
+          return new GetPlayerTo(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<NUpdatePlayer> parser() {
+    public static com.google.protobuf.Parser<GetPlayerTo> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<NUpdatePlayer> getParserForType() {
+    public com.google.protobuf.Parser<GetPlayerTo> getParserForType() {
       return PARSER;
     }
 
-    public com.su.msg.PlayerMsg.NUpdatePlayer getDefaultInstanceForType() {
+    public com.su.msg.PlayerMsg.GetPlayerTo getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface UpdatePlayerNoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:UpdatePlayerNo)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional .PlayerMo player = 1;</code>
+     */
+    boolean hasPlayer();
+    /**
+     * <code>optional .PlayerMo player = 1;</code>
+     */
+    com.su.msg.PlayerMsg.PlayerMo getPlayer();
+    /**
+     * <code>optional .PlayerMo player = 1;</code>
+     */
+    com.su.msg.PlayerMsg.PlayerMoOrBuilder getPlayerOrBuilder();
+  }
+  /**
+   * <pre>
+   * 玩家数据更新通知
+   * </pre>
+   *
+   * Protobuf type {@code UpdatePlayerNo}
+   */
+  public  static final class UpdatePlayerNo extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:UpdatePlayerNo)
+      UpdatePlayerNoOrBuilder {
+    // Use UpdatePlayerNo.newBuilder() to construct.
+    private UpdatePlayerNo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private UpdatePlayerNo() {
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private UpdatePlayerNo(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              com.su.msg.PlayerMsg.PlayerMo.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = player_.toBuilder();
+              }
+              player_ = input.readMessage(com.su.msg.PlayerMsg.PlayerMo.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(player_);
+                player_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.su.msg.PlayerMsg.internal_static_UpdatePlayerNo_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.su.msg.PlayerMsg.internal_static_UpdatePlayerNo_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.su.msg.PlayerMsg.UpdatePlayerNo.class, com.su.msg.PlayerMsg.UpdatePlayerNo.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int PLAYER_FIELD_NUMBER = 1;
+    private com.su.msg.PlayerMsg.PlayerMo player_;
+    /**
+     * <code>optional .PlayerMo player = 1;</code>
+     */
+    public boolean hasPlayer() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional .PlayerMo player = 1;</code>
+     */
+    public com.su.msg.PlayerMsg.PlayerMo getPlayer() {
+      return player_ == null ? com.su.msg.PlayerMsg.PlayerMo.getDefaultInstance() : player_;
+    }
+    /**
+     * <code>optional .PlayerMo player = 1;</code>
+     */
+    public com.su.msg.PlayerMsg.PlayerMoOrBuilder getPlayerOrBuilder() {
+      return player_ == null ? com.su.msg.PlayerMsg.PlayerMo.getDefaultInstance() : player_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, getPlayer());
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getPlayer());
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.su.msg.PlayerMsg.UpdatePlayerNo)) {
+        return super.equals(obj);
+      }
+      com.su.msg.PlayerMsg.UpdatePlayerNo other = (com.su.msg.PlayerMsg.UpdatePlayerNo) obj;
+
+      boolean result = true;
+      result = result && (hasPlayer() == other.hasPlayer());
+      if (hasPlayer()) {
+        result = result && getPlayer()
+            .equals(other.getPlayer());
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasPlayer()) {
+        hash = (37 * hash) + PLAYER_FIELD_NUMBER;
+        hash = (53 * hash) + getPlayer().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.su.msg.PlayerMsg.UpdatePlayerNo parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.su.msg.PlayerMsg.UpdatePlayerNo parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.su.msg.PlayerMsg.UpdatePlayerNo parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.su.msg.PlayerMsg.UpdatePlayerNo parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.su.msg.PlayerMsg.UpdatePlayerNo parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.su.msg.PlayerMsg.UpdatePlayerNo parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.su.msg.PlayerMsg.UpdatePlayerNo parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.su.msg.PlayerMsg.UpdatePlayerNo parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.su.msg.PlayerMsg.UpdatePlayerNo parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.su.msg.PlayerMsg.UpdatePlayerNo parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.su.msg.PlayerMsg.UpdatePlayerNo prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     * 玩家数据更新通知
+     * </pre>
+     *
+     * Protobuf type {@code UpdatePlayerNo}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:UpdatePlayerNo)
+        com.su.msg.PlayerMsg.UpdatePlayerNoOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.su.msg.PlayerMsg.internal_static_UpdatePlayerNo_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.su.msg.PlayerMsg.internal_static_UpdatePlayerNo_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.su.msg.PlayerMsg.UpdatePlayerNo.class, com.su.msg.PlayerMsg.UpdatePlayerNo.Builder.class);
+      }
+
+      // Construct using com.su.msg.PlayerMsg.UpdatePlayerNo.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+          getPlayerFieldBuilder();
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        if (playerBuilder_ == null) {
+          player_ = null;
+        } else {
+          playerBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.su.msg.PlayerMsg.internal_static_UpdatePlayerNo_descriptor;
+      }
+
+      public com.su.msg.PlayerMsg.UpdatePlayerNo getDefaultInstanceForType() {
+        return com.su.msg.PlayerMsg.UpdatePlayerNo.getDefaultInstance();
+      }
+
+      public com.su.msg.PlayerMsg.UpdatePlayerNo build() {
+        com.su.msg.PlayerMsg.UpdatePlayerNo result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.su.msg.PlayerMsg.UpdatePlayerNo buildPartial() {
+        com.su.msg.PlayerMsg.UpdatePlayerNo result = new com.su.msg.PlayerMsg.UpdatePlayerNo(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (playerBuilder_ == null) {
+          result.player_ = player_;
+        } else {
+          result.player_ = playerBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.su.msg.PlayerMsg.UpdatePlayerNo) {
+          return mergeFrom((com.su.msg.PlayerMsg.UpdatePlayerNo)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.su.msg.PlayerMsg.UpdatePlayerNo other) {
+        if (other == com.su.msg.PlayerMsg.UpdatePlayerNo.getDefaultInstance()) return this;
+        if (other.hasPlayer()) {
+          mergePlayer(other.getPlayer());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.su.msg.PlayerMsg.UpdatePlayerNo parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.su.msg.PlayerMsg.UpdatePlayerNo) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private com.su.msg.PlayerMsg.PlayerMo player_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.su.msg.PlayerMsg.PlayerMo, com.su.msg.PlayerMsg.PlayerMo.Builder, com.su.msg.PlayerMsg.PlayerMoOrBuilder> playerBuilder_;
+      /**
+       * <code>optional .PlayerMo player = 1;</code>
+       */
+      public boolean hasPlayer() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional .PlayerMo player = 1;</code>
+       */
+      public com.su.msg.PlayerMsg.PlayerMo getPlayer() {
+        if (playerBuilder_ == null) {
+          return player_ == null ? com.su.msg.PlayerMsg.PlayerMo.getDefaultInstance() : player_;
+        } else {
+          return playerBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .PlayerMo player = 1;</code>
+       */
+      public Builder setPlayer(com.su.msg.PlayerMsg.PlayerMo value) {
+        if (playerBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          player_ = value;
+          onChanged();
+        } else {
+          playerBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .PlayerMo player = 1;</code>
+       */
+      public Builder setPlayer(
+          com.su.msg.PlayerMsg.PlayerMo.Builder builderForValue) {
+        if (playerBuilder_ == null) {
+          player_ = builderForValue.build();
+          onChanged();
+        } else {
+          playerBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .PlayerMo player = 1;</code>
+       */
+      public Builder mergePlayer(com.su.msg.PlayerMsg.PlayerMo value) {
+        if (playerBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              player_ != null &&
+              player_ != com.su.msg.PlayerMsg.PlayerMo.getDefaultInstance()) {
+            player_ =
+              com.su.msg.PlayerMsg.PlayerMo.newBuilder(player_).mergeFrom(value).buildPartial();
+          } else {
+            player_ = value;
+          }
+          onChanged();
+        } else {
+          playerBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .PlayerMo player = 1;</code>
+       */
+      public Builder clearPlayer() {
+        if (playerBuilder_ == null) {
+          player_ = null;
+          onChanged();
+        } else {
+          playerBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      /**
+       * <code>optional .PlayerMo player = 1;</code>
+       */
+      public com.su.msg.PlayerMsg.PlayerMo.Builder getPlayerBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getPlayerFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .PlayerMo player = 1;</code>
+       */
+      public com.su.msg.PlayerMsg.PlayerMoOrBuilder getPlayerOrBuilder() {
+        if (playerBuilder_ != null) {
+          return playerBuilder_.getMessageOrBuilder();
+        } else {
+          return player_ == null ?
+              com.su.msg.PlayerMsg.PlayerMo.getDefaultInstance() : player_;
+        }
+      }
+      /**
+       * <code>optional .PlayerMo player = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.su.msg.PlayerMsg.PlayerMo, com.su.msg.PlayerMsg.PlayerMo.Builder, com.su.msg.PlayerMsg.PlayerMoOrBuilder> 
+          getPlayerFieldBuilder() {
+        if (playerBuilder_ == null) {
+          playerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.su.msg.PlayerMsg.PlayerMo, com.su.msg.PlayerMsg.PlayerMo.Builder, com.su.msg.PlayerMsg.PlayerMoOrBuilder>(
+                  getPlayer(),
+                  getParentForChildren(),
+                  isClean());
+          player_ = null;
+        }
+        return playerBuilder_;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:UpdatePlayerNo)
+    }
+
+    // @@protoc_insertion_point(class_scope:UpdatePlayerNo)
+    private static final com.su.msg.PlayerMsg.UpdatePlayerNo DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.su.msg.PlayerMsg.UpdatePlayerNo();
+    }
+
+    public static com.su.msg.PlayerMsg.UpdatePlayerNo getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<UpdatePlayerNo>
+        PARSER = new com.google.protobuf.AbstractParser<UpdatePlayerNo>() {
+      public UpdatePlayerNo parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new UpdatePlayerNo(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<UpdatePlayerNo> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<UpdatePlayerNo> getParserForType() {
+      return PARSER;
+    }
+
+    public com.su.msg.PlayerMsg.UpdatePlayerNo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1683,10 +4139,20 @@ public final class PlayerMsg {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_PlayerMo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_NUpdatePlayer_descriptor;
+    internal_static_GetPlayer_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_NUpdatePlayer_fieldAccessorTable;
+      internal_static_GetPlayer_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_GetPlayerTo_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_GetPlayerTo_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_UpdatePlayerNo_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_UpdatePlayerNo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1696,12 +4162,18 @@ public final class PlayerMsg {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017PlayerMsg.proto\"k\n\010PlayerMo\022\n\n\002id\030\001 \001(" +
-      "\003\022\014\n\004name\030\002 \001(\t\022\022\n\006peanut\030\003 \001(\005:\002-1\022\030\n\014r" +
-      "ankingScore\030\004 \001(\005:\002-1\022\027\n\013rankingStep\030\005 \001" +
-      "(\005:\002-1\"*\n\rNUpdatePlayer\022\031\n\006player\030\001 \001(\0132" +
-      "\t.PlayerMoB%\n\ncom.su.msgH\001\252\002\024Assets.Scri" +
-      "pts.Proto"
+      "\n\017PlayerMsg.proto\"\245\002\n\010PlayerMo\022\n\n\002id\030\001 \001" +
+      "(\003\022\017\n\007account\030\002 \001(\t\022\017\n\007picture\030\003 \001(\t\022\014\n\004" +
+      "name\030\004 \001(\t\022\013\n\003sex\030\005 \001(\005\022\r\n\005title\030\006 \001(\005\022\016" +
+      "\n\006peanut\030\007 \001(\005\022\017\n\007diamond\030\010 \001(\005\022\017\n\007winRa" +
+      "te\030\t \001(\005\022\021\n\twinStreak\030\n \001(\005\022\022\n\ntotalGame" +
+      "s\030\013 \001(\005\022\024\n\014highMultiple\030\014 \001(\005\022\023\n\013totalPe" +
+      "anut\030\r \001(\005\022\023\n\013doubleCount\030\016 \001(\005\022\021\n\tplayC" +
+      "ount\030\017 \001(\005\022\025\n\rsuppressCount\030\020 \001(\005\"\013\n\tGet" +
+      "Player\"(\n\013GetPlayerTo\022\031\n\006player\030\001 \001(\0132\t." +
+      "PlayerMo\"+\n\016UpdatePlayerNo\022\031\n\006player\030\001 \001",
+      "(\0132\t.PlayerMoB%\n\ncom.su.msgH\001\252\002\024Assets.S" +
+      "cripts.Proto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1720,12 +4192,24 @@ public final class PlayerMsg {
     internal_static_PlayerMo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerMo_descriptor,
-        new java.lang.String[] { "Id", "Name", "Peanut", "RankingScore", "RankingStep", });
-    internal_static_NUpdatePlayer_descriptor =
+        new java.lang.String[] { "Id", "Account", "Picture", "Name", "Sex", "Title", "Peanut", "Diamond", "WinRate", "WinStreak", "TotalGames", "HighMultiple", "TotalPeanut", "DoubleCount", "PlayCount", "SuppressCount", });
+    internal_static_GetPlayer_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_NUpdatePlayer_fieldAccessorTable = new
+    internal_static_GetPlayer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_NUpdatePlayer_descriptor,
+        internal_static_GetPlayer_descriptor,
+        new java.lang.String[] { });
+    internal_static_GetPlayerTo_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_GetPlayerTo_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_GetPlayerTo_descriptor,
+        new java.lang.String[] { "Player", });
+    internal_static_UpdatePlayerNo_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_UpdatePlayerNo_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_UpdatePlayerNo_descriptor,
         new java.lang.String[] { "Player", });
   }
 

@@ -1,9 +1,8 @@
-package com.su.core.proto;
+package com.su.client.proto;
 /**
  * byte 数组与 int 的相互转换
  * */
 public class BitConverter {
-	
 	public static int byteArrayToInt(byte[] b) {
 		return b[0] & 0xFF | 
 				(b[1] & 0xFF) << 8 | 
