@@ -11,8 +11,9 @@ import org.springframework.stereotype.Component;
 public class TransactionAop {
 	@Autowired
 	private TransactionManager transactionManager;
-
-	@Around("execution (* com.su.server..*.*(..)) && @annotation(com.su.core.data.Transaction)")
+	
+	//@Around("execution (* com.su.server..*.*(..)) && @annotation(com.su.core.data.Transaction)")
+	@Around("execution (* com.su.server.service..*.*(..))")
 	public Object transactionProcess(ProceedingJoinPoint pj) throws Throwable {
 		Object result = null;
 		boolean isOccurExpletion = false;

@@ -1,5 +1,7 @@
 package com.su.server.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -12,6 +14,8 @@ import com.su.core.data.DataService;
 
 @Service
 public class ResourceService {
+	
+	private Logger logger = LoggerFactory.getLogger(ResourceService.class);
 
 	@Autowired
 	private BagService bagService;
@@ -34,6 +38,9 @@ public class ResourceService {
 			addPeanut(playerContext, count, reason);
 		else if (type == SysAttr.ITEM)
 			bagService.addItem(playerContext, type, sysId, count, reason);
+		else {
+			logger.error("未知类型{}", type);
+		}
 	}
 
 	/**

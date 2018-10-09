@@ -681,40 +681,23 @@ public final class CommonMsg {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int32 cmd = 1;</code>
+     * <code>repeated string parameters = 1;</code>
      */
-    boolean hasCmd();
+    java.util.List<java.lang.String>
+        getParametersList();
     /**
-     * <code>optional int32 cmd = 1;</code>
+     * <code>repeated string parameters = 1;</code>
      */
-    int getCmd();
-
+    int getParametersCount();
     /**
-     * <code>optional int32 type = 2;</code>
+     * <code>repeated string parameters = 1;</code>
      */
-    boolean hasType();
+    java.lang.String getParameters(int index);
     /**
-     * <code>optional int32 type = 2;</code>
+     * <code>repeated string parameters = 1;</code>
      */
-    int getType();
-
-    /**
-     * <code>optional int32 sysId = 3;</code>
-     */
-    boolean hasSysId();
-    /**
-     * <code>optional int32 sysId = 3;</code>
-     */
-    int getSysId();
-
-    /**
-     * <code>optional int32 count = 4;</code>
-     */
-    boolean hasCount();
-    /**
-     * <code>optional int32 count = 4;</code>
-     */
-    int getCount();
+    com.google.protobuf.ByteString
+        getParametersBytes(int index);
   }
   /**
    * <pre>
@@ -732,10 +715,7 @@ public final class CommonMsg {
       super(builder);
     }
     private CMD() {
-      cmd_ = 0;
-      type_ = 0;
-      sysId_ = 0;
-      count_ = 0;
+      parameters_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     }
 
     @java.lang.Override
@@ -766,24 +746,13 @@ public final class CommonMsg {
               }
               break;
             }
-            case 8: {
-              bitField0_ |= 0x00000001;
-              cmd_ = input.readInt32();
-              break;
-            }
-            case 16: {
-              bitField0_ |= 0x00000002;
-              type_ = input.readInt32();
-              break;
-            }
-            case 24: {
-              bitField0_ |= 0x00000004;
-              sysId_ = input.readInt32();
-              break;
-            }
-            case 32: {
-              bitField0_ |= 0x00000008;
-              count_ = input.readInt32();
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                parameters_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              parameters_.add(bs);
               break;
             }
           }
@@ -794,6 +763,9 @@ public final class CommonMsg {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          parameters_ = parameters_.getUnmodifiableView();
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -810,65 +782,33 @@ public final class CommonMsg {
               com.su.msg.CommonMsg.CMD.class, com.su.msg.CommonMsg.CMD.Builder.class);
     }
 
-    private int bitField0_;
-    public static final int CMD_FIELD_NUMBER = 1;
-    private int cmd_;
+    public static final int PARAMETERS_FIELD_NUMBER = 1;
+    private com.google.protobuf.LazyStringList parameters_;
     /**
-     * <code>optional int32 cmd = 1;</code>
+     * <code>repeated string parameters = 1;</code>
      */
-    public boolean hasCmd() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
+    public com.google.protobuf.ProtocolStringList
+        getParametersList() {
+      return parameters_;
     }
     /**
-     * <code>optional int32 cmd = 1;</code>
+     * <code>repeated string parameters = 1;</code>
      */
-    public int getCmd() {
-      return cmd_;
-    }
-
-    public static final int TYPE_FIELD_NUMBER = 2;
-    private int type_;
-    /**
-     * <code>optional int32 type = 2;</code>
-     */
-    public boolean hasType() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
+    public int getParametersCount() {
+      return parameters_.size();
     }
     /**
-     * <code>optional int32 type = 2;</code>
+     * <code>repeated string parameters = 1;</code>
      */
-    public int getType() {
-      return type_;
-    }
-
-    public static final int SYSID_FIELD_NUMBER = 3;
-    private int sysId_;
-    /**
-     * <code>optional int32 sysId = 3;</code>
-     */
-    public boolean hasSysId() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
+    public java.lang.String getParameters(int index) {
+      return parameters_.get(index);
     }
     /**
-     * <code>optional int32 sysId = 3;</code>
+     * <code>repeated string parameters = 1;</code>
      */
-    public int getSysId() {
-      return sysId_;
-    }
-
-    public static final int COUNT_FIELD_NUMBER = 4;
-    private int count_;
-    /**
-     * <code>optional int32 count = 4;</code>
-     */
-    public boolean hasCount() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    /**
-     * <code>optional int32 count = 4;</code>
-     */
-    public int getCount() {
-      return count_;
+    public com.google.protobuf.ByteString
+        getParametersBytes(int index) {
+      return parameters_.getByteString(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -883,17 +823,8 @@ public final class CommonMsg {
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, cmd_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, type_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, sysId_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt32(4, count_);
+      for (int i = 0; i < parameters_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, parameters_.getRaw(i));
       }
       unknownFields.writeTo(output);
     }
@@ -903,21 +834,13 @@ public final class CommonMsg {
       if (size != -1) return size;
 
       size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, cmd_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, type_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, sysId_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, count_);
+      {
+        int dataSize = 0;
+        for (int i = 0; i < parameters_.size(); i++) {
+          dataSize += computeStringSizeNoTag(parameters_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getParametersList().size();
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -936,26 +859,8 @@ public final class CommonMsg {
       com.su.msg.CommonMsg.CMD other = (com.su.msg.CommonMsg.CMD) obj;
 
       boolean result = true;
-      result = result && (hasCmd() == other.hasCmd());
-      if (hasCmd()) {
-        result = result && (getCmd()
-            == other.getCmd());
-      }
-      result = result && (hasType() == other.hasType());
-      if (hasType()) {
-        result = result && (getType()
-            == other.getType());
-      }
-      result = result && (hasSysId() == other.hasSysId());
-      if (hasSysId()) {
-        result = result && (getSysId()
-            == other.getSysId());
-      }
-      result = result && (hasCount() == other.hasCount());
-      if (hasCount()) {
-        result = result && (getCount()
-            == other.getCount());
-      }
+      result = result && getParametersList()
+          .equals(other.getParametersList());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -967,21 +872,9 @@ public final class CommonMsg {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasCmd()) {
-        hash = (37 * hash) + CMD_FIELD_NUMBER;
-        hash = (53 * hash) + getCmd();
-      }
-      if (hasType()) {
-        hash = (37 * hash) + TYPE_FIELD_NUMBER;
-        hash = (53 * hash) + getType();
-      }
-      if (hasSysId()) {
-        hash = (37 * hash) + SYSID_FIELD_NUMBER;
-        hash = (53 * hash) + getSysId();
-      }
-      if (hasCount()) {
-        hash = (37 * hash) + COUNT_FIELD_NUMBER;
-        hash = (53 * hash) + getCount();
+      if (getParametersCount() > 0) {
+        hash = (37 * hash) + PARAMETERS_FIELD_NUMBER;
+        hash = (53 * hash) + getParametersList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -1105,14 +998,8 @@ public final class CommonMsg {
       }
       public Builder clear() {
         super.clear();
-        cmd_ = 0;
+        parameters_ = com.google.protobuf.LazyStringArrayList.EMPTY;
         bitField0_ = (bitField0_ & ~0x00000001);
-        type_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        sysId_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000004);
-        count_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
 
@@ -1136,24 +1023,11 @@ public final class CommonMsg {
       public com.su.msg.CommonMsg.CMD buildPartial() {
         com.su.msg.CommonMsg.CMD result = new com.su.msg.CommonMsg.CMD(this);
         int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          parameters_ = parameters_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.cmd_ = cmd_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.type_ = type_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.sysId_ = sysId_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.count_ = count_;
-        result.bitField0_ = to_bitField0_;
+        result.parameters_ = parameters_;
         onBuilt();
         return result;
       }
@@ -1195,17 +1069,15 @@ public final class CommonMsg {
 
       public Builder mergeFrom(com.su.msg.CommonMsg.CMD other) {
         if (other == com.su.msg.CommonMsg.CMD.getDefaultInstance()) return this;
-        if (other.hasCmd()) {
-          setCmd(other.getCmd());
-        }
-        if (other.hasType()) {
-          setType(other.getType());
-        }
-        if (other.hasSysId()) {
-          setSysId(other.getSysId());
-        }
-        if (other.hasCount()) {
-          setCount(other.getCount());
+        if (!other.parameters_.isEmpty()) {
+          if (parameters_.isEmpty()) {
+            parameters_ = other.parameters_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureParametersIsMutable();
+            parameters_.addAll(other.parameters_);
+          }
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1235,130 +1107,95 @@ public final class CommonMsg {
       }
       private int bitField0_;
 
-      private int cmd_ ;
-      /**
-       * <code>optional int32 cmd = 1;</code>
-       */
-      public boolean hasCmd() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
+      private com.google.protobuf.LazyStringList parameters_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureParametersIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          parameters_ = new com.google.protobuf.LazyStringArrayList(parameters_);
+          bitField0_ |= 0x00000001;
+         }
       }
       /**
-       * <code>optional int32 cmd = 1;</code>
+       * <code>repeated string parameters = 1;</code>
        */
-      public int getCmd() {
-        return cmd_;
+      public com.google.protobuf.ProtocolStringList
+          getParametersList() {
+        return parameters_.getUnmodifiableView();
       }
       /**
-       * <code>optional int32 cmd = 1;</code>
+       * <code>repeated string parameters = 1;</code>
        */
-      public Builder setCmd(int value) {
-        bitField0_ |= 0x00000001;
-        cmd_ = value;
+      public int getParametersCount() {
+        return parameters_.size();
+      }
+      /**
+       * <code>repeated string parameters = 1;</code>
+       */
+      public java.lang.String getParameters(int index) {
+        return parameters_.get(index);
+      }
+      /**
+       * <code>repeated string parameters = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getParametersBytes(int index) {
+        return parameters_.getByteString(index);
+      }
+      /**
+       * <code>repeated string parameters = 1;</code>
+       */
+      public Builder setParameters(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureParametersIsMutable();
+        parameters_.set(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 cmd = 1;</code>
+       * <code>repeated string parameters = 1;</code>
        */
-      public Builder clearCmd() {
+      public Builder addParameters(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureParametersIsMutable();
+        parameters_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string parameters = 1;</code>
+       */
+      public Builder addAllParameters(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureParametersIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, parameters_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string parameters = 1;</code>
+       */
+      public Builder clearParameters() {
+        parameters_ = com.google.protobuf.LazyStringArrayList.EMPTY;
         bitField0_ = (bitField0_ & ~0x00000001);
-        cmd_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int type_ ;
-      /**
-       * <code>optional int32 type = 2;</code>
-       */
-      public boolean hasType() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>optional int32 type = 2;</code>
-       */
-      public int getType() {
-        return type_;
-      }
-      /**
-       * <code>optional int32 type = 2;</code>
-       */
-      public Builder setType(int value) {
-        bitField0_ |= 0x00000002;
-        type_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 type = 2;</code>
+       * <code>repeated string parameters = 1;</code>
        */
-      public Builder clearType() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        type_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int sysId_ ;
-      /**
-       * <code>optional int32 sysId = 3;</code>
-       */
-      public boolean hasSysId() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>optional int32 sysId = 3;</code>
-       */
-      public int getSysId() {
-        return sysId_;
-      }
-      /**
-       * <code>optional int32 sysId = 3;</code>
-       */
-      public Builder setSysId(int value) {
-        bitField0_ |= 0x00000004;
-        sysId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 sysId = 3;</code>
-       */
-      public Builder clearSysId() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        sysId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int count_ ;
-      /**
-       * <code>optional int32 count = 4;</code>
-       */
-      public boolean hasCount() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      /**
-       * <code>optional int32 count = 4;</code>
-       */
-      public int getCount() {
-        return count_;
-      }
-      /**
-       * <code>optional int32 count = 4;</code>
-       */
-      public Builder setCount(int value) {
-        bitField0_ |= 0x00000008;
-        count_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 count = 4;</code>
-       */
-      public Builder clearCount() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        count_ = 0;
+      public Builder addParametersBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureParametersIsMutable();
+        parameters_.add(value);
         onChanged();
         return this;
       }
@@ -1431,10 +1268,9 @@ public final class CommonMsg {
   static {
     java.lang.String[] descriptorData = {
       "\n\017CommonMsg.proto\"/\n\006NError\022\021\n\terrorCode" +
-      "\030\001 \001(\005\022\022\n\nparameters\030\002 \003(\t\">\n\003CMD\022\013\n\003cmd" +
-      "\030\001 \001(\005\022\014\n\004type\030\002 \001(\005\022\r\n\005sysId\030\003 \001(\005\022\r\n\005c" +
-      "ount\030\004 \001(\005B%\n\ncom.su.msgH\001\252\002\024Assets.Scri" +
-      "pts.Proto"
+      "\030\001 \001(\005\022\022\n\nparameters\030\002 \003(\t\"\031\n\003CMD\022\022\n\npar" +
+      "ameters\030\001 \003(\tB%\n\ncom.su.msgH\001\252\002\024Assets.S" +
+      "cripts.Proto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1459,7 +1295,7 @@ public final class CommonMsg {
     internal_static_CMD_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CMD_descriptor,
-        new java.lang.String[] { "Cmd", "Type", "SysId", "Count", });
+        new java.lang.String[] { "Parameters", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

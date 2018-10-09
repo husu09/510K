@@ -86,7 +86,7 @@ namespace Assets.Scripts.Proto
         private int? __pbn__Count;
 
         [global::ProtoBuf.ProtoMember(5)]
-        public long effType
+        public int effType
         {
             get { return __pbn__effType.GetValueOrDefault(); }
             set { __pbn__effType = value; }
@@ -99,7 +99,7 @@ namespace Assets.Scripts.Proto
         {
             __pbn__effType = null;
         }
-        private long? __pbn__effType;
+        private int? __pbn__effType;
 
         [global::ProtoBuf.ProtoMember(6)]
         public long effValue
@@ -116,6 +116,44 @@ namespace Assets.Scripts.Proto
             __pbn__effValue = null;
         }
         private long? __pbn__effValue;
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class GetBag : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public GetBag()
+        {
+            OnConstructor();
+        }
+
+        partial void OnConstructor();
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class GetBagTo : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public GetBagTo()
+        {
+            Grids = new global::System.Collections.Generic.List<GridMo>();
+            OnConstructor();
+        }
+
+        partial void OnConstructor();
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"grid")]
+        public global::System.Collections.Generic.List<GridMo> Grids { get; private set; }
 
     }
 
@@ -169,14 +207,14 @@ namespace Assets.Scripts.Proto
     }
 
     [global::ProtoBuf.ProtoContract()]
-    public partial class TUseItem : global::ProtoBuf.IExtensible
+    public partial class UseItemTo : global::ProtoBuf.IExtensible
     {
         private global::ProtoBuf.IExtension __pbn__extensionData;
         global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
         {
             return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
         }
-        public TUseItem()
+        public UseItemTo()
         {
             OnConstructor();
         }
@@ -186,14 +224,14 @@ namespace Assets.Scripts.Proto
     }
 
     [global::ProtoBuf.ProtoContract()]
-    public partial class NDeleteItem : global::ProtoBuf.IExtensible
+    public partial class DeleteItemNo : global::ProtoBuf.IExtensible
     {
         private global::ProtoBuf.IExtension __pbn__extensionData;
         global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
         {
             return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
         }
-        public NDeleteItem()
+        public DeleteItemNo()
         {
             OnConstructor();
         }
@@ -206,14 +244,35 @@ namespace Assets.Scripts.Proto
     }
 
     [global::ProtoBuf.ProtoContract()]
-    public partial class NUpdateItem : global::ProtoBuf.IExtensible
+    public partial class AddItemNo : global::ProtoBuf.IExtensible
     {
         private global::ProtoBuf.IExtension __pbn__extensionData;
         global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
         {
             return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
         }
-        public NUpdateItem()
+        public AddItemNo()
+        {
+            Grids = new global::System.Collections.Generic.List<GridMo>();
+            OnConstructor();
+        }
+
+        partial void OnConstructor();
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"grid")]
+        public global::System.Collections.Generic.List<GridMo> Grids { get; private set; }
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class UpdateItemNo : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public UpdateItemNo()
         {
             Grids = new global::System.Collections.Generic.List<GridMo>();
             OnConstructor();

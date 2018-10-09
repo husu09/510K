@@ -14,6 +14,7 @@ import com.su.common.obj.Grid;
 @Cache
 @Entity
 public class PlayerDetail {
+	private static final long serialVersionUID = 1L;
 	@Id
 	private long id;
 	/**

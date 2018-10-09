@@ -22,7 +22,7 @@ import io.netty.util.Attribute;
 
 public class PLayerActorImpl implements PlayerActor {
 
-	private Logger logger = LoggerFactory.getLogger(PlayerActor.class);
+	private Logger logger = LoggerFactory.getLogger(PLayerActorImpl.class);
 
 	private ActionContext actionContext = SpringUtil.getContext().getBean(ActionContext.class);
 	private GameEventDispatcher gameEventDispatcher = SpringUtil.getContext().getBean(GameEventDispatcher.class);

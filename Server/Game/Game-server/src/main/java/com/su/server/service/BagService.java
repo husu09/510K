@@ -16,9 +16,10 @@ import com.su.core.context.PlayerContext;
 import com.su.core.data.DataService;
 import com.su.core.event.GameEventAdapter;
 import com.su.excel.mapper.BagConf;
+import com.su.msg.BagMsg.AddItemNo;
+import com.su.msg.BagMsg.DeleteItemNo;
 import com.su.msg.BagMsg.GridMo;
-import com.su.msg.BagMsg.NDeleteItem;
-import com.su.msg.BagMsg.NUpdateItem;
+import com.su.msg.BagMsg.UpdateItemNo;
 import com.su.msg.LoginMsg.LoginTo;
 
 @Service
@@ -41,7 +42,7 @@ public class BagService extends GameEventAdapter {
 	public boolean addItem(PlayerContext playerContext, int type, int sysId, int count, int reason) {
 		int oriCount = count;
 		PlayerDetail playerDetail = playerService.getPlayerDetail(playerContext.getPlayerId());
-		// 排序规则：类型小的 < 品质小 < id小
+		// 排序规则：类型小的 < 品质大 < id小
 		BagCo bagCo = bagConf.get(sysId);
 		if (bagCo == null) {
 			logger.error("找不到对应的配置 {}", sysId);
@@ -51,7 +52,8 @@ public class BagService extends GameEventAdapter {
 			logger.info("item 个数为 {}", count);
 			return true;
 		}
-		NUpdateItem.Builder builder = NUpdateItem.newBuilder();
+		UpdateItemNo.Builder updateItem_ = UpdateItemNo.newBuilder();
+		AddItemNo.Builder addItem_ = AddItemNo.newBuilder();
 		List<Grid> bagGrid = playerDetail.getGridList();
 		for (int i = 0; i < bagGrid.size(); i++) {
 			// 全部已添加
@@ -72,28 +74,29 @@ public class BagService extends GameEventAdapter {
 				}
 				grid.setCount(grid.getCount() + addCount);
 
-				builder.addGrid(serializeGrid(i, grid));
+				updateItem_.addGrid(serializeGrid(i, grid));
 				continue;
 			} 
 			if (grid.getType() == type) {
 				BagCo currBagCo = bagConf.get(grid.getSysId());
-				if (currBagCo.getQuality() > bagCo.getQuality()) {
-					createGrid(playerContext, bagGrid, i, type, sysId, count, bagCo, builder);
+				if (currBagCo.getQuality() < bagCo.getQuality()) {
+					createGrid(playerContext, bagGrid, i, type, sysId, count, bagCo, addItem_);
 				} else if (currBagCo.getQuality() == bagCo.getQuality() && currBagCo.getId() > bagCo.getId()) {
-					createGrid(playerContext, bagGrid, i, type, sysId, count, bagCo, builder);
+					createGrid(playerContext, bagGrid, i, type, sysId, count, bagCo, addItem_);
 				}
 			} else if (grid.getType() > type) {
-				createGrid(playerContext, bagGrid, i, type, sysId, count, bagCo, builder);
+				createGrid(playerContext, bagGrid, i, type, sysId, count, bagCo, addItem_);
 			}
 		}
 		// 找不到可以叠加或插入的位置，直接添加到末尾
 		if (count > 0) {
-			createGrid(playerContext, bagGrid, bagGrid.size(), type, sysId, count, bagCo, builder);
+			createGrid(playerContext, bagGrid, bagGrid.size(), type, sysId, count, bagCo, addItem_);
 		}
 		playerDetail.updateBagData();
 		dataService.update(playerDetail);
 		// 通知
-		playerContext.write(builder);
+		playerContext.write(updateItem_);
+		playerContext.write(addItem_);
 		// 流水
 		logService.addItemLog(playerContext.getPlayerId(), reason, sysId, oriCount, -1);
 		return true;
@@ -118,17 +121,17 @@ public class BagService extends GameEventAdapter {
 		if (haveCount < count) {
 			return false;
 		}
-		NUpdateItem.Builder updateItem_ = null;
-		NDeleteItem.Builder deleteItem_ = null;
+		UpdateItemNo.Builder updateItem_ = null;
+		DeleteItemNo.Builder deleteItem_ = null;
 		// 从后往前，数量少的先扣
-		for (int i = bagGrid.size(); i > -1; i--) {
+		for (int i = bagGrid.size() - 1; i >= 0; i--) {
 			Grid grid = bagGrid.get(i);
 			if (sysId == grid.getSysId()) {
 				if (grid.getCount() > count) {
 					grid.setCount(grid.getCount() - count);
 					// 通知
 					if (updateItem_ == null)
-						updateItem_ = NUpdateItem.newBuilder();
+						updateItem_ = UpdateItemNo.newBuilder();
 					updateItem_.addGrid(serializeGrid(i, grid));
 
 					break;
@@ -137,7 +140,7 @@ public class BagService extends GameEventAdapter {
 					if (count == 0) {
 						// 通知
 						if (deleteItem_ == null)
-							deleteItem_ = NDeleteItem.newBuilder();
+							deleteItem_ = DeleteItemNo.newBuilder();
 						deleteItem_.addIndex(i);
 
 						break;
@@ -158,7 +161,7 @@ public class BagService extends GameEventAdapter {
 	 * 创建新格子
 	 */
 	private void createGrid(PlayerContext playerContext, List<Grid> bagGrid, int index, int type, int sysId, int count,
-			BagCo bagCo, NUpdateItem.Builder builder) {
+			BagCo bagCo, AddItemNo.Builder addItem_) {
 		// 全部已添加
 		if (count == 0)
 			return;
@@ -178,9 +181,9 @@ public class BagService extends GameEventAdapter {
 		else if (bagCo.getEffTyep() == BagConst.EFF_TYPE_COUNT)
 			grid.setEffValue(bagCo.getEffValue());
 		bagGrid.add(index, grid);
-		builder.addGrid(serializeGrid(index, grid));
+		addItem_.addGrid(serializeGrid(index, grid));
 
-		createGrid(playerContext, bagGrid, index + 1, type, sysId, count, bagCo, builder);
+		createGrid(playerContext, bagGrid, index + 1, type, sysId, count, bagCo, addItem_);
 	}
 
 	public GridMo serializeGrid(int index, Grid grid) {

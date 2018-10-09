@@ -23,9 +23,11 @@ public class BagConf extends AbstractExcelMapper<BagCo> {
 		temp.setType(rowData.getInt("lx"));
 		temp.setQuality(rowData.getInt("pz"));
 		temp.setUseType(rowData.getInt("sylx"));
-		if (temp.getUseType() == EffectConst.VALUE) {
+		if (temp.getUseType() == 1) {
+			// 数值类型
 			temp.setEffectNum(rowData.getInt("syxg"));
-		} else if (temp.getUseType() == EffectConst.RESOURCES) {
+		} else if (temp.getUseType() == 2) {
+			// 资源类型
 			temp.setEffectItem(rowData.getGoods("syxg"));
 		}
 		int[] effData = rowData.getIntArr("yxq");

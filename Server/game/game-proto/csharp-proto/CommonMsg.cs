@@ -53,74 +53,14 @@ namespace Assets.Scripts.Proto
         }
         public Cmd()
         {
+            Parameters = new global::System.Collections.Generic.List<string>();
             OnConstructor();
         }
 
         partial void OnConstructor();
 
-        [global::ProtoBuf.ProtoMember(1)]
-        public int cmd
-        {
-            get { return __pbn__cmd.GetValueOrDefault(); }
-            set { __pbn__cmd = value; }
-        }
-        public bool ShouldSerializecmd()
-        {
-            return __pbn__cmd != null;
-        }
-        public void Resetcmd()
-        {
-            __pbn__cmd = null;
-        }
-        private int? __pbn__cmd;
-
-        [global::ProtoBuf.ProtoMember(2, Name = @"type")]
-        public int Type
-        {
-            get { return __pbn__Type.GetValueOrDefault(); }
-            set { __pbn__Type = value; }
-        }
-        public bool ShouldSerializeType()
-        {
-            return __pbn__Type != null;
-        }
-        public void ResetType()
-        {
-            __pbn__Type = null;
-        }
-        private int? __pbn__Type;
-
-        [global::ProtoBuf.ProtoMember(3)]
-        public int sysId
-        {
-            get { return __pbn__sysId.GetValueOrDefault(); }
-            set { __pbn__sysId = value; }
-        }
-        public bool ShouldSerializesysId()
-        {
-            return __pbn__sysId != null;
-        }
-        public void ResetsysId()
-        {
-            __pbn__sysId = null;
-        }
-        private int? __pbn__sysId;
-
-        [global::ProtoBuf.ProtoMember(4, Name = @"count")]
-        public int Count
-        {
-            get { return __pbn__Count.GetValueOrDefault(); }
-            set { __pbn__Count = value; }
-        }
-        public bool ShouldSerializeCount()
-        {
-            return __pbn__Count != null;
-        }
-        public void ResetCount()
-        {
-            __pbn__Count = null;
-        }
-        private int? __pbn__Count;
+        [global::ProtoBuf.ProtoMember(1, Name = @"parameters")]
+        public global::System.Collections.Generic.List<string> Parameters { get; private set; }
 
     }
 

@@ -28,7 +28,6 @@ public class ActionScan {
 	private ProtoContext protoContext;
 
 	public void scan() {
-
 		Map<String, Object> beans = SpringUtil.getContext().getBeansWithAnnotation(Controller.class);
 
 		for (Object bean : beans.values()) {
@@ -43,7 +42,7 @@ public class ActionScan {
 						logger.error("action message is not fined {}", messageName);
 						continue;
 					}
-					if (messageName.endsWith("_") || messageName.startsWith("_")) {
+					if (messageName.endsWith("Mo") || messageName.endsWith("To") || messageName.endsWith("No") ) {
 						logger.error("action message is not request {}", messageName);
 						continue;
 					}
