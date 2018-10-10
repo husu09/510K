@@ -95,8 +95,10 @@ public class BagService extends GameEventAdapter {
 		playerDetail.updateBagData();
 		dataService.update(playerDetail);
 		// 通知
-		playerContext.write(updateItem_);
-		playerContext.write(addItem_);
+		if (updateItem_.getGridCount() > 0)
+			playerContext.write(updateItem_);
+		if (addItem_.getGridCount() > 0)
+			playerContext.write(addItem_);
 		// 流水
 		logService.addItemLog(playerContext.getPlayerId(), reason, sysId, oriCount, -1);
 		return true;
@@ -150,8 +152,10 @@ public class BagService extends GameEventAdapter {
 		}
 		playerDetail.updateBagData();
 		dataService.update(playerDetail);
-		playerContext.write(updateItem_);
-		playerContext.write(deleteItem_);
+		if (updateItem_.getGridCount() > 0)
+			playerContext.write(updateItem_);
+		if (deleteItem_.getIndexCount() > 0)
+			playerContext.write(deleteItem_);
 		// 流水
 		logService.addItemLog(playerContext.getPlayerId(), reason, sysId, oriCount, haveCount - count);
 		return true;
@@ -185,7 +189,51 @@ public class BagService extends GameEventAdapter {
 
 		createGrid(playerContext, bagGrid, index + 1, type, sysId, count, bagCo, addItem_);
 	}
-
+	
+	/**
+	 * 扣除指定格子的物品
+	 * */
+	public boolean eddItem(PlayerContext playerContext, int index, int count, int reason) {
+		PlayerDetail playerDetail = playerService.getPlayerDetail(playerContext.getPlayerId());
+		// 没有这个格子
+		if (index >= playerDetail.getGridList().size()) {
+			return false;
+		}
+		// 数量不足
+		Grid grid = playerDetail.getGridList().get(index);
+		if (grid.getCount() < count) {
+			return false;
+		}
+		// 扣除数量
+		grid.setCount(grid.getCount() - count);
+		// 通知
+		if (grid.getCount() <= 0) {
+			DeleteItemNo.Builder deleteItem_ = DeleteItemNo.newBuilder();
+			deleteItem_.addIndex(index);
+			playerContext.write(deleteItem_);
+		} else {
+			UpdateItemNo.Builder updateItem_ = UpdateItemNo.newBuilder();
+			updateItem_.addGrid(serializeGrid(index, grid));
+			playerContext.write(updateItem_);
+		}
+		playerDetail.updateBagData();
+		dataService.update(playerDetail);
+		// 流水
+		logService.addItemLog(playerContext.getPlayerId(), reason, grid.getSysId(), count, grid.getCount());
+		return true;		
+	}
+	
+	/**
+	 * 获取指定格子
+	 * */
+	public Grid getGrid(PlayerContext playerContext, int index) {
+		PlayerDetail playerDetail = playerService.getPlayerDetail(playerContext.getPlayerId());
+		if (index >= playerDetail.getGridList().size()) {
+			return null;
+		}
+		return playerDetail.getGridList().get(index);
+	}
+	
 	public GridMo serializeGrid(int index, Grid grid) {
 		GridMo.Builder builder = GridMo.newBuilder();
 		builder.setIndex(index);

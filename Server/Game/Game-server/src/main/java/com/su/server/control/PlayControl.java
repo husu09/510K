@@ -22,7 +22,7 @@ public class PlayControl {
 	 * */
 	@Action
 	public void getPlayer(PlayerContext ctx, GetPlayer req) {
-		Player player = playerService.getPlayerById(ctx.getPlayerId());
+		Player player = playerService.getPlayer(ctx.getPlayerId());
 		PlayerMo playerMo = playerService.serializePlayer(player);
 		
 		GetPlayerTo.Builder resp = GetPlayerTo.newBuilder();

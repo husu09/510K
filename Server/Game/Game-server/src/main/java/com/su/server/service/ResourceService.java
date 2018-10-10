@@ -64,7 +64,7 @@ public class ResourceService {
 	private void addPeanut(PlayerContext playerContext, int addCount, int reason) {
 		if (addCount <= 0)
 			return;
-		Player player = playerService.getPlayerById(playerContext.getPlayerId());
+		Player player = playerService.getPlayer(playerContext.getPlayerId());
 		player.setPeanut(player.getPeanut() + addCount);
 		dataService.update(player);
 		playerContext.getBuilder().setPeanut(player.getPeanut());
@@ -78,7 +78,7 @@ public class ResourceService {
 	private boolean eddPeanut(PlayerContext playerContext, int eddCount, int reason) {
 		if (eddCount <= 0)
 			return true;
-		Player player = playerService.getPlayerById(playerContext.getPlayerId());
+		Player player = playerService.getPlayer(playerContext.getPlayerId());
 		if (player.getPeanut() < eddCount)
 			return false;
 		player.setPeanut(player.getPeanut() - eddCount);

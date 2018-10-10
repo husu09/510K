@@ -23,20 +23,26 @@ message GetBagTo {
 // 使用道具
 message UseItem {
 	optional int32 index = 1;		// 索引
-	optional int32 useCount = 2;	// 使用数量
+	optional int32 sysId = 2;		// 系统id
+	optional int32 count = 3;		// 数量
+	optional int32 useCount = 4;	// 使用数量
 }
 message UseItemTo {
 
 }
+
 // 删除通知（前端需要同步更改后续索引）
 message DeleteItemNo {
 	repeated int32 index = 1;		// 索引
 }
+
 // 增加通知（前端需要同步更改后续索引）
 message AddItemNo {
 	repeated GridMo grid = 1;
 }
+
 // 更新通知
 message UpdateItemNo {
 	repeated GridMo grid = 1;
 }
+

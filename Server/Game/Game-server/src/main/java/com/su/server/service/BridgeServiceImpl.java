@@ -55,7 +55,7 @@ public class BridgeServiceImpl implements BridgeService {
 
 	@Override
 	public Player getPlayerById(long id) {
-		return playerService.getPlayerById(id);
+		return playerService.getPlayer(id);
 	}
 
 }

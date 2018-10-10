@@ -33,7 +33,7 @@ public class PlayerService extends GameEventAdapter {
 	/**
 	 * 获取用户
 	 */
-	public Player getPlayerById(long id) {
+	public Player getPlayer(long id) {
 		Player player = dataService.get(Player.class, id);
 		if (player == null)
 			throw new RuntimeException("player is null " + id);

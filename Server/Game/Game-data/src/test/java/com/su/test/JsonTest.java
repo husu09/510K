@@ -38,6 +38,28 @@ public class JsonTest {
 		
 	}
 	
+	/**
+	 * FastJson 序列化规则：
+	 * 1. 不包含 private 属性
+	 * 2. 包含 public 属性，不包含值为 Null 的属性
+	 * 3. 包含有 get 方法的属性，不包含值为 Null 的属性
+	 * */
+	@Test
+	public void jsonTest() {
+		
+		
+		Person person = new Person();
+		//String str = JSON.toJSONString(person);
+		// 是否格式化
+		// String str = JSON.toJSONString(person, true);
+		String str = JSON.toJSONString(person);
+		System.out.println(str);
+		person = JSON.parseObject(str, Person.class);
+		System.out.println(person);
+	}
+	
+	
+	
 	@Test
 	public void customTest() {
 		PlayerDetail playerDetail = new PlayerDetail(0);

@@ -57,8 +57,9 @@ public class LoginControl {
 				return;
 			}
 			loginService.addIdCacheByAccount(req.getAccount(), playerId);
+			loginService.addPlayerCache(player);
 		} else {
-			 player = playerService.getPlayerById(playerId);
+			 player = playerService.getPlayer(playerId);
 		}
 		if (player == null) {
 			playerContext.sendError(20001);
@@ -72,8 +73,7 @@ public class LoginControl {
 		// 登录事件
 		gameEventDispatcher.login(playerContext, resp);
 		playerContext.write(resp);
-
-		loginService.addPlayerCache(player);
+		
 	}
 
 }

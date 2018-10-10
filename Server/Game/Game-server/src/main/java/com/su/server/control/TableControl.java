@@ -55,7 +55,7 @@ public class TableControl {
 			return;
 		}
 		// 加倍
-		boolean result = gamePlayer.getTable().getActor().doubles(gamePlayer, bagCo.getEffectNum());
+		boolean result = gamePlayer.getTable().getActor().doubles(gamePlayer, bagCo.getUseNum());
 		// 加倍失败返还道具
 		if (!result) {
 			resouceService.add(playerContext, GamblingConst.DOUBLES_ITEM, 10001);

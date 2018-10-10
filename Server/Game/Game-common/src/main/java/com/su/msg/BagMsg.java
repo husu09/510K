@@ -2263,10 +2263,44 @@ public final class BagMsg {
 
     /**
      * <pre>
+     * 系统id
+     * </pre>
+     *
+     * <code>optional int32 sysId = 2;</code>
+     */
+    boolean hasSysId();
+    /**
+     * <pre>
+     * 系统id
+     * </pre>
+     *
+     * <code>optional int32 sysId = 2;</code>
+     */
+    int getSysId();
+
+    /**
+     * <pre>
+     * 数量
+     * </pre>
+     *
+     * <code>optional int32 count = 3;</code>
+     */
+    boolean hasCount();
+    /**
+     * <pre>
+     * 数量
+     * </pre>
+     *
+     * <code>optional int32 count = 3;</code>
+     */
+    int getCount();
+
+    /**
+     * <pre>
      * 使用数量
      * </pre>
      *
-     * <code>optional int32 useCount = 2;</code>
+     * <code>optional int32 useCount = 4;</code>
      */
     boolean hasUseCount();
     /**
@@ -2274,7 +2308,7 @@ public final class BagMsg {
      * 使用数量
      * </pre>
      *
-     * <code>optional int32 useCount = 2;</code>
+     * <code>optional int32 useCount = 4;</code>
      */
     int getUseCount();
   }
@@ -2295,6 +2329,8 @@ public final class BagMsg {
     }
     private UseItem() {
       index_ = 0;
+      sysId_ = 0;
+      count_ = 0;
       useCount_ = 0;
     }
 
@@ -2333,6 +2369,16 @@ public final class BagMsg {
             }
             case 16: {
               bitField0_ |= 0x00000002;
+              sysId_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              count_ = input.readInt32();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
               useCount_ = input.readInt32();
               break;
             }
@@ -2384,24 +2430,70 @@ public final class BagMsg {
       return index_;
     }
 
-    public static final int USECOUNT_FIELD_NUMBER = 2;
+    public static final int SYSID_FIELD_NUMBER = 2;
+    private int sysId_;
+    /**
+     * <pre>
+     * 系统id
+     * </pre>
+     *
+     * <code>optional int32 sysId = 2;</code>
+     */
+    public boolean hasSysId() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <pre>
+     * 系统id
+     * </pre>
+     *
+     * <code>optional int32 sysId = 2;</code>
+     */
+    public int getSysId() {
+      return sysId_;
+    }
+
+    public static final int COUNT_FIELD_NUMBER = 3;
+    private int count_;
+    /**
+     * <pre>
+     * 数量
+     * </pre>
+     *
+     * <code>optional int32 count = 3;</code>
+     */
+    public boolean hasCount() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <pre>
+     * 数量
+     * </pre>
+     *
+     * <code>optional int32 count = 3;</code>
+     */
+    public int getCount() {
+      return count_;
+    }
+
+    public static final int USECOUNT_FIELD_NUMBER = 4;
     private int useCount_;
     /**
      * <pre>
      * 使用数量
      * </pre>
      *
-     * <code>optional int32 useCount = 2;</code>
+     * <code>optional int32 useCount = 4;</code>
      */
     public boolean hasUseCount() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
+      return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
      * <pre>
      * 使用数量
      * </pre>
      *
-     * <code>optional int32 useCount = 2;</code>
+     * <code>optional int32 useCount = 4;</code>
      */
     public int getUseCount() {
       return useCount_;
@@ -2423,7 +2515,13 @@ public final class BagMsg {
         output.writeInt32(1, index_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, useCount_);
+        output.writeInt32(2, sysId_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, count_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, useCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -2439,7 +2537,15 @@ public final class BagMsg {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, useCount_);
+          .computeInt32Size(2, sysId_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, count_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, useCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2463,6 +2569,16 @@ public final class BagMsg {
         result = result && (getIndex()
             == other.getIndex());
       }
+      result = result && (hasSysId() == other.hasSysId());
+      if (hasSysId()) {
+        result = result && (getSysId()
+            == other.getSysId());
+      }
+      result = result && (hasCount() == other.hasCount());
+      if (hasCount()) {
+        result = result && (getCount()
+            == other.getCount());
+      }
       result = result && (hasUseCount() == other.hasUseCount());
       if (hasUseCount()) {
         result = result && (getUseCount()
@@ -2482,6 +2598,14 @@ public final class BagMsg {
       if (hasIndex()) {
         hash = (37 * hash) + INDEX_FIELD_NUMBER;
         hash = (53 * hash) + getIndex();
+      }
+      if (hasSysId()) {
+        hash = (37 * hash) + SYSID_FIELD_NUMBER;
+        hash = (53 * hash) + getSysId();
+      }
+      if (hasCount()) {
+        hash = (37 * hash) + COUNT_FIELD_NUMBER;
+        hash = (53 * hash) + getCount();
       }
       if (hasUseCount()) {
         hash = (37 * hash) + USECOUNT_FIELD_NUMBER;
@@ -2611,8 +2735,12 @@ public final class BagMsg {
         super.clear();
         index_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
-        useCount_ = 0;
+        sysId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
+        count_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        useCount_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
 
@@ -2643,6 +2771,14 @@ public final class BagMsg {
         result.index_ = index_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
+        }
+        result.sysId_ = sysId_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.count_ = count_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
         }
         result.useCount_ = useCount_;
         result.bitField0_ = to_bitField0_;
@@ -2689,6 +2825,12 @@ public final class BagMsg {
         if (other == com.su.msg.BagMsg.UseItem.getDefaultInstance()) return this;
         if (other.hasIndex()) {
           setIndex(other.getIndex());
+        }
+        if (other.hasSysId()) {
+          setSysId(other.getSysId());
+        }
+        if (other.hasCount()) {
+          setCount(other.getCount());
         }
         if (other.hasUseCount()) {
           setUseCount(other.getUseCount());
@@ -2769,23 +2911,119 @@ public final class BagMsg {
         return this;
       }
 
+      private int sysId_ ;
+      /**
+       * <pre>
+       * 系统id
+       * </pre>
+       *
+       * <code>optional int32 sysId = 2;</code>
+       */
+      public boolean hasSysId() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <pre>
+       * 系统id
+       * </pre>
+       *
+       * <code>optional int32 sysId = 2;</code>
+       */
+      public int getSysId() {
+        return sysId_;
+      }
+      /**
+       * <pre>
+       * 系统id
+       * </pre>
+       *
+       * <code>optional int32 sysId = 2;</code>
+       */
+      public Builder setSysId(int value) {
+        bitField0_ |= 0x00000002;
+        sysId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 系统id
+       * </pre>
+       *
+       * <code>optional int32 sysId = 2;</code>
+       */
+      public Builder clearSysId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        sysId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int count_ ;
+      /**
+       * <pre>
+       * 数量
+       * </pre>
+       *
+       * <code>optional int32 count = 3;</code>
+       */
+      public boolean hasCount() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <pre>
+       * 数量
+       * </pre>
+       *
+       * <code>optional int32 count = 3;</code>
+       */
+      public int getCount() {
+        return count_;
+      }
+      /**
+       * <pre>
+       * 数量
+       * </pre>
+       *
+       * <code>optional int32 count = 3;</code>
+       */
+      public Builder setCount(int value) {
+        bitField0_ |= 0x00000004;
+        count_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 数量
+       * </pre>
+       *
+       * <code>optional int32 count = 3;</code>
+       */
+      public Builder clearCount() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        count_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int useCount_ ;
       /**
        * <pre>
        * 使用数量
        * </pre>
        *
-       * <code>optional int32 useCount = 2;</code>
+       * <code>optional int32 useCount = 4;</code>
        */
       public boolean hasUseCount() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
+        return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
        * <pre>
        * 使用数量
        * </pre>
        *
-       * <code>optional int32 useCount = 2;</code>
+       * <code>optional int32 useCount = 4;</code>
        */
       public int getUseCount() {
         return useCount_;
@@ -2795,10 +3033,10 @@ public final class BagMsg {
        * 使用数量
        * </pre>
        *
-       * <code>optional int32 useCount = 2;</code>
+       * <code>optional int32 useCount = 4;</code>
        */
       public Builder setUseCount(int value) {
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000008;
         useCount_ = value;
         onChanged();
         return this;
@@ -2808,10 +3046,10 @@ public final class BagMsg {
        * 使用数量
        * </pre>
        *
-       * <code>optional int32 useCount = 2;</code>
+       * <code>optional int32 useCount = 4;</code>
        */
       public Builder clearUseCount() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000008);
         useCount_ = 0;
         onChanged();
         return this;
@@ -5390,12 +5628,12 @@ public final class BagMsg {
       "\014\n\004type\030\002 \001(\005\022\r\n\005sysId\030\003 \001(\005\022\r\n\005count\030\004 " +
       "\001(\005\022\017\n\007effType\030\005 \001(\005\022\020\n\010effValue\030\006 \001(\003\"\010" +
       "\n\006GetBag\"!\n\010GetBagTo\022\025\n\004grid\030\001 \003(\0132\007.Gri" +
-      "dMo\"*\n\007UseItem\022\r\n\005index\030\001 \001(\005\022\020\n\010useCoun" +
-      "t\030\002 \001(\005\"\013\n\tUseItemTo\"\035\n\014DeleteItemNo\022\r\n\005" +
-      "index\030\001 \003(\005\"\"\n\tAddItemNo\022\025\n\004grid\030\001 \003(\0132\007" +
-      ".GridMo\"%\n\014UpdateItemNo\022\025\n\004grid\030\001 \003(\0132\007." +
-      "GridMoB%\n\ncom.su.msgH\001\252\002\024Assets.Scripts." +
-      "Proto"
+      "dMo\"H\n\007UseItem\022\r\n\005index\030\001 \001(\005\022\r\n\005sysId\030\002" +
+      " \001(\005\022\r\n\005count\030\003 \001(\005\022\020\n\010useCount\030\004 \001(\005\"\013\n" +
+      "\tUseItemTo\"\035\n\014DeleteItemNo\022\r\n\005index\030\001 \003(" +
+      "\005\"\"\n\tAddItemNo\022\025\n\004grid\030\001 \003(\0132\007.GridMo\"%\n" +
+      "\014UpdateItemNo\022\025\n\004grid\030\001 \003(\0132\007.GridMoB%\n\n" +
+      "com.su.msgH\001\252\002\024Assets.Scripts.Proto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -5432,7 +5670,7 @@ public final class BagMsg {
     internal_static_UseItem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UseItem_descriptor,
-        new java.lang.String[] { "Index", "UseCount", });
+        new java.lang.String[] { "Index", "SysId", "Count", "UseCount", });
     internal_static_UseItemTo_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_UseItemTo_fieldAccessorTable = new

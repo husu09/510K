@@ -35,7 +35,7 @@ public class PlayerGameService {
 				&& tableResult.getSiteCo().getSiteType() == SiteType.RANKING.getValue())
 			return null;
 
-		Player player = playerService.getPlayerById(tableResult.getPlayerContext().getPlayerId());
+		Player player = playerService.getPlayer(tableResult.getPlayerContext().getPlayerId());
 		PlayerDetail playerDetail = playerService.getPlayerDetail(player.getId());
 		MGamePlayerResult.Builder builder = MGamePlayerResult.newBuilder();
 
