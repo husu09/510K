@@ -7,7 +7,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.alibaba.fastjson.JSON;
 import com.su.common.util.CustomConvert;
 
 /**
@@ -22,7 +21,8 @@ public class RedisService {
 		if (!CacheUtil.isPersistent(o)) {
 			return;
 		}
-		client.hset(CacheUtil.getParentKey(o), CacheUtil.getKey(o), JSON.toJSONString(o));
+		
+		client.hset(CacheUtil.getParentKey(o), CacheUtil.getKey(o), CustomConvert.toJSONString(o));
 	}
 
 	public void saveOrUpdate(Collection<Object> os) {
@@ -61,14 +61,18 @@ public class RedisService {
 
 	public <T> T get(Class<T> c, long id) {
 		String value = client.hget(CacheUtil.getParentKey(c), CacheUtil.getKey(c, id));
-		return JSON.parseObject(value, c);
+		if (value == null)
+			return null;
+		return CustomConvert.parseObject(value, c);
 	}
 
 	public <T> List<T> list(Class<T> c) {
 		List<String> list = client.hvals(CacheUtil.getParentKey(c));
+		if (list == null)
+			return null;
 		List<T> ts = new ArrayList<>(list.size());
 		for (String s : list) {
-			T t = JSON.parseObject(s, c);
+			T t = CustomConvert.parseObject(s, c);
 			ts.add(t);
 		}
 		return ts;

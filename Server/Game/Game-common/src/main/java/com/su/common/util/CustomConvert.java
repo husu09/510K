@@ -20,6 +20,8 @@ public class CustomConvert {
 		for (Field field : declaredFields) {
 			if (field.isAnnotationPresent(Transient.class))
 				continue;
+			if (field.getName().equals("serialVersionUID")) 
+				continue;
 			if (field.getType().isPrimitive() || field.getType().isAssignableFrom(String.class)) {
 				if (!field.isAccessible())
 					field.setAccessible(true);

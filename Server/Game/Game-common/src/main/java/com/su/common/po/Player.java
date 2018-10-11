@@ -10,7 +10,9 @@ import com.su.common.data.Cache;
 @Cache
 @Entity
 public class Player implements Serializable {
+	
 	private static final long serialVersionUID = 1L;
+	
 	@Id
 	private long id;
 	/**

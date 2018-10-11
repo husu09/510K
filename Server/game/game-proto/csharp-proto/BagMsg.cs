@@ -189,38 +189,6 @@ namespace Assets.Scripts.Proto
         private int? __pbn__Index;
 
         [global::ProtoBuf.ProtoMember(2)]
-        public int sysId
-        {
-            get { return __pbn__sysId.GetValueOrDefault(); }
-            set { __pbn__sysId = value; }
-        }
-        public bool ShouldSerializesysId()
-        {
-            return __pbn__sysId != null;
-        }
-        public void ResetsysId()
-        {
-            __pbn__sysId = null;
-        }
-        private int? __pbn__sysId;
-
-        [global::ProtoBuf.ProtoMember(3, Name = @"count")]
-        public int Count
-        {
-            get { return __pbn__Count.GetValueOrDefault(); }
-            set { __pbn__Count = value; }
-        }
-        public bool ShouldSerializeCount()
-        {
-            return __pbn__Count != null;
-        }
-        public void ResetCount()
-        {
-            __pbn__Count = null;
-        }
-        private int? __pbn__Count;
-
-        [global::ProtoBuf.ProtoMember(4)]
         public int useCount
         {
             get { return __pbn__useCount.GetValueOrDefault(); }

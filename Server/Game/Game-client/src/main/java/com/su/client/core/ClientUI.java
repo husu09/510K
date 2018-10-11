@@ -66,7 +66,7 @@ public class ClientUI {
 		// 左面板
 		// =========================
 		JPanel leftP = new JPanel();
-		leftP.setLayout(new GridLayout(1, 2));
+		leftP.setLayout(new GridLayout(1, 3));
 		leftP.setPreferredSize(new Dimension(460, 0));
 
 		// 左左
@@ -125,7 +125,7 @@ public class ClientUI {
 		leftLeft.add(leftBelow);
 		leftP.add(leftLeft);
 		clientContext.setPanel(leftBelow);
-
+		
 		// 左右
 		JPanel leftRight = new JPanel();
 		leftRight.setLayout(new BorderLayout());

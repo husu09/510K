@@ -5,12 +5,16 @@ import org.springframework.stereotype.Controller;
 
 import com.su.common.constant.BagConst;
 import com.su.common.obj.Grid;
+import com.su.common.po.PlayerDetail;
 import com.su.config.BagCo;
 import com.su.core.action.Action;
 import com.su.core.context.PlayerContext;
 import com.su.excel.mapper.BagConf;
+import com.su.msg.BagMsg.GetBag;
+import com.su.msg.BagMsg.GetBagTo;
 import com.su.msg.BagMsg.UseItem;
 import com.su.server.service.BagService;
+import com.su.server.service.PlayerService;
 import com.su.server.service.ResourceService;
 
 @Controller
@@ -22,17 +26,24 @@ public class BagControl {
 	private ResourceService resourceService;
 	@Autowired
 	private BagService bagService;
+	@Autowired
+	private PlayerService playerService;
+	
+	@Action
+	public void getBag(PlayerContext ctx, GetBag req) {
+		GetBagTo.Builder result = GetBagTo.newBuilder();
+		PlayerDetail playerDetail = playerService.getPlayerDetail(ctx.getPlayerId());
+		for (int i = 0; i < playerDetail.getGridList().size(); i ++) {
+			result.addGrid(bagService.serializeGrid(i, playerDetail.getGridList().get(i)));
+		}
+		ctx.write(result);
+	}
 	
 	@Action
 	public void useItem(PlayerContext ctx, UseItem req) {
 		Grid grid = bagService.getGrid(ctx, req.getIndex());
 		if (grid == null) {
 			ctx.sendError(1002);
-			return;
-		}
-		// 请求物品不一致
-		if (grid.getSysId() != req.getSysId() || grid.getCount() != req.getCount()) {
-			ctx.sendError(4003);
 			return;
 		}
 		if (grid.getCount() < req.getUseCount()) {
@@ -50,13 +61,13 @@ public class BagControl {
 			return;
 		}
 		// 扣除道具
-		if (!bagService.eddItem(ctx, req.getIndex(), req.getUseCount(), 1000)) {
+		if (!bagService.eddItemByIndex(ctx, req.getIndex(), req.getUseCount(), 2004)) {
 			ctx.sendError(4001);
 			return;
 		}
 		// 使用效果
 		if (grid.getType() == BagConst.TYPE_6) {
-			resourceService.add(ctx, bagCo.getUseItem(), 2000);
+			resourceService.add(ctx, bagCo.getUseItem(), 1003);
 		}
 	}
 }

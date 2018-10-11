@@ -1,5 +1,6 @@
 package com.su.common.po;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,8 +14,10 @@ import com.su.common.obj.Grid;
 
 @Cache
 @Entity
-public class PlayerDetail {
+public class PlayerDetail implements Serializable {
+	
 	private static final long serialVersionUID = 1L;
+	
 	@Id
 	private long id;
 	/**

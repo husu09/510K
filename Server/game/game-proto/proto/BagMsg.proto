@@ -23,9 +23,7 @@ message GetBagTo {
 // 使用道具
 message UseItem {
 	optional int32 index = 1;		// 索引
-	optional int32 sysId = 2;		// 系统id
-	optional int32 count = 3;		// 数量
-	optional int32 useCount = 4;	// 使用数量
+	optional int32 useCount = 2;	// 使用数量
 }
 message UseItemTo {
 

@@ -37,7 +37,7 @@ public class ResourceService {
 		if (type == SysAttr.PEANUT)
 			addPeanut(playerContext, count, reason);
 		else if (type == SysAttr.ITEM)
-			bagService.addItem(playerContext, type, sysId, count, reason);
+			bagService.addItem(playerContext, sysId, count, reason);
 		else {
 			logger.error("未知类型{}", type);
 		}
@@ -54,7 +54,7 @@ public class ResourceService {
 		if (type == SysAttr.PEANUT)
 			return eddPeanut(playerContext, count, reason);
 		else if (type == SysAttr.ITEM)
-			return bagService.eddItem(playerContext, type, sysId, count, reason);
+			return bagService.eddItem(playerContext, sysId, count, reason);
 		return false;
 	}
 

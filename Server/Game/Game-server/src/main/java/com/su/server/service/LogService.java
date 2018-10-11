@@ -21,7 +21,7 @@ public class LogService {
 	 */
 	public void addItemLog(long playerId, int reason,int sysId, int useCount, int leftCount) {
 		ItemLog temp = new ItemLog();
-		temp.setId(playerId);
+		temp.setPlayerId(playerId);
 		temp.setSysId(sysId);
 		temp.setReason(reason);
 		temp.setUseCount(useCount);
@@ -36,7 +36,7 @@ public class LogService {
 	 */
 	public void addPeanutLog(long playerId, int reason, int useCount, int leftCount) {
 		PeanutLog temp = new PeanutLog();
-		temp.setId(playerId);
+		temp.setPlayerId(playerId);
 		temp.setReason(reason);
 		temp.setUseCount(useCount);
 		temp.setLeftCount(leftCount);
