@@ -24,11 +24,11 @@ import com.su.core.game.enums.MultipleType;
 import com.su.core.game.enums.PlayerState;
 import com.su.core.game.enums.TableState;
 import com.su.core.game.enums.Team;
-import com.su.msg.Table.Quit_;
 import com.su.msg.TableMsg.MCard;
 import com.su.msg.TableMsg.MGamePlayer;
 import com.su.msg.TableMsg.MTable;
 import com.su.msg.TableMsg.NTableResult;
+import com.su.msg.TableMsg.TQuit;
 
 public abstract class Table implements Delayed {
 	protected Logger logger = LoggerFactory.getLogger(this.getClass());
@@ -615,7 +615,7 @@ public abstract class Table implements Delayed {
 			if (isInActi == 1) {
 				gamePlayer.getPlayerContext().setGamePlayer(null);
 				gamePlayer.setQuitState(2);
-				gamePlayer.getPlayerContext().write(Quit_.getDefaultInstance());
+				gamePlayer.getPlayerContext().write(TQuit.getDefaultInstance());
 			} else {
 				gamePlayer.setQuitState(1);
 			}

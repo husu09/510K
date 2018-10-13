@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component;
 import com.su.core.game.Card;
 import com.su.core.game.GamePlayer;
 import com.su.core.game.Table;
-import com.su.msg.Table._GamePlayer;
 import com.su.msg.TableMsg.MCard;
 import com.su.msg.TableMsg.MGamePlayer;
 import com.su.msg.TableMsg.MTable;

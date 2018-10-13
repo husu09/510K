@@ -1,0 +1,6 @@
+syntax = "proto2";
+option java_package = "com.su.msg";
+option csharp_namespace = "Assets.Scripts.Proto";
+option optimize_for = SPEED;
+
+
