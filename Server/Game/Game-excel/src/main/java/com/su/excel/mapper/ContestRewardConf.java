@@ -30,7 +30,7 @@ public class ContestRewardConf extends AbstractExcelMapper<ContestRewardCo> {
 		t.setId(rowData.getInt("id"));
 		t.setConstId(rowData.getInt("bsid"));
 		t.setRanking(rowData.getInt("mc"));
-		t.setReward(rowData.getGoods("jl"));
+		t.setReward(rowData.getItem("jl"));
 		return t;
 	}
 

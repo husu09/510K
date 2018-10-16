@@ -64,6 +64,71 @@ namespace Assets.Scripts.Proto
 
     }
 
+    [global::ProtoBuf.ProtoContract()]
+    public partial class RewardMo : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+        {
+            return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        }
+        public RewardMo()
+        {
+            OnConstructor();
+        }
+
+        partial void OnConstructor();
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"type")]
+        public int Type
+        {
+            get { return __pbn__Type.GetValueOrDefault(); }
+            set { __pbn__Type = value; }
+        }
+        public bool ShouldSerializeType()
+        {
+            return __pbn__Type != null;
+        }
+        public void ResetType()
+        {
+            __pbn__Type = null;
+        }
+        private int? __pbn__Type;
+
+        [global::ProtoBuf.ProtoMember(2)]
+        public int sysId
+        {
+            get { return __pbn__sysId.GetValueOrDefault(); }
+            set { __pbn__sysId = value; }
+        }
+        public bool ShouldSerializesysId()
+        {
+            return __pbn__sysId != null;
+        }
+        public void ResetsysId()
+        {
+            __pbn__sysId = null;
+        }
+        private int? __pbn__sysId;
+
+        [global::ProtoBuf.ProtoMember(3, Name = @"count")]
+        public int Count
+        {
+            get { return __pbn__Count.GetValueOrDefault(); }
+            set { __pbn__Count = value; }
+        }
+        public bool ShouldSerializeCount()
+        {
+            return __pbn__Count != null;
+        }
+        public void ResetCount()
+        {
+            __pbn__Count = null;
+        }
+        private int? __pbn__Count;
+
+    }
+
 }
 
 #pragma warning restore 1591, 0612, 3021

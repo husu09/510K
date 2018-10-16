@@ -1,6 +1,7 @@
 package com.su.client.core;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
@@ -26,6 +27,7 @@ import com.su.client.handler.ClearButtonHandler;
 import com.su.client.handler.ComboBoxHandler;
 import com.su.client.handler.LoginButtonHandler;
 import com.su.client.handler.SendButtonHandler;
+import com.su.client.handler.SupProtoBtnHandler;
 import com.su.client.proto.ProtoContext;
 import com.su.common.util.SpringUtil;
 
@@ -45,11 +47,13 @@ public class ClientUI {
 	private SendButtonHandler sendButtonHandler;
 	@Autowired
 	private ComboBoxHandler comboBoxHandler;
+	@Autowired
+	private SupProtoBtnHandler supProtoBtnHandler;
 
 	public void show() throws Exception {
 		// 窗口
 		JFrame frame = new JFrame();
-		frame.setSize(1000, 700);
+		frame.setSize(1200, 700);
 		frame.setLocationByPlatform(true);
 		UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 		frame.setLayout(new BorderLayout());
@@ -67,7 +71,7 @@ public class ClientUI {
 		// =========================
 		JPanel leftP = new JPanel();
 		leftP.setLayout(new GridLayout(1, 3));
-		leftP.setPreferredSize(new Dimension(460, 0));
+		leftP.setPreferredSize(new Dimension(690, 0));
 
 		// 左左
 		JPanel leftLeft = new JPanel();
@@ -109,6 +113,7 @@ public class ClientUI {
 		leftLeft.add(r3p);
 
 		// 第四行
+		/*
 		JPanel r4p = new JPanel();
 		JComboBox<String> jcb = new JComboBox<String>();
 		for (String superName : protoContext.getMessageListeSortMap().keySet()) {
@@ -117,14 +122,35 @@ public class ClientUI {
 		jcb.addActionListener(comboBoxHandler);
 		r4p.add(jcb);
 		leftLeft.add(r4p);
+		*/
 
 		// 左下
 		JPanel leftBelow = new JPanel();
 		leftBelow.setLayout(new FlowLayout(FlowLayout.RIGHT, 0, 0));
-		leftBelow.setPreferredSize(new Dimension(460 / 2, 550));
+		leftBelow.setPreferredSize(new Dimension(690 / 3, 550));
 		leftLeft.add(leftBelow);
 		leftP.add(leftLeft);
 		clientContext.setPanel(leftBelow);
+		
+		//左中
+		JPanel leftCenter = new JPanel();
+		leftCenter.setLayout(new BorderLayout());
+		JPanel lcp = new JPanel();
+		lcp.setLayout(new FlowLayout(FlowLayout.CENTER));
+		// 一定要给 FlowLayout 设置高度，否则滚动条显示不出来
+		lcp.setPreferredSize(new Dimension(690 / 3, 1080));
+		leftCenter.add(lcp);
+		JScrollPane lcsp = new JScrollPane(lcp);
+		lcsp.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		leftCenter.add(lcsp);
+		leftP.add(leftCenter);
+		// 协议
+		for (String superName : protoContext.getMessageListeSortMap().keySet()) {
+			JButton supProBut = new JButton(superName);
+			supProBut.setPreferredSize(new Dimension(180, 25));
+			supProBut.addActionListener(supProtoBtnHandler);
+			lcp.add(supProBut);
+		}
 		
 		// 左右
 		JPanel leftRight = new JPanel();
@@ -132,13 +158,15 @@ public class ClientUI {
 		JPanel lrp = new JPanel();
 		lrp.setLayout(new FlowLayout(FlowLayout.CENTER));
 		// 一定要给 FlowLayout 设置高度，否则滚动条显示不出来
-		lrp.setPreferredSize(new Dimension(460 / 2, 1080));
+		lrp.setPreferredSize(new Dimension(690 / 3, 1080));
 		leftRight.add(lrp);
 		JScrollPane jsp = new JScrollPane(lrp);
 		jsp.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		leftRight.add(jsp);
 		leftP.add(leftRight);
 		clientContext.setMsgPanel(lrp);
+		
+		
 
 		// =========================
 		// 右面板

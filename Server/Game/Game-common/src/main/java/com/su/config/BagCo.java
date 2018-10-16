@@ -1,6 +1,6 @@
 package com.su.config;
 
-import com.su.common.obj.Goods;
+import com.su.common.obj.Item;
 
 public class BagCo {
 	private int id;
@@ -19,7 +19,7 @@ public class BagCo {
 	/**
 	 * 使用效果
 	 */
-	private Goods useItem;
+	private Item useItem;
 	private int useNum;
 	/**
 	 * 有效期
@@ -54,10 +54,10 @@ public class BagCo {
 	public void setUseType(int useType) {
 		this.useType = useType;
 	}
-	public Goods getUseItem() {
+	public Item getUseItem() {
 		return useItem;
 	}
-	public void setUseItem(Goods useItem) {
+	public void setUseItem(Item useItem) {
 		this.useItem = useItem;
 	}
 	public int getUseNum() {

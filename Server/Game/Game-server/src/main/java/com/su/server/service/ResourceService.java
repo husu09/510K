@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.su.common.constant.SysAttr;
-import com.su.common.obj.Goods;
+import com.su.common.obj.Item;
 import com.su.common.po.Player;
 import com.su.core.context.PlayerContext;
 import com.su.core.data.DataService;
@@ -29,7 +29,7 @@ public class ResourceService {
 	/**
 	 * 添加资源
 	 */
-	public void add(PlayerContext playerContext, Goods item, int reason) {
+	public void add(PlayerContext playerContext, Item item, int reason) {
 		add(playerContext, item.getType(), item.getSysId(), item.getCount(), reason);
 	}
 
@@ -46,7 +46,7 @@ public class ResourceService {
 	/**
 	 * 扣除资源
 	 */
-	public boolean edd(PlayerContext playerContext, Goods item, int reason) {
+	public boolean edd(PlayerContext playerContext, Item item, int reason) {
 		return edd(playerContext, item.getType(), item.getSysId(), item.getCount(), reason);
 	}
 

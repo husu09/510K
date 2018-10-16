@@ -61,7 +61,7 @@ public class SendButtonHandler implements ActionListener {
 					String[] arr = tf.getText().split(",");
 					for (String s : arr) {
 						builder.getClass().getMethod("add" + ClientUtil.upperFirstCharacter(tf.getName()), String.class)
-						.invoke(builder, s);
+						.invoke(builder, s.trim());
 					}
 				}
 			}

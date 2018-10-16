@@ -19,7 +19,7 @@ public class RankingConf extends AbstractExcelMapper<RankingCo> {
 		RankingCo t = new RankingCo();
 		t.setId(rowData.getInt("id"));
 		t.setRiseScore(rowData.getInt("jqfs"));
-		t.setReward(rowData.getGoods("dwjl"));
+		t.setReward(rowData.getItem("dwjl"));
 		t.setEddScoreRate(rowData.getInt("kfb"));
 		return t;
 	}

@@ -1,9 +1,12 @@
 package com.su.excel.mapper;
 
+import org.springframework.stereotype.Component;
+
 import com.su.config.RoleCo;
 import com.su.excel.core.AbstractExcelMapper;
 import com.su.excel.core.RowData;
 
+@Component
 public class RoleConf extends AbstractExcelMapper<RoleCo> {
 
 	@Override
@@ -26,7 +29,7 @@ public class RoleConf extends AbstractExcelMapper<RoleCo> {
 		co.setZhaDanDF(rowData.getInt("zddf"));
 		co.setWskDF(rowData.getInt("wskdf"));
 		co.setWangZhaDF(rowData.getInt("wzdf"));
-		return null;
+		return co;
 	}
 
 }

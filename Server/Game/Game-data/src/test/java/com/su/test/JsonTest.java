@@ -8,10 +8,13 @@ import org.hibernate.engine.transaction.jta.platform.internal.SynchronizationReg
 import org.junit.Test;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.TypeReference;
 import com.alibaba.fastjson.serializer.JSONSerializer;
 import com.alibaba.fastjson.serializer.PropertyPreFilter;
 import com.alibaba.fastjson.serializer.SerializeConfig;
 import com.alibaba.fastjson.serializer.SerializerFeature;
+import com.su.common.obj.Role;
 import com.su.common.po.PlayerDetail;
 import com.su.common.util.CustomConvert;
 
@@ -67,5 +70,40 @@ public class JsonTest {
 		System.out.println(str);
 	}
 	
+	@Test
+	public void mapTest() {
+		Role role = new Role();
+		role.setRid(1001);
+		Map<Integer, Role> map = new HashMap<>();
+		map.put(role.getRid(), role);
+		
+		String str = JSON.toJSONString(map, true);
+		
+		Map<Integer, JSONObject> aftMap =  (Map<Integer, JSONObject>) JSON.parse(str);
+		
+		JSONObject jsonObj = aftMap.get(1001);
+		
+		role = jsonObj.toJavaObject(Role.class);
+		
+		System.out.println(role);
+	}
+	
+	@Test
+	public void mapTest2() {
+		Role role = new Role();
+		role.setRid(1001);
+		Map<Integer, Role> map = new HashMap<>();
+		map.put(role.getRid(), role);
+		
+		String str = JSON.toJSONString(map, true);
+		
+		Map<Integer, Role> aftMap =  JSON.parseObject(str, new TypeReference<Map<Integer, Role>>(){
+			
+		});
+		
+		role = aftMap.get(1001);
+		
+		System.out.println(role);
+	}
 	
 }

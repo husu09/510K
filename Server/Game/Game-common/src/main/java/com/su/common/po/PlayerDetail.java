@@ -11,9 +11,11 @@ import javax.persistence.Id;
 import javax.persistence.Transient;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
 import com.su.common.data.Cache;
 import com.su.common.obj.Grid;
 import com.su.common.obj.Role;
+import com.su.common.util.CustomConvert;
 
 @Cache
 @Entity
@@ -38,7 +40,7 @@ public class PlayerDetail implements Serializable {
 	private Map<Integer, Role> roleMap;
 	public Map<Integer, Role> getRoleMap() {
 		if (roleMap == null) {
-			roleMap = (Map<Integer, Role>) JSON.parse(roleData);
+			roleMap = JSON.parseObject(roleData, new TypeReference<Map<Integer, Role>>() {});
 			if (roleMap == null)
 				roleMap = new HashMap<>();
 		}
@@ -46,6 +48,24 @@ public class PlayerDetail implements Serializable {
 	}
 	public void updateRoleData() {
 		roleData = JSON.toJSONString(getRoleMap());
+	}
+	
+	/**
+	 * 寻宝
+	 * */
+	private String xunBaoData;
+	@Transient
+	private Map<Integer,Long> xunBaoMap;
+	public Map<Integer,Long> getXunBaoMap() {
+		if (xunBaoMap == null) {
+			xunBaoMap = JSON.parseObject(xunBaoData, new TypeReference<Map<Integer,Long>>(){});
+			if (xunBaoMap == null)
+				xunBaoMap = new HashMap<>();
+		}
+		return xunBaoMap;
+	}
+	public void updateXunBaoData() {
+		xunBaoData = JSON.toJSONString(getXunBaoMap());
 	}
 	
 	/**

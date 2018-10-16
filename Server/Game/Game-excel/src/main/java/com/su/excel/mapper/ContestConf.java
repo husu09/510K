@@ -22,7 +22,7 @@ public class ContestConf extends AbstractExcelMapper<ContestCo> {
 		t.setAddedScore(rowData.getInt("dfzl"));
 		t.setContestNum(rowData.getInt("csbss"));
 		t.setInitScore(rowData.getInt("csjf"));
-		t.setCost(rowData.getGoods("bmxh"));
+		t.setCost(rowData.getItem("bmxh"));
 		t.setPlayerNum(rowData.getInt("csrs"));
 		return t;
 	}

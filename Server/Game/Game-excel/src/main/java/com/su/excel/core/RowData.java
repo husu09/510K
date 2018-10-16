@@ -3,7 +3,7 @@ package com.su.excel.core;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.su.common.obj.Goods;
+import com.su.common.obj.Item;
 import com.su.common.util.ParseUtil;
 
 /**
@@ -29,8 +29,8 @@ public class RowData {
 		return ParseUtil.getBoolean(data.get(key));
 	}
 
-	public Goods getGoods(String key) {
-		return ParseUtil.getGoods(data.get(key));
+	public Item getItem(String key) {
+		return ParseUtil.getItem(data.get(key));
 	}
 	
 	public int[] getIntArr(String key) {

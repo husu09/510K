@@ -1,6 +1,6 @@
 package com.su.config;
 
-import com.su.common.obj.Goods;
+import com.su.common.obj.Item;
 
 public class ContestRewardCo {
 	private int id;
@@ -15,7 +15,7 @@ public class ContestRewardCo {
 	/**
 	 * 排名
 	 * */
-	private Goods reward;
+	private Item reward;
 	public int getId() {
 		return id;
 	}
@@ -34,10 +34,10 @@ public class ContestRewardCo {
 	public void setRanking(int ranking) {
 		this.ranking = ranking;
 	}
-	public Goods getReward() {
+	public Item getReward() {
 		return reward;
 	}
-	public void setReward(Goods reward) {
+	public void setReward(Item reward) {
 		this.reward = reward;
 	}
 	

@@ -1,6 +1,6 @@
 package com.su.config;
 
-import com.su.common.obj.Goods;
+import com.su.common.obj.Item;
 
 public class ContestCo {
 	private int id;
@@ -23,7 +23,7 @@ public class ContestCo {
 	/**
 	 * 报名消耗
 	 * */
-	private Goods Cost;
+	private Item Cost;
 	/**
 	 * 报名人数
 	 * */
@@ -58,10 +58,10 @@ public class ContestCo {
 	public void setInitScore(int initScore) {
 		this.initScore = initScore;
 	}
-	public Goods getCost() {
+	public Item getCost() {
 		return Cost;
 	}
-	public void setCost(Goods cost) {
+	public void setCost(Item cost) {
 		Cost = cost;
 	}
 	public int getPlayerNum() {

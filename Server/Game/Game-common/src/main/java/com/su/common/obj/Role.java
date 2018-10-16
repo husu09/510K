@@ -1,16 +1,18 @@
 package com.su.common.obj;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 public class Role {
 	/**
 	 * 角色id
 	 * */
-	private int cid;
+	private int rid;
 	/**
 	 * 当前经验
 	 * */
 	private int currExp;
 	/**
-	 * 类型 1：过期时间，2：过期局数，3：永久
+	 * 有效类型 0：永久，1：过期时间，2：过期局数，
 	 * */
 	private int effType;
 	private long effValue;
@@ -18,20 +20,24 @@ public class Role {
 	/**
 	 * 角色是否有效
 	 * */
+	@JSONField(serialize = false)
 	public boolean isEff() {
-		if (effType == 1)
+		if (effType == 0)
 			return true;
 		if (effValue > 0)
 			return true;
 		return false;
 	}
 	
-	public int getCid() {
-		return cid;
+	public int getRid() {
+		return rid;
 	}
-	public void setCid(int cid) {
-		this.cid = cid;
+
+	public void setRid(int rid) {
+		this.rid = rid;
 	}
+
+
 	public int getCurrExp() {
 		return currExp;
 	}

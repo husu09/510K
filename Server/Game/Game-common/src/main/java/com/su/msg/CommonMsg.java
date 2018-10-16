@@ -1248,6 +1248,750 @@ public final class CommonMsg {
 
   }
 
+  public interface RewardMoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:RewardMo)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     * 类型
+     * </pre>
+     *
+     * <code>optional int32 type = 1;</code>
+     */
+    boolean hasType();
+    /**
+     * <pre>
+     * 类型
+     * </pre>
+     *
+     * <code>optional int32 type = 1;</code>
+     */
+    int getType();
+
+    /**
+     * <pre>
+     * id
+     * </pre>
+     *
+     * <code>optional int32 sysId = 2;</code>
+     */
+    boolean hasSysId();
+    /**
+     * <pre>
+     * id
+     * </pre>
+     *
+     * <code>optional int32 sysId = 2;</code>
+     */
+    int getSysId();
+
+    /**
+     * <pre>
+     * 数量
+     * </pre>
+     *
+     * <code>optional int32 count = 3;</code>
+     */
+    boolean hasCount();
+    /**
+     * <pre>
+     * 数量
+     * </pre>
+     *
+     * <code>optional int32 count = 3;</code>
+     */
+    int getCount();
+  }
+  /**
+   * <pre>
+   * 奖励通知
+   * </pre>
+   *
+   * Protobuf type {@code RewardMo}
+   */
+  public  static final class RewardMo extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:RewardMo)
+      RewardMoOrBuilder {
+    // Use RewardMo.newBuilder() to construct.
+    private RewardMo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private RewardMo() {
+      type_ = 0;
+      sysId_ = 0;
+      count_ = 0;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private RewardMo(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              type_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              sysId_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              count_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.su.msg.CommonMsg.internal_static_RewardMo_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.su.msg.CommonMsg.internal_static_RewardMo_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.su.msg.CommonMsg.RewardMo.class, com.su.msg.CommonMsg.RewardMo.Builder.class);
+    }
+
+    private int bitField0_;
+    public static final int TYPE_FIELD_NUMBER = 1;
+    private int type_;
+    /**
+     * <pre>
+     * 类型
+     * </pre>
+     *
+     * <code>optional int32 type = 1;</code>
+     */
+    public boolean hasType() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <pre>
+     * 类型
+     * </pre>
+     *
+     * <code>optional int32 type = 1;</code>
+     */
+    public int getType() {
+      return type_;
+    }
+
+    public static final int SYSID_FIELD_NUMBER = 2;
+    private int sysId_;
+    /**
+     * <pre>
+     * id
+     * </pre>
+     *
+     * <code>optional int32 sysId = 2;</code>
+     */
+    public boolean hasSysId() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <pre>
+     * id
+     * </pre>
+     *
+     * <code>optional int32 sysId = 2;</code>
+     */
+    public int getSysId() {
+      return sysId_;
+    }
+
+    public static final int COUNT_FIELD_NUMBER = 3;
+    private int count_;
+    /**
+     * <pre>
+     * 数量
+     * </pre>
+     *
+     * <code>optional int32 count = 3;</code>
+     */
+    public boolean hasCount() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <pre>
+     * 数量
+     * </pre>
+     *
+     * <code>optional int32 count = 3;</code>
+     */
+    public int getCount() {
+      return count_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, type_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, sysId_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, count_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, type_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, sysId_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, count_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.su.msg.CommonMsg.RewardMo)) {
+        return super.equals(obj);
+      }
+      com.su.msg.CommonMsg.RewardMo other = (com.su.msg.CommonMsg.RewardMo) obj;
+
+      boolean result = true;
+      result = result && (hasType() == other.hasType());
+      if (hasType()) {
+        result = result && (getType()
+            == other.getType());
+      }
+      result = result && (hasSysId() == other.hasSysId());
+      if (hasSysId()) {
+        result = result && (getSysId()
+            == other.getSysId());
+      }
+      result = result && (hasCount() == other.hasCount());
+      if (hasCount()) {
+        result = result && (getCount()
+            == other.getCount());
+      }
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasType()) {
+        hash = (37 * hash) + TYPE_FIELD_NUMBER;
+        hash = (53 * hash) + getType();
+      }
+      if (hasSysId()) {
+        hash = (37 * hash) + SYSID_FIELD_NUMBER;
+        hash = (53 * hash) + getSysId();
+      }
+      if (hasCount()) {
+        hash = (37 * hash) + COUNT_FIELD_NUMBER;
+        hash = (53 * hash) + getCount();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.su.msg.CommonMsg.RewardMo parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.su.msg.CommonMsg.RewardMo parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.su.msg.CommonMsg.RewardMo parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.su.msg.CommonMsg.RewardMo parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.su.msg.CommonMsg.RewardMo parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.su.msg.CommonMsg.RewardMo parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.su.msg.CommonMsg.RewardMo parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.su.msg.CommonMsg.RewardMo parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.su.msg.CommonMsg.RewardMo parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.su.msg.CommonMsg.RewardMo parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.su.msg.CommonMsg.RewardMo prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     * 奖励通知
+     * </pre>
+     *
+     * Protobuf type {@code RewardMo}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:RewardMo)
+        com.su.msg.CommonMsg.RewardMoOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.su.msg.CommonMsg.internal_static_RewardMo_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.su.msg.CommonMsg.internal_static_RewardMo_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.su.msg.CommonMsg.RewardMo.class, com.su.msg.CommonMsg.RewardMo.Builder.class);
+      }
+
+      // Construct using com.su.msg.CommonMsg.RewardMo.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        type_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        sysId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        count_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.su.msg.CommonMsg.internal_static_RewardMo_descriptor;
+      }
+
+      public com.su.msg.CommonMsg.RewardMo getDefaultInstanceForType() {
+        return com.su.msg.CommonMsg.RewardMo.getDefaultInstance();
+      }
+
+      public com.su.msg.CommonMsg.RewardMo build() {
+        com.su.msg.CommonMsg.RewardMo result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.su.msg.CommonMsg.RewardMo buildPartial() {
+        com.su.msg.CommonMsg.RewardMo result = new com.su.msg.CommonMsg.RewardMo(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.type_ = type_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.sysId_ = sysId_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.count_ = count_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.su.msg.CommonMsg.RewardMo) {
+          return mergeFrom((com.su.msg.CommonMsg.RewardMo)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.su.msg.CommonMsg.RewardMo other) {
+        if (other == com.su.msg.CommonMsg.RewardMo.getDefaultInstance()) return this;
+        if (other.hasType()) {
+          setType(other.getType());
+        }
+        if (other.hasSysId()) {
+          setSysId(other.getSysId());
+        }
+        if (other.hasCount()) {
+          setCount(other.getCount());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.su.msg.CommonMsg.RewardMo parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.su.msg.CommonMsg.RewardMo) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private int type_ ;
+      /**
+       * <pre>
+       * 类型
+       * </pre>
+       *
+       * <code>optional int32 type = 1;</code>
+       */
+      public boolean hasType() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <pre>
+       * 类型
+       * </pre>
+       *
+       * <code>optional int32 type = 1;</code>
+       */
+      public int getType() {
+        return type_;
+      }
+      /**
+       * <pre>
+       * 类型
+       * </pre>
+       *
+       * <code>optional int32 type = 1;</code>
+       */
+      public Builder setType(int value) {
+        bitField0_ |= 0x00000001;
+        type_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 类型
+       * </pre>
+       *
+       * <code>optional int32 type = 1;</code>
+       */
+      public Builder clearType() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        type_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int sysId_ ;
+      /**
+       * <pre>
+       * id
+       * </pre>
+       *
+       * <code>optional int32 sysId = 2;</code>
+       */
+      public boolean hasSysId() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <pre>
+       * id
+       * </pre>
+       *
+       * <code>optional int32 sysId = 2;</code>
+       */
+      public int getSysId() {
+        return sysId_;
+      }
+      /**
+       * <pre>
+       * id
+       * </pre>
+       *
+       * <code>optional int32 sysId = 2;</code>
+       */
+      public Builder setSysId(int value) {
+        bitField0_ |= 0x00000002;
+        sysId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * id
+       * </pre>
+       *
+       * <code>optional int32 sysId = 2;</code>
+       */
+      public Builder clearSysId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        sysId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int count_ ;
+      /**
+       * <pre>
+       * 数量
+       * </pre>
+       *
+       * <code>optional int32 count = 3;</code>
+       */
+      public boolean hasCount() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <pre>
+       * 数量
+       * </pre>
+       *
+       * <code>optional int32 count = 3;</code>
+       */
+      public int getCount() {
+        return count_;
+      }
+      /**
+       * <pre>
+       * 数量
+       * </pre>
+       *
+       * <code>optional int32 count = 3;</code>
+       */
+      public Builder setCount(int value) {
+        bitField0_ |= 0x00000004;
+        count_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * 数量
+       * </pre>
+       *
+       * <code>optional int32 count = 3;</code>
+       */
+      public Builder clearCount() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        count_ = 0;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:RewardMo)
+    }
+
+    // @@protoc_insertion_point(class_scope:RewardMo)
+    private static final com.su.msg.CommonMsg.RewardMo DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.su.msg.CommonMsg.RewardMo();
+    }
+
+    public static com.su.msg.CommonMsg.RewardMo getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<RewardMo>
+        PARSER = new com.google.protobuf.AbstractParser<RewardMo>() {
+      public RewardMo parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new RewardMo(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<RewardMo> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<RewardMo> getParserForType() {
+      return PARSER;
+    }
+
+    public com.su.msg.CommonMsg.RewardMo getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_NError_descriptor;
   private static final 
@@ -1258,6 +2002,11 @@ public final class CommonMsg {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_CMD_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_RewardMo_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_RewardMo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1269,8 +2018,9 @@ public final class CommonMsg {
     java.lang.String[] descriptorData = {
       "\n\017CommonMsg.proto\"/\n\006NError\022\021\n\terrorCode" +
       "\030\001 \001(\005\022\022\n\nparameters\030\002 \003(\t\"\031\n\003CMD\022\022\n\npar" +
-      "ameters\030\001 \003(\tB%\n\ncom.su.msgH\001\252\002\024Assets.S" +
-      "cripts.Proto"
+      "ameters\030\001 \003(\t\"6\n\010RewardMo\022\014\n\004type\030\001 \001(\005\022" +
+      "\r\n\005sysId\030\002 \001(\005\022\r\n\005count\030\003 \001(\005B%\n\ncom.su." +
+      "msgH\001\252\002\024Assets.Scripts.Proto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1296,6 +2046,12 @@ public final class CommonMsg {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CMD_descriptor,
         new java.lang.String[] { "Parameters", });
+    internal_static_RewardMo_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_RewardMo_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_RewardMo_descriptor,
+        new java.lang.String[] { "Type", "SysId", "Count", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

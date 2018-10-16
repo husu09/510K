@@ -1,6 +1,6 @@
 package com.su.config;
 
-import com.su.common.obj.Goods;
+import com.su.common.obj.Item;
 
 public class RankingCo {
 	private int id;
@@ -11,7 +11,7 @@ public class RankingCo {
 	/**
 	 * 段位奖励
 	 * */
-	private Goods reward;
+	private Item reward;
 	/**
 	 * 扣分比
 	 * */
@@ -29,10 +29,10 @@ public class RankingCo {
 	public void setRiseScore(int riseScore) {
 		this.riseScore = riseScore;
 	}
-	public Goods getReward() {
+	public Item getReward() {
 		return reward;
 	}
-	public void setReward(Goods reward) {
+	public void setReward(Item reward) {
 		this.reward = reward;
 	}
 	public int getEddScoreRate() {

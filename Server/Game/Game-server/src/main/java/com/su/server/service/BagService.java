@@ -193,6 +193,7 @@ public class BagService extends GameEventAdapter {
 			count = 0;
 		}
 		grid.setCount(addCount);
+		grid.setEffType(bagCo.getEffTyep());
 		if (bagCo.getEffTyep() == BagConst.EFF_TYPE_TIME)
 			grid.setEffValue(TimeUtil.getCurrTime() + bagCo.getEffValue() * TimeUtil.ONE_DAY);
 		else if (bagCo.getEffTyep() == BagConst.EFF_TYPE_COUNT)
@@ -221,6 +222,7 @@ public class BagService extends GameEventAdapter {
 		grid.setCount(grid.getCount() - count);
 		// 通知
 		if (grid.getCount() <= 0) {
+			playerDetail.getGridList().remove(index);
 			DeleteItemNo.Builder deleteItem_ = DeleteItemNo.newBuilder();
 			deleteItem_.addIndex(index);
 			playerContext.write(deleteItem_);

@@ -9,10 +9,11 @@ import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
-import com.su.common.obj.Goods;
+import com.su.common.obj.Item;
 import com.su.core.action.Action;
 import com.su.core.context.PlayerContext;
 import com.su.msg.CommonMsg.CMD;
+import com.su.msg.RoleMsg.UpRole;
 import com.su.server.service.ResourceService;
 
 @Controller
@@ -20,6 +21,8 @@ public class CMDControl {
 
 	@Autowired
 	private ResourceService resourceService;
+	@Autowired
+	private RoleControl roleControl;
 	
 	
 	private Map<String, Method> methodMap = new HashMap<>();
@@ -70,7 +73,7 @@ public class CMDControl {
 	 * 添加物品
 	 * */
 	private void addItem(PlayerContext playerContext, int type, int sysId, int count) {
-		Goods item = new Goods();
+		Item item = new Item();
 		item.setType(type);
 		item.setSysId(sysId);
 		item.setCount(count);
@@ -81,10 +84,20 @@ public class CMDControl {
 	 * 扣除物品
 	 * */
 	private void eddItem(PlayerContext playerContext, int type, int sysId, int count) {
-		Goods item = new Goods();
+		Item item = new Item();
 		item.setType(type);
 		item.setSysId(sysId);
 		item.setCount(count);
 		resourceService.edd(playerContext, item, 2000);
+	}
+	
+	/**
+	 * 升级角色
+	 * */
+	private void upRole(PlayerContext ctx,int rid, int index, int count) {
+		UpRole.Builder upRole = UpRole.newBuilder();
+		upRole.setRid(rid);
+		upRole.putCost(index, count);
+		roleControl.upRole(ctx, upRole.build());
 	}
 }

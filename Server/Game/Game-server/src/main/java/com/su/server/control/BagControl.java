@@ -16,6 +16,7 @@ import com.su.msg.BagMsg.UseItem;
 import com.su.server.service.BagService;
 import com.su.server.service.PlayerService;
 import com.su.server.service.ResourceService;
+import com.su.server.service.RoleService;
 
 @Controller
 public class BagControl {
@@ -28,6 +29,8 @@ public class BagControl {
 	private BagService bagService;
 	@Autowired
 	private PlayerService playerService;
+	@Autowired
+	private RoleService roleService;
 	
 	@Action
 	public void getBag(PlayerContext ctx, GetBag req) {
@@ -56,7 +59,8 @@ public class BagControl {
 			return;
 		}
 		// 道具是否能使用
-		if (grid.getType() != BagConst.TYPE_6) {
+		if (grid.getType() != BagConst.TYPE_GIFT
+				&& grid.getType() != BagConst.TYPE_ROLE) {
 			ctx.sendError(4002);
 			return;
 		}
@@ -66,8 +70,10 @@ public class BagControl {
 			return;
 		}
 		// 使用效果
-		if (grid.getType() == BagConst.TYPE_6) {
+		if (grid.getType() == BagConst.TYPE_GIFT) {
 			resourceService.add(ctx, bagCo.getUseItem(), 1003);
+		} else if (grid.getType() == BagConst.TYPE_ROLE) {
+			roleService.addRole(ctx, bagCo);
 		}
 	}
 }
