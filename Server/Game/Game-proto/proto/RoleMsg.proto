@@ -3,4 +3,20 @@ option java_package = "com.su.msg";
 option csharp_namespace = "Assets.Scripts.Proto";
 option optimize_for = SPEED;
 
+// 角色信息
+message RoleMo {
+	optional int32 cid = 1;			// 配置表id
+	optional int32 exp = 2;			// 当前经验
+}
 
+// 获取角色信息
+message GetRole {}
+message GetRoleTo {
+	optional RoleMo role = 1;
+}
+
+// 升级角色
+message UpRole {
+	optional int32 cid = 1;			// 配置表id
+}
+message UpRoleTo {}

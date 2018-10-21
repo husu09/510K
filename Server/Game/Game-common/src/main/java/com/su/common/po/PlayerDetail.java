@@ -2,7 +2,9 @@ package com.su.common.po;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,6 +13,7 @@ import javax.persistence.Transient;
 import com.alibaba.fastjson.JSON;
 import com.su.common.data.Cache;
 import com.su.common.obj.Grid;
+import com.su.common.obj.Role;
 
 @Cache
 @Entity
@@ -28,6 +31,24 @@ public class PlayerDetail implements Serializable {
 	private List<Grid> gridList;
 	
 	/**
+	 * 角色
+	 * */
+	private String roleData;
+	@Transient
+	private Map<Integer, Role> roleMap;
+	public Map<Integer, Role> getRoleMap() {
+		if (roleMap == null) {
+			roleMap = (Map<Integer, Role>) JSON.parse(roleData);
+			if (roleMap == null)
+				roleMap = new HashMap<>();
+		}
+		return roleMap;
+	}
+	public void updateRoleData() {
+		roleData = JSON.toJSONString(getRoleMap());
+	}
+	
+	/**
 	 * 连胜次数
 	 * */
 	private int continueWinCount;
@@ -43,6 +64,14 @@ public class PlayerDetail implements Serializable {
 	public long getId() {
 		return id;
 	}
+	
+	public int getContinueWinCount() {
+		return continueWinCount;
+	}
+
+	public void setContinueWinCount(int continueWinCount) {
+		this.continueWinCount = continueWinCount;
+	}
 
 	public List<Grid> getGridList() {
 		if (gridList == null) {
@@ -57,15 +86,6 @@ public class PlayerDetail implements Serializable {
 	public void updateBagData() {
 		bagData = JSON.toJSONString(getGridList());
 	}
-
-	public int getContinueWinCount() {
-		return continueWinCount;
-	}
-
-	public void setContinueWinCount(int continueWinCount) {
-		this.continueWinCount = continueWinCount;
-	}
-	
 	
 
 }
