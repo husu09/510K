@@ -2247,24 +2247,24 @@ public final class XunBaoMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .RewardMo reward = 1;</code>
+     * <code>repeated .ItemMo reward = 1;</code>
      */
-    java.util.List<com.su.msg.CommonMsg.RewardMo> 
+    java.util.List<com.su.msg.CommonMsg.ItemMo> 
         getRewardList();
     /**
      * <pre>
      * 奖励
      * </pre>
      *
-     * <code>repeated .RewardMo reward = 1;</code>
+     * <code>repeated .ItemMo reward = 1;</code>
      */
-    com.su.msg.CommonMsg.RewardMo getReward(int index);
+    com.su.msg.CommonMsg.ItemMo getReward(int index);
     /**
      * <pre>
      * 奖励
      * </pre>
      *
-     * <code>repeated .RewardMo reward = 1;</code>
+     * <code>repeated .ItemMo reward = 1;</code>
      */
     int getRewardCount();
     /**
@@ -2272,18 +2272,18 @@ public final class XunBaoMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .RewardMo reward = 1;</code>
+     * <code>repeated .ItemMo reward = 1;</code>
      */
-    java.util.List<? extends com.su.msg.CommonMsg.RewardMoOrBuilder> 
+    java.util.List<? extends com.su.msg.CommonMsg.ItemMoOrBuilder> 
         getRewardOrBuilderList();
     /**
      * <pre>
      * 奖励
      * </pre>
      *
-     * <code>repeated .RewardMo reward = 1;</code>
+     * <code>repeated .ItemMo reward = 1;</code>
      */
-    com.su.msg.CommonMsg.RewardMoOrBuilder getRewardOrBuilder(
+    com.su.msg.CommonMsg.ItemMoOrBuilder getRewardOrBuilder(
         int index);
   }
   /**
@@ -2331,11 +2331,11 @@ public final class XunBaoMsg {
             }
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                reward_ = new java.util.ArrayList<com.su.msg.CommonMsg.RewardMo>();
+                reward_ = new java.util.ArrayList<com.su.msg.CommonMsg.ItemMo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               reward_.add(
-                  input.readMessage(com.su.msg.CommonMsg.RewardMo.PARSER, extensionRegistry));
+                  input.readMessage(com.su.msg.CommonMsg.ItemMo.PARSER, extensionRegistry));
               break;
             }
           }
@@ -2366,15 +2366,15 @@ public final class XunBaoMsg {
     }
 
     public static final int REWARD_FIELD_NUMBER = 1;
-    private java.util.List<com.su.msg.CommonMsg.RewardMo> reward_;
+    private java.util.List<com.su.msg.CommonMsg.ItemMo> reward_;
     /**
      * <pre>
      * 奖励
      * </pre>
      *
-     * <code>repeated .RewardMo reward = 1;</code>
+     * <code>repeated .ItemMo reward = 1;</code>
      */
-    public java.util.List<com.su.msg.CommonMsg.RewardMo> getRewardList() {
+    public java.util.List<com.su.msg.CommonMsg.ItemMo> getRewardList() {
       return reward_;
     }
     /**
@@ -2382,9 +2382,9 @@ public final class XunBaoMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .RewardMo reward = 1;</code>
+     * <code>repeated .ItemMo reward = 1;</code>
      */
-    public java.util.List<? extends com.su.msg.CommonMsg.RewardMoOrBuilder> 
+    public java.util.List<? extends com.su.msg.CommonMsg.ItemMoOrBuilder> 
         getRewardOrBuilderList() {
       return reward_;
     }
@@ -2393,7 +2393,7 @@ public final class XunBaoMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .RewardMo reward = 1;</code>
+     * <code>repeated .ItemMo reward = 1;</code>
      */
     public int getRewardCount() {
       return reward_.size();
@@ -2403,9 +2403,9 @@ public final class XunBaoMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .RewardMo reward = 1;</code>
+     * <code>repeated .ItemMo reward = 1;</code>
      */
-    public com.su.msg.CommonMsg.RewardMo getReward(int index) {
+    public com.su.msg.CommonMsg.ItemMo getReward(int index) {
       return reward_.get(index);
     }
     /**
@@ -2413,9 +2413,9 @@ public final class XunBaoMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .RewardMo reward = 1;</code>
+     * <code>repeated .ItemMo reward = 1;</code>
      */
-    public com.su.msg.CommonMsg.RewardMoOrBuilder getRewardOrBuilder(
+    public com.su.msg.CommonMsg.ItemMoOrBuilder getRewardOrBuilder(
         int index) {
       return reward_.get(index);
     }
@@ -2733,26 +2733,26 @@ public final class XunBaoMsg {
       }
       private int bitField0_;
 
-      private java.util.List<com.su.msg.CommonMsg.RewardMo> reward_ =
+      private java.util.List<com.su.msg.CommonMsg.ItemMo> reward_ =
         java.util.Collections.emptyList();
       private void ensureRewardIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          reward_ = new java.util.ArrayList<com.su.msg.CommonMsg.RewardMo>(reward_);
+          reward_ = new java.util.ArrayList<com.su.msg.CommonMsg.ItemMo>(reward_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.su.msg.CommonMsg.RewardMo, com.su.msg.CommonMsg.RewardMo.Builder, com.su.msg.CommonMsg.RewardMoOrBuilder> rewardBuilder_;
+          com.su.msg.CommonMsg.ItemMo, com.su.msg.CommonMsg.ItemMo.Builder, com.su.msg.CommonMsg.ItemMoOrBuilder> rewardBuilder_;
 
       /**
        * <pre>
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
-      public java.util.List<com.su.msg.CommonMsg.RewardMo> getRewardList() {
+      public java.util.List<com.su.msg.CommonMsg.ItemMo> getRewardList() {
         if (rewardBuilder_ == null) {
           return java.util.Collections.unmodifiableList(reward_);
         } else {
@@ -2764,7 +2764,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
       public int getRewardCount() {
         if (rewardBuilder_ == null) {
@@ -2778,9 +2778,9 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
-      public com.su.msg.CommonMsg.RewardMo getReward(int index) {
+      public com.su.msg.CommonMsg.ItemMo getReward(int index) {
         if (rewardBuilder_ == null) {
           return reward_.get(index);
         } else {
@@ -2792,10 +2792,10 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
       public Builder setReward(
-          int index, com.su.msg.CommonMsg.RewardMo value) {
+          int index, com.su.msg.CommonMsg.ItemMo value) {
         if (rewardBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2813,10 +2813,10 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
       public Builder setReward(
-          int index, com.su.msg.CommonMsg.RewardMo.Builder builderForValue) {
+          int index, com.su.msg.CommonMsg.ItemMo.Builder builderForValue) {
         if (rewardBuilder_ == null) {
           ensureRewardIsMutable();
           reward_.set(index, builderForValue.build());
@@ -2831,9 +2831,9 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
-      public Builder addReward(com.su.msg.CommonMsg.RewardMo value) {
+      public Builder addReward(com.su.msg.CommonMsg.ItemMo value) {
         if (rewardBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2851,10 +2851,10 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
       public Builder addReward(
-          int index, com.su.msg.CommonMsg.RewardMo value) {
+          int index, com.su.msg.CommonMsg.ItemMo value) {
         if (rewardBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2872,10 +2872,10 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
       public Builder addReward(
-          com.su.msg.CommonMsg.RewardMo.Builder builderForValue) {
+          com.su.msg.CommonMsg.ItemMo.Builder builderForValue) {
         if (rewardBuilder_ == null) {
           ensureRewardIsMutable();
           reward_.add(builderForValue.build());
@@ -2890,10 +2890,10 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
       public Builder addReward(
-          int index, com.su.msg.CommonMsg.RewardMo.Builder builderForValue) {
+          int index, com.su.msg.CommonMsg.ItemMo.Builder builderForValue) {
         if (rewardBuilder_ == null) {
           ensureRewardIsMutable();
           reward_.add(index, builderForValue.build());
@@ -2908,10 +2908,10 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
       public Builder addAllReward(
-          java.lang.Iterable<? extends com.su.msg.CommonMsg.RewardMo> values) {
+          java.lang.Iterable<? extends com.su.msg.CommonMsg.ItemMo> values) {
         if (rewardBuilder_ == null) {
           ensureRewardIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2927,7 +2927,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
       public Builder clearReward() {
         if (rewardBuilder_ == null) {
@@ -2944,7 +2944,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
       public Builder removeReward(int index) {
         if (rewardBuilder_ == null) {
@@ -2961,9 +2961,9 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
-      public com.su.msg.CommonMsg.RewardMo.Builder getRewardBuilder(
+      public com.su.msg.CommonMsg.ItemMo.Builder getRewardBuilder(
           int index) {
         return getRewardFieldBuilder().getBuilder(index);
       }
@@ -2972,9 +2972,9 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
-      public com.su.msg.CommonMsg.RewardMoOrBuilder getRewardOrBuilder(
+      public com.su.msg.CommonMsg.ItemMoOrBuilder getRewardOrBuilder(
           int index) {
         if (rewardBuilder_ == null) {
           return reward_.get(index);  } else {
@@ -2986,9 +2986,9 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
-      public java.util.List<? extends com.su.msg.CommonMsg.RewardMoOrBuilder> 
+      public java.util.List<? extends com.su.msg.CommonMsg.ItemMoOrBuilder> 
            getRewardOrBuilderList() {
         if (rewardBuilder_ != null) {
           return rewardBuilder_.getMessageOrBuilderList();
@@ -3001,41 +3001,41 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
-      public com.su.msg.CommonMsg.RewardMo.Builder addRewardBuilder() {
+      public com.su.msg.CommonMsg.ItemMo.Builder addRewardBuilder() {
         return getRewardFieldBuilder().addBuilder(
-            com.su.msg.CommonMsg.RewardMo.getDefaultInstance());
+            com.su.msg.CommonMsg.ItemMo.getDefaultInstance());
       }
       /**
        * <pre>
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
-      public com.su.msg.CommonMsg.RewardMo.Builder addRewardBuilder(
+      public com.su.msg.CommonMsg.ItemMo.Builder addRewardBuilder(
           int index) {
         return getRewardFieldBuilder().addBuilder(
-            index, com.su.msg.CommonMsg.RewardMo.getDefaultInstance());
+            index, com.su.msg.CommonMsg.ItemMo.getDefaultInstance());
       }
       /**
        * <pre>
        * 奖励
        * </pre>
        *
-       * <code>repeated .RewardMo reward = 1;</code>
+       * <code>repeated .ItemMo reward = 1;</code>
        */
-      public java.util.List<com.su.msg.CommonMsg.RewardMo.Builder> 
+      public java.util.List<com.su.msg.CommonMsg.ItemMo.Builder> 
            getRewardBuilderList() {
         return getRewardFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.su.msg.CommonMsg.RewardMo, com.su.msg.CommonMsg.RewardMo.Builder, com.su.msg.CommonMsg.RewardMoOrBuilder> 
+          com.su.msg.CommonMsg.ItemMo, com.su.msg.CommonMsg.ItemMo.Builder, com.su.msg.CommonMsg.ItemMoOrBuilder> 
           getRewardFieldBuilder() {
         if (rewardBuilder_ == null) {
           rewardBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.su.msg.CommonMsg.RewardMo, com.su.msg.CommonMsg.RewardMo.Builder, com.su.msg.CommonMsg.RewardMoOrBuilder>(
+              com.su.msg.CommonMsg.ItemMo, com.su.msg.CommonMsg.ItemMo.Builder, com.su.msg.CommonMsg.ItemMoOrBuilder>(
                   reward_,
                   ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
@@ -3130,9 +3130,9 @@ public final class XunBaoMsg {
       "\n\017XunBaoMsg.proto\032\017CommonMsg.proto\"*\n\010Xu" +
       "nBaoMo\022\014\n\004type\030\001 \001(\005\022\020\n\010nextTime\030\002 \001(\003\"\013" +
       "\n\tGetXunBao\"(\n\013GetXunBaoTo\022\031\n\006xunBao\030\001 \003" +
-      "(\0132\t.XunBaoMo\"\026\n\006XunBao\022\014\n\004type\030\001 \001(\005\"%\n" +
-      "\010XunBaoTo\022\031\n\006reward\030\001 \003(\0132\t.RewardMoB%\n\n" +
-      "com.su.msgH\001\252\002\024Assets.Scripts.Proto"
+      "(\0132\t.XunBaoMo\"\026\n\006XunBao\022\014\n\004type\030\001 \001(\005\"#\n" +
+      "\010XunBaoTo\022\027\n\006reward\030\001 \003(\0132\007.ItemMoB%\n\nco" +
+      "m.su.msgH\001\252\002\024Assets.Scripts.Proto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

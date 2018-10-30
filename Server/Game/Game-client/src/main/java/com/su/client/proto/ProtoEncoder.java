@@ -32,10 +32,10 @@ public class ProtoEncoder extends MessageToByteEncoder<MessageLiteOrBuilder> {
 		int totalLen = INT_LENGTH + nameData.length + INT_LENGTH
 				+ data.length;
 		out.ensureWritable(totalLen);
-		out.writeInt(totalLen);
-		out.writeInt(nameData.length);
+		IntConvert.writeInt(out, totalLen);
+		IntConvert.writeInt(out, nameData.length);
 		out.writeBytes(nameData);
-		out.writeInt(data.length);
+		IntConvert.writeInt(out, data.length);
 		out.writeBytes(data);
 	}
 	

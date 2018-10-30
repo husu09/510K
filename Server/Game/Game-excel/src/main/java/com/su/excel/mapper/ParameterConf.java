@@ -34,7 +34,6 @@ public class ParameterConf extends AbstractExcelMapper<Parameter> {
 	public void afterFinishLoad() {
 		BagConst.DEF_LIMIT = ParseUtil.getInt(get(1).getValue());
 		GamblingConst.DOUBLES_ITEM = ParseUtil.getItem(get(2).getValue());
-		RankingConst.RANKING_SCORE = ParseUtil.getInt(get(3).getValue());
 	}
 
 }

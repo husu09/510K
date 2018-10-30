@@ -36,6 +36,8 @@ public class ResourceService {
 	public void add(PlayerContext playerContext, int type, int sysId, int count, int reason) {
 		if (type == SysAttr.PEANUT)
 			addPeanut(playerContext, count, reason);
+		else if (type == SysAttr.DIAMOND)
+			addDiamond(playerContext, count, reason);
 		else if (type == SysAttr.ITEM)
 			bagService.addItem(playerContext, sysId, count, reason);
 		else {
@@ -53,6 +55,8 @@ public class ResourceService {
 	public boolean edd(PlayerContext playerContext, int type, int sysId, int count, int reason) {
 		if (type == SysAttr.PEANUT)
 			return eddPeanut(playerContext, count, reason);
+		else if (type == SysAttr.DIAMOND)
+			return eddDiamond(playerContext, count, reason);
 		else if (type == SysAttr.ITEM)
 			return bagService.eddItem(playerContext, sysId, count, reason);
 		return false;
@@ -86,6 +90,37 @@ public class ResourceService {
 		playerContext.getBuilder().setPeanut(player.getPeanut());
 		playerContext.setNotice(true);
 		logService.addPeanutLog(player.getId(), reason, eddCount, player.getPeanut());
+		return true;
+	}
+	
+	/**
+	 * 添加钻石
+	 */
+	private void addDiamond(PlayerContext playerContext, int addCount, int reason) {
+		if (addCount <= 0)
+			return;
+		Player player = playerService.getPlayer(playerContext.getPlayerId());
+		player.setDiamond(player.getDiamond() + addCount);
+		dataService.update(player);
+		playerContext.getBuilder().setDiamond(player.getDiamond());
+		playerContext.setNotice(true);
+		logService.addDiamondLog(player.getId(), reason, addCount, player.getPeanut());
+	}
+	
+	/**
+	 * 扣除钻石
+	 */
+	private boolean eddDiamond(PlayerContext playerContext, int eddCount, int reason) {
+		if (eddCount <= 0)
+			return true;
+		Player player = playerService.getPlayer(playerContext.getPlayerId());
+		if (player.getDiamond() < eddCount)
+			return false;
+		player.setDiamond(player.getDiamond() - eddCount);
+		dataService.update(player);
+		playerContext.getBuilder().setDiamond(player.getDiamond());
+		playerContext.setNotice(true);
+		logService.addDiamondLog(player.getId(), reason, eddCount, player.getPeanut());
 		return true;
 	}
 }

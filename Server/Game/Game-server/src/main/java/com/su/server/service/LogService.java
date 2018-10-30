@@ -3,6 +3,7 @@ package com.su.server.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.su.common.po.log.DiamondLog;
 import com.su.common.po.log.ItemLog;
 import com.su.common.po.log.PeanutLog;
 import com.su.core.data.DataService;
@@ -36,6 +37,20 @@ public class LogService {
 	 */
 	public void addPeanutLog(long playerId, int reason, int useCount, int leftCount) {
 		PeanutLog temp = new PeanutLog();
+		temp.setPlayerId(playerId);
+		temp.setReason(reason);
+		temp.setUseCount(useCount);
+		temp.setLeftCount(leftCount);
+		dataService.save(temp);
+	}
+	
+	/**
+	 * @param reason	来源
+	 * @param useCount	使用数量
+	 * @param leftCount	剩余数量（-1 表示没统计）
+	 */
+	public void addDiamondLog(long playerId, int reason, int useCount, int leftCount) {
+		DiamondLog temp = new DiamondLog();
 		temp.setPlayerId(playerId);
 		temp.setReason(reason);
 		temp.setUseCount(useCount);

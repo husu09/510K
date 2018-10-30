@@ -10,10 +10,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import com.su.common.obj.Item;
+import com.su.common.po.Mail;
 import com.su.core.action.Action;
 import com.su.core.context.PlayerContext;
 import com.su.msg.CommonMsg.CMD;
 import com.su.msg.RoleMsg.UpRole;
+import com.su.server.service.MailService;
 import com.su.server.service.ResourceService;
 
 @Controller
@@ -23,6 +25,8 @@ public class CMDControl {
 	private ResourceService resourceService;
 	@Autowired
 	private RoleControl roleControl;
+	@Autowired
+	private MailService mailService;
 	
 	
 	private Map<String, Method> methodMap = new HashMap<>();
@@ -99,5 +103,19 @@ public class CMDControl {
 		upRole.setRid(rid);
 		upRole.putCost(index, count);
 		roleControl.upRole(ctx, upRole.build());
+	}
+	
+	/**
+	 * 发送邮件
+	 * */
+	private void sendMail(PlayerContext ctx, int mailId) {
+		Mail mail = new Mail();
+		mail.setMailId(mailId);
+		Item item = new Item();
+		item.setType(3);
+		item.setSysId(1001);
+		item.setCount(1);
+		mail.getRewards().add(item);
+		mailService.addMail(ctx, mail);
 	}
 }

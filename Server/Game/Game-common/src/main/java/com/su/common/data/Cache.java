@@ -11,4 +11,5 @@ import java.lang.annotation.Target;
 public @interface Cache {
 	boolean memoryCache() default true;
 	boolean redisCache() default true;
+	long startId();
 }

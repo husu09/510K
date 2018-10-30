@@ -42,8 +42,13 @@ public class SendButtonHandler implements ActionListener {
 					if (!tf.getText().trim().equals("")) {
 						value = Integer.parseInt(tf.getText());
 					}
-					builder.getClass().getMethod("set" + ClientUtil.upperFirstCharacter(tf.getName()), int.class)
-							.invoke(builder, value);
+					try {
+						builder.getClass().getMethod("set" + ClientUtil.upperFirstCharacter(tf.getName()), int.class)
+								.invoke(builder, value);
+					} catch (Exception ex) {
+						builder.getClass().getMethod("set" + ClientUtil.upperFirstCharacter(tf.getName()), long.class)
+						.invoke(builder, value);
+					}
 				} else if (type == ClientConst.INTS_TYPE) {
 					String[] arr = tf.getText().split(",");
 					for (String s : arr) {
@@ -51,8 +56,13 @@ public class SendButtonHandler implements ActionListener {
 						if (!s.trim().equals("")) {
 							value = Integer.parseInt(s);
 						}
-						builder.getClass().getMethod("add" + ClientUtil.upperFirstCharacter(tf.getName()), int.class)
+						try {
+							builder.getClass().getMethod("add" + ClientUtil.upperFirstCharacter(tf.getName()), int.class)
 								.invoke(builder, value);
+						} catch (Exception ex) {
+							builder.getClass().getMethod("add" + ClientUtil.upperFirstCharacter(tf.getName()), long.class)
+							.invoke(builder, value);
+						}
 					}
 				} else if (type == ClientConst.STRING_TYPE) {
 					builder.getClass().getMethod("set" + ClientUtil.upperFirstCharacter(tf.getName()), String.class)

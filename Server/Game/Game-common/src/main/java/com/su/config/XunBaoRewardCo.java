@@ -1,8 +1,9 @@
 package com.su.config;
 
 import com.su.common.obj.Item;
+import com.su.common.util.RandomUtil.IRandom;
 
-public class XunBaoRewardCo {
+public class XunBaoRewardCo implements IRandom {
 	private int id;
 	/**
 	 * 类型

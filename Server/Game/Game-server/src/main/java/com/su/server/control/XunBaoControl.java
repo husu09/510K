@@ -3,11 +3,15 @@ package com.su.server.control;
 import java.util.List;
 import java.util.Map.Entry;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import com.su.common.constant.XunBaoConst;
 import com.su.common.po.PlayerDetail;
+import com.su.common.util.RandomUtil;
+import com.su.common.util.RandomUtil.IRandom;
 import com.su.common.util.TimeUtil;
 import com.su.config.XunBaoCostCo;
 import com.su.config.XunBaoRewardCo;
@@ -20,6 +24,7 @@ import com.su.msg.XunBaoMsg.GetXunBao;
 import com.su.msg.XunBaoMsg.GetXunBaoTo;
 import com.su.msg.XunBaoMsg.XunBao;
 import com.su.msg.XunBaoMsg.XunBaoMo;
+import com.su.msg.XunBaoMsg.XunBaoTo;
 import com.su.server.service.PlayerService;
 import com.su.server.service.ResourceService;
 
@@ -37,7 +42,7 @@ public class XunBaoControl {
 	@Autowired
 	private XunBaoCostConf costConf;
 	
-	
+	private Logger logger = LoggerFactory.getLogger(XunBaoControl.class);
 	
 	
 	
@@ -100,6 +105,17 @@ public class XunBaoControl {
 			}
 		}
 		// 随机奖品
+		XunBaoTo.Builder xunBao_ = XunBaoTo.newBuilder();
+		for (int i = 0; i < costCo.getRewardCount(); i ++) {
+			XunBaoRewardCo reward = (XunBaoRewardCo)RandomUtil.random(rewardList);
+			if (reward == null) {
+				logger.error("reward is null");
+				return;
+			}
+			resourceService.add(ctx, reward.getItem(), 1004);
+			xunBao_.addReward(reward.getItem().serialize());
+		}
+		ctx.write(xunBao_);
 		
 	}
 }

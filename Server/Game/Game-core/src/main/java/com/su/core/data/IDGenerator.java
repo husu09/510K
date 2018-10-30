@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import com.su.common.data.Cache;
 import com.su.common.rmi.DataRmiService;
 
 /**
@@ -114,7 +115,12 @@ public class IDGenerator {
 					if (atomicLong == null) {
 						atomicLong = idMap.get(parentKey);
 						if (atomicLong == null) {
-							atomicLong = new AtomicLong(getMaxId(c));
+							long maxId = getMaxId(c);
+							if (maxId == 0) {
+								Cache cache = c.getAnnotation(Cache.class);
+								maxId = cache.startId();
+							}
+							atomicLong = new AtomicLong(maxId);
 							idMap.put(parentKey, atomicLong);
 						}
 					}

@@ -7,11 +7,9 @@ import javax.persistence.Id;
 
 import com.su.common.data.Cache;
 
-@Cache
+@Cache(startId = 10000000000L)
 @Entity
 public class Player implements Serializable {
-	
-	private static final long serialVersionUID = 1L;
 	
 	@Id
 	private long id;

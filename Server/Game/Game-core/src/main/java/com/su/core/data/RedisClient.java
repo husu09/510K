@@ -1,6 +1,7 @@
 package com.su.core.data;
 
 import java.util.List;
+import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Component;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
+import redis.clients.jedis.Tuple;
 
 /**
  * redis 客户端
@@ -230,5 +232,95 @@ public class RedisClient {
 		}
 		return result;
 	}
-
+	
+	/**
+	 * 添加到 sorted set
+	 * */
+	public long zadd(String key, double score,String member ) {
+		long result = 0;
+		Jedis jedis = null;
+		try {
+			jedis = getResource();
+			result = jedis.zadd(key, score, member);
+		} finally {
+			returnResource(jedis);
+		}
+		return result;
+	}
+	
+	/**
+	 * 通过排名区间获取 sorted set 中的值（包含 start 和 end）
+	 * */
+	public Set<Tuple> zrangeWithScores(String key, int start, int end) {
+		Jedis jedis = null;
+		try {
+			jedis = getResource();
+			return jedis.zrangeWithScores(key, start, end);
+		} finally {
+			returnResource(jedis);
+		}
+	}
+	
+	/**
+	 * 获取一个成员的排名
+	 * */
+	public long zrevrank(String key, String member) {
+		Jedis jedis = null;
+		try {
+			jedis = getResource();
+			Long result = jedis.zrevrank(key, member);
+			if (result == null)
+				return -1;
+			else 
+				return result + 1;
+		} finally {
+			returnResource(jedis);
+		}
+	}
+	
+	
+	/**
+	 * 删除排名区间中的成员（从小到大）（包含 start 和 end）
+	 * */
+	public long zremrangeByRank(String key, long start,long end ) {
+		long result = 0;
+		Jedis jedis = null;
+		try {
+			jedis = getResource();
+			result = jedis.zremrangeByRank(key, start, end);
+		} finally {
+			returnResource(jedis);
+		}
+		return result;
+	}
+	
+	/**
+	 * 获取 sorted set 中的成员数
+	 * */
+	public long zcard(String key) {
+		long result = 0;
+		Jedis jedis = null;
+		try {
+			jedis = getResource();
+			result = jedis.zcard(key);
+		} finally {
+			returnResource(jedis);
+		}
+		return result;
+	}
+	
+	/**
+	 * 移除 sorted set 中的成员
+	 * */
+	public long zrem(String key, String member) {
+		long result = 0;
+		Jedis jedis = null;
+		try {
+			jedis = getResource();
+			result = jedis.zrem(key, member);
+		} finally {
+			returnResource(jedis);
+		}
+		return result;
+	}
 }

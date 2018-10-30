@@ -208,6 +208,8 @@ public class BagService extends GameEventAdapter {
 	 * 扣除指定格子的物品
 	 * */
 	public boolean eddItemByIndex(PlayerContext playerContext, int index, int count, int reason) {
+		if (count < 1)
+			return false;
 		PlayerDetail playerDetail = playerService.getPlayerDetail(playerContext.getPlayerId());
 		// 没有这个格子
 		if (index >= playerDetail.getGridList().size()) {

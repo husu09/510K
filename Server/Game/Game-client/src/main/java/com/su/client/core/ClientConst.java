@@ -18,6 +18,14 @@ public class ClientConst {
 	 */
 	public static final int STRINGS_TYPE = 4;
 	/**
+	 * long 类型
+	 */
+	public static final int LONG_TYPE = 5;
+	/**
+	 * java.util.List long集合
+	 */
+	public static final int LONGS_TYPE = 6;
+	/**
 	 * 保存client数据的文件
 	 * */
 	public static final String SAVE_FILE = "data.properties";

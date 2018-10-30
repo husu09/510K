@@ -15,13 +15,10 @@ import com.alibaba.fastjson.TypeReference;
 import com.su.common.data.Cache;
 import com.su.common.obj.Grid;
 import com.su.common.obj.Role;
-import com.su.common.util.CustomConvert;
 
-@Cache
+@Cache(startId = 10000000000L)
 @Entity
 public class PlayerDetail implements Serializable {
-	
-	private static final long serialVersionUID = 1L;
 	
 	@Id
 	private long id;
@@ -66,6 +63,24 @@ public class PlayerDetail implements Serializable {
 	}
 	public void updateXunBaoData() {
 		xunBaoData = JSON.toJSONString(getXunBaoMap());
+	}
+	
+	/**
+	 * 拍卖
+	 * */
+	private String acuItemData;
+	@Transient
+	private Map<Long, String> myAcuItemMap;
+	public Map<Long, String> getMyAcuItemMap() {
+		if (myAcuItemMap == null) {
+			myAcuItemMap = JSON.parseObject(acuItemData, new TypeReference<Map<Long, String>>(){});
+			if (myAcuItemMap == null)
+				myAcuItemMap = new HashMap<>();
+		}
+		return myAcuItemMap;
+	}
+	public void updateAcuItemData() {
+		acuItemData = JSON.toJSONString(getMyAcuItemMap());
 	}
 	
 	/**

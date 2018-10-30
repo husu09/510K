@@ -21,5 +21,5 @@ message XunBao {
 	optional int32 type = 1;
 }
 message XunBaoTo {
-	repeated RewardMo reward = 1;	// 奖励
+	repeated ItemMo reward = 1;	// 奖励
 }

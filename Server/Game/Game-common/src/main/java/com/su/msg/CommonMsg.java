@@ -1248,8 +1248,8 @@ public final class CommonMsg {
 
   }
 
-  public interface RewardMoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:RewardMo)
+  public interface ItemMoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:ItemMo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -1308,17 +1308,17 @@ public final class CommonMsg {
    * 奖励通知
    * </pre>
    *
-   * Protobuf type {@code RewardMo}
+   * Protobuf type {@code ItemMo}
    */
-  public  static final class RewardMo extends
+  public  static final class ItemMo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:RewardMo)
-      RewardMoOrBuilder {
-    // Use RewardMo.newBuilder() to construct.
-    private RewardMo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:ItemMo)
+      ItemMoOrBuilder {
+    // Use ItemMo.newBuilder() to construct.
+    private ItemMo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private RewardMo() {
+    private ItemMo() {
       type_ = 0;
       sysId_ = 0;
       count_ = 0;
@@ -1329,7 +1329,7 @@ public final class CommonMsg {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private RewardMo(
+    private ItemMo(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1381,14 +1381,14 @@ public final class CommonMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.CommonMsg.internal_static_RewardMo_descriptor;
+      return com.su.msg.CommonMsg.internal_static_ItemMo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.CommonMsg.internal_static_RewardMo_fieldAccessorTable
+      return com.su.msg.CommonMsg.internal_static_ItemMo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.su.msg.CommonMsg.RewardMo.class, com.su.msg.CommonMsg.RewardMo.Builder.class);
+              com.su.msg.CommonMsg.ItemMo.class, com.su.msg.CommonMsg.ItemMo.Builder.class);
     }
 
     private int bitField0_;
@@ -1513,10 +1513,10 @@ public final class CommonMsg {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.su.msg.CommonMsg.RewardMo)) {
+      if (!(obj instanceof com.su.msg.CommonMsg.ItemMo)) {
         return super.equals(obj);
       }
-      com.su.msg.CommonMsg.RewardMo other = (com.su.msg.CommonMsg.RewardMo) obj;
+      com.su.msg.CommonMsg.ItemMo other = (com.su.msg.CommonMsg.ItemMo) obj;
 
       boolean result = true;
       result = result && (hasType() == other.hasType());
@@ -1562,58 +1562,58 @@ public final class CommonMsg {
       return hash;
     }
 
-    public static com.su.msg.CommonMsg.RewardMo parseFrom(
+    public static com.su.msg.CommonMsg.ItemMo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.CommonMsg.RewardMo parseFrom(
+    public static com.su.msg.CommonMsg.ItemMo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.CommonMsg.RewardMo parseFrom(byte[] data)
+    public static com.su.msg.CommonMsg.ItemMo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.CommonMsg.RewardMo parseFrom(
+    public static com.su.msg.CommonMsg.ItemMo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.CommonMsg.RewardMo parseFrom(java.io.InputStream input)
+    public static com.su.msg.CommonMsg.ItemMo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.CommonMsg.RewardMo parseFrom(
+    public static com.su.msg.CommonMsg.ItemMo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.CommonMsg.RewardMo parseDelimitedFrom(java.io.InputStream input)
+    public static com.su.msg.CommonMsg.ItemMo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.su.msg.CommonMsg.RewardMo parseDelimitedFrom(
+    public static com.su.msg.CommonMsg.ItemMo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.CommonMsg.RewardMo parseFrom(
+    public static com.su.msg.CommonMsg.ItemMo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.CommonMsg.RewardMo parseFrom(
+    public static com.su.msg.CommonMsg.ItemMo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1625,7 +1625,7 @@ public final class CommonMsg {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.su.msg.CommonMsg.RewardMo prototype) {
+    public static Builder newBuilder(com.su.msg.CommonMsg.ItemMo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -1644,25 +1644,25 @@ public final class CommonMsg {
      * 奖励通知
      * </pre>
      *
-     * Protobuf type {@code RewardMo}
+     * Protobuf type {@code ItemMo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:RewardMo)
-        com.su.msg.CommonMsg.RewardMoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:ItemMo)
+        com.su.msg.CommonMsg.ItemMoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.CommonMsg.internal_static_RewardMo_descriptor;
+        return com.su.msg.CommonMsg.internal_static_ItemMo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.CommonMsg.internal_static_RewardMo_fieldAccessorTable
+        return com.su.msg.CommonMsg.internal_static_ItemMo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.su.msg.CommonMsg.RewardMo.class, com.su.msg.CommonMsg.RewardMo.Builder.class);
+                com.su.msg.CommonMsg.ItemMo.class, com.su.msg.CommonMsg.ItemMo.Builder.class);
       }
 
-      // Construct using com.su.msg.CommonMsg.RewardMo.newBuilder()
+      // Construct using com.su.msg.CommonMsg.ItemMo.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1690,23 +1690,23 @@ public final class CommonMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.CommonMsg.internal_static_RewardMo_descriptor;
+        return com.su.msg.CommonMsg.internal_static_ItemMo_descriptor;
       }
 
-      public com.su.msg.CommonMsg.RewardMo getDefaultInstanceForType() {
-        return com.su.msg.CommonMsg.RewardMo.getDefaultInstance();
+      public com.su.msg.CommonMsg.ItemMo getDefaultInstanceForType() {
+        return com.su.msg.CommonMsg.ItemMo.getDefaultInstance();
       }
 
-      public com.su.msg.CommonMsg.RewardMo build() {
-        com.su.msg.CommonMsg.RewardMo result = buildPartial();
+      public com.su.msg.CommonMsg.ItemMo build() {
+        com.su.msg.CommonMsg.ItemMo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.su.msg.CommonMsg.RewardMo buildPartial() {
-        com.su.msg.CommonMsg.RewardMo result = new com.su.msg.CommonMsg.RewardMo(this);
+      public com.su.msg.CommonMsg.ItemMo buildPartial() {
+        com.su.msg.CommonMsg.ItemMo result = new com.su.msg.CommonMsg.ItemMo(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1753,16 +1753,16 @@ public final class CommonMsg {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.su.msg.CommonMsg.RewardMo) {
-          return mergeFrom((com.su.msg.CommonMsg.RewardMo)other);
+        if (other instanceof com.su.msg.CommonMsg.ItemMo) {
+          return mergeFrom((com.su.msg.CommonMsg.ItemMo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.su.msg.CommonMsg.RewardMo other) {
-        if (other == com.su.msg.CommonMsg.RewardMo.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.su.msg.CommonMsg.ItemMo other) {
+        if (other == com.su.msg.CommonMsg.ItemMo.getDefaultInstance()) return this;
         if (other.hasType()) {
           setType(other.getType());
         }
@@ -1785,11 +1785,11 @@ public final class CommonMsg {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.su.msg.CommonMsg.RewardMo parsedMessage = null;
+        com.su.msg.CommonMsg.ItemMo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.su.msg.CommonMsg.RewardMo) e.getUnfinishedMessage();
+          parsedMessage = (com.su.msg.CommonMsg.ItemMo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1954,39 +1954,39 @@ public final class CommonMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:RewardMo)
+      // @@protoc_insertion_point(builder_scope:ItemMo)
     }
 
-    // @@protoc_insertion_point(class_scope:RewardMo)
-    private static final com.su.msg.CommonMsg.RewardMo DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:ItemMo)
+    private static final com.su.msg.CommonMsg.ItemMo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.su.msg.CommonMsg.RewardMo();
+      DEFAULT_INSTANCE = new com.su.msg.CommonMsg.ItemMo();
     }
 
-    public static com.su.msg.CommonMsg.RewardMo getDefaultInstance() {
+    public static com.su.msg.CommonMsg.ItemMo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<RewardMo>
-        PARSER = new com.google.protobuf.AbstractParser<RewardMo>() {
-      public RewardMo parsePartialFrom(
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<ItemMo>
+        PARSER = new com.google.protobuf.AbstractParser<ItemMo>() {
+      public ItemMo parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new RewardMo(input, extensionRegistry);
+          return new ItemMo(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<RewardMo> parser() {
+    public static com.google.protobuf.Parser<ItemMo> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<RewardMo> getParserForType() {
+    public com.google.protobuf.Parser<ItemMo> getParserForType() {
       return PARSER;
     }
 
-    public com.su.msg.CommonMsg.RewardMo getDefaultInstanceForType() {
+    public com.su.msg.CommonMsg.ItemMo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2003,10 +2003,10 @@ public final class CommonMsg {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_CMD_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_RewardMo_descriptor;
+    internal_static_ItemMo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_RewardMo_fieldAccessorTable;
+      internal_static_ItemMo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -2018,9 +2018,9 @@ public final class CommonMsg {
     java.lang.String[] descriptorData = {
       "\n\017CommonMsg.proto\"/\n\006NError\022\021\n\terrorCode" +
       "\030\001 \001(\005\022\022\n\nparameters\030\002 \003(\t\"\031\n\003CMD\022\022\n\npar" +
-      "ameters\030\001 \003(\t\"6\n\010RewardMo\022\014\n\004type\030\001 \001(\005\022" +
-      "\r\n\005sysId\030\002 \001(\005\022\r\n\005count\030\003 \001(\005B%\n\ncom.su." +
-      "msgH\001\252\002\024Assets.Scripts.Proto"
+      "ameters\030\001 \003(\t\"4\n\006ItemMo\022\014\n\004type\030\001 \001(\005\022\r\n" +
+      "\005sysId\030\002 \001(\005\022\r\n\005count\030\003 \001(\005B%\n\ncom.su.ms" +
+      "gH\001\252\002\024Assets.Scripts.Proto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2046,11 +2046,11 @@ public final class CommonMsg {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CMD_descriptor,
         new java.lang.String[] { "Parameters", });
-    internal_static_RewardMo_descriptor =
+    internal_static_ItemMo_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_RewardMo_fieldAccessorTable = new
+    internal_static_ItemMo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_RewardMo_descriptor,
+        internal_static_ItemMo_descriptor,
         new java.lang.String[] { "Type", "SysId", "Count", });
   }
 

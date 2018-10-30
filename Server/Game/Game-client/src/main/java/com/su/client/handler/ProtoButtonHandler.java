@@ -50,7 +50,7 @@ public class ProtoButtonHandler implements ActionListener {
 				r1t.setName(propertyName);
 				clientContext.getTextFields().add(r1t);
 				int propertyType = 0;
-				if (f.getType().getName().equals("int")) {
+				if (f.getType().getName().equals("int") || f.getType().getName().equals("long")) {
 					propertyType = ClientConst.INT_TYPE;
 				} else if (f.getType().getName().equals("java.lang.Object")) {
 					propertyType = ClientConst.STRING_TYPE;

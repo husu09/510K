@@ -5,7 +5,7 @@ import javax.persistence.Id;
 
 import com.su.common.data.Cache;
 
-@Cache(memoryCache=false,redisCache=false)
+@Cache(memoryCache=false,redisCache=false, startId = 1)
 @Entity
 public class ItemLog {
 	@Id

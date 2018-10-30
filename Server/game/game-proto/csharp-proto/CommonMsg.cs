@@ -65,14 +65,14 @@ namespace Assets.Scripts.Proto
     }
 
     [global::ProtoBuf.ProtoContract()]
-    public partial class RewardMo : global::ProtoBuf.IExtensible
+    public partial class ItemMo : global::ProtoBuf.IExtensible
     {
         private global::ProtoBuf.IExtension __pbn__extensionData;
         global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
         {
             return global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
         }
-        public RewardMo()
+        public ItemMo()
         {
             OnConstructor();
         }

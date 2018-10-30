@@ -15,7 +15,7 @@ message CMD {
 }
 
 // 奖励通知
-message RewardMo {
+message ItemMo {
 	optional int32 type = 1;		// 类型
 	optional int32 sysId = 2;		// id
 	optional int32 count = 3;		// 数量

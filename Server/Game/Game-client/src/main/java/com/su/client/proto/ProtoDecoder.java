@@ -27,7 +27,7 @@ public class ProtoDecoder extends MessageToMessageDecoder<ByteBuf> {
 	@Override
 	protected void decode(ChannelHandlerContext ctx, ByteBuf msg, List<Object> out) throws Exception {
 		// [总长度|消息名称长度|消息名称数据|数据长度|数据]
-		int nameLen = msg.readInt();
+		int nameLen = IntConvert.readInt(msg);
 		byte[] nameData = new byte[nameLen];
 		msg.readBytes(nameData);
 		String messageName = new String(nameData, CharsetUtil.UTF_8);
@@ -35,7 +35,7 @@ public class ProtoDecoder extends MessageToMessageDecoder<ByteBuf> {
 			logger.error("not fined message is {}", messageName);
 			return;
 		}
-		int dataLen = msg.readInt();
+		int dataLen = IntConvert.readInt(msg);
 		byte[] data = new byte[dataLen];
 		msg.readBytes(data);
 		MessageLite messageLite = protoContext.getMessageLiteMap().get(messageName).getDefaultInstanceForType()

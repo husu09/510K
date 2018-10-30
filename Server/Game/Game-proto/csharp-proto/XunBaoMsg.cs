@@ -136,14 +136,14 @@ namespace Assets.Scripts.Proto
         }
         public XunBaoTo()
         {
-            Rewards = new global::System.Collections.Generic.List<RewardMo>();
+            Rewards = new global::System.Collections.Generic.List<ItemMo>();
             OnConstructor();
         }
 
         partial void OnConstructor();
 
         [global::ProtoBuf.ProtoMember(1, Name = @"reward")]
-        public global::System.Collections.Generic.List<RewardMo> Rewards { get; private set; }
+        public global::System.Collections.Generic.List<ItemMo> Rewards { get; private set; }
 
     }
 

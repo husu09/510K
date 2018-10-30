@@ -1,8 +1,18 @@
 package com.su.core.context;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.hibernate.criterion.DetachedCriteria;
+import org.hibernate.criterion.Restrictions;
+
 import com.google.protobuf.MessageLite;
 import com.google.protobuf.MessageLiteOrBuilder;
+import com.su.common.po.Mail;
+import com.su.common.util.SpringUtil;
 import com.su.core.akka.PlayerActor;
+import com.su.core.data.DataService;
 import com.su.core.game.GamePlayer;
 import com.su.core.game.Site;
 import com.su.core.netty.NettyServerHandler;
@@ -20,6 +30,35 @@ public class PlayerContext {
 	
 	private volatile GamePlayer gamePlayer;
 	
+	/**
+	 * 聊天时间
+	 * */
+	private long lastChatTime;
+	public long getLastChatTime() {
+		return lastChatTime;
+	}
+	public void setLastChatTime(long lastChatTime) {
+		this.lastChatTime = lastChatTime;
+	}
+
+	/**
+	 * 邮件
+	 * */
+	private Map<Long, Mail> mailMap;
+	public Map<Long, Mail> getMailMap() {
+		if (mailMap == null) {
+			mailMap = new HashMap<>();
+			DetachedCriteria dc = DetachedCriteria.forClass(Mail.class);
+			dc.add(Restrictions.eq("playerId", playerId));
+			DataService dataService = SpringUtil.getContext().getBean(DataService.class);
+			List<Mail> mails = dataService.list(dc);
+			for (Mail mail : mails) {
+				mailMap.put(mail.getId(), mail);
+			}
+		}
+		return mailMap;
+	}
+
 	/**
 	 * 匹配中的游戏场
 	 * */
