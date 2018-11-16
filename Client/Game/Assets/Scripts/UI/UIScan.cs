@@ -16,7 +16,7 @@ namespace Assets.Scripts.UI
             foreach (Type type in types)
             {
                 object obj = null;
-                if (!type.Namespace.Equals("Assets.Scripts.UI"))
+                if (type.Namespace != null && !type.Namespace.Equals("Assets.Scripts.UI"))
                 {
                     continue;
                 }

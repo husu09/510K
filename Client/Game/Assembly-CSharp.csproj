@@ -84,11 +84,15 @@
     <Compile Include="Assets\Scripts\Proto\LoginMsg.cs" />
     <Compile Include="Assets\Scripts\Proto\MatchSiteMsg.cs" />
     <Compile Include="Assets\Scripts\Proto\PlayerMsg.cs" />
+    <Compile Include="Assets\Scripts\Proto\RoleMsg.cs" />
     <Compile Include="Assets\Scripts\Proto\TableMsg.cs" />
+    <Compile Include="Assets\Scripts\Proto\XunBaoMsg.cs" />
     <Compile Include="Assets\Scripts\UI\MainUI.cs" />
     <Compile Include="Assets\Scripts\UI\UIDispatch.cs" />
     <Compile Include="Assets\Scripts\UI\UIMeta.cs" />
     <Compile Include="Assets\Scripts\UI\UIScan.cs" />
+    <Compile Include="Assets\Simple UI\Samples\IconPreview.cs" />
+    <None Include="Assets\Simple UI\Fonts\OFL.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/510K/Client/Game/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

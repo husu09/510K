@@ -18,7 +18,7 @@ namespace Assets.Scripts.Handler
             foreach (Type type in types)
             {
                 object obj = null;
-                if (!type.Namespace.Equals("Assets.Scripts.Handler"))
+                if (type.Namespace != null && !type.Namespace.Equals("Assets.Scripts.Handler"))
                 {
                     continue;
                 }

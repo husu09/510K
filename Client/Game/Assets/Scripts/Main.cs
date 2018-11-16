@@ -31,7 +31,7 @@ namespace Assets.Scripts
         // Update is called once per frame
         void Update()
         {
-            if (client.GetStatus() == ClientStatus.CONNECTED && isSend == false) {
+            if (client != null && client.GetStatus() == ClientStatus.CONNECTED && isSend == false) {
                 Login login = new Login();
                 login.Account = "husu";
                 login.Name = "husu";
