@@ -4,13 +4,13 @@ import Load from "./action/Load"
 * 游戏初始化配置;
 */
 export default class GameConfig{
-    static width:number=1000;
-    static height:number=500;
+    static width:number=1512;
+    static height:number=918;
     static scaleMode:string="noscale";
     static screenMode:string="none";
     static alignV:string="top";
     static alignH:string="left";
-    static startScene:any="Main.scene";
+    static startScene:any="Load.scene";
     static sceneRoot:string="";
     static debug:boolean=false;
     static stat:boolean=false;

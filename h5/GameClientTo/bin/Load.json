@@ -1,1 +1,1 @@
-{"type":"View","props":{"width":1000,"height":500},"compId":2,"child":[{"type":"Label","props":{"y":238,"x":478,"width":43,"text":"load","height":24,"fontSize":20,"color":"#FFFFFF"},"compId":3},{"type":"Script","props":{"runtime":"action/Load.ts"},"compId":4}],"loadList":[],"loadList3D":[]}
+{"type":"View","props":{"width":1512,"height":918},"compId":2,"child":[{"type":"Script","props":{"runtime":"action/Load.ts"},"compId":4},{"type":"Image","props":{"y":0,"x":0,"width":1512,"skin":"image_bg.png","height":918},"compId":12}],"loadList":["image_bg.png"],"loadList3D":[]}
