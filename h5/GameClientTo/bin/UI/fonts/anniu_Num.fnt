@@ -1,0 +1,19 @@
+info face="Font" size=40 bold=0 italic=0 charset="" unicode=0 stretchH=43 smooth=0 aa=0 padding=0,0,0,0 spacing=1,1
+common lineHeight=40 base=40 scaleW=289 scaleH=43 pages=1 packed=0
+page id=0 file="anniu_Num.png"
+chars count=14
+char id=40 x=89 y=0 width=17 height=43 xoffset=0 yoffset=0 xadvance=17 page=0 chnl=0
+char id=41 x=271 y=0 width=18 height=43 xoffset=0 yoffset=0 xadvance=18 page=0 chnl=0
+char id=48 x=120 y=0 width=17 height=43 xoffset=0 yoffset=0 xadvance=17 page=0 chnl=0
+char id=49 x=106 y=0 width=14 height=43 xoffset=0 yoffset=0 xadvance=14 page=0 chnl=0
+char id=50 x=137 y=0 width=16 height=43 xoffset=0 yoffset=0 xadvance=16 page=0 chnl=0
+char id=51 x=153 y=0 width=16 height=43 xoffset=0 yoffset=0 xadvance=16 page=0 chnl=0
+char id=52 x=169 y=0 width=18 height=43 xoffset=0 yoffset=0 xadvance=18 page=0 chnl=0
+char id=53 x=187 y=0 width=16 height=43 xoffset=0 yoffset=0 xadvance=16 page=0 chnl=0
+char id=54 x=203 y=0 width=17 height=43 xoffset=0 yoffset=0 xadvance=17 page=0 chnl=0
+char id=55 x=221 y=0 width=15 height=43 xoffset=0 yoffset=0 xadvance=15 page=0 chnl=0
+char id=56 x=237 y=0 width=16 height=43 xoffset=0 yoffset=0 xadvance=16 page=0 chnl=0
+char id=57 x=253 y=0 width=18 height=43 xoffset=0 yoffset=0 xadvance=18 page=0 chnl=0
+char id=24323 x=44 y=0 width=45 height=43 xoffset=0 yoffset=0 xadvance=45 page=0 chnl=0
+char id=25918 x=0 y=0 width=44 height=43 xoffset=0 yoffset=0 xadvance=44 page=0 chnl=0
+kernings count=-1

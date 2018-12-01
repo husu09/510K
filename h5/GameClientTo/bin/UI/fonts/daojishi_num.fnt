@@ -1,0 +1,15 @@
+info face="Font" size=9 bold=0 italic=0 charset="" unicode=0 stretchH=18 smooth=0 aa=0 padding=0,0,0,0 spacing=1,1
+common lineHeight=9 base=9 scaleW=130 scaleH=18 pages=1 packed=0
+page id=0 file="daojishi_num.png"
+chars count=10
+char id=48 x=0 y=0 width=12 height=18 xoffset=0 yoffset=0 xadvance=12 page=0 chnl=0
+char id=49 x=15 y=0 width=8 height=18 xoffset=0 yoffset=0 xadvance=8 page=0 chnl=0
+char id=50 x=27 y=0 width=10 height=18 xoffset=0 yoffset=0 xadvance=10 page=0 chnl=0
+char id=51 x=40 y=0 width=10 height=18 xoffset=0 yoffset=0 xadvance=10 page=0 chnl=0
+char id=52 x=53 y=0 width=11 height=18 xoffset=0 yoffset=0 xadvance=11 page=0 chnl=0
+char id=53 x=66 y=0 width=11 height=18 xoffset=0 yoffset=0 xadvance=11 page=0 chnl=0
+char id=54 x=79 y=0 width=10 height=18 xoffset=0 yoffset=0 xadvance=10 page=0 chnl=0
+char id=55 x=92 y=0 width=10 height=18 xoffset=0 yoffset=0 xadvance=10 page=0 chnl=0
+char id=56 x=105 y=0 width=11 height=18 xoffset=0 yoffset=0 xadvance=11 page=0 chnl=0
+char id=57 x=118 y=0 width=11 height=18 xoffset=0 yoffset=0 xadvance=11 page=0 chnl=0
+kernings count=-1

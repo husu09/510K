@@ -1,0 +1,17 @@
+info face="Font" size=62 bold=0 italic=0 charset="" unicode=0 stretchH=74 smooth=0 aa=0 padding=0,0,0,0 spacing=1,1
+common lineHeight=62 base=62 scaleW=516 scaleH=74 pages=1 packed=0
+page id=0 file="liansheng.png"
+chars count=12
+char id=48 x=0 y=0 width=41 height=74 xoffset=0 yoffset=0 xadvance=41 page=0 chnl=0
+char id=49 x=41 y=0 width=26 height=74 xoffset=0 yoffset=0 xadvance=26 page=0 chnl=0
+char id=50 x=69 y=0 width=38 height=74 xoffset=0 yoffset=0 xadvance=38 page=0 chnl=0
+char id=51 x=108 y=0 width=38 height=74 xoffset=0 yoffset=0 xadvance=38 page=0 chnl=0
+char id=52 x=147 y=0 width=40 height=74 xoffset=0 yoffset=0 xadvance=40 page=0 chnl=0
+char id=53 x=187 y=0 width=38 height=74 xoffset=0 yoffset=0 xadvance=38 page=0 chnl=0
+char id=54 x=226 y=0 width=40 height=74 xoffset=0 yoffset=0 xadvance=40 page=0 chnl=0
+char id=55 x=266 y=0 width=39 height=74 xoffset=0 yoffset=0 xadvance=39 page=0 chnl=0
+char id=56 x=305 y=0 width=39 height=74 xoffset=0 yoffset=0 xadvance=39 page=0 chnl=0
+char id=57 x=344 y=0 width=39 height=74 xoffset=0 yoffset=0 xadvance=39 page=0 chnl=0
+char id=32988 x=449 y=0 width=65 height=74 xoffset=0 yoffset=0 xadvance=65 page=0 chnl=0
+char id=36830 x=383 y=0 width=65 height=74 xoffset=0 yoffset=0 xadvance=65 page=0 chnl=0
+kernings count=-1
