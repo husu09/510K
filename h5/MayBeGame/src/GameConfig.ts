@@ -6,7 +6,7 @@
 export default class GameConfig{
     static width:number=400;
     static height:number=600;
-    static scaleMode:string="showall";
+    static scaleMode:string="noscale";
     static screenMode:string="none";
     static alignV:string="top";
     static alignH:string="left";

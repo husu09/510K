@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":44,
-    "selecteID":45,
+    "selectedBox":2,
+    "selecteID":31,
     "searchKey":"View",
     "props":{"width":400,"sceneColor":"#000000","height":600},
     "nodeParent":-1,
-    "maxID":48,
+    "maxID":55,
     "label":"View",
     "isOpen":true,
     "isDirectory":true,
@@ -14,6 +14,21 @@
     "hasChild":true,
     "compId":2,
     "child":[
+        {
+            "x":15,
+            "type":"Image",
+            "searchKey":"Image",
+            "props":{"y":0,"x":0,"width":400,"skin":"com/bg.png","height":600},
+            "nodeParent":2,
+            "label":"Image",
+            "isOpen":null,
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":53,
+            "child":[
+                ]
+        },
         {
             "x":15,
             "type":"Image",
@@ -168,13 +183,14 @@
             "props":{"y":15,"x":137.5,"width":125,"skin":"com/xinshouchang_jingji_choose.png","height":30},
             "nodeParent":2,
             "label":"Image",
-            "isOpen":false,
+            "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":32,
             "child":[
                 {
+                    "x":30,
                     "type":"Image",
                     "searchKey":"Image",
                     "props":{"y":-2,"x":2,"width":30,"skin":"com/1001.png","height":30},
@@ -188,6 +204,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Label",
                     "searchKey":"Label",
                     "props":{"y":-1,"x":37,"width":60,"valign":"middle","text":"1000万","height":30,"fontSize":14,"font":"Arial","color":"#FFFFFF","align":"left"},
@@ -201,6 +218,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Image",
                     "searchKey":"Image",
                     "props":{"y":5,"x":95,"width":22,"skin":"com/Shopjia_right_xiangqing.png","height":20},
@@ -221,14 +239,13 @@
             "props":{"y":15,"x":275,"width":125,"skin":"com/zhongjichang_jingji_choose.png","height":30},
             "nodeParent":2,
             "label":"Image",
-            "isOpen":true,
+            "isOpen":false,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
             "compId":44,
             "child":[
                 {
-                    "x":30,
                     "type":"Image",
                     "searchKey":"Image",
                     "props":{"y":4,"x":6,"width":25,"skin":"com/Img_zuan_210.png","height":25},
@@ -243,7 +260,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Label",
                     "searchKey":"Label",
                     "props":{"y":-1,"x":37,"width":60,"valign":"middle","text":"1000万","height":30,"fontSize":14,"font":"Arial","color":"#FFFFFF","align":"left"},
@@ -257,7 +273,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Image",
                     "searchKey":"Image",
                     "props":{"y":5,"x":95,"width":22,"skin":"com/Shopjia_right_xiangqing.png","height":20},
@@ -267,6 +282,60 @@
                     "isAniNode":true,
                     "hasChild":false,
                     "compId":47,
+                    "child":[
+                        ]
+                }]
+        },
+        {
+            "x":15,
+            "type":"Image",
+            "searchKey":"Image",
+            "props":{"y":531,"x":319,"width":37,"skin":"com/huode_jishiqi.png","height":37},
+            "nodeParent":2,
+            "label":"Image",
+            "isOpen":false,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":48,
+            "child":[
+                {
+                    "type":"Label",
+                    "searchKey":"Label",
+                    "props":{"y":13,"x":37,"width":60,"text":"x 21","height":24,"fontSize":15,"font":"Arial","color":"#FFFFFF"},
+                    "nodeParent":48,
+                    "label":"Label",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":49,
+                    "child":[
+                        ]
+                }]
+        },
+        {
+            "x":15,
+            "type":"Image",
+            "searchKey":"Image",
+            "props":{"y":7,"x":8,"width":46,"skin":"com/RankingUIRankingUI_1defaultHeader_Ranking.png","height":46},
+            "nodeParent":2,
+            "label":"Image",
+            "isOpen":false,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":50,
+            "child":[
+                {
+                    "type":"Label",
+                    "searchKey":"Label",
+                    "props":{"y":46,"x":0,"width":52,"text":"似水年华","height":16,"fontSize":12,"font":"Arial","color":"#FFFFFF","align":"left"},
+                    "nodeParent":50,
+                    "label":"Label",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":52,
                     "child":[
                         ]
                 }]
