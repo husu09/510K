@@ -20,7 +20,7 @@ public class Player implements Serializable {
 	/**
 	 * 头像
 	 * */
-	private String picture;
+	private String avatar;
 	/**
 	 * 名称
 	 * */
@@ -28,51 +28,15 @@ public class Player implements Serializable {
 	/**
 	 * 性别
 	 * */
-	private int sex;
-	/**
-	 * 头衔
-	 * */
-	private int title;
+	private int gender;
 	/**
 	 * 花生
 	 * */
-	private int peanut;
+	private int bean;
 	/**
 	 * 钻石
 	 * */
 	private int diamond;
-	/**
-	 * 胜率
-	 * */
-	private int winRate;
-	/**
-	 * 最高连胜
-	 * */
-	private int winStreak;
-	/**
-	 * 总对局
-	 * */
-	private int totalGames;
-	/**
-	 * 最高倍数
-	 * */
-	private int highMultiple;
-	/**
-	 * 累计赢花生
-	 * */
-	private int totalPeanut;
-	/**
-	 * 加倍次数
-	 * */
-	private int doubleCount;
-	/**
-	 * 出牌次数
-	 * */
-	private int playCount;
-	/**
-	 * 压制次数
-	 * */
-	private int suppressCount;
 	
 	public long getId() {
 		return id;
@@ -86,11 +50,11 @@ public class Player implements Serializable {
 	public void setAccount(String account) {
 		this.account = account;
 	}
-	public String getPicture() {
-		return picture;
+	public String getAvatar() {
+		return avatar;
 	}
-	public void setPicture(String picture) {
-		this.picture = picture;
+	public void setAvatar(String avatar) {
+		this.avatar = avatar;
 	}
 	public String getName() {
 		return name;
@@ -98,77 +62,23 @@ public class Player implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getSex() {
-		return sex;
+	public int getGender() {
+		return gender;
 	}
-	public void setSex(int sex) {
-		this.sex = sex;
+	public void setGender(int gender) {
+		this.gender = gender;
 	}
-	public int getTitle() {
-		return title;
+	public int getBean() {
+		return bean;
 	}
-	public void setTitle(int title) {
-		this.title = title;
-	}
-	public int getPeanut() {
-		return peanut;
-	}
-	public void setPeanut(int peanut) {
-		this.peanut = peanut;
+	public void setBean(int bean) {
+		this.bean = bean;
 	}
 	public int getDiamond() {
 		return diamond;
 	}
 	public void setDiamond(int diamond) {
 		this.diamond = diamond;
-	}
-	public int getWinRate() {
-		return winRate;
-	}
-	public void setWinRate(int winRate) {
-		this.winRate = winRate;
-	}
-	public int getWinStreak() {
-		return winStreak;
-	}
-	public void setWinStreak(int winStreak) {
-		this.winStreak = winStreak;
-	}
-	public int getTotalGames() {
-		return totalGames;
-	}
-	public void setTotalGames(int totalGames) {
-		this.totalGames = totalGames;
-	}
-	public int getHighMultiple() {
-		return highMultiple;
-	}
-	public void setHighMultiple(int highMultiple) {
-		this.highMultiple = highMultiple;
-	}
-	public int getTotalPeanut() {
-		return totalPeanut;
-	}
-	public void setTotalPeanut(int totalPeanut) {
-		this.totalPeanut = totalPeanut;
-	}
-	public int getDoubleCount() {
-		return doubleCount;
-	}
-	public void setDoubleCount(int doubleCount) {
-		this.doubleCount = doubleCount;
-	}
-	public int getPlayCount() {
-		return playCount;
-	}
-	public void setPlayCount(int playCount) {
-		this.playCount = playCount;
-	}
-	public int getSuppressCount() {
-		return suppressCount;
-	}
-	public void setSuppressCount(int suppressCount) {
-		this.suppressCount = suppressCount;
 	}
 	
 }

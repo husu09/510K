@@ -24,10 +24,15 @@ import com.google.protobuf.MessageLiteOrBuilder;
 import com.google.protobuf.MessageOrBuilder;
 import com.google.protobuf.util.JsonFormat;
 
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
+import io.netty.handler.codec.http.websocketx.BinaryWebSocketFrame;
+import io.netty.util.CharsetUtil;
 
 @Component
 public class ClientContext {
+	private static final int INT_LENGTH = 4;
 
 	/**
 	 * 文本域
@@ -147,7 +152,34 @@ public class ClientContext {
 	 * 发送数据
 	 */
 	public void write(MessageLiteOrBuilder msg) {
-		ctx.writeAndFlush(msg);
+		if (msg == null)
+			return;
+		MessageLite messageLite = null;
+		if (msg instanceof MessageLite) {
+			messageLite = (MessageLite) msg;
+		}
+		if (msg instanceof MessageLite.Builder) {
+			messageLite = ((MessageLite.Builder) msg).build();
+		}
+		// 编码消息
+		String messageName = messageLite.getClass().getSimpleName();
+		byte[] data = null;
+		if (msg instanceof MessageLite) {
+			data = ((MessageLite) msg).toByteArray();
+		}
+		if (msg instanceof MessageLite.Builder) {
+			data = ((MessageLite.Builder) msg).build().toByteArray();
+		}
+		byte[] nameData = messageName.getBytes(CharsetUtil.UTF_8);
+		int totalLen = INT_LENGTH + nameData.length + INT_LENGTH
+				+ data.length;
+		ByteBuf out = Unpooled.buffer(totalLen);
+		out.writeIntLE(totalLen);
+		out.writeIntLE(nameData.length);
+		out.writeBytes(nameData);
+		out.writeIntLE(data.length);
+		out.writeBytes(data);
+		ctx.channel().writeAndFlush(new BinaryWebSocketFrame(out));
 	}
 
 	/**

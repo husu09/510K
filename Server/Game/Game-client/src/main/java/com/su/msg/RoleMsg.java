@@ -15,7 +15,7 @@ public final class RoleMsg {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface RoleMoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:RoleMo)
+      // @@protoc_insertion_point(interface_extends:Msg.RoleMo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -91,11 +91,11 @@ public final class RoleMsg {
    * 角色信息
    * </pre>
    *
-   * Protobuf type {@code RoleMo}
+   * Protobuf type {@code Msg.RoleMo}
    */
   public  static final class RoleMo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:RoleMo)
+      // @@protoc_insertion_point(message_implements:Msg.RoleMo)
       RoleMoOrBuilder {
     // Use RoleMo.newBuilder() to construct.
     private RoleMo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -170,12 +170,12 @@ public final class RoleMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.RoleMsg.internal_static_RoleMo_descriptor;
+      return com.su.msg.RoleMsg.internal_static_Msg_RoleMo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.RoleMsg.internal_static_RoleMo_fieldAccessorTable
+      return com.su.msg.RoleMsg.internal_static_Msg_RoleMo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.RoleMsg.RoleMo.class, com.su.msg.RoleMsg.RoleMo.Builder.class);
     }
@@ -473,20 +473,20 @@ public final class RoleMsg {
      * 角色信息
      * </pre>
      *
-     * Protobuf type {@code RoleMo}
+     * Protobuf type {@code Msg.RoleMo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:RoleMo)
+        // @@protoc_insertion_point(builder_implements:Msg.RoleMo)
         com.su.msg.RoleMsg.RoleMoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.RoleMsg.internal_static_RoleMo_descriptor;
+        return com.su.msg.RoleMsg.internal_static_Msg_RoleMo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.RoleMsg.internal_static_RoleMo_fieldAccessorTable
+        return com.su.msg.RoleMsg.internal_static_Msg_RoleMo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.RoleMsg.RoleMo.class, com.su.msg.RoleMsg.RoleMo.Builder.class);
       }
@@ -521,7 +521,7 @@ public final class RoleMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.RoleMsg.internal_static_RoleMo_descriptor;
+        return com.su.msg.RoleMsg.internal_static_Msg_RoleMo_descriptor;
       }
 
       public com.su.msg.RoleMsg.RoleMo getDefaultInstanceForType() {
@@ -840,10 +840,10 @@ public final class RoleMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:RoleMo)
+      // @@protoc_insertion_point(builder_scope:Msg.RoleMo)
     }
 
-    // @@protoc_insertion_point(class_scope:RoleMo)
+    // @@protoc_insertion_point(class_scope:Msg.RoleMo)
     private static final com.su.msg.RoleMsg.RoleMo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.RoleMsg.RoleMo();
@@ -879,7 +879,7 @@ public final class RoleMsg {
   }
 
   public interface GetRoleOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetRole)
+      // @@protoc_insertion_point(interface_extends:Msg.GetRole)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
@@ -887,11 +887,11 @@ public final class RoleMsg {
    * 获取角色信息
    * </pre>
    *
-   * Protobuf type {@code GetRole}
+   * Protobuf type {@code Msg.GetRole}
    */
   public  static final class GetRole extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetRole)
+      // @@protoc_insertion_point(message_implements:Msg.GetRole)
       GetRoleOrBuilder {
     // Use GetRole.newBuilder() to construct.
     private GetRole(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -941,12 +941,12 @@ public final class RoleMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.RoleMsg.internal_static_GetRole_descriptor;
+      return com.su.msg.RoleMsg.internal_static_Msg_GetRole_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.RoleMsg.internal_static_GetRole_fieldAccessorTable
+      return com.su.msg.RoleMsg.internal_static_Msg_GetRole_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.RoleMsg.GetRole.class, com.su.msg.RoleMsg.GetRole.Builder.class);
     }
@@ -1086,20 +1086,20 @@ public final class RoleMsg {
      * 获取角色信息
      * </pre>
      *
-     * Protobuf type {@code GetRole}
+     * Protobuf type {@code Msg.GetRole}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetRole)
+        // @@protoc_insertion_point(builder_implements:Msg.GetRole)
         com.su.msg.RoleMsg.GetRoleOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.RoleMsg.internal_static_GetRole_descriptor;
+        return com.su.msg.RoleMsg.internal_static_Msg_GetRole_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.RoleMsg.internal_static_GetRole_fieldAccessorTable
+        return com.su.msg.RoleMsg.internal_static_Msg_GetRole_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.RoleMsg.GetRole.class, com.su.msg.RoleMsg.GetRole.Builder.class);
       }
@@ -1126,7 +1126,7 @@ public final class RoleMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.RoleMsg.internal_static_GetRole_descriptor;
+        return com.su.msg.RoleMsg.internal_static_Msg_GetRole_descriptor;
       }
 
       public com.su.msg.RoleMsg.GetRole getDefaultInstanceForType() {
@@ -1221,10 +1221,10 @@ public final class RoleMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetRole)
+      // @@protoc_insertion_point(builder_scope:Msg.GetRole)
     }
 
-    // @@protoc_insertion_point(class_scope:GetRole)
+    // @@protoc_insertion_point(class_scope:Msg.GetRole)
     private static final com.su.msg.RoleMsg.GetRole DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.RoleMsg.GetRole();
@@ -1260,39 +1260,39 @@ public final class RoleMsg {
   }
 
   public interface GetRoleToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetRoleTo)
+      // @@protoc_insertion_point(interface_extends:Msg.GetRoleTo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .RoleMo role = 1;</code>
+     * <code>repeated .Msg.RoleMo role = 1;</code>
      */
     java.util.List<com.su.msg.RoleMsg.RoleMo> 
         getRoleList();
     /**
-     * <code>repeated .RoleMo role = 1;</code>
+     * <code>repeated .Msg.RoleMo role = 1;</code>
      */
     com.su.msg.RoleMsg.RoleMo getRole(int index);
     /**
-     * <code>repeated .RoleMo role = 1;</code>
+     * <code>repeated .Msg.RoleMo role = 1;</code>
      */
     int getRoleCount();
     /**
-     * <code>repeated .RoleMo role = 1;</code>
+     * <code>repeated .Msg.RoleMo role = 1;</code>
      */
     java.util.List<? extends com.su.msg.RoleMsg.RoleMoOrBuilder> 
         getRoleOrBuilderList();
     /**
-     * <code>repeated .RoleMo role = 1;</code>
+     * <code>repeated .Msg.RoleMo role = 1;</code>
      */
     com.su.msg.RoleMsg.RoleMoOrBuilder getRoleOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code GetRoleTo}
+   * Protobuf type {@code Msg.GetRoleTo}
    */
   public  static final class GetRoleTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetRoleTo)
+      // @@protoc_insertion_point(message_implements:Msg.GetRoleTo)
       GetRoleToOrBuilder {
     // Use GetRoleTo.newBuilder() to construct.
     private GetRoleTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -1356,12 +1356,12 @@ public final class RoleMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.RoleMsg.internal_static_GetRoleTo_descriptor;
+      return com.su.msg.RoleMsg.internal_static_Msg_GetRoleTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.RoleMsg.internal_static_GetRoleTo_fieldAccessorTable
+      return com.su.msg.RoleMsg.internal_static_Msg_GetRoleTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.RoleMsg.GetRoleTo.class, com.su.msg.RoleMsg.GetRoleTo.Builder.class);
     }
@@ -1369,32 +1369,32 @@ public final class RoleMsg {
     public static final int ROLE_FIELD_NUMBER = 1;
     private java.util.List<com.su.msg.RoleMsg.RoleMo> role_;
     /**
-     * <code>repeated .RoleMo role = 1;</code>
+     * <code>repeated .Msg.RoleMo role = 1;</code>
      */
     public java.util.List<com.su.msg.RoleMsg.RoleMo> getRoleList() {
       return role_;
     }
     /**
-     * <code>repeated .RoleMo role = 1;</code>
+     * <code>repeated .Msg.RoleMo role = 1;</code>
      */
     public java.util.List<? extends com.su.msg.RoleMsg.RoleMoOrBuilder> 
         getRoleOrBuilderList() {
       return role_;
     }
     /**
-     * <code>repeated .RoleMo role = 1;</code>
+     * <code>repeated .Msg.RoleMo role = 1;</code>
      */
     public int getRoleCount() {
       return role_.size();
     }
     /**
-     * <code>repeated .RoleMo role = 1;</code>
+     * <code>repeated .Msg.RoleMo role = 1;</code>
      */
     public com.su.msg.RoleMsg.RoleMo getRole(int index) {
       return role_.get(index);
     }
     /**
-     * <code>repeated .RoleMo role = 1;</code>
+     * <code>repeated .Msg.RoleMo role = 1;</code>
      */
     public com.su.msg.RoleMsg.RoleMoOrBuilder getRoleOrBuilder(
         int index) {
@@ -1545,20 +1545,20 @@ public final class RoleMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code GetRoleTo}
+     * Protobuf type {@code Msg.GetRoleTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetRoleTo)
+        // @@protoc_insertion_point(builder_implements:Msg.GetRoleTo)
         com.su.msg.RoleMsg.GetRoleToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.RoleMsg.internal_static_GetRoleTo_descriptor;
+        return com.su.msg.RoleMsg.internal_static_Msg_GetRoleTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.RoleMsg.internal_static_GetRoleTo_fieldAccessorTable
+        return com.su.msg.RoleMsg.internal_static_Msg_GetRoleTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.RoleMsg.GetRoleTo.class, com.su.msg.RoleMsg.GetRoleTo.Builder.class);
       }
@@ -1592,7 +1592,7 @@ public final class RoleMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.RoleMsg.internal_static_GetRoleTo_descriptor;
+        return com.su.msg.RoleMsg.internal_static_Msg_GetRoleTo_descriptor;
       }
 
       public com.su.msg.RoleMsg.GetRoleTo getDefaultInstanceForType() {
@@ -1727,7 +1727,7 @@ public final class RoleMsg {
           com.su.msg.RoleMsg.RoleMo, com.su.msg.RoleMsg.RoleMo.Builder, com.su.msg.RoleMsg.RoleMoOrBuilder> roleBuilder_;
 
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public java.util.List<com.su.msg.RoleMsg.RoleMo> getRoleList() {
         if (roleBuilder_ == null) {
@@ -1737,7 +1737,7 @@ public final class RoleMsg {
         }
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public int getRoleCount() {
         if (roleBuilder_ == null) {
@@ -1747,7 +1747,7 @@ public final class RoleMsg {
         }
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public com.su.msg.RoleMsg.RoleMo getRole(int index) {
         if (roleBuilder_ == null) {
@@ -1757,7 +1757,7 @@ public final class RoleMsg {
         }
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public Builder setRole(
           int index, com.su.msg.RoleMsg.RoleMo value) {
@@ -1774,7 +1774,7 @@ public final class RoleMsg {
         return this;
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public Builder setRole(
           int index, com.su.msg.RoleMsg.RoleMo.Builder builderForValue) {
@@ -1788,7 +1788,7 @@ public final class RoleMsg {
         return this;
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public Builder addRole(com.su.msg.RoleMsg.RoleMo value) {
         if (roleBuilder_ == null) {
@@ -1804,7 +1804,7 @@ public final class RoleMsg {
         return this;
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public Builder addRole(
           int index, com.su.msg.RoleMsg.RoleMo value) {
@@ -1821,7 +1821,7 @@ public final class RoleMsg {
         return this;
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public Builder addRole(
           com.su.msg.RoleMsg.RoleMo.Builder builderForValue) {
@@ -1835,7 +1835,7 @@ public final class RoleMsg {
         return this;
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public Builder addRole(
           int index, com.su.msg.RoleMsg.RoleMo.Builder builderForValue) {
@@ -1849,7 +1849,7 @@ public final class RoleMsg {
         return this;
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public Builder addAllRole(
           java.lang.Iterable<? extends com.su.msg.RoleMsg.RoleMo> values) {
@@ -1864,7 +1864,7 @@ public final class RoleMsg {
         return this;
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public Builder clearRole() {
         if (roleBuilder_ == null) {
@@ -1877,7 +1877,7 @@ public final class RoleMsg {
         return this;
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public Builder removeRole(int index) {
         if (roleBuilder_ == null) {
@@ -1890,14 +1890,14 @@ public final class RoleMsg {
         return this;
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public com.su.msg.RoleMsg.RoleMo.Builder getRoleBuilder(
           int index) {
         return getRoleFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public com.su.msg.RoleMsg.RoleMoOrBuilder getRoleOrBuilder(
           int index) {
@@ -1907,7 +1907,7 @@ public final class RoleMsg {
         }
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public java.util.List<? extends com.su.msg.RoleMsg.RoleMoOrBuilder> 
            getRoleOrBuilderList() {
@@ -1918,14 +1918,14 @@ public final class RoleMsg {
         }
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public com.su.msg.RoleMsg.RoleMo.Builder addRoleBuilder() {
         return getRoleFieldBuilder().addBuilder(
             com.su.msg.RoleMsg.RoleMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public com.su.msg.RoleMsg.RoleMo.Builder addRoleBuilder(
           int index) {
@@ -1933,7 +1933,7 @@ public final class RoleMsg {
             index, com.su.msg.RoleMsg.RoleMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .RoleMo role = 1;</code>
+       * <code>repeated .Msg.RoleMo role = 1;</code>
        */
       public java.util.List<com.su.msg.RoleMsg.RoleMo.Builder> 
            getRoleBuilderList() {
@@ -1964,10 +1964,10 @@ public final class RoleMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetRoleTo)
+      // @@protoc_insertion_point(builder_scope:Msg.GetRoleTo)
     }
 
-    // @@protoc_insertion_point(class_scope:GetRoleTo)
+    // @@protoc_insertion_point(class_scope:Msg.GetRoleTo)
     private static final com.su.msg.RoleMsg.GetRoleTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.RoleMsg.GetRoleTo();
@@ -2003,7 +2003,7 @@ public final class RoleMsg {
   }
 
   public interface UpRoleOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:UpRole)
+      // @@protoc_insertion_point(interface_extends:Msg.UpRole)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2082,11 +2082,11 @@ public final class RoleMsg {
    * 升级角色
    * </pre>
    *
-   * Protobuf type {@code UpRole}
+   * Protobuf type {@code Msg.UpRole}
    */
   public  static final class UpRole extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:UpRole)
+      // @@protoc_insertion_point(message_implements:Msg.UpRole)
       UpRoleOrBuilder {
     // Use UpRole.newBuilder() to construct.
     private UpRole(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -2156,7 +2156,7 @@ public final class RoleMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.RoleMsg.internal_static_UpRole_descriptor;
+      return com.su.msg.RoleMsg.internal_static_Msg_UpRole_descriptor;
     }
 
     @SuppressWarnings({"rawtypes"})
@@ -2172,7 +2172,7 @@ public final class RoleMsg {
     }
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.RoleMsg.internal_static_UpRole_fieldAccessorTable
+      return com.su.msg.RoleMsg.internal_static_Msg_UpRole_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.RoleMsg.UpRole.class, com.su.msg.RoleMsg.UpRole.Builder.class);
     }
@@ -2207,7 +2207,7 @@ public final class RoleMsg {
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  com.su.msg.RoleMsg.internal_static_UpRole_CostEntry_descriptor, 
+                  com.su.msg.RoleMsg.internal_static_Msg_UpRole_CostEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.INT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.INT32,
@@ -2466,15 +2466,15 @@ public final class RoleMsg {
      * 升级角色
      * </pre>
      *
-     * Protobuf type {@code UpRole}
+     * Protobuf type {@code Msg.UpRole}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:UpRole)
+        // @@protoc_insertion_point(builder_implements:Msg.UpRole)
         com.su.msg.RoleMsg.UpRoleOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.RoleMsg.internal_static_UpRole_descriptor;
+        return com.su.msg.RoleMsg.internal_static_Msg_UpRole_descriptor;
       }
 
       @SuppressWarnings({"rawtypes"})
@@ -2501,7 +2501,7 @@ public final class RoleMsg {
       }
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.RoleMsg.internal_static_UpRole_fieldAccessorTable
+        return com.su.msg.RoleMsg.internal_static_Msg_UpRole_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.RoleMsg.UpRole.class, com.su.msg.RoleMsg.UpRole.Builder.class);
       }
@@ -2531,7 +2531,7 @@ public final class RoleMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.RoleMsg.internal_static_UpRole_descriptor;
+        return com.su.msg.RoleMsg.internal_static_Msg_UpRole_descriptor;
       }
 
       public com.su.msg.RoleMsg.UpRole getDefaultInstanceForType() {
@@ -2840,10 +2840,10 @@ public final class RoleMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:UpRole)
+      // @@protoc_insertion_point(builder_scope:Msg.UpRole)
     }
 
-    // @@protoc_insertion_point(class_scope:UpRole)
+    // @@protoc_insertion_point(class_scope:Msg.UpRole)
     private static final com.su.msg.RoleMsg.UpRole DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.RoleMsg.UpRole();
@@ -2879,15 +2879,15 @@ public final class RoleMsg {
   }
 
   public interface UpRoleToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:UpRoleTo)
+      // @@protoc_insertion_point(interface_extends:Msg.UpRoleTo)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * Protobuf type {@code UpRoleTo}
+   * Protobuf type {@code Msg.UpRoleTo}
    */
   public  static final class UpRoleTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:UpRoleTo)
+      // @@protoc_insertion_point(message_implements:Msg.UpRoleTo)
       UpRoleToOrBuilder {
     // Use UpRoleTo.newBuilder() to construct.
     private UpRoleTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -2937,12 +2937,12 @@ public final class RoleMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.RoleMsg.internal_static_UpRoleTo_descriptor;
+      return com.su.msg.RoleMsg.internal_static_Msg_UpRoleTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.RoleMsg.internal_static_UpRoleTo_fieldAccessorTable
+      return com.su.msg.RoleMsg.internal_static_Msg_UpRoleTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.RoleMsg.UpRoleTo.class, com.su.msg.RoleMsg.UpRoleTo.Builder.class);
     }
@@ -3078,20 +3078,20 @@ public final class RoleMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code UpRoleTo}
+     * Protobuf type {@code Msg.UpRoleTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:UpRoleTo)
+        // @@protoc_insertion_point(builder_implements:Msg.UpRoleTo)
         com.su.msg.RoleMsg.UpRoleToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.RoleMsg.internal_static_UpRoleTo_descriptor;
+        return com.su.msg.RoleMsg.internal_static_Msg_UpRoleTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.RoleMsg.internal_static_UpRoleTo_fieldAccessorTable
+        return com.su.msg.RoleMsg.internal_static_Msg_UpRoleTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.RoleMsg.UpRoleTo.class, com.su.msg.RoleMsg.UpRoleTo.Builder.class);
       }
@@ -3118,7 +3118,7 @@ public final class RoleMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.RoleMsg.internal_static_UpRoleTo_descriptor;
+        return com.su.msg.RoleMsg.internal_static_Msg_UpRoleTo_descriptor;
       }
 
       public com.su.msg.RoleMsg.UpRoleTo getDefaultInstanceForType() {
@@ -3213,10 +3213,10 @@ public final class RoleMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:UpRoleTo)
+      // @@protoc_insertion_point(builder_scope:Msg.UpRoleTo)
     }
 
-    // @@protoc_insertion_point(class_scope:UpRoleTo)
+    // @@protoc_insertion_point(class_scope:Msg.UpRoleTo)
     private static final com.su.msg.RoleMsg.UpRoleTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.RoleMsg.UpRoleTo();
@@ -3252,19 +3252,19 @@ public final class RoleMsg {
   }
 
   public interface RoleNoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:RoleNo)
+      // @@protoc_insertion_point(interface_extends:Msg.RoleNo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional .RoleMo role = 1;</code>
+     * <code>optional .Msg.RoleMo role = 1;</code>
      */
     boolean hasRole();
     /**
-     * <code>optional .RoleMo role = 1;</code>
+     * <code>optional .Msg.RoleMo role = 1;</code>
      */
     com.su.msg.RoleMsg.RoleMo getRole();
     /**
-     * <code>optional .RoleMo role = 1;</code>
+     * <code>optional .Msg.RoleMo role = 1;</code>
      */
     com.su.msg.RoleMsg.RoleMoOrBuilder getRoleOrBuilder();
   }
@@ -3273,11 +3273,11 @@ public final class RoleMsg {
    * 角色通知
    * </pre>
    *
-   * Protobuf type {@code RoleNo}
+   * Protobuf type {@code Msg.RoleNo}
    */
   public  static final class RoleNo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:RoleNo)
+      // @@protoc_insertion_point(message_implements:Msg.RoleNo)
       RoleNoOrBuilder {
     // Use RoleNo.newBuilder() to construct.
     private RoleNo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -3341,12 +3341,12 @@ public final class RoleMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.RoleMsg.internal_static_RoleNo_descriptor;
+      return com.su.msg.RoleMsg.internal_static_Msg_RoleNo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.RoleMsg.internal_static_RoleNo_fieldAccessorTable
+      return com.su.msg.RoleMsg.internal_static_Msg_RoleNo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.RoleMsg.RoleNo.class, com.su.msg.RoleMsg.RoleNo.Builder.class);
     }
@@ -3355,19 +3355,19 @@ public final class RoleMsg {
     public static final int ROLE_FIELD_NUMBER = 1;
     private com.su.msg.RoleMsg.RoleMo role_;
     /**
-     * <code>optional .RoleMo role = 1;</code>
+     * <code>optional .Msg.RoleMo role = 1;</code>
      */
     public boolean hasRole() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional .RoleMo role = 1;</code>
+     * <code>optional .Msg.RoleMo role = 1;</code>
      */
     public com.su.msg.RoleMsg.RoleMo getRole() {
       return role_ == null ? com.su.msg.RoleMsg.RoleMo.getDefaultInstance() : role_;
     }
     /**
-     * <code>optional .RoleMo role = 1;</code>
+     * <code>optional .Msg.RoleMo role = 1;</code>
      */
     public com.su.msg.RoleMsg.RoleMoOrBuilder getRoleOrBuilder() {
       return role_ == null ? com.su.msg.RoleMsg.RoleMo.getDefaultInstance() : role_;
@@ -3524,20 +3524,20 @@ public final class RoleMsg {
      * 角色通知
      * </pre>
      *
-     * Protobuf type {@code RoleNo}
+     * Protobuf type {@code Msg.RoleNo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:RoleNo)
+        // @@protoc_insertion_point(builder_implements:Msg.RoleNo)
         com.su.msg.RoleMsg.RoleNoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.RoleMsg.internal_static_RoleNo_descriptor;
+        return com.su.msg.RoleMsg.internal_static_Msg_RoleNo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.RoleMsg.internal_static_RoleNo_fieldAccessorTable
+        return com.su.msg.RoleMsg.internal_static_Msg_RoleNo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.RoleMsg.RoleNo.class, com.su.msg.RoleMsg.RoleNo.Builder.class);
       }
@@ -3571,7 +3571,7 @@ public final class RoleMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.RoleMsg.internal_static_RoleNo_descriptor;
+        return com.su.msg.RoleMsg.internal_static_Msg_RoleNo_descriptor;
       }
 
       public com.su.msg.RoleMsg.RoleNo getDefaultInstanceForType() {
@@ -3675,13 +3675,13 @@ public final class RoleMsg {
       private com.google.protobuf.SingleFieldBuilderV3<
           com.su.msg.RoleMsg.RoleMo, com.su.msg.RoleMsg.RoleMo.Builder, com.su.msg.RoleMsg.RoleMoOrBuilder> roleBuilder_;
       /**
-       * <code>optional .RoleMo role = 1;</code>
+       * <code>optional .Msg.RoleMo role = 1;</code>
        */
       public boolean hasRole() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional .RoleMo role = 1;</code>
+       * <code>optional .Msg.RoleMo role = 1;</code>
        */
       public com.su.msg.RoleMsg.RoleMo getRole() {
         if (roleBuilder_ == null) {
@@ -3691,7 +3691,7 @@ public final class RoleMsg {
         }
       }
       /**
-       * <code>optional .RoleMo role = 1;</code>
+       * <code>optional .Msg.RoleMo role = 1;</code>
        */
       public Builder setRole(com.su.msg.RoleMsg.RoleMo value) {
         if (roleBuilder_ == null) {
@@ -3707,7 +3707,7 @@ public final class RoleMsg {
         return this;
       }
       /**
-       * <code>optional .RoleMo role = 1;</code>
+       * <code>optional .Msg.RoleMo role = 1;</code>
        */
       public Builder setRole(
           com.su.msg.RoleMsg.RoleMo.Builder builderForValue) {
@@ -3721,7 +3721,7 @@ public final class RoleMsg {
         return this;
       }
       /**
-       * <code>optional .RoleMo role = 1;</code>
+       * <code>optional .Msg.RoleMo role = 1;</code>
        */
       public Builder mergeRole(com.su.msg.RoleMsg.RoleMo value) {
         if (roleBuilder_ == null) {
@@ -3741,7 +3741,7 @@ public final class RoleMsg {
         return this;
       }
       /**
-       * <code>optional .RoleMo role = 1;</code>
+       * <code>optional .Msg.RoleMo role = 1;</code>
        */
       public Builder clearRole() {
         if (roleBuilder_ == null) {
@@ -3754,7 +3754,7 @@ public final class RoleMsg {
         return this;
       }
       /**
-       * <code>optional .RoleMo role = 1;</code>
+       * <code>optional .Msg.RoleMo role = 1;</code>
        */
       public com.su.msg.RoleMsg.RoleMo.Builder getRoleBuilder() {
         bitField0_ |= 0x00000001;
@@ -3762,7 +3762,7 @@ public final class RoleMsg {
         return getRoleFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .RoleMo role = 1;</code>
+       * <code>optional .Msg.RoleMo role = 1;</code>
        */
       public com.su.msg.RoleMsg.RoleMoOrBuilder getRoleOrBuilder() {
         if (roleBuilder_ != null) {
@@ -3773,7 +3773,7 @@ public final class RoleMsg {
         }
       }
       /**
-       * <code>optional .RoleMo role = 1;</code>
+       * <code>optional .Msg.RoleMo role = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.su.msg.RoleMsg.RoleMo, com.su.msg.RoleMsg.RoleMo.Builder, com.su.msg.RoleMsg.RoleMoOrBuilder> 
@@ -3799,10 +3799,10 @@ public final class RoleMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:RoleNo)
+      // @@protoc_insertion_point(builder_scope:Msg.RoleNo)
     }
 
-    // @@protoc_insertion_point(class_scope:RoleNo)
+    // @@protoc_insertion_point(class_scope:Msg.RoleNo)
     private static final com.su.msg.RoleMsg.RoleNo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.RoleMsg.RoleNo();
@@ -3838,40 +3838,40 @@ public final class RoleMsg {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_RoleMo_descriptor;
+    internal_static_Msg_RoleMo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_RoleMo_fieldAccessorTable;
+      internal_static_Msg_RoleMo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetRole_descriptor;
+    internal_static_Msg_GetRole_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetRole_fieldAccessorTable;
+      internal_static_Msg_GetRole_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetRoleTo_descriptor;
+    internal_static_Msg_GetRoleTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetRoleTo_fieldAccessorTable;
+      internal_static_Msg_GetRoleTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_UpRole_descriptor;
+    internal_static_Msg_UpRole_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_UpRole_fieldAccessorTable;
+      internal_static_Msg_UpRole_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_UpRole_CostEntry_descriptor;
+    internal_static_Msg_UpRole_CostEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_UpRole_CostEntry_fieldAccessorTable;
+      internal_static_Msg_UpRole_CostEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_UpRoleTo_descriptor;
+    internal_static_Msg_UpRoleTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_UpRoleTo_fieldAccessorTable;
+      internal_static_Msg_UpRoleTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_RoleNo_descriptor;
+    internal_static_Msg_RoleNo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_RoleNo_fieldAccessorTable;
+      internal_static_Msg_RoleNo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -3881,14 +3881,14 @@ public final class RoleMsg {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\rRoleMsg.proto\"E\n\006RoleMo\022\013\n\003rid\030\001 \001(\005\022\013" +
-      "\n\003exp\030\002 \001(\005\022\017\n\007effType\030\003 \001(\005\022\020\n\010effValue" +
-      "\030\004 \001(\003\"\t\n\007GetRole\"\"\n\tGetRoleTo\022\025\n\004role\030\001" +
-      " \003(\0132\007.RoleMo\"c\n\006UpRole\022\013\n\003rid\030\001 \001(\005\022\037\n\004" +
-      "cost\030\002 \003(\0132\021.UpRole.CostEntry\032+\n\tCostEnt" +
-      "ry\022\013\n\003key\030\001 \001(\005\022\r\n\005value\030\002 \001(\005:\0028\001\"\n\n\010Up" +
-      "RoleTo\"\037\n\006RoleNo\022\025\n\004role\030\001 \001(\0132\007.RoleMoB" +
-      "%\n\ncom.su.msgH\001\252\002\024Assets.Scripts.Proto"
+      "\n\rRoleMsg.proto\022\003Msg\"E\n\006RoleMo\022\013\n\003rid\030\001 " +
+      "\001(\005\022\013\n\003exp\030\002 \001(\005\022\017\n\007effType\030\003 \001(\005\022\020\n\010eff" +
+      "Value\030\004 \001(\003\"\t\n\007GetRole\"&\n\tGetRoleTo\022\031\n\004r" +
+      "ole\030\001 \003(\0132\013.Msg.RoleMo\"g\n\006UpRole\022\013\n\003rid\030" +
+      "\001 \001(\005\022#\n\004cost\030\002 \003(\0132\025.Msg.UpRole.CostEnt" +
+      "ry\032+\n\tCostEntry\022\013\n\003key\030\001 \001(\005\022\r\n\005value\030\002 " +
+      "\001(\005:\0028\001\"\n\n\010UpRoleTo\"#\n\006RoleNo\022\031\n\004role\030\001 " +
+      "\001(\0132\013.Msg.RoleMoB\016\n\ncom.su.msgH\001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -3902,47 +3902,47 @@ public final class RoleMsg {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_RoleMo_descriptor =
+    internal_static_Msg_RoleMo_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_RoleMo_fieldAccessorTable = new
+    internal_static_Msg_RoleMo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_RoleMo_descriptor,
+        internal_static_Msg_RoleMo_descriptor,
         new java.lang.String[] { "Rid", "Exp", "EffType", "EffValue", });
-    internal_static_GetRole_descriptor =
+    internal_static_Msg_GetRole_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_GetRole_fieldAccessorTable = new
+    internal_static_Msg_GetRole_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetRole_descriptor,
+        internal_static_Msg_GetRole_descriptor,
         new java.lang.String[] { });
-    internal_static_GetRoleTo_descriptor =
+    internal_static_Msg_GetRoleTo_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_GetRoleTo_fieldAccessorTable = new
+    internal_static_Msg_GetRoleTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetRoleTo_descriptor,
+        internal_static_Msg_GetRoleTo_descriptor,
         new java.lang.String[] { "Role", });
-    internal_static_UpRole_descriptor =
+    internal_static_Msg_UpRole_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_UpRole_fieldAccessorTable = new
+    internal_static_Msg_UpRole_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_UpRole_descriptor,
+        internal_static_Msg_UpRole_descriptor,
         new java.lang.String[] { "Rid", "Cost", });
-    internal_static_UpRole_CostEntry_descriptor =
-      internal_static_UpRole_descriptor.getNestedTypes().get(0);
-    internal_static_UpRole_CostEntry_fieldAccessorTable = new
+    internal_static_Msg_UpRole_CostEntry_descriptor =
+      internal_static_Msg_UpRole_descriptor.getNestedTypes().get(0);
+    internal_static_Msg_UpRole_CostEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_UpRole_CostEntry_descriptor,
+        internal_static_Msg_UpRole_CostEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    internal_static_UpRoleTo_descriptor =
+    internal_static_Msg_UpRoleTo_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_UpRoleTo_fieldAccessorTable = new
+    internal_static_Msg_UpRoleTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_UpRoleTo_descriptor,
+        internal_static_Msg_UpRoleTo_descriptor,
         new java.lang.String[] { });
-    internal_static_RoleNo_descriptor =
+    internal_static_Msg_RoleNo_descriptor =
       getDescriptor().getMessageTypes().get(5);
-    internal_static_RoleNo_fieldAccessorTable = new
+    internal_static_Msg_RoleNo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_RoleNo_descriptor,
+        internal_static_Msg_RoleNo_descriptor,
         new java.lang.String[] { "Role", });
   }
 

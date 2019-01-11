@@ -15,7 +15,7 @@ public final class MailMsg {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface MailMoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:MailMo)
+      // @@protoc_insertion_point(interface_extends:Msg.MailMo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -100,7 +100,7 @@ public final class MailMsg {
      * 附件
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 5;</code>
+     * <code>repeated .Msg.ItemMo reward = 5;</code>
      */
     java.util.List<com.su.msg.CommonMsg.ItemMo> 
         getRewardList();
@@ -109,7 +109,7 @@ public final class MailMsg {
      * 附件
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 5;</code>
+     * <code>repeated .Msg.ItemMo reward = 5;</code>
      */
     com.su.msg.CommonMsg.ItemMo getReward(int index);
     /**
@@ -117,7 +117,7 @@ public final class MailMsg {
      * 附件
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 5;</code>
+     * <code>repeated .Msg.ItemMo reward = 5;</code>
      */
     int getRewardCount();
     /**
@@ -125,7 +125,7 @@ public final class MailMsg {
      * 附件
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 5;</code>
+     * <code>repeated .Msg.ItemMo reward = 5;</code>
      */
     java.util.List<? extends com.su.msg.CommonMsg.ItemMoOrBuilder> 
         getRewardOrBuilderList();
@@ -134,7 +134,7 @@ public final class MailMsg {
      * 附件
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 5;</code>
+     * <code>repeated .Msg.ItemMo reward = 5;</code>
      */
     com.su.msg.CommonMsg.ItemMoOrBuilder getRewardOrBuilder(
         int index);
@@ -196,11 +196,11 @@ public final class MailMsg {
    * 邮件信息
    * </pre>
    *
-   * Protobuf type {@code MailMo}
+   * Protobuf type {@code Msg.MailMo}
    */
   public  static final class MailMo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:MailMo)
+      // @@protoc_insertion_point(message_implements:Msg.MailMo)
       MailMoOrBuilder {
     // Use MailMo.newBuilder() to construct.
     private MailMo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -308,12 +308,12 @@ public final class MailMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.MailMsg.internal_static_MailMo_descriptor;
+      return com.su.msg.MailMsg.internal_static_Msg_MailMo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.MailMsg.internal_static_MailMo_fieldAccessorTable
+      return com.su.msg.MailMsg.internal_static_Msg_MailMo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.MailMsg.MailMo.class, com.su.msg.MailMsg.MailMo.Builder.class);
     }
@@ -449,7 +449,7 @@ public final class MailMsg {
      * 附件
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 5;</code>
+     * <code>repeated .Msg.ItemMo reward = 5;</code>
      */
     public java.util.List<com.su.msg.CommonMsg.ItemMo> getRewardList() {
       return reward_;
@@ -459,7 +459,7 @@ public final class MailMsg {
      * 附件
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 5;</code>
+     * <code>repeated .Msg.ItemMo reward = 5;</code>
      */
     public java.util.List<? extends com.su.msg.CommonMsg.ItemMoOrBuilder> 
         getRewardOrBuilderList() {
@@ -470,7 +470,7 @@ public final class MailMsg {
      * 附件
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 5;</code>
+     * <code>repeated .Msg.ItemMo reward = 5;</code>
      */
     public int getRewardCount() {
       return reward_.size();
@@ -480,7 +480,7 @@ public final class MailMsg {
      * 附件
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 5;</code>
+     * <code>repeated .Msg.ItemMo reward = 5;</code>
      */
     public com.su.msg.CommonMsg.ItemMo getReward(int index) {
       return reward_.get(index);
@@ -490,7 +490,7 @@ public final class MailMsg {
      * 附件
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 5;</code>
+     * <code>repeated .Msg.ItemMo reward = 5;</code>
      */
     public com.su.msg.CommonMsg.ItemMoOrBuilder getRewardOrBuilder(
         int index) {
@@ -811,20 +811,20 @@ public final class MailMsg {
      * 邮件信息
      * </pre>
      *
-     * Protobuf type {@code MailMo}
+     * Protobuf type {@code Msg.MailMo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:MailMo)
+        // @@protoc_insertion_point(builder_implements:Msg.MailMo)
         com.su.msg.MailMsg.MailMoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.MailMsg.internal_static_MailMo_descriptor;
+        return com.su.msg.MailMsg.internal_static_Msg_MailMo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.MailMsg.internal_static_MailMo_fieldAccessorTable
+        return com.su.msg.MailMsg.internal_static_Msg_MailMo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.MailMsg.MailMo.class, com.su.msg.MailMsg.MailMo.Builder.class);
       }
@@ -870,7 +870,7 @@ public final class MailMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.MailMsg.internal_static_MailMo_descriptor;
+        return com.su.msg.MailMsg.internal_static_Msg_MailMo_descriptor;
       }
 
       public com.su.msg.MailMsg.MailMo getDefaultInstanceForType() {
@@ -1307,7 +1307,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public java.util.List<com.su.msg.CommonMsg.ItemMo> getRewardList() {
         if (rewardBuilder_ == null) {
@@ -1321,7 +1321,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public int getRewardCount() {
         if (rewardBuilder_ == null) {
@@ -1335,7 +1335,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public com.su.msg.CommonMsg.ItemMo getReward(int index) {
         if (rewardBuilder_ == null) {
@@ -1349,7 +1349,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public Builder setReward(
           int index, com.su.msg.CommonMsg.ItemMo value) {
@@ -1370,7 +1370,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public Builder setReward(
           int index, com.su.msg.CommonMsg.ItemMo.Builder builderForValue) {
@@ -1388,7 +1388,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public Builder addReward(com.su.msg.CommonMsg.ItemMo value) {
         if (rewardBuilder_ == null) {
@@ -1408,7 +1408,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public Builder addReward(
           int index, com.su.msg.CommonMsg.ItemMo value) {
@@ -1429,7 +1429,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public Builder addReward(
           com.su.msg.CommonMsg.ItemMo.Builder builderForValue) {
@@ -1447,7 +1447,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public Builder addReward(
           int index, com.su.msg.CommonMsg.ItemMo.Builder builderForValue) {
@@ -1465,7 +1465,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public Builder addAllReward(
           java.lang.Iterable<? extends com.su.msg.CommonMsg.ItemMo> values) {
@@ -1484,7 +1484,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public Builder clearReward() {
         if (rewardBuilder_ == null) {
@@ -1501,7 +1501,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public Builder removeReward(int index) {
         if (rewardBuilder_ == null) {
@@ -1518,7 +1518,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public com.su.msg.CommonMsg.ItemMo.Builder getRewardBuilder(
           int index) {
@@ -1529,7 +1529,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public com.su.msg.CommonMsg.ItemMoOrBuilder getRewardOrBuilder(
           int index) {
@@ -1543,7 +1543,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public java.util.List<? extends com.su.msg.CommonMsg.ItemMoOrBuilder> 
            getRewardOrBuilderList() {
@@ -1558,7 +1558,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public com.su.msg.CommonMsg.ItemMo.Builder addRewardBuilder() {
         return getRewardFieldBuilder().addBuilder(
@@ -1569,7 +1569,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public com.su.msg.CommonMsg.ItemMo.Builder addRewardBuilder(
           int index) {
@@ -1581,7 +1581,7 @@ public final class MailMsg {
        * 附件
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 5;</code>
+       * <code>repeated .Msg.ItemMo reward = 5;</code>
        */
       public java.util.List<com.su.msg.CommonMsg.ItemMo.Builder> 
            getRewardBuilderList() {
@@ -1789,10 +1789,10 @@ public final class MailMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:MailMo)
+      // @@protoc_insertion_point(builder_scope:Msg.MailMo)
     }
 
-    // @@protoc_insertion_point(class_scope:MailMo)
+    // @@protoc_insertion_point(class_scope:Msg.MailMo)
     private static final com.su.msg.MailMsg.MailMo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.MailMsg.MailMo();
@@ -1828,7 +1828,7 @@ public final class MailMsg {
   }
 
   public interface GetMailOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetMail)
+      // @@protoc_insertion_point(interface_extends:Msg.GetMail)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
@@ -1836,11 +1836,11 @@ public final class MailMsg {
    * 获取邮件信息
    * </pre>
    *
-   * Protobuf type {@code GetMail}
+   * Protobuf type {@code Msg.GetMail}
    */
   public  static final class GetMail extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetMail)
+      // @@protoc_insertion_point(message_implements:Msg.GetMail)
       GetMailOrBuilder {
     // Use GetMail.newBuilder() to construct.
     private GetMail(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -1890,12 +1890,12 @@ public final class MailMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.MailMsg.internal_static_GetMail_descriptor;
+      return com.su.msg.MailMsg.internal_static_Msg_GetMail_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.MailMsg.internal_static_GetMail_fieldAccessorTable
+      return com.su.msg.MailMsg.internal_static_Msg_GetMail_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.MailMsg.GetMail.class, com.su.msg.MailMsg.GetMail.Builder.class);
     }
@@ -2035,20 +2035,20 @@ public final class MailMsg {
      * 获取邮件信息
      * </pre>
      *
-     * Protobuf type {@code GetMail}
+     * Protobuf type {@code Msg.GetMail}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetMail)
+        // @@protoc_insertion_point(builder_implements:Msg.GetMail)
         com.su.msg.MailMsg.GetMailOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.MailMsg.internal_static_GetMail_descriptor;
+        return com.su.msg.MailMsg.internal_static_Msg_GetMail_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.MailMsg.internal_static_GetMail_fieldAccessorTable
+        return com.su.msg.MailMsg.internal_static_Msg_GetMail_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.MailMsg.GetMail.class, com.su.msg.MailMsg.GetMail.Builder.class);
       }
@@ -2075,7 +2075,7 @@ public final class MailMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.MailMsg.internal_static_GetMail_descriptor;
+        return com.su.msg.MailMsg.internal_static_Msg_GetMail_descriptor;
       }
 
       public com.su.msg.MailMsg.GetMail getDefaultInstanceForType() {
@@ -2170,10 +2170,10 @@ public final class MailMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetMail)
+      // @@protoc_insertion_point(builder_scope:Msg.GetMail)
     }
 
-    // @@protoc_insertion_point(class_scope:GetMail)
+    // @@protoc_insertion_point(class_scope:Msg.GetMail)
     private static final com.su.msg.MailMsg.GetMail DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.MailMsg.GetMail();
@@ -2209,39 +2209,39 @@ public final class MailMsg {
   }
 
   public interface GetMailToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetMailTo)
+      // @@protoc_insertion_point(interface_extends:Msg.GetMailTo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .MailMo mail = 1;</code>
+     * <code>repeated .Msg.MailMo mail = 1;</code>
      */
     java.util.List<com.su.msg.MailMsg.MailMo> 
         getMailList();
     /**
-     * <code>repeated .MailMo mail = 1;</code>
+     * <code>repeated .Msg.MailMo mail = 1;</code>
      */
     com.su.msg.MailMsg.MailMo getMail(int index);
     /**
-     * <code>repeated .MailMo mail = 1;</code>
+     * <code>repeated .Msg.MailMo mail = 1;</code>
      */
     int getMailCount();
     /**
-     * <code>repeated .MailMo mail = 1;</code>
+     * <code>repeated .Msg.MailMo mail = 1;</code>
      */
     java.util.List<? extends com.su.msg.MailMsg.MailMoOrBuilder> 
         getMailOrBuilderList();
     /**
-     * <code>repeated .MailMo mail = 1;</code>
+     * <code>repeated .Msg.MailMo mail = 1;</code>
      */
     com.su.msg.MailMsg.MailMoOrBuilder getMailOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code GetMailTo}
+   * Protobuf type {@code Msg.GetMailTo}
    */
   public  static final class GetMailTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetMailTo)
+      // @@protoc_insertion_point(message_implements:Msg.GetMailTo)
       GetMailToOrBuilder {
     // Use GetMailTo.newBuilder() to construct.
     private GetMailTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -2305,12 +2305,12 @@ public final class MailMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.MailMsg.internal_static_GetMailTo_descriptor;
+      return com.su.msg.MailMsg.internal_static_Msg_GetMailTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.MailMsg.internal_static_GetMailTo_fieldAccessorTable
+      return com.su.msg.MailMsg.internal_static_Msg_GetMailTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.MailMsg.GetMailTo.class, com.su.msg.MailMsg.GetMailTo.Builder.class);
     }
@@ -2318,32 +2318,32 @@ public final class MailMsg {
     public static final int MAIL_FIELD_NUMBER = 1;
     private java.util.List<com.su.msg.MailMsg.MailMo> mail_;
     /**
-     * <code>repeated .MailMo mail = 1;</code>
+     * <code>repeated .Msg.MailMo mail = 1;</code>
      */
     public java.util.List<com.su.msg.MailMsg.MailMo> getMailList() {
       return mail_;
     }
     /**
-     * <code>repeated .MailMo mail = 1;</code>
+     * <code>repeated .Msg.MailMo mail = 1;</code>
      */
     public java.util.List<? extends com.su.msg.MailMsg.MailMoOrBuilder> 
         getMailOrBuilderList() {
       return mail_;
     }
     /**
-     * <code>repeated .MailMo mail = 1;</code>
+     * <code>repeated .Msg.MailMo mail = 1;</code>
      */
     public int getMailCount() {
       return mail_.size();
     }
     /**
-     * <code>repeated .MailMo mail = 1;</code>
+     * <code>repeated .Msg.MailMo mail = 1;</code>
      */
     public com.su.msg.MailMsg.MailMo getMail(int index) {
       return mail_.get(index);
     }
     /**
-     * <code>repeated .MailMo mail = 1;</code>
+     * <code>repeated .Msg.MailMo mail = 1;</code>
      */
     public com.su.msg.MailMsg.MailMoOrBuilder getMailOrBuilder(
         int index) {
@@ -2494,20 +2494,20 @@ public final class MailMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code GetMailTo}
+     * Protobuf type {@code Msg.GetMailTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetMailTo)
+        // @@protoc_insertion_point(builder_implements:Msg.GetMailTo)
         com.su.msg.MailMsg.GetMailToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.MailMsg.internal_static_GetMailTo_descriptor;
+        return com.su.msg.MailMsg.internal_static_Msg_GetMailTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.MailMsg.internal_static_GetMailTo_fieldAccessorTable
+        return com.su.msg.MailMsg.internal_static_Msg_GetMailTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.MailMsg.GetMailTo.class, com.su.msg.MailMsg.GetMailTo.Builder.class);
       }
@@ -2541,7 +2541,7 @@ public final class MailMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.MailMsg.internal_static_GetMailTo_descriptor;
+        return com.su.msg.MailMsg.internal_static_Msg_GetMailTo_descriptor;
       }
 
       public com.su.msg.MailMsg.GetMailTo getDefaultInstanceForType() {
@@ -2676,7 +2676,7 @@ public final class MailMsg {
           com.su.msg.MailMsg.MailMo, com.su.msg.MailMsg.MailMo.Builder, com.su.msg.MailMsg.MailMoOrBuilder> mailBuilder_;
 
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public java.util.List<com.su.msg.MailMsg.MailMo> getMailList() {
         if (mailBuilder_ == null) {
@@ -2686,7 +2686,7 @@ public final class MailMsg {
         }
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public int getMailCount() {
         if (mailBuilder_ == null) {
@@ -2696,7 +2696,7 @@ public final class MailMsg {
         }
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public com.su.msg.MailMsg.MailMo getMail(int index) {
         if (mailBuilder_ == null) {
@@ -2706,7 +2706,7 @@ public final class MailMsg {
         }
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public Builder setMail(
           int index, com.su.msg.MailMsg.MailMo value) {
@@ -2723,7 +2723,7 @@ public final class MailMsg {
         return this;
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public Builder setMail(
           int index, com.su.msg.MailMsg.MailMo.Builder builderForValue) {
@@ -2737,7 +2737,7 @@ public final class MailMsg {
         return this;
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public Builder addMail(com.su.msg.MailMsg.MailMo value) {
         if (mailBuilder_ == null) {
@@ -2753,7 +2753,7 @@ public final class MailMsg {
         return this;
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public Builder addMail(
           int index, com.su.msg.MailMsg.MailMo value) {
@@ -2770,7 +2770,7 @@ public final class MailMsg {
         return this;
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public Builder addMail(
           com.su.msg.MailMsg.MailMo.Builder builderForValue) {
@@ -2784,7 +2784,7 @@ public final class MailMsg {
         return this;
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public Builder addMail(
           int index, com.su.msg.MailMsg.MailMo.Builder builderForValue) {
@@ -2798,7 +2798,7 @@ public final class MailMsg {
         return this;
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public Builder addAllMail(
           java.lang.Iterable<? extends com.su.msg.MailMsg.MailMo> values) {
@@ -2813,7 +2813,7 @@ public final class MailMsg {
         return this;
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public Builder clearMail() {
         if (mailBuilder_ == null) {
@@ -2826,7 +2826,7 @@ public final class MailMsg {
         return this;
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public Builder removeMail(int index) {
         if (mailBuilder_ == null) {
@@ -2839,14 +2839,14 @@ public final class MailMsg {
         return this;
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public com.su.msg.MailMsg.MailMo.Builder getMailBuilder(
           int index) {
         return getMailFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public com.su.msg.MailMsg.MailMoOrBuilder getMailOrBuilder(
           int index) {
@@ -2856,7 +2856,7 @@ public final class MailMsg {
         }
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public java.util.List<? extends com.su.msg.MailMsg.MailMoOrBuilder> 
            getMailOrBuilderList() {
@@ -2867,14 +2867,14 @@ public final class MailMsg {
         }
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public com.su.msg.MailMsg.MailMo.Builder addMailBuilder() {
         return getMailFieldBuilder().addBuilder(
             com.su.msg.MailMsg.MailMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public com.su.msg.MailMsg.MailMo.Builder addMailBuilder(
           int index) {
@@ -2882,7 +2882,7 @@ public final class MailMsg {
             index, com.su.msg.MailMsg.MailMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .MailMo mail = 1;</code>
+       * <code>repeated .Msg.MailMo mail = 1;</code>
        */
       public java.util.List<com.su.msg.MailMsg.MailMo.Builder> 
            getMailBuilderList() {
@@ -2913,10 +2913,10 @@ public final class MailMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetMailTo)
+      // @@protoc_insertion_point(builder_scope:Msg.GetMailTo)
     }
 
-    // @@protoc_insertion_point(class_scope:GetMailTo)
+    // @@protoc_insertion_point(class_scope:Msg.GetMailTo)
     private static final com.su.msg.MailMsg.GetMailTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.MailMsg.GetMailTo();
@@ -2952,7 +2952,7 @@ public final class MailMsg {
   }
 
   public interface DelMailOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:DelMail)
+      // @@protoc_insertion_point(interface_extends:Msg.DelMail)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2973,11 +2973,11 @@ public final class MailMsg {
    * 删除邮件
    * </pre>
    *
-   * Protobuf type {@code DelMail}
+   * Protobuf type {@code Msg.DelMail}
    */
   public  static final class DelMail extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:DelMail)
+      // @@protoc_insertion_point(message_implements:Msg.DelMail)
       DelMailOrBuilder {
     // Use DelMail.newBuilder() to construct.
     private DelMail(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -3053,12 +3053,12 @@ public final class MailMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.MailMsg.internal_static_DelMail_descriptor;
+      return com.su.msg.MailMsg.internal_static_Msg_DelMail_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.MailMsg.internal_static_DelMail_fieldAccessorTable
+      return com.su.msg.MailMsg.internal_static_Msg_DelMail_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.MailMsg.DelMail.class, com.su.msg.MailMsg.DelMail.Builder.class);
     }
@@ -3238,20 +3238,20 @@ public final class MailMsg {
      * 删除邮件
      * </pre>
      *
-     * Protobuf type {@code DelMail}
+     * Protobuf type {@code Msg.DelMail}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:DelMail)
+        // @@protoc_insertion_point(builder_implements:Msg.DelMail)
         com.su.msg.MailMsg.DelMailOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.MailMsg.internal_static_DelMail_descriptor;
+        return com.su.msg.MailMsg.internal_static_Msg_DelMail_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.MailMsg.internal_static_DelMail_fieldAccessorTable
+        return com.su.msg.MailMsg.internal_static_Msg_DelMail_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.MailMsg.DelMail.class, com.su.msg.MailMsg.DelMail.Builder.class);
       }
@@ -3280,7 +3280,7 @@ public final class MailMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.MailMsg.internal_static_DelMail_descriptor;
+        return com.su.msg.MailMsg.internal_static_Msg_DelMail_descriptor;
       }
 
       public com.su.msg.MailMsg.DelMail getDefaultInstanceForType() {
@@ -3458,10 +3458,10 @@ public final class MailMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:DelMail)
+      // @@protoc_insertion_point(builder_scope:Msg.DelMail)
     }
 
-    // @@protoc_insertion_point(class_scope:DelMail)
+    // @@protoc_insertion_point(class_scope:Msg.DelMail)
     private static final com.su.msg.MailMsg.DelMail DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.MailMsg.DelMail();
@@ -3497,7 +3497,7 @@ public final class MailMsg {
   }
 
   public interface DelMailToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:DelMailTo)
+      // @@protoc_insertion_point(interface_extends:Msg.DelMailTo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -3514,11 +3514,11 @@ public final class MailMsg {
     long getId(int index);
   }
   /**
-   * Protobuf type {@code DelMailTo}
+   * Protobuf type {@code Msg.DelMailTo}
    */
   public  static final class DelMailTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:DelMailTo)
+      // @@protoc_insertion_point(message_implements:Msg.DelMailTo)
       DelMailToOrBuilder {
     // Use DelMailTo.newBuilder() to construct.
     private DelMailTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -3594,12 +3594,12 @@ public final class MailMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.MailMsg.internal_static_DelMailTo_descriptor;
+      return com.su.msg.MailMsg.internal_static_Msg_DelMailTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.MailMsg.internal_static_DelMailTo_fieldAccessorTable
+      return com.su.msg.MailMsg.internal_static_Msg_DelMailTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.MailMsg.DelMailTo.class, com.su.msg.MailMsg.DelMailTo.Builder.class);
     }
@@ -3775,20 +3775,20 @@ public final class MailMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code DelMailTo}
+     * Protobuf type {@code Msg.DelMailTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:DelMailTo)
+        // @@protoc_insertion_point(builder_implements:Msg.DelMailTo)
         com.su.msg.MailMsg.DelMailToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.MailMsg.internal_static_DelMailTo_descriptor;
+        return com.su.msg.MailMsg.internal_static_Msg_DelMailTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.MailMsg.internal_static_DelMailTo_fieldAccessorTable
+        return com.su.msg.MailMsg.internal_static_Msg_DelMailTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.MailMsg.DelMailTo.class, com.su.msg.MailMsg.DelMailTo.Builder.class);
       }
@@ -3817,7 +3817,7 @@ public final class MailMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.MailMsg.internal_static_DelMailTo_descriptor;
+        return com.su.msg.MailMsg.internal_static_Msg_DelMailTo_descriptor;
       }
 
       public com.su.msg.MailMsg.DelMailTo getDefaultInstanceForType() {
@@ -3995,10 +3995,10 @@ public final class MailMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:DelMailTo)
+      // @@protoc_insertion_point(builder_scope:Msg.DelMailTo)
     }
 
-    // @@protoc_insertion_point(class_scope:DelMailTo)
+    // @@protoc_insertion_point(class_scope:Msg.DelMailTo)
     private static final com.su.msg.MailMsg.DelMailTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.MailMsg.DelMailTo();
@@ -4034,7 +4034,7 @@ public final class MailMsg {
   }
 
   public interface GetMailRewardOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetMailReward)
+      // @@protoc_insertion_point(interface_extends:Msg.GetMailReward)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -4059,11 +4059,11 @@ public final class MailMsg {
    * 领取附件
    * </pre>
    *
-   * Protobuf type {@code GetMailReward}
+   * Protobuf type {@code Msg.GetMailReward}
    */
   public  static final class GetMailReward extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetMailReward)
+      // @@protoc_insertion_point(message_implements:Msg.GetMailReward)
       GetMailRewardOrBuilder {
     // Use GetMailReward.newBuilder() to construct.
     private GetMailReward(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -4120,12 +4120,12 @@ public final class MailMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.MailMsg.internal_static_GetMailReward_descriptor;
+      return com.su.msg.MailMsg.internal_static_Msg_GetMailReward_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.MailMsg.internal_static_GetMailReward_fieldAccessorTable
+      return com.su.msg.MailMsg.internal_static_Msg_GetMailReward_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.MailMsg.GetMailReward.class, com.su.msg.MailMsg.GetMailReward.Builder.class);
     }
@@ -4306,20 +4306,20 @@ public final class MailMsg {
      * 领取附件
      * </pre>
      *
-     * Protobuf type {@code GetMailReward}
+     * Protobuf type {@code Msg.GetMailReward}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetMailReward)
+        // @@protoc_insertion_point(builder_implements:Msg.GetMailReward)
         com.su.msg.MailMsg.GetMailRewardOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.MailMsg.internal_static_GetMailReward_descriptor;
+        return com.su.msg.MailMsg.internal_static_Msg_GetMailReward_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.MailMsg.internal_static_GetMailReward_fieldAccessorTable
+        return com.su.msg.MailMsg.internal_static_Msg_GetMailReward_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.MailMsg.GetMailReward.class, com.su.msg.MailMsg.GetMailReward.Builder.class);
       }
@@ -4348,7 +4348,7 @@ public final class MailMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.MailMsg.internal_static_GetMailReward_descriptor;
+        return com.su.msg.MailMsg.internal_static_Msg_GetMailReward_descriptor;
       }
 
       public com.su.msg.MailMsg.GetMailReward getDefaultInstanceForType() {
@@ -4502,10 +4502,10 @@ public final class MailMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetMailReward)
+      // @@protoc_insertion_point(builder_scope:Msg.GetMailReward)
     }
 
-    // @@protoc_insertion_point(class_scope:GetMailReward)
+    // @@protoc_insertion_point(class_scope:Msg.GetMailReward)
     private static final com.su.msg.MailMsg.GetMailReward DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.MailMsg.GetMailReward();
@@ -4541,7 +4541,7 @@ public final class MailMsg {
   }
 
   public interface GetMailRewardToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetMailRewardTo)
+      // @@protoc_insertion_point(interface_extends:Msg.GetMailRewardTo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -4549,7 +4549,7 @@ public final class MailMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     java.util.List<com.su.msg.CommonMsg.ItemMo> 
         getRewardList();
@@ -4558,7 +4558,7 @@ public final class MailMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     com.su.msg.CommonMsg.ItemMo getReward(int index);
     /**
@@ -4566,7 +4566,7 @@ public final class MailMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     int getRewardCount();
     /**
@@ -4574,7 +4574,7 @@ public final class MailMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     java.util.List<? extends com.su.msg.CommonMsg.ItemMoOrBuilder> 
         getRewardOrBuilderList();
@@ -4583,17 +4583,17 @@ public final class MailMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     com.su.msg.CommonMsg.ItemMoOrBuilder getRewardOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code GetMailRewardTo}
+   * Protobuf type {@code Msg.GetMailRewardTo}
    */
   public  static final class GetMailRewardTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetMailRewardTo)
+      // @@protoc_insertion_point(message_implements:Msg.GetMailRewardTo)
       GetMailRewardToOrBuilder {
     // Use GetMailRewardTo.newBuilder() to construct.
     private GetMailRewardTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -4657,12 +4657,12 @@ public final class MailMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.MailMsg.internal_static_GetMailRewardTo_descriptor;
+      return com.su.msg.MailMsg.internal_static_Msg_GetMailRewardTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.MailMsg.internal_static_GetMailRewardTo_fieldAccessorTable
+      return com.su.msg.MailMsg.internal_static_Msg_GetMailRewardTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.MailMsg.GetMailRewardTo.class, com.su.msg.MailMsg.GetMailRewardTo.Builder.class);
     }
@@ -4674,7 +4674,7 @@ public final class MailMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     public java.util.List<com.su.msg.CommonMsg.ItemMo> getRewardList() {
       return reward_;
@@ -4684,7 +4684,7 @@ public final class MailMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     public java.util.List<? extends com.su.msg.CommonMsg.ItemMoOrBuilder> 
         getRewardOrBuilderList() {
@@ -4695,7 +4695,7 @@ public final class MailMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     public int getRewardCount() {
       return reward_.size();
@@ -4705,7 +4705,7 @@ public final class MailMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     public com.su.msg.CommonMsg.ItemMo getReward(int index) {
       return reward_.get(index);
@@ -4715,7 +4715,7 @@ public final class MailMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     public com.su.msg.CommonMsg.ItemMoOrBuilder getRewardOrBuilder(
         int index) {
@@ -4866,20 +4866,20 @@ public final class MailMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code GetMailRewardTo}
+     * Protobuf type {@code Msg.GetMailRewardTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetMailRewardTo)
+        // @@protoc_insertion_point(builder_implements:Msg.GetMailRewardTo)
         com.su.msg.MailMsg.GetMailRewardToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.MailMsg.internal_static_GetMailRewardTo_descriptor;
+        return com.su.msg.MailMsg.internal_static_Msg_GetMailRewardTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.MailMsg.internal_static_GetMailRewardTo_fieldAccessorTable
+        return com.su.msg.MailMsg.internal_static_Msg_GetMailRewardTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.MailMsg.GetMailRewardTo.class, com.su.msg.MailMsg.GetMailRewardTo.Builder.class);
       }
@@ -4913,7 +4913,7 @@ public final class MailMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.MailMsg.internal_static_GetMailRewardTo_descriptor;
+        return com.su.msg.MailMsg.internal_static_Msg_GetMailRewardTo_descriptor;
       }
 
       public com.su.msg.MailMsg.GetMailRewardTo getDefaultInstanceForType() {
@@ -5052,7 +5052,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public java.util.List<com.su.msg.CommonMsg.ItemMo> getRewardList() {
         if (rewardBuilder_ == null) {
@@ -5066,7 +5066,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public int getRewardCount() {
         if (rewardBuilder_ == null) {
@@ -5080,7 +5080,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public com.su.msg.CommonMsg.ItemMo getReward(int index) {
         if (rewardBuilder_ == null) {
@@ -5094,7 +5094,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder setReward(
           int index, com.su.msg.CommonMsg.ItemMo value) {
@@ -5115,7 +5115,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder setReward(
           int index, com.su.msg.CommonMsg.ItemMo.Builder builderForValue) {
@@ -5133,7 +5133,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder addReward(com.su.msg.CommonMsg.ItemMo value) {
         if (rewardBuilder_ == null) {
@@ -5153,7 +5153,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder addReward(
           int index, com.su.msg.CommonMsg.ItemMo value) {
@@ -5174,7 +5174,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder addReward(
           com.su.msg.CommonMsg.ItemMo.Builder builderForValue) {
@@ -5192,7 +5192,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder addReward(
           int index, com.su.msg.CommonMsg.ItemMo.Builder builderForValue) {
@@ -5210,7 +5210,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder addAllReward(
           java.lang.Iterable<? extends com.su.msg.CommonMsg.ItemMo> values) {
@@ -5229,7 +5229,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder clearReward() {
         if (rewardBuilder_ == null) {
@@ -5246,7 +5246,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder removeReward(int index) {
         if (rewardBuilder_ == null) {
@@ -5263,7 +5263,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public com.su.msg.CommonMsg.ItemMo.Builder getRewardBuilder(
           int index) {
@@ -5274,7 +5274,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public com.su.msg.CommonMsg.ItemMoOrBuilder getRewardOrBuilder(
           int index) {
@@ -5288,7 +5288,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public java.util.List<? extends com.su.msg.CommonMsg.ItemMoOrBuilder> 
            getRewardOrBuilderList() {
@@ -5303,7 +5303,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public com.su.msg.CommonMsg.ItemMo.Builder addRewardBuilder() {
         return getRewardFieldBuilder().addBuilder(
@@ -5314,7 +5314,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public com.su.msg.CommonMsg.ItemMo.Builder addRewardBuilder(
           int index) {
@@ -5326,7 +5326,7 @@ public final class MailMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public java.util.List<com.su.msg.CommonMsg.ItemMo.Builder> 
            getRewardBuilderList() {
@@ -5357,10 +5357,10 @@ public final class MailMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetMailRewardTo)
+      // @@protoc_insertion_point(builder_scope:Msg.GetMailRewardTo)
     }
 
-    // @@protoc_insertion_point(class_scope:GetMailRewardTo)
+    // @@protoc_insertion_point(class_scope:Msg.GetMailRewardTo)
     private static final com.su.msg.MailMsg.GetMailRewardTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.MailMsg.GetMailRewardTo();
@@ -5396,19 +5396,19 @@ public final class MailMsg {
   }
 
   public interface MailNoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:MailNo)
+      // @@protoc_insertion_point(interface_extends:Msg.MailNo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional .MailMo mail = 1;</code>
+     * <code>optional .Msg.MailMo mail = 1;</code>
      */
     boolean hasMail();
     /**
-     * <code>optional .MailMo mail = 1;</code>
+     * <code>optional .Msg.MailMo mail = 1;</code>
      */
     com.su.msg.MailMsg.MailMo getMail();
     /**
-     * <code>optional .MailMo mail = 1;</code>
+     * <code>optional .Msg.MailMo mail = 1;</code>
      */
     com.su.msg.MailMsg.MailMoOrBuilder getMailOrBuilder();
   }
@@ -5417,11 +5417,11 @@ public final class MailMsg {
    * 邮件通知
    * </pre>
    *
-   * Protobuf type {@code MailNo}
+   * Protobuf type {@code Msg.MailNo}
    */
   public  static final class MailNo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:MailNo)
+      // @@protoc_insertion_point(message_implements:Msg.MailNo)
       MailNoOrBuilder {
     // Use MailNo.newBuilder() to construct.
     private MailNo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -5485,12 +5485,12 @@ public final class MailMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.MailMsg.internal_static_MailNo_descriptor;
+      return com.su.msg.MailMsg.internal_static_Msg_MailNo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.MailMsg.internal_static_MailNo_fieldAccessorTable
+      return com.su.msg.MailMsg.internal_static_Msg_MailNo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.MailMsg.MailNo.class, com.su.msg.MailMsg.MailNo.Builder.class);
     }
@@ -5499,19 +5499,19 @@ public final class MailMsg {
     public static final int MAIL_FIELD_NUMBER = 1;
     private com.su.msg.MailMsg.MailMo mail_;
     /**
-     * <code>optional .MailMo mail = 1;</code>
+     * <code>optional .Msg.MailMo mail = 1;</code>
      */
     public boolean hasMail() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional .MailMo mail = 1;</code>
+     * <code>optional .Msg.MailMo mail = 1;</code>
      */
     public com.su.msg.MailMsg.MailMo getMail() {
       return mail_ == null ? com.su.msg.MailMsg.MailMo.getDefaultInstance() : mail_;
     }
     /**
-     * <code>optional .MailMo mail = 1;</code>
+     * <code>optional .Msg.MailMo mail = 1;</code>
      */
     public com.su.msg.MailMsg.MailMoOrBuilder getMailOrBuilder() {
       return mail_ == null ? com.su.msg.MailMsg.MailMo.getDefaultInstance() : mail_;
@@ -5668,20 +5668,20 @@ public final class MailMsg {
      * 邮件通知
      * </pre>
      *
-     * Protobuf type {@code MailNo}
+     * Protobuf type {@code Msg.MailNo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:MailNo)
+        // @@protoc_insertion_point(builder_implements:Msg.MailNo)
         com.su.msg.MailMsg.MailNoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.MailMsg.internal_static_MailNo_descriptor;
+        return com.su.msg.MailMsg.internal_static_Msg_MailNo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.MailMsg.internal_static_MailNo_fieldAccessorTable
+        return com.su.msg.MailMsg.internal_static_Msg_MailNo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.MailMsg.MailNo.class, com.su.msg.MailMsg.MailNo.Builder.class);
       }
@@ -5715,7 +5715,7 @@ public final class MailMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.MailMsg.internal_static_MailNo_descriptor;
+        return com.su.msg.MailMsg.internal_static_Msg_MailNo_descriptor;
       }
 
       public com.su.msg.MailMsg.MailNo getDefaultInstanceForType() {
@@ -5819,13 +5819,13 @@ public final class MailMsg {
       private com.google.protobuf.SingleFieldBuilderV3<
           com.su.msg.MailMsg.MailMo, com.su.msg.MailMsg.MailMo.Builder, com.su.msg.MailMsg.MailMoOrBuilder> mailBuilder_;
       /**
-       * <code>optional .MailMo mail = 1;</code>
+       * <code>optional .Msg.MailMo mail = 1;</code>
        */
       public boolean hasMail() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional .MailMo mail = 1;</code>
+       * <code>optional .Msg.MailMo mail = 1;</code>
        */
       public com.su.msg.MailMsg.MailMo getMail() {
         if (mailBuilder_ == null) {
@@ -5835,7 +5835,7 @@ public final class MailMsg {
         }
       }
       /**
-       * <code>optional .MailMo mail = 1;</code>
+       * <code>optional .Msg.MailMo mail = 1;</code>
        */
       public Builder setMail(com.su.msg.MailMsg.MailMo value) {
         if (mailBuilder_ == null) {
@@ -5851,7 +5851,7 @@ public final class MailMsg {
         return this;
       }
       /**
-       * <code>optional .MailMo mail = 1;</code>
+       * <code>optional .Msg.MailMo mail = 1;</code>
        */
       public Builder setMail(
           com.su.msg.MailMsg.MailMo.Builder builderForValue) {
@@ -5865,7 +5865,7 @@ public final class MailMsg {
         return this;
       }
       /**
-       * <code>optional .MailMo mail = 1;</code>
+       * <code>optional .Msg.MailMo mail = 1;</code>
        */
       public Builder mergeMail(com.su.msg.MailMsg.MailMo value) {
         if (mailBuilder_ == null) {
@@ -5885,7 +5885,7 @@ public final class MailMsg {
         return this;
       }
       /**
-       * <code>optional .MailMo mail = 1;</code>
+       * <code>optional .Msg.MailMo mail = 1;</code>
        */
       public Builder clearMail() {
         if (mailBuilder_ == null) {
@@ -5898,7 +5898,7 @@ public final class MailMsg {
         return this;
       }
       /**
-       * <code>optional .MailMo mail = 1;</code>
+       * <code>optional .Msg.MailMo mail = 1;</code>
        */
       public com.su.msg.MailMsg.MailMo.Builder getMailBuilder() {
         bitField0_ |= 0x00000001;
@@ -5906,7 +5906,7 @@ public final class MailMsg {
         return getMailFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .MailMo mail = 1;</code>
+       * <code>optional .Msg.MailMo mail = 1;</code>
        */
       public com.su.msg.MailMsg.MailMoOrBuilder getMailOrBuilder() {
         if (mailBuilder_ != null) {
@@ -5917,7 +5917,7 @@ public final class MailMsg {
         }
       }
       /**
-       * <code>optional .MailMo mail = 1;</code>
+       * <code>optional .Msg.MailMo mail = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.su.msg.MailMsg.MailMo, com.su.msg.MailMsg.MailMo.Builder, com.su.msg.MailMsg.MailMoOrBuilder> 
@@ -5943,10 +5943,10 @@ public final class MailMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:MailNo)
+      // @@protoc_insertion_point(builder_scope:Msg.MailNo)
     }
 
-    // @@protoc_insertion_point(class_scope:MailNo)
+    // @@protoc_insertion_point(class_scope:Msg.MailNo)
     private static final com.su.msg.MailMsg.MailNo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.MailMsg.MailNo();
@@ -5982,45 +5982,45 @@ public final class MailMsg {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MailMo_descriptor;
+    internal_static_Msg_MailMo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_MailMo_fieldAccessorTable;
+      internal_static_Msg_MailMo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetMail_descriptor;
+    internal_static_Msg_GetMail_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetMail_fieldAccessorTable;
+      internal_static_Msg_GetMail_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetMailTo_descriptor;
+    internal_static_Msg_GetMailTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetMailTo_fieldAccessorTable;
+      internal_static_Msg_GetMailTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_DelMail_descriptor;
+    internal_static_Msg_DelMail_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_DelMail_fieldAccessorTable;
+      internal_static_Msg_DelMail_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_DelMailTo_descriptor;
+    internal_static_Msg_DelMailTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_DelMailTo_fieldAccessorTable;
+      internal_static_Msg_DelMailTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetMailReward_descriptor;
+    internal_static_Msg_GetMailReward_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetMailReward_fieldAccessorTable;
+      internal_static_Msg_GetMailReward_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetMailRewardTo_descriptor;
+    internal_static_Msg_GetMailRewardTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetMailRewardTo_fieldAccessorTable;
+      internal_static_Msg_GetMailRewardTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MailNo_descriptor;
+    internal_static_Msg_MailNo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_MailNo_fieldAccessorTable;
+      internal_static_Msg_MailNo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -6030,17 +6030,17 @@ public final class MailMsg {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\rMailMsg.proto\032\017CommonMsg.proto\"\204\001\n\006Mai" +
-      "lMo\022\n\n\002id\030\001 \001(\003\022\016\n\006mailId\030\002 \001(\005\022\020\n\010sendN" +
-      "ame\030\003 \001(\t\022\020\n\010sendTime\030\004 \001(\003\022\027\n\006reward\030\005 " +
-      "\003(\0132\007.ItemMo\022\021\n\tisReceive\030\006 \001(\005\022\016\n\006param" +
-      "s\030\007 \003(\t\"\t\n\007GetMail\"\"\n\tGetMailTo\022\025\n\004mail\030" +
-      "\001 \003(\0132\007.MailMo\"\025\n\007DelMail\022\n\n\002id\030\001 \003(\003\"\027\n" +
-      "\tDelMailTo\022\n\n\002id\030\001 \003(\003\"\033\n\rGetMailReward\022" +
-      "\n\n\002id\030\001 \001(\003\"*\n\017GetMailRewardTo\022\027\n\006reward" +
-      "\030\001 \003(\0132\007.ItemMo\"\037\n\006MailNo\022\025\n\004mail\030\001 \001(\0132" +
-      "\007.MailMoB%\n\ncom.su.msgH\001\252\002\024Assets.Script",
-      "s.Proto"
+      "\n\rMailMsg.proto\022\003Msg\032\017CommonMsg.proto\"\210\001" +
+      "\n\006MailMo\022\n\n\002id\030\001 \001(\003\022\016\n\006mailId\030\002 \001(\005\022\020\n\010" +
+      "sendName\030\003 \001(\t\022\020\n\010sendTime\030\004 \001(\003\022\033\n\006rewa" +
+      "rd\030\005 \003(\0132\013.Msg.ItemMo\022\021\n\tisReceive\030\006 \001(\005" +
+      "\022\016\n\006params\030\007 \003(\t\"\t\n\007GetMail\"&\n\tGetMailTo" +
+      "\022\031\n\004mail\030\001 \003(\0132\013.Msg.MailMo\"\025\n\007DelMail\022\n" +
+      "\n\002id\030\001 \003(\003\"\027\n\tDelMailTo\022\n\n\002id\030\001 \003(\003\"\033\n\rG" +
+      "etMailReward\022\n\n\002id\030\001 \001(\003\".\n\017GetMailRewar" +
+      "dTo\022\033\n\006reward\030\001 \003(\0132\013.Msg.ItemMo\"#\n\006Mail" +
+      "No\022\031\n\004mail\030\001 \001(\0132\013.Msg.MailMoB\016\n\ncom.su.",
+      "msgH\001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -6055,53 +6055,53 @@ public final class MailMsg {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.su.msg.CommonMsg.getDescriptor(),
         }, assigner);
-    internal_static_MailMo_descriptor =
+    internal_static_Msg_MailMo_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_MailMo_fieldAccessorTable = new
+    internal_static_Msg_MailMo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_MailMo_descriptor,
+        internal_static_Msg_MailMo_descriptor,
         new java.lang.String[] { "Id", "MailId", "SendName", "SendTime", "Reward", "IsReceive", "Params", });
-    internal_static_GetMail_descriptor =
+    internal_static_Msg_GetMail_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_GetMail_fieldAccessorTable = new
+    internal_static_Msg_GetMail_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetMail_descriptor,
+        internal_static_Msg_GetMail_descriptor,
         new java.lang.String[] { });
-    internal_static_GetMailTo_descriptor =
+    internal_static_Msg_GetMailTo_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_GetMailTo_fieldAccessorTable = new
+    internal_static_Msg_GetMailTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetMailTo_descriptor,
+        internal_static_Msg_GetMailTo_descriptor,
         new java.lang.String[] { "Mail", });
-    internal_static_DelMail_descriptor =
+    internal_static_Msg_DelMail_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_DelMail_fieldAccessorTable = new
+    internal_static_Msg_DelMail_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_DelMail_descriptor,
+        internal_static_Msg_DelMail_descriptor,
         new java.lang.String[] { "Id", });
-    internal_static_DelMailTo_descriptor =
+    internal_static_Msg_DelMailTo_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_DelMailTo_fieldAccessorTable = new
+    internal_static_Msg_DelMailTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_DelMailTo_descriptor,
+        internal_static_Msg_DelMailTo_descriptor,
         new java.lang.String[] { "Id", });
-    internal_static_GetMailReward_descriptor =
+    internal_static_Msg_GetMailReward_descriptor =
       getDescriptor().getMessageTypes().get(5);
-    internal_static_GetMailReward_fieldAccessorTable = new
+    internal_static_Msg_GetMailReward_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetMailReward_descriptor,
+        internal_static_Msg_GetMailReward_descriptor,
         new java.lang.String[] { "Id", });
-    internal_static_GetMailRewardTo_descriptor =
+    internal_static_Msg_GetMailRewardTo_descriptor =
       getDescriptor().getMessageTypes().get(6);
-    internal_static_GetMailRewardTo_fieldAccessorTable = new
+    internal_static_Msg_GetMailRewardTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetMailRewardTo_descriptor,
+        internal_static_Msg_GetMailRewardTo_descriptor,
         new java.lang.String[] { "Reward", });
-    internal_static_MailNo_descriptor =
+    internal_static_Msg_MailNo_descriptor =
       getDescriptor().getMessageTypes().get(7);
-    internal_static_MailNo_fieldAccessorTable = new
+    internal_static_Msg_MailNo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_MailNo_descriptor,
+        internal_static_Msg_MailNo_descriptor,
         new java.lang.String[] { "Mail", });
     com.su.msg.CommonMsg.getDescriptor();
   }

@@ -1,4 +1,4 @@
-package com.su.excel.core;
+package com.su.excel.core.old;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -23,7 +23,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import com.su.common.util.StringUtil;
-import com.su.config.RoleCo;
 
 /**
  * 预处理excel数据，验证数据完整性后保存

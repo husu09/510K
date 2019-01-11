@@ -47,8 +47,6 @@ public class RankingControl {
 			Player player = playerService.getPlayer(Long.parseLong(t.getElement()));
 			_Ranking.setId(player.getId());
 			_Ranking.setName(player.getName());
-			_Ranking.setSex(player.getSex());
-			_Ranking.setTitle(player.getTitle());
 			_Ranking.setScore((int)t.getScore());
 			resp.addRanking(_Ranking);
 		}

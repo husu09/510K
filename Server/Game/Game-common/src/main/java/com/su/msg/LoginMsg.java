@@ -15,7 +15,7 @@ public final class LoginMsg {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface LoginOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:Login)
+      // @@protoc_insertion_point(interface_extends:Msg.Login)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -43,43 +43,17 @@ public final class LoginMsg {
      */
     com.google.protobuf.ByteString
         getAccountBytes();
-
-    /**
-     * <pre>
-     * 名称
-     * </pre>
-     *
-     * <code>optional string name = 2;</code>
-     */
-    boolean hasName();
-    /**
-     * <pre>
-     * 名称
-     * </pre>
-     *
-     * <code>optional string name = 2;</code>
-     */
-    java.lang.String getName();
-    /**
-     * <pre>
-     * 名称
-     * </pre>
-     *
-     * <code>optional string name = 2;</code>
-     */
-    com.google.protobuf.ByteString
-        getNameBytes();
   }
   /**
    * <pre>
    * 登录
    * </pre>
    *
-   * Protobuf type {@code Login}
+   * Protobuf type {@code Msg.Login}
    */
   public  static final class Login extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:Login)
+      // @@protoc_insertion_point(message_implements:Msg.Login)
       LoginOrBuilder {
     // Use Login.newBuilder() to construct.
     private Login(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -87,7 +61,6 @@ public final class LoginMsg {
     }
     private Login() {
       account_ = "";
-      name_ = "";
     }
 
     @java.lang.Override
@@ -124,12 +97,6 @@ public final class LoginMsg {
               account_ = bs;
               break;
             }
-            case 18: {
-              com.google.protobuf.ByteString bs = input.readBytes();
-              bitField0_ |= 0x00000002;
-              name_ = bs;
-              break;
-            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -144,12 +111,12 @@ public final class LoginMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.LoginMsg.internal_static_Login_descriptor;
+      return com.su.msg.LoginMsg.internal_static_Msg_Login_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.LoginMsg.internal_static_Login_fieldAccessorTable
+      return com.su.msg.LoginMsg.internal_static_Msg_Login_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.LoginMsg.Login.class, com.su.msg.LoginMsg.Login.Builder.class);
     }
@@ -209,60 +176,6 @@ public final class LoginMsg {
       }
     }
 
-    public static final int NAME_FIELD_NUMBER = 2;
-    private volatile java.lang.Object name_;
-    /**
-     * <pre>
-     * 名称
-     * </pre>
-     *
-     * <code>optional string name = 2;</code>
-     */
-    public boolean hasName() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <pre>
-     * 名称
-     * </pre>
-     *
-     * <code>optional string name = 2;</code>
-     */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          name_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <pre>
-     * 名称
-     * </pre>
-     *
-     * <code>optional string name = 2;</code>
-     */
-    public com.google.protobuf.ByteString
-        getNameBytes() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        name_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -278,9 +191,6 @@ public final class LoginMsg {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, account_);
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
-      }
       unknownFields.writeTo(output);
     }
 
@@ -291,9 +201,6 @@ public final class LoginMsg {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, account_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,11 +224,6 @@ public final class LoginMsg {
         result = result && getAccount()
             .equals(other.getAccount());
       }
-      result = result && (hasName() == other.hasName());
-      if (hasName()) {
-        result = result && getName()
-            .equals(other.getName());
-      }
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -336,10 +238,6 @@ public final class LoginMsg {
       if (hasAccount()) {
         hash = (37 * hash) + ACCOUNT_FIELD_NUMBER;
         hash = (53 * hash) + getAccount().hashCode();
-      }
-      if (hasName()) {
-        hash = (37 * hash) + NAME_FIELD_NUMBER;
-        hash = (53 * hash) + getName().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -428,20 +326,20 @@ public final class LoginMsg {
      * 登录
      * </pre>
      *
-     * Protobuf type {@code Login}
+     * Protobuf type {@code Msg.Login}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:Login)
+        // @@protoc_insertion_point(builder_implements:Msg.Login)
         com.su.msg.LoginMsg.LoginOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.LoginMsg.internal_static_Login_descriptor;
+        return com.su.msg.LoginMsg.internal_static_Msg_Login_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.LoginMsg.internal_static_Login_fieldAccessorTable
+        return com.su.msg.LoginMsg.internal_static_Msg_Login_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.LoginMsg.Login.class, com.su.msg.LoginMsg.Login.Builder.class);
       }
@@ -465,14 +363,12 @@ public final class LoginMsg {
         super.clear();
         account_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
-        name_ = "";
-        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.LoginMsg.internal_static_Login_descriptor;
+        return com.su.msg.LoginMsg.internal_static_Msg_Login_descriptor;
       }
 
       public com.su.msg.LoginMsg.Login getDefaultInstanceForType() {
@@ -495,10 +391,6 @@ public final class LoginMsg {
           to_bitField0_ |= 0x00000001;
         }
         result.account_ = account_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
-        result.name_ = name_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -544,11 +436,6 @@ public final class LoginMsg {
         if (other.hasAccount()) {
           bitField0_ |= 0x00000001;
           account_ = other.account_;
-          onChanged();
-        }
-        if (other.hasName()) {
-          bitField0_ |= 0x00000002;
-          name_ = other.name_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -678,106 +565,6 @@ public final class LoginMsg {
         onChanged();
         return this;
       }
-
-      private java.lang.Object name_ = "";
-      /**
-       * <pre>
-       * 名称
-       * </pre>
-       *
-       * <code>optional string name = 2;</code>
-       */
-      public boolean hasName() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <pre>
-       * 名称
-       * </pre>
-       *
-       * <code>optional string name = 2;</code>
-       */
-      public java.lang.String getName() {
-        java.lang.Object ref = name_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            name_ = s;
-          }
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 名称
-       * </pre>
-       *
-       * <code>optional string name = 2;</code>
-       */
-      public com.google.protobuf.ByteString
-          getNameBytes() {
-        java.lang.Object ref = name_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          name_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <pre>
-       * 名称
-       * </pre>
-       *
-       * <code>optional string name = 2;</code>
-       */
-      public Builder setName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        name_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 名称
-       * </pre>
-       *
-       * <code>optional string name = 2;</code>
-       */
-      public Builder clearName() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        name_ = getDefaultInstance().getName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <pre>
-       * 名称
-       * </pre>
-       *
-       * <code>optional string name = 2;</code>
-       */
-      public Builder setNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        name_ = value;
-        onChanged();
-        return this;
-      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
@@ -789,10 +576,10 @@ public final class LoginMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:Login)
+      // @@protoc_insertion_point(builder_scope:Msg.Login)
     }
 
-    // @@protoc_insertion_point(class_scope:Login)
+    // @@protoc_insertion_point(class_scope:Msg.Login)
     private static final com.su.msg.LoginMsg.Login DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.LoginMsg.Login();
@@ -828,7 +615,7 @@ public final class LoginMsg {
   }
 
   public interface LoginToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:LoginTo)
+      // @@protoc_insertion_point(interface_extends:Msg.LoginTo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -836,7 +623,7 @@ public final class LoginMsg {
      * 玩家数据
      * </pre>
      *
-     * <code>optional .PlayerMo player = 1;</code>
+     * <code>optional .Msg.PlayerMo player = 1;</code>
      */
     boolean hasPlayer();
     /**
@@ -844,7 +631,7 @@ public final class LoginMsg {
      * 玩家数据
      * </pre>
      *
-     * <code>optional .PlayerMo player = 1;</code>
+     * <code>optional .Msg.PlayerMo player = 1;</code>
      */
     com.su.msg.PlayerMsg.PlayerMo getPlayer();
     /**
@@ -852,7 +639,7 @@ public final class LoginMsg {
      * 玩家数据
      * </pre>
      *
-     * <code>optional .PlayerMo player = 1;</code>
+     * <code>optional .Msg.PlayerMo player = 1;</code>
      */
     com.su.msg.PlayerMsg.PlayerMoOrBuilder getPlayerOrBuilder();
 
@@ -861,7 +648,7 @@ public final class LoginMsg {
      * 背包数据
      * </pre>
      *
-     * <code>repeated .GridMo grid = 2;</code>
+     * <code>repeated .Msg.GridMo grid = 2;</code>
      */
     java.util.List<com.su.msg.BagMsg.GridMo> 
         getGridList();
@@ -870,7 +657,7 @@ public final class LoginMsg {
      * 背包数据
      * </pre>
      *
-     * <code>repeated .GridMo grid = 2;</code>
+     * <code>repeated .Msg.GridMo grid = 2;</code>
      */
     com.su.msg.BagMsg.GridMo getGrid(int index);
     /**
@@ -878,7 +665,7 @@ public final class LoginMsg {
      * 背包数据
      * </pre>
      *
-     * <code>repeated .GridMo grid = 2;</code>
+     * <code>repeated .Msg.GridMo grid = 2;</code>
      */
     int getGridCount();
     /**
@@ -886,7 +673,7 @@ public final class LoginMsg {
      * 背包数据
      * </pre>
      *
-     * <code>repeated .GridMo grid = 2;</code>
+     * <code>repeated .Msg.GridMo grid = 2;</code>
      */
     java.util.List<? extends com.su.msg.BagMsg.GridMoOrBuilder> 
         getGridOrBuilderList();
@@ -895,17 +682,17 @@ public final class LoginMsg {
      * 背包数据
      * </pre>
      *
-     * <code>repeated .GridMo grid = 2;</code>
+     * <code>repeated .Msg.GridMo grid = 2;</code>
      */
     com.su.msg.BagMsg.GridMoOrBuilder getGridOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code LoginTo}
+   * Protobuf type {@code Msg.LoginTo}
    */
   public  static final class LoginTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:LoginTo)
+      // @@protoc_insertion_point(message_implements:Msg.LoginTo)
       LoginToOrBuilder {
     // Use LoginTo.newBuilder() to construct.
     private LoginTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -982,12 +769,12 @@ public final class LoginMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.LoginMsg.internal_static_LoginTo_descriptor;
+      return com.su.msg.LoginMsg.internal_static_Msg_LoginTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.LoginMsg.internal_static_LoginTo_fieldAccessorTable
+      return com.su.msg.LoginMsg.internal_static_Msg_LoginTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.LoginMsg.LoginTo.class, com.su.msg.LoginMsg.LoginTo.Builder.class);
     }
@@ -1000,7 +787,7 @@ public final class LoginMsg {
      * 玩家数据
      * </pre>
      *
-     * <code>optional .PlayerMo player = 1;</code>
+     * <code>optional .Msg.PlayerMo player = 1;</code>
      */
     public boolean hasPlayer() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -1010,7 +797,7 @@ public final class LoginMsg {
      * 玩家数据
      * </pre>
      *
-     * <code>optional .PlayerMo player = 1;</code>
+     * <code>optional .Msg.PlayerMo player = 1;</code>
      */
     public com.su.msg.PlayerMsg.PlayerMo getPlayer() {
       return player_ == null ? com.su.msg.PlayerMsg.PlayerMo.getDefaultInstance() : player_;
@@ -1020,7 +807,7 @@ public final class LoginMsg {
      * 玩家数据
      * </pre>
      *
-     * <code>optional .PlayerMo player = 1;</code>
+     * <code>optional .Msg.PlayerMo player = 1;</code>
      */
     public com.su.msg.PlayerMsg.PlayerMoOrBuilder getPlayerOrBuilder() {
       return player_ == null ? com.su.msg.PlayerMsg.PlayerMo.getDefaultInstance() : player_;
@@ -1033,7 +820,7 @@ public final class LoginMsg {
      * 背包数据
      * </pre>
      *
-     * <code>repeated .GridMo grid = 2;</code>
+     * <code>repeated .Msg.GridMo grid = 2;</code>
      */
     public java.util.List<com.su.msg.BagMsg.GridMo> getGridList() {
       return grid_;
@@ -1043,7 +830,7 @@ public final class LoginMsg {
      * 背包数据
      * </pre>
      *
-     * <code>repeated .GridMo grid = 2;</code>
+     * <code>repeated .Msg.GridMo grid = 2;</code>
      */
     public java.util.List<? extends com.su.msg.BagMsg.GridMoOrBuilder> 
         getGridOrBuilderList() {
@@ -1054,7 +841,7 @@ public final class LoginMsg {
      * 背包数据
      * </pre>
      *
-     * <code>repeated .GridMo grid = 2;</code>
+     * <code>repeated .Msg.GridMo grid = 2;</code>
      */
     public int getGridCount() {
       return grid_.size();
@@ -1064,7 +851,7 @@ public final class LoginMsg {
      * 背包数据
      * </pre>
      *
-     * <code>repeated .GridMo grid = 2;</code>
+     * <code>repeated .Msg.GridMo grid = 2;</code>
      */
     public com.su.msg.BagMsg.GridMo getGrid(int index) {
       return grid_.get(index);
@@ -1074,7 +861,7 @@ public final class LoginMsg {
      * 背包数据
      * </pre>
      *
-     * <code>repeated .GridMo grid = 2;</code>
+     * <code>repeated .Msg.GridMo grid = 2;</code>
      */
     public com.su.msg.BagMsg.GridMoOrBuilder getGridOrBuilder(
         int index) {
@@ -1241,20 +1028,20 @@ public final class LoginMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code LoginTo}
+     * Protobuf type {@code Msg.LoginTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:LoginTo)
+        // @@protoc_insertion_point(builder_implements:Msg.LoginTo)
         com.su.msg.LoginMsg.LoginToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.LoginMsg.internal_static_LoginTo_descriptor;
+        return com.su.msg.LoginMsg.internal_static_Msg_LoginTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.LoginMsg.internal_static_LoginTo_fieldAccessorTable
+        return com.su.msg.LoginMsg.internal_static_Msg_LoginTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.LoginMsg.LoginTo.class, com.su.msg.LoginMsg.LoginTo.Builder.class);
       }
@@ -1295,7 +1082,7 @@ public final class LoginMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.LoginMsg.internal_static_LoginTo_descriptor;
+        return com.su.msg.LoginMsg.internal_static_Msg_LoginTo_descriptor;
       }
 
       public com.su.msg.LoginMsg.LoginTo getDefaultInstanceForType() {
@@ -1438,7 +1225,7 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional .PlayerMo player = 1;</code>
+       * <code>optional .Msg.PlayerMo player = 1;</code>
        */
       public boolean hasPlayer() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -1448,7 +1235,7 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional .PlayerMo player = 1;</code>
+       * <code>optional .Msg.PlayerMo player = 1;</code>
        */
       public com.su.msg.PlayerMsg.PlayerMo getPlayer() {
         if (playerBuilder_ == null) {
@@ -1462,7 +1249,7 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional .PlayerMo player = 1;</code>
+       * <code>optional .Msg.PlayerMo player = 1;</code>
        */
       public Builder setPlayer(com.su.msg.PlayerMsg.PlayerMo value) {
         if (playerBuilder_ == null) {
@@ -1482,7 +1269,7 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional .PlayerMo player = 1;</code>
+       * <code>optional .Msg.PlayerMo player = 1;</code>
        */
       public Builder setPlayer(
           com.su.msg.PlayerMsg.PlayerMo.Builder builderForValue) {
@@ -1500,7 +1287,7 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional .PlayerMo player = 1;</code>
+       * <code>optional .Msg.PlayerMo player = 1;</code>
        */
       public Builder mergePlayer(com.su.msg.PlayerMsg.PlayerMo value) {
         if (playerBuilder_ == null) {
@@ -1524,7 +1311,7 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional .PlayerMo player = 1;</code>
+       * <code>optional .Msg.PlayerMo player = 1;</code>
        */
       public Builder clearPlayer() {
         if (playerBuilder_ == null) {
@@ -1541,7 +1328,7 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional .PlayerMo player = 1;</code>
+       * <code>optional .Msg.PlayerMo player = 1;</code>
        */
       public com.su.msg.PlayerMsg.PlayerMo.Builder getPlayerBuilder() {
         bitField0_ |= 0x00000001;
@@ -1553,7 +1340,7 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional .PlayerMo player = 1;</code>
+       * <code>optional .Msg.PlayerMo player = 1;</code>
        */
       public com.su.msg.PlayerMsg.PlayerMoOrBuilder getPlayerOrBuilder() {
         if (playerBuilder_ != null) {
@@ -1568,7 +1355,7 @@ public final class LoginMsg {
        * 玩家数据
        * </pre>
        *
-       * <code>optional .PlayerMo player = 1;</code>
+       * <code>optional .Msg.PlayerMo player = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.su.msg.PlayerMsg.PlayerMo, com.su.msg.PlayerMsg.PlayerMo.Builder, com.su.msg.PlayerMsg.PlayerMoOrBuilder> 
@@ -1601,7 +1388,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public java.util.List<com.su.msg.BagMsg.GridMo> getGridList() {
         if (gridBuilder_ == null) {
@@ -1615,7 +1402,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public int getGridCount() {
         if (gridBuilder_ == null) {
@@ -1629,7 +1416,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public com.su.msg.BagMsg.GridMo getGrid(int index) {
         if (gridBuilder_ == null) {
@@ -1643,7 +1430,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public Builder setGrid(
           int index, com.su.msg.BagMsg.GridMo value) {
@@ -1664,7 +1451,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public Builder setGrid(
           int index, com.su.msg.BagMsg.GridMo.Builder builderForValue) {
@@ -1682,7 +1469,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public Builder addGrid(com.su.msg.BagMsg.GridMo value) {
         if (gridBuilder_ == null) {
@@ -1702,7 +1489,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public Builder addGrid(
           int index, com.su.msg.BagMsg.GridMo value) {
@@ -1723,7 +1510,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public Builder addGrid(
           com.su.msg.BagMsg.GridMo.Builder builderForValue) {
@@ -1741,7 +1528,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public Builder addGrid(
           int index, com.su.msg.BagMsg.GridMo.Builder builderForValue) {
@@ -1759,7 +1546,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public Builder addAllGrid(
           java.lang.Iterable<? extends com.su.msg.BagMsg.GridMo> values) {
@@ -1778,7 +1565,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public Builder clearGrid() {
         if (gridBuilder_ == null) {
@@ -1795,7 +1582,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public Builder removeGrid(int index) {
         if (gridBuilder_ == null) {
@@ -1812,7 +1599,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public com.su.msg.BagMsg.GridMo.Builder getGridBuilder(
           int index) {
@@ -1823,7 +1610,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public com.su.msg.BagMsg.GridMoOrBuilder getGridOrBuilder(
           int index) {
@@ -1837,7 +1624,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public java.util.List<? extends com.su.msg.BagMsg.GridMoOrBuilder> 
            getGridOrBuilderList() {
@@ -1852,7 +1639,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public com.su.msg.BagMsg.GridMo.Builder addGridBuilder() {
         return getGridFieldBuilder().addBuilder(
@@ -1863,7 +1650,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public com.su.msg.BagMsg.GridMo.Builder addGridBuilder(
           int index) {
@@ -1875,7 +1662,7 @@ public final class LoginMsg {
        * 背包数据
        * </pre>
        *
-       * <code>repeated .GridMo grid = 2;</code>
+       * <code>repeated .Msg.GridMo grid = 2;</code>
        */
       public java.util.List<com.su.msg.BagMsg.GridMo.Builder> 
            getGridBuilderList() {
@@ -1906,10 +1693,10 @@ public final class LoginMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:LoginTo)
+      // @@protoc_insertion_point(builder_scope:Msg.LoginTo)
     }
 
-    // @@protoc_insertion_point(class_scope:LoginTo)
+    // @@protoc_insertion_point(class_scope:Msg.LoginTo)
     private static final com.su.msg.LoginMsg.LoginTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.LoginMsg.LoginTo();
@@ -1945,15 +1732,15 @@ public final class LoginMsg {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Login_descriptor;
+    internal_static_Msg_Login_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_Login_fieldAccessorTable;
+      internal_static_Msg_Login_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_LoginTo_descriptor;
+    internal_static_Msg_LoginTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_LoginTo_fieldAccessorTable;
+      internal_static_Msg_LoginTo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1963,11 +1750,11 @@ public final class LoginMsg {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016LoginMsg.proto\032\017PlayerMsg.proto\032\014BagMs" +
-      "g.proto\"&\n\005Login\022\017\n\007account\030\001 \001(\t\022\014\n\004nam" +
-      "e\030\002 \001(\t\";\n\007LoginTo\022\031\n\006player\030\001 \001(\0132\t.Pla" +
-      "yerMo\022\025\n\004grid\030\002 \003(\0132\007.GridMoB%\n\ncom.su.m" +
-      "sgH\001\252\002\024Assets.Scripts.Proto"
+      "\n\016LoginMsg.proto\022\003Msg\032\017PlayerMsg.proto\032\014" +
+      "BagMsg.proto\"\030\n\005Login\022\017\n\007account\030\001 \001(\t\"C" +
+      "\n\007LoginTo\022\035\n\006player\030\001 \001(\0132\r.Msg.PlayerMo" +
+      "\022\031\n\004grid\030\002 \003(\0132\013.Msg.GridMoB\016\n\ncom.su.ms" +
+      "gH\001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1983,17 +1770,17 @@ public final class LoginMsg {
           com.su.msg.PlayerMsg.getDescriptor(),
           com.su.msg.BagMsg.getDescriptor(),
         }, assigner);
-    internal_static_Login_descriptor =
+    internal_static_Msg_Login_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_Login_fieldAccessorTable = new
+    internal_static_Msg_Login_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_Login_descriptor,
-        new java.lang.String[] { "Account", "Name", });
-    internal_static_LoginTo_descriptor =
+        internal_static_Msg_Login_descriptor,
+        new java.lang.String[] { "Account", });
+    internal_static_Msg_LoginTo_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_LoginTo_fieldAccessorTable = new
+    internal_static_Msg_LoginTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_LoginTo_descriptor,
+        internal_static_Msg_LoginTo_descriptor,
         new java.lang.String[] { "Player", "Grid", });
     com.su.msg.PlayerMsg.getDescriptor();
     com.su.msg.BagMsg.getDescriptor();

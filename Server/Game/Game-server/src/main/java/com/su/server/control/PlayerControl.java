@@ -12,7 +12,7 @@ import com.su.msg.PlayerMsg.PlayerMo;
 import com.su.server.service.PlayerService;
 
 @Controller
-public class PlayControl {
+public class PlayerControl {
 	
 	@Autowired
 	private PlayerService playerService;
@@ -23,8 +23,11 @@ public class PlayControl {
 	@Action
 	public void getPlayer(PlayerContext ctx, GetPlayer req) {
 		Player player = playerService.getPlayer(ctx.getPlayerId());
+		if (player == null) {
+			ctx.sendError(2001);
+			return;
+		}
 		PlayerMo playerMo = playerService.serializePlayer(player);
-		
 		GetPlayerTo.Builder resp = GetPlayerTo.newBuilder();
 		resp.setPlayer(playerMo);
 		ctx.write(resp);

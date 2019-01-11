@@ -14,8 +14,8 @@ public final class MatchSiteMsg {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface MMatchSiteOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:MMatchSite)
+  public interface MatchSiteMoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:Msg.MatchSiteMo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -45,17 +45,17 @@ public final class MatchSiteMsg {
     int getPlayerNum();
   }
   /**
-   * Protobuf type {@code MMatchSite}
+   * Protobuf type {@code Msg.MatchSiteMo}
    */
-  public  static final class MMatchSite extends
+  public  static final class MatchSiteMo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:MMatchSite)
-      MMatchSiteOrBuilder {
-    // Use MMatchSite.newBuilder() to construct.
-    private MMatchSite(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:Msg.MatchSiteMo)
+      MatchSiteMoOrBuilder {
+    // Use MatchSiteMo.newBuilder() to construct.
+    private MatchSiteMo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private MMatchSite() {
+    private MatchSiteMo() {
       siteId_ = 0;
       playerNum_ = 0;
     }
@@ -65,7 +65,7 @@ public final class MatchSiteMsg {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private MMatchSite(
+    private MatchSiteMo(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -112,14 +112,14 @@ public final class MatchSiteMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.MatchSiteMsg.internal_static_MMatchSite_descriptor;
+      return com.su.msg.MatchSiteMsg.internal_static_Msg_MatchSiteMo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.MatchSiteMsg.internal_static_MMatchSite_fieldAccessorTable
+      return com.su.msg.MatchSiteMsg.internal_static_Msg_MatchSiteMo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.su.msg.MatchSiteMsg.MMatchSite.class, com.su.msg.MatchSiteMsg.MMatchSite.Builder.class);
+              com.su.msg.MatchSiteMsg.MatchSiteMo.class, com.su.msg.MatchSiteMsg.MatchSiteMo.Builder.class);
     }
 
     private int bitField0_;
@@ -206,10 +206,10 @@ public final class MatchSiteMsg {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.su.msg.MatchSiteMsg.MMatchSite)) {
+      if (!(obj instanceof com.su.msg.MatchSiteMsg.MatchSiteMo)) {
         return super.equals(obj);
       }
-      com.su.msg.MatchSiteMsg.MMatchSite other = (com.su.msg.MatchSiteMsg.MMatchSite) obj;
+      com.su.msg.MatchSiteMsg.MatchSiteMo other = (com.su.msg.MatchSiteMsg.MatchSiteMo) obj;
 
       boolean result = true;
       result = result && (hasSiteId() == other.hasSiteId());
@@ -246,58 +246,58 @@ public final class MatchSiteMsg {
       return hash;
     }
 
-    public static com.su.msg.MatchSiteMsg.MMatchSite parseFrom(
+    public static com.su.msg.MatchSiteMsg.MatchSiteMo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.MatchSiteMsg.MMatchSite parseFrom(
+    public static com.su.msg.MatchSiteMsg.MatchSiteMo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.MatchSiteMsg.MMatchSite parseFrom(byte[] data)
+    public static com.su.msg.MatchSiteMsg.MatchSiteMo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.MatchSiteMsg.MMatchSite parseFrom(
+    public static com.su.msg.MatchSiteMsg.MatchSiteMo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.MatchSiteMsg.MMatchSite parseFrom(java.io.InputStream input)
+    public static com.su.msg.MatchSiteMsg.MatchSiteMo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.MatchSiteMsg.MMatchSite parseFrom(
+    public static com.su.msg.MatchSiteMsg.MatchSiteMo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.MatchSiteMsg.MMatchSite parseDelimitedFrom(java.io.InputStream input)
+    public static com.su.msg.MatchSiteMsg.MatchSiteMo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.su.msg.MatchSiteMsg.MMatchSite parseDelimitedFrom(
+    public static com.su.msg.MatchSiteMsg.MatchSiteMo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.MatchSiteMsg.MMatchSite parseFrom(
+    public static com.su.msg.MatchSiteMsg.MatchSiteMo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.MatchSiteMsg.MMatchSite parseFrom(
+    public static com.su.msg.MatchSiteMsg.MatchSiteMo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -309,7 +309,7 @@ public final class MatchSiteMsg {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.su.msg.MatchSiteMsg.MMatchSite prototype) {
+    public static Builder newBuilder(com.su.msg.MatchSiteMsg.MatchSiteMo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -324,25 +324,25 @@ public final class MatchSiteMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code MMatchSite}
+     * Protobuf type {@code Msg.MatchSiteMo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:MMatchSite)
-        com.su.msg.MatchSiteMsg.MMatchSiteOrBuilder {
+        // @@protoc_insertion_point(builder_implements:Msg.MatchSiteMo)
+        com.su.msg.MatchSiteMsg.MatchSiteMoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.MatchSiteMsg.internal_static_MMatchSite_descriptor;
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_MatchSiteMo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.MatchSiteMsg.internal_static_MMatchSite_fieldAccessorTable
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_MatchSiteMo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.su.msg.MatchSiteMsg.MMatchSite.class, com.su.msg.MatchSiteMsg.MMatchSite.Builder.class);
+                com.su.msg.MatchSiteMsg.MatchSiteMo.class, com.su.msg.MatchSiteMsg.MatchSiteMo.Builder.class);
       }
 
-      // Construct using com.su.msg.MatchSiteMsg.MMatchSite.newBuilder()
+      // Construct using com.su.msg.MatchSiteMsg.MatchSiteMo.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -368,23 +368,23 @@ public final class MatchSiteMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.MatchSiteMsg.internal_static_MMatchSite_descriptor;
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_MatchSiteMo_descriptor;
       }
 
-      public com.su.msg.MatchSiteMsg.MMatchSite getDefaultInstanceForType() {
-        return com.su.msg.MatchSiteMsg.MMatchSite.getDefaultInstance();
+      public com.su.msg.MatchSiteMsg.MatchSiteMo getDefaultInstanceForType() {
+        return com.su.msg.MatchSiteMsg.MatchSiteMo.getDefaultInstance();
       }
 
-      public com.su.msg.MatchSiteMsg.MMatchSite build() {
-        com.su.msg.MatchSiteMsg.MMatchSite result = buildPartial();
+      public com.su.msg.MatchSiteMsg.MatchSiteMo build() {
+        com.su.msg.MatchSiteMsg.MatchSiteMo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.su.msg.MatchSiteMsg.MMatchSite buildPartial() {
-        com.su.msg.MatchSiteMsg.MMatchSite result = new com.su.msg.MatchSiteMsg.MMatchSite(this);
+      public com.su.msg.MatchSiteMsg.MatchSiteMo buildPartial() {
+        com.su.msg.MatchSiteMsg.MatchSiteMo result = new com.su.msg.MatchSiteMsg.MatchSiteMo(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -427,16 +427,16 @@ public final class MatchSiteMsg {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.su.msg.MatchSiteMsg.MMatchSite) {
-          return mergeFrom((com.su.msg.MatchSiteMsg.MMatchSite)other);
+        if (other instanceof com.su.msg.MatchSiteMsg.MatchSiteMo) {
+          return mergeFrom((com.su.msg.MatchSiteMsg.MatchSiteMo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.su.msg.MatchSiteMsg.MMatchSite other) {
-        if (other == com.su.msg.MatchSiteMsg.MMatchSite.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.su.msg.MatchSiteMsg.MatchSiteMo other) {
+        if (other == com.su.msg.MatchSiteMsg.MatchSiteMo.getDefaultInstance()) return this;
         if (other.hasSiteId()) {
           setSiteId(other.getSiteId());
         }
@@ -456,11 +456,11 @@ public final class MatchSiteMsg {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.su.msg.MatchSiteMsg.MMatchSite parsedMessage = null;
+        com.su.msg.MatchSiteMsg.MatchSiteMo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.su.msg.MatchSiteMsg.MMatchSite) e.getUnfinishedMessage();
+          parsedMessage = (com.su.msg.MatchSiteMsg.MatchSiteMo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -561,46 +561,46 @@ public final class MatchSiteMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:MMatchSite)
+      // @@protoc_insertion_point(builder_scope:Msg.MatchSiteMo)
     }
 
-    // @@protoc_insertion_point(class_scope:MMatchSite)
-    private static final com.su.msg.MatchSiteMsg.MMatchSite DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:Msg.MatchSiteMo)
+    private static final com.su.msg.MatchSiteMsg.MatchSiteMo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.su.msg.MatchSiteMsg.MMatchSite();
+      DEFAULT_INSTANCE = new com.su.msg.MatchSiteMsg.MatchSiteMo();
     }
 
-    public static com.su.msg.MatchSiteMsg.MMatchSite getDefaultInstance() {
+    public static com.su.msg.MatchSiteMsg.MatchSiteMo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<MMatchSite>
-        PARSER = new com.google.protobuf.AbstractParser<MMatchSite>() {
-      public MMatchSite parsePartialFrom(
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<MatchSiteMo>
+        PARSER = new com.google.protobuf.AbstractParser<MatchSiteMo>() {
+      public MatchSiteMo parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new MMatchSite(input, extensionRegistry);
+          return new MatchSiteMo(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<MMatchSite> parser() {
+    public static com.google.protobuf.Parser<MatchSiteMo> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<MMatchSite> getParserForType() {
+    public com.google.protobuf.Parser<MatchSiteMo> getParserForType() {
       return PARSER;
     }
 
-    public com.su.msg.MatchSiteMsg.MMatchSite getDefaultInstanceForType() {
+    public com.su.msg.MatchSiteMsg.MatchSiteMo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface MatchOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:Match)
+      // @@protoc_insertion_point(interface_extends:Msg.Match)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -617,11 +617,11 @@ public final class MatchSiteMsg {
    * 匹配
    * </pre>
    *
-   * Protobuf type {@code Match}
+   * Protobuf type {@code Msg.Match}
    */
   public  static final class Match extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:Match)
+      // @@protoc_insertion_point(message_implements:Msg.Match)
       MatchOrBuilder {
     // Use Match.newBuilder() to construct.
     private Match(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -678,12 +678,12 @@ public final class MatchSiteMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.MatchSiteMsg.internal_static_Match_descriptor;
+      return com.su.msg.MatchSiteMsg.internal_static_Msg_Match_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.MatchSiteMsg.internal_static_Match_fieldAccessorTable
+      return com.su.msg.MatchSiteMsg.internal_static_Msg_Match_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.MatchSiteMsg.Match.class, com.su.msg.MatchSiteMsg.Match.Builder.class);
     }
@@ -855,20 +855,20 @@ public final class MatchSiteMsg {
      * 匹配
      * </pre>
      *
-     * Protobuf type {@code Match}
+     * Protobuf type {@code Msg.Match}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:Match)
+        // @@protoc_insertion_point(builder_implements:Msg.Match)
         com.su.msg.MatchSiteMsg.MatchOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.MatchSiteMsg.internal_static_Match_descriptor;
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_Match_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.MatchSiteMsg.internal_static_Match_fieldAccessorTable
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_Match_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.MatchSiteMsg.Match.class, com.su.msg.MatchSiteMsg.Match.Builder.class);
       }
@@ -897,7 +897,7 @@ public final class MatchSiteMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.MatchSiteMsg.internal_static_Match_descriptor;
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_Match_descriptor;
       }
 
       public com.su.msg.MatchSiteMsg.Match getDefaultInstanceForType() {
@@ -1035,10 +1035,10 @@ public final class MatchSiteMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:Match)
+      // @@protoc_insertion_point(builder_scope:Msg.Match)
     }
 
-    // @@protoc_insertion_point(class_scope:Match)
+    // @@protoc_insertion_point(class_scope:Msg.Match)
     private static final com.su.msg.MatchSiteMsg.Match DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.MatchSiteMsg.Match();
@@ -1073,8 +1073,8 @@ public final class MatchSiteMsg {
 
   }
 
-  public interface TMatchOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:TMatch)
+  public interface MatchToOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:Msg.MatchTo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -1087,17 +1087,17 @@ public final class MatchSiteMsg {
     int getSiteId();
   }
   /**
-   * Protobuf type {@code TMatch}
+   * Protobuf type {@code Msg.MatchTo}
    */
-  public  static final class TMatch extends
+  public  static final class MatchTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:TMatch)
-      TMatchOrBuilder {
-    // Use TMatch.newBuilder() to construct.
-    private TMatch(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:Msg.MatchTo)
+      MatchToOrBuilder {
+    // Use MatchTo.newBuilder() to construct.
+    private MatchTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private TMatch() {
+    private MatchTo() {
       siteId_ = 0;
     }
 
@@ -1106,7 +1106,7 @@ public final class MatchSiteMsg {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private TMatch(
+    private MatchTo(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1148,14 +1148,14 @@ public final class MatchSiteMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.MatchSiteMsg.internal_static_TMatch_descriptor;
+      return com.su.msg.MatchSiteMsg.internal_static_Msg_MatchTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.MatchSiteMsg.internal_static_TMatch_fieldAccessorTable
+      return com.su.msg.MatchSiteMsg.internal_static_Msg_MatchTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.su.msg.MatchSiteMsg.TMatch.class, com.su.msg.MatchSiteMsg.TMatch.Builder.class);
+              com.su.msg.MatchSiteMsg.MatchTo.class, com.su.msg.MatchSiteMsg.MatchTo.Builder.class);
     }
 
     private int bitField0_;
@@ -1212,10 +1212,10 @@ public final class MatchSiteMsg {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.su.msg.MatchSiteMsg.TMatch)) {
+      if (!(obj instanceof com.su.msg.MatchSiteMsg.MatchTo)) {
         return super.equals(obj);
       }
-      com.su.msg.MatchSiteMsg.TMatch other = (com.su.msg.MatchSiteMsg.TMatch) obj;
+      com.su.msg.MatchSiteMsg.MatchTo other = (com.su.msg.MatchSiteMsg.MatchTo) obj;
 
       boolean result = true;
       result = result && (hasSiteId() == other.hasSiteId());
@@ -1243,58 +1243,58 @@ public final class MatchSiteMsg {
       return hash;
     }
 
-    public static com.su.msg.MatchSiteMsg.TMatch parseFrom(
+    public static com.su.msg.MatchSiteMsg.MatchTo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.MatchSiteMsg.TMatch parseFrom(
+    public static com.su.msg.MatchSiteMsg.MatchTo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.MatchSiteMsg.TMatch parseFrom(byte[] data)
+    public static com.su.msg.MatchSiteMsg.MatchTo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.MatchSiteMsg.TMatch parseFrom(
+    public static com.su.msg.MatchSiteMsg.MatchTo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.MatchSiteMsg.TMatch parseFrom(java.io.InputStream input)
+    public static com.su.msg.MatchSiteMsg.MatchTo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.MatchSiteMsg.TMatch parseFrom(
+    public static com.su.msg.MatchSiteMsg.MatchTo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.MatchSiteMsg.TMatch parseDelimitedFrom(java.io.InputStream input)
+    public static com.su.msg.MatchSiteMsg.MatchTo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.su.msg.MatchSiteMsg.TMatch parseDelimitedFrom(
+    public static com.su.msg.MatchSiteMsg.MatchTo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.MatchSiteMsg.TMatch parseFrom(
+    public static com.su.msg.MatchSiteMsg.MatchTo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.MatchSiteMsg.TMatch parseFrom(
+    public static com.su.msg.MatchSiteMsg.MatchTo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1306,7 +1306,7 @@ public final class MatchSiteMsg {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.su.msg.MatchSiteMsg.TMatch prototype) {
+    public static Builder newBuilder(com.su.msg.MatchSiteMsg.MatchTo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -1321,25 +1321,25 @@ public final class MatchSiteMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code TMatch}
+     * Protobuf type {@code Msg.MatchTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:TMatch)
-        com.su.msg.MatchSiteMsg.TMatchOrBuilder {
+        // @@protoc_insertion_point(builder_implements:Msg.MatchTo)
+        com.su.msg.MatchSiteMsg.MatchToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.MatchSiteMsg.internal_static_TMatch_descriptor;
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_MatchTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.MatchSiteMsg.internal_static_TMatch_fieldAccessorTable
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_MatchTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.su.msg.MatchSiteMsg.TMatch.class, com.su.msg.MatchSiteMsg.TMatch.Builder.class);
+                com.su.msg.MatchSiteMsg.MatchTo.class, com.su.msg.MatchSiteMsg.MatchTo.Builder.class);
       }
 
-      // Construct using com.su.msg.MatchSiteMsg.TMatch.newBuilder()
+      // Construct using com.su.msg.MatchSiteMsg.MatchTo.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1363,23 +1363,23 @@ public final class MatchSiteMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.MatchSiteMsg.internal_static_TMatch_descriptor;
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_MatchTo_descriptor;
       }
 
-      public com.su.msg.MatchSiteMsg.TMatch getDefaultInstanceForType() {
-        return com.su.msg.MatchSiteMsg.TMatch.getDefaultInstance();
+      public com.su.msg.MatchSiteMsg.MatchTo getDefaultInstanceForType() {
+        return com.su.msg.MatchSiteMsg.MatchTo.getDefaultInstance();
       }
 
-      public com.su.msg.MatchSiteMsg.TMatch build() {
-        com.su.msg.MatchSiteMsg.TMatch result = buildPartial();
+      public com.su.msg.MatchSiteMsg.MatchTo build() {
+        com.su.msg.MatchSiteMsg.MatchTo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.su.msg.MatchSiteMsg.TMatch buildPartial() {
-        com.su.msg.MatchSiteMsg.TMatch result = new com.su.msg.MatchSiteMsg.TMatch(this);
+      public com.su.msg.MatchSiteMsg.MatchTo buildPartial() {
+        com.su.msg.MatchSiteMsg.MatchTo result = new com.su.msg.MatchSiteMsg.MatchTo(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1418,16 +1418,16 @@ public final class MatchSiteMsg {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.su.msg.MatchSiteMsg.TMatch) {
-          return mergeFrom((com.su.msg.MatchSiteMsg.TMatch)other);
+        if (other instanceof com.su.msg.MatchSiteMsg.MatchTo) {
+          return mergeFrom((com.su.msg.MatchSiteMsg.MatchTo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.su.msg.MatchSiteMsg.TMatch other) {
-        if (other == com.su.msg.MatchSiteMsg.TMatch.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.su.msg.MatchSiteMsg.MatchTo other) {
+        if (other == com.su.msg.MatchSiteMsg.MatchTo.getDefaultInstance()) return this;
         if (other.hasSiteId()) {
           setSiteId(other.getSiteId());
         }
@@ -1444,11 +1444,11 @@ public final class MatchSiteMsg {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.su.msg.MatchSiteMsg.TMatch parsedMessage = null;
+        com.su.msg.MatchSiteMsg.MatchTo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.su.msg.MatchSiteMsg.TMatch) e.getUnfinishedMessage();
+          parsedMessage = (com.su.msg.MatchSiteMsg.MatchTo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1501,46 +1501,46 @@ public final class MatchSiteMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:TMatch)
+      // @@protoc_insertion_point(builder_scope:Msg.MatchTo)
     }
 
-    // @@protoc_insertion_point(class_scope:TMatch)
-    private static final com.su.msg.MatchSiteMsg.TMatch DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:Msg.MatchTo)
+    private static final com.su.msg.MatchSiteMsg.MatchTo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.su.msg.MatchSiteMsg.TMatch();
+      DEFAULT_INSTANCE = new com.su.msg.MatchSiteMsg.MatchTo();
     }
 
-    public static com.su.msg.MatchSiteMsg.TMatch getDefaultInstance() {
+    public static com.su.msg.MatchSiteMsg.MatchTo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<TMatch>
-        PARSER = new com.google.protobuf.AbstractParser<TMatch>() {
-      public TMatch parsePartialFrom(
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<MatchTo>
+        PARSER = new com.google.protobuf.AbstractParser<MatchTo>() {
+      public MatchTo parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new TMatch(input, extensionRegistry);
+          return new MatchTo(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<TMatch> parser() {
+    public static com.google.protobuf.Parser<MatchTo> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<TMatch> getParserForType() {
+    public com.google.protobuf.Parser<MatchTo> getParserForType() {
       return PARSER;
     }
 
-    public com.su.msg.MatchSiteMsg.TMatch getDefaultInstanceForType() {
+    public com.su.msg.MatchSiteMsg.MatchTo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface CancelMatchOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:CancelMatch)
+      // @@protoc_insertion_point(interface_extends:Msg.CancelMatch)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
@@ -1548,11 +1548,11 @@ public final class MatchSiteMsg {
    * 取消匹配
    * </pre>
    *
-   * Protobuf type {@code CancelMatch}
+   * Protobuf type {@code Msg.CancelMatch}
    */
   public  static final class CancelMatch extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:CancelMatch)
+      // @@protoc_insertion_point(message_implements:Msg.CancelMatch)
       CancelMatchOrBuilder {
     // Use CancelMatch.newBuilder() to construct.
     private CancelMatch(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -1602,12 +1602,12 @@ public final class MatchSiteMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.MatchSiteMsg.internal_static_CancelMatch_descriptor;
+      return com.su.msg.MatchSiteMsg.internal_static_Msg_CancelMatch_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.MatchSiteMsg.internal_static_CancelMatch_fieldAccessorTable
+      return com.su.msg.MatchSiteMsg.internal_static_Msg_CancelMatch_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.MatchSiteMsg.CancelMatch.class, com.su.msg.MatchSiteMsg.CancelMatch.Builder.class);
     }
@@ -1747,20 +1747,20 @@ public final class MatchSiteMsg {
      * 取消匹配
      * </pre>
      *
-     * Protobuf type {@code CancelMatch}
+     * Protobuf type {@code Msg.CancelMatch}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:CancelMatch)
+        // @@protoc_insertion_point(builder_implements:Msg.CancelMatch)
         com.su.msg.MatchSiteMsg.CancelMatchOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.MatchSiteMsg.internal_static_CancelMatch_descriptor;
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_CancelMatch_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.MatchSiteMsg.internal_static_CancelMatch_fieldAccessorTable
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_CancelMatch_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.MatchSiteMsg.CancelMatch.class, com.su.msg.MatchSiteMsg.CancelMatch.Builder.class);
       }
@@ -1787,7 +1787,7 @@ public final class MatchSiteMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.MatchSiteMsg.internal_static_CancelMatch_descriptor;
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_CancelMatch_descriptor;
       }
 
       public com.su.msg.MatchSiteMsg.CancelMatch getDefaultInstanceForType() {
@@ -1882,10 +1882,10 @@ public final class MatchSiteMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:CancelMatch)
+      // @@protoc_insertion_point(builder_scope:Msg.CancelMatch)
     }
 
-    // @@protoc_insertion_point(class_scope:CancelMatch)
+    // @@protoc_insertion_point(class_scope:Msg.CancelMatch)
     private static final com.su.msg.MatchSiteMsg.CancelMatch DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.MatchSiteMsg.CancelMatch();
@@ -1920,22 +1920,22 @@ public final class MatchSiteMsg {
 
   }
 
-  public interface TCancelMatchOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:TCancelMatch)
+  public interface CancelMatchToOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:Msg.CancelMatchTo)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * Protobuf type {@code TCancelMatch}
+   * Protobuf type {@code Msg.CancelMatchTo}
    */
-  public  static final class TCancelMatch extends
+  public  static final class CancelMatchTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:TCancelMatch)
-      TCancelMatchOrBuilder {
-    // Use TCancelMatch.newBuilder() to construct.
-    private TCancelMatch(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:Msg.CancelMatchTo)
+      CancelMatchToOrBuilder {
+    // Use CancelMatchTo.newBuilder() to construct.
+    private CancelMatchTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private TCancelMatch() {
+    private CancelMatchTo() {
     }
 
     @java.lang.Override
@@ -1943,7 +1943,7 @@ public final class MatchSiteMsg {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private TCancelMatch(
+    private CancelMatchTo(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1979,14 +1979,14 @@ public final class MatchSiteMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.MatchSiteMsg.internal_static_TCancelMatch_descriptor;
+      return com.su.msg.MatchSiteMsg.internal_static_Msg_CancelMatchTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.MatchSiteMsg.internal_static_TCancelMatch_fieldAccessorTable
+      return com.su.msg.MatchSiteMsg.internal_static_Msg_CancelMatchTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.su.msg.MatchSiteMsg.TCancelMatch.class, com.su.msg.MatchSiteMsg.TCancelMatch.Builder.class);
+              com.su.msg.MatchSiteMsg.CancelMatchTo.class, com.su.msg.MatchSiteMsg.CancelMatchTo.Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -2020,10 +2020,10 @@ public final class MatchSiteMsg {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.su.msg.MatchSiteMsg.TCancelMatch)) {
+      if (!(obj instanceof com.su.msg.MatchSiteMsg.CancelMatchTo)) {
         return super.equals(obj);
       }
-      com.su.msg.MatchSiteMsg.TCancelMatch other = (com.su.msg.MatchSiteMsg.TCancelMatch) obj;
+      com.su.msg.MatchSiteMsg.CancelMatchTo other = (com.su.msg.MatchSiteMsg.CancelMatchTo) obj;
 
       boolean result = true;
       result = result && unknownFields.equals(other.unknownFields);
@@ -2042,58 +2042,58 @@ public final class MatchSiteMsg {
       return hash;
     }
 
-    public static com.su.msg.MatchSiteMsg.TCancelMatch parseFrom(
+    public static com.su.msg.MatchSiteMsg.CancelMatchTo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.MatchSiteMsg.TCancelMatch parseFrom(
+    public static com.su.msg.MatchSiteMsg.CancelMatchTo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.MatchSiteMsg.TCancelMatch parseFrom(byte[] data)
+    public static com.su.msg.MatchSiteMsg.CancelMatchTo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.MatchSiteMsg.TCancelMatch parseFrom(
+    public static com.su.msg.MatchSiteMsg.CancelMatchTo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.MatchSiteMsg.TCancelMatch parseFrom(java.io.InputStream input)
+    public static com.su.msg.MatchSiteMsg.CancelMatchTo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.MatchSiteMsg.TCancelMatch parseFrom(
+    public static com.su.msg.MatchSiteMsg.CancelMatchTo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.MatchSiteMsg.TCancelMatch parseDelimitedFrom(java.io.InputStream input)
+    public static com.su.msg.MatchSiteMsg.CancelMatchTo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.su.msg.MatchSiteMsg.TCancelMatch parseDelimitedFrom(
+    public static com.su.msg.MatchSiteMsg.CancelMatchTo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.MatchSiteMsg.TCancelMatch parseFrom(
+    public static com.su.msg.MatchSiteMsg.CancelMatchTo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.MatchSiteMsg.TCancelMatch parseFrom(
+    public static com.su.msg.MatchSiteMsg.CancelMatchTo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2105,7 +2105,7 @@ public final class MatchSiteMsg {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.su.msg.MatchSiteMsg.TCancelMatch prototype) {
+    public static Builder newBuilder(com.su.msg.MatchSiteMsg.CancelMatchTo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -2120,25 +2120,25 @@ public final class MatchSiteMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code TCancelMatch}
+     * Protobuf type {@code Msg.CancelMatchTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:TCancelMatch)
-        com.su.msg.MatchSiteMsg.TCancelMatchOrBuilder {
+        // @@protoc_insertion_point(builder_implements:Msg.CancelMatchTo)
+        com.su.msg.MatchSiteMsg.CancelMatchToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.MatchSiteMsg.internal_static_TCancelMatch_descriptor;
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_CancelMatchTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.MatchSiteMsg.internal_static_TCancelMatch_fieldAccessorTable
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_CancelMatchTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.su.msg.MatchSiteMsg.TCancelMatch.class, com.su.msg.MatchSiteMsg.TCancelMatch.Builder.class);
+                com.su.msg.MatchSiteMsg.CancelMatchTo.class, com.su.msg.MatchSiteMsg.CancelMatchTo.Builder.class);
       }
 
-      // Construct using com.su.msg.MatchSiteMsg.TCancelMatch.newBuilder()
+      // Construct using com.su.msg.MatchSiteMsg.CancelMatchTo.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2160,23 +2160,23 @@ public final class MatchSiteMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.MatchSiteMsg.internal_static_TCancelMatch_descriptor;
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_CancelMatchTo_descriptor;
       }
 
-      public com.su.msg.MatchSiteMsg.TCancelMatch getDefaultInstanceForType() {
-        return com.su.msg.MatchSiteMsg.TCancelMatch.getDefaultInstance();
+      public com.su.msg.MatchSiteMsg.CancelMatchTo getDefaultInstanceForType() {
+        return com.su.msg.MatchSiteMsg.CancelMatchTo.getDefaultInstance();
       }
 
-      public com.su.msg.MatchSiteMsg.TCancelMatch build() {
-        com.su.msg.MatchSiteMsg.TCancelMatch result = buildPartial();
+      public com.su.msg.MatchSiteMsg.CancelMatchTo build() {
+        com.su.msg.MatchSiteMsg.CancelMatchTo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.su.msg.MatchSiteMsg.TCancelMatch buildPartial() {
-        com.su.msg.MatchSiteMsg.TCancelMatch result = new com.su.msg.MatchSiteMsg.TCancelMatch(this);
+      public com.su.msg.MatchSiteMsg.CancelMatchTo buildPartial() {
+        com.su.msg.MatchSiteMsg.CancelMatchTo result = new com.su.msg.MatchSiteMsg.CancelMatchTo(this);
         onBuilt();
         return result;
       }
@@ -2208,16 +2208,16 @@ public final class MatchSiteMsg {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.su.msg.MatchSiteMsg.TCancelMatch) {
-          return mergeFrom((com.su.msg.MatchSiteMsg.TCancelMatch)other);
+        if (other instanceof com.su.msg.MatchSiteMsg.CancelMatchTo) {
+          return mergeFrom((com.su.msg.MatchSiteMsg.CancelMatchTo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.su.msg.MatchSiteMsg.TCancelMatch other) {
-        if (other == com.su.msg.MatchSiteMsg.TCancelMatch.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.su.msg.MatchSiteMsg.CancelMatchTo other) {
+        if (other == com.su.msg.MatchSiteMsg.CancelMatchTo.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -2231,11 +2231,11 @@ public final class MatchSiteMsg {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.su.msg.MatchSiteMsg.TCancelMatch parsedMessage = null;
+        com.su.msg.MatchSiteMsg.CancelMatchTo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.su.msg.MatchSiteMsg.TCancelMatch) e.getUnfinishedMessage();
+          parsedMessage = (com.su.msg.MatchSiteMsg.CancelMatchTo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2255,46 +2255,46 @@ public final class MatchSiteMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:TCancelMatch)
+      // @@protoc_insertion_point(builder_scope:Msg.CancelMatchTo)
     }
 
-    // @@protoc_insertion_point(class_scope:TCancelMatch)
-    private static final com.su.msg.MatchSiteMsg.TCancelMatch DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:Msg.CancelMatchTo)
+    private static final com.su.msg.MatchSiteMsg.CancelMatchTo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.su.msg.MatchSiteMsg.TCancelMatch();
+      DEFAULT_INSTANCE = new com.su.msg.MatchSiteMsg.CancelMatchTo();
     }
 
-    public static com.su.msg.MatchSiteMsg.TCancelMatch getDefaultInstance() {
+    public static com.su.msg.MatchSiteMsg.CancelMatchTo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<TCancelMatch>
-        PARSER = new com.google.protobuf.AbstractParser<TCancelMatch>() {
-      public TCancelMatch parsePartialFrom(
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<CancelMatchTo>
+        PARSER = new com.google.protobuf.AbstractParser<CancelMatchTo>() {
+      public CancelMatchTo parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new TCancelMatch(input, extensionRegistry);
+          return new CancelMatchTo(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<TCancelMatch> parser() {
+    public static com.google.protobuf.Parser<CancelMatchTo> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<TCancelMatch> getParserForType() {
+    public com.google.protobuf.Parser<CancelMatchTo> getParserForType() {
       return PARSER;
     }
 
-    public com.su.msg.MatchSiteMsg.TCancelMatch getDefaultInstanceForType() {
+    public com.su.msg.MatchSiteMsg.CancelMatchTo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface GetMatchSiteOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetMatchSite)
+      // @@protoc_insertion_point(interface_extends:Msg.GetMatchSite)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2319,11 +2319,11 @@ public final class MatchSiteMsg {
    * 获取匹配场信息
    * </pre>
    *
-   * Protobuf type {@code GetMatchSite}
+   * Protobuf type {@code Msg.GetMatchSite}
    */
   public  static final class GetMatchSite extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetMatchSite)
+      // @@protoc_insertion_point(message_implements:Msg.GetMatchSite)
       GetMatchSiteOrBuilder {
     // Use GetMatchSite.newBuilder() to construct.
     private GetMatchSite(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -2380,12 +2380,12 @@ public final class MatchSiteMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.MatchSiteMsg.internal_static_GetMatchSite_descriptor;
+      return com.su.msg.MatchSiteMsg.internal_static_Msg_GetMatchSite_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.MatchSiteMsg.internal_static_GetMatchSite_fieldAccessorTable
+      return com.su.msg.MatchSiteMsg.internal_static_Msg_GetMatchSite_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.MatchSiteMsg.GetMatchSite.class, com.su.msg.MatchSiteMsg.GetMatchSite.Builder.class);
     }
@@ -2565,20 +2565,20 @@ public final class MatchSiteMsg {
      * 获取匹配场信息
      * </pre>
      *
-     * Protobuf type {@code GetMatchSite}
+     * Protobuf type {@code Msg.GetMatchSite}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetMatchSite)
+        // @@protoc_insertion_point(builder_implements:Msg.GetMatchSite)
         com.su.msg.MatchSiteMsg.GetMatchSiteOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.MatchSiteMsg.internal_static_GetMatchSite_descriptor;
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_GetMatchSite_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.MatchSiteMsg.internal_static_GetMatchSite_fieldAccessorTable
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_GetMatchSite_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.MatchSiteMsg.GetMatchSite.class, com.su.msg.MatchSiteMsg.GetMatchSite.Builder.class);
       }
@@ -2607,7 +2607,7 @@ public final class MatchSiteMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.MatchSiteMsg.internal_static_GetMatchSite_descriptor;
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_GetMatchSite_descriptor;
       }
 
       public com.su.msg.MatchSiteMsg.GetMatchSite getDefaultInstanceForType() {
@@ -2761,10 +2761,10 @@ public final class MatchSiteMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetMatchSite)
+      // @@protoc_insertion_point(builder_scope:Msg.GetMatchSite)
     }
 
-    // @@protoc_insertion_point(class_scope:GetMatchSite)
+    // @@protoc_insertion_point(class_scope:Msg.GetMatchSite)
     private static final com.su.msg.MatchSiteMsg.GetMatchSite DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.MatchSiteMsg.GetMatchSite();
@@ -2799,46 +2799,46 @@ public final class MatchSiteMsg {
 
   }
 
-  public interface TGetMatchSiteOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:TGetMatchSite)
+  public interface GetMatchSiteToOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:Msg.GetMatchSiteTo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .MMatchSite matchSite = 1;</code>
+     * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
      */
-    java.util.List<com.su.msg.MatchSiteMsg.MMatchSite> 
+    java.util.List<com.su.msg.MatchSiteMsg.MatchSiteMo> 
         getMatchSiteList();
     /**
-     * <code>repeated .MMatchSite matchSite = 1;</code>
+     * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
      */
-    com.su.msg.MatchSiteMsg.MMatchSite getMatchSite(int index);
+    com.su.msg.MatchSiteMsg.MatchSiteMo getMatchSite(int index);
     /**
-     * <code>repeated .MMatchSite matchSite = 1;</code>
+     * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
      */
     int getMatchSiteCount();
     /**
-     * <code>repeated .MMatchSite matchSite = 1;</code>
+     * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
      */
-    java.util.List<? extends com.su.msg.MatchSiteMsg.MMatchSiteOrBuilder> 
+    java.util.List<? extends com.su.msg.MatchSiteMsg.MatchSiteMoOrBuilder> 
         getMatchSiteOrBuilderList();
     /**
-     * <code>repeated .MMatchSite matchSite = 1;</code>
+     * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
      */
-    com.su.msg.MatchSiteMsg.MMatchSiteOrBuilder getMatchSiteOrBuilder(
+    com.su.msg.MatchSiteMsg.MatchSiteMoOrBuilder getMatchSiteOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code TGetMatchSite}
+   * Protobuf type {@code Msg.GetMatchSiteTo}
    */
-  public  static final class TGetMatchSite extends
+  public  static final class GetMatchSiteTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:TGetMatchSite)
-      TGetMatchSiteOrBuilder {
-    // Use TGetMatchSite.newBuilder() to construct.
-    private TGetMatchSite(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:Msg.GetMatchSiteTo)
+      GetMatchSiteToOrBuilder {
+    // Use GetMatchSiteTo.newBuilder() to construct.
+    private GetMatchSiteTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private TGetMatchSite() {
+    private GetMatchSiteTo() {
       matchSite_ = java.util.Collections.emptyList();
     }
 
@@ -2847,7 +2847,7 @@ public final class MatchSiteMsg {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private TGetMatchSite(
+    private GetMatchSiteTo(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2872,11 +2872,11 @@ public final class MatchSiteMsg {
             }
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                matchSite_ = new java.util.ArrayList<com.su.msg.MatchSiteMsg.MMatchSite>();
+                matchSite_ = new java.util.ArrayList<com.su.msg.MatchSiteMsg.MatchSiteMo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               matchSite_.add(
-                  input.readMessage(com.su.msg.MatchSiteMsg.MMatchSite.PARSER, extensionRegistry));
+                  input.readMessage(com.su.msg.MatchSiteMsg.MatchSiteMo.PARSER, extensionRegistry));
               break;
             }
           }
@@ -2896,47 +2896,47 @@ public final class MatchSiteMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.MatchSiteMsg.internal_static_TGetMatchSite_descriptor;
+      return com.su.msg.MatchSiteMsg.internal_static_Msg_GetMatchSiteTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.MatchSiteMsg.internal_static_TGetMatchSite_fieldAccessorTable
+      return com.su.msg.MatchSiteMsg.internal_static_Msg_GetMatchSiteTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.su.msg.MatchSiteMsg.TGetMatchSite.class, com.su.msg.MatchSiteMsg.TGetMatchSite.Builder.class);
+              com.su.msg.MatchSiteMsg.GetMatchSiteTo.class, com.su.msg.MatchSiteMsg.GetMatchSiteTo.Builder.class);
     }
 
     public static final int MATCHSITE_FIELD_NUMBER = 1;
-    private java.util.List<com.su.msg.MatchSiteMsg.MMatchSite> matchSite_;
+    private java.util.List<com.su.msg.MatchSiteMsg.MatchSiteMo> matchSite_;
     /**
-     * <code>repeated .MMatchSite matchSite = 1;</code>
+     * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
      */
-    public java.util.List<com.su.msg.MatchSiteMsg.MMatchSite> getMatchSiteList() {
+    public java.util.List<com.su.msg.MatchSiteMsg.MatchSiteMo> getMatchSiteList() {
       return matchSite_;
     }
     /**
-     * <code>repeated .MMatchSite matchSite = 1;</code>
+     * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
      */
-    public java.util.List<? extends com.su.msg.MatchSiteMsg.MMatchSiteOrBuilder> 
+    public java.util.List<? extends com.su.msg.MatchSiteMsg.MatchSiteMoOrBuilder> 
         getMatchSiteOrBuilderList() {
       return matchSite_;
     }
     /**
-     * <code>repeated .MMatchSite matchSite = 1;</code>
+     * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
      */
     public int getMatchSiteCount() {
       return matchSite_.size();
     }
     /**
-     * <code>repeated .MMatchSite matchSite = 1;</code>
+     * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
      */
-    public com.su.msg.MatchSiteMsg.MMatchSite getMatchSite(int index) {
+    public com.su.msg.MatchSiteMsg.MatchSiteMo getMatchSite(int index) {
       return matchSite_.get(index);
     }
     /**
-     * <code>repeated .MMatchSite matchSite = 1;</code>
+     * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
      */
-    public com.su.msg.MatchSiteMsg.MMatchSiteOrBuilder getMatchSiteOrBuilder(
+    public com.su.msg.MatchSiteMsg.MatchSiteMoOrBuilder getMatchSiteOrBuilder(
         int index) {
       return matchSite_.get(index);
     }
@@ -2979,10 +2979,10 @@ public final class MatchSiteMsg {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.su.msg.MatchSiteMsg.TGetMatchSite)) {
+      if (!(obj instanceof com.su.msg.MatchSiteMsg.GetMatchSiteTo)) {
         return super.equals(obj);
       }
-      com.su.msg.MatchSiteMsg.TGetMatchSite other = (com.su.msg.MatchSiteMsg.TGetMatchSite) obj;
+      com.su.msg.MatchSiteMsg.GetMatchSiteTo other = (com.su.msg.MatchSiteMsg.GetMatchSiteTo) obj;
 
       boolean result = true;
       result = result && getMatchSiteList()
@@ -3007,58 +3007,58 @@ public final class MatchSiteMsg {
       return hash;
     }
 
-    public static com.su.msg.MatchSiteMsg.TGetMatchSite parseFrom(
+    public static com.su.msg.MatchSiteMsg.GetMatchSiteTo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.MatchSiteMsg.TGetMatchSite parseFrom(
+    public static com.su.msg.MatchSiteMsg.GetMatchSiteTo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.MatchSiteMsg.TGetMatchSite parseFrom(byte[] data)
+    public static com.su.msg.MatchSiteMsg.GetMatchSiteTo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.su.msg.MatchSiteMsg.TGetMatchSite parseFrom(
+    public static com.su.msg.MatchSiteMsg.GetMatchSiteTo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.su.msg.MatchSiteMsg.TGetMatchSite parseFrom(java.io.InputStream input)
+    public static com.su.msg.MatchSiteMsg.GetMatchSiteTo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.MatchSiteMsg.TGetMatchSite parseFrom(
+    public static com.su.msg.MatchSiteMsg.GetMatchSiteTo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.MatchSiteMsg.TGetMatchSite parseDelimitedFrom(java.io.InputStream input)
+    public static com.su.msg.MatchSiteMsg.GetMatchSiteTo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.su.msg.MatchSiteMsg.TGetMatchSite parseDelimitedFrom(
+    public static com.su.msg.MatchSiteMsg.GetMatchSiteTo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.su.msg.MatchSiteMsg.TGetMatchSite parseFrom(
+    public static com.su.msg.MatchSiteMsg.GetMatchSiteTo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.su.msg.MatchSiteMsg.TGetMatchSite parseFrom(
+    public static com.su.msg.MatchSiteMsg.GetMatchSiteTo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3070,7 +3070,7 @@ public final class MatchSiteMsg {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.su.msg.MatchSiteMsg.TGetMatchSite prototype) {
+    public static Builder newBuilder(com.su.msg.MatchSiteMsg.GetMatchSiteTo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -3085,25 +3085,25 @@ public final class MatchSiteMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code TGetMatchSite}
+     * Protobuf type {@code Msg.GetMatchSiteTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:TGetMatchSite)
-        com.su.msg.MatchSiteMsg.TGetMatchSiteOrBuilder {
+        // @@protoc_insertion_point(builder_implements:Msg.GetMatchSiteTo)
+        com.su.msg.MatchSiteMsg.GetMatchSiteToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.MatchSiteMsg.internal_static_TGetMatchSite_descriptor;
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_GetMatchSiteTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.MatchSiteMsg.internal_static_TGetMatchSite_fieldAccessorTable
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_GetMatchSiteTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.su.msg.MatchSiteMsg.TGetMatchSite.class, com.su.msg.MatchSiteMsg.TGetMatchSite.Builder.class);
+                com.su.msg.MatchSiteMsg.GetMatchSiteTo.class, com.su.msg.MatchSiteMsg.GetMatchSiteTo.Builder.class);
       }
 
-      // Construct using com.su.msg.MatchSiteMsg.TGetMatchSite.newBuilder()
+      // Construct using com.su.msg.MatchSiteMsg.GetMatchSiteTo.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3132,23 +3132,23 @@ public final class MatchSiteMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.MatchSiteMsg.internal_static_TGetMatchSite_descriptor;
+        return com.su.msg.MatchSiteMsg.internal_static_Msg_GetMatchSiteTo_descriptor;
       }
 
-      public com.su.msg.MatchSiteMsg.TGetMatchSite getDefaultInstanceForType() {
-        return com.su.msg.MatchSiteMsg.TGetMatchSite.getDefaultInstance();
+      public com.su.msg.MatchSiteMsg.GetMatchSiteTo getDefaultInstanceForType() {
+        return com.su.msg.MatchSiteMsg.GetMatchSiteTo.getDefaultInstance();
       }
 
-      public com.su.msg.MatchSiteMsg.TGetMatchSite build() {
-        com.su.msg.MatchSiteMsg.TGetMatchSite result = buildPartial();
+      public com.su.msg.MatchSiteMsg.GetMatchSiteTo build() {
+        com.su.msg.MatchSiteMsg.GetMatchSiteTo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.su.msg.MatchSiteMsg.TGetMatchSite buildPartial() {
-        com.su.msg.MatchSiteMsg.TGetMatchSite result = new com.su.msg.MatchSiteMsg.TGetMatchSite(this);
+      public com.su.msg.MatchSiteMsg.GetMatchSiteTo buildPartial() {
+        com.su.msg.MatchSiteMsg.GetMatchSiteTo result = new com.su.msg.MatchSiteMsg.GetMatchSiteTo(this);
         int from_bitField0_ = bitField0_;
         if (matchSiteBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -3190,16 +3190,16 @@ public final class MatchSiteMsg {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.su.msg.MatchSiteMsg.TGetMatchSite) {
-          return mergeFrom((com.su.msg.MatchSiteMsg.TGetMatchSite)other);
+        if (other instanceof com.su.msg.MatchSiteMsg.GetMatchSiteTo) {
+          return mergeFrom((com.su.msg.MatchSiteMsg.GetMatchSiteTo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.su.msg.MatchSiteMsg.TGetMatchSite other) {
-        if (other == com.su.msg.MatchSiteMsg.TGetMatchSite.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.su.msg.MatchSiteMsg.GetMatchSiteTo other) {
+        if (other == com.su.msg.MatchSiteMsg.GetMatchSiteTo.getDefaultInstance()) return this;
         if (matchSiteBuilder_ == null) {
           if (!other.matchSite_.isEmpty()) {
             if (matchSite_.isEmpty()) {
@@ -3239,11 +3239,11 @@ public final class MatchSiteMsg {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.su.msg.MatchSiteMsg.TGetMatchSite parsedMessage = null;
+        com.su.msg.MatchSiteMsg.GetMatchSiteTo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.su.msg.MatchSiteMsg.TGetMatchSite) e.getUnfinishedMessage();
+          parsedMessage = (com.su.msg.MatchSiteMsg.GetMatchSiteTo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3254,22 +3254,22 @@ public final class MatchSiteMsg {
       }
       private int bitField0_;
 
-      private java.util.List<com.su.msg.MatchSiteMsg.MMatchSite> matchSite_ =
+      private java.util.List<com.su.msg.MatchSiteMsg.MatchSiteMo> matchSite_ =
         java.util.Collections.emptyList();
       private void ensureMatchSiteIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          matchSite_ = new java.util.ArrayList<com.su.msg.MatchSiteMsg.MMatchSite>(matchSite_);
+          matchSite_ = new java.util.ArrayList<com.su.msg.MatchSiteMsg.MatchSiteMo>(matchSite_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.su.msg.MatchSiteMsg.MMatchSite, com.su.msg.MatchSiteMsg.MMatchSite.Builder, com.su.msg.MatchSiteMsg.MMatchSiteOrBuilder> matchSiteBuilder_;
+          com.su.msg.MatchSiteMsg.MatchSiteMo, com.su.msg.MatchSiteMsg.MatchSiteMo.Builder, com.su.msg.MatchSiteMsg.MatchSiteMoOrBuilder> matchSiteBuilder_;
 
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
-      public java.util.List<com.su.msg.MatchSiteMsg.MMatchSite> getMatchSiteList() {
+      public java.util.List<com.su.msg.MatchSiteMsg.MatchSiteMo> getMatchSiteList() {
         if (matchSiteBuilder_ == null) {
           return java.util.Collections.unmodifiableList(matchSite_);
         } else {
@@ -3277,7 +3277,7 @@ public final class MatchSiteMsg {
         }
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
       public int getMatchSiteCount() {
         if (matchSiteBuilder_ == null) {
@@ -3287,9 +3287,9 @@ public final class MatchSiteMsg {
         }
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
-      public com.su.msg.MatchSiteMsg.MMatchSite getMatchSite(int index) {
+      public com.su.msg.MatchSiteMsg.MatchSiteMo getMatchSite(int index) {
         if (matchSiteBuilder_ == null) {
           return matchSite_.get(index);
         } else {
@@ -3297,10 +3297,10 @@ public final class MatchSiteMsg {
         }
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
       public Builder setMatchSite(
-          int index, com.su.msg.MatchSiteMsg.MMatchSite value) {
+          int index, com.su.msg.MatchSiteMsg.MatchSiteMo value) {
         if (matchSiteBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3314,10 +3314,10 @@ public final class MatchSiteMsg {
         return this;
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
       public Builder setMatchSite(
-          int index, com.su.msg.MatchSiteMsg.MMatchSite.Builder builderForValue) {
+          int index, com.su.msg.MatchSiteMsg.MatchSiteMo.Builder builderForValue) {
         if (matchSiteBuilder_ == null) {
           ensureMatchSiteIsMutable();
           matchSite_.set(index, builderForValue.build());
@@ -3328,9 +3328,9 @@ public final class MatchSiteMsg {
         return this;
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
-      public Builder addMatchSite(com.su.msg.MatchSiteMsg.MMatchSite value) {
+      public Builder addMatchSite(com.su.msg.MatchSiteMsg.MatchSiteMo value) {
         if (matchSiteBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3344,10 +3344,10 @@ public final class MatchSiteMsg {
         return this;
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
       public Builder addMatchSite(
-          int index, com.su.msg.MatchSiteMsg.MMatchSite value) {
+          int index, com.su.msg.MatchSiteMsg.MatchSiteMo value) {
         if (matchSiteBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3361,10 +3361,10 @@ public final class MatchSiteMsg {
         return this;
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
       public Builder addMatchSite(
-          com.su.msg.MatchSiteMsg.MMatchSite.Builder builderForValue) {
+          com.su.msg.MatchSiteMsg.MatchSiteMo.Builder builderForValue) {
         if (matchSiteBuilder_ == null) {
           ensureMatchSiteIsMutable();
           matchSite_.add(builderForValue.build());
@@ -3375,10 +3375,10 @@ public final class MatchSiteMsg {
         return this;
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
       public Builder addMatchSite(
-          int index, com.su.msg.MatchSiteMsg.MMatchSite.Builder builderForValue) {
+          int index, com.su.msg.MatchSiteMsg.MatchSiteMo.Builder builderForValue) {
         if (matchSiteBuilder_ == null) {
           ensureMatchSiteIsMutable();
           matchSite_.add(index, builderForValue.build());
@@ -3389,10 +3389,10 @@ public final class MatchSiteMsg {
         return this;
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
       public Builder addAllMatchSite(
-          java.lang.Iterable<? extends com.su.msg.MatchSiteMsg.MMatchSite> values) {
+          java.lang.Iterable<? extends com.su.msg.MatchSiteMsg.MatchSiteMo> values) {
         if (matchSiteBuilder_ == null) {
           ensureMatchSiteIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -3404,7 +3404,7 @@ public final class MatchSiteMsg {
         return this;
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
       public Builder clearMatchSite() {
         if (matchSiteBuilder_ == null) {
@@ -3417,7 +3417,7 @@ public final class MatchSiteMsg {
         return this;
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
       public Builder removeMatchSite(int index) {
         if (matchSiteBuilder_ == null) {
@@ -3430,16 +3430,16 @@ public final class MatchSiteMsg {
         return this;
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
-      public com.su.msg.MatchSiteMsg.MMatchSite.Builder getMatchSiteBuilder(
+      public com.su.msg.MatchSiteMsg.MatchSiteMo.Builder getMatchSiteBuilder(
           int index) {
         return getMatchSiteFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
-      public com.su.msg.MatchSiteMsg.MMatchSiteOrBuilder getMatchSiteOrBuilder(
+      public com.su.msg.MatchSiteMsg.MatchSiteMoOrBuilder getMatchSiteOrBuilder(
           int index) {
         if (matchSiteBuilder_ == null) {
           return matchSite_.get(index);  } else {
@@ -3447,9 +3447,9 @@ public final class MatchSiteMsg {
         }
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
-      public java.util.List<? extends com.su.msg.MatchSiteMsg.MMatchSiteOrBuilder> 
+      public java.util.List<? extends com.su.msg.MatchSiteMsg.MatchSiteMoOrBuilder> 
            getMatchSiteOrBuilderList() {
         if (matchSiteBuilder_ != null) {
           return matchSiteBuilder_.getMessageOrBuilderList();
@@ -3458,33 +3458,33 @@ public final class MatchSiteMsg {
         }
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
-      public com.su.msg.MatchSiteMsg.MMatchSite.Builder addMatchSiteBuilder() {
+      public com.su.msg.MatchSiteMsg.MatchSiteMo.Builder addMatchSiteBuilder() {
         return getMatchSiteFieldBuilder().addBuilder(
-            com.su.msg.MatchSiteMsg.MMatchSite.getDefaultInstance());
+            com.su.msg.MatchSiteMsg.MatchSiteMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
-      public com.su.msg.MatchSiteMsg.MMatchSite.Builder addMatchSiteBuilder(
+      public com.su.msg.MatchSiteMsg.MatchSiteMo.Builder addMatchSiteBuilder(
           int index) {
         return getMatchSiteFieldBuilder().addBuilder(
-            index, com.su.msg.MatchSiteMsg.MMatchSite.getDefaultInstance());
+            index, com.su.msg.MatchSiteMsg.MatchSiteMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .MMatchSite matchSite = 1;</code>
+       * <code>repeated .Msg.MatchSiteMo matchSite = 1;</code>
        */
-      public java.util.List<com.su.msg.MatchSiteMsg.MMatchSite.Builder> 
+      public java.util.List<com.su.msg.MatchSiteMsg.MatchSiteMo.Builder> 
            getMatchSiteBuilderList() {
         return getMatchSiteFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.su.msg.MatchSiteMsg.MMatchSite, com.su.msg.MatchSiteMsg.MMatchSite.Builder, com.su.msg.MatchSiteMsg.MMatchSiteOrBuilder> 
+          com.su.msg.MatchSiteMsg.MatchSiteMo, com.su.msg.MatchSiteMsg.MatchSiteMo.Builder, com.su.msg.MatchSiteMsg.MatchSiteMoOrBuilder> 
           getMatchSiteFieldBuilder() {
         if (matchSiteBuilder_ == null) {
           matchSiteBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.su.msg.MatchSiteMsg.MMatchSite, com.su.msg.MatchSiteMsg.MMatchSite.Builder, com.su.msg.MatchSiteMsg.MMatchSiteOrBuilder>(
+              com.su.msg.MatchSiteMsg.MatchSiteMo, com.su.msg.MatchSiteMsg.MatchSiteMo.Builder, com.su.msg.MatchSiteMsg.MatchSiteMoOrBuilder>(
                   matchSite_,
                   ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
@@ -3504,79 +3504,79 @@ public final class MatchSiteMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:TGetMatchSite)
+      // @@protoc_insertion_point(builder_scope:Msg.GetMatchSiteTo)
     }
 
-    // @@protoc_insertion_point(class_scope:TGetMatchSite)
-    private static final com.su.msg.MatchSiteMsg.TGetMatchSite DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:Msg.GetMatchSiteTo)
+    private static final com.su.msg.MatchSiteMsg.GetMatchSiteTo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.su.msg.MatchSiteMsg.TGetMatchSite();
+      DEFAULT_INSTANCE = new com.su.msg.MatchSiteMsg.GetMatchSiteTo();
     }
 
-    public static com.su.msg.MatchSiteMsg.TGetMatchSite getDefaultInstance() {
+    public static com.su.msg.MatchSiteMsg.GetMatchSiteTo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<TGetMatchSite>
-        PARSER = new com.google.protobuf.AbstractParser<TGetMatchSite>() {
-      public TGetMatchSite parsePartialFrom(
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<GetMatchSiteTo>
+        PARSER = new com.google.protobuf.AbstractParser<GetMatchSiteTo>() {
+      public GetMatchSiteTo parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new TGetMatchSite(input, extensionRegistry);
+          return new GetMatchSiteTo(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<TGetMatchSite> parser() {
+    public static com.google.protobuf.Parser<GetMatchSiteTo> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<TGetMatchSite> getParserForType() {
+    public com.google.protobuf.Parser<GetMatchSiteTo> getParserForType() {
       return PARSER;
     }
 
-    public com.su.msg.MatchSiteMsg.TGetMatchSite getDefaultInstanceForType() {
+    public com.su.msg.MatchSiteMsg.GetMatchSiteTo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MMatchSite_descriptor;
+    internal_static_Msg_MatchSiteMo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_MMatchSite_fieldAccessorTable;
+      internal_static_Msg_MatchSiteMo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Match_descriptor;
+    internal_static_Msg_Match_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_Match_fieldAccessorTable;
+      internal_static_Msg_Match_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_TMatch_descriptor;
+    internal_static_Msg_MatchTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_TMatch_fieldAccessorTable;
+      internal_static_Msg_MatchTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_CancelMatch_descriptor;
+    internal_static_Msg_CancelMatch_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_CancelMatch_fieldAccessorTable;
+      internal_static_Msg_CancelMatch_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_TCancelMatch_descriptor;
+    internal_static_Msg_CancelMatchTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_TCancelMatch_fieldAccessorTable;
+      internal_static_Msg_CancelMatchTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetMatchSite_descriptor;
+    internal_static_Msg_GetMatchSite_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetMatchSite_fieldAccessorTable;
+      internal_static_Msg_GetMatchSite_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_TGetMatchSite_descriptor;
+    internal_static_Msg_GetMatchSiteTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_TGetMatchSite_fieldAccessorTable;
+      internal_static_Msg_GetMatchSiteTo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -3586,13 +3586,13 @@ public final class MatchSiteMsg {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022MatchSiteMsg.proto\"/\n\nMMatchSite\022\016\n\006si" +
-      "teId\030\001 \001(\005\022\021\n\tplayerNum\030\002 \001(\005\"\027\n\005Match\022\016" +
-      "\n\006siteId\030\001 \001(\005\"\030\n\006TMatch\022\016\n\006siteId\030\001 \001(\005" +
-      "\"\r\n\013CancelMatch\"\016\n\014TCancelMatch\" \n\014GetMa" +
-      "tchSite\022\020\n\010siteType\030\001 \001(\005\"/\n\rTGetMatchSi" +
-      "te\022\036\n\tmatchSite\030\001 \003(\0132\013.MMatchSiteB%\n\nco" +
-      "m.su.msgH\001\252\002\024Assets.Scripts.Proto"
+      "\n\022MatchSiteMsg.proto\022\003Msg\"0\n\013MatchSiteMo" +
+      "\022\016\n\006siteId\030\001 \001(\005\022\021\n\tplayerNum\030\002 \001(\005\"\027\n\005M" +
+      "atch\022\016\n\006siteId\030\001 \001(\005\"\031\n\007MatchTo\022\016\n\006siteI" +
+      "d\030\001 \001(\005\"\r\n\013CancelMatch\"\017\n\rCancelMatchTo\"" +
+      " \n\014GetMatchSite\022\020\n\010siteType\030\001 \001(\005\"5\n\016Get" +
+      "MatchSiteTo\022#\n\tmatchSite\030\001 \003(\0132\020.Msg.Mat" +
+      "chSiteMoB\016\n\ncom.su.msgH\001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -3606,47 +3606,47 @@ public final class MatchSiteMsg {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_MMatchSite_descriptor =
+    internal_static_Msg_MatchSiteMo_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_MMatchSite_fieldAccessorTable = new
+    internal_static_Msg_MatchSiteMo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_MMatchSite_descriptor,
+        internal_static_Msg_MatchSiteMo_descriptor,
         new java.lang.String[] { "SiteId", "PlayerNum", });
-    internal_static_Match_descriptor =
+    internal_static_Msg_Match_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_Match_fieldAccessorTable = new
+    internal_static_Msg_Match_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_Match_descriptor,
+        internal_static_Msg_Match_descriptor,
         new java.lang.String[] { "SiteId", });
-    internal_static_TMatch_descriptor =
+    internal_static_Msg_MatchTo_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_TMatch_fieldAccessorTable = new
+    internal_static_Msg_MatchTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_TMatch_descriptor,
+        internal_static_Msg_MatchTo_descriptor,
         new java.lang.String[] { "SiteId", });
-    internal_static_CancelMatch_descriptor =
+    internal_static_Msg_CancelMatch_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_CancelMatch_fieldAccessorTable = new
+    internal_static_Msg_CancelMatch_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_CancelMatch_descriptor,
+        internal_static_Msg_CancelMatch_descriptor,
         new java.lang.String[] { });
-    internal_static_TCancelMatch_descriptor =
+    internal_static_Msg_CancelMatchTo_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_TCancelMatch_fieldAccessorTable = new
+    internal_static_Msg_CancelMatchTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_TCancelMatch_descriptor,
+        internal_static_Msg_CancelMatchTo_descriptor,
         new java.lang.String[] { });
-    internal_static_GetMatchSite_descriptor =
+    internal_static_Msg_GetMatchSite_descriptor =
       getDescriptor().getMessageTypes().get(5);
-    internal_static_GetMatchSite_fieldAccessorTable = new
+    internal_static_Msg_GetMatchSite_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetMatchSite_descriptor,
+        internal_static_Msg_GetMatchSite_descriptor,
         new java.lang.String[] { "SiteType", });
-    internal_static_TGetMatchSite_descriptor =
+    internal_static_Msg_GetMatchSiteTo_descriptor =
       getDescriptor().getMessageTypes().get(6);
-    internal_static_TGetMatchSite_fieldAccessorTable = new
+    internal_static_Msg_GetMatchSiteTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_TGetMatchSite_descriptor,
+        internal_static_Msg_GetMatchSiteTo_descriptor,
         new java.lang.String[] { "MatchSite", });
   }
 

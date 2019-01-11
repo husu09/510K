@@ -1,27 +1,20 @@
 package com.su.excel.mapper;
-
 import org.springframework.stereotype.Component;
-
 import com.su.config.RankingCo;
-import com.su.excel.core.AbstractExcelMapper;
-import com.su.excel.core.RowData;
-
+import com.su.excel.core.BaseMapper;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
+import java.util.LinkedHashMap;
+///start
+///end
 @Component
-public class RankingConf extends AbstractExcelMapper<RankingCo> {
+public class RankingConf extends BaseMapper<RankingCo> {
 
 	@Override
-	public String getName() {
-		return "D段位";
+	public void mapper(String str) {
+		storageMap = JSON.parseObject(str, new TypeReference<LinkedHashMap<Integer, RankingCo>>(){});
 	}
 
-	@Override
-	public RankingCo map(RowData rowData) {
-		RankingCo t = new RankingCo();
-		t.setId(rowData.getInt("id"));
-		t.setRiseScore(rowData.getInt("jqfs"));
-		t.setReward(rowData.getItem("dwjl"));
-		t.setEddScoreRate(rowData.getInt("kfb"));
-		return t;
-	}
-
+	///start
+	///end
 }

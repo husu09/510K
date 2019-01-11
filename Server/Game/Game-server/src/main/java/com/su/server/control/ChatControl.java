@@ -42,19 +42,19 @@ public class ChatControl {
 		}
 		String content = chatService.filterMask(req.getContent());
 		// 组装聊天信息
-		ChatMo.Builder _Chat = ChatMo.newBuilder();
-		_Chat.setId(ctx.getPlayerId());
+		ChatMo.Builder chatMo = ChatMo.newBuilder();
+		chatMo.setId(ctx.getPlayerId());
 		Player player = playerService.getPlayer(ctx.getPlayerId());
-		_Chat.setName(_Chat.getName());
-		_Chat.setSex(_Chat.getSex());
-		_Chat.setTitle(_Chat.getTitle());
-		_Chat.setContent(_Chat.getContent());
+		chatMo.setName(chatMo.getName());
+		chatMo.setSex(chatMo.getSex());
+		chatMo.setTitle(chatMo.getTitle());
+		chatMo.setContent(chatMo.getContent());
 		
 		for (PlayerContext ctxTo : gameContext.getPlayerContextMap().values()) {
-			ctxTo.write(_Chat);
+			ctxTo.write(chatMo);
 		}
 		
-		chatService.getChats().add(_Chat.build());
+		chatService.getChats().add(chatMo.build());
 		if (chatService.getChats().size() >= 20) {
 			chatService.getChats().remove(0);
 		}

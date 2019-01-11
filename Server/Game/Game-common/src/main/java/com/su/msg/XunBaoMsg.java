@@ -15,7 +15,7 @@ public final class XunBaoMsg {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface XunBaoMoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:XunBaoMo)
+      // @@protoc_insertion_point(interface_extends:Msg.XunBaoMo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -57,11 +57,11 @@ public final class XunBaoMsg {
    * 寻宝信息
    * </pre>
    *
-   * Protobuf type {@code XunBaoMo}
+   * Protobuf type {@code Msg.XunBaoMo}
    */
   public  static final class XunBaoMo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:XunBaoMo)
+      // @@protoc_insertion_point(message_implements:Msg.XunBaoMo)
       XunBaoMoOrBuilder {
     // Use XunBaoMo.newBuilder() to construct.
     private XunBaoMo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -124,12 +124,12 @@ public final class XunBaoMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.XunBaoMsg.internal_static_XunBaoMo_descriptor;
+      return com.su.msg.XunBaoMsg.internal_static_Msg_XunBaoMo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.XunBaoMsg.internal_static_XunBaoMo_fieldAccessorTable
+      return com.su.msg.XunBaoMsg.internal_static_Msg_XunBaoMo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.XunBaoMsg.XunBaoMo.class, com.su.msg.XunBaoMsg.XunBaoMo.Builder.class);
     }
@@ -349,20 +349,20 @@ public final class XunBaoMsg {
      * 寻宝信息
      * </pre>
      *
-     * Protobuf type {@code XunBaoMo}
+     * Protobuf type {@code Msg.XunBaoMo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:XunBaoMo)
+        // @@protoc_insertion_point(builder_implements:Msg.XunBaoMo)
         com.su.msg.XunBaoMsg.XunBaoMoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.XunBaoMsg.internal_static_XunBaoMo_descriptor;
+        return com.su.msg.XunBaoMsg.internal_static_Msg_XunBaoMo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.XunBaoMsg.internal_static_XunBaoMo_fieldAccessorTable
+        return com.su.msg.XunBaoMsg.internal_static_Msg_XunBaoMo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.XunBaoMsg.XunBaoMo.class, com.su.msg.XunBaoMsg.XunBaoMo.Builder.class);
       }
@@ -393,7 +393,7 @@ public final class XunBaoMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.XunBaoMsg.internal_static_XunBaoMo_descriptor;
+        return com.su.msg.XunBaoMsg.internal_static_Msg_XunBaoMo_descriptor;
       }
 
       public com.su.msg.XunBaoMsg.XunBaoMo getDefaultInstanceForType() {
@@ -602,10 +602,10 @@ public final class XunBaoMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:XunBaoMo)
+      // @@protoc_insertion_point(builder_scope:Msg.XunBaoMo)
     }
 
-    // @@protoc_insertion_point(class_scope:XunBaoMo)
+    // @@protoc_insertion_point(class_scope:Msg.XunBaoMo)
     private static final com.su.msg.XunBaoMsg.XunBaoMo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.XunBaoMsg.XunBaoMo();
@@ -641,7 +641,7 @@ public final class XunBaoMsg {
   }
 
   public interface GetXunBaoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetXunBao)
+      // @@protoc_insertion_point(interface_extends:Msg.GetXunBao)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
@@ -649,11 +649,11 @@ public final class XunBaoMsg {
    * 获取寻宝信息
    * </pre>
    *
-   * Protobuf type {@code GetXunBao}
+   * Protobuf type {@code Msg.GetXunBao}
    */
   public  static final class GetXunBao extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetXunBao)
+      // @@protoc_insertion_point(message_implements:Msg.GetXunBao)
       GetXunBaoOrBuilder {
     // Use GetXunBao.newBuilder() to construct.
     private GetXunBao(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -703,12 +703,12 @@ public final class XunBaoMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.XunBaoMsg.internal_static_GetXunBao_descriptor;
+      return com.su.msg.XunBaoMsg.internal_static_Msg_GetXunBao_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.XunBaoMsg.internal_static_GetXunBao_fieldAccessorTable
+      return com.su.msg.XunBaoMsg.internal_static_Msg_GetXunBao_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.XunBaoMsg.GetXunBao.class, com.su.msg.XunBaoMsg.GetXunBao.Builder.class);
     }
@@ -848,20 +848,20 @@ public final class XunBaoMsg {
      * 获取寻宝信息
      * </pre>
      *
-     * Protobuf type {@code GetXunBao}
+     * Protobuf type {@code Msg.GetXunBao}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetXunBao)
+        // @@protoc_insertion_point(builder_implements:Msg.GetXunBao)
         com.su.msg.XunBaoMsg.GetXunBaoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.XunBaoMsg.internal_static_GetXunBao_descriptor;
+        return com.su.msg.XunBaoMsg.internal_static_Msg_GetXunBao_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.XunBaoMsg.internal_static_GetXunBao_fieldAccessorTable
+        return com.su.msg.XunBaoMsg.internal_static_Msg_GetXunBao_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.XunBaoMsg.GetXunBao.class, com.su.msg.XunBaoMsg.GetXunBao.Builder.class);
       }
@@ -888,7 +888,7 @@ public final class XunBaoMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.XunBaoMsg.internal_static_GetXunBao_descriptor;
+        return com.su.msg.XunBaoMsg.internal_static_Msg_GetXunBao_descriptor;
       }
 
       public com.su.msg.XunBaoMsg.GetXunBao getDefaultInstanceForType() {
@@ -983,10 +983,10 @@ public final class XunBaoMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetXunBao)
+      // @@protoc_insertion_point(builder_scope:Msg.GetXunBao)
     }
 
-    // @@protoc_insertion_point(class_scope:GetXunBao)
+    // @@protoc_insertion_point(class_scope:Msg.GetXunBao)
     private static final com.su.msg.XunBaoMsg.GetXunBao DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.XunBaoMsg.GetXunBao();
@@ -1022,39 +1022,39 @@ public final class XunBaoMsg {
   }
 
   public interface GetXunBaoToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetXunBaoTo)
+      // @@protoc_insertion_point(interface_extends:Msg.GetXunBaoTo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .XunBaoMo xunBao = 1;</code>
+     * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
      */
     java.util.List<com.su.msg.XunBaoMsg.XunBaoMo> 
         getXunBaoList();
     /**
-     * <code>repeated .XunBaoMo xunBao = 1;</code>
+     * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
      */
     com.su.msg.XunBaoMsg.XunBaoMo getXunBao(int index);
     /**
-     * <code>repeated .XunBaoMo xunBao = 1;</code>
+     * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
      */
     int getXunBaoCount();
     /**
-     * <code>repeated .XunBaoMo xunBao = 1;</code>
+     * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
      */
     java.util.List<? extends com.su.msg.XunBaoMsg.XunBaoMoOrBuilder> 
         getXunBaoOrBuilderList();
     /**
-     * <code>repeated .XunBaoMo xunBao = 1;</code>
+     * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
      */
     com.su.msg.XunBaoMsg.XunBaoMoOrBuilder getXunBaoOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code GetXunBaoTo}
+   * Protobuf type {@code Msg.GetXunBaoTo}
    */
   public  static final class GetXunBaoTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetXunBaoTo)
+      // @@protoc_insertion_point(message_implements:Msg.GetXunBaoTo)
       GetXunBaoToOrBuilder {
     // Use GetXunBaoTo.newBuilder() to construct.
     private GetXunBaoTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -1118,12 +1118,12 @@ public final class XunBaoMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.XunBaoMsg.internal_static_GetXunBaoTo_descriptor;
+      return com.su.msg.XunBaoMsg.internal_static_Msg_GetXunBaoTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.XunBaoMsg.internal_static_GetXunBaoTo_fieldAccessorTable
+      return com.su.msg.XunBaoMsg.internal_static_Msg_GetXunBaoTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.XunBaoMsg.GetXunBaoTo.class, com.su.msg.XunBaoMsg.GetXunBaoTo.Builder.class);
     }
@@ -1131,32 +1131,32 @@ public final class XunBaoMsg {
     public static final int XUNBAO_FIELD_NUMBER = 1;
     private java.util.List<com.su.msg.XunBaoMsg.XunBaoMo> xunBao_;
     /**
-     * <code>repeated .XunBaoMo xunBao = 1;</code>
+     * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
      */
     public java.util.List<com.su.msg.XunBaoMsg.XunBaoMo> getXunBaoList() {
       return xunBao_;
     }
     /**
-     * <code>repeated .XunBaoMo xunBao = 1;</code>
+     * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
      */
     public java.util.List<? extends com.su.msg.XunBaoMsg.XunBaoMoOrBuilder> 
         getXunBaoOrBuilderList() {
       return xunBao_;
     }
     /**
-     * <code>repeated .XunBaoMo xunBao = 1;</code>
+     * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
      */
     public int getXunBaoCount() {
       return xunBao_.size();
     }
     /**
-     * <code>repeated .XunBaoMo xunBao = 1;</code>
+     * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
      */
     public com.su.msg.XunBaoMsg.XunBaoMo getXunBao(int index) {
       return xunBao_.get(index);
     }
     /**
-     * <code>repeated .XunBaoMo xunBao = 1;</code>
+     * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
      */
     public com.su.msg.XunBaoMsg.XunBaoMoOrBuilder getXunBaoOrBuilder(
         int index) {
@@ -1307,20 +1307,20 @@ public final class XunBaoMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code GetXunBaoTo}
+     * Protobuf type {@code Msg.GetXunBaoTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetXunBaoTo)
+        // @@protoc_insertion_point(builder_implements:Msg.GetXunBaoTo)
         com.su.msg.XunBaoMsg.GetXunBaoToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.XunBaoMsg.internal_static_GetXunBaoTo_descriptor;
+        return com.su.msg.XunBaoMsg.internal_static_Msg_GetXunBaoTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.XunBaoMsg.internal_static_GetXunBaoTo_fieldAccessorTable
+        return com.su.msg.XunBaoMsg.internal_static_Msg_GetXunBaoTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.XunBaoMsg.GetXunBaoTo.class, com.su.msg.XunBaoMsg.GetXunBaoTo.Builder.class);
       }
@@ -1354,7 +1354,7 @@ public final class XunBaoMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.XunBaoMsg.internal_static_GetXunBaoTo_descriptor;
+        return com.su.msg.XunBaoMsg.internal_static_Msg_GetXunBaoTo_descriptor;
       }
 
       public com.su.msg.XunBaoMsg.GetXunBaoTo getDefaultInstanceForType() {
@@ -1489,7 +1489,7 @@ public final class XunBaoMsg {
           com.su.msg.XunBaoMsg.XunBaoMo, com.su.msg.XunBaoMsg.XunBaoMo.Builder, com.su.msg.XunBaoMsg.XunBaoMoOrBuilder> xunBaoBuilder_;
 
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public java.util.List<com.su.msg.XunBaoMsg.XunBaoMo> getXunBaoList() {
         if (xunBaoBuilder_ == null) {
@@ -1499,7 +1499,7 @@ public final class XunBaoMsg {
         }
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public int getXunBaoCount() {
         if (xunBaoBuilder_ == null) {
@@ -1509,7 +1509,7 @@ public final class XunBaoMsg {
         }
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public com.su.msg.XunBaoMsg.XunBaoMo getXunBao(int index) {
         if (xunBaoBuilder_ == null) {
@@ -1519,7 +1519,7 @@ public final class XunBaoMsg {
         }
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public Builder setXunBao(
           int index, com.su.msg.XunBaoMsg.XunBaoMo value) {
@@ -1536,7 +1536,7 @@ public final class XunBaoMsg {
         return this;
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public Builder setXunBao(
           int index, com.su.msg.XunBaoMsg.XunBaoMo.Builder builderForValue) {
@@ -1550,7 +1550,7 @@ public final class XunBaoMsg {
         return this;
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public Builder addXunBao(com.su.msg.XunBaoMsg.XunBaoMo value) {
         if (xunBaoBuilder_ == null) {
@@ -1566,7 +1566,7 @@ public final class XunBaoMsg {
         return this;
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public Builder addXunBao(
           int index, com.su.msg.XunBaoMsg.XunBaoMo value) {
@@ -1583,7 +1583,7 @@ public final class XunBaoMsg {
         return this;
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public Builder addXunBao(
           com.su.msg.XunBaoMsg.XunBaoMo.Builder builderForValue) {
@@ -1597,7 +1597,7 @@ public final class XunBaoMsg {
         return this;
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public Builder addXunBao(
           int index, com.su.msg.XunBaoMsg.XunBaoMo.Builder builderForValue) {
@@ -1611,7 +1611,7 @@ public final class XunBaoMsg {
         return this;
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public Builder addAllXunBao(
           java.lang.Iterable<? extends com.su.msg.XunBaoMsg.XunBaoMo> values) {
@@ -1626,7 +1626,7 @@ public final class XunBaoMsg {
         return this;
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public Builder clearXunBao() {
         if (xunBaoBuilder_ == null) {
@@ -1639,7 +1639,7 @@ public final class XunBaoMsg {
         return this;
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public Builder removeXunBao(int index) {
         if (xunBaoBuilder_ == null) {
@@ -1652,14 +1652,14 @@ public final class XunBaoMsg {
         return this;
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public com.su.msg.XunBaoMsg.XunBaoMo.Builder getXunBaoBuilder(
           int index) {
         return getXunBaoFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public com.su.msg.XunBaoMsg.XunBaoMoOrBuilder getXunBaoOrBuilder(
           int index) {
@@ -1669,7 +1669,7 @@ public final class XunBaoMsg {
         }
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public java.util.List<? extends com.su.msg.XunBaoMsg.XunBaoMoOrBuilder> 
            getXunBaoOrBuilderList() {
@@ -1680,14 +1680,14 @@ public final class XunBaoMsg {
         }
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public com.su.msg.XunBaoMsg.XunBaoMo.Builder addXunBaoBuilder() {
         return getXunBaoFieldBuilder().addBuilder(
             com.su.msg.XunBaoMsg.XunBaoMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public com.su.msg.XunBaoMsg.XunBaoMo.Builder addXunBaoBuilder(
           int index) {
@@ -1695,7 +1695,7 @@ public final class XunBaoMsg {
             index, com.su.msg.XunBaoMsg.XunBaoMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .XunBaoMo xunBao = 1;</code>
+       * <code>repeated .Msg.XunBaoMo xunBao = 1;</code>
        */
       public java.util.List<com.su.msg.XunBaoMsg.XunBaoMo.Builder> 
            getXunBaoBuilderList() {
@@ -1726,10 +1726,10 @@ public final class XunBaoMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetXunBaoTo)
+      // @@protoc_insertion_point(builder_scope:Msg.GetXunBaoTo)
     }
 
-    // @@protoc_insertion_point(class_scope:GetXunBaoTo)
+    // @@protoc_insertion_point(class_scope:Msg.GetXunBaoTo)
     private static final com.su.msg.XunBaoMsg.GetXunBaoTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.XunBaoMsg.GetXunBaoTo();
@@ -1765,7 +1765,7 @@ public final class XunBaoMsg {
   }
 
   public interface XunBaoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:XunBao)
+      // @@protoc_insertion_point(interface_extends:Msg.XunBao)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -1782,11 +1782,11 @@ public final class XunBaoMsg {
    * 寻宝
    * </pre>
    *
-   * Protobuf type {@code XunBao}
+   * Protobuf type {@code Msg.XunBao}
    */
   public  static final class XunBao extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:XunBao)
+      // @@protoc_insertion_point(message_implements:Msg.XunBao)
       XunBaoOrBuilder {
     // Use XunBao.newBuilder() to construct.
     private XunBao(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -1843,12 +1843,12 @@ public final class XunBaoMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.XunBaoMsg.internal_static_XunBao_descriptor;
+      return com.su.msg.XunBaoMsg.internal_static_Msg_XunBao_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.XunBaoMsg.internal_static_XunBao_fieldAccessorTable
+      return com.su.msg.XunBaoMsg.internal_static_Msg_XunBao_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.XunBaoMsg.XunBao.class, com.su.msg.XunBaoMsg.XunBao.Builder.class);
     }
@@ -2020,20 +2020,20 @@ public final class XunBaoMsg {
      * 寻宝
      * </pre>
      *
-     * Protobuf type {@code XunBao}
+     * Protobuf type {@code Msg.XunBao}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:XunBao)
+        // @@protoc_insertion_point(builder_implements:Msg.XunBao)
         com.su.msg.XunBaoMsg.XunBaoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.XunBaoMsg.internal_static_XunBao_descriptor;
+        return com.su.msg.XunBaoMsg.internal_static_Msg_XunBao_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.XunBaoMsg.internal_static_XunBao_fieldAccessorTable
+        return com.su.msg.XunBaoMsg.internal_static_Msg_XunBao_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.XunBaoMsg.XunBao.class, com.su.msg.XunBaoMsg.XunBao.Builder.class);
       }
@@ -2062,7 +2062,7 @@ public final class XunBaoMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.XunBaoMsg.internal_static_XunBao_descriptor;
+        return com.su.msg.XunBaoMsg.internal_static_Msg_XunBao_descriptor;
       }
 
       public com.su.msg.XunBaoMsg.XunBao getDefaultInstanceForType() {
@@ -2200,10 +2200,10 @@ public final class XunBaoMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:XunBao)
+      // @@protoc_insertion_point(builder_scope:Msg.XunBao)
     }
 
-    // @@protoc_insertion_point(class_scope:XunBao)
+    // @@protoc_insertion_point(class_scope:Msg.XunBao)
     private static final com.su.msg.XunBaoMsg.XunBao DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.XunBaoMsg.XunBao();
@@ -2239,7 +2239,7 @@ public final class XunBaoMsg {
   }
 
   public interface XunBaoToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:XunBaoTo)
+      // @@protoc_insertion_point(interface_extends:Msg.XunBaoTo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2247,7 +2247,7 @@ public final class XunBaoMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     java.util.List<com.su.msg.CommonMsg.ItemMo> 
         getRewardList();
@@ -2256,7 +2256,7 @@ public final class XunBaoMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     com.su.msg.CommonMsg.ItemMo getReward(int index);
     /**
@@ -2264,7 +2264,7 @@ public final class XunBaoMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     int getRewardCount();
     /**
@@ -2272,7 +2272,7 @@ public final class XunBaoMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     java.util.List<? extends com.su.msg.CommonMsg.ItemMoOrBuilder> 
         getRewardOrBuilderList();
@@ -2281,17 +2281,17 @@ public final class XunBaoMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     com.su.msg.CommonMsg.ItemMoOrBuilder getRewardOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code XunBaoTo}
+   * Protobuf type {@code Msg.XunBaoTo}
    */
   public  static final class XunBaoTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:XunBaoTo)
+      // @@protoc_insertion_point(message_implements:Msg.XunBaoTo)
       XunBaoToOrBuilder {
     // Use XunBaoTo.newBuilder() to construct.
     private XunBaoTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -2355,12 +2355,12 @@ public final class XunBaoMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.XunBaoMsg.internal_static_XunBaoTo_descriptor;
+      return com.su.msg.XunBaoMsg.internal_static_Msg_XunBaoTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.XunBaoMsg.internal_static_XunBaoTo_fieldAccessorTable
+      return com.su.msg.XunBaoMsg.internal_static_Msg_XunBaoTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.XunBaoMsg.XunBaoTo.class, com.su.msg.XunBaoMsg.XunBaoTo.Builder.class);
     }
@@ -2372,7 +2372,7 @@ public final class XunBaoMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     public java.util.List<com.su.msg.CommonMsg.ItemMo> getRewardList() {
       return reward_;
@@ -2382,7 +2382,7 @@ public final class XunBaoMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     public java.util.List<? extends com.su.msg.CommonMsg.ItemMoOrBuilder> 
         getRewardOrBuilderList() {
@@ -2393,7 +2393,7 @@ public final class XunBaoMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     public int getRewardCount() {
       return reward_.size();
@@ -2403,7 +2403,7 @@ public final class XunBaoMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     public com.su.msg.CommonMsg.ItemMo getReward(int index) {
       return reward_.get(index);
@@ -2413,7 +2413,7 @@ public final class XunBaoMsg {
      * 奖励
      * </pre>
      *
-     * <code>repeated .ItemMo reward = 1;</code>
+     * <code>repeated .Msg.ItemMo reward = 1;</code>
      */
     public com.su.msg.CommonMsg.ItemMoOrBuilder getRewardOrBuilder(
         int index) {
@@ -2564,20 +2564,20 @@ public final class XunBaoMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code XunBaoTo}
+     * Protobuf type {@code Msg.XunBaoTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:XunBaoTo)
+        // @@protoc_insertion_point(builder_implements:Msg.XunBaoTo)
         com.su.msg.XunBaoMsg.XunBaoToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.XunBaoMsg.internal_static_XunBaoTo_descriptor;
+        return com.su.msg.XunBaoMsg.internal_static_Msg_XunBaoTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.XunBaoMsg.internal_static_XunBaoTo_fieldAccessorTable
+        return com.su.msg.XunBaoMsg.internal_static_Msg_XunBaoTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.XunBaoMsg.XunBaoTo.class, com.su.msg.XunBaoMsg.XunBaoTo.Builder.class);
       }
@@ -2611,7 +2611,7 @@ public final class XunBaoMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.XunBaoMsg.internal_static_XunBaoTo_descriptor;
+        return com.su.msg.XunBaoMsg.internal_static_Msg_XunBaoTo_descriptor;
       }
 
       public com.su.msg.XunBaoMsg.XunBaoTo getDefaultInstanceForType() {
@@ -2750,7 +2750,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public java.util.List<com.su.msg.CommonMsg.ItemMo> getRewardList() {
         if (rewardBuilder_ == null) {
@@ -2764,7 +2764,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public int getRewardCount() {
         if (rewardBuilder_ == null) {
@@ -2778,7 +2778,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public com.su.msg.CommonMsg.ItemMo getReward(int index) {
         if (rewardBuilder_ == null) {
@@ -2792,7 +2792,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder setReward(
           int index, com.su.msg.CommonMsg.ItemMo value) {
@@ -2813,7 +2813,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder setReward(
           int index, com.su.msg.CommonMsg.ItemMo.Builder builderForValue) {
@@ -2831,7 +2831,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder addReward(com.su.msg.CommonMsg.ItemMo value) {
         if (rewardBuilder_ == null) {
@@ -2851,7 +2851,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder addReward(
           int index, com.su.msg.CommonMsg.ItemMo value) {
@@ -2872,7 +2872,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder addReward(
           com.su.msg.CommonMsg.ItemMo.Builder builderForValue) {
@@ -2890,7 +2890,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder addReward(
           int index, com.su.msg.CommonMsg.ItemMo.Builder builderForValue) {
@@ -2908,7 +2908,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder addAllReward(
           java.lang.Iterable<? extends com.su.msg.CommonMsg.ItemMo> values) {
@@ -2927,7 +2927,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder clearReward() {
         if (rewardBuilder_ == null) {
@@ -2944,7 +2944,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public Builder removeReward(int index) {
         if (rewardBuilder_ == null) {
@@ -2961,7 +2961,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public com.su.msg.CommonMsg.ItemMo.Builder getRewardBuilder(
           int index) {
@@ -2972,7 +2972,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public com.su.msg.CommonMsg.ItemMoOrBuilder getRewardOrBuilder(
           int index) {
@@ -2986,7 +2986,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public java.util.List<? extends com.su.msg.CommonMsg.ItemMoOrBuilder> 
            getRewardOrBuilderList() {
@@ -3001,7 +3001,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public com.su.msg.CommonMsg.ItemMo.Builder addRewardBuilder() {
         return getRewardFieldBuilder().addBuilder(
@@ -3012,7 +3012,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public com.su.msg.CommonMsg.ItemMo.Builder addRewardBuilder(
           int index) {
@@ -3024,7 +3024,7 @@ public final class XunBaoMsg {
        * 奖励
        * </pre>
        *
-       * <code>repeated .ItemMo reward = 1;</code>
+       * <code>repeated .Msg.ItemMo reward = 1;</code>
        */
       public java.util.List<com.su.msg.CommonMsg.ItemMo.Builder> 
            getRewardBuilderList() {
@@ -3055,10 +3055,10 @@ public final class XunBaoMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:XunBaoTo)
+      // @@protoc_insertion_point(builder_scope:Msg.XunBaoTo)
     }
 
-    // @@protoc_insertion_point(class_scope:XunBaoTo)
+    // @@protoc_insertion_point(class_scope:Msg.XunBaoTo)
     private static final com.su.msg.XunBaoMsg.XunBaoTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.XunBaoMsg.XunBaoTo();
@@ -3094,30 +3094,30 @@ public final class XunBaoMsg {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_XunBaoMo_descriptor;
+    internal_static_Msg_XunBaoMo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_XunBaoMo_fieldAccessorTable;
+      internal_static_Msg_XunBaoMo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetXunBao_descriptor;
+    internal_static_Msg_GetXunBao_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetXunBao_fieldAccessorTable;
+      internal_static_Msg_GetXunBao_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetXunBaoTo_descriptor;
+    internal_static_Msg_GetXunBaoTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetXunBaoTo_fieldAccessorTable;
+      internal_static_Msg_GetXunBaoTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_XunBao_descriptor;
+    internal_static_Msg_XunBao_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_XunBao_fieldAccessorTable;
+      internal_static_Msg_XunBao_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_XunBaoTo_descriptor;
+    internal_static_Msg_XunBaoTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_XunBaoTo_fieldAccessorTable;
+      internal_static_Msg_XunBaoTo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -3127,12 +3127,12 @@ public final class XunBaoMsg {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017XunBaoMsg.proto\032\017CommonMsg.proto\"*\n\010Xu" +
-      "nBaoMo\022\014\n\004type\030\001 \001(\005\022\020\n\010nextTime\030\002 \001(\003\"\013" +
-      "\n\tGetXunBao\"(\n\013GetXunBaoTo\022\031\n\006xunBao\030\001 \003" +
-      "(\0132\t.XunBaoMo\"\026\n\006XunBao\022\014\n\004type\030\001 \001(\005\"#\n" +
-      "\010XunBaoTo\022\027\n\006reward\030\001 \003(\0132\007.ItemMoB%\n\nco" +
-      "m.su.msgH\001\252\002\024Assets.Scripts.Proto"
+      "\n\017XunBaoMsg.proto\022\003Msg\032\017CommonMsg.proto\"" +
+      "*\n\010XunBaoMo\022\014\n\004type\030\001 \001(\005\022\020\n\010nextTime\030\002 " +
+      "\001(\003\"\013\n\tGetXunBao\",\n\013GetXunBaoTo\022\035\n\006xunBa" +
+      "o\030\001 \003(\0132\r.Msg.XunBaoMo\"\026\n\006XunBao\022\014\n\004type" +
+      "\030\001 \001(\005\"\'\n\010XunBaoTo\022\033\n\006reward\030\001 \003(\0132\013.Msg" +
+      ".ItemMoB\016\n\ncom.su.msgH\001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -3147,35 +3147,35 @@ public final class XunBaoMsg {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.su.msg.CommonMsg.getDescriptor(),
         }, assigner);
-    internal_static_XunBaoMo_descriptor =
+    internal_static_Msg_XunBaoMo_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_XunBaoMo_fieldAccessorTable = new
+    internal_static_Msg_XunBaoMo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_XunBaoMo_descriptor,
+        internal_static_Msg_XunBaoMo_descriptor,
         new java.lang.String[] { "Type", "NextTime", });
-    internal_static_GetXunBao_descriptor =
+    internal_static_Msg_GetXunBao_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_GetXunBao_fieldAccessorTable = new
+    internal_static_Msg_GetXunBao_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetXunBao_descriptor,
+        internal_static_Msg_GetXunBao_descriptor,
         new java.lang.String[] { });
-    internal_static_GetXunBaoTo_descriptor =
+    internal_static_Msg_GetXunBaoTo_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_GetXunBaoTo_fieldAccessorTable = new
+    internal_static_Msg_GetXunBaoTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetXunBaoTo_descriptor,
+        internal_static_Msg_GetXunBaoTo_descriptor,
         new java.lang.String[] { "XunBao", });
-    internal_static_XunBao_descriptor =
+    internal_static_Msg_XunBao_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_XunBao_fieldAccessorTable = new
+    internal_static_Msg_XunBao_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_XunBao_descriptor,
+        internal_static_Msg_XunBao_descriptor,
         new java.lang.String[] { "Type", });
-    internal_static_XunBaoTo_descriptor =
+    internal_static_Msg_XunBaoTo_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_XunBaoTo_fieldAccessorTable = new
+    internal_static_Msg_XunBaoTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_XunBaoTo_descriptor,
+        internal_static_Msg_XunBaoTo_descriptor,
         new java.lang.String[] { "Reward", });
     com.su.msg.CommonMsg.getDescriptor();
   }

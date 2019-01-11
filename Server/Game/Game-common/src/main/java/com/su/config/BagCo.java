@@ -1,88 +1,92 @@
 package com.su.config;
-
 import com.su.common.obj.Item;
-
 public class BagCo {
 	private int id;
-	/**
-	 * 类型
-	 */
+	/**名称*/
+	private String name;
+	/**类型*/
 	private int type;
-	/**
-	 * 品质
-	 */
+	/**品质*/
 	private int quality;
-	/**
-	 * 使用类型
-	 */
+	/**使用类型*/
 	private int useType;
-	/**
-	 * 使用效果
-	 */
-	private Item useItem;
-	private int useNum;
-	/**
-	 * 有效期
-	 * */
-	private int effTyep;
-	private int effValue;
-	/**
-	 * 叠加上限
-	 */
+	/**使用效果*/
+	private int userEfftInt;
+	private Item userEfftItem;
+	/**有效期*/
+	private int[] effTime;
+	/**叠加上限*/
 	private int limit;
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public int getType() {
 		return type;
 	}
+
 	public void setType(int type) {
 		this.type = type;
 	}
+
 	public int getQuality() {
 		return quality;
 	}
+
 	public void setQuality(int quality) {
 		this.quality = quality;
 	}
+
 	public int getUseType() {
 		return useType;
 	}
+
 	public void setUseType(int useType) {
 		this.useType = useType;
 	}
-	public Item getUseItem() {
-		return useItem;
+
+	public int getUserEfftInt() {
+		return userEfftInt;
 	}
-	public void setUseItem(Item useItem) {
-		this.useItem = useItem;
+
+	public void setUserEfftInt(int userEfftInt) {
+		this.userEfftInt = userEfftInt;
 	}
-	public int getUseNum() {
-		return useNum;
+
+	public Item getUserEfftItem() {
+		return userEfftItem;
 	}
-	public void setUseNum(int useNum) {
-		this.useNum = useNum;
+
+	public void setUserEfftItem(Item userEfftItem) {
+		this.userEfftItem = userEfftItem;
 	}
-	public int getEffTyep() {
-		return effTyep;
+
+	public int[] getEffTime() {
+		return effTime;
 	}
-	public void setEffTyep(int effTyep) {
-		this.effTyep = effTyep;
+
+	public void setEffTime(int[] effTime) {
+		this.effTime = effTime;
 	}
-	public int getEffValue() {
-		return effValue;
-	}
-	public void setEffValue(int effValue) {
-		this.effValue = effValue;
-	}
+
 	public int getLimit() {
 		return limit;
 	}
+
 	public void setLimit(int limit) {
 		this.limit = limit;
 	}
-	
 }

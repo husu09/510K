@@ -73,7 +73,9 @@ public class XunBaoControl {
 			ctx.sendError(1004);
 			return;
 		}
-		List<XunBaoRewardCo> rewardList = rewardConf.getByType(req.getType());
+	
+		//List<XunBaoRewardCo> rewardList = rewardConf.getByType(req.getType());
+		List<XunBaoRewardCo> rewardList = null;
 		if (rewardList == null) {
 			ctx.sendError(1004);
 			return;
@@ -107,7 +109,8 @@ public class XunBaoControl {
 		// 随机奖品
 		XunBaoTo.Builder xunBao_ = XunBaoTo.newBuilder();
 		for (int i = 0; i < costCo.getRewardCount(); i ++) {
-			XunBaoRewardCo reward = (XunBaoRewardCo)RandomUtil.random(rewardList);
+			//XunBaoRewardCo reward = (XunBaoRewardCo)RandomUtil.random(rewardList);
+			XunBaoRewardCo reward = null;
 			if (reward == null) {
 				logger.error("reward is null");
 				return;

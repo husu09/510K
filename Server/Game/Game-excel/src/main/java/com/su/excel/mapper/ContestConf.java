@@ -1,30 +1,20 @@
 package com.su.excel.mapper;
-
 import org.springframework.stereotype.Component;
-
 import com.su.config.ContestCo;
-import com.su.excel.core.AbstractExcelMapper;
-import com.su.excel.core.RowData;
-
+import com.su.excel.core.BaseMapper;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
+import java.util.LinkedHashMap;
+///start
+///end
 @Component
-public class ContestConf extends AbstractExcelMapper<ContestCo> {
+public class ContestConf extends BaseMapper<ContestCo> {
 
 	@Override
-	public String getName() {
-		return "B比赛";
+	public void mapper(String str) {
+		storageMap = JSON.parseObject(str, new TypeReference<LinkedHashMap<Integer, ContestCo>>(){});
 	}
 
-	@Override
-	public ContestCo map(RowData rowData) {
-		ContestCo t = new ContestCo();
-		t.setId(rowData.getInt("id"));
-		t.setBaseScore(rowData.getInt("csdf"));
-		t.setAddedScore(rowData.getInt("dfzl"));
-		t.setContestNum(rowData.getInt("csbss"));
-		t.setInitScore(rowData.getInt("csjf"));
-		t.setCost(rowData.getItem("bmxh"));
-		t.setPlayerNum(rowData.getInt("csrs"));
-		return t;
-	}
-
+	///start
+	///end
 }

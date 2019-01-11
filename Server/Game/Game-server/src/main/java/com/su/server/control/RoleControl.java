@@ -90,7 +90,7 @@ public class RoleControl {
 				logger.error("道具不足");
 				continue;
 			}
-			addExp += bagCo.getUseNum() * en.getValue();
+			addExp += bagCo.getUserEfftInt() * en.getValue();
 		}
 		
 		if (addExp == 0) 

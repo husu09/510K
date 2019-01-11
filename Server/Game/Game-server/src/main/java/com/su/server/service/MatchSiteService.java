@@ -26,10 +26,10 @@ public class MatchSiteService extends GameEventAdapter {
 	public void serverStart() {
 		// 匹配场
 		for (SiteCo siteCo : siteConf.all()) {
-			if (siteCo.isOpen()) {
-				if (siteCo.getSiteType() == SiteType.CLASSIC.getValue())
+			if (siteCo.getIsOpen()) {
+				if (siteCo.getType() == SiteType.CLASSIC.getValue())
 					matchSiteMap.put(siteCo.getId(), new ClassicSite(siteCo));
-				else if (siteCo.getSiteType() == SiteType.RANKING.getValue())
+				else if (siteCo.getType()  == SiteType.RANKING.getValue())
 					matchSiteMap.put(siteCo.getId(), new RankingSite(siteCo));
 			}
 		}

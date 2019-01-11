@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class GameContext {
+	
 	/**
 	 * 是否接受请求
 	 * */
@@ -19,6 +20,7 @@ public class GameContext {
 	 * 在线玩家
 	 * */
 	private Map<Long, PlayerContext> playerContextMap = new ConcurrentHashMap<>();
+	
 
 	public Map<Long, PlayerContext> getPlayerContextMap() {
 		return playerContextMap;
@@ -31,7 +33,9 @@ public class GameContext {
 	public void setAccept(boolean accept) {
 		this.accept = accept;
 	}
-
+	
+	
+	
 	
 		
 }

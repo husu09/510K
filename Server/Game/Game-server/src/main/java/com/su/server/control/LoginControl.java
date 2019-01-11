@@ -13,6 +13,8 @@ import com.su.core.context.PlayerContext;
 import com.su.core.event.GameEventDispatcher;
 import com.su.msg.LoginMsg.Login;
 import com.su.msg.LoginMsg.LoginTo;
+import com.su.msg.TestMsg.TestTo;
+import com.su.msg.TestMsg.TestTo.Builder;
 import com.su.server.service.LoginService;
 import com.su.server.service.PlayerService;
 
@@ -39,30 +41,23 @@ public class LoginControl {
 	@Action(mustLogin = false)
 	public void login(PlayerContext playerContext, Login req) {
 		if (StringUtil.isNone(req.getAccount())) {
-			return;
-		}
-		if (StringUtil.isNone(req.getName())) {
+			playerContext.sendError(1002);
 			return;
 		}
 		long playerId = loginService.getIdCacheByAccount(req.getAccount());
 		Player player = null;
-		if (playerId == 0) {
+		if (playerId == -1) {
 			// 创建用户
 			player = new Player();
 			player.setAccount(req.getAccount());
-			player.setName(req.getName());
 			playerId = playerService.createPlayer(player);
-			if (playerId == 0) {
-				playerContext.sendError(20002);
-				return;
-			}
 			loginService.addIdCacheByAccount(req.getAccount(), playerId);
 			loginService.addPlayerCache(player);
 		} else {
 			 player = playerService.getPlayer(playerId);
 		}
 		if (player == null) {
-			playerContext.sendError(20001);
+			playerContext.sendError(1001);
 			return;
 		}
 		playerContext.handleLogin(player.getId());
@@ -73,6 +68,10 @@ public class LoginControl {
 		// 登录事件
 		gameEventDispatcher.login(playerContext, resp);
 		playerContext.write(resp);
+		
+		TestTo.Builder testTo = TestTo.newBuilder();
+		//testTo.setAge(10);
+		playerContext.write(testTo);
 		
 	}
 

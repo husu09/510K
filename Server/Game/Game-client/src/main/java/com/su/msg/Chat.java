@@ -15,7 +15,7 @@ public final class Chat {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface ChatMoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:ChatMo)
+      // @@protoc_insertion_point(interface_extends:Msg.ChatMo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -126,11 +126,11 @@ public final class Chat {
    * 聊天信息
    * </pre>
    *
-   * Protobuf type {@code ChatMo}
+   * Protobuf type {@code Msg.ChatMo}
    */
   public  static final class ChatMo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:ChatMo)
+      // @@protoc_insertion_point(message_implements:Msg.ChatMo)
       ChatMoOrBuilder {
     // Use ChatMo.newBuilder() to construct.
     private ChatMo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -213,12 +213,12 @@ public final class Chat {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.Chat.internal_static_ChatMo_descriptor;
+      return com.su.msg.Chat.internal_static_Msg_ChatMo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.Chat.internal_static_ChatMo_fieldAccessorTable
+      return com.su.msg.Chat.internal_static_Msg_ChatMo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.Chat.ChatMo.class, com.su.msg.Chat.ChatMo.Builder.class);
     }
@@ -615,20 +615,20 @@ public final class Chat {
      * 聊天信息
      * </pre>
      *
-     * Protobuf type {@code ChatMo}
+     * Protobuf type {@code Msg.ChatMo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:ChatMo)
+        // @@protoc_insertion_point(builder_implements:Msg.ChatMo)
         com.su.msg.Chat.ChatMoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.Chat.internal_static_ChatMo_descriptor;
+        return com.su.msg.Chat.internal_static_Msg_ChatMo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.Chat.internal_static_ChatMo_fieldAccessorTable
+        return com.su.msg.Chat.internal_static_Msg_ChatMo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.Chat.ChatMo.class, com.su.msg.Chat.ChatMo.Builder.class);
       }
@@ -665,7 +665,7 @@ public final class Chat {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.Chat.internal_static_ChatMo_descriptor;
+        return com.su.msg.Chat.internal_static_Msg_ChatMo_descriptor;
       }
 
       public com.su.msg.Chat.ChatMo getDefaultInstanceForType() {
@@ -1147,10 +1147,10 @@ public final class Chat {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:ChatMo)
+      // @@protoc_insertion_point(builder_scope:Msg.ChatMo)
     }
 
-    // @@protoc_insertion_point(class_scope:ChatMo)
+    // @@protoc_insertion_point(class_scope:Msg.ChatMo)
     private static final com.su.msg.Chat.ChatMo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.Chat.ChatMo();
@@ -1186,7 +1186,7 @@ public final class Chat {
   }
 
   public interface GetChatOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetChat)
+      // @@protoc_insertion_point(interface_extends:Msg.GetChat)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
@@ -1194,11 +1194,11 @@ public final class Chat {
    * 获取聊天信息
    * </pre>
    *
-   * Protobuf type {@code GetChat}
+   * Protobuf type {@code Msg.GetChat}
    */
   public  static final class GetChat extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetChat)
+      // @@protoc_insertion_point(message_implements:Msg.GetChat)
       GetChatOrBuilder {
     // Use GetChat.newBuilder() to construct.
     private GetChat(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -1248,12 +1248,12 @@ public final class Chat {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.Chat.internal_static_GetChat_descriptor;
+      return com.su.msg.Chat.internal_static_Msg_GetChat_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.Chat.internal_static_GetChat_fieldAccessorTable
+      return com.su.msg.Chat.internal_static_Msg_GetChat_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.Chat.GetChat.class, com.su.msg.Chat.GetChat.Builder.class);
     }
@@ -1393,20 +1393,20 @@ public final class Chat {
      * 获取聊天信息
      * </pre>
      *
-     * Protobuf type {@code GetChat}
+     * Protobuf type {@code Msg.GetChat}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetChat)
+        // @@protoc_insertion_point(builder_implements:Msg.GetChat)
         com.su.msg.Chat.GetChatOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.Chat.internal_static_GetChat_descriptor;
+        return com.su.msg.Chat.internal_static_Msg_GetChat_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.Chat.internal_static_GetChat_fieldAccessorTable
+        return com.su.msg.Chat.internal_static_Msg_GetChat_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.Chat.GetChat.class, com.su.msg.Chat.GetChat.Builder.class);
       }
@@ -1433,7 +1433,7 @@ public final class Chat {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.Chat.internal_static_GetChat_descriptor;
+        return com.su.msg.Chat.internal_static_Msg_GetChat_descriptor;
       }
 
       public com.su.msg.Chat.GetChat getDefaultInstanceForType() {
@@ -1528,10 +1528,10 @@ public final class Chat {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetChat)
+      // @@protoc_insertion_point(builder_scope:Msg.GetChat)
     }
 
-    // @@protoc_insertion_point(class_scope:GetChat)
+    // @@protoc_insertion_point(class_scope:Msg.GetChat)
     private static final com.su.msg.Chat.GetChat DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.Chat.GetChat();
@@ -1567,39 +1567,39 @@ public final class Chat {
   }
 
   public interface GetChatToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetChatTo)
+      // @@protoc_insertion_point(interface_extends:Msg.GetChatTo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ChatMo chat = 1;</code>
+     * <code>repeated .Msg.ChatMo chat = 1;</code>
      */
     java.util.List<com.su.msg.Chat.ChatMo> 
         getChatList();
     /**
-     * <code>repeated .ChatMo chat = 1;</code>
+     * <code>repeated .Msg.ChatMo chat = 1;</code>
      */
     com.su.msg.Chat.ChatMo getChat(int index);
     /**
-     * <code>repeated .ChatMo chat = 1;</code>
+     * <code>repeated .Msg.ChatMo chat = 1;</code>
      */
     int getChatCount();
     /**
-     * <code>repeated .ChatMo chat = 1;</code>
+     * <code>repeated .Msg.ChatMo chat = 1;</code>
      */
     java.util.List<? extends com.su.msg.Chat.ChatMoOrBuilder> 
         getChatOrBuilderList();
     /**
-     * <code>repeated .ChatMo chat = 1;</code>
+     * <code>repeated .Msg.ChatMo chat = 1;</code>
      */
     com.su.msg.Chat.ChatMoOrBuilder getChatOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code GetChatTo}
+   * Protobuf type {@code Msg.GetChatTo}
    */
   public  static final class GetChatTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetChatTo)
+      // @@protoc_insertion_point(message_implements:Msg.GetChatTo)
       GetChatToOrBuilder {
     // Use GetChatTo.newBuilder() to construct.
     private GetChatTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -1663,12 +1663,12 @@ public final class Chat {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.Chat.internal_static_GetChatTo_descriptor;
+      return com.su.msg.Chat.internal_static_Msg_GetChatTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.Chat.internal_static_GetChatTo_fieldAccessorTable
+      return com.su.msg.Chat.internal_static_Msg_GetChatTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.Chat.GetChatTo.class, com.su.msg.Chat.GetChatTo.Builder.class);
     }
@@ -1676,32 +1676,32 @@ public final class Chat {
     public static final int CHAT_FIELD_NUMBER = 1;
     private java.util.List<com.su.msg.Chat.ChatMo> chat_;
     /**
-     * <code>repeated .ChatMo chat = 1;</code>
+     * <code>repeated .Msg.ChatMo chat = 1;</code>
      */
     public java.util.List<com.su.msg.Chat.ChatMo> getChatList() {
       return chat_;
     }
     /**
-     * <code>repeated .ChatMo chat = 1;</code>
+     * <code>repeated .Msg.ChatMo chat = 1;</code>
      */
     public java.util.List<? extends com.su.msg.Chat.ChatMoOrBuilder> 
         getChatOrBuilderList() {
       return chat_;
     }
     /**
-     * <code>repeated .ChatMo chat = 1;</code>
+     * <code>repeated .Msg.ChatMo chat = 1;</code>
      */
     public int getChatCount() {
       return chat_.size();
     }
     /**
-     * <code>repeated .ChatMo chat = 1;</code>
+     * <code>repeated .Msg.ChatMo chat = 1;</code>
      */
     public com.su.msg.Chat.ChatMo getChat(int index) {
       return chat_.get(index);
     }
     /**
-     * <code>repeated .ChatMo chat = 1;</code>
+     * <code>repeated .Msg.ChatMo chat = 1;</code>
      */
     public com.su.msg.Chat.ChatMoOrBuilder getChatOrBuilder(
         int index) {
@@ -1852,20 +1852,20 @@ public final class Chat {
       return builder;
     }
     /**
-     * Protobuf type {@code GetChatTo}
+     * Protobuf type {@code Msg.GetChatTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetChatTo)
+        // @@protoc_insertion_point(builder_implements:Msg.GetChatTo)
         com.su.msg.Chat.GetChatToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.Chat.internal_static_GetChatTo_descriptor;
+        return com.su.msg.Chat.internal_static_Msg_GetChatTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.Chat.internal_static_GetChatTo_fieldAccessorTable
+        return com.su.msg.Chat.internal_static_Msg_GetChatTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.Chat.GetChatTo.class, com.su.msg.Chat.GetChatTo.Builder.class);
       }
@@ -1899,7 +1899,7 @@ public final class Chat {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.Chat.internal_static_GetChatTo_descriptor;
+        return com.su.msg.Chat.internal_static_Msg_GetChatTo_descriptor;
       }
 
       public com.su.msg.Chat.GetChatTo getDefaultInstanceForType() {
@@ -2034,7 +2034,7 @@ public final class Chat {
           com.su.msg.Chat.ChatMo, com.su.msg.Chat.ChatMo.Builder, com.su.msg.Chat.ChatMoOrBuilder> chatBuilder_;
 
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public java.util.List<com.su.msg.Chat.ChatMo> getChatList() {
         if (chatBuilder_ == null) {
@@ -2044,7 +2044,7 @@ public final class Chat {
         }
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public int getChatCount() {
         if (chatBuilder_ == null) {
@@ -2054,7 +2054,7 @@ public final class Chat {
         }
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public com.su.msg.Chat.ChatMo getChat(int index) {
         if (chatBuilder_ == null) {
@@ -2064,7 +2064,7 @@ public final class Chat {
         }
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public Builder setChat(
           int index, com.su.msg.Chat.ChatMo value) {
@@ -2081,7 +2081,7 @@ public final class Chat {
         return this;
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public Builder setChat(
           int index, com.su.msg.Chat.ChatMo.Builder builderForValue) {
@@ -2095,7 +2095,7 @@ public final class Chat {
         return this;
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public Builder addChat(com.su.msg.Chat.ChatMo value) {
         if (chatBuilder_ == null) {
@@ -2111,7 +2111,7 @@ public final class Chat {
         return this;
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public Builder addChat(
           int index, com.su.msg.Chat.ChatMo value) {
@@ -2128,7 +2128,7 @@ public final class Chat {
         return this;
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public Builder addChat(
           com.su.msg.Chat.ChatMo.Builder builderForValue) {
@@ -2142,7 +2142,7 @@ public final class Chat {
         return this;
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public Builder addChat(
           int index, com.su.msg.Chat.ChatMo.Builder builderForValue) {
@@ -2156,7 +2156,7 @@ public final class Chat {
         return this;
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public Builder addAllChat(
           java.lang.Iterable<? extends com.su.msg.Chat.ChatMo> values) {
@@ -2171,7 +2171,7 @@ public final class Chat {
         return this;
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public Builder clearChat() {
         if (chatBuilder_ == null) {
@@ -2184,7 +2184,7 @@ public final class Chat {
         return this;
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public Builder removeChat(int index) {
         if (chatBuilder_ == null) {
@@ -2197,14 +2197,14 @@ public final class Chat {
         return this;
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public com.su.msg.Chat.ChatMo.Builder getChatBuilder(
           int index) {
         return getChatFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public com.su.msg.Chat.ChatMoOrBuilder getChatOrBuilder(
           int index) {
@@ -2214,7 +2214,7 @@ public final class Chat {
         }
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public java.util.List<? extends com.su.msg.Chat.ChatMoOrBuilder> 
            getChatOrBuilderList() {
@@ -2225,14 +2225,14 @@ public final class Chat {
         }
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public com.su.msg.Chat.ChatMo.Builder addChatBuilder() {
         return getChatFieldBuilder().addBuilder(
             com.su.msg.Chat.ChatMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public com.su.msg.Chat.ChatMo.Builder addChatBuilder(
           int index) {
@@ -2240,7 +2240,7 @@ public final class Chat {
             index, com.su.msg.Chat.ChatMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ChatMo chat = 1;</code>
+       * <code>repeated .Msg.ChatMo chat = 1;</code>
        */
       public java.util.List<com.su.msg.Chat.ChatMo.Builder> 
            getChatBuilderList() {
@@ -2271,10 +2271,10 @@ public final class Chat {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetChatTo)
+      // @@protoc_insertion_point(builder_scope:Msg.GetChatTo)
     }
 
-    // @@protoc_insertion_point(class_scope:GetChatTo)
+    // @@protoc_insertion_point(class_scope:Msg.GetChatTo)
     private static final com.su.msg.Chat.GetChatTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.Chat.GetChatTo();
@@ -2310,7 +2310,7 @@ public final class Chat {
   }
 
   public interface SendChatOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:SendChat)
+      // @@protoc_insertion_point(interface_extends:Msg.SendChat)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2344,11 +2344,11 @@ public final class Chat {
    * 发送聊天消息
    * </pre>
    *
-   * Protobuf type {@code SendChat}
+   * Protobuf type {@code Msg.SendChat}
    */
   public  static final class SendChat extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:SendChat)
+      // @@protoc_insertion_point(message_implements:Msg.SendChat)
       SendChatOrBuilder {
     // Use SendChat.newBuilder() to construct.
     private SendChat(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -2406,12 +2406,12 @@ public final class Chat {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.Chat.internal_static_SendChat_descriptor;
+      return com.su.msg.Chat.internal_static_Msg_SendChat_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.Chat.internal_static_SendChat_fieldAccessorTable
+      return com.su.msg.Chat.internal_static_Msg_SendChat_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.Chat.SendChat.class, com.su.msg.Chat.SendChat.Builder.class);
     }
@@ -2621,20 +2621,20 @@ public final class Chat {
      * 发送聊天消息
      * </pre>
      *
-     * Protobuf type {@code SendChat}
+     * Protobuf type {@code Msg.SendChat}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:SendChat)
+        // @@protoc_insertion_point(builder_implements:Msg.SendChat)
         com.su.msg.Chat.SendChatOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.Chat.internal_static_SendChat_descriptor;
+        return com.su.msg.Chat.internal_static_Msg_SendChat_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.Chat.internal_static_SendChat_fieldAccessorTable
+        return com.su.msg.Chat.internal_static_Msg_SendChat_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.Chat.SendChat.class, com.su.msg.Chat.SendChat.Builder.class);
       }
@@ -2663,7 +2663,7 @@ public final class Chat {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.Chat.internal_static_SendChat_descriptor;
+        return com.su.msg.Chat.internal_static_Msg_SendChat_descriptor;
       }
 
       public com.su.msg.Chat.SendChat getDefaultInstanceForType() {
@@ -2871,10 +2871,10 @@ public final class Chat {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:SendChat)
+      // @@protoc_insertion_point(builder_scope:Msg.SendChat)
     }
 
-    // @@protoc_insertion_point(class_scope:SendChat)
+    // @@protoc_insertion_point(class_scope:Msg.SendChat)
     private static final com.su.msg.Chat.SendChat DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.Chat.SendChat();
@@ -2910,15 +2910,15 @@ public final class Chat {
   }
 
   public interface SendChatToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:SendChatTo)
+      // @@protoc_insertion_point(interface_extends:Msg.SendChatTo)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * Protobuf type {@code SendChatTo}
+   * Protobuf type {@code Msg.SendChatTo}
    */
   public  static final class SendChatTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:SendChatTo)
+      // @@protoc_insertion_point(message_implements:Msg.SendChatTo)
       SendChatToOrBuilder {
     // Use SendChatTo.newBuilder() to construct.
     private SendChatTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -2968,12 +2968,12 @@ public final class Chat {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.Chat.internal_static_SendChatTo_descriptor;
+      return com.su.msg.Chat.internal_static_Msg_SendChatTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.Chat.internal_static_SendChatTo_fieldAccessorTable
+      return com.su.msg.Chat.internal_static_Msg_SendChatTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.Chat.SendChatTo.class, com.su.msg.Chat.SendChatTo.Builder.class);
     }
@@ -3109,20 +3109,20 @@ public final class Chat {
       return builder;
     }
     /**
-     * Protobuf type {@code SendChatTo}
+     * Protobuf type {@code Msg.SendChatTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:SendChatTo)
+        // @@protoc_insertion_point(builder_implements:Msg.SendChatTo)
         com.su.msg.Chat.SendChatToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.Chat.internal_static_SendChatTo_descriptor;
+        return com.su.msg.Chat.internal_static_Msg_SendChatTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.Chat.internal_static_SendChatTo_fieldAccessorTable
+        return com.su.msg.Chat.internal_static_Msg_SendChatTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.Chat.SendChatTo.class, com.su.msg.Chat.SendChatTo.Builder.class);
       }
@@ -3149,7 +3149,7 @@ public final class Chat {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.Chat.internal_static_SendChatTo_descriptor;
+        return com.su.msg.Chat.internal_static_Msg_SendChatTo_descriptor;
       }
 
       public com.su.msg.Chat.SendChatTo getDefaultInstanceForType() {
@@ -3244,10 +3244,10 @@ public final class Chat {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:SendChatTo)
+      // @@protoc_insertion_point(builder_scope:Msg.SendChatTo)
     }
 
-    // @@protoc_insertion_point(class_scope:SendChatTo)
+    // @@protoc_insertion_point(class_scope:Msg.SendChatTo)
     private static final com.su.msg.Chat.SendChatTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.Chat.SendChatTo();
@@ -3283,19 +3283,19 @@ public final class Chat {
   }
 
   public interface ChatNoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:ChatNo)
+      // @@protoc_insertion_point(interface_extends:Msg.ChatNo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional .ChatMo chat = 1;</code>
+     * <code>optional .Msg.ChatMo chat = 1;</code>
      */
     boolean hasChat();
     /**
-     * <code>optional .ChatMo chat = 1;</code>
+     * <code>optional .Msg.ChatMo chat = 1;</code>
      */
     com.su.msg.Chat.ChatMo getChat();
     /**
-     * <code>optional .ChatMo chat = 1;</code>
+     * <code>optional .Msg.ChatMo chat = 1;</code>
      */
     com.su.msg.Chat.ChatMoOrBuilder getChatOrBuilder();
   }
@@ -3304,11 +3304,11 @@ public final class Chat {
    * 消息通知
    * </pre>
    *
-   * Protobuf type {@code ChatNo}
+   * Protobuf type {@code Msg.ChatNo}
    */
   public  static final class ChatNo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:ChatNo)
+      // @@protoc_insertion_point(message_implements:Msg.ChatNo)
       ChatNoOrBuilder {
     // Use ChatNo.newBuilder() to construct.
     private ChatNo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -3372,12 +3372,12 @@ public final class Chat {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.Chat.internal_static_ChatNo_descriptor;
+      return com.su.msg.Chat.internal_static_Msg_ChatNo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.Chat.internal_static_ChatNo_fieldAccessorTable
+      return com.su.msg.Chat.internal_static_Msg_ChatNo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.Chat.ChatNo.class, com.su.msg.Chat.ChatNo.Builder.class);
     }
@@ -3386,19 +3386,19 @@ public final class Chat {
     public static final int CHAT_FIELD_NUMBER = 1;
     private com.su.msg.Chat.ChatMo chat_;
     /**
-     * <code>optional .ChatMo chat = 1;</code>
+     * <code>optional .Msg.ChatMo chat = 1;</code>
      */
     public boolean hasChat() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional .ChatMo chat = 1;</code>
+     * <code>optional .Msg.ChatMo chat = 1;</code>
      */
     public com.su.msg.Chat.ChatMo getChat() {
       return chat_ == null ? com.su.msg.Chat.ChatMo.getDefaultInstance() : chat_;
     }
     /**
-     * <code>optional .ChatMo chat = 1;</code>
+     * <code>optional .Msg.ChatMo chat = 1;</code>
      */
     public com.su.msg.Chat.ChatMoOrBuilder getChatOrBuilder() {
       return chat_ == null ? com.su.msg.Chat.ChatMo.getDefaultInstance() : chat_;
@@ -3555,20 +3555,20 @@ public final class Chat {
      * 消息通知
      * </pre>
      *
-     * Protobuf type {@code ChatNo}
+     * Protobuf type {@code Msg.ChatNo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:ChatNo)
+        // @@protoc_insertion_point(builder_implements:Msg.ChatNo)
         com.su.msg.Chat.ChatNoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.Chat.internal_static_ChatNo_descriptor;
+        return com.su.msg.Chat.internal_static_Msg_ChatNo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.Chat.internal_static_ChatNo_fieldAccessorTable
+        return com.su.msg.Chat.internal_static_Msg_ChatNo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.Chat.ChatNo.class, com.su.msg.Chat.ChatNo.Builder.class);
       }
@@ -3602,7 +3602,7 @@ public final class Chat {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.Chat.internal_static_ChatNo_descriptor;
+        return com.su.msg.Chat.internal_static_Msg_ChatNo_descriptor;
       }
 
       public com.su.msg.Chat.ChatNo getDefaultInstanceForType() {
@@ -3706,13 +3706,13 @@ public final class Chat {
       private com.google.protobuf.SingleFieldBuilderV3<
           com.su.msg.Chat.ChatMo, com.su.msg.Chat.ChatMo.Builder, com.su.msg.Chat.ChatMoOrBuilder> chatBuilder_;
       /**
-       * <code>optional .ChatMo chat = 1;</code>
+       * <code>optional .Msg.ChatMo chat = 1;</code>
        */
       public boolean hasChat() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional .ChatMo chat = 1;</code>
+       * <code>optional .Msg.ChatMo chat = 1;</code>
        */
       public com.su.msg.Chat.ChatMo getChat() {
         if (chatBuilder_ == null) {
@@ -3722,7 +3722,7 @@ public final class Chat {
         }
       }
       /**
-       * <code>optional .ChatMo chat = 1;</code>
+       * <code>optional .Msg.ChatMo chat = 1;</code>
        */
       public Builder setChat(com.su.msg.Chat.ChatMo value) {
         if (chatBuilder_ == null) {
@@ -3738,7 +3738,7 @@ public final class Chat {
         return this;
       }
       /**
-       * <code>optional .ChatMo chat = 1;</code>
+       * <code>optional .Msg.ChatMo chat = 1;</code>
        */
       public Builder setChat(
           com.su.msg.Chat.ChatMo.Builder builderForValue) {
@@ -3752,7 +3752,7 @@ public final class Chat {
         return this;
       }
       /**
-       * <code>optional .ChatMo chat = 1;</code>
+       * <code>optional .Msg.ChatMo chat = 1;</code>
        */
       public Builder mergeChat(com.su.msg.Chat.ChatMo value) {
         if (chatBuilder_ == null) {
@@ -3772,7 +3772,7 @@ public final class Chat {
         return this;
       }
       /**
-       * <code>optional .ChatMo chat = 1;</code>
+       * <code>optional .Msg.ChatMo chat = 1;</code>
        */
       public Builder clearChat() {
         if (chatBuilder_ == null) {
@@ -3785,7 +3785,7 @@ public final class Chat {
         return this;
       }
       /**
-       * <code>optional .ChatMo chat = 1;</code>
+       * <code>optional .Msg.ChatMo chat = 1;</code>
        */
       public com.su.msg.Chat.ChatMo.Builder getChatBuilder() {
         bitField0_ |= 0x00000001;
@@ -3793,7 +3793,7 @@ public final class Chat {
         return getChatFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .ChatMo chat = 1;</code>
+       * <code>optional .Msg.ChatMo chat = 1;</code>
        */
       public com.su.msg.Chat.ChatMoOrBuilder getChatOrBuilder() {
         if (chatBuilder_ != null) {
@@ -3804,7 +3804,7 @@ public final class Chat {
         }
       }
       /**
-       * <code>optional .ChatMo chat = 1;</code>
+       * <code>optional .Msg.ChatMo chat = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.su.msg.Chat.ChatMo, com.su.msg.Chat.ChatMo.Builder, com.su.msg.Chat.ChatMoOrBuilder> 
@@ -3830,10 +3830,10 @@ public final class Chat {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:ChatNo)
+      // @@protoc_insertion_point(builder_scope:Msg.ChatNo)
     }
 
-    // @@protoc_insertion_point(class_scope:ChatNo)
+    // @@protoc_insertion_point(class_scope:Msg.ChatNo)
     private static final com.su.msg.Chat.ChatNo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.Chat.ChatNo();
@@ -3869,35 +3869,35 @@ public final class Chat {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_ChatMo_descriptor;
+    internal_static_Msg_ChatMo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_ChatMo_fieldAccessorTable;
+      internal_static_Msg_ChatMo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetChat_descriptor;
+    internal_static_Msg_GetChat_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetChat_fieldAccessorTable;
+      internal_static_Msg_GetChat_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetChatTo_descriptor;
+    internal_static_Msg_GetChatTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetChatTo_fieldAccessorTable;
+      internal_static_Msg_GetChatTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_SendChat_descriptor;
+    internal_static_Msg_SendChat_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_SendChat_fieldAccessorTable;
+      internal_static_Msg_SendChat_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_SendChatTo_descriptor;
+    internal_static_Msg_SendChatTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_SendChatTo_fieldAccessorTable;
+      internal_static_Msg_SendChatTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_ChatNo_descriptor;
+    internal_static_Msg_ChatNo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_ChatNo_fieldAccessorTable;
+      internal_static_Msg_ChatNo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -3907,13 +3907,13 @@ public final class Chat {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\nChat.proto\032\017CommonMsg.proto\"O\n\006ChatMo\022" +
-      "\n\n\002id\030\001 \001(\003\022\014\n\004name\030\002 \001(\t\022\013\n\003sex\030\003 \001(\005\022\r" +
-      "\n\005title\030\004 \001(\005\022\017\n\007content\030\005 \001(\t\"\t\n\007GetCha" +
-      "t\"\"\n\tGetChatTo\022\025\n\004chat\030\001 \003(\0132\007.ChatMo\"\033\n" +
-      "\010SendChat\022\017\n\007content\030\001 \001(\t\"\014\n\nSendChatTo" +
-      "\"\037\n\006ChatNo\022\025\n\004chat\030\001 \001(\0132\007.ChatMoB%\n\ncom" +
-      ".su.msgH\001\252\002\024Assets.Scripts.Proto"
+      "\n\nChat.proto\022\003Msg\"O\n\006ChatMo\022\n\n\002id\030\001 \001(\003\022" +
+      "\014\n\004name\030\002 \001(\t\022\013\n\003sex\030\003 \001(\005\022\r\n\005title\030\004 \001(" +
+      "\005\022\017\n\007content\030\005 \001(\t\"\t\n\007GetChat\"&\n\tGetChat" +
+      "To\022\031\n\004chat\030\001 \003(\0132\013.Msg.ChatMo\"\033\n\010SendCha" +
+      "t\022\017\n\007content\030\001 \001(\t\"\014\n\nSendChatTo\"#\n\006Chat" +
+      "No\022\031\n\004chat\030\001 \001(\0132\013.Msg.ChatMoB\016\n\ncom.su." +
+      "msgH\001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -3926,45 +3926,43 @@ public final class Chat {
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.su.msg.CommonMsg.getDescriptor(),
         }, assigner);
-    internal_static_ChatMo_descriptor =
+    internal_static_Msg_ChatMo_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_ChatMo_fieldAccessorTable = new
+    internal_static_Msg_ChatMo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_ChatMo_descriptor,
+        internal_static_Msg_ChatMo_descriptor,
         new java.lang.String[] { "Id", "Name", "Sex", "Title", "Content", });
-    internal_static_GetChat_descriptor =
+    internal_static_Msg_GetChat_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_GetChat_fieldAccessorTable = new
+    internal_static_Msg_GetChat_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetChat_descriptor,
+        internal_static_Msg_GetChat_descriptor,
         new java.lang.String[] { });
-    internal_static_GetChatTo_descriptor =
+    internal_static_Msg_GetChatTo_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_GetChatTo_fieldAccessorTable = new
+    internal_static_Msg_GetChatTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetChatTo_descriptor,
+        internal_static_Msg_GetChatTo_descriptor,
         new java.lang.String[] { "Chat", });
-    internal_static_SendChat_descriptor =
+    internal_static_Msg_SendChat_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_SendChat_fieldAccessorTable = new
+    internal_static_Msg_SendChat_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_SendChat_descriptor,
+        internal_static_Msg_SendChat_descriptor,
         new java.lang.String[] { "Content", });
-    internal_static_SendChatTo_descriptor =
+    internal_static_Msg_SendChatTo_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_SendChatTo_fieldAccessorTable = new
+    internal_static_Msg_SendChatTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_SendChatTo_descriptor,
+        internal_static_Msg_SendChatTo_descriptor,
         new java.lang.String[] { });
-    internal_static_ChatNo_descriptor =
+    internal_static_Msg_ChatNo_descriptor =
       getDescriptor().getMessageTypes().get(5);
-    internal_static_ChatNo_fieldAccessorTable = new
+    internal_static_Msg_ChatNo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_ChatNo_descriptor,
+        internal_static_Msg_ChatNo_descriptor,
         new java.lang.String[] { "Chat", });
-    com.su.msg.CommonMsg.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

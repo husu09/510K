@@ -71,7 +71,7 @@ public class BagControl {
 		}
 		// 使用效果
 		if (grid.getType() == BagConst.TYPE_GIFT) {
-			resourceService.add(ctx, bagCo.getUseItem(), 1003);
+			resourceService.add(ctx, bagCo.getUserEfftItem(), 1003);
 		} else if (grid.getType() == BagConst.TYPE_ROLE) {
 			roleService.addRole(ctx, bagCo);
 		}

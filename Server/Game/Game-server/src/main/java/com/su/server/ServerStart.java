@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.su.common.util.LoadUtil;
 import com.su.core.action.ActionScan;
 import com.su.core.akka.AkkaContext;
 import com.su.core.context.GameContext;
@@ -11,10 +12,13 @@ import com.su.core.data.IDGenerator;
 import com.su.core.data.MQProducer;
 import com.su.core.data.RedisClient;
 import com.su.core.event.GameEventDispatcher;
+import com.su.core.netty.HttpServer;
 import com.su.core.netty.NettyServer;
+import com.su.core.netty.WebSocketServer;
 import com.su.core.proto.ProtoScan;
 import com.su.core.schedule.ScheduleManager;
-import com.su.excel.core.ExcelProcessor;
+import com.su.excel.core.LoadConf;
+import com.su.excel.core.old.ExcelProcessor;
 import com.su.server.config.ServerConfig;
 
 public class ServerStart {
@@ -24,7 +28,7 @@ public class ServerStart {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ServerConfig.class);
 		System.out.println("==============================启动服务==============================");
 		// 加载配置
-		context.getBean(ExcelProcessor.class).reload();
+		context.getBean(LoadConf.class).load();
 		// 初始化 id 生成器
 		context.getBean(IDGenerator.class).init();
 		// 初始化 redis
@@ -39,7 +43,9 @@ public class ServerStart {
 		// 扫描 Action
 		context.getBean(ActionScan.class).scan();
 		// 启动网络服务
-		NettyServer nettyServer = context.getBean(NettyServer.class);
+//		NettyServer nettyServer = context.getBean(NettyServer.class);
+//		HttpServer nettyServer = context.getBean(HttpServer.class);
+		WebSocketServer nettyServer = context.getBean(WebSocketServer.class);
 		nettyServer.start();
 		// 服务器启动事件
 		GameEventDispatcher gameEventDispatcher = context.getBean(GameEventDispatcher.class);
@@ -47,9 +53,13 @@ public class ServerStart {
 		// 初始化定时任务管理器
 		ScheduleManager scheduleManager = context.getBean(ScheduleManager.class);
 		scheduleManager.start();
+		// 加载 tips
+		LoadUtil.loadTips();
 		// 设置接受请求
 		GameContext gameContext = context.getBean(GameContext.class);
 		gameContext.setAccept(true);
+		
+		
 		
 		System.out.println("输入stop关闭服务器：");
 		Scanner sc = new Scanner(System.in);

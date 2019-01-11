@@ -3,7 +3,6 @@ package com.su.server.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.su.common.constant.SysAttr;
@@ -69,11 +68,11 @@ public class ResourceService {
 		if (addCount <= 0)
 			return;
 		Player player = playerService.getPlayer(playerContext.getPlayerId());
-		player.setPeanut(player.getPeanut() + addCount);
+		player.setBean(player.getBean() + addCount);
 		dataService.update(player);
-		playerContext.getBuilder().setPeanut(player.getPeanut());
+		playerContext.getBuilder().setBean(player.getBean());
 		playerContext.setNotice(true);
-		logService.addPeanutLog(player.getId(), reason, addCount, player.getPeanut());
+		logService.addPeanutLog(player.getId(), reason, addCount, player.getBean());
 	}
 
 	/**
@@ -83,13 +82,13 @@ public class ResourceService {
 		if (eddCount <= 0)
 			return true;
 		Player player = playerService.getPlayer(playerContext.getPlayerId());
-		if (player.getPeanut() < eddCount)
+		if (player.getBean() < eddCount)
 			return false;
-		player.setPeanut(player.getPeanut() - eddCount);
+		player.setBean(player.getBean() - eddCount);
 		dataService.update(player);
-		playerContext.getBuilder().setPeanut(player.getPeanut());
+		playerContext.getBuilder().setBean(player.getBean());
 		playerContext.setNotice(true);
-		logService.addPeanutLog(player.getId(), reason, eddCount, player.getPeanut());
+		logService.addPeanutLog(player.getId(), reason, eddCount, player.getBean());
 		return true;
 	}
 	
@@ -104,7 +103,7 @@ public class ResourceService {
 		dataService.update(player);
 		playerContext.getBuilder().setDiamond(player.getDiamond());
 		playerContext.setNotice(true);
-		logService.addDiamondLog(player.getId(), reason, addCount, player.getPeanut());
+		logService.addDiamondLog(player.getId(), reason, addCount, player.getBean());
 	}
 	
 	/**
@@ -120,7 +119,7 @@ public class ResourceService {
 		dataService.update(player);
 		playerContext.getBuilder().setDiamond(player.getDiamond());
 		playerContext.setNotice(true);
-		logService.addDiamondLog(player.getId(), reason, eddCount, player.getPeanut());
+		logService.addDiamondLog(player.getId(), reason, eddCount, player.getBean());
 		return true;
 	}
 }

@@ -15,7 +15,7 @@ public final class BagMsg {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface GridMoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GridMo)
+      // @@protoc_insertion_point(interface_extends:Msg.GridMo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -54,20 +54,20 @@ public final class BagMsg {
 
     /**
      * <pre>
-     * 系统id
+     * id
      * </pre>
      *
-     * <code>optional int32 sysId = 3;</code>
+     * <code>optional int32 cid = 3;</code>
      */
-    boolean hasSysId();
+    boolean hasCid();
     /**
      * <pre>
-     * 系统id
+     * id
      * </pre>
      *
-     * <code>optional int32 sysId = 3;</code>
+     * <code>optional int32 cid = 3;</code>
      */
-    int getSysId();
+    int getCid();
 
     /**
      * <pre>
@@ -125,11 +125,11 @@ public final class BagMsg {
    * 物品格子
    * </pre>
    *
-   * Protobuf type {@code GridMo}
+   * Protobuf type {@code Msg.GridMo}
    */
   public  static final class GridMo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GridMo)
+      // @@protoc_insertion_point(message_implements:Msg.GridMo)
       GridMoOrBuilder {
     // Use GridMo.newBuilder() to construct.
     private GridMo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -138,7 +138,7 @@ public final class BagMsg {
     private GridMo() {
       index_ = 0;
       type_ = 0;
-      sysId_ = 0;
+      cid_ = 0;
       count_ = 0;
       effType_ = 0;
       effValue_ = 0L;
@@ -184,7 +184,7 @@ public final class BagMsg {
             }
             case 24: {
               bitField0_ |= 0x00000004;
-              sysId_ = input.readInt32();
+              cid_ = input.readInt32();
               break;
             }
             case 32: {
@@ -216,12 +216,12 @@ public final class BagMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.BagMsg.internal_static_GridMo_descriptor;
+      return com.su.msg.BagMsg.internal_static_Msg_GridMo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.BagMsg.internal_static_GridMo_fieldAccessorTable
+      return com.su.msg.BagMsg.internal_static_Msg_GridMo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.BagMsg.GridMo.class, com.su.msg.BagMsg.GridMo.Builder.class);
     }
@@ -273,27 +273,27 @@ public final class BagMsg {
       return type_;
     }
 
-    public static final int SYSID_FIELD_NUMBER = 3;
-    private int sysId_;
+    public static final int CID_FIELD_NUMBER = 3;
+    private int cid_;
     /**
      * <pre>
-     * 系统id
+     * id
      * </pre>
      *
-     * <code>optional int32 sysId = 3;</code>
+     * <code>optional int32 cid = 3;</code>
      */
-    public boolean hasSysId() {
+    public boolean hasCid() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
      * <pre>
-     * 系统id
+     * id
      * </pre>
      *
-     * <code>optional int32 sysId = 3;</code>
+     * <code>optional int32 cid = 3;</code>
      */
-    public int getSysId() {
-      return sysId_;
+    public int getCid() {
+      return cid_;
     }
 
     public static final int COUNT_FIELD_NUMBER = 4;
@@ -384,7 +384,7 @@ public final class BagMsg {
         output.writeInt32(2, type_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, sysId_);
+        output.writeInt32(3, cid_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
         output.writeInt32(4, count_);
@@ -413,7 +413,7 @@ public final class BagMsg {
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, sysId_);
+          .computeInt32Size(3, cid_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
         size += com.google.protobuf.CodedOutputStream
@@ -454,10 +454,10 @@ public final class BagMsg {
         result = result && (getType()
             == other.getType());
       }
-      result = result && (hasSysId() == other.hasSysId());
-      if (hasSysId()) {
-        result = result && (getSysId()
-            == other.getSysId());
+      result = result && (hasCid() == other.hasCid());
+      if (hasCid()) {
+        result = result && (getCid()
+            == other.getCid());
       }
       result = result && (hasCount() == other.hasCount());
       if (hasCount()) {
@@ -493,9 +493,9 @@ public final class BagMsg {
         hash = (37 * hash) + TYPE_FIELD_NUMBER;
         hash = (53 * hash) + getType();
       }
-      if (hasSysId()) {
-        hash = (37 * hash) + SYSID_FIELD_NUMBER;
-        hash = (53 * hash) + getSysId();
+      if (hasCid()) {
+        hash = (37 * hash) + CID_FIELD_NUMBER;
+        hash = (53 * hash) + getCid();
       }
       if (hasCount()) {
         hash = (37 * hash) + COUNT_FIELD_NUMBER;
@@ -597,20 +597,20 @@ public final class BagMsg {
      * 物品格子
      * </pre>
      *
-     * Protobuf type {@code GridMo}
+     * Protobuf type {@code Msg.GridMo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GridMo)
+        // @@protoc_insertion_point(builder_implements:Msg.GridMo)
         com.su.msg.BagMsg.GridMoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.BagMsg.internal_static_GridMo_descriptor;
+        return com.su.msg.BagMsg.internal_static_Msg_GridMo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.BagMsg.internal_static_GridMo_fieldAccessorTable
+        return com.su.msg.BagMsg.internal_static_Msg_GridMo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.BagMsg.GridMo.class, com.su.msg.BagMsg.GridMo.Builder.class);
       }
@@ -636,7 +636,7 @@ public final class BagMsg {
         bitField0_ = (bitField0_ & ~0x00000001);
         type_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
-        sysId_ = 0;
+        cid_ = 0;
         bitField0_ = (bitField0_ & ~0x00000004);
         count_ = 0;
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -649,7 +649,7 @@ public final class BagMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.BagMsg.internal_static_GridMo_descriptor;
+        return com.su.msg.BagMsg.internal_static_Msg_GridMo_descriptor;
       }
 
       public com.su.msg.BagMsg.GridMo getDefaultInstanceForType() {
@@ -679,7 +679,7 @@ public final class BagMsg {
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.sysId_ = sysId_;
+        result.cid_ = cid_;
         if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
           to_bitField0_ |= 0x00000008;
         }
@@ -740,8 +740,8 @@ public final class BagMsg {
         if (other.hasType()) {
           setType(other.getType());
         }
-        if (other.hasSysId()) {
-          setSysId(other.getSysId());
+        if (other.hasCid()) {
+          setCid(other.getCid());
         }
         if (other.hasCount()) {
           setCount(other.getCount());
@@ -876,50 +876,50 @@ public final class BagMsg {
         return this;
       }
 
-      private int sysId_ ;
+      private int cid_ ;
       /**
        * <pre>
-       * 系统id
+       * id
        * </pre>
        *
-       * <code>optional int32 sysId = 3;</code>
+       * <code>optional int32 cid = 3;</code>
        */
-      public boolean hasSysId() {
+      public boolean hasCid() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
        * <pre>
-       * 系统id
+       * id
        * </pre>
        *
-       * <code>optional int32 sysId = 3;</code>
+       * <code>optional int32 cid = 3;</code>
        */
-      public int getSysId() {
-        return sysId_;
+      public int getCid() {
+        return cid_;
       }
       /**
        * <pre>
-       * 系统id
+       * id
        * </pre>
        *
-       * <code>optional int32 sysId = 3;</code>
+       * <code>optional int32 cid = 3;</code>
        */
-      public Builder setSysId(int value) {
+      public Builder setCid(int value) {
         bitField0_ |= 0x00000004;
-        sysId_ = value;
+        cid_ = value;
         onChanged();
         return this;
       }
       /**
        * <pre>
-       * 系统id
+       * id
        * </pre>
        *
-       * <code>optional int32 sysId = 3;</code>
+       * <code>optional int32 cid = 3;</code>
        */
-      public Builder clearSysId() {
+      public Builder clearCid() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        sysId_ = 0;
+        cid_ = 0;
         onChanged();
         return this;
       }
@@ -1078,10 +1078,10 @@ public final class BagMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GridMo)
+      // @@protoc_insertion_point(builder_scope:Msg.GridMo)
     }
 
-    // @@protoc_insertion_point(class_scope:GridMo)
+    // @@protoc_insertion_point(class_scope:Msg.GridMo)
     private static final com.su.msg.BagMsg.GridMo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.BagMsg.GridMo();
@@ -1117,7 +1117,7 @@ public final class BagMsg {
   }
 
   public interface GetBagOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetBag)
+      // @@protoc_insertion_point(interface_extends:Msg.GetBag)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
@@ -1125,11 +1125,11 @@ public final class BagMsg {
    *背包数据
    * </pre>
    *
-   * Protobuf type {@code GetBag}
+   * Protobuf type {@code Msg.GetBag}
    */
   public  static final class GetBag extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetBag)
+      // @@protoc_insertion_point(message_implements:Msg.GetBag)
       GetBagOrBuilder {
     // Use GetBag.newBuilder() to construct.
     private GetBag(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -1179,12 +1179,12 @@ public final class BagMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.BagMsg.internal_static_GetBag_descriptor;
+      return com.su.msg.BagMsg.internal_static_Msg_GetBag_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.BagMsg.internal_static_GetBag_fieldAccessorTable
+      return com.su.msg.BagMsg.internal_static_Msg_GetBag_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.BagMsg.GetBag.class, com.su.msg.BagMsg.GetBag.Builder.class);
     }
@@ -1324,20 +1324,20 @@ public final class BagMsg {
      *背包数据
      * </pre>
      *
-     * Protobuf type {@code GetBag}
+     * Protobuf type {@code Msg.GetBag}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetBag)
+        // @@protoc_insertion_point(builder_implements:Msg.GetBag)
         com.su.msg.BagMsg.GetBagOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.BagMsg.internal_static_GetBag_descriptor;
+        return com.su.msg.BagMsg.internal_static_Msg_GetBag_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.BagMsg.internal_static_GetBag_fieldAccessorTable
+        return com.su.msg.BagMsg.internal_static_Msg_GetBag_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.BagMsg.GetBag.class, com.su.msg.BagMsg.GetBag.Builder.class);
       }
@@ -1364,7 +1364,7 @@ public final class BagMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.BagMsg.internal_static_GetBag_descriptor;
+        return com.su.msg.BagMsg.internal_static_Msg_GetBag_descriptor;
       }
 
       public com.su.msg.BagMsg.GetBag getDefaultInstanceForType() {
@@ -1459,10 +1459,10 @@ public final class BagMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetBag)
+      // @@protoc_insertion_point(builder_scope:Msg.GetBag)
     }
 
-    // @@protoc_insertion_point(class_scope:GetBag)
+    // @@protoc_insertion_point(class_scope:Msg.GetBag)
     private static final com.su.msg.BagMsg.GetBag DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.BagMsg.GetBag();
@@ -1498,39 +1498,39 @@ public final class BagMsg {
   }
 
   public interface GetBagToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetBagTo)
+      // @@protoc_insertion_point(interface_extends:Msg.GetBagTo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     java.util.List<com.su.msg.BagMsg.GridMo> 
         getGridList();
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     com.su.msg.BagMsg.GridMo getGrid(int index);
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     int getGridCount();
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     java.util.List<? extends com.su.msg.BagMsg.GridMoOrBuilder> 
         getGridOrBuilderList();
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     com.su.msg.BagMsg.GridMoOrBuilder getGridOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code GetBagTo}
+   * Protobuf type {@code Msg.GetBagTo}
    */
   public  static final class GetBagTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetBagTo)
+      // @@protoc_insertion_point(message_implements:Msg.GetBagTo)
       GetBagToOrBuilder {
     // Use GetBagTo.newBuilder() to construct.
     private GetBagTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -1594,12 +1594,12 @@ public final class BagMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.BagMsg.internal_static_GetBagTo_descriptor;
+      return com.su.msg.BagMsg.internal_static_Msg_GetBagTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.BagMsg.internal_static_GetBagTo_fieldAccessorTable
+      return com.su.msg.BagMsg.internal_static_Msg_GetBagTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.BagMsg.GetBagTo.class, com.su.msg.BagMsg.GetBagTo.Builder.class);
     }
@@ -1607,32 +1607,32 @@ public final class BagMsg {
     public static final int GRID_FIELD_NUMBER = 1;
     private java.util.List<com.su.msg.BagMsg.GridMo> grid_;
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     public java.util.List<com.su.msg.BagMsg.GridMo> getGridList() {
       return grid_;
     }
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     public java.util.List<? extends com.su.msg.BagMsg.GridMoOrBuilder> 
         getGridOrBuilderList() {
       return grid_;
     }
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     public int getGridCount() {
       return grid_.size();
     }
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     public com.su.msg.BagMsg.GridMo getGrid(int index) {
       return grid_.get(index);
     }
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     public com.su.msg.BagMsg.GridMoOrBuilder getGridOrBuilder(
         int index) {
@@ -1783,20 +1783,20 @@ public final class BagMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code GetBagTo}
+     * Protobuf type {@code Msg.GetBagTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetBagTo)
+        // @@protoc_insertion_point(builder_implements:Msg.GetBagTo)
         com.su.msg.BagMsg.GetBagToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.BagMsg.internal_static_GetBagTo_descriptor;
+        return com.su.msg.BagMsg.internal_static_Msg_GetBagTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.BagMsg.internal_static_GetBagTo_fieldAccessorTable
+        return com.su.msg.BagMsg.internal_static_Msg_GetBagTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.BagMsg.GetBagTo.class, com.su.msg.BagMsg.GetBagTo.Builder.class);
       }
@@ -1830,7 +1830,7 @@ public final class BagMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.BagMsg.internal_static_GetBagTo_descriptor;
+        return com.su.msg.BagMsg.internal_static_Msg_GetBagTo_descriptor;
       }
 
       public com.su.msg.BagMsg.GetBagTo getDefaultInstanceForType() {
@@ -1965,7 +1965,7 @@ public final class BagMsg {
           com.su.msg.BagMsg.GridMo, com.su.msg.BagMsg.GridMo.Builder, com.su.msg.BagMsg.GridMoOrBuilder> gridBuilder_;
 
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public java.util.List<com.su.msg.BagMsg.GridMo> getGridList() {
         if (gridBuilder_ == null) {
@@ -1975,7 +1975,7 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public int getGridCount() {
         if (gridBuilder_ == null) {
@@ -1985,7 +1985,7 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public com.su.msg.BagMsg.GridMo getGrid(int index) {
         if (gridBuilder_ == null) {
@@ -1995,7 +1995,7 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder setGrid(
           int index, com.su.msg.BagMsg.GridMo value) {
@@ -2012,7 +2012,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder setGrid(
           int index, com.su.msg.BagMsg.GridMo.Builder builderForValue) {
@@ -2026,7 +2026,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder addGrid(com.su.msg.BagMsg.GridMo value) {
         if (gridBuilder_ == null) {
@@ -2042,7 +2042,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder addGrid(
           int index, com.su.msg.BagMsg.GridMo value) {
@@ -2059,7 +2059,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder addGrid(
           com.su.msg.BagMsg.GridMo.Builder builderForValue) {
@@ -2073,7 +2073,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder addGrid(
           int index, com.su.msg.BagMsg.GridMo.Builder builderForValue) {
@@ -2087,7 +2087,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder addAllGrid(
           java.lang.Iterable<? extends com.su.msg.BagMsg.GridMo> values) {
@@ -2102,7 +2102,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder clearGrid() {
         if (gridBuilder_ == null) {
@@ -2115,7 +2115,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder removeGrid(int index) {
         if (gridBuilder_ == null) {
@@ -2128,14 +2128,14 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public com.su.msg.BagMsg.GridMo.Builder getGridBuilder(
           int index) {
         return getGridFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public com.su.msg.BagMsg.GridMoOrBuilder getGridOrBuilder(
           int index) {
@@ -2145,7 +2145,7 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public java.util.List<? extends com.su.msg.BagMsg.GridMoOrBuilder> 
            getGridOrBuilderList() {
@@ -2156,14 +2156,14 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public com.su.msg.BagMsg.GridMo.Builder addGridBuilder() {
         return getGridFieldBuilder().addBuilder(
             com.su.msg.BagMsg.GridMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public com.su.msg.BagMsg.GridMo.Builder addGridBuilder(
           int index) {
@@ -2171,7 +2171,7 @@ public final class BagMsg {
             index, com.su.msg.BagMsg.GridMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public java.util.List<com.su.msg.BagMsg.GridMo.Builder> 
            getGridBuilderList() {
@@ -2202,10 +2202,10 @@ public final class BagMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetBagTo)
+      // @@protoc_insertion_point(builder_scope:Msg.GetBagTo)
     }
 
-    // @@protoc_insertion_point(class_scope:GetBagTo)
+    // @@protoc_insertion_point(class_scope:Msg.GetBagTo)
     private static final com.su.msg.BagMsg.GetBagTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.BagMsg.GetBagTo();
@@ -2241,7 +2241,7 @@ public final class BagMsg {
   }
 
   public interface UseItemOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:UseItem)
+      // @@protoc_insertion_point(interface_extends:Msg.UseItem)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2283,11 +2283,11 @@ public final class BagMsg {
    * 使用道具
    * </pre>
    *
-   * Protobuf type {@code UseItem}
+   * Protobuf type {@code Msg.UseItem}
    */
   public  static final class UseItem extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:UseItem)
+      // @@protoc_insertion_point(message_implements:Msg.UseItem)
       UseItemOrBuilder {
     // Use UseItem.newBuilder() to construct.
     private UseItem(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -2350,12 +2350,12 @@ public final class BagMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.BagMsg.internal_static_UseItem_descriptor;
+      return com.su.msg.BagMsg.internal_static_Msg_UseItem_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.BagMsg.internal_static_UseItem_fieldAccessorTable
+      return com.su.msg.BagMsg.internal_static_Msg_UseItem_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.BagMsg.UseItem.class, com.su.msg.BagMsg.UseItem.Builder.class);
     }
@@ -2574,20 +2574,20 @@ public final class BagMsg {
      * 使用道具
      * </pre>
      *
-     * Protobuf type {@code UseItem}
+     * Protobuf type {@code Msg.UseItem}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:UseItem)
+        // @@protoc_insertion_point(builder_implements:Msg.UseItem)
         com.su.msg.BagMsg.UseItemOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.BagMsg.internal_static_UseItem_descriptor;
+        return com.su.msg.BagMsg.internal_static_Msg_UseItem_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.BagMsg.internal_static_UseItem_fieldAccessorTable
+        return com.su.msg.BagMsg.internal_static_Msg_UseItem_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.BagMsg.UseItem.class, com.su.msg.BagMsg.UseItem.Builder.class);
       }
@@ -2618,7 +2618,7 @@ public final class BagMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.BagMsg.internal_static_UseItem_descriptor;
+        return com.su.msg.BagMsg.internal_static_Msg_UseItem_descriptor;
       }
 
       public com.su.msg.BagMsg.UseItem getDefaultInstanceForType() {
@@ -2827,10 +2827,10 @@ public final class BagMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:UseItem)
+      // @@protoc_insertion_point(builder_scope:Msg.UseItem)
     }
 
-    // @@protoc_insertion_point(class_scope:UseItem)
+    // @@protoc_insertion_point(class_scope:Msg.UseItem)
     private static final com.su.msg.BagMsg.UseItem DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.BagMsg.UseItem();
@@ -2866,15 +2866,15 @@ public final class BagMsg {
   }
 
   public interface UseItemToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:UseItemTo)
+      // @@protoc_insertion_point(interface_extends:Msg.UseItemTo)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * Protobuf type {@code UseItemTo}
+   * Protobuf type {@code Msg.UseItemTo}
    */
   public  static final class UseItemTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:UseItemTo)
+      // @@protoc_insertion_point(message_implements:Msg.UseItemTo)
       UseItemToOrBuilder {
     // Use UseItemTo.newBuilder() to construct.
     private UseItemTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -2924,12 +2924,12 @@ public final class BagMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.BagMsg.internal_static_UseItemTo_descriptor;
+      return com.su.msg.BagMsg.internal_static_Msg_UseItemTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.BagMsg.internal_static_UseItemTo_fieldAccessorTable
+      return com.su.msg.BagMsg.internal_static_Msg_UseItemTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.BagMsg.UseItemTo.class, com.su.msg.BagMsg.UseItemTo.Builder.class);
     }
@@ -3065,20 +3065,20 @@ public final class BagMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code UseItemTo}
+     * Protobuf type {@code Msg.UseItemTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:UseItemTo)
+        // @@protoc_insertion_point(builder_implements:Msg.UseItemTo)
         com.su.msg.BagMsg.UseItemToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.BagMsg.internal_static_UseItemTo_descriptor;
+        return com.su.msg.BagMsg.internal_static_Msg_UseItemTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.BagMsg.internal_static_UseItemTo_fieldAccessorTable
+        return com.su.msg.BagMsg.internal_static_Msg_UseItemTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.BagMsg.UseItemTo.class, com.su.msg.BagMsg.UseItemTo.Builder.class);
       }
@@ -3105,7 +3105,7 @@ public final class BagMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.BagMsg.internal_static_UseItemTo_descriptor;
+        return com.su.msg.BagMsg.internal_static_Msg_UseItemTo_descriptor;
       }
 
       public com.su.msg.BagMsg.UseItemTo getDefaultInstanceForType() {
@@ -3200,10 +3200,10 @@ public final class BagMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:UseItemTo)
+      // @@protoc_insertion_point(builder_scope:Msg.UseItemTo)
     }
 
-    // @@protoc_insertion_point(class_scope:UseItemTo)
+    // @@protoc_insertion_point(class_scope:Msg.UseItemTo)
     private static final com.su.msg.BagMsg.UseItemTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.BagMsg.UseItemTo();
@@ -3239,7 +3239,7 @@ public final class BagMsg {
   }
 
   public interface DeleteItemNoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:DeleteItemNo)
+      // @@protoc_insertion_point(interface_extends:Msg.DeleteItemNo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -3272,11 +3272,11 @@ public final class BagMsg {
    * 删除通知（前端需要同步更改后续索引）
    * </pre>
    *
-   * Protobuf type {@code DeleteItemNo}
+   * Protobuf type {@code Msg.DeleteItemNo}
    */
   public  static final class DeleteItemNo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:DeleteItemNo)
+      // @@protoc_insertion_point(message_implements:Msg.DeleteItemNo)
       DeleteItemNoOrBuilder {
     // Use DeleteItemNo.newBuilder() to construct.
     private DeleteItemNo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -3352,12 +3352,12 @@ public final class BagMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.BagMsg.internal_static_DeleteItemNo_descriptor;
+      return com.su.msg.BagMsg.internal_static_Msg_DeleteItemNo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.BagMsg.internal_static_DeleteItemNo_fieldAccessorTable
+      return com.su.msg.BagMsg.internal_static_Msg_DeleteItemNo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.BagMsg.DeleteItemNo.class, com.su.msg.BagMsg.DeleteItemNo.Builder.class);
     }
@@ -3549,20 +3549,20 @@ public final class BagMsg {
      * 删除通知（前端需要同步更改后续索引）
      * </pre>
      *
-     * Protobuf type {@code DeleteItemNo}
+     * Protobuf type {@code Msg.DeleteItemNo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:DeleteItemNo)
+        // @@protoc_insertion_point(builder_implements:Msg.DeleteItemNo)
         com.su.msg.BagMsg.DeleteItemNoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.BagMsg.internal_static_DeleteItemNo_descriptor;
+        return com.su.msg.BagMsg.internal_static_Msg_DeleteItemNo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.BagMsg.internal_static_DeleteItemNo_fieldAccessorTable
+        return com.su.msg.BagMsg.internal_static_Msg_DeleteItemNo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.BagMsg.DeleteItemNo.class, com.su.msg.BagMsg.DeleteItemNo.Builder.class);
       }
@@ -3591,7 +3591,7 @@ public final class BagMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.BagMsg.internal_static_DeleteItemNo_descriptor;
+        return com.su.msg.BagMsg.internal_static_Msg_DeleteItemNo_descriptor;
       }
 
       public com.su.msg.BagMsg.DeleteItemNo getDefaultInstanceForType() {
@@ -3797,10 +3797,10 @@ public final class BagMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:DeleteItemNo)
+      // @@protoc_insertion_point(builder_scope:Msg.DeleteItemNo)
     }
 
-    // @@protoc_insertion_point(class_scope:DeleteItemNo)
+    // @@protoc_insertion_point(class_scope:Msg.DeleteItemNo)
     private static final com.su.msg.BagMsg.DeleteItemNo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.BagMsg.DeleteItemNo();
@@ -3836,29 +3836,29 @@ public final class BagMsg {
   }
 
   public interface AddItemNoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:AddItemNo)
+      // @@protoc_insertion_point(interface_extends:Msg.AddItemNo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     java.util.List<com.su.msg.BagMsg.GridMo> 
         getGridList();
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     com.su.msg.BagMsg.GridMo getGrid(int index);
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     int getGridCount();
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     java.util.List<? extends com.su.msg.BagMsg.GridMoOrBuilder> 
         getGridOrBuilderList();
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     com.su.msg.BagMsg.GridMoOrBuilder getGridOrBuilder(
         int index);
@@ -3868,11 +3868,11 @@ public final class BagMsg {
    * 增加通知（前端需要同步更改后续索引）
    * </pre>
    *
-   * Protobuf type {@code AddItemNo}
+   * Protobuf type {@code Msg.AddItemNo}
    */
   public  static final class AddItemNo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:AddItemNo)
+      // @@protoc_insertion_point(message_implements:Msg.AddItemNo)
       AddItemNoOrBuilder {
     // Use AddItemNo.newBuilder() to construct.
     private AddItemNo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -3936,12 +3936,12 @@ public final class BagMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.BagMsg.internal_static_AddItemNo_descriptor;
+      return com.su.msg.BagMsg.internal_static_Msg_AddItemNo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.BagMsg.internal_static_AddItemNo_fieldAccessorTable
+      return com.su.msg.BagMsg.internal_static_Msg_AddItemNo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.BagMsg.AddItemNo.class, com.su.msg.BagMsg.AddItemNo.Builder.class);
     }
@@ -3949,32 +3949,32 @@ public final class BagMsg {
     public static final int GRID_FIELD_NUMBER = 1;
     private java.util.List<com.su.msg.BagMsg.GridMo> grid_;
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     public java.util.List<com.su.msg.BagMsg.GridMo> getGridList() {
       return grid_;
     }
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     public java.util.List<? extends com.su.msg.BagMsg.GridMoOrBuilder> 
         getGridOrBuilderList() {
       return grid_;
     }
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     public int getGridCount() {
       return grid_.size();
     }
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     public com.su.msg.BagMsg.GridMo getGrid(int index) {
       return grid_.get(index);
     }
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     public com.su.msg.BagMsg.GridMoOrBuilder getGridOrBuilder(
         int index) {
@@ -4129,20 +4129,20 @@ public final class BagMsg {
      * 增加通知（前端需要同步更改后续索引）
      * </pre>
      *
-     * Protobuf type {@code AddItemNo}
+     * Protobuf type {@code Msg.AddItemNo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:AddItemNo)
+        // @@protoc_insertion_point(builder_implements:Msg.AddItemNo)
         com.su.msg.BagMsg.AddItemNoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.BagMsg.internal_static_AddItemNo_descriptor;
+        return com.su.msg.BagMsg.internal_static_Msg_AddItemNo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.BagMsg.internal_static_AddItemNo_fieldAccessorTable
+        return com.su.msg.BagMsg.internal_static_Msg_AddItemNo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.BagMsg.AddItemNo.class, com.su.msg.BagMsg.AddItemNo.Builder.class);
       }
@@ -4176,7 +4176,7 @@ public final class BagMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.BagMsg.internal_static_AddItemNo_descriptor;
+        return com.su.msg.BagMsg.internal_static_Msg_AddItemNo_descriptor;
       }
 
       public com.su.msg.BagMsg.AddItemNo getDefaultInstanceForType() {
@@ -4311,7 +4311,7 @@ public final class BagMsg {
           com.su.msg.BagMsg.GridMo, com.su.msg.BagMsg.GridMo.Builder, com.su.msg.BagMsg.GridMoOrBuilder> gridBuilder_;
 
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public java.util.List<com.su.msg.BagMsg.GridMo> getGridList() {
         if (gridBuilder_ == null) {
@@ -4321,7 +4321,7 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public int getGridCount() {
         if (gridBuilder_ == null) {
@@ -4331,7 +4331,7 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public com.su.msg.BagMsg.GridMo getGrid(int index) {
         if (gridBuilder_ == null) {
@@ -4341,7 +4341,7 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder setGrid(
           int index, com.su.msg.BagMsg.GridMo value) {
@@ -4358,7 +4358,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder setGrid(
           int index, com.su.msg.BagMsg.GridMo.Builder builderForValue) {
@@ -4372,7 +4372,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder addGrid(com.su.msg.BagMsg.GridMo value) {
         if (gridBuilder_ == null) {
@@ -4388,7 +4388,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder addGrid(
           int index, com.su.msg.BagMsg.GridMo value) {
@@ -4405,7 +4405,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder addGrid(
           com.su.msg.BagMsg.GridMo.Builder builderForValue) {
@@ -4419,7 +4419,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder addGrid(
           int index, com.su.msg.BagMsg.GridMo.Builder builderForValue) {
@@ -4433,7 +4433,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder addAllGrid(
           java.lang.Iterable<? extends com.su.msg.BagMsg.GridMo> values) {
@@ -4448,7 +4448,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder clearGrid() {
         if (gridBuilder_ == null) {
@@ -4461,7 +4461,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder removeGrid(int index) {
         if (gridBuilder_ == null) {
@@ -4474,14 +4474,14 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public com.su.msg.BagMsg.GridMo.Builder getGridBuilder(
           int index) {
         return getGridFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public com.su.msg.BagMsg.GridMoOrBuilder getGridOrBuilder(
           int index) {
@@ -4491,7 +4491,7 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public java.util.List<? extends com.su.msg.BagMsg.GridMoOrBuilder> 
            getGridOrBuilderList() {
@@ -4502,14 +4502,14 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public com.su.msg.BagMsg.GridMo.Builder addGridBuilder() {
         return getGridFieldBuilder().addBuilder(
             com.su.msg.BagMsg.GridMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public com.su.msg.BagMsg.GridMo.Builder addGridBuilder(
           int index) {
@@ -4517,7 +4517,7 @@ public final class BagMsg {
             index, com.su.msg.BagMsg.GridMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public java.util.List<com.su.msg.BagMsg.GridMo.Builder> 
            getGridBuilderList() {
@@ -4548,10 +4548,10 @@ public final class BagMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:AddItemNo)
+      // @@protoc_insertion_point(builder_scope:Msg.AddItemNo)
     }
 
-    // @@protoc_insertion_point(class_scope:AddItemNo)
+    // @@protoc_insertion_point(class_scope:Msg.AddItemNo)
     private static final com.su.msg.BagMsg.AddItemNo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.BagMsg.AddItemNo();
@@ -4587,29 +4587,29 @@ public final class BagMsg {
   }
 
   public interface UpdateItemNoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:UpdateItemNo)
+      // @@protoc_insertion_point(interface_extends:Msg.UpdateItemNo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     java.util.List<com.su.msg.BagMsg.GridMo> 
         getGridList();
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     com.su.msg.BagMsg.GridMo getGrid(int index);
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     int getGridCount();
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     java.util.List<? extends com.su.msg.BagMsg.GridMoOrBuilder> 
         getGridOrBuilderList();
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     com.su.msg.BagMsg.GridMoOrBuilder getGridOrBuilder(
         int index);
@@ -4619,11 +4619,11 @@ public final class BagMsg {
    * 更新通知
    * </pre>
    *
-   * Protobuf type {@code UpdateItemNo}
+   * Protobuf type {@code Msg.UpdateItemNo}
    */
   public  static final class UpdateItemNo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:UpdateItemNo)
+      // @@protoc_insertion_point(message_implements:Msg.UpdateItemNo)
       UpdateItemNoOrBuilder {
     // Use UpdateItemNo.newBuilder() to construct.
     private UpdateItemNo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -4687,12 +4687,12 @@ public final class BagMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.BagMsg.internal_static_UpdateItemNo_descriptor;
+      return com.su.msg.BagMsg.internal_static_Msg_UpdateItemNo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.BagMsg.internal_static_UpdateItemNo_fieldAccessorTable
+      return com.su.msg.BagMsg.internal_static_Msg_UpdateItemNo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.BagMsg.UpdateItemNo.class, com.su.msg.BagMsg.UpdateItemNo.Builder.class);
     }
@@ -4700,32 +4700,32 @@ public final class BagMsg {
     public static final int GRID_FIELD_NUMBER = 1;
     private java.util.List<com.su.msg.BagMsg.GridMo> grid_;
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     public java.util.List<com.su.msg.BagMsg.GridMo> getGridList() {
       return grid_;
     }
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     public java.util.List<? extends com.su.msg.BagMsg.GridMoOrBuilder> 
         getGridOrBuilderList() {
       return grid_;
     }
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     public int getGridCount() {
       return grid_.size();
     }
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     public com.su.msg.BagMsg.GridMo getGrid(int index) {
       return grid_.get(index);
     }
     /**
-     * <code>repeated .GridMo grid = 1;</code>
+     * <code>repeated .Msg.GridMo grid = 1;</code>
      */
     public com.su.msg.BagMsg.GridMoOrBuilder getGridOrBuilder(
         int index) {
@@ -4880,20 +4880,20 @@ public final class BagMsg {
      * 更新通知
      * </pre>
      *
-     * Protobuf type {@code UpdateItemNo}
+     * Protobuf type {@code Msg.UpdateItemNo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:UpdateItemNo)
+        // @@protoc_insertion_point(builder_implements:Msg.UpdateItemNo)
         com.su.msg.BagMsg.UpdateItemNoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.BagMsg.internal_static_UpdateItemNo_descriptor;
+        return com.su.msg.BagMsg.internal_static_Msg_UpdateItemNo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.BagMsg.internal_static_UpdateItemNo_fieldAccessorTable
+        return com.su.msg.BagMsg.internal_static_Msg_UpdateItemNo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.BagMsg.UpdateItemNo.class, com.su.msg.BagMsg.UpdateItemNo.Builder.class);
       }
@@ -4927,7 +4927,7 @@ public final class BagMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.BagMsg.internal_static_UpdateItemNo_descriptor;
+        return com.su.msg.BagMsg.internal_static_Msg_UpdateItemNo_descriptor;
       }
 
       public com.su.msg.BagMsg.UpdateItemNo getDefaultInstanceForType() {
@@ -5062,7 +5062,7 @@ public final class BagMsg {
           com.su.msg.BagMsg.GridMo, com.su.msg.BagMsg.GridMo.Builder, com.su.msg.BagMsg.GridMoOrBuilder> gridBuilder_;
 
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public java.util.List<com.su.msg.BagMsg.GridMo> getGridList() {
         if (gridBuilder_ == null) {
@@ -5072,7 +5072,7 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public int getGridCount() {
         if (gridBuilder_ == null) {
@@ -5082,7 +5082,7 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public com.su.msg.BagMsg.GridMo getGrid(int index) {
         if (gridBuilder_ == null) {
@@ -5092,7 +5092,7 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder setGrid(
           int index, com.su.msg.BagMsg.GridMo value) {
@@ -5109,7 +5109,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder setGrid(
           int index, com.su.msg.BagMsg.GridMo.Builder builderForValue) {
@@ -5123,7 +5123,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder addGrid(com.su.msg.BagMsg.GridMo value) {
         if (gridBuilder_ == null) {
@@ -5139,7 +5139,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder addGrid(
           int index, com.su.msg.BagMsg.GridMo value) {
@@ -5156,7 +5156,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder addGrid(
           com.su.msg.BagMsg.GridMo.Builder builderForValue) {
@@ -5170,7 +5170,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder addGrid(
           int index, com.su.msg.BagMsg.GridMo.Builder builderForValue) {
@@ -5184,7 +5184,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder addAllGrid(
           java.lang.Iterable<? extends com.su.msg.BagMsg.GridMo> values) {
@@ -5199,7 +5199,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder clearGrid() {
         if (gridBuilder_ == null) {
@@ -5212,7 +5212,7 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public Builder removeGrid(int index) {
         if (gridBuilder_ == null) {
@@ -5225,14 +5225,14 @@ public final class BagMsg {
         return this;
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public com.su.msg.BagMsg.GridMo.Builder getGridBuilder(
           int index) {
         return getGridFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public com.su.msg.BagMsg.GridMoOrBuilder getGridOrBuilder(
           int index) {
@@ -5242,7 +5242,7 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public java.util.List<? extends com.su.msg.BagMsg.GridMoOrBuilder> 
            getGridOrBuilderList() {
@@ -5253,14 +5253,14 @@ public final class BagMsg {
         }
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public com.su.msg.BagMsg.GridMo.Builder addGridBuilder() {
         return getGridFieldBuilder().addBuilder(
             com.su.msg.BagMsg.GridMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public com.su.msg.BagMsg.GridMo.Builder addGridBuilder(
           int index) {
@@ -5268,7 +5268,7 @@ public final class BagMsg {
             index, com.su.msg.BagMsg.GridMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .GridMo grid = 1;</code>
+       * <code>repeated .Msg.GridMo grid = 1;</code>
        */
       public java.util.List<com.su.msg.BagMsg.GridMo.Builder> 
            getGridBuilderList() {
@@ -5299,10 +5299,10 @@ public final class BagMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:UpdateItemNo)
+      // @@protoc_insertion_point(builder_scope:Msg.UpdateItemNo)
     }
 
-    // @@protoc_insertion_point(class_scope:UpdateItemNo)
+    // @@protoc_insertion_point(class_scope:Msg.UpdateItemNo)
     private static final com.su.msg.BagMsg.UpdateItemNo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.BagMsg.UpdateItemNo();
@@ -5338,45 +5338,45 @@ public final class BagMsg {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GridMo_descriptor;
+    internal_static_Msg_GridMo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GridMo_fieldAccessorTable;
+      internal_static_Msg_GridMo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetBag_descriptor;
+    internal_static_Msg_GetBag_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetBag_fieldAccessorTable;
+      internal_static_Msg_GetBag_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetBagTo_descriptor;
+    internal_static_Msg_GetBagTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetBagTo_fieldAccessorTable;
+      internal_static_Msg_GetBagTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_UseItem_descriptor;
+    internal_static_Msg_UseItem_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_UseItem_fieldAccessorTable;
+      internal_static_Msg_UseItem_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_UseItemTo_descriptor;
+    internal_static_Msg_UseItemTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_UseItemTo_fieldAccessorTable;
+      internal_static_Msg_UseItemTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_DeleteItemNo_descriptor;
+    internal_static_Msg_DeleteItemNo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_DeleteItemNo_fieldAccessorTable;
+      internal_static_Msg_DeleteItemNo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_AddItemNo_descriptor;
+    internal_static_Msg_AddItemNo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_AddItemNo_fieldAccessorTable;
+      internal_static_Msg_AddItemNo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_UpdateItemNo_descriptor;
+    internal_static_Msg_UpdateItemNo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_UpdateItemNo_fieldAccessorTable;
+      internal_static_Msg_UpdateItemNo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -5386,16 +5386,15 @@ public final class BagMsg {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014BagMsg.proto\"f\n\006GridMo\022\r\n\005index\030\001 \001(\005\022" +
-      "\014\n\004type\030\002 \001(\005\022\r\n\005sysId\030\003 \001(\005\022\r\n\005count\030\004 " +
-      "\001(\005\022\017\n\007effType\030\005 \001(\005\022\020\n\010effValue\030\006 \001(\003\"\010" +
-      "\n\006GetBag\"!\n\010GetBagTo\022\025\n\004grid\030\001 \003(\0132\007.Gri" +
-      "dMo\"*\n\007UseItem\022\r\n\005index\030\001 \001(\005\022\020\n\010useCoun" +
-      "t\030\002 \001(\005\"\013\n\tUseItemTo\"\035\n\014DeleteItemNo\022\r\n\005" +
-      "index\030\001 \003(\005\"\"\n\tAddItemNo\022\025\n\004grid\030\001 \003(\0132\007" +
-      ".GridMo\"%\n\014UpdateItemNo\022\025\n\004grid\030\001 \003(\0132\007." +
-      "GridMoB%\n\ncom.su.msgH\001\252\002\024Assets.Scripts." +
-      "Proto"
+      "\n\014BagMsg.proto\022\003Msg\"d\n\006GridMo\022\r\n\005index\030\001" +
+      " \001(\005\022\014\n\004type\030\002 \001(\005\022\013\n\003cid\030\003 \001(\005\022\r\n\005count" +
+      "\030\004 \001(\005\022\017\n\007effType\030\005 \001(\005\022\020\n\010effValue\030\006 \001(" +
+      "\003\"\010\n\006GetBag\"%\n\010GetBagTo\022\031\n\004grid\030\001 \003(\0132\013." +
+      "Msg.GridMo\"*\n\007UseItem\022\r\n\005index\030\001 \001(\005\022\020\n\010" +
+      "useCount\030\002 \001(\005\"\013\n\tUseItemTo\"\035\n\014DeleteIte" +
+      "mNo\022\r\n\005index\030\001 \003(\005\"&\n\tAddItemNo\022\031\n\004grid\030" +
+      "\001 \003(\0132\013.Msg.GridMo\")\n\014UpdateItemNo\022\031\n\004gr" +
+      "id\030\001 \003(\0132\013.Msg.GridMoB\016\n\ncom.su.msgH\001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -5409,53 +5408,53 @@ public final class BagMsg {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_GridMo_descriptor =
+    internal_static_Msg_GridMo_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_GridMo_fieldAccessorTable = new
+    internal_static_Msg_GridMo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GridMo_descriptor,
-        new java.lang.String[] { "Index", "Type", "SysId", "Count", "EffType", "EffValue", });
-    internal_static_GetBag_descriptor =
+        internal_static_Msg_GridMo_descriptor,
+        new java.lang.String[] { "Index", "Type", "Cid", "Count", "EffType", "EffValue", });
+    internal_static_Msg_GetBag_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_GetBag_fieldAccessorTable = new
+    internal_static_Msg_GetBag_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetBag_descriptor,
+        internal_static_Msg_GetBag_descriptor,
         new java.lang.String[] { });
-    internal_static_GetBagTo_descriptor =
+    internal_static_Msg_GetBagTo_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_GetBagTo_fieldAccessorTable = new
+    internal_static_Msg_GetBagTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetBagTo_descriptor,
+        internal_static_Msg_GetBagTo_descriptor,
         new java.lang.String[] { "Grid", });
-    internal_static_UseItem_descriptor =
+    internal_static_Msg_UseItem_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_UseItem_fieldAccessorTable = new
+    internal_static_Msg_UseItem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_UseItem_descriptor,
+        internal_static_Msg_UseItem_descriptor,
         new java.lang.String[] { "Index", "UseCount", });
-    internal_static_UseItemTo_descriptor =
+    internal_static_Msg_UseItemTo_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_UseItemTo_fieldAccessorTable = new
+    internal_static_Msg_UseItemTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_UseItemTo_descriptor,
+        internal_static_Msg_UseItemTo_descriptor,
         new java.lang.String[] { });
-    internal_static_DeleteItemNo_descriptor =
+    internal_static_Msg_DeleteItemNo_descriptor =
       getDescriptor().getMessageTypes().get(5);
-    internal_static_DeleteItemNo_fieldAccessorTable = new
+    internal_static_Msg_DeleteItemNo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_DeleteItemNo_descriptor,
+        internal_static_Msg_DeleteItemNo_descriptor,
         new java.lang.String[] { "Index", });
-    internal_static_AddItemNo_descriptor =
+    internal_static_Msg_AddItemNo_descriptor =
       getDescriptor().getMessageTypes().get(6);
-    internal_static_AddItemNo_fieldAccessorTable = new
+    internal_static_Msg_AddItemNo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_AddItemNo_descriptor,
+        internal_static_Msg_AddItemNo_descriptor,
         new java.lang.String[] { "Grid", });
-    internal_static_UpdateItemNo_descriptor =
+    internal_static_Msg_UpdateItemNo_descriptor =
       getDescriptor().getMessageTypes().get(7);
-    internal_static_UpdateItemNo_fieldAccessorTable = new
+    internal_static_Msg_UpdateItemNo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_UpdateItemNo_descriptor,
+        internal_static_Msg_UpdateItemNo_descriptor,
         new java.lang.String[] { "Grid", });
   }
 

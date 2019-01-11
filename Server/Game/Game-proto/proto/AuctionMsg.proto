@@ -1,7 +1,8 @@
 syntax = "proto2";
 import "CommonMsg.proto";
+package Msg;
 option java_package = "com.su.msg";
-option csharp_namespace = "Assets.Scripts.Proto";
+//option csharp_namespace = "Assets.Scripts.Proto";
 option optimize_for = SPEED;
 
 // 拍卖物品信息 
@@ -24,7 +25,6 @@ message GetAucItem {
 message GetAucItemTo {
 	optional int32 totalPag = 1;		// 总页数
 	repeated AucItemMo aucItem = 2;		// 物品
-	
 }
 
 // 获取我拍卖的物品

@@ -1,7 +1,7 @@
 package com.su.core.game;
 
 import com.su.core.game.enums.Team;
-import com.su.msg.TableMsg.NTableResult;
+import com.su.msg.TableMsg.TableResultNo;
 
 public class ContestTable extends Table {
 
@@ -13,7 +13,7 @@ public class ContestTable extends Table {
 	}
 
 	@Override
-	public void doSettlement(NTableResult.Builder builder, Team winTeam, int redMultiple, int blueMultiple) {
+	public void doSettlement(TableResultNo.Builder builder, Team winTeam, int redMultiple, int blueMultiple) {
 		builder.setBaseScore(contest.getBaseScore());
 		for (GamePlayer otherPlayer : this.players) {
 			int multiple = 0;

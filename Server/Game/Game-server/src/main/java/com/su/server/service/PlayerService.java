@@ -35,8 +35,6 @@ public class PlayerService extends GameEventAdapter {
 	 */
 	public Player getPlayer(long id) {
 		Player player = dataService.get(Player.class, id);
-		if (player == null)
-			throw new RuntimeException("player is null " + id);
 		return player;
 	}
 
@@ -55,8 +53,12 @@ public class PlayerService extends GameEventAdapter {
 	public PlayerMo serializePlayer(Player player) {
 		PlayerMo.Builder builder = PlayerMo.newBuilder();
 		builder.setId(player.getId());
-		builder.setName(player.getName());
-		builder.setPeanut(player.getPeanut());
+		builder.setAccount(player.getAccount());
+		if (player.getAvatar() != null)
+			builder.setAvatar(player.getAvatar());
+		if (player.getName() != null)
+			builder.setName(player.getName());
+		builder.setBean(player.getBean());
 		builder.setDiamond(player.getDiamond());
 		return builder.build();
 	}

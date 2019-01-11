@@ -15,7 +15,7 @@ public final class RankingMsg {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface RankingMoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:RankingMo)
+      // @@protoc_insertion_point(interface_extends:Msg.RankingMo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -117,11 +117,11 @@ public final class RankingMsg {
    * 排行信息
    * </pre>
    *
-   * Protobuf type {@code RankingMo}
+   * Protobuf type {@code Msg.RankingMo}
    */
   public  static final class RankingMo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:RankingMo)
+      // @@protoc_insertion_point(message_implements:Msg.RankingMo)
       RankingMoOrBuilder {
     // Use RankingMo.newBuilder() to construct.
     private RankingMo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -203,12 +203,12 @@ public final class RankingMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.RankingMsg.internal_static_RankingMo_descriptor;
+      return com.su.msg.RankingMsg.internal_static_Msg_RankingMo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.RankingMsg.internal_static_RankingMo_fieldAccessorTable
+      return com.su.msg.RankingMsg.internal_static_Msg_RankingMo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.RankingMsg.RankingMo.class, com.su.msg.RankingMsg.RankingMo.Builder.class);
     }
@@ -575,20 +575,20 @@ public final class RankingMsg {
      * 排行信息
      * </pre>
      *
-     * Protobuf type {@code RankingMo}
+     * Protobuf type {@code Msg.RankingMo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:RankingMo)
+        // @@protoc_insertion_point(builder_implements:Msg.RankingMo)
         com.su.msg.RankingMsg.RankingMoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.RankingMsg.internal_static_RankingMo_descriptor;
+        return com.su.msg.RankingMsg.internal_static_Msg_RankingMo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.RankingMsg.internal_static_RankingMo_fieldAccessorTable
+        return com.su.msg.RankingMsg.internal_static_Msg_RankingMo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.RankingMsg.RankingMo.class, com.su.msg.RankingMsg.RankingMo.Builder.class);
       }
@@ -625,7 +625,7 @@ public final class RankingMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.RankingMsg.internal_static_RankingMo_descriptor;
+        return com.su.msg.RankingMsg.internal_static_Msg_RankingMo_descriptor;
       }
 
       public com.su.msg.RankingMsg.RankingMo getDefaultInstanceForType() {
@@ -1053,10 +1053,10 @@ public final class RankingMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:RankingMo)
+      // @@protoc_insertion_point(builder_scope:Msg.RankingMo)
     }
 
-    // @@protoc_insertion_point(class_scope:RankingMo)
+    // @@protoc_insertion_point(class_scope:Msg.RankingMo)
     private static final com.su.msg.RankingMsg.RankingMo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.RankingMsg.RankingMo();
@@ -1092,7 +1092,7 @@ public final class RankingMsg {
   }
 
   public interface GetRankingOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetRanking)
+      // @@protoc_insertion_point(interface_extends:Msg.GetRanking)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -1117,11 +1117,11 @@ public final class RankingMsg {
    * 获取排行榜信息
    * </pre>
    *
-   * Protobuf type {@code GetRanking}
+   * Protobuf type {@code Msg.GetRanking}
    */
   public  static final class GetRanking extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetRanking)
+      // @@protoc_insertion_point(message_implements:Msg.GetRanking)
       GetRankingOrBuilder {
     // Use GetRanking.newBuilder() to construct.
     private GetRanking(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -1178,12 +1178,12 @@ public final class RankingMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.RankingMsg.internal_static_GetRanking_descriptor;
+      return com.su.msg.RankingMsg.internal_static_Msg_GetRanking_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.RankingMsg.internal_static_GetRanking_fieldAccessorTable
+      return com.su.msg.RankingMsg.internal_static_Msg_GetRanking_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.RankingMsg.GetRanking.class, com.su.msg.RankingMsg.GetRanking.Builder.class);
     }
@@ -1363,20 +1363,20 @@ public final class RankingMsg {
      * 获取排行榜信息
      * </pre>
      *
-     * Protobuf type {@code GetRanking}
+     * Protobuf type {@code Msg.GetRanking}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetRanking)
+        // @@protoc_insertion_point(builder_implements:Msg.GetRanking)
         com.su.msg.RankingMsg.GetRankingOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.RankingMsg.internal_static_GetRanking_descriptor;
+        return com.su.msg.RankingMsg.internal_static_Msg_GetRanking_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.RankingMsg.internal_static_GetRanking_fieldAccessorTable
+        return com.su.msg.RankingMsg.internal_static_Msg_GetRanking_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.RankingMsg.GetRanking.class, com.su.msg.RankingMsg.GetRanking.Builder.class);
       }
@@ -1405,7 +1405,7 @@ public final class RankingMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.RankingMsg.internal_static_GetRanking_descriptor;
+        return com.su.msg.RankingMsg.internal_static_Msg_GetRanking_descriptor;
       }
 
       public com.su.msg.RankingMsg.GetRanking getDefaultInstanceForType() {
@@ -1559,10 +1559,10 @@ public final class RankingMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetRanking)
+      // @@protoc_insertion_point(builder_scope:Msg.GetRanking)
     }
 
-    // @@protoc_insertion_point(class_scope:GetRanking)
+    // @@protoc_insertion_point(class_scope:Msg.GetRanking)
     private static final com.su.msg.RankingMsg.GetRanking DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.RankingMsg.GetRanking();
@@ -1598,29 +1598,29 @@ public final class RankingMsg {
   }
 
   public interface GetRankingToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetRankingTo)
+      // @@protoc_insertion_point(interface_extends:Msg.GetRankingTo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .RankingMo ranking = 1;</code>
+     * <code>repeated .Msg.RankingMo ranking = 1;</code>
      */
     java.util.List<com.su.msg.RankingMsg.RankingMo> 
         getRankingList();
     /**
-     * <code>repeated .RankingMo ranking = 1;</code>
+     * <code>repeated .Msg.RankingMo ranking = 1;</code>
      */
     com.su.msg.RankingMsg.RankingMo getRanking(int index);
     /**
-     * <code>repeated .RankingMo ranking = 1;</code>
+     * <code>repeated .Msg.RankingMo ranking = 1;</code>
      */
     int getRankingCount();
     /**
-     * <code>repeated .RankingMo ranking = 1;</code>
+     * <code>repeated .Msg.RankingMo ranking = 1;</code>
      */
     java.util.List<? extends com.su.msg.RankingMsg.RankingMoOrBuilder> 
         getRankingOrBuilderList();
     /**
-     * <code>repeated .RankingMo ranking = 1;</code>
+     * <code>repeated .Msg.RankingMo ranking = 1;</code>
      */
     com.su.msg.RankingMsg.RankingMoOrBuilder getRankingOrBuilder(
         int index);
@@ -1643,11 +1643,11 @@ public final class RankingMsg {
     int getMyRank();
   }
   /**
-   * Protobuf type {@code GetRankingTo}
+   * Protobuf type {@code Msg.GetRankingTo}
    */
   public  static final class GetRankingTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetRankingTo)
+      // @@protoc_insertion_point(message_implements:Msg.GetRankingTo)
       GetRankingToOrBuilder {
     // Use GetRankingTo.newBuilder() to construct.
     private GetRankingTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -1717,12 +1717,12 @@ public final class RankingMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.RankingMsg.internal_static_GetRankingTo_descriptor;
+      return com.su.msg.RankingMsg.internal_static_Msg_GetRankingTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.RankingMsg.internal_static_GetRankingTo_fieldAccessorTable
+      return com.su.msg.RankingMsg.internal_static_Msg_GetRankingTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.RankingMsg.GetRankingTo.class, com.su.msg.RankingMsg.GetRankingTo.Builder.class);
     }
@@ -1731,32 +1731,32 @@ public final class RankingMsg {
     public static final int RANKING_FIELD_NUMBER = 1;
     private java.util.List<com.su.msg.RankingMsg.RankingMo> ranking_;
     /**
-     * <code>repeated .RankingMo ranking = 1;</code>
+     * <code>repeated .Msg.RankingMo ranking = 1;</code>
      */
     public java.util.List<com.su.msg.RankingMsg.RankingMo> getRankingList() {
       return ranking_;
     }
     /**
-     * <code>repeated .RankingMo ranking = 1;</code>
+     * <code>repeated .Msg.RankingMo ranking = 1;</code>
      */
     public java.util.List<? extends com.su.msg.RankingMsg.RankingMoOrBuilder> 
         getRankingOrBuilderList() {
       return ranking_;
     }
     /**
-     * <code>repeated .RankingMo ranking = 1;</code>
+     * <code>repeated .Msg.RankingMo ranking = 1;</code>
      */
     public int getRankingCount() {
       return ranking_.size();
     }
     /**
-     * <code>repeated .RankingMo ranking = 1;</code>
+     * <code>repeated .Msg.RankingMo ranking = 1;</code>
      */
     public com.su.msg.RankingMsg.RankingMo getRanking(int index) {
       return ranking_.get(index);
     }
     /**
-     * <code>repeated .RankingMo ranking = 1;</code>
+     * <code>repeated .Msg.RankingMo ranking = 1;</code>
      */
     public com.su.msg.RankingMsg.RankingMoOrBuilder getRankingOrBuilder(
         int index) {
@@ -1946,20 +1946,20 @@ public final class RankingMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code GetRankingTo}
+     * Protobuf type {@code Msg.GetRankingTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetRankingTo)
+        // @@protoc_insertion_point(builder_implements:Msg.GetRankingTo)
         com.su.msg.RankingMsg.GetRankingToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.RankingMsg.internal_static_GetRankingTo_descriptor;
+        return com.su.msg.RankingMsg.internal_static_Msg_GetRankingTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.RankingMsg.internal_static_GetRankingTo_fieldAccessorTable
+        return com.su.msg.RankingMsg.internal_static_Msg_GetRankingTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.RankingMsg.GetRankingTo.class, com.su.msg.RankingMsg.GetRankingTo.Builder.class);
       }
@@ -1995,7 +1995,7 @@ public final class RankingMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.RankingMsg.internal_static_GetRankingTo_descriptor;
+        return com.su.msg.RankingMsg.internal_static_Msg_GetRankingTo_descriptor;
       }
 
       public com.su.msg.RankingMsg.GetRankingTo getDefaultInstanceForType() {
@@ -2139,7 +2139,7 @@ public final class RankingMsg {
           com.su.msg.RankingMsg.RankingMo, com.su.msg.RankingMsg.RankingMo.Builder, com.su.msg.RankingMsg.RankingMoOrBuilder> rankingBuilder_;
 
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public java.util.List<com.su.msg.RankingMsg.RankingMo> getRankingList() {
         if (rankingBuilder_ == null) {
@@ -2149,7 +2149,7 @@ public final class RankingMsg {
         }
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public int getRankingCount() {
         if (rankingBuilder_ == null) {
@@ -2159,7 +2159,7 @@ public final class RankingMsg {
         }
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public com.su.msg.RankingMsg.RankingMo getRanking(int index) {
         if (rankingBuilder_ == null) {
@@ -2169,7 +2169,7 @@ public final class RankingMsg {
         }
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public Builder setRanking(
           int index, com.su.msg.RankingMsg.RankingMo value) {
@@ -2186,7 +2186,7 @@ public final class RankingMsg {
         return this;
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public Builder setRanking(
           int index, com.su.msg.RankingMsg.RankingMo.Builder builderForValue) {
@@ -2200,7 +2200,7 @@ public final class RankingMsg {
         return this;
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public Builder addRanking(com.su.msg.RankingMsg.RankingMo value) {
         if (rankingBuilder_ == null) {
@@ -2216,7 +2216,7 @@ public final class RankingMsg {
         return this;
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public Builder addRanking(
           int index, com.su.msg.RankingMsg.RankingMo value) {
@@ -2233,7 +2233,7 @@ public final class RankingMsg {
         return this;
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public Builder addRanking(
           com.su.msg.RankingMsg.RankingMo.Builder builderForValue) {
@@ -2247,7 +2247,7 @@ public final class RankingMsg {
         return this;
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public Builder addRanking(
           int index, com.su.msg.RankingMsg.RankingMo.Builder builderForValue) {
@@ -2261,7 +2261,7 @@ public final class RankingMsg {
         return this;
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public Builder addAllRanking(
           java.lang.Iterable<? extends com.su.msg.RankingMsg.RankingMo> values) {
@@ -2276,7 +2276,7 @@ public final class RankingMsg {
         return this;
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public Builder clearRanking() {
         if (rankingBuilder_ == null) {
@@ -2289,7 +2289,7 @@ public final class RankingMsg {
         return this;
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public Builder removeRanking(int index) {
         if (rankingBuilder_ == null) {
@@ -2302,14 +2302,14 @@ public final class RankingMsg {
         return this;
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public com.su.msg.RankingMsg.RankingMo.Builder getRankingBuilder(
           int index) {
         return getRankingFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public com.su.msg.RankingMsg.RankingMoOrBuilder getRankingOrBuilder(
           int index) {
@@ -2319,7 +2319,7 @@ public final class RankingMsg {
         }
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public java.util.List<? extends com.su.msg.RankingMsg.RankingMoOrBuilder> 
            getRankingOrBuilderList() {
@@ -2330,14 +2330,14 @@ public final class RankingMsg {
         }
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public com.su.msg.RankingMsg.RankingMo.Builder addRankingBuilder() {
         return getRankingFieldBuilder().addBuilder(
             com.su.msg.RankingMsg.RankingMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public com.su.msg.RankingMsg.RankingMo.Builder addRankingBuilder(
           int index) {
@@ -2345,7 +2345,7 @@ public final class RankingMsg {
             index, com.su.msg.RankingMsg.RankingMo.getDefaultInstance());
       }
       /**
-       * <code>repeated .RankingMo ranking = 1;</code>
+       * <code>repeated .Msg.RankingMo ranking = 1;</code>
        */
       public java.util.List<com.su.msg.RankingMsg.RankingMo.Builder> 
            getRankingBuilderList() {
@@ -2424,10 +2424,10 @@ public final class RankingMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetRankingTo)
+      // @@protoc_insertion_point(builder_scope:Msg.GetRankingTo)
     }
 
-    // @@protoc_insertion_point(class_scope:GetRankingTo)
+    // @@protoc_insertion_point(class_scope:Msg.GetRankingTo)
     private static final com.su.msg.RankingMsg.GetRankingTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.RankingMsg.GetRankingTo();
@@ -2463,20 +2463,20 @@ public final class RankingMsg {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_RankingMo_descriptor;
+    internal_static_Msg_RankingMo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_RankingMo_fieldAccessorTable;
+      internal_static_Msg_RankingMo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetRanking_descriptor;
+    internal_static_Msg_GetRanking_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetRanking_fieldAccessorTable;
+      internal_static_Msg_GetRanking_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetRankingTo_descriptor;
+    internal_static_Msg_GetRankingTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetRankingTo_fieldAccessorTable;
+      internal_static_Msg_GetRankingTo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -2486,13 +2486,12 @@ public final class RankingMsg {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020RankingMsg.proto\032\017CommonMsg.proto\"P\n\tR" +
-      "ankingMo\022\n\n\002id\030\001 \001(\003\022\014\n\004name\030\002 \001(\t\022\013\n\003se" +
-      "x\030\003 \001(\005\022\r\n\005title\030\004 \001(\005\022\r\n\005score\030\005 \001(\005\"\032\n" +
-      "\nGetRanking\022\014\n\004type\030\001 \001(\005\";\n\014GetRankingT" +
-      "o\022\033\n\007ranking\030\001 \003(\0132\n.RankingMo\022\016\n\006myRank" +
-      "\030\002 \001(\005B%\n\ncom.su.msgH\001\252\002\024Assets.Scripts." +
-      "Proto"
+      "\n\020RankingMsg.proto\022\003Msg\"P\n\tRankingMo\022\n\n\002" +
+      "id\030\001 \001(\003\022\014\n\004name\030\002 \001(\t\022\013\n\003sex\030\003 \001(\005\022\r\n\005t" +
+      "itle\030\004 \001(\005\022\r\n\005score\030\005 \001(\005\"\032\n\nGetRanking\022" +
+      "\014\n\004type\030\001 \001(\005\"?\n\014GetRankingTo\022\037\n\007ranking" +
+      "\030\001 \003(\0132\016.Msg.RankingMo\022\016\n\006myRank\030\002 \001(\005B\016" +
+      "\n\ncom.su.msgH\001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2505,27 +2504,25 @@ public final class RankingMsg {
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.su.msg.CommonMsg.getDescriptor(),
         }, assigner);
-    internal_static_RankingMo_descriptor =
+    internal_static_Msg_RankingMo_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_RankingMo_fieldAccessorTable = new
+    internal_static_Msg_RankingMo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_RankingMo_descriptor,
+        internal_static_Msg_RankingMo_descriptor,
         new java.lang.String[] { "Id", "Name", "Sex", "Title", "Score", });
-    internal_static_GetRanking_descriptor =
+    internal_static_Msg_GetRanking_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_GetRanking_fieldAccessorTable = new
+    internal_static_Msg_GetRanking_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetRanking_descriptor,
+        internal_static_Msg_GetRanking_descriptor,
         new java.lang.String[] { "Type", });
-    internal_static_GetRankingTo_descriptor =
+    internal_static_Msg_GetRankingTo_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_GetRankingTo_fieldAccessorTable = new
+    internal_static_Msg_GetRankingTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetRankingTo_descriptor,
+        internal_static_Msg_GetRankingTo_descriptor,
         new java.lang.String[] { "Ranking", "MyRank", });
-    com.su.msg.CommonMsg.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -193,15 +193,16 @@ public class BagService extends GameEventAdapter {
 			count = 0;
 		}
 		grid.setCount(addCount);
-		grid.setEffType(bagCo.getEffTyep());
-		if (bagCo.getEffTyep() == BagConst.EFF_TYPE_TIME)
-			grid.setEffValue(TimeUtil.getCurrTime() + bagCo.getEffValue() * TimeUtil.ONE_DAY);
-		else if (bagCo.getEffTyep() == BagConst.EFF_TYPE_COUNT)
-			grid.setEffValue(bagCo.getEffValue());
+		grid.setEffType(bagCo.getEffTime()[0]);
+		if (bagCo.getEffTime()[0] == BagConst.EFF_TYPE_TIME)
+			grid.setEffValue(TimeUtil.getCurrTime() + bagCo.getEffTime()[1] * TimeUtil.ONE_DAY);
+		else if (bagCo.getEffTime()[0]== BagConst.EFF_TYPE_COUNT)
+			grid.setEffValue(bagCo.getEffTime()[1]);
 		bagGrid.add(index, grid);
 		addItem_.addGrid(serializeGrid(index, grid));
-
-		createGrid(playerContext, bagGrid, index + 1, sysId, count, bagCo, addItem_);
+		
+		if (count > 0)
+			createGrid(playerContext, bagGrid, index + 1, sysId, count, bagCo, addItem_);
 	}
 	
 	/**
@@ -256,7 +257,7 @@ public class BagService extends GameEventAdapter {
 		GridMo.Builder builder = GridMo.newBuilder();
 		builder.setIndex(index);
 		builder.setType(grid.getType());
-		builder.setSysId(grid.getSysId());
+		builder.setCid(grid.getSysId());
 		builder.setCount(grid.getCount());
 		builder.setEffType(grid.getEffType());
 		builder.setEffValue(grid.getEffValue());

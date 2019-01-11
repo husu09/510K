@@ -24,11 +24,11 @@ import com.su.core.game.enums.MultipleType;
 import com.su.core.game.enums.PlayerState;
 import com.su.core.game.enums.TableState;
 import com.su.core.game.enums.Team;
-import com.su.msg.TableMsg.MCard;
-import com.su.msg.TableMsg.MGamePlayer;
-import com.su.msg.TableMsg.MTable;
-import com.su.msg.TableMsg.NTableResult;
-import com.su.msg.TableMsg.TQuit;
+import com.su.msg.TableMsg.CardMo;
+import com.su.msg.TableMsg.GamePlayerMo;
+import com.su.msg.TableMsg.QuitTo;
+import com.su.msg.TableMsg.TableMo;
+import com.su.msg.TableMsg.TableResultNo;
 
 public abstract class Table implements Delayed {
 	protected Logger logger = LoggerFactory.getLogger(this.getClass());
@@ -100,9 +100,9 @@ public abstract class Table implements Delayed {
 	/**
 	 * 通知使用的 build 对象
 	 */
-	private MTable.Builder tableBuilder = MTable.newBuilder();
-	private MGamePlayer.Builder gamePlayerBuilder = MGamePlayer.newBuilder();
-	private MCard.Builder cardBuilder = MCard.newBuilder();
+	private TableMo.Builder tableBuilder = TableMo.newBuilder();
+	private GamePlayerMo.Builder gamePlayerBuilder = GamePlayerMo.newBuilder();
+	private CardMo.Builder cardBuilder = CardMo.newBuilder();
 
 	public Table(Site site) {
 		this.actor = AkkaContext.createActor(TableActor.class, TableActorImpl.class, this);
@@ -542,7 +542,7 @@ public abstract class Table implements Delayed {
 	/**
 	 * 子类实现的结算方法
 	 */
-	protected abstract void doSettlement(NTableResult.Builder builder, Team winTeam, int redMultiple, int blueMultiple);
+	protected abstract void doSettlement(TableResultNo.Builder builder, Team winTeam, int redMultiple, int blueMultiple);
 
 	/**
 	 * 结算
@@ -559,7 +559,7 @@ public abstract class Table implements Delayed {
 		int redMultiple = sumMultiple / getTeamCount(Team.RED);
 		int blueMultiple = sumMultiple / getTeamCount(Team.BLUE);
 		// 玩家结算
-		NTableResult.Builder builder = NTableResult.newBuilder();
+		TableResultNo.Builder builder = TableResultNo.newBuilder();
 		builder.setWinTeam(winTeam.getValue());
 		doSettlement(builder, winTeam, redMultiple, blueMultiple);
 		// 下局的庄家
@@ -615,7 +615,7 @@ public abstract class Table implements Delayed {
 			if (isInActi == 1) {
 				gamePlayer.getPlayerContext().setGamePlayer(null);
 				gamePlayer.setQuitState(2);
-				gamePlayer.getPlayerContext().write(TQuit.getDefaultInstance());
+				gamePlayer.getPlayerContext().write(QuitTo.getDefaultInstance());
 			} else {
 				gamePlayer.setQuitState(1);
 			}
@@ -924,15 +924,15 @@ public abstract class Table implements Delayed {
 		return actor;
 	}
 
-	public MTable.Builder getTableBuilder() {
+	public TableMo.Builder getTableBuilder() {
 		return tableBuilder;
 	}
 
-	public MGamePlayer.Builder getGamePlayerBuilder() {
+	public GamePlayerMo.Builder getGamePlayerBuilder() {
 		return gamePlayerBuilder;
 	}
 
-	public MCard.Builder getCardBuilder() {
+	public CardMo.Builder getCardBuilder() {
 		return cardBuilder;
 	}
 

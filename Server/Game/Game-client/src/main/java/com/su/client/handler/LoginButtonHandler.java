@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 
 import com.su.client.core.ClientContext;
 import com.su.client.core.NettyClient;
+import com.su.client.core.WebSocketClient;
 import com.su.msg.LoginMsg.Login;
 
 /**
@@ -20,8 +21,10 @@ public class LoginButtonHandler implements ActionListener {
 
 	@Autowired
 	private ClientContext clientContext;
+//	@Autowired
+//	private NettyClient nettyClient;
 	@Autowired
-	private NettyClient nettyClient;
+	private WebSocketClient nettyClient;
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
@@ -44,7 +47,7 @@ public class LoginButtonHandler implements ActionListener {
 			clientContext.getCtx().close();
 		}
 		nettyClient.start(arr[0], Integer.parseInt(arr[1]));
-		clientContext.write(Login.newBuilder().setAccount(userNameTF.getText()).setName(userNameTF.getText()).build());
+		clientContext.write(Login.newBuilder().setAccount(userNameTF.getText()).build());
 
 	}
 

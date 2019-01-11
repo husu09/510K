@@ -1,10 +1,10 @@
 syntax = "proto2";
-
+package Msg;
 option java_package = "com.su.msg";
-option csharp_namespace = "Assets.Scripts.Proto";
+//option csharp_namespace = "Assets.Scripts.Proto";
 option optimize_for = SPEED;
 
-message MContestRank {
+message ContestRankMo {
 	optional int32 playerId = 1;		// 玩家id
 	optional string playerName = 2;		// 玩家姓名
 	optional int32 contestScore = 3;	// 排名分数
@@ -15,38 +15,38 @@ message MContestRank {
 message EnterContestSite {
 	optional int32 siteId = 1;
 }
-message TEnterContestSite {
+message EnterContestSiteTo {
 	optional int32 siteId = 1;
 }
 // 退出比赛场
 message ExitContestSite {
 }
-message TExitContestSite {
+message ExitContestSiteTo {
 }
 
 // 报名
 message Apply {
 	optional int32 siteId = 1;
 }
-message TApply {
+message ApplyTo {
 	optional int32 siteId = 1;
 }
 
 // 取消报名
 message CancelApply {
 }
-message TCancelApply {
+message CancelApplyTo {
 }
 
 // 通知比赛场更新
-message NContestSite {
+message ContestSiteNo {
 	optional int32 siteId = 1;		
 	optional int32 playerNum = 2;				// 玩家数量
 }
 
 // 通知比赛更新
-message NContest {
+message ContestNo {
 	optional int32 contestId = 1;				// 比赛id
 	optional int32 baseScore = 2;				// 底分
-	repeated MContestRank contestRank = 3;		// 排名
+	repeated ContestRankMo contestRank = 3;		// 排名
 }

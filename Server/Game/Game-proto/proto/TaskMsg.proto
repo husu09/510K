@@ -1,5 +1,0 @@
-syntax = "proto2";
-import "CommonMsg.proto";
-option java_package = "com.su.msg";
-option csharp_namespace = "Assets.Scripts.Proto";
-option optimize_for = SPEED;

@@ -12,7 +12,7 @@ import com.su.config.RankingCo;
 import com.su.core.game.TableResult;
 import com.su.core.game.enums.SiteType;
 import com.su.excel.mapper.RankingConf;
-import com.su.msg.TableMsg.MGamePlayerResult;
+import com.su.msg.TableMsg.PlayerResultMo;
 
 @Service
 public class PlayerGameService {
@@ -29,37 +29,37 @@ public class PlayerGameService {
 	/**
 	 * 牌局结束处理
 	 */
-	public MGamePlayerResult doTableResult(TableResult tableResult) {
+	public PlayerResultMo doTableResult(TableResult tableResult) {
 		// 比赛模式不处理
-		if (tableResult.getSiteCo().getSiteType() != SiteType.CLASSIC.getValue()
-				&& tableResult.getSiteCo().getSiteType() == SiteType.RANKING.getValue())
+		if (tableResult.getSiteCo().getType() != SiteType.CLASSIC.getValue()
+				&& tableResult.getSiteCo().getType() == SiteType.RANKING.getValue())
 			return null;
 
 		Player player = playerService.getPlayer(tableResult.getPlayerContext().getPlayerId());
 		PlayerDetail playerDetail = playerService.getPlayerDetail(player.getId());
-		MGamePlayerResult.Builder builder = MGamePlayerResult.newBuilder();
+		PlayerResultMo.Builder builder = PlayerResultMo.newBuilder();
 
 		if (tableResult.isWin()) {
 			// 胜利
-			playerDetail.setContinueWinCount(playerDetail.getContinueWinCount() + 1);
+			//playerDetail.setContinueWinCount(playerDetail.getContinueWinCount() + 1);
 			// 获得的花生
 			int addPeanut = tableResult.getMultiple() * tableResult.getSiteCo().getBaseScore();
 			// 加成
-			addPeanut = addPeanut + addPeanut * (tableResult.getSiteCo().getRankingAddition() / 100);
+			addPeanut = addPeanut + addPeanut;
 			resourceService.add(tableResult.getPlayerContext(), SysAttr.PEANUT, 0, addPeanut, 1002);
 			builder.setPlayerId(player.getId());
 			builder.setMultiple(tableResult.getMultiple());
 			builder.setPeanut(addPeanut);
 
 			// 处理竞技分
-			if (tableResult.getSiteCo().getSiteType() == SiteType.RANKING.getValue()) {
+			if (tableResult.getSiteCo().getType() == SiteType.RANKING.getValue()) {
 				resourceService.add(tableResult.getPlayerContext(), SysAttr.RANKING, 0, 20, 1002);
 				builder.setRankingScore(20);
 			}
 
 		} else {
 			// 失败
-			playerDetail.setContinueWinCount(0);
+			//playerDetail.setContinueWinCount(0);
 			// 扣除的花生
 			int eddPeanut = tableResult.getMultiple() * tableResult.getSiteCo().getBaseScore();
 			resourceService.edd(tableResult.getPlayerContext(), SysAttr.PEANUT, 0, eddPeanut, 2002);
@@ -67,7 +67,7 @@ public class PlayerGameService {
 			builder.setMultiple(tableResult.getMultiple());
 			builder.setPeanut(eddPeanut);
 			// 处理竞技分
-			if (tableResult.getSiteCo().getSiteType() == SiteType.RANKING.getValue()) {
+			if (tableResult.getSiteCo().getType() == SiteType.RANKING.getValue()) {
 				RankingCo rankingCo = null;
 				/*if (player.getRankingStep() == 0)
 					rankingCo = rankingConf.all().get(0);

@@ -10,18 +10,18 @@ import com.su.core.context.PlayerContext;
 import com.su.core.game.GamePlayer;
 import com.su.excel.mapper.BagConf;
 import com.su.msg.TableMsg.Auto;
+import com.su.msg.TableMsg.AutoTo;
 import com.su.msg.TableMsg.Call;
+import com.su.msg.TableMsg.CallTo;
+import com.su.msg.TableMsg.DoubleTo;
 import com.su.msg.TableMsg.Draw;
+import com.su.msg.TableMsg.DrawTo;
 import com.su.msg.TableMsg.Quit;
+import com.su.msg.TableMsg.QuitTo;
 import com.su.msg.TableMsg.Ready;
+import com.su.msg.TableMsg.ReadyTo;
 import com.su.msg.TableMsg.Reconn;
-import com.su.msg.TableMsg.TAuto;
-import com.su.msg.TableMsg.TCall;
-import com.su.msg.TableMsg.TDouble;
-import com.su.msg.TableMsg.TDraw;
-import com.su.msg.TableMsg.TQuit;
-import com.su.msg.TableMsg.TReady;
-import com.su.msg.TableMsg.TReconn;
+import com.su.msg.TableMsg.ReconnTo;
 import com.su.server.service.ResourceService;
 
 @Controller
@@ -55,12 +55,12 @@ public class TableControl {
 			return;
 		}
 		// 加倍
-		boolean result = gamePlayer.getTable().getActor().doubles(gamePlayer, bagCo.getUseNum());
+		boolean result = gamePlayer.getTable().getActor().doubles(gamePlayer, bagCo.getUserEfftInt());
 		// 加倍失败返还道具
 		if (!result) {
 			resouceService.add(playerContext, GamblingConst.DOUBLES_ITEM, 10001);
 		}
-		playerContext.write(TDouble.newBuilder());
+		playerContext.write(DoubleTo.newBuilder());
 	}
 
 	/**
@@ -75,7 +75,7 @@ public class TableControl {
 			return;
 		}
 		gamePlayer.getTable().getActor().call(gamePlayer, req.getCallType(), req.getCardIndex());
-		playerContext.write(TCall.newBuilder());
+		playerContext.write(CallTo.newBuilder());
 	}
 
 	/**
@@ -93,7 +93,7 @@ public class TableControl {
 		for (int i = 0; i < req.getCardIndexsCount(); i++)
 			indexs[i] = req.getCardIndexs(i);
 		gamePlayer.getTable().getActor().draw(gamePlayer, req.getCardType(), indexs);
-		playerContext.write(TDraw.newBuilder());
+		playerContext.write(DrawTo.newBuilder());
 	}
 
 	/**
@@ -108,7 +108,7 @@ public class TableControl {
 			return;
 		}
 		gamePlayer.getTable().getActor().auto(gamePlayer, req.getIsAuto());
-		playerContext.write(TAuto.newBuilder());
+		playerContext.write(AutoTo.newBuilder());
 	}
 
 	/**
@@ -123,7 +123,7 @@ public class TableControl {
 			return;
 		}
 		gamePlayer.getTable().getActor().ready(gamePlayer);
-		playerContext.write(TReady.newBuilder());
+		playerContext.write(ReadyTo.newBuilder());
 	}
 
 	/**
@@ -138,7 +138,7 @@ public class TableControl {
 			return;
 		}
 		gamePlayer.getTable().getActor().quit(gamePlayer, 1);
-		playerContext.write(TQuit.newBuilder());
+		playerContext.write(QuitTo.newBuilder());
 	}
 
 	/**
@@ -153,6 +153,6 @@ public class TableControl {
 			return;
 		}
 		gamePlayer.getTable().getActor().reconnect(gamePlayer);
-		playerContext.write(TReconn.newBuilder());
+		playerContext.write(ReconnTo.newBuilder());
 	}
 }

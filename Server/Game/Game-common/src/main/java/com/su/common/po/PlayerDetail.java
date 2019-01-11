@@ -20,14 +20,36 @@ import com.su.common.obj.Role;
 @Entity
 public class PlayerDetail implements Serializable {
 	
+	public PlayerDetail() {
+		
+	}
+
 	@Id
 	private long id;
+	public PlayerDetail(long id){
+		this.id = id;
+	}
+	public long getId() {
+		return id;
+	}
 	/**
 	 * 背包
 	 */
 	private String bagData;
 	@Transient
 	private List<Grid> gridList;
+	public List<Grid> getGridList() {
+		if (gridList == null) {
+			gridList = JSON.parseArray(bagData, Grid.class);
+			if (gridList == null)
+				gridList = new ArrayList<>();
+
+		}
+		return gridList;
+	}
+	public void updateBagData() {
+		bagData = JSON.toJSONString(getGridList());
+	}
 	
 	/**
 	 * 角色
@@ -82,45 +104,5 @@ public class PlayerDetail implements Serializable {
 	public void updateAcuItemData() {
 		acuItemData = JSON.toJSONString(getMyAcuItemMap());
 	}
-	
-	/**
-	 * 连胜次数
-	 * */
-	private int continueWinCount;
-	
-	public PlayerDetail() {
-		
-	}
-	
-	public PlayerDetail(long id){
-		this.id = id;
-	}
-	
-	public long getId() {
-		return id;
-	}
-	
-	public int getContinueWinCount() {
-		return continueWinCount;
-	}
-
-	public void setContinueWinCount(int continueWinCount) {
-		this.continueWinCount = continueWinCount;
-	}
-
-	public List<Grid> getGridList() {
-		if (gridList == null) {
-			gridList = JSON.parseArray(bagData, Grid.class);
-			if (gridList == null)
-				gridList = new ArrayList<>();
-
-		}
-		return gridList;
-	}
-
-	public void updateBagData() {
-		bagData = JSON.toJSONString(getGridList());
-	}
-	
 
 }

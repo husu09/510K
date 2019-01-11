@@ -15,7 +15,7 @@ public final class AuctionMsg {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface AucItemMoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:AucItemMo)
+      // @@protoc_insertion_point(interface_extends:Msg.AucItemMo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -40,7 +40,7 @@ public final class AuctionMsg {
      * 物品
      * </pre>
      *
-     * <code>optional .ItemMo item = 2;</code>
+     * <code>optional .Msg.ItemMo item = 2;</code>
      */
     boolean hasItem();
     /**
@@ -48,7 +48,7 @@ public final class AuctionMsg {
      * 物品
      * </pre>
      *
-     * <code>optional .ItemMo item = 2;</code>
+     * <code>optional .Msg.ItemMo item = 2;</code>
      */
     com.su.msg.CommonMsg.ItemMo getItem();
     /**
@@ -56,7 +56,7 @@ public final class AuctionMsg {
      * 物品
      * </pre>
      *
-     * <code>optional .ItemMo item = 2;</code>
+     * <code>optional .Msg.ItemMo item = 2;</code>
      */
     com.su.msg.CommonMsg.ItemMoOrBuilder getItemOrBuilder();
 
@@ -142,11 +142,11 @@ public final class AuctionMsg {
    * 拍卖物品信息 
    * </pre>
    *
-   * Protobuf type {@code AucItemMo}
+   * Protobuf type {@code Msg.AucItemMo}
    */
   public  static final class AucItemMo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:AucItemMo)
+      // @@protoc_insertion_point(message_implements:Msg.AucItemMo)
       AucItemMoOrBuilder {
     // Use AucItemMo.newBuilder() to construct.
     private AucItemMo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -241,12 +241,12 @@ public final class AuctionMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.AuctionMsg.internal_static_AucItemMo_descriptor;
+      return com.su.msg.AuctionMsg.internal_static_Msg_AucItemMo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.AuctionMsg.internal_static_AucItemMo_fieldAccessorTable
+      return com.su.msg.AuctionMsg.internal_static_Msg_AucItemMo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.AuctionMsg.AucItemMo.class, com.su.msg.AuctionMsg.AucItemMo.Builder.class);
     }
@@ -282,7 +282,7 @@ public final class AuctionMsg {
      * 物品
      * </pre>
      *
-     * <code>optional .ItemMo item = 2;</code>
+     * <code>optional .Msg.ItemMo item = 2;</code>
      */
     public boolean hasItem() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
@@ -292,7 +292,7 @@ public final class AuctionMsg {
      * 物品
      * </pre>
      *
-     * <code>optional .ItemMo item = 2;</code>
+     * <code>optional .Msg.ItemMo item = 2;</code>
      */
     public com.su.msg.CommonMsg.ItemMo getItem() {
       return item_ == null ? com.su.msg.CommonMsg.ItemMo.getDefaultInstance() : item_;
@@ -302,7 +302,7 @@ public final class AuctionMsg {
      * 物品
      * </pre>
      *
-     * <code>optional .ItemMo item = 2;</code>
+     * <code>optional .Msg.ItemMo item = 2;</code>
      */
     public com.su.msg.CommonMsg.ItemMoOrBuilder getItemOrBuilder() {
       return item_ == null ? com.su.msg.CommonMsg.ItemMo.getDefaultInstance() : item_;
@@ -663,20 +663,20 @@ public final class AuctionMsg {
      * 拍卖物品信息 
      * </pre>
      *
-     * Protobuf type {@code AucItemMo}
+     * Protobuf type {@code Msg.AucItemMo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:AucItemMo)
+        // @@protoc_insertion_point(builder_implements:Msg.AucItemMo)
         com.su.msg.AuctionMsg.AucItemMoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.AuctionMsg.internal_static_AucItemMo_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_AucItemMo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.AuctionMsg.internal_static_AucItemMo_fieldAccessorTable
+        return com.su.msg.AuctionMsg.internal_static_Msg_AucItemMo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.AuctionMsg.AucItemMo.class, com.su.msg.AuctionMsg.AucItemMo.Builder.class);
       }
@@ -720,7 +720,7 @@ public final class AuctionMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.AuctionMsg.internal_static_AucItemMo_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_AucItemMo_descriptor;
       }
 
       public com.su.msg.AuctionMsg.AucItemMo getDefaultInstanceForType() {
@@ -913,7 +913,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>optional .ItemMo item = 2;</code>
+       * <code>optional .Msg.ItemMo item = 2;</code>
        */
       public boolean hasItem() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
@@ -923,7 +923,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>optional .ItemMo item = 2;</code>
+       * <code>optional .Msg.ItemMo item = 2;</code>
        */
       public com.su.msg.CommonMsg.ItemMo getItem() {
         if (itemBuilder_ == null) {
@@ -937,7 +937,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>optional .ItemMo item = 2;</code>
+       * <code>optional .Msg.ItemMo item = 2;</code>
        */
       public Builder setItem(com.su.msg.CommonMsg.ItemMo value) {
         if (itemBuilder_ == null) {
@@ -957,7 +957,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>optional .ItemMo item = 2;</code>
+       * <code>optional .Msg.ItemMo item = 2;</code>
        */
       public Builder setItem(
           com.su.msg.CommonMsg.ItemMo.Builder builderForValue) {
@@ -975,7 +975,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>optional .ItemMo item = 2;</code>
+       * <code>optional .Msg.ItemMo item = 2;</code>
        */
       public Builder mergeItem(com.su.msg.CommonMsg.ItemMo value) {
         if (itemBuilder_ == null) {
@@ -999,7 +999,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>optional .ItemMo item = 2;</code>
+       * <code>optional .Msg.ItemMo item = 2;</code>
        */
       public Builder clearItem() {
         if (itemBuilder_ == null) {
@@ -1016,7 +1016,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>optional .ItemMo item = 2;</code>
+       * <code>optional .Msg.ItemMo item = 2;</code>
        */
       public com.su.msg.CommonMsg.ItemMo.Builder getItemBuilder() {
         bitField0_ |= 0x00000002;
@@ -1028,7 +1028,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>optional .ItemMo item = 2;</code>
+       * <code>optional .Msg.ItemMo item = 2;</code>
        */
       public com.su.msg.CommonMsg.ItemMoOrBuilder getItemOrBuilder() {
         if (itemBuilder_ != null) {
@@ -1043,7 +1043,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>optional .ItemMo item = 2;</code>
+       * <code>optional .Msg.ItemMo item = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.su.msg.CommonMsg.ItemMo, com.su.msg.CommonMsg.ItemMo.Builder, com.su.msg.CommonMsg.ItemMoOrBuilder> 
@@ -1313,10 +1313,10 @@ public final class AuctionMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:AucItemMo)
+      // @@protoc_insertion_point(builder_scope:Msg.AucItemMo)
     }
 
-    // @@protoc_insertion_point(class_scope:AucItemMo)
+    // @@protoc_insertion_point(class_scope:Msg.AucItemMo)
     private static final com.su.msg.AuctionMsg.AucItemMo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.AuctionMsg.AucItemMo();
@@ -1352,7 +1352,7 @@ public final class AuctionMsg {
   }
 
   public interface GetAucItemOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetAucItem)
+      // @@protoc_insertion_point(interface_extends:Msg.GetAucItem)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -1428,11 +1428,11 @@ public final class AuctionMsg {
    * 获取拍卖物品信息
    * </pre>
    *
-   * Protobuf type {@code GetAucItem}
+   * Protobuf type {@code Msg.GetAucItem}
    */
   public  static final class GetAucItem extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetAucItem)
+      // @@protoc_insertion_point(message_implements:Msg.GetAucItem)
       GetAucItemOrBuilder {
     // Use GetAucItem.newBuilder() to construct.
     private GetAucItem(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -1507,12 +1507,12 @@ public final class AuctionMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.AuctionMsg.internal_static_GetAucItem_descriptor;
+      return com.su.msg.AuctionMsg.internal_static_Msg_GetAucItem_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.AuctionMsg.internal_static_GetAucItem_fieldAccessorTable
+      return com.su.msg.AuctionMsg.internal_static_Msg_GetAucItem_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.AuctionMsg.GetAucItem.class, com.su.msg.AuctionMsg.GetAucItem.Builder.class);
     }
@@ -1809,20 +1809,20 @@ public final class AuctionMsg {
      * 获取拍卖物品信息
      * </pre>
      *
-     * Protobuf type {@code GetAucItem}
+     * Protobuf type {@code Msg.GetAucItem}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetAucItem)
+        // @@protoc_insertion_point(builder_implements:Msg.GetAucItem)
         com.su.msg.AuctionMsg.GetAucItemOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.AuctionMsg.internal_static_GetAucItem_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_GetAucItem_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.AuctionMsg.internal_static_GetAucItem_fieldAccessorTable
+        return com.su.msg.AuctionMsg.internal_static_Msg_GetAucItem_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.AuctionMsg.GetAucItem.class, com.su.msg.AuctionMsg.GetAucItem.Builder.class);
       }
@@ -1857,7 +1857,7 @@ public final class AuctionMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.AuctionMsg.internal_static_GetAucItem_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_GetAucItem_descriptor;
       }
 
       public com.su.msg.AuctionMsg.GetAucItem getDefaultInstanceForType() {
@@ -2176,10 +2176,10 @@ public final class AuctionMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetAucItem)
+      // @@protoc_insertion_point(builder_scope:Msg.GetAucItem)
     }
 
-    // @@protoc_insertion_point(class_scope:GetAucItem)
+    // @@protoc_insertion_point(class_scope:Msg.GetAucItem)
     private static final com.su.msg.AuctionMsg.GetAucItem DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.AuctionMsg.GetAucItem();
@@ -2215,7 +2215,7 @@ public final class AuctionMsg {
   }
 
   public interface GetAucItemToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetAucItemTo)
+      // @@protoc_insertion_point(interface_extends:Msg.GetAucItemTo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2240,7 +2240,7 @@ public final class AuctionMsg {
      * 物品
      * </pre>
      *
-     * <code>repeated .AucItemMo aucItem = 2;</code>
+     * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
      */
     java.util.List<com.su.msg.AuctionMsg.AucItemMo> 
         getAucItemList();
@@ -2249,7 +2249,7 @@ public final class AuctionMsg {
      * 物品
      * </pre>
      *
-     * <code>repeated .AucItemMo aucItem = 2;</code>
+     * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
      */
     com.su.msg.AuctionMsg.AucItemMo getAucItem(int index);
     /**
@@ -2257,7 +2257,7 @@ public final class AuctionMsg {
      * 物品
      * </pre>
      *
-     * <code>repeated .AucItemMo aucItem = 2;</code>
+     * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
      */
     int getAucItemCount();
     /**
@@ -2265,7 +2265,7 @@ public final class AuctionMsg {
      * 物品
      * </pre>
      *
-     * <code>repeated .AucItemMo aucItem = 2;</code>
+     * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
      */
     java.util.List<? extends com.su.msg.AuctionMsg.AucItemMoOrBuilder> 
         getAucItemOrBuilderList();
@@ -2274,17 +2274,17 @@ public final class AuctionMsg {
      * 物品
      * </pre>
      *
-     * <code>repeated .AucItemMo aucItem = 2;</code>
+     * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
      */
     com.su.msg.AuctionMsg.AucItemMoOrBuilder getAucItemOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code GetAucItemTo}
+   * Protobuf type {@code Msg.GetAucItemTo}
    */
   public  static final class GetAucItemTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetAucItemTo)
+      // @@protoc_insertion_point(message_implements:Msg.GetAucItemTo)
       GetAucItemToOrBuilder {
     // Use GetAucItemTo.newBuilder() to construct.
     private GetAucItemTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -2354,12 +2354,12 @@ public final class AuctionMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.AuctionMsg.internal_static_GetAucItemTo_descriptor;
+      return com.su.msg.AuctionMsg.internal_static_Msg_GetAucItemTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.AuctionMsg.internal_static_GetAucItemTo_fieldAccessorTable
+      return com.su.msg.AuctionMsg.internal_static_Msg_GetAucItemTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.AuctionMsg.GetAucItemTo.class, com.su.msg.AuctionMsg.GetAucItemTo.Builder.class);
     }
@@ -2395,7 +2395,7 @@ public final class AuctionMsg {
      * 物品
      * </pre>
      *
-     * <code>repeated .AucItemMo aucItem = 2;</code>
+     * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
      */
     public java.util.List<com.su.msg.AuctionMsg.AucItemMo> getAucItemList() {
       return aucItem_;
@@ -2405,7 +2405,7 @@ public final class AuctionMsg {
      * 物品
      * </pre>
      *
-     * <code>repeated .AucItemMo aucItem = 2;</code>
+     * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
      */
     public java.util.List<? extends com.su.msg.AuctionMsg.AucItemMoOrBuilder> 
         getAucItemOrBuilderList() {
@@ -2416,7 +2416,7 @@ public final class AuctionMsg {
      * 物品
      * </pre>
      *
-     * <code>repeated .AucItemMo aucItem = 2;</code>
+     * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
      */
     public int getAucItemCount() {
       return aucItem_.size();
@@ -2426,7 +2426,7 @@ public final class AuctionMsg {
      * 物品
      * </pre>
      *
-     * <code>repeated .AucItemMo aucItem = 2;</code>
+     * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
      */
     public com.su.msg.AuctionMsg.AucItemMo getAucItem(int index) {
       return aucItem_.get(index);
@@ -2436,7 +2436,7 @@ public final class AuctionMsg {
      * 物品
      * </pre>
      *
-     * <code>repeated .AucItemMo aucItem = 2;</code>
+     * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
      */
     public com.su.msg.AuctionMsg.AucItemMoOrBuilder getAucItemOrBuilder(
         int index) {
@@ -2603,20 +2603,20 @@ public final class AuctionMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code GetAucItemTo}
+     * Protobuf type {@code Msg.GetAucItemTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetAucItemTo)
+        // @@protoc_insertion_point(builder_implements:Msg.GetAucItemTo)
         com.su.msg.AuctionMsg.GetAucItemToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.AuctionMsg.internal_static_GetAucItemTo_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_GetAucItemTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.AuctionMsg.internal_static_GetAucItemTo_fieldAccessorTable
+        return com.su.msg.AuctionMsg.internal_static_Msg_GetAucItemTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.AuctionMsg.GetAucItemTo.class, com.su.msg.AuctionMsg.GetAucItemTo.Builder.class);
       }
@@ -2652,7 +2652,7 @@ public final class AuctionMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.AuctionMsg.internal_static_GetAucItemTo_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_GetAucItemTo_descriptor;
       }
 
       public com.su.msg.AuctionMsg.GetAucItemTo getDefaultInstanceForType() {
@@ -2848,7 +2848,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public java.util.List<com.su.msg.AuctionMsg.AucItemMo> getAucItemList() {
         if (aucItemBuilder_ == null) {
@@ -2862,7 +2862,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public int getAucItemCount() {
         if (aucItemBuilder_ == null) {
@@ -2876,7 +2876,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public com.su.msg.AuctionMsg.AucItemMo getAucItem(int index) {
         if (aucItemBuilder_ == null) {
@@ -2890,7 +2890,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public Builder setAucItem(
           int index, com.su.msg.AuctionMsg.AucItemMo value) {
@@ -2911,7 +2911,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public Builder setAucItem(
           int index, com.su.msg.AuctionMsg.AucItemMo.Builder builderForValue) {
@@ -2929,7 +2929,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public Builder addAucItem(com.su.msg.AuctionMsg.AucItemMo value) {
         if (aucItemBuilder_ == null) {
@@ -2949,7 +2949,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public Builder addAucItem(
           int index, com.su.msg.AuctionMsg.AucItemMo value) {
@@ -2970,7 +2970,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public Builder addAucItem(
           com.su.msg.AuctionMsg.AucItemMo.Builder builderForValue) {
@@ -2988,7 +2988,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public Builder addAucItem(
           int index, com.su.msg.AuctionMsg.AucItemMo.Builder builderForValue) {
@@ -3006,7 +3006,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public Builder addAllAucItem(
           java.lang.Iterable<? extends com.su.msg.AuctionMsg.AucItemMo> values) {
@@ -3025,7 +3025,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public Builder clearAucItem() {
         if (aucItemBuilder_ == null) {
@@ -3042,7 +3042,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public Builder removeAucItem(int index) {
         if (aucItemBuilder_ == null) {
@@ -3059,7 +3059,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public com.su.msg.AuctionMsg.AucItemMo.Builder getAucItemBuilder(
           int index) {
@@ -3070,7 +3070,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public com.su.msg.AuctionMsg.AucItemMoOrBuilder getAucItemOrBuilder(
           int index) {
@@ -3084,7 +3084,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public java.util.List<? extends com.su.msg.AuctionMsg.AucItemMoOrBuilder> 
            getAucItemOrBuilderList() {
@@ -3099,7 +3099,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public com.su.msg.AuctionMsg.AucItemMo.Builder addAucItemBuilder() {
         return getAucItemFieldBuilder().addBuilder(
@@ -3110,7 +3110,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public com.su.msg.AuctionMsg.AucItemMo.Builder addAucItemBuilder(
           int index) {
@@ -3122,7 +3122,7 @@ public final class AuctionMsg {
        * 物品
        * </pre>
        *
-       * <code>repeated .AucItemMo aucItem = 2;</code>
+       * <code>repeated .Msg.AucItemMo aucItem = 2;</code>
        */
       public java.util.List<com.su.msg.AuctionMsg.AucItemMo.Builder> 
            getAucItemBuilderList() {
@@ -3153,10 +3153,10 @@ public final class AuctionMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetAucItemTo)
+      // @@protoc_insertion_point(builder_scope:Msg.GetAucItemTo)
     }
 
-    // @@protoc_insertion_point(class_scope:GetAucItemTo)
+    // @@protoc_insertion_point(class_scope:Msg.GetAucItemTo)
     private static final com.su.msg.AuctionMsg.GetAucItemTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.AuctionMsg.GetAucItemTo();
@@ -3192,7 +3192,7 @@ public final class AuctionMsg {
   }
 
   public interface GetMyAucItemOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetMyAucItem)
+      // @@protoc_insertion_point(interface_extends:Msg.GetMyAucItem)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
@@ -3200,11 +3200,11 @@ public final class AuctionMsg {
    * 获取我拍卖的物品
    * </pre>
    *
-   * Protobuf type {@code GetMyAucItem}
+   * Protobuf type {@code Msg.GetMyAucItem}
    */
   public  static final class GetMyAucItem extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetMyAucItem)
+      // @@protoc_insertion_point(message_implements:Msg.GetMyAucItem)
       GetMyAucItemOrBuilder {
     // Use GetMyAucItem.newBuilder() to construct.
     private GetMyAucItem(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -3254,12 +3254,12 @@ public final class AuctionMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.AuctionMsg.internal_static_GetMyAucItem_descriptor;
+      return com.su.msg.AuctionMsg.internal_static_Msg_GetMyAucItem_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.AuctionMsg.internal_static_GetMyAucItem_fieldAccessorTable
+      return com.su.msg.AuctionMsg.internal_static_Msg_GetMyAucItem_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.AuctionMsg.GetMyAucItem.class, com.su.msg.AuctionMsg.GetMyAucItem.Builder.class);
     }
@@ -3399,20 +3399,20 @@ public final class AuctionMsg {
      * 获取我拍卖的物品
      * </pre>
      *
-     * Protobuf type {@code GetMyAucItem}
+     * Protobuf type {@code Msg.GetMyAucItem}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetMyAucItem)
+        // @@protoc_insertion_point(builder_implements:Msg.GetMyAucItem)
         com.su.msg.AuctionMsg.GetMyAucItemOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.AuctionMsg.internal_static_GetMyAucItem_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_GetMyAucItem_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.AuctionMsg.internal_static_GetMyAucItem_fieldAccessorTable
+        return com.su.msg.AuctionMsg.internal_static_Msg_GetMyAucItem_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.AuctionMsg.GetMyAucItem.class, com.su.msg.AuctionMsg.GetMyAucItem.Builder.class);
       }
@@ -3439,7 +3439,7 @@ public final class AuctionMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.AuctionMsg.internal_static_GetMyAucItem_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_GetMyAucItem_descriptor;
       }
 
       public com.su.msg.AuctionMsg.GetMyAucItem getDefaultInstanceForType() {
@@ -3534,10 +3534,10 @@ public final class AuctionMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetMyAucItem)
+      // @@protoc_insertion_point(builder_scope:Msg.GetMyAucItem)
     }
 
-    // @@protoc_insertion_point(class_scope:GetMyAucItem)
+    // @@protoc_insertion_point(class_scope:Msg.GetMyAucItem)
     private static final com.su.msg.AuctionMsg.GetMyAucItem DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.AuctionMsg.GetMyAucItem();
@@ -3573,7 +3573,7 @@ public final class AuctionMsg {
   }
 
   public interface GetMyAucItemToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:GetMyAucItemTo)
+      // @@protoc_insertion_point(interface_extends:Msg.GetMyAucItemTo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -3581,7 +3581,7 @@ public final class AuctionMsg {
      * 我的物品
      * </pre>
      *
-     * <code>repeated .AucItemMo myItem = 1;</code>
+     * <code>repeated .Msg.AucItemMo myItem = 1;</code>
      */
     java.util.List<com.su.msg.AuctionMsg.AucItemMo> 
         getMyItemList();
@@ -3590,7 +3590,7 @@ public final class AuctionMsg {
      * 我的物品
      * </pre>
      *
-     * <code>repeated .AucItemMo myItem = 1;</code>
+     * <code>repeated .Msg.AucItemMo myItem = 1;</code>
      */
     com.su.msg.AuctionMsg.AucItemMo getMyItem(int index);
     /**
@@ -3598,7 +3598,7 @@ public final class AuctionMsg {
      * 我的物品
      * </pre>
      *
-     * <code>repeated .AucItemMo myItem = 1;</code>
+     * <code>repeated .Msg.AucItemMo myItem = 1;</code>
      */
     int getMyItemCount();
     /**
@@ -3606,7 +3606,7 @@ public final class AuctionMsg {
      * 我的物品
      * </pre>
      *
-     * <code>repeated .AucItemMo myItem = 1;</code>
+     * <code>repeated .Msg.AucItemMo myItem = 1;</code>
      */
     java.util.List<? extends com.su.msg.AuctionMsg.AucItemMoOrBuilder> 
         getMyItemOrBuilderList();
@@ -3615,17 +3615,17 @@ public final class AuctionMsg {
      * 我的物品
      * </pre>
      *
-     * <code>repeated .AucItemMo myItem = 1;</code>
+     * <code>repeated .Msg.AucItemMo myItem = 1;</code>
      */
     com.su.msg.AuctionMsg.AucItemMoOrBuilder getMyItemOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code GetMyAucItemTo}
+   * Protobuf type {@code Msg.GetMyAucItemTo}
    */
   public  static final class GetMyAucItemTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:GetMyAucItemTo)
+      // @@protoc_insertion_point(message_implements:Msg.GetMyAucItemTo)
       GetMyAucItemToOrBuilder {
     // Use GetMyAucItemTo.newBuilder() to construct.
     private GetMyAucItemTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -3689,12 +3689,12 @@ public final class AuctionMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.AuctionMsg.internal_static_GetMyAucItemTo_descriptor;
+      return com.su.msg.AuctionMsg.internal_static_Msg_GetMyAucItemTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.AuctionMsg.internal_static_GetMyAucItemTo_fieldAccessorTable
+      return com.su.msg.AuctionMsg.internal_static_Msg_GetMyAucItemTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.AuctionMsg.GetMyAucItemTo.class, com.su.msg.AuctionMsg.GetMyAucItemTo.Builder.class);
     }
@@ -3706,7 +3706,7 @@ public final class AuctionMsg {
      * 我的物品
      * </pre>
      *
-     * <code>repeated .AucItemMo myItem = 1;</code>
+     * <code>repeated .Msg.AucItemMo myItem = 1;</code>
      */
     public java.util.List<com.su.msg.AuctionMsg.AucItemMo> getMyItemList() {
       return myItem_;
@@ -3716,7 +3716,7 @@ public final class AuctionMsg {
      * 我的物品
      * </pre>
      *
-     * <code>repeated .AucItemMo myItem = 1;</code>
+     * <code>repeated .Msg.AucItemMo myItem = 1;</code>
      */
     public java.util.List<? extends com.su.msg.AuctionMsg.AucItemMoOrBuilder> 
         getMyItemOrBuilderList() {
@@ -3727,7 +3727,7 @@ public final class AuctionMsg {
      * 我的物品
      * </pre>
      *
-     * <code>repeated .AucItemMo myItem = 1;</code>
+     * <code>repeated .Msg.AucItemMo myItem = 1;</code>
      */
     public int getMyItemCount() {
       return myItem_.size();
@@ -3737,7 +3737,7 @@ public final class AuctionMsg {
      * 我的物品
      * </pre>
      *
-     * <code>repeated .AucItemMo myItem = 1;</code>
+     * <code>repeated .Msg.AucItemMo myItem = 1;</code>
      */
     public com.su.msg.AuctionMsg.AucItemMo getMyItem(int index) {
       return myItem_.get(index);
@@ -3747,7 +3747,7 @@ public final class AuctionMsg {
      * 我的物品
      * </pre>
      *
-     * <code>repeated .AucItemMo myItem = 1;</code>
+     * <code>repeated .Msg.AucItemMo myItem = 1;</code>
      */
     public com.su.msg.AuctionMsg.AucItemMoOrBuilder getMyItemOrBuilder(
         int index) {
@@ -3898,20 +3898,20 @@ public final class AuctionMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code GetMyAucItemTo}
+     * Protobuf type {@code Msg.GetMyAucItemTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:GetMyAucItemTo)
+        // @@protoc_insertion_point(builder_implements:Msg.GetMyAucItemTo)
         com.su.msg.AuctionMsg.GetMyAucItemToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.AuctionMsg.internal_static_GetMyAucItemTo_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_GetMyAucItemTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.AuctionMsg.internal_static_GetMyAucItemTo_fieldAccessorTable
+        return com.su.msg.AuctionMsg.internal_static_Msg_GetMyAucItemTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.AuctionMsg.GetMyAucItemTo.class, com.su.msg.AuctionMsg.GetMyAucItemTo.Builder.class);
       }
@@ -3945,7 +3945,7 @@ public final class AuctionMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.AuctionMsg.internal_static_GetMyAucItemTo_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_GetMyAucItemTo_descriptor;
       }
 
       public com.su.msg.AuctionMsg.GetMyAucItemTo getDefaultInstanceForType() {
@@ -4084,7 +4084,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public java.util.List<com.su.msg.AuctionMsg.AucItemMo> getMyItemList() {
         if (myItemBuilder_ == null) {
@@ -4098,7 +4098,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public int getMyItemCount() {
         if (myItemBuilder_ == null) {
@@ -4112,7 +4112,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public com.su.msg.AuctionMsg.AucItemMo getMyItem(int index) {
         if (myItemBuilder_ == null) {
@@ -4126,7 +4126,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public Builder setMyItem(
           int index, com.su.msg.AuctionMsg.AucItemMo value) {
@@ -4147,7 +4147,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public Builder setMyItem(
           int index, com.su.msg.AuctionMsg.AucItemMo.Builder builderForValue) {
@@ -4165,7 +4165,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public Builder addMyItem(com.su.msg.AuctionMsg.AucItemMo value) {
         if (myItemBuilder_ == null) {
@@ -4185,7 +4185,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public Builder addMyItem(
           int index, com.su.msg.AuctionMsg.AucItemMo value) {
@@ -4206,7 +4206,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public Builder addMyItem(
           com.su.msg.AuctionMsg.AucItemMo.Builder builderForValue) {
@@ -4224,7 +4224,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public Builder addMyItem(
           int index, com.su.msg.AuctionMsg.AucItemMo.Builder builderForValue) {
@@ -4242,7 +4242,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public Builder addAllMyItem(
           java.lang.Iterable<? extends com.su.msg.AuctionMsg.AucItemMo> values) {
@@ -4261,7 +4261,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public Builder clearMyItem() {
         if (myItemBuilder_ == null) {
@@ -4278,7 +4278,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public Builder removeMyItem(int index) {
         if (myItemBuilder_ == null) {
@@ -4295,7 +4295,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public com.su.msg.AuctionMsg.AucItemMo.Builder getMyItemBuilder(
           int index) {
@@ -4306,7 +4306,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public com.su.msg.AuctionMsg.AucItemMoOrBuilder getMyItemOrBuilder(
           int index) {
@@ -4320,7 +4320,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public java.util.List<? extends com.su.msg.AuctionMsg.AucItemMoOrBuilder> 
            getMyItemOrBuilderList() {
@@ -4335,7 +4335,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public com.su.msg.AuctionMsg.AucItemMo.Builder addMyItemBuilder() {
         return getMyItemFieldBuilder().addBuilder(
@@ -4346,7 +4346,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public com.su.msg.AuctionMsg.AucItemMo.Builder addMyItemBuilder(
           int index) {
@@ -4358,7 +4358,7 @@ public final class AuctionMsg {
        * 我的物品
        * </pre>
        *
-       * <code>repeated .AucItemMo myItem = 1;</code>
+       * <code>repeated .Msg.AucItemMo myItem = 1;</code>
        */
       public java.util.List<com.su.msg.AuctionMsg.AucItemMo.Builder> 
            getMyItemBuilderList() {
@@ -4389,10 +4389,10 @@ public final class AuctionMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:GetMyAucItemTo)
+      // @@protoc_insertion_point(builder_scope:Msg.GetMyAucItemTo)
     }
 
-    // @@protoc_insertion_point(class_scope:GetMyAucItemTo)
+    // @@protoc_insertion_point(class_scope:Msg.GetMyAucItemTo)
     private static final com.su.msg.AuctionMsg.GetMyAucItemTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.AuctionMsg.GetMyAucItemTo();
@@ -4428,7 +4428,7 @@ public final class AuctionMsg {
   }
 
   public interface UpAucItemOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:UpAucItem)
+      // @@protoc_insertion_point(interface_extends:Msg.UpAucItem)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -4504,11 +4504,11 @@ public final class AuctionMsg {
    * 上架
    * </pre>
    *
-   * Protobuf type {@code UpAucItem}
+   * Protobuf type {@code Msg.UpAucItem}
    */
   public  static final class UpAucItem extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:UpAucItem)
+      // @@protoc_insertion_point(message_implements:Msg.UpAucItem)
       UpAucItemOrBuilder {
     // Use UpAucItem.newBuilder() to construct.
     private UpAucItem(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -4583,12 +4583,12 @@ public final class AuctionMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.AuctionMsg.internal_static_UpAucItem_descriptor;
+      return com.su.msg.AuctionMsg.internal_static_Msg_UpAucItem_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.AuctionMsg.internal_static_UpAucItem_fieldAccessorTable
+      return com.su.msg.AuctionMsg.internal_static_Msg_UpAucItem_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.AuctionMsg.UpAucItem.class, com.su.msg.AuctionMsg.UpAucItem.Builder.class);
     }
@@ -4885,20 +4885,20 @@ public final class AuctionMsg {
      * 上架
      * </pre>
      *
-     * Protobuf type {@code UpAucItem}
+     * Protobuf type {@code Msg.UpAucItem}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:UpAucItem)
+        // @@protoc_insertion_point(builder_implements:Msg.UpAucItem)
         com.su.msg.AuctionMsg.UpAucItemOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.AuctionMsg.internal_static_UpAucItem_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_UpAucItem_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.AuctionMsg.internal_static_UpAucItem_fieldAccessorTable
+        return com.su.msg.AuctionMsg.internal_static_Msg_UpAucItem_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.AuctionMsg.UpAucItem.class, com.su.msg.AuctionMsg.UpAucItem.Builder.class);
       }
@@ -4933,7 +4933,7 @@ public final class AuctionMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.AuctionMsg.internal_static_UpAucItem_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_UpAucItem_descriptor;
       }
 
       public com.su.msg.AuctionMsg.UpAucItem getDefaultInstanceForType() {
@@ -5252,10 +5252,10 @@ public final class AuctionMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:UpAucItem)
+      // @@protoc_insertion_point(builder_scope:Msg.UpAucItem)
     }
 
-    // @@protoc_insertion_point(class_scope:UpAucItem)
+    // @@protoc_insertion_point(class_scope:Msg.UpAucItem)
     private static final com.su.msg.AuctionMsg.UpAucItem DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.AuctionMsg.UpAucItem();
@@ -5291,15 +5291,15 @@ public final class AuctionMsg {
   }
 
   public interface UpAucItemToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:UpAucItemTo)
+      // @@protoc_insertion_point(interface_extends:Msg.UpAucItemTo)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * Protobuf type {@code UpAucItemTo}
+   * Protobuf type {@code Msg.UpAucItemTo}
    */
   public  static final class UpAucItemTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:UpAucItemTo)
+      // @@protoc_insertion_point(message_implements:Msg.UpAucItemTo)
       UpAucItemToOrBuilder {
     // Use UpAucItemTo.newBuilder() to construct.
     private UpAucItemTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -5349,12 +5349,12 @@ public final class AuctionMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.AuctionMsg.internal_static_UpAucItemTo_descriptor;
+      return com.su.msg.AuctionMsg.internal_static_Msg_UpAucItemTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.AuctionMsg.internal_static_UpAucItemTo_fieldAccessorTable
+      return com.su.msg.AuctionMsg.internal_static_Msg_UpAucItemTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.AuctionMsg.UpAucItemTo.class, com.su.msg.AuctionMsg.UpAucItemTo.Builder.class);
     }
@@ -5490,20 +5490,20 @@ public final class AuctionMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code UpAucItemTo}
+     * Protobuf type {@code Msg.UpAucItemTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:UpAucItemTo)
+        // @@protoc_insertion_point(builder_implements:Msg.UpAucItemTo)
         com.su.msg.AuctionMsg.UpAucItemToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.AuctionMsg.internal_static_UpAucItemTo_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_UpAucItemTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.AuctionMsg.internal_static_UpAucItemTo_fieldAccessorTable
+        return com.su.msg.AuctionMsg.internal_static_Msg_UpAucItemTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.AuctionMsg.UpAucItemTo.class, com.su.msg.AuctionMsg.UpAucItemTo.Builder.class);
       }
@@ -5530,7 +5530,7 @@ public final class AuctionMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.AuctionMsg.internal_static_UpAucItemTo_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_UpAucItemTo_descriptor;
       }
 
       public com.su.msg.AuctionMsg.UpAucItemTo getDefaultInstanceForType() {
@@ -5625,10 +5625,10 @@ public final class AuctionMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:UpAucItemTo)
+      // @@protoc_insertion_point(builder_scope:Msg.UpAucItemTo)
     }
 
-    // @@protoc_insertion_point(class_scope:UpAucItemTo)
+    // @@protoc_insertion_point(class_scope:Msg.UpAucItemTo)
     private static final com.su.msg.AuctionMsg.UpAucItemTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.AuctionMsg.UpAucItemTo();
@@ -5664,7 +5664,7 @@ public final class AuctionMsg {
   }
 
   public interface DownAucItemOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:DownAucItem)
+      // @@protoc_insertion_point(interface_extends:Msg.DownAucItem)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -5681,11 +5681,11 @@ public final class AuctionMsg {
    * 下架
    * </pre>
    *
-   * Protobuf type {@code DownAucItem}
+   * Protobuf type {@code Msg.DownAucItem}
    */
   public  static final class DownAucItem extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:DownAucItem)
+      // @@protoc_insertion_point(message_implements:Msg.DownAucItem)
       DownAucItemOrBuilder {
     // Use DownAucItem.newBuilder() to construct.
     private DownAucItem(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -5742,12 +5742,12 @@ public final class AuctionMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.AuctionMsg.internal_static_DownAucItem_descriptor;
+      return com.su.msg.AuctionMsg.internal_static_Msg_DownAucItem_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.AuctionMsg.internal_static_DownAucItem_fieldAccessorTable
+      return com.su.msg.AuctionMsg.internal_static_Msg_DownAucItem_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.AuctionMsg.DownAucItem.class, com.su.msg.AuctionMsg.DownAucItem.Builder.class);
     }
@@ -5920,20 +5920,20 @@ public final class AuctionMsg {
      * 下架
      * </pre>
      *
-     * Protobuf type {@code DownAucItem}
+     * Protobuf type {@code Msg.DownAucItem}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:DownAucItem)
+        // @@protoc_insertion_point(builder_implements:Msg.DownAucItem)
         com.su.msg.AuctionMsg.DownAucItemOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.AuctionMsg.internal_static_DownAucItem_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_DownAucItem_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.AuctionMsg.internal_static_DownAucItem_fieldAccessorTable
+        return com.su.msg.AuctionMsg.internal_static_Msg_DownAucItem_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.AuctionMsg.DownAucItem.class, com.su.msg.AuctionMsg.DownAucItem.Builder.class);
       }
@@ -5962,7 +5962,7 @@ public final class AuctionMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.AuctionMsg.internal_static_DownAucItem_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_DownAucItem_descriptor;
       }
 
       public com.su.msg.AuctionMsg.DownAucItem getDefaultInstanceForType() {
@@ -6100,10 +6100,10 @@ public final class AuctionMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:DownAucItem)
+      // @@protoc_insertion_point(builder_scope:Msg.DownAucItem)
     }
 
-    // @@protoc_insertion_point(class_scope:DownAucItem)
+    // @@protoc_insertion_point(class_scope:Msg.DownAucItem)
     private static final com.su.msg.AuctionMsg.DownAucItem DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.AuctionMsg.DownAucItem();
@@ -6139,7 +6139,7 @@ public final class AuctionMsg {
   }
 
   public interface DownAucItemToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:DownAucItemTo)
+      // @@protoc_insertion_point(interface_extends:Msg.DownAucItemTo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -6152,11 +6152,11 @@ public final class AuctionMsg {
     long getId();
   }
   /**
-   * Protobuf type {@code DownAucItemTo}
+   * Protobuf type {@code Msg.DownAucItemTo}
    */
   public  static final class DownAucItemTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:DownAucItemTo)
+      // @@protoc_insertion_point(message_implements:Msg.DownAucItemTo)
       DownAucItemToOrBuilder {
     // Use DownAucItemTo.newBuilder() to construct.
     private DownAucItemTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -6213,12 +6213,12 @@ public final class AuctionMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.AuctionMsg.internal_static_DownAucItemTo_descriptor;
+      return com.su.msg.AuctionMsg.internal_static_Msg_DownAucItemTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.AuctionMsg.internal_static_DownAucItemTo_fieldAccessorTable
+      return com.su.msg.AuctionMsg.internal_static_Msg_DownAucItemTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.AuctionMsg.DownAucItemTo.class, com.su.msg.AuctionMsg.DownAucItemTo.Builder.class);
     }
@@ -6387,20 +6387,20 @@ public final class AuctionMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code DownAucItemTo}
+     * Protobuf type {@code Msg.DownAucItemTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:DownAucItemTo)
+        // @@protoc_insertion_point(builder_implements:Msg.DownAucItemTo)
         com.su.msg.AuctionMsg.DownAucItemToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.AuctionMsg.internal_static_DownAucItemTo_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_DownAucItemTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.AuctionMsg.internal_static_DownAucItemTo_fieldAccessorTable
+        return com.su.msg.AuctionMsg.internal_static_Msg_DownAucItemTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.AuctionMsg.DownAucItemTo.class, com.su.msg.AuctionMsg.DownAucItemTo.Builder.class);
       }
@@ -6429,7 +6429,7 @@ public final class AuctionMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.AuctionMsg.internal_static_DownAucItemTo_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_DownAucItemTo_descriptor;
       }
 
       public com.su.msg.AuctionMsg.DownAucItemTo getDefaultInstanceForType() {
@@ -6567,10 +6567,10 @@ public final class AuctionMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:DownAucItemTo)
+      // @@protoc_insertion_point(builder_scope:Msg.DownAucItemTo)
     }
 
-    // @@protoc_insertion_point(class_scope:DownAucItemTo)
+    // @@protoc_insertion_point(class_scope:Msg.DownAucItemTo)
     private static final com.su.msg.AuctionMsg.DownAucItemTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.AuctionMsg.DownAucItemTo();
@@ -6606,7 +6606,7 @@ public final class AuctionMsg {
   }
 
   public interface BuyAucItemOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:BuyAucItem)
+      // @@protoc_insertion_point(interface_extends:Msg.BuyAucItem)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -6632,11 +6632,11 @@ public final class AuctionMsg {
    * 购买
    * </pre>
    *
-   * Protobuf type {@code BuyAucItem}
+   * Protobuf type {@code Msg.BuyAucItem}
    */
   public  static final class BuyAucItem extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:BuyAucItem)
+      // @@protoc_insertion_point(message_implements:Msg.BuyAucItem)
       BuyAucItemOrBuilder {
     // Use BuyAucItem.newBuilder() to construct.
     private BuyAucItem(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -6699,12 +6699,12 @@ public final class AuctionMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.AuctionMsg.internal_static_BuyAucItem_descriptor;
+      return com.su.msg.AuctionMsg.internal_static_Msg_BuyAucItem_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.AuctionMsg.internal_static_BuyAucItem_fieldAccessorTable
+      return com.su.msg.AuctionMsg.internal_static_Msg_BuyAucItem_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.AuctionMsg.BuyAucItem.class, com.su.msg.AuctionMsg.BuyAucItem.Builder.class);
     }
@@ -6908,20 +6908,20 @@ public final class AuctionMsg {
      * 购买
      * </pre>
      *
-     * Protobuf type {@code BuyAucItem}
+     * Protobuf type {@code Msg.BuyAucItem}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:BuyAucItem)
+        // @@protoc_insertion_point(builder_implements:Msg.BuyAucItem)
         com.su.msg.AuctionMsg.BuyAucItemOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.AuctionMsg.internal_static_BuyAucItem_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_BuyAucItem_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.AuctionMsg.internal_static_BuyAucItem_fieldAccessorTable
+        return com.su.msg.AuctionMsg.internal_static_Msg_BuyAucItem_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.AuctionMsg.BuyAucItem.class, com.su.msg.AuctionMsg.BuyAucItem.Builder.class);
       }
@@ -6952,7 +6952,7 @@ public final class AuctionMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.AuctionMsg.internal_static_BuyAucItem_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_BuyAucItem_descriptor;
       }
 
       public com.su.msg.AuctionMsg.BuyAucItem getDefaultInstanceForType() {
@@ -7129,10 +7129,10 @@ public final class AuctionMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:BuyAucItem)
+      // @@protoc_insertion_point(builder_scope:Msg.BuyAucItem)
     }
 
-    // @@protoc_insertion_point(class_scope:BuyAucItem)
+    // @@protoc_insertion_point(class_scope:Msg.BuyAucItem)
     private static final com.su.msg.AuctionMsg.BuyAucItem DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.AuctionMsg.BuyAucItem();
@@ -7168,15 +7168,15 @@ public final class AuctionMsg {
   }
 
   public interface BuyAucItemToOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:BuyAucItemTo)
+      // @@protoc_insertion_point(interface_extends:Msg.BuyAucItemTo)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * Protobuf type {@code BuyAucItemTo}
+   * Protobuf type {@code Msg.BuyAucItemTo}
    */
   public  static final class BuyAucItemTo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:BuyAucItemTo)
+      // @@protoc_insertion_point(message_implements:Msg.BuyAucItemTo)
       BuyAucItemToOrBuilder {
     // Use BuyAucItemTo.newBuilder() to construct.
     private BuyAucItemTo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -7226,12 +7226,12 @@ public final class AuctionMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.AuctionMsg.internal_static_BuyAucItemTo_descriptor;
+      return com.su.msg.AuctionMsg.internal_static_Msg_BuyAucItemTo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.AuctionMsg.internal_static_BuyAucItemTo_fieldAccessorTable
+      return com.su.msg.AuctionMsg.internal_static_Msg_BuyAucItemTo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.AuctionMsg.BuyAucItemTo.class, com.su.msg.AuctionMsg.BuyAucItemTo.Builder.class);
     }
@@ -7367,20 +7367,20 @@ public final class AuctionMsg {
       return builder;
     }
     /**
-     * Protobuf type {@code BuyAucItemTo}
+     * Protobuf type {@code Msg.BuyAucItemTo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:BuyAucItemTo)
+        // @@protoc_insertion_point(builder_implements:Msg.BuyAucItemTo)
         com.su.msg.AuctionMsg.BuyAucItemToOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.AuctionMsg.internal_static_BuyAucItemTo_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_BuyAucItemTo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.AuctionMsg.internal_static_BuyAucItemTo_fieldAccessorTable
+        return com.su.msg.AuctionMsg.internal_static_Msg_BuyAucItemTo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.AuctionMsg.BuyAucItemTo.class, com.su.msg.AuctionMsg.BuyAucItemTo.Builder.class);
       }
@@ -7407,7 +7407,7 @@ public final class AuctionMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.AuctionMsg.internal_static_BuyAucItemTo_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_BuyAucItemTo_descriptor;
       }
 
       public com.su.msg.AuctionMsg.BuyAucItemTo getDefaultInstanceForType() {
@@ -7502,10 +7502,10 @@ public final class AuctionMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:BuyAucItemTo)
+      // @@protoc_insertion_point(builder_scope:Msg.BuyAucItemTo)
     }
 
-    // @@protoc_insertion_point(class_scope:BuyAucItemTo)
+    // @@protoc_insertion_point(class_scope:Msg.BuyAucItemTo)
     private static final com.su.msg.AuctionMsg.BuyAucItemTo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.AuctionMsg.BuyAucItemTo();
@@ -7541,19 +7541,19 @@ public final class AuctionMsg {
   }
 
   public interface AucItemNoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:AucItemNo)
+      // @@protoc_insertion_point(interface_extends:Msg.AucItemNo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional .AucItemMo aucItem = 1;</code>
+     * <code>optional .Msg.AucItemMo aucItem = 1;</code>
      */
     boolean hasAucItem();
     /**
-     * <code>optional .AucItemMo aucItem = 1;</code>
+     * <code>optional .Msg.AucItemMo aucItem = 1;</code>
      */
     com.su.msg.AuctionMsg.AucItemMo getAucItem();
     /**
-     * <code>optional .AucItemMo aucItem = 1;</code>
+     * <code>optional .Msg.AucItemMo aucItem = 1;</code>
      */
     com.su.msg.AuctionMsg.AucItemMoOrBuilder getAucItemOrBuilder();
   }
@@ -7562,11 +7562,11 @@ public final class AuctionMsg {
    * 更新通知
    * </pre>
    *
-   * Protobuf type {@code AucItemNo}
+   * Protobuf type {@code Msg.AucItemNo}
    */
   public  static final class AucItemNo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:AucItemNo)
+      // @@protoc_insertion_point(message_implements:Msg.AucItemNo)
       AucItemNoOrBuilder {
     // Use AucItemNo.newBuilder() to construct.
     private AucItemNo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -7630,12 +7630,12 @@ public final class AuctionMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.AuctionMsg.internal_static_AucItemNo_descriptor;
+      return com.su.msg.AuctionMsg.internal_static_Msg_AucItemNo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.AuctionMsg.internal_static_AucItemNo_fieldAccessorTable
+      return com.su.msg.AuctionMsg.internal_static_Msg_AucItemNo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.AuctionMsg.AucItemNo.class, com.su.msg.AuctionMsg.AucItemNo.Builder.class);
     }
@@ -7644,19 +7644,19 @@ public final class AuctionMsg {
     public static final int AUCITEM_FIELD_NUMBER = 1;
     private com.su.msg.AuctionMsg.AucItemMo aucItem_;
     /**
-     * <code>optional .AucItemMo aucItem = 1;</code>
+     * <code>optional .Msg.AucItemMo aucItem = 1;</code>
      */
     public boolean hasAucItem() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional .AucItemMo aucItem = 1;</code>
+     * <code>optional .Msg.AucItemMo aucItem = 1;</code>
      */
     public com.su.msg.AuctionMsg.AucItemMo getAucItem() {
       return aucItem_ == null ? com.su.msg.AuctionMsg.AucItemMo.getDefaultInstance() : aucItem_;
     }
     /**
-     * <code>optional .AucItemMo aucItem = 1;</code>
+     * <code>optional .Msg.AucItemMo aucItem = 1;</code>
      */
     public com.su.msg.AuctionMsg.AucItemMoOrBuilder getAucItemOrBuilder() {
       return aucItem_ == null ? com.su.msg.AuctionMsg.AucItemMo.getDefaultInstance() : aucItem_;
@@ -7813,20 +7813,20 @@ public final class AuctionMsg {
      * 更新通知
      * </pre>
      *
-     * Protobuf type {@code AucItemNo}
+     * Protobuf type {@code Msg.AucItemNo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:AucItemNo)
+        // @@protoc_insertion_point(builder_implements:Msg.AucItemNo)
         com.su.msg.AuctionMsg.AucItemNoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.AuctionMsg.internal_static_AucItemNo_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_AucItemNo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.AuctionMsg.internal_static_AucItemNo_fieldAccessorTable
+        return com.su.msg.AuctionMsg.internal_static_Msg_AucItemNo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.AuctionMsg.AucItemNo.class, com.su.msg.AuctionMsg.AucItemNo.Builder.class);
       }
@@ -7860,7 +7860,7 @@ public final class AuctionMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.AuctionMsg.internal_static_AucItemNo_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_AucItemNo_descriptor;
       }
 
       public com.su.msg.AuctionMsg.AucItemNo getDefaultInstanceForType() {
@@ -7964,13 +7964,13 @@ public final class AuctionMsg {
       private com.google.protobuf.SingleFieldBuilderV3<
           com.su.msg.AuctionMsg.AucItemMo, com.su.msg.AuctionMsg.AucItemMo.Builder, com.su.msg.AuctionMsg.AucItemMoOrBuilder> aucItemBuilder_;
       /**
-       * <code>optional .AucItemMo aucItem = 1;</code>
+       * <code>optional .Msg.AucItemMo aucItem = 1;</code>
        */
       public boolean hasAucItem() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional .AucItemMo aucItem = 1;</code>
+       * <code>optional .Msg.AucItemMo aucItem = 1;</code>
        */
       public com.su.msg.AuctionMsg.AucItemMo getAucItem() {
         if (aucItemBuilder_ == null) {
@@ -7980,7 +7980,7 @@ public final class AuctionMsg {
         }
       }
       /**
-       * <code>optional .AucItemMo aucItem = 1;</code>
+       * <code>optional .Msg.AucItemMo aucItem = 1;</code>
        */
       public Builder setAucItem(com.su.msg.AuctionMsg.AucItemMo value) {
         if (aucItemBuilder_ == null) {
@@ -7996,7 +7996,7 @@ public final class AuctionMsg {
         return this;
       }
       /**
-       * <code>optional .AucItemMo aucItem = 1;</code>
+       * <code>optional .Msg.AucItemMo aucItem = 1;</code>
        */
       public Builder setAucItem(
           com.su.msg.AuctionMsg.AucItemMo.Builder builderForValue) {
@@ -8010,7 +8010,7 @@ public final class AuctionMsg {
         return this;
       }
       /**
-       * <code>optional .AucItemMo aucItem = 1;</code>
+       * <code>optional .Msg.AucItemMo aucItem = 1;</code>
        */
       public Builder mergeAucItem(com.su.msg.AuctionMsg.AucItemMo value) {
         if (aucItemBuilder_ == null) {
@@ -8030,7 +8030,7 @@ public final class AuctionMsg {
         return this;
       }
       /**
-       * <code>optional .AucItemMo aucItem = 1;</code>
+       * <code>optional .Msg.AucItemMo aucItem = 1;</code>
        */
       public Builder clearAucItem() {
         if (aucItemBuilder_ == null) {
@@ -8043,7 +8043,7 @@ public final class AuctionMsg {
         return this;
       }
       /**
-       * <code>optional .AucItemMo aucItem = 1;</code>
+       * <code>optional .Msg.AucItemMo aucItem = 1;</code>
        */
       public com.su.msg.AuctionMsg.AucItemMo.Builder getAucItemBuilder() {
         bitField0_ |= 0x00000001;
@@ -8051,7 +8051,7 @@ public final class AuctionMsg {
         return getAucItemFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .AucItemMo aucItem = 1;</code>
+       * <code>optional .Msg.AucItemMo aucItem = 1;</code>
        */
       public com.su.msg.AuctionMsg.AucItemMoOrBuilder getAucItemOrBuilder() {
         if (aucItemBuilder_ != null) {
@@ -8062,7 +8062,7 @@ public final class AuctionMsg {
         }
       }
       /**
-       * <code>optional .AucItemMo aucItem = 1;</code>
+       * <code>optional .Msg.AucItemMo aucItem = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.su.msg.AuctionMsg.AucItemMo, com.su.msg.AuctionMsg.AucItemMo.Builder, com.su.msg.AuctionMsg.AucItemMoOrBuilder> 
@@ -8088,10 +8088,10 @@ public final class AuctionMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:AucItemNo)
+      // @@protoc_insertion_point(builder_scope:Msg.AucItemNo)
     }
 
-    // @@protoc_insertion_point(class_scope:AucItemNo)
+    // @@protoc_insertion_point(class_scope:Msg.AucItemNo)
     private static final com.su.msg.AuctionMsg.AucItemNo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.AuctionMsg.AucItemNo();
@@ -8127,7 +8127,7 @@ public final class AuctionMsg {
   }
 
   public interface DelItemNoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:DelItemNo)
+      // @@protoc_insertion_point(interface_extends:Msg.DelItemNo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -8144,11 +8144,11 @@ public final class AuctionMsg {
    * 删除通知
    * </pre>
    *
-   * Protobuf type {@code DelItemNo}
+   * Protobuf type {@code Msg.DelItemNo}
    */
   public  static final class DelItemNo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:DelItemNo)
+      // @@protoc_insertion_point(message_implements:Msg.DelItemNo)
       DelItemNoOrBuilder {
     // Use DelItemNo.newBuilder() to construct.
     private DelItemNo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -8205,12 +8205,12 @@ public final class AuctionMsg {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.su.msg.AuctionMsg.internal_static_DelItemNo_descriptor;
+      return com.su.msg.AuctionMsg.internal_static_Msg_DelItemNo_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.su.msg.AuctionMsg.internal_static_DelItemNo_fieldAccessorTable
+      return com.su.msg.AuctionMsg.internal_static_Msg_DelItemNo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.su.msg.AuctionMsg.DelItemNo.class, com.su.msg.AuctionMsg.DelItemNo.Builder.class);
     }
@@ -8383,20 +8383,20 @@ public final class AuctionMsg {
      * 删除通知
      * </pre>
      *
-     * Protobuf type {@code DelItemNo}
+     * Protobuf type {@code Msg.DelItemNo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:DelItemNo)
+        // @@protoc_insertion_point(builder_implements:Msg.DelItemNo)
         com.su.msg.AuctionMsg.DelItemNoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.su.msg.AuctionMsg.internal_static_DelItemNo_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_DelItemNo_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.su.msg.AuctionMsg.internal_static_DelItemNo_fieldAccessorTable
+        return com.su.msg.AuctionMsg.internal_static_Msg_DelItemNo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.su.msg.AuctionMsg.DelItemNo.class, com.su.msg.AuctionMsg.DelItemNo.Builder.class);
       }
@@ -8425,7 +8425,7 @@ public final class AuctionMsg {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.su.msg.AuctionMsg.internal_static_DelItemNo_descriptor;
+        return com.su.msg.AuctionMsg.internal_static_Msg_DelItemNo_descriptor;
       }
 
       public com.su.msg.AuctionMsg.DelItemNo getDefaultInstanceForType() {
@@ -8563,10 +8563,10 @@ public final class AuctionMsg {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:DelItemNo)
+      // @@protoc_insertion_point(builder_scope:Msg.DelItemNo)
     }
 
-    // @@protoc_insertion_point(class_scope:DelItemNo)
+    // @@protoc_insertion_point(class_scope:Msg.DelItemNo)
     private static final com.su.msg.AuctionMsg.DelItemNo DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.su.msg.AuctionMsg.DelItemNo();
@@ -8602,70 +8602,70 @@ public final class AuctionMsg {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_AucItemMo_descriptor;
+    internal_static_Msg_AucItemMo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_AucItemMo_fieldAccessorTable;
+      internal_static_Msg_AucItemMo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetAucItem_descriptor;
+    internal_static_Msg_GetAucItem_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetAucItem_fieldAccessorTable;
+      internal_static_Msg_GetAucItem_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetAucItemTo_descriptor;
+    internal_static_Msg_GetAucItemTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetAucItemTo_fieldAccessorTable;
+      internal_static_Msg_GetAucItemTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetMyAucItem_descriptor;
+    internal_static_Msg_GetMyAucItem_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetMyAucItem_fieldAccessorTable;
+      internal_static_Msg_GetMyAucItem_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetMyAucItemTo_descriptor;
+    internal_static_Msg_GetMyAucItemTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetMyAucItemTo_fieldAccessorTable;
+      internal_static_Msg_GetMyAucItemTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_UpAucItem_descriptor;
+    internal_static_Msg_UpAucItem_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_UpAucItem_fieldAccessorTable;
+      internal_static_Msg_UpAucItem_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_UpAucItemTo_descriptor;
+    internal_static_Msg_UpAucItemTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_UpAucItemTo_fieldAccessorTable;
+      internal_static_Msg_UpAucItemTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_DownAucItem_descriptor;
+    internal_static_Msg_DownAucItem_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_DownAucItem_fieldAccessorTable;
+      internal_static_Msg_DownAucItem_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_DownAucItemTo_descriptor;
+    internal_static_Msg_DownAucItemTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_DownAucItemTo_fieldAccessorTable;
+      internal_static_Msg_DownAucItemTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_BuyAucItem_descriptor;
+    internal_static_Msg_BuyAucItem_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_BuyAucItem_fieldAccessorTable;
+      internal_static_Msg_BuyAucItem_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_BuyAucItemTo_descriptor;
+    internal_static_Msg_BuyAucItemTo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_BuyAucItemTo_fieldAccessorTable;
+      internal_static_Msg_BuyAucItemTo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_AucItemNo_descriptor;
+    internal_static_Msg_AucItemNo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_AucItemNo_fieldAccessorTable;
+      internal_static_Msg_AucItemNo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_DelItemNo_descriptor;
+    internal_static_Msg_DelItemNo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_DelItemNo_fieldAccessorTable;
+      internal_static_Msg_DelItemNo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -8675,23 +8675,23 @@ public final class AuctionMsg {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020AuctionMsg.proto\032\017CommonMsg.proto\"s\n\tA" +
-      "ucItemMo\022\n\n\002id\030\001 \001(\003\022\025\n\004item\030\002 \001(\0132\007.Ite" +
-      "mMo\022\017\n\007endTime\030\003 \001(\003\022\022\n\nplayerName\030\004 \001(\t" +
-      "\022\017\n\007monType\030\005 \001(\005\022\r\n\005price\030\006 \001(\005\"L\n\nGetA" +
-      "ucItem\022\014\n\004type\030\001 \001(\005\022\017\n\007monType\030\002 \001(\005\022\014\n" +
-      "\004page\030\003 \001(\005\022\021\n\tpriceSort\030\004 \001(\005\"=\n\014GetAuc" +
-      "ItemTo\022\020\n\010totalPag\030\001 \001(\005\022\033\n\007aucItem\030\002 \003(" +
-      "\0132\n.AucItemMo\"\016\n\014GetMyAucItem\",\n\016GetMyAu" +
-      "cItemTo\022\032\n\006myItem\030\001 \003(\0132\n.AucItemMo\"I\n\tU" +
-      "pAucItem\022\r\n\005index\030\001 \001(\005\022\r\n\005count\030\002 \001(\005\022\017",
-      "\n\007monType\030\003 \001(\005\022\r\n\005price\030\004 \001(\005\"\r\n\013UpAucI" +
-      "temTo\"\031\n\013DownAucItem\022\n\n\002id\030\001 \001(\003\"\033\n\rDown" +
-      "AucItemTo\022\n\n\002id\030\001 \001(\003\"\'\n\nBuyAucItem\022\n\n\002i" +
-      "d\030\001 \001(\003\022\r\n\005sysId\030\002 \001(\005\"\016\n\014BuyAucItemTo\"(" +
-      "\n\tAucItemNo\022\033\n\007aucItem\030\001 \001(\0132\n.AucItemMo" +
-      "\"\027\n\tDelItemNo\022\n\n\002id\030\001 \001(\003B%\n\ncom.su.msgH" +
-      "\001\252\002\024Assets.Scripts.Proto"
+      "\n\020AuctionMsg.proto\022\003Msg\032\017CommonMsg.proto" +
+      "\"w\n\tAucItemMo\022\n\n\002id\030\001 \001(\003\022\031\n\004item\030\002 \001(\0132" +
+      "\013.Msg.ItemMo\022\017\n\007endTime\030\003 \001(\003\022\022\n\nplayerN" +
+      "ame\030\004 \001(\t\022\017\n\007monType\030\005 \001(\005\022\r\n\005price\030\006 \001(" +
+      "\005\"L\n\nGetAucItem\022\014\n\004type\030\001 \001(\005\022\017\n\007monType" +
+      "\030\002 \001(\005\022\014\n\004page\030\003 \001(\005\022\021\n\tpriceSort\030\004 \001(\005\"" +
+      "A\n\014GetAucItemTo\022\020\n\010totalPag\030\001 \001(\005\022\037\n\007auc" +
+      "Item\030\002 \003(\0132\016.Msg.AucItemMo\"\016\n\014GetMyAucIt" +
+      "em\"0\n\016GetMyAucItemTo\022\036\n\006myItem\030\001 \003(\0132\016.M" +
+      "sg.AucItemMo\"I\n\tUpAucItem\022\r\n\005index\030\001 \001(\005",
+      "\022\r\n\005count\030\002 \001(\005\022\017\n\007monType\030\003 \001(\005\022\r\n\005pric" +
+      "e\030\004 \001(\005\"\r\n\013UpAucItemTo\"\031\n\013DownAucItem\022\n\n" +
+      "\002id\030\001 \001(\003\"\033\n\rDownAucItemTo\022\n\n\002id\030\001 \001(\003\"\'" +
+      "\n\nBuyAucItem\022\n\n\002id\030\001 \001(\003\022\r\n\005sysId\030\002 \001(\005\"" +
+      "\016\n\014BuyAucItemTo\",\n\tAucItemNo\022\037\n\007aucItem\030" +
+      "\001 \001(\0132\016.Msg.AucItemMo\"\027\n\tDelItemNo\022\n\n\002id" +
+      "\030\001 \001(\003B\016\n\ncom.su.msgH\001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -8706,83 +8706,83 @@ public final class AuctionMsg {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.su.msg.CommonMsg.getDescriptor(),
         }, assigner);
-    internal_static_AucItemMo_descriptor =
+    internal_static_Msg_AucItemMo_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_AucItemMo_fieldAccessorTable = new
+    internal_static_Msg_AucItemMo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_AucItemMo_descriptor,
+        internal_static_Msg_AucItemMo_descriptor,
         new java.lang.String[] { "Id", "Item", "EndTime", "PlayerName", "MonType", "Price", });
-    internal_static_GetAucItem_descriptor =
+    internal_static_Msg_GetAucItem_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_GetAucItem_fieldAccessorTable = new
+    internal_static_Msg_GetAucItem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetAucItem_descriptor,
+        internal_static_Msg_GetAucItem_descriptor,
         new java.lang.String[] { "Type", "MonType", "Page", "PriceSort", });
-    internal_static_GetAucItemTo_descriptor =
+    internal_static_Msg_GetAucItemTo_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_GetAucItemTo_fieldAccessorTable = new
+    internal_static_Msg_GetAucItemTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetAucItemTo_descriptor,
+        internal_static_Msg_GetAucItemTo_descriptor,
         new java.lang.String[] { "TotalPag", "AucItem", });
-    internal_static_GetMyAucItem_descriptor =
+    internal_static_Msg_GetMyAucItem_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_GetMyAucItem_fieldAccessorTable = new
+    internal_static_Msg_GetMyAucItem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetMyAucItem_descriptor,
+        internal_static_Msg_GetMyAucItem_descriptor,
         new java.lang.String[] { });
-    internal_static_GetMyAucItemTo_descriptor =
+    internal_static_Msg_GetMyAucItemTo_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_GetMyAucItemTo_fieldAccessorTable = new
+    internal_static_Msg_GetMyAucItemTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetMyAucItemTo_descriptor,
+        internal_static_Msg_GetMyAucItemTo_descriptor,
         new java.lang.String[] { "MyItem", });
-    internal_static_UpAucItem_descriptor =
+    internal_static_Msg_UpAucItem_descriptor =
       getDescriptor().getMessageTypes().get(5);
-    internal_static_UpAucItem_fieldAccessorTable = new
+    internal_static_Msg_UpAucItem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_UpAucItem_descriptor,
+        internal_static_Msg_UpAucItem_descriptor,
         new java.lang.String[] { "Index", "Count", "MonType", "Price", });
-    internal_static_UpAucItemTo_descriptor =
+    internal_static_Msg_UpAucItemTo_descriptor =
       getDescriptor().getMessageTypes().get(6);
-    internal_static_UpAucItemTo_fieldAccessorTable = new
+    internal_static_Msg_UpAucItemTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_UpAucItemTo_descriptor,
+        internal_static_Msg_UpAucItemTo_descriptor,
         new java.lang.String[] { });
-    internal_static_DownAucItem_descriptor =
+    internal_static_Msg_DownAucItem_descriptor =
       getDescriptor().getMessageTypes().get(7);
-    internal_static_DownAucItem_fieldAccessorTable = new
+    internal_static_Msg_DownAucItem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_DownAucItem_descriptor,
+        internal_static_Msg_DownAucItem_descriptor,
         new java.lang.String[] { "Id", });
-    internal_static_DownAucItemTo_descriptor =
+    internal_static_Msg_DownAucItemTo_descriptor =
       getDescriptor().getMessageTypes().get(8);
-    internal_static_DownAucItemTo_fieldAccessorTable = new
+    internal_static_Msg_DownAucItemTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_DownAucItemTo_descriptor,
+        internal_static_Msg_DownAucItemTo_descriptor,
         new java.lang.String[] { "Id", });
-    internal_static_BuyAucItem_descriptor =
+    internal_static_Msg_BuyAucItem_descriptor =
       getDescriptor().getMessageTypes().get(9);
-    internal_static_BuyAucItem_fieldAccessorTable = new
+    internal_static_Msg_BuyAucItem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_BuyAucItem_descriptor,
+        internal_static_Msg_BuyAucItem_descriptor,
         new java.lang.String[] { "Id", "SysId", });
-    internal_static_BuyAucItemTo_descriptor =
+    internal_static_Msg_BuyAucItemTo_descriptor =
       getDescriptor().getMessageTypes().get(10);
-    internal_static_BuyAucItemTo_fieldAccessorTable = new
+    internal_static_Msg_BuyAucItemTo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_BuyAucItemTo_descriptor,
+        internal_static_Msg_BuyAucItemTo_descriptor,
         new java.lang.String[] { });
-    internal_static_AucItemNo_descriptor =
+    internal_static_Msg_AucItemNo_descriptor =
       getDescriptor().getMessageTypes().get(11);
-    internal_static_AucItemNo_fieldAccessorTable = new
+    internal_static_Msg_AucItemNo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_AucItemNo_descriptor,
+        internal_static_Msg_AucItemNo_descriptor,
         new java.lang.String[] { "AucItem", });
-    internal_static_DelItemNo_descriptor =
+    internal_static_Msg_DelItemNo_descriptor =
       getDescriptor().getMessageTypes().get(12);
-    internal_static_DelItemNo_fieldAccessorTable = new
+    internal_static_Msg_DelItemNo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_DelItemNo_descriptor,
+        internal_static_Msg_DelItemNo_descriptor,
         new java.lang.String[] { "Id", });
     com.su.msg.CommonMsg.getDescriptor();
   }

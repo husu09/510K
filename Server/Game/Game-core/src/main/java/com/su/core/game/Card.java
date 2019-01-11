@@ -83,12 +83,10 @@ public class Card implements Comparable<Card> {
 			return 1;
 		else if (value < o.getValue())
 			return -1;
-		if (suit != null && o.getSuit() != null) {
-			if (suit.getValue() > o.getSuit().getValue())
-				return 1;
-			else if (suit.getValue() < o.getSuit().getValue())
-				return -1;
-		}
+		if (suit.getValue() > o.getSuit().getValue())
+			return 1;
+		else if (suit.getValue() < o.getSuit().getValue())
+			return -1;
 		return 0;
 	}
 

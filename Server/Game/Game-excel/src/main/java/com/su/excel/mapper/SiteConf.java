@@ -1,31 +1,20 @@
 package com.su.excel.mapper;
-
 import org.springframework.stereotype.Component;
-
 import com.su.config.SiteCo;
-import com.su.excel.core.AbstractExcelMapper;
-import com.su.excel.core.RowData;
-
+import com.su.excel.core.BaseMapper;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
+import java.util.LinkedHashMap;
+///start
+///end
 @Component
-public class SiteConf extends AbstractExcelMapper<SiteCo> {
+public class SiteConf extends BaseMapper<SiteCo> {
 
 	@Override
-	public String getName() {
-		return "Y游戏";
+	public void mapper(String str) {
+		storageMap = JSON.parseObject(str, new TypeReference<LinkedHashMap<Integer, SiteCo>>(){});
 	}
 
-	@Override
-	public SiteCo map(RowData rowData) {
-		SiteCo t = new SiteCo();
-		t.setId(rowData.getInt("id"));
-		t.setSiteType(rowData.getInt("lx"));
-		t.setOpen(rowData.getBoolean("sfkf"));
-		t.setBaseScore(rowData.getInt("df"));
-		t.setMiniBean(rowData.getInt("rczdxz"));
-		t.setMaxBean(rowData.getInt("rczgxz"));
-		t.setInitTableNum(rowData.getInt("cszs"));
-		t.setRankingAddition(rowData.getInt("bwdfjc"));
-		return t;
-	}
-
+	///start
+	///end
 }

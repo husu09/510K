@@ -94,19 +94,19 @@ public class AuctionService extends GameEventAdapter {
 	}
 	
 	public AucItemMo serialize(AucItem aucItem) {
-		AucItemMo.Builder _AucItem = AucItemMo.newBuilder();
-		_AucItem.setId(aucItem.getId());
-		_AucItem.setEndTime(aucItem.getEndTime());
+		AucItemMo.Builder aucItemMo = AucItemMo.newBuilder();
+		aucItemMo.setId(aucItem.getId());
+		aucItemMo.setEndTime(aucItem.getEndTime());
 		Player player = playerService.getPlayer(aucItem.getPlayerId());
-		_AucItem.setPlayerName(player.getName());
-		_AucItem.setMonType(aucItem.getMonType());
-		_AucItem.setPrice(aucItem.getPrice());
+		aucItemMo.setPlayerName(player.getName());
+		aucItemMo.setMonType(aucItem.getMonType());
+		aucItemMo.setPrice(aucItem.getPrice());
 		Item item = new Item();
 		item.setType(aucItem.getType());
 		item.setSysId(aucItem.getSysId());
 		item.setCount(aucItem.getCount());;
-		_AucItem.setItem(item.serialize());
-		return _AucItem.build();
+		aucItemMo.setItem(item.serialize());
+		return aucItemMo.build();
 	}
 	
 }

@@ -15,7 +15,7 @@ import com.su.core.game.service.BridgeService;
 import com.su.core.netty.NettyServerHandler;
 import com.su.msg.LoginMsg.LoginTo;
 import com.su.msg.PlayerMsg.UpdatePlayerNo;
-import com.su.msg.TableMsg.MGamePlayerResult;
+import com.su.msg.TableMsg.PlayerResultMo;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.util.Attribute;
@@ -86,7 +86,7 @@ public class PLayerActorImpl implements PlayerActor {
 	}
 
 	@Override
-	public MGamePlayerResult doTableResult(TableResult tableResult) {
+	public PlayerResultMo doTableResult(TableResult tableResult) {
 		return bridgeService.doTableResult(tableResult);
 	}
 

@@ -83,7 +83,7 @@ public class DataConfig {
 		exporter.setService(dataRmiService);
 		exporter.setServiceName("DataRmiService");
 		exporter.setServiceInterface(DataRmiService.class);
-		exporter.setRegistryPort(10001);
+		exporter.setRegistryPort(10100);
 		return exporter;
 	}
 

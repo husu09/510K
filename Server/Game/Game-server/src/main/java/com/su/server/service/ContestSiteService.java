@@ -15,7 +15,7 @@ import com.su.core.event.GameEventAdapter;
 import com.su.core.game.ContestSite;
 import com.su.excel.mapper.ContestConf;
 import com.su.excel.mapper.ContestRewardConf;
-import com.su.msg.ContestMsg.NContestSite;
+import com.su.msg.ContestMsg.ContestSiteNo;
 
 @Service
 public class ContestSiteService extends GameEventAdapter {
@@ -35,7 +35,7 @@ public class ContestSiteService extends GameEventAdapter {
 	@Override
 	public void serverStart() {
 		for (ContestCo co : contestConf.all()) {
-			contestSiteMap.put(co.getId(), new ContestSite(co, contestRewardConf.getRewardCount(co.getId())));
+			contestSiteMap.put(co.getId(), new ContestSite(co, 5));
 		}
 	}
 
@@ -68,7 +68,7 @@ public class ContestSiteService extends GameEventAdapter {
 	/**
 	 * 通知集合中的玩家
 	 * */
-	public void noticePlayerBySite(int contestSiteId, NContestSite builder) {
+	public void noticePlayerBySite(int contestSiteId, ContestSiteNo builder) {
 		Set<PlayerContext> playerConSet = noticeMap.get(contestSiteId);
 		for (PlayerContext playerContext : playerConSet) {
 			playerContext.write(builder);
@@ -79,8 +79,8 @@ public class ContestSiteService extends GameEventAdapter {
 		return noticeMap;
 	}
 
-	public NContestSite serialize(ContestSite site) {
-		NContestSite.Builder builder = NContestSite.newBuilder();
+	public ContestSiteNo serialize(ContestSite site) {
+		ContestSiteNo.Builder builder = ContestSiteNo.newBuilder();
 		builder.setSiteId(site.getContestCo().getId());
 		builder.setPlayerNum(site.getPlayerNum());
 		return builder.build();

@@ -5,7 +5,7 @@ import java.util.Collection;
 import com.su.common.po.Player;
 import com.su.core.game.Site;
 import com.su.core.game.TableResult;
-import com.su.msg.TableMsg.MGamePlayerResult;
+import com.su.msg.TableMsg.PlayerResultMo;
 
 /**
  * GameServer向外提供服务的接口
@@ -18,7 +18,7 @@ public interface BridgeService {
 	/**
 	 * 处理牌局结束
 	 * */
-	public MGamePlayerResult doTableResult(TableResult tableResult);
+	public PlayerResultMo doTableResult(TableResult tableResult);
 	/**
 	 * 处理比赛结束
 	 * */

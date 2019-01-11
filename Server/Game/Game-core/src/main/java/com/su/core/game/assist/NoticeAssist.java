@@ -5,9 +5,9 @@ import org.springframework.stereotype.Component;
 import com.su.core.game.Card;
 import com.su.core.game.GamePlayer;
 import com.su.core.game.Table;
-import com.su.msg.TableMsg.MCard;
-import com.su.msg.TableMsg.MGamePlayer;
-import com.su.msg.TableMsg.MTable;
+import com.su.msg.TableMsg.CardMo;
+import com.su.msg.TableMsg.GamePlayerMo;
+import com.su.msg.TableMsg.TableMo;
 
 @Component
 public class NoticeAssist {
@@ -24,7 +24,7 @@ public class NoticeAssist {
 	/**
 	 * 序列化牌桌
 	 */
-	public MTable serializeTable(Table table, MTable.Builder builder, GamePlayer currGamePlayer) {
+	public TableMo serializeTable(Table table, TableMo.Builder builder, GamePlayer currGamePlayer) {
 		builder.clear();
 		// 玩家
 		for (GamePlayer otherGamePlayer : table.getPlayers())
@@ -61,7 +61,7 @@ public class NoticeAssist {
 	/**
 	 * 序列化游戏玩家
 	 */
-	public MGamePlayer serializeGamePlayer(GamePlayer gamePlayer, MGamePlayer.Builder builder, boolean isContainHands) {
+	public GamePlayerMo serializeGamePlayer(GamePlayer gamePlayer, GamePlayerMo.Builder builder, boolean isContainHands) {
 		builder.clear();
 		builder.setId(gamePlayer.getId());
 		// 就否包含手牌
@@ -87,7 +87,7 @@ public class NoticeAssist {
 	/**
 	 * 序列化卡牌
 	 */
-	public MCard serializeCard(Card card, MCard.Builder builder) {
+	public CardMo serializeCard(Card card, CardMo.Builder builder) {
 		builder.clear();
 		builder.setValue(card.getValue());
 		if (card.getSuit() != null)

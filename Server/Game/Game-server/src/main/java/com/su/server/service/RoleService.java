@@ -36,7 +36,7 @@ public class RoleService {
 	 * 添加角色
 	 * */
 	public boolean addRole(PlayerContext ctx, BagCo bagCo) {
-		RoleCo roleCo = roleConf.get(bagCo.getUseNum());
+		RoleCo roleCo = roleConf.get(bagCo.getUserEfftInt());
 		if (roleCo == null) {
 			logger.error("roleCo is null");
 			return false;
@@ -53,12 +53,12 @@ public class RoleService {
 			role.setCurrExp(0);
 			playerDetail.getRoleMap().put(role.getRid(), role);
 		}
-		role.setEffType(bagCo.getEffTyep());
+		role.setEffType(bagCo.getEffTime()[0]);
 		// 设置有效值
-		if (bagCo.getEffTyep() == BagConst.EFF_TYPE_COUNT) 
-			role.setEffValue(bagCo.getEffValue());
-		else if (bagCo.getEffTyep() == BagConst.EFF_TYPE_TIME)
-			role.setEffValue(TimeUtil.getCurrTime() + TimeUtil.ONE_DAY * bagCo.getEffValue());
+		if (bagCo.getEffTime()[0] == BagConst.EFF_TYPE_COUNT) 
+			role.setEffValue(bagCo.getEffTime()[1]);
+		else if (bagCo.getEffTime()[0] == BagConst.EFF_TYPE_TIME)
+			role.setEffValue(TimeUtil.getCurrTime() + TimeUtil.ONE_DAY * bagCo.getEffTime()[1]);
 		playerDetail.updateRoleData();
 		dataService.save(playerDetail);
 		// 通知

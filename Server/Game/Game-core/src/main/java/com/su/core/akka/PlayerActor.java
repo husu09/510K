@@ -5,7 +5,7 @@ import com.su.common.po.Player;
 import com.su.core.context.PlayerContext;
 import com.su.core.game.TableResult;
 import com.su.msg.LoginMsg.LoginTo;
-import com.su.msg.TableMsg.MGamePlayerResult;
+import com.su.msg.TableMsg.PlayerResultMo;
 
 import io.netty.channel.ChannelHandlerContext;
 
@@ -34,7 +34,7 @@ public interface PlayerActor {
 	/**
 	 * 处理牌局结果
 	 * */
-	public MGamePlayerResult doTableResult(TableResult tableResult);
+	public PlayerResultMo doTableResult(TableResult tableResult);
 	
 	/**
 	 * 处理比赛结束

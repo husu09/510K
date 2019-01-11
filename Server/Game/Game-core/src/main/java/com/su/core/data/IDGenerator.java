@@ -118,7 +118,8 @@ public class IDGenerator {
 							long maxId = getMaxId(c);
 							if (maxId == 0) {
 								Cache cache = c.getAnnotation(Cache.class);
-								maxId = cache.startId();
+								if (cache != null)
+									maxId = cache.startId();
 							}
 							atomicLong = new AtomicLong(maxId);
 							idMap.put(parentKey, atomicLong);

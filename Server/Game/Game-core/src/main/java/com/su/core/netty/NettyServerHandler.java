@@ -61,9 +61,9 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
 	@Override
 	public void channelActive(ChannelHandlerContext ctx) throws Exception {
 		// 不接受请求，拒绝连接
-		if (!gameContext.isAccept()) {
-			ctx.close();
-		}
+//		if (!gameContext.isAccept()) {
+//			ctx.close();
+//		}
 	}
 
 	@Override
