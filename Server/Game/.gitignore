@@ -6,3 +6,8 @@
 */.project
 */.settings
 */target
+
+.idea
+*.iml
+*.properties
+*/*.properties
