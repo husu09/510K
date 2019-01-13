@@ -1,0 +1,44 @@
+syntax = "proto2";
+import "CommonMsg.proto";
+package Msg;
+option java_package = "com.su.msg";
+//option csharp_namespace = "Assets.Scripts.Proto";
+option optimize_for = SPEED;
+
+// 邮件信息
+message MailMo {
+	optional int64 id = 1;				// id
+	optional int32 mailId = 2;			// 邮件id
+	optional string sendName = 3;		// 发件人
+	optional int64 sendTime = 4;		// 发送时间
+	repeated ItemMo reward = 5;			// 附件
+	optional int32 isReceive = 6;		// 是否领取附件
+	repeated string params = 7;			// 参数
+}
+
+// 获取邮件信息
+message GetMail {}
+message GetMailTo {
+	repeated MailMo mail = 1;
+}
+
+// 删除邮件
+message DelMail {
+	repeated int64 id = 1;
+}
+message DelMailTo {
+	repeated int64 id = 1;
+}
+
+// 领取附件
+message GetMailReward {
+	optional int64 id = 1;				// id
+}
+message GetMailRewardTo {
+	repeated ItemMo reward = 1;		// 奖励
+}
+
+// 邮件通知
+message MailNo {
+	optional MailMo mail = 1;
+}

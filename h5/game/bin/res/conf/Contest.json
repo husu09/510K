@@ -1,0 +1,17 @@
+{
+	"1":{
+		"id":1,
+		"type":1,
+		"name":"花生挑战赛",
+		"baseScore":10,
+		"addedScore":5,
+		"contestNum":5,
+		"initScore":2000,
+		"cost":{
+			"count":200,
+			"sysId":0,
+			"type":1
+		},
+		"playerNum":20
+	}
+}

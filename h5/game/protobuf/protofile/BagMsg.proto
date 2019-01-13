@@ -1,0 +1,47 @@
+syntax = "proto2";
+package Msg;
+option java_package = "com.su.msg";
+//option csharp_namespace = "Assets.Scripts.Proto";
+option optimize_for = SPEED;
+
+
+// 物品格子
+message GridMo {
+	optional int32 index = 1;		// 索引
+	optional int32 type = 2;		// 类型
+	optional int32 cid = 3;			// id
+	optional int32 count = 4;		// 数量
+	optional int32 effType = 5;		// 有效期类型
+	optional int64 effValue = 6;	// 有效期
+}
+
+//背包数据
+message GetBag {}
+message GetBagTo {
+	repeated GridMo grid = 1;
+}
+
+// 使用道具
+message UseItem {
+	optional int32 index = 1;		// 索引
+	optional int32 useCount = 2;	// 使用数量
+}
+message UseItemTo {
+
+}
+
+// 删除通知（前端需要同步更改后续索引）
+message DeleteItemNo {
+	repeated int32 index = 1;		// 索引
+}
+
+// 增加通知（前端需要同步更改后续索引）
+message AddItemNo {
+	repeated GridMo grid = 1;
+}
+
+// 更新通知
+message UpdateItemNo {
+	repeated GridMo grid = 1;
+}
+
