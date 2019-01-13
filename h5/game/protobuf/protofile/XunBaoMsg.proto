@@ -1,0 +1,26 @@
+syntax = "proto2";
+import "CommonMsg.proto";
+package Msg;
+option java_package = "com.su.msg";
+//option csharp_namespace = "Assets.Scripts.Proto";
+option optimize_for = SPEED;
+
+// 寻宝信息
+message XunBaoMo {
+	optional int32 type = 1;		// 1：初级，2：中级，3：高级
+	optional int64 nextTime = 2;	// 下一次免费时间
+}
+
+// 获取寻宝信息
+message GetXunBao {}
+message GetXunBaoTo {
+	repeated XunBaoMo xunBao = 1;
+}
+
+// 寻宝
+message XunBao {
+	optional int32 type = 1;
+}
+message XunBaoTo {
+	repeated ItemMo reward = 1;	// 奖励
+}

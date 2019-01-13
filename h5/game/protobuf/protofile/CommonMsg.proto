@@ -1,0 +1,21 @@
+syntax = "proto2";
+package Msg;
+option java_package = "com.su.msg";
+//option csharp_namespace = "Assets.Scripts.Proto";
+option optimize_for = SPEED;
+
+// 错误提示
+message ErrorNo {
+ 	optional string errorMsg = 1;
+}
+// 测试命令
+message CMD {
+	repeated string parameters = 1;
+}
+
+message ItemMo {
+	optional int32 type = 1;	
+	optional int32 sysId = 2;
+	optional int32 count = 3;
+}
+

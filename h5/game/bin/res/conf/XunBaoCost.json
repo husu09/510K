@@ -1,0 +1,29 @@
+{
+	"1":{
+		"id":1,
+		"cost":{
+			"count":100,
+			"sysId":0,
+			"type":2
+		},
+		"rewardCount":1
+	},
+	"2":{
+		"id":2,
+		"cost":{
+			"count":100,
+			"sysId":0,
+			"type":2
+		},
+		"rewardCount":5
+	},
+	"3":{
+		"id":3,
+		"cost":{
+			"count":100,
+			"sysId":0,
+			"type":2
+		},
+		"rewardCount":10
+	}
+}

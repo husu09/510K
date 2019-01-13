@@ -1,0 +1,29 @@
+syntax = "proto2";
+package Msg;
+option java_package = "com.su.msg";
+//option csharp_namespace = "Assets.Scripts.Proto";
+option optimize_for = SPEED;
+
+// 玩家数据
+message PlayerMo {
+	optional int64 id = 1;				// id
+	optional string account = 2;		// 账号
+	optional string avatar = 3;			// 头像
+	optional string name = 4;			// 名称
+	optional int32 gender = 5;			// 性别
+	optional int32 bean = 6;			// 豆子
+	optional int32 diamond = 7;			// 钻石
+}
+
+// 获取玩家数据
+message GetPlayer {
+}
+message GetPlayerTo {
+	optional PlayerMo player = 1;
+}
+
+// 玩家数据更新通知
+message UpdatePlayerNo {
+	optional PlayerMo player = 1;
+}
+

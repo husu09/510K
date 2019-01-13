@@ -1,0 +1,31 @@
+syntax = "proto2";
+package Msg;
+option java_package = "com.su.msg";
+//option csharp_namespace = "Assets.Scripts.Proto";
+option optimize_for = SPEED;
+
+// 角色信息
+message RoleMo {
+	optional int32 rid = 1;			// 配置表id
+	optional int32 exp = 2;			// 当前经验
+	optional int32 effType = 3;		// 有效类型 1：过期时间，2：过期局数，3：永久
+	optional int64 effValue = 4;	// 有效值
+}
+
+// 获取角色信息
+message GetRole {}
+message GetRoleTo {
+	repeated RoleMo role = 1;
+}
+
+// 升级角色
+message UpRole {
+	optional int32 rid = 1;			// 配置表id
+	map<int32, int32> cost = 2;		// 使用的道具<格子索引，使用数量> 
+}
+message UpRoleTo {}
+
+// 角色通知
+message RoleNo {
+	optional RoleMo role = 1;
+}

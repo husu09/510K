@@ -1,0 +1,23 @@
+syntax = "proto2";
+package Msg;
+option java_package = "com.su.msg";
+//option csharp_namespace = "Assets.Scripts.Proto";
+option optimize_for = SPEED;
+
+// 排行信息
+message RankingMo {
+	optional int64 id = 1;			// 玩家id
+	optional string name = 2;		// 姓名
+	optional int32 sex = 3;			// 性别
+	optional int32 title = 4;		// 头衔
+	optional int32 score = 5;		// 得分
+}
+
+// 获取排行榜信息
+message GetRanking {
+	optional int32 type = 1;		// 排行榜类型
+}
+message GetRankingTo {
+	repeated RankingMo ranking = 1;
+	optional int32 myRank = 2;		// 我的排名
+}

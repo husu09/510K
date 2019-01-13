@@ -1,0 +1,37 @@
+syntax = "proto2";
+package Msg;
+option java_package = "com.su.msg";
+//option csharp_namespace = "Assets.Scripts.Proto";
+option optimize_for = SPEED;
+
+// 聊天信息
+message ChatMo {
+	optional int64 id = 1;			// 玩家id
+	optional string name = 2;		// 姓名
+	optional int32 sex = 3;			// 性别
+	optional int32 title = 4;		// 头衔
+	optional string content = 5;	// 内容
+}
+
+// 获取聊天信息
+message GetChat {}  
+message GetChatTo {
+	repeated ChatMo chat = 1;
+}  
+
+// 发送聊天消息
+message SendChat {
+	optional string content = 1;	// 内容
+}
+message SendChatTo {}
+
+// 消息通知
+message ChatNo {
+	optional ChatMo chat = 1;
+}
+
+
+
+
+
+

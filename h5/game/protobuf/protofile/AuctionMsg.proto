@@ -1,0 +1,70 @@
+syntax = "proto2";
+import "CommonMsg.proto";
+package Msg;
+option java_package = "com.su.msg";
+//option csharp_namespace = "Assets.Scripts.Proto";
+option optimize_for = SPEED;
+
+// 拍卖物品信息 
+message AucItemMo {
+	optional int64 id = 1;				// id
+	optional ItemMo item = 2;			// 物品
+	optional int64 endTime = 3;			// 截止时间
+	optional string playerName = 4;		// 玩家姓名
+	optional int32 monType = 5;			// 货币类型
+	optional int32 price = 6;			// 价格
+}
+
+// 获取拍卖物品信息
+message GetAucItem {
+	optional int32 type = 1;			// 道具类型
+	optional int32 monType = 2;			// 货币类型
+	optional int32 page = 3;			// 页数
+	optional int32 priceSort = 4;	    // 价格小：1，价格大：-1
+}
+message GetAucItemTo {
+	optional int32 totalPag = 1;		// 总页数
+	repeated AucItemMo aucItem = 2;		// 物品
+}
+
+// 获取我拍卖的物品
+message GetMyAucItem {}
+message GetMyAucItemTo {
+	repeated AucItemMo myItem = 1;		// 我的物品
+}
+
+// 上架
+message UpAucItem {
+	optional int32 index = 1;			// 物品格子
+	optional int32 count = 2;			// 数量
+	optional int32 monType = 3;			// 货币类型
+	optional int32 price = 4;			// 价格
+}
+message UpAucItemTo {
+}
+
+// 下架
+message DownAucItem {
+	optional int64 id = 1;
+}
+message DownAucItemTo {
+	optional int64 id = 1;
+}
+
+// 购买
+message BuyAucItem {
+	optional int64 id = 1;
+	optional int32 sysId = 2;
+}
+message BuyAucItemTo {
+}
+
+// 更新通知
+message AucItemNo {
+	optional AucItemMo aucItem = 1;
+}
+
+// 删除通知
+message DelItemNo {
+	optional int64 id = 1;
+}
